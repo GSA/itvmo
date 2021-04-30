@@ -125,7 +125,7 @@ address p {
 }
 
 .usa-table-container--scrollable th {     /*** Tables for Resources ***/ 
-  white-space: normal;
+  white-space: pre-wrap !important;
 }
 
 /* ---------------- IPAD CSS ----------------------- */
