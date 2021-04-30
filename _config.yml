@@ -74,17 +74,17 @@ ga:
 
 # Site Navigation
 primary_navigation:
-  #- name: Home
+  - name: Home
     url: /
-  #- name: About
+  - name: About
     url: /about/
-  #- name: Resources
+  - name: Resources
     url: /resources/
-  #- name: Contact Info
+  - name: Contact Info
     url: /contact-info/
 
 secondary_navigation:
-  #- name: Contact Us
+  - name: Contact Us
     url: "mailto:itvmo@gsa.gov"
 
 # Search.gov configuration
