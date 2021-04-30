@@ -16,7 +16,7 @@ site, this is the place to do it.
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Title and meta description
     ================================================== -->
-  <title>{{site.title}}</title>
+  <title>{{ page.title }} | {{site.title}}</title>
   <meta property="og:title" content="{{site.title}}">
   <meta name="description" content="{{site.description}}">
   <meta property="og:description" content="{{site.description}}">
@@ -32,21 +32,22 @@ site, this is the place to do it.
   <!-- Favicons
     ================================================== -->
   <!-- 128x128 -->
-  <link rel="shortcut icon" type="image/ico" href="{% asset favicons/favicon.ico @path %}">
-  <link rel="icon" type="image/png" href="{% asset favicons/favicon.png @path %}">
+  <link rel="shortcut icon" type="image/ico" href="{{ site.baseurl }}/assets/images/favicon.png">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/favicon.png">
   <!-- 192x192, as recommended for Android
     http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
     -->
-  <link rel="icon" type="image/png" sizes="192x192" href="{% asset favicons/favicon-192.png @path %}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ site.baseurl }}/assets/images/favicon.png">
   <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-  <link rel="apple-touch-icon-precomposed" href="{% asset favicons/favicon-57.png @path %}">
+  <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/images/favicon.png">
   <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% asset favicons/favicon-72.png @path %}">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/images/favicon.png">
   <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% asset favicons/favicon-114.png @path %}">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/images/favicon.png">
   <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% asset favicons/favicon-144.png @path %}">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/images/favicon.png">
   <!-- CSS
     ================================================== -->
   {% asset index.scss %}
+  {% asset main.scss %}
 </head>

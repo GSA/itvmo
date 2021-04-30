@@ -18,19 +18,16 @@
 # Be sure to edit the values below
 ##########################################################################################
 
-title: Agency Name
-email: contact@example.gov
+title: IT Vendor Management Office
+email: itvmo@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
-  Agency Name (EAC) Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Aenean et sapien a leo auctor scelerisque quis nec magna. Sed dictum ante a risus vehicula facilisis.
+  Official Website of the IT Vendor Management Office.
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://example.gov" # the base hostname & protocol for your site, e.g. https://example.com. 
-  # Required to support the jekyll-sitemap plugin below.
-  # Uncomment the url line when ready to push to production. If using different branches for multiple
-  # custom domains, edit this url parameter in the relevant branch to match the relevant custom domain.
+# url: "https://example.gov" # the base hostname & protocol for your site, e.g. http://example.com
+logo: /assets/images/logos/ITVMO_logo_colorlarge.png
 
 # Twitter handle. Only the handle, not the URL.
-twitter: 18F
+twitter: GSA-ITVMO
 
 #################################################################
 #
@@ -66,7 +63,7 @@ twitter: 18F
 #
 #################################################################
 dap:
-  # agency: your-agency
+  agency: GSA
 
   # Optional
   # subagency: your-subagency
@@ -79,26 +76,16 @@ ga:
 primary_navigation:
   - name: Home
     url: /
-  - name: Blog
-    url: /blog/
-  - name: Document
-    url: /document/
-  - name: Document with sidenav
-    url: /document-with-sidenav/
-  - name: Document submenu
-    children:
-      - name: Navigation link
-        url: "#main-content"
-      - name: Navigation link
-        url: "#main-content"
-      - name: Navigation link
-        url: "#main-content"
+  - name: About
+    url: /about/
+  - name: Resources
+    url: /resources/
+  - name: Contact Info
+    url: /contact-info/
 
 secondary_navigation:
-  - name: Secondary link
-    url: "#main-content"
-  - name: Another secondary link
-    url: "#main-content"
+  - name: Contact Us
+    url: "mailto:itvmo@gsa.gov"
 
 # Search.gov configuration
 #
@@ -111,7 +98,7 @@ searchgov:
   endpoint: https://search.usa.gov
 
   # replace this with your search.gov account
-  affiliate: federalist-uswds-example
+  affiliate: gsa-itvmo
 
   # replace with your access key
   access_key: xX1gtb2RcnLbIYkHAcB6IaTRr4ZfN-p16ofcyUebeko=
@@ -136,7 +123,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-redirect-from
-  - jekyll-sitemap # See additional instructions for url parameter above.
+  - jekyll-sitemap
   - jekyll-seo-tag
 
 ############################################################

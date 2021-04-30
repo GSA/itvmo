@@ -1,0 +1,19 @@
+# We can add any kind of data in this _data folder and this file.
+# In this example, we create a simple array of options and then in the _pages/collections.md file we 
+# Reference this data file in 'datafile' in the Front Matter and _layouts/list.html renders it 
+# This is simple, hopefully provides you with a good enough example to make changes as needed
+
+#Vendor Intelligence
+- Link: '../assets/files/ESCT-Software-Managers-Federal-Supplier-Relationship-Management-(SRM)-Overview-29-November-2017.pdf'
+  Title: Supplier Relationship Management Across Federal Government
+  Type: PDF
+  Problem_Statement: How can Supplier Relationship Management help my agency?
+  Description: This presentation provides an overview of the Supplier Relationship Management (SRM), how to build an SRM framework, and the intended outcomes of the an SRM implementation at your agency.
+  Last_Updated: 11/1/2017
+
+- Link: '../assets/files/ESCT-Software-Managers-Meeting-Negotiations-Best-Practices-091317.pdf'
+  Title: Negotiations Best Practices
+  Type: PDF
+  Problem_Statement: What are some best practices when negotiating with major IT vendors? 
+  Description: The purpose of this presentation is to provide negotiation best practices and basics that can be utilized when dealing with major vendors and to re-familiarize Government personnel with a Strategic Vendor Management (SVM) framework and how it can help enable successful negotiations with major vendors.
+  Last_Updated: 9/13/2017
