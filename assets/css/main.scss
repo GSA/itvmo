@@ -152,6 +152,7 @@ address p {
   .usa-table-container--scrollable, .usa-table-container--scrollable {
     margin: 1.25rem 0;
     overflow-y: hidden; 
+    white-space: normal;
   }
   .grid-row.grid-gap {
     margin-left: 0px !important;
