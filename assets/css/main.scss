@@ -123,7 +123,7 @@ address p {
   border-right: 1px solid #fff !important;
   border-left: 1px solid #fff !important;
 }
-.usa-table-container--scrollable th {
+.usa-table-container--scrollable th, .usa-prose>.usa-table-container--scrollable th, .usa-table-container--scrollable td, .usa-prose>.usa-table-container--scrollable tdb {
   white-space: normal !important;
 }
 
