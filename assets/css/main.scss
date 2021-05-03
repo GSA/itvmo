@@ -123,6 +123,9 @@ address p {
   border-right: 1px solid #fff !important;
   border-left: 1px solid #fff !important;
 }
+.usa-table-container--scrollable th {
+  white-space: normal !important;
+}
 
 /* ---------------- IPAD CSS ----------------------- */
 @media (max-width: 768px) {
@@ -152,7 +155,6 @@ address p {
   .usa-table-container--scrollable, .usa-table-container--scrollable {
     margin: 1.25rem 0;
     overflow-y: hidden; 
-    white-space: normal !important;
   }
   .grid-row.grid-gap {
     margin-left: 0px !important;
