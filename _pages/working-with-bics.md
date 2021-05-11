@@ -18,7 +18,7 @@ sidenav: false
   {% assign rows = site.data.working-with-bics %}
   <th class="row-color">Title</th>
   <th class="row-color">{{ site.url }} Type</th>
-  <th class="row-color">Description</th>
+  <th class="row-color">{{ page.url }} Description</th>
     {% for row in rows %}
     <tr>
       <td><a href="{{  row.Link }}">{{  row.Title }}</a></td>
