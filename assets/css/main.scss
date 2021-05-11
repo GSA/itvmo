@@ -1,3 +1,5 @@
+// Import the US Web Design System SASS.
+@import "uswds";
 
 /*-------------------------------------*/
 .itvmo-logo-size {
@@ -126,6 +128,9 @@ address p {
 .usa-table-container--scrollable th, .usa-prose>.usa-table-container--scrollable th, .usa-table-container--scrollable td, .usa-prose>.usa-table-container--scrollable tdb {
   white-space: normal !important;
 }
+.bic-txt {
+  text-align: right;
+}
 
 /* ---------------- IPAD CSS ----------------------- */
 @media (max-width: 768px) {
@@ -163,6 +168,9 @@ address p {
   .grid-row {
     display: block;
     flex-wrap: none;
+  }
+  .bic-txt {
+    text-align: start;
   }
 }
 

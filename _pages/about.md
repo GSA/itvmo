@@ -50,7 +50,7 @@ Provides support for security compliance and supply chain risk management.</p>
                     </div>
                 </div>
                 <div class="tablet:grid-col-2 container" style="padding:10px;">
-                <center><a href="https://www.sewp.nasa.gov/"><img class="seal-nasa" src="{{site.baseurl}}/assets/images/logos/NASA SEWP.png" alt="NASA SEWP"></a></center>
+                <center><a href="https://www.sewp.nasa.gov/"><img class="seal-nasa" src="{{site.baseurl}}/assets/images/logos/NASA-SEWP.png" alt="NASA SEWP"></a></center>
                     <div class="seal-name">
                         NASA SEWP
                     </div>

@@ -23,7 +23,7 @@ email: itvmo@gsa.gov
 description: >- # this means to ignore newlines until "baseurl:"
   Official Website of the IT Vendor Management Office.
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://example.gov" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://itvmo.gsa.gov" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /assets/images/logos/ITVMO_logo_colorlarge.png
 
 # Twitter handle. Only the handle, not the URL.

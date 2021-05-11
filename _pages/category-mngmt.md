@@ -16,16 +16,12 @@ sidenav: false
   {% assign rows = site.data.category-mngt %}
   <th class="row-color">Title</th>
   <th class="row-color">Type</th>
-  <th class="row-color">Problem Statement</th>
   <th class="row-color">Description</th>
-  <th class="row-color">Last Updated</th>
     {% for row in rows %}
     <tr>
       <td><a href="{{  row.Link }}">{{  row.Title }}</a></td>
       <td>{{  row.Type }}</td>
-      <td>{{  row.Problem_Statement }}</td>
       <td>{{  row.Description }}</td>
-      <td>{{  row.Last_Updated }}</td>
     </tr>
     {% endfor %}
   </table>
