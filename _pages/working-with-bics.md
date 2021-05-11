@@ -14,9 +14,10 @@ sidenav: false
 <div class="usa-table-container--scrollable">
 <table class="usa-table">
   <caption></caption>
+  
   {% assign rows = site.data.working-with-bics %}
   <th class="row-color">Title</th>
-  <th class="row-color">Type</th>
+  <th class="row-color">{{ site.url }} Type</th>
   <th class="row-color">Description</th>
     {% for row in rows %}
     <tr>
