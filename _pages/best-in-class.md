@@ -19,7 +19,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img src="{{ site.baseurl }}/assets/images/logos/8a-STARS-II.png" alt="8a-STARS-II"><br />
+    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/governmentwide-acquisition-contracts/8a-stars-ii-governmentwide-acquisition-contract-gwac"><img src="{{ site.baseurl }}/assets/images/logos/8a-STARS-II.png" alt="8a-STARS-II"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -46,7 +46,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img src="{{ site.baseurl }}/assets/images/logos/Alliant2.png" alt="GSA Alliant"><br />
+    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/governmentwide-acquisition-contracts/alliant-2-governmentwide-acquisition-contract-gwac"><img src="{{ site.baseurl }}/assets/images/logos/Alliant2.png" alt="GSA Alliant"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -73,7 +73,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img src="{{ site.baseurl }}/assets/images/logos/Army_CHESS.png" alt="Army CHESS"><br />
+    <a href="https://www.eis.army.mil/programs/chess"><img src="{{ site.baseurl }}/assets/images/logos/Army_CHESS.png" alt="Army CHESS"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -100,7 +100,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="General Services Administration seal"><br />
+    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services/satellite-communications/complex-commercial-satcom-solutions-cs3"><img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="General Services Administration seal"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -131,7 +131,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="General Services Administration seal"><br />
+    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services/enterprise-infrastructure-solutions"><img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="General Services Administration seal"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -164,7 +164,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="General Services Administration seal"><br />
+    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology"><img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="General Services Administration seal"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -197,7 +197,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img class="seal-nasa" src="{{ site.baseurl }}/assets/images/logos/NASA-SEWP.png" alt="NASA SEWP"><br />
+    <a href="https://www.sewp.nasa.gov/"><img class="seal-nasa" src="{{ site.baseurl }}/assets/images/logos/NASA-SEWP.png" alt="NASA SEWP"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -230,7 +230,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img src="{{ site.baseurl }}/assets/images/logos/NITAAC-CIO-CS.png" alt="NITAAC CIO-CS"><br />
+    <a href="https://nitaac.nih.gov/services/cio-cs"><img src="{{ site.baseurl }}/assets/images/logos/NITAAC-CIO-CS.png" alt="NITAAC CIO-CS"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -260,7 +260,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img src="{{ site.baseurl }}/assets/images/logos/NITAAC-CIO-SP3.png" alt="NITAAC CIO-SP3"><br />
+    <a href="https://nitaac.nih.gov/services/cio-sp3"><img src="{{ site.baseurl }}/assets/images/logos/NITAAC-CIO-SP3.png" alt="NITAAC CIO-SP3"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -287,7 +287,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img src="{{ site.baseurl }}/assets/images/logos/NITAAC-CIO-SP3-SB.png" alt="NITAAC CIO-SP3 SB"><br />
+    <a href="https://nitaac.nih.gov/services/cio-sp3-small-business"><img src="{{ site.baseurl }}/assets/images/logos/NITAAC-CIO-SP3-SB.png" alt="NITAAC CIO-SP3 SB"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -317,7 +317,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <img src="{{ site.baseurl }}/assets/images/logos/VETS2.png" alt="GSA VETS 2"><br />
+    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/governmentwide-acquisition-contracts/vets-2-governmentwide-acquisition-contract-gwac"><img src="{{ site.baseurl }}/assets/images/logos/VETS2.png" alt="GSA VETS 2"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
