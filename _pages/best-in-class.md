@@ -146,7 +146,7 @@ sidenav: false
     <div class="tablet:grid-col-2 bic-txt">
       Cloud
     </div>
-    <div class="tablet:grid-col-2">
+    <div class="tablet:grid-col-2 bic-txt-center">
       Software 
     </div>
     <div class="tablet:grid-col-2">
@@ -179,7 +179,7 @@ sidenav: false
     <div class="tablet:grid-col-2 bic-txt">
       Cloud
     </div>
-    <div class="tablet:grid-col-2">
+    <div class="tablet:grid-col-2 bic-txt-center">
       Hardware
     </div>
     <div class="tablet:grid-col-2">
@@ -212,7 +212,7 @@ sidenav: false
     <div class="tablet:grid-col-2 bic-txt">
       Cloud
     </div>
-    <div class="tablet:grid-col-2">
+    <div class="tablet:grid-col-2 bic-txt-center">
       Hardware
     </div>
     <div class="tablet:grid-col-2">
