@@ -56,7 +56,7 @@ sidenav: false
 </div>
 <div class="grid-row grid-gap">
    <div class="tablet:grid-col-3">
-   <a href="https://www.gsa.gov/technology/technology-purchasing-programs/governmentwide-acquisition-contracts/alliant-2-governmentwide-acquisition-contract-gwac">GSA Alliant</a>
+   <a href="https://www.gsa.gov/technology/technology-purchasing-programs/governmentwide-acquisition-contracts/alliant-2-governmentwide-acquisition-contract-gwac">GSA Alliant 2</a>
     </div>
     <div class="tablet:grid-col-3">
       Software
@@ -336,7 +336,7 @@ sidenav: false
       Small Business Specific
     </div>
     <div class="tablet:grid-col-3">
-      0.55% Fee
+      0.75% Fee
     </div>
 </div>
 <br />
