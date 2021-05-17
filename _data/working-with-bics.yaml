@@ -2,6 +2,8 @@
 # In this example, we create a simple array of options and then in the _pages/collections.md file we 
 # Reference this data file in 'datafile' in the Front Matter and _layouts/list.html renders it 
 # This is simple, hopefully provides you with a good enough example to make changes as needed
+# When the creating the DemoLink for linking to internal pages provide the URL link this - /preview/gsa/itvmo/Sprint2/best-in-class/
+
 
 #Working with BICS
 - Link: '/best-in-class/'
