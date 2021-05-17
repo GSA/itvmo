@@ -4,37 +4,42 @@
 # This is simple, hopefully provides you with a good enough example to make changes as needed
 
 #Working with BICS
+- Link: '/best-in-class/'
+  Title: IT Best-in-Class Vehicles
+  Type: Hyperlink
+  Description: The purpose of this page is to highlight the basic information about all of the IT BIC vehicles
+
 - Link: 'https://nitaac.nih.gov/nitaac-glance'
   Title: NIH NITAAC Overview
   Type: Hyperlink
-  Problem_Statement: How can I work with NIH NITAAC?
-  Description: This document gives an overview of the each of the NITAAC BIC solutions - CIO-SP3, CIO-SP3 Small Business, and CIO-CS
-  Last_Updated: 1/1/2021
+  Description: The purpose of this page is to highlight the basic infmation about the NIH NITAAC BIC vehicle
 
 - Link: 'https://www.sewp.nasa.gov/geninfo.shtml'
   Title: NASA SEWP Overview
   Type: Hyperlink
-  Problem_Statement: How can I work with NASA SEWP?
-  Description: This document gives an overview of the NASA SEWP BIC and provides contract background for companies with currently existing contracts
-  Last_Updated: 4/2/2018
+  Description: The purpose of this page is to highlight the basic infmation about the NASA SEWP BIC vehicle
 
 - Link: 'https://www.gsa.gov/technology/technology-programs'
   Title: GSA ITC Overview
   Type: Hyperlink
-  Problem_Statement: How can I work with GSA ITC?
-  Description: This document gives a brief overview of the GSA ITC BICs such as MAS, EIS/Networx, COMSATCOM, 8(a) Stars II, Alliant 2, and VETS 2
-  Last_Updated: 9/1/2020
+  Description: The purpose of this page is to highlight the basic infmation about the GSA ITC
 
 - Link: 'https://www.eis.army.mil/programs/chess'
   Title: ARMY CHESS Overview
   Type: Hyperlink
-  Problem_Statement: How can I work with ARMY CHESS?
-  Description: This presentation gives an overview of the ARMY CHESS BIC solution
-  Last_Updated: 5/13/2020
+  Description: The purpose of this page is to highlight the basic infmation about the ARMY CHESS BIC vehicle
 
 - Link: 'https://hallways.cap.gsa.gov/app/#/gateway/best-class-bic/22576/list-of-best-in-class-solutions'
   Title: List of Best-in-Class Solutions by Category
   Type: Hyperlink
-  Problem_Statement: What BIC vehicles are available for my agency's acquisitions?
-  Description: This document lists BIC solutions by Category and gives a brief description of Best-in-Class Solutions (BICs) and Spend Under Management (SUM)
-  Last_Updated: 1/1/2021
+  Description: This document lists all of the available BIC vehicles
+
+- Link: 'https://hallways.cap.gsa.gov/app/#/gateway/best-class-bic/6692/best-in-class-faqs'
+  Title: Best-In-Class Frequently Asked Questions
+  Type: Hyperlink
+  Description: This document answers many common questions regarding working with BIC vehicles
+
+- Link: 'https://hallways.cap.gsa.gov/app/#/gateway/best-class-bic/19042/docs/29571/Understanding%20the%20BIC%20Process%20and%20Criteria_072017-1596221835.pdf'
+  Title: Understanding the Best-in-Class (BIC) Process and Criteria
+  Type: Hyperlink
+  Description: The document explains how BIC vehicles work and how to use them
