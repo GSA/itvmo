@@ -11,7 +11,7 @@ sidenav: false
 <p>Please visit the new campaign, <strong>Improving IT Vendor and Government Communication and Collaboration</strong> has been posted to IdeaScale. Registration and login is required to access the campaign.</p>
 
 <div><a href="https://ofpp.ideascalegov.com/a/campaign-home/1160" class="usa-button btn-primary">Submit your Idea</a></div>
-<p><strong>Log in instructions for IdeaScale can be at the link below.</strong></p>
+<p><strong>Log in instructions for IdeaScale can be found at the link below.</strong></p>
 <div><a href="{{site.baseurl}}/assets/files/How-to-Join-OFPP-Innovates.pdf" class="usa-button btn-primary">Getting Started with IdeaScale</a></div>
 <br />
 <hr>
@@ -32,7 +32,4 @@ sidenav: false
 <h3>What is IdeaScale?</h3>
 <p>IdeaScale is an innovative platform to crowdsource ideas and solutions to solve complex problems facing the federal government and its partners.</p>
 <p>To learn more about IdeaScale, see other OFPP-led campaigns, or submit your own idea, please visit <a href="https://ofpp.ideascalegov.com/">https://ofpp.ideascalegov.com/</a> and follow the log in prompts.</p>
-<h3>Other ways to share</h3>
-<p>The EPIC campaign is being conducted in conjunction with the Request for Information (RFQ 1491201) ITVMO Improving IT Vendor and Government Communications and Coordination. To access the RFI and submit your project idea, please visit: <a href="https://feedback.gsa.gov/jfe/form/SV_6WOMqkWX9ZRyxWm">https://feedback.gsa.gov/jfe/form/SV_6WOMqkWX9ZRyxWm</a>.</p>
-<p>If you have any questions, or you're interested in learning more, please reach out to the ITVMO inbox at <a href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a>.</p>
 </section>
