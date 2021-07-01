@@ -1,0 +1,76 @@
+<!--********Generates resource catalog items. Individual cards live in the in the _resources folder**************-->
+
+
+<div class="usa-media-block tablet:grid-col-9">
+  <p class="filter-count card-tag margin-top-0 text-gray-50 text-thin count"></p>
+  <div class="resources">
+   
+              {% for resources in site.resources %}
+                      <div class="tablet:grid-col-4 grid-spacing policy {{ resources.filters }}" >
+
+                          <!--sets border logic statements for resources-->
+                          {% if resources.filters contains 'category-management' %}
+                          <div class="shadow-1 category-management-border">
+                              {% endif %}
+                          {% if resources.filters contains 'vendor-intelligence' %}
+                          <div class="shadow-1 vendor-intelligence-border">
+                              {% endif %}
+                              {% if resources.filters contains 'small-business-intelligence' %}
+                              <div class="shadow-1 small-business-intelligence-border">
+                                  {% endif %}
+                                  {% if resources.filters contains 'emerging-technology' %}
+                                  <div class="shadow-1 emerging-technology-border">
+                                      {% endif %}
+                                      {% if resources.filters contains 'best-in-class' %}
+                                      <div class="shadow-1 best-in-class-border">
+                                          {% endif %}
+                                          {% if resources.filters contains 'itvmo-admin' %}
+                                      <div class="shadow-1 itvmo-admin-border">
+                                          {% endif %}
+
+                                          <a class="no-style anchor-fill title-resources" href="http://{{ resources.external_url }}">
+                                          <div class="text-container padding-1 height-full">
+                                               {% if resources.filters contains 'category-management' %}
+                                              <span class="card-tag">Category Management</span>
+                                              {% endif %}
+                                              {% if resources.filters contains 'vendor-intelligence' %}
+                                              <span class="card-tag">Vendor Intelligence</span>
+                                              {% endif %}
+                                              {% if resources.filters contains 'small-business-intelligence' %}
+                                              <span class="card-tag">Small Business Intelligence</span>
+                                              {% endif %}
+                                              {% if resources.filters contains 'emerging-technology' %}
+                                              <span class="card-tag">Emerging Technology</span>
+                                              {% endif %}
+                                              {% if resources.filters contains 'best-in-class' %}
+                                              <span class="card-tag">Best-in-Class</span>
+                                              {% endif %}
+                                              {% if resources.filters contains 'itvmo-admin' %}
+                                              <span class="card-tag">TTVMO Admin</span>
+                                              {% endif %}
+                                              
+                                              {% if resources.external_url %}
+                                              <p class="title-resources">{{ resources.title }}</p>
+                                              <p class="description-resources">{{ resources.description }}</p>
+                                              {% endif %}
+                                              <!--{% if resources.permalink %}
+                                              <p class="title-resources"><a class="text-ink text-no-underline" href="{{ site.baseurl }}{{ resources.permalink }}">{{ resources.title }}</a></p>
+                                              {% endif %}
+                                              {% if resources.doc-link %}
+                                              <p class="title-resources"><a class="text-ink text-no-underline" href="{{ site.baseurl }}/{{ resources.doc-link }}">{{ resources.title }}</a></p>
+                                              {% endif %}-->
+                                              {% if resources.type contains 'link' %}
+                                              <p class="link-type">File Type: Link</p>
+                                              {% endif %}
+                                              {% if resources.type contains 'pdf' %}
+                                              <p class="link-type">File Type: PDF</p>
+                                              {% endif %}
+                                              <!--for 508 accessibility-->
+                                        </div></a>
+                                      </div>
+      
+                                  </div>			
+              {% endfor %}
+
+  </div>
+</div>
