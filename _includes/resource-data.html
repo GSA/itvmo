@@ -7,7 +7,6 @@
    
               {% for resources in site.resources %}
                       <div class="tablet:grid-col-4 grid-spacing policy {{ resources.filters }}" >
-
                           <!--sets border logic statements for resources-->
                           {% if resources.filters contains 'category-management' %}
                           <div class="shadow-1 category-management-border">
@@ -27,48 +26,49 @@
                                           {% if resources.filters contains 'itvmo-admin' %}
                                       <div class="shadow-1 itvmo-admin-border">
                                           {% endif %}
-
-                                          <a class="no-style anchor-fill title-resources" href="http://{{ resources.external_url }}">
                                           <div class="text-container padding-1 height-full">
-                                               {% if resources.filters contains 'category-management' %}
-                                              <span class="card-tag">Category Management</span>
-                                              {% endif %}
-                                              {% if resources.filters contains 'vendor-intelligence' %}
-                                              <span class="card-tag">Vendor Intelligence</span>
-                                              {% endif %}
-                                              {% if resources.filters contains 'small-business-intelligence' %}
-                                              <span class="card-tag">Small Business Intelligence</span>
-                                              {% endif %}
-                                              {% if resources.filters contains 'emerging-technology' %}
-                                              <span class="card-tag">Emerging Technology</span>
-                                              {% endif %}
-                                              {% if resources.filters contains 'best-in-class' %}
-                                              <span class="card-tag">Best-in-Class</span>
-                                              {% endif %}
-                                              {% if resources.filters contains 'itvmo-admin' %}
-                                              <span class="card-tag">TTVMO Admin</span>
-                                              {% endif %}
-                                              
+                                         
+                                            {% if resources.filters contains 'category-management' %}
+                                           <span class="card-tag">Category Management</span>
+                                           {% endif %}
+                                           {% if resources.filters contains 'vendor-intelligence' %}
+                                           <span class="card-tag">Vendor Intelligence</span>
+                                           {% endif %}
+                                           {% if resources.filters contains 'small-business-intelligence' %}
+                                           <span class="card-tag">Small Business Intelligence</span>
+                                           {% endif %}
+                                           {% if resources.filters contains 'emerging-technology' %}
+                                           <span class="card-tag">Emerging Technology</span>
+                                           {% endif %}
+                                           {% if resources.filters contains 'best-in-class' %}
+                                           <span class="card-tag">Best-in-Class</span>
+                                           {% endif %}
+                                           {% if resources.filters contains 'itvmo-admin' %}
+                                           <span class="card-tag">ITVMO Admin</span>
+                                           {% endif %}
                                               {% if resources.external_url %}
-                                              <p class="title-resources">{{ resources.title }}</p>
-                                              <p class="description-resources">{{ resources.description }}</p>
+                                                <a class="no-style anchor-fill" href="http://{{ resources.external_url }}">
+                                                <p class="title-resources">{{ resources.title }}</p>
+                                                <p class="description-resources">{{ resources.description }}</p>
+                                                <p class="link-type">File Type: Link</p>
+                                                </a>
                                               {% endif %}
-                                              <!--{% if resources.permalink %}
-                                              <p class="title-resources"><a class="text-ink text-no-underline" href="{{ site.baseurl }}{{ resources.permalink }}">{{ resources.title }}</a></p>
+                                              {% if resources.permalink %}
+                                                <a class="no-style anchor-fill" href="{{ site.baseurl }}{{ resources.permalink }}">
+                                                <p class="title-resources">{{ resources.title }}</p>
+                                                <p class="description-resources">{{ resources.description }}</p>
+                                                </a>
                                               {% endif %}
                                               {% if resources.doc-link %}
-                                              <p class="title-resources"><a class="text-ink text-no-underline" href="{{ site.baseurl }}/{{ resources.doc-link }}">{{ resources.title }}</a></p>
-                                              {% endif %}-->
-                                              {% if resources.type contains 'link' %}
-                                              <p class="link-type">File Type: Link</p>
+                                                <a class="no-style anchor-fill" href="{{ site.baseurl }}/{{ resources.doc-link }}">
+                                                <p class="title-resources">{{ resources.title }}</p>
+                                                <p class="description-resources">{{ resources.description }}</p>
+                                                <p class="link-type">File Type: PDF</p>
+                                                </a>
                                               {% endif %}
-                                              {% if resources.type contains 'pdf' %}
-                                              <p class="link-type">File Type: PDF</p>
-                                              {% endif %}
-                                              <!--for 508 accessibility-->
-                                        </div></a>
-                                      </div>
-      
+                                           <!--for 508 accessibility-->
+                                        </div>
+                                    </div>
                                   </div>			
               {% endfor %}
 

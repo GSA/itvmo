@@ -146,8 +146,13 @@ address p {
   display: block;
 }
 .text-container {
-  height: 17rem;
+  height: 18rem;
  }
+ .anchor-fill {
+  width: inherit;
+  display: block;
+  height: initial;
+}
  .shadow-1 {
    padding: 15px;
  }
