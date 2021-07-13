@@ -4,7 +4,27 @@ layout: page
 sidenav: false
 ---
 
-<section class="grid-container clearfix padding-left-0 padding-right-1">
+<section class="usa-graphic-list">
+    <div class="grid-container grid-container margin-0 padding-0">
+        <h1 class="column-centered-heading margin-top-0">Resources</h1>
+        <div class="usa-graphic-list__row grid-row grid-gap margin-0">
+            <p class="font-sans-sm padding-top-1 margin-0">The ITVMO  has developed and collected helpful resources to make government IT  acquisitions smarter and faster. We will regularly update and add to the resources posted to this page.</p>
+            <br>
+        </div>
+    </div>
+</section>
+
+<section class="usa-graphic-list margin-bottom-4">
+    <div class="grid-container grid-container margin-0 padding-0">
+        <div class="usa-graphic-list__row grid-row grid-gap">
+            {% include resource-buttons.html %}
+            {% include resource-data.html %}
+        </div>
+    </div>
+</section>
+
+
+<!--<section class="grid-container clearfix padding-left-0 padding-right-1">
 <h1 class="margin-top-0">Resources</h1>
 <p>We have developed and collected helpful resources to make government IT  acquisitions smarter and faster. We will regularly update and add to the resources posted to this page.</p>
 <div class="usa-card-group grid-row grid-gap">
@@ -69,5 +89,5 @@ sidenav: false
     </div>
     <p><strong>Don’t see what you’re looking for?</strong><br/>
     We are constantly updating resources but if you can’t find what you’re looking for or would like to work with us on future resources, please reach out to us by email at <a href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a>.</p>
-</section>
+</section>-->
 

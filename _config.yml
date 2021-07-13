@@ -115,6 +115,8 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  resources:
+    output: true  
 
 permalink: pretty
 
