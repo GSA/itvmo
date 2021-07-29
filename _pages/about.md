@@ -18,22 +18,16 @@ sidenav: false
     <h2>Services we support</h2>
 </div>
 <div class="margin-bottom-2">The ITVMO helps agencies procure IT smarter and faster by providing acquisitions expertise, such as the following services:
-
 <p><strong>Data Analytics</strong> <br>
 Insights into cost, spend, and contracting data to enable data-driven decision-making that supports and informs acquisition strategies.</p>
-
 <p><strong>Subject Matter Expertise</strong><br>
 Domain expertise on IT demand management, products, services, strategic sourcing, technology trends, and purchasing best practices.</p>
-
 <p><strong>Vendor Relationship Management</strong><br>
 Provides a governmentwide office to effectively engage and promote two-way communication across industry and agencies.</p>
-
 <p><strong>Best-in-Class Solutions Support</strong><br>
 Integration and contracting support to reduce duplicate efforts, improve awareness, and objectively broker governmentwide use of Best-in-Class vehicles.</p>
-
 <p><strong>IT Security and Supply Chain Risk Management</strong><br>
 Provides support for security compliance and supply chain risk management.</p>
-
 <p>More specifics about the purpose, value proposition, and governance of the ITVMO, see the <a href="{{site.baseurl}}/assets/files/ITVMO-Concept-of-Operations-FINAL-DRAFT-v1.1-(5).pdf">ITVMO Concept of Operations</a></p>
 </div>
 </section>
