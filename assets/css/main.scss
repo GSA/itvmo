@@ -146,12 +146,12 @@ address p {
   display: block;
 }
 .text-container {
-  height: 18rem;
+  height: 21rem;
  }
  .anchor-fill {
   width: inherit;
   display: block;
-  height: initial;
+  height: 81%;
 }
  .shadow-1 {
    padding: 15px;
@@ -180,7 +180,7 @@ address p {
     text-align: center;
   }
   .text-container {
-    height: 21rem;
+    height: 30rem;
    }
 }
 /* ---------------- MOBILE CSS ----------------------- */
@@ -215,7 +215,7 @@ address p {
     margin-top: 1.06rem;
   }
   .text-container {
-    height: 14rem;
+    height: 15rem;
   }
 }
 
