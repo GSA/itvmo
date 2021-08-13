@@ -1,5 +1,5 @@
 ---
-title: ITVMO Microsoft Training Series
+title: ITVMO Hosted Microsoft Training Series
 layout: page
 sidenav: false
 ---
