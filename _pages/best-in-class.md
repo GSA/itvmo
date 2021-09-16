@@ -1,5 +1,6 @@
 ---
 title: IT Best-in-Class Vehicles
+permalink: /best-in-class/
 layout: page
 sidenav: false
 ---
