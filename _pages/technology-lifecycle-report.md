@@ -1,5 +1,6 @@
 ---
 title: Technology Lifecycle Report
+permalink: /technology-lifecycle-report/
 layout: page
 sidenav: false
 ---
