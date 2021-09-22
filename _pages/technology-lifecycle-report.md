@@ -24,8 +24,8 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>User Story - FAQ</strong></p>
-                <p><a href="">What vendors provide cloud based services that are FedRamp certified?</a></p>
-                <p><a href="">How do BICs support small business?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-vendors-provide-cloud-based-services-that-are-FedRamp-certified-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">What vendors provide cloud based services that are FedRamp certified?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/How-do-BICs-support-small-business-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">How do BICs support small business?</a></p>
             </div>
             </div>
         </div>
@@ -59,9 +59,9 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>User Story - FAQ</strong></p>
-                <p><a href="">What have other agencies paid for a similar product or service?</a></p>
-                <p><a href="">What are the obligations by BIC and which agencies use them?</a></p>
-                <p><a href="">What is the OEM and vendor spend by agency?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">What have other agencies paid for a similar product or service?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-are-the-obligations-by-BIC-and-which-agencies-use-them-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">What are the obligations by BIC and which agencies use them?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">What is the OEM and vendor spend by agency?</a></p>
             </div>
             </div>  
       </div>
@@ -82,7 +82,7 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>User Story - FAQ</strong></p>
-                <p><a href="">What have other agencies paid for a similar product or service?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">What have other agencies paid for a similar product or service?</a></p>
              </div>
             </div>  
       </div>
