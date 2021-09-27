@@ -7,7 +7,7 @@ sidenav: false
 
 <section class="grid-container padding-left-0 padding-right-1">
 <h1 class="margin-top-0">{{ page.title }}</h1>
-<div class="margin-bottom-2">Technology lifecycle management is the compilation of disciplines managing all aspects of technology, from concept to disposal, throughout the technology’s useful life to the business. There are many different methodologies in play across the government that address the mechanisms and processes in place to manage their technology. This document is intended to be a general reference of common stages of the Technology Lifecycle and how the ITVMO interacts within the various stages. Click <a href="{{site.baseurl}}/assets/files/tlr/TLC-Report-FINAL.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">Technology Lifecycle Management</a> to read the full content. Use the links below to quickly find useful resources. Additional resources will be provided as they become available.</div>
+<div class="margin-bottom-2">Technology lifecycle management is the compilation of disciplines managing all aspects of technology, from concept to disposal, throughout the technology’s useful life to the business. There are many different methodologies in play across the government that address the mechanisms and processes in place to manage their technology. This document is intended to be a general reference of common stages of the Technology Lifecycle and how the ITVMO interacts within the various stages. Click <a href="{{site.baseurl}}/assets/files/tlr/TLC-Report-FINAL.pdf" target="_blank" title="(opens new Window)" aria-label="Technology Lifecycle Management">Technology Lifecycle Management</a> to read the full content. Use the links below to quickly find useful resources. Additional resources will be provided as they become available.</div>
 <h2 class="margin-bottom-1">Lifecycle Changes</h2>
 <div class="usa-accordion">
       <!-- Use the accurate heading level to maintain the document outline -->
@@ -24,8 +24,8 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>User Story - FAQ</strong></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-vendors-provide-cloud-based-services-that-are-FedRamp-certified-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">What vendors provide cloud based services that are FedRamp certified?</a></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/How-do-BICs-support-small-business-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">How do BICs support small business?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-vendors-provide-cloud-based-services-that-are-FedRamp-certified-508.pdf" target="_blank" title="(opens new Window)" aria-label="What vendors provide cloud based services that are FedRamp certified?">What vendors provide cloud based services that are FedRamp certified?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/How-do-BICs-support-small-business-508.pdf" target="_blank" title="(opens new Window)" aria-label="How do BICs support small business?">How do BICs support small business?</a></p>
             </div>
             </div>
         </div>
@@ -59,9 +59,9 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>User Story - FAQ</strong></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">What have other agencies paid for a similar product or service?</a></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-are-the-obligations-by-BIC-and-which-agencies-use-them-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">What are the obligations by BIC and which agencies use them?</a></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">What is the OEM and vendor spend by agency?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf" target="_blank" title="(opens new Window)" aria-label="What have other agencies paid for a similar product or service?">What have other agencies paid for a similar product or service?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-are-the-obligations-by-BIC-and-which-agencies-use-them-508.pdf" target="_blank" title="(opens new Window)" aria-label="What are the obligations by BIC and which agencies use them?">What are the obligations by BIC and which agencies use them?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf" target="_blank" title="(opens new Window)" aria-label="What is the OEM and vendor spend by agency?">What is the OEM and vendor spend by agency?</a></p>
             </div>
             </div>  
       </div>
@@ -82,7 +82,7 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>User Story - FAQ</strong></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf"><img src="{{site.baseurl}}/assets/images/icon.pdf.png" class="margin-right-05" width="16" valign="middle" alt="PDF">What have other agencies paid for a similar product or service?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf" target="_blank" title="(opens new Window)" aria-label="What have other agencies paid for a similar product or service?">What have other agencies paid for a similar product or service?</a></p>
              </div>
             </div>  
       </div>
