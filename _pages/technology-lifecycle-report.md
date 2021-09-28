@@ -32,9 +32,9 @@ sidenav: false
         <br />
         <div class="clearfix grid-container padding-left-2 padding-right-1">
             <div class="grid-row grid-gap">
-                <a href="" aria-label="" class="usa-button btn-primary margin-bottom-1">FedRamp</a>
-                <a href="" aria-label="" class="usa-button btn-primary margin-bottom-1">Acquistion Analytics</a>
-                <a href="" aria-label="" class="usa-button btn-primary margin-bottom-1">Operational Workbrench</a>
+                <a href="https://marketplace.fedramp.gov/#!/products?sort=productName" target="_blank" title="(opens new Window)" aria-label="FedRamp" class="usa-button btn-primary margin-bottom-1">FedRamp</a>
+                <a href="https://login.max.gov/cas/login?service=https%3A//d2d.gsa.gov/cas%3Fdestination%3Dnode/8166&securityLevel=securePlus2&renew=true" target="_blank" title="(opens new Window)" aria-label="Acquistion Analytics" class="usa-button btn-primary margin-bottom-1">Acquistion Analytics</a>
+                <a href="https://login.max.gov/cas/login?service=https%3A//d2d.gsa.gov/cas%3Fdestination%3Dnode/9576&securityLevel=securePlus2&renew=true" target="_blank" title="(opens new Window)" aria-label="Operational Workbrench" class="usa-button btn-primary margin-bottom-1">Operational Workbrench</a>
             </div>
         </div>
       </div>
@@ -102,7 +102,7 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>Agency Specific Resources:</strong></p>
-                <p><a href="">Agency specific CMDB, inventory management systems or asset databases will be valuable resources for this stage.</a></p>
+                <p>Agency specific CMDB, inventory management systems or asset databases will be valuable resources for this stage.</p>
              </div>
             </div>  
       </div>
@@ -122,7 +122,7 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>Agency Specific Resources:</strong></p>
-                <p><a href="">Agency specific PPM tools, project plans and change management plans will be valuable resources for this stage.</a></p>
+                <p>Agency specific PPM tools, project plans and change management plans will be valuable resources for this stage.</p>
              </div>
             </div>  
       </div>
@@ -142,7 +142,7 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>Agency Specific Resources:</strong></p>
-                <p><a href="">Agency specific support tools, ticketing systems and incident response play an important role within this stage. Data from these systems can provide useful metrics for understanding vendor and product performance.</a></p>
+                <p>Agency specific support tools, ticketing systems and incident response play an important role within this stage. Data from these systems can provide useful metrics for understanding vendor and product performance.</p>
              </div>
             </div>  
       </div>
@@ -162,7 +162,7 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>Agency Specific Resources:</strong></p>
-                <p><a href="">Understanding the dependencies from an agency specific CMDB and aligning to the vendor roadmap or upgrade path are key to defining the path forward.</a></p>
+                <p>Understanding the dependencies from an agency specific CMDB and aligning to the vendor roadmap or upgrade path are key to defining the path forward.</p>
              </div>
             </div>  
       </div>
@@ -182,7 +182,7 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>Agency Specific Resources:</strong></p>
-                <p><a href="">Total Cost of Ownership (TCO) inclusive of support, downtime and repair costs should be weighed against just replacement cost to maximize ROI and value to the agency.</a></p>
+                <p>Total Cost of Ownership (TCO) inclusive of support, downtime and repair costs should be weighed against just replacement cost to maximize ROI and value to the agency.</p>
              </div>
             </div>  
       </div>
