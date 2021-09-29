@@ -82,7 +82,7 @@ sidenav: false
             <div class="tablet:grid-col-4 container">
             <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
                 <p class="font-sans-md margin-top-2"><strong>User Story - FAQ</strong></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf" target="_blank" title="(opens new Window)" aria-label="What have other agencies paid for a similar product or service?">What have other agencies paid for a similar product or service?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf" target="_blank" title="(opens new Window)" aria-label="What have other agencies paid for a similar product or service?">What have other agencies paid for a similar product or service?</a></p>
              </div>
             </div>  
       </div>
