@@ -28,6 +28,9 @@
                                           {% if resources.filters contains 'scrm' %}
                                            <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover scrm-border">
                                           {% endif %}
+                                          {% if resources.filters contains 'acquisition-best-practices' %}
+                                           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover acqu-best-prac-border">
+                                          {% endif %}
                                           <div class="text-container padding-1 height-full">
                                          
                                             {% if resources.filters contains 'category-management' %}
@@ -51,6 +54,9 @@
                                            {% if resources.filters contains 'scrm' %}
                                            <span class="card-tag">Supply Chain & Risk Management</span>
                                            {% endif %}
+                                           {% if resources.filters contains 'acquisition-best-practices' %}
+                                           <span class="card-tag">Acquisition Best Practices</span>
+                                           {% endif %}
                                               {% if resources.external_url %}
                                                 <a class="no-style anchor-fill" href="http://{{ resources.external_url }}" aria-label="{{ resources.title }}">
                                                 <p class="title-resources">{{ resources.title }}</p>
@@ -59,7 +65,7 @@
                                                 </a>
                                               {% endif %}
                                               {% if resources.permalink %}
-                                                <a class="no-style anchor-fill" href="{{ site.baseurl }}{{ resources.permalink  }}">
+                                                <a class="no-style anchor-fill" href="{{ site.baseurl }}{{ resources.permalink  }}" aria-label="{{ resources.title }}">
                                                 <p class="title-resources">{{ resources.title }}</p>
                                                 <p class="description-resources">{{ resources.description }}</p>
                                                 <p class="link-type">Hyperlink</p>
