@@ -20,17 +20,17 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/governmentwide-acquisition-contracts/8a-stars-ii-governmentwide-acquisition-contract-gwac"><img src="{{ site.baseurl }}/assets/images/logos/8a-STARS-II.png" alt="8a-STARS-II"></a><br />
+    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/governmentwide-acquisition-contracts/8a-stars-iii"><img src="{{ site.baseurl }}/assets/images/logos/8astars_III_final1.jpg" alt="8a-STARS-III"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
-        <p>8(a) STARS II, a small business set-aside GWAC, provides flexible access to 	customized IT solutions from a large, diverse pool of 8(a) industry partners.</p>
+        <p>8(a) STARS III is a small business set-aside GWAC that provides flexible access to customized IT solutions from a large, diverse pool of 8(a) industry partners. This next-generation GWAC builds upon the framework of 8(a) STARS II and expands capabilities for emerging technologies and outside the continental United States (OCONUS) requirements.</p>
         </div>
     </div>
 </div>
 <div class="grid-row grid-gap">
    <div class="tablet:grid-col-3">
-   <a href="https://www.gsa.gov/technology/technology-purchasing-programs/governmentwide-acquisition-contracts/8a-stars-ii-governmentwide-acquisition-contract-gwac">GSA 8(a) STARS II</a>
+   <a href="https://www.gsa.gov/technology/technology-purchasing-programs/governmentwide-acquisition-contracts/8a-stars-iii">GSA 8(a) STARS III</a>
     </div>
     <div class="tablet:grid-col-3">
       Services
