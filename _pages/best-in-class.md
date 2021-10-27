@@ -101,7 +101,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services/satellite-communications/complex-commercial-satcom-solutions-cs3"><img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="General Services Administration seal"></a><br />
+    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services/satellite-communications/complex-commercial-satcom-solutions-cs3"><img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="GSA COMSATCOM"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -132,7 +132,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services/enterprise-infrastructure-solutions"><img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="General Services Administration seal"></a><br />
+    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/telecommunications-and-network-services/enterprise-infrastructure-solutions"><img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="GSA EIS"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
@@ -165,7 +165,7 @@ sidenav: false
 <br />
 <div class="grid-row grid-gap">
     <div class="tablet:grid-col-3">
-    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology"><img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="General Services Administration seal"></a><br />
+    <a href="https://www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology"><img src="{{ site.baseurl }}/assets/images/logos/gsa-logo-sm.png" alt="GSA MAS IT"></a><br />
     </div>
         <div class="tablet:grid-col-9">
         <div>
