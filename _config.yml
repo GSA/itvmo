@@ -80,6 +80,8 @@ primary_navigation:
     url: /about/
   - name: Resources
     url: /resources/
+  - name: Community
+    url: /community/
   - name: Contact Info
     url: /contact-info/
 
