@@ -87,15 +87,52 @@ sidenav: false
               <p>It considers resource availability, funding, timeline and other constraints to execute the established plan and move the initiative forward to contract and negotiation.</p>
             </div>
             <div class="tablet:grid-col-4 container">
-            <div class="padding-x-2 radius-lg border-05 border-primary-lighter">
-                <p class="font-sans-md margin-top-2"><strong>User Story - FAQ</strong></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf">What have other agencies paid for a similar product or service?</a></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-are-the-obligations-by-BIC-and-which-agencies-use-them-508.pdf">What are the obligations by BIC and which agencies use them?</a></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf">What is the OEM and vendor spend by agency?</a></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf">What percent of products or services are provided by small businesses</a></p>
-            </div>
+              <div class="padding-x-2 radius-lg border-05 border-primary-lighter">
+                  <p class="font-sans-md margin-top-2"><strong>User Story - FAQ</strong></p>
+                  <p><a href="{{site.baseurl}}/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf">What have other agencies paid for a similar product or service?</a></p>
+                  <p><a href="{{site.baseurl}}/assets/files/tlr/What-are-the-obligations-by-BIC-and-which-agencies-use-them-508.pdf">What are the obligations by BIC and which agencies use them?</a></p>
+                  <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf">What is the OEM and vendor spend by agency?</a></p>
+                  <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf">What percent of products or services are provided by small businesses?</a></p>
+                  <p><a href="{{site.baseurl}}/assets/files/tlr/what-products-bic-solutions.pdf">What product and vendors are available via BIC solutions?</a></p>
+              </div>
             </div>  
       </div>
+      <section class="grid-row grid-gap margin-top-4">
+          <div class="grid-col-12 tablet:grid-col-6">
+            <div class="bg-primary-lighter padding-105">
+              <h4 class="margin-0">Tools, Utilities, and Dashboards</h4>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://d2d.gsa.gov/report/acquisition-analytics">Acquisition Analytics</a></strong></p>
+              <p class="margin-top-05">A D2D dashboard that provides cost analysis by vendor and product. It is useful in determining historical vendor product pricing.</p>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://d2d.gsa.gov/report/cm-reporting-workbench-cmr-new">CM Reporting Workbench</a></strong></p>
+              <p class="margin-top-05">The Category Management Reporting Workbench allows the user to explore waards, contract inventory, small business comparisons and other analytics</p>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://d2d.gsa.gov/report/small-business-dashboard">Small Business Dashboard</a></strong></p>
+              <p class="margin-top-05">The Small Business Dashboard provides a means to view the performance of small businesses in the government.</p>
+            </div>
+          </div>
+          <div class="grid-col-12 tablet:grid-col-6">
+            <div class="bg-primary-lighter padding-105">
+              <h4 class="margin-0">Informational Resources</h4>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://www.dau.edu/cop/ace/DAU%20Sponsored%20Documents/DoD_IGCE_for_SA_Handbook.pdf">IGCE Handbook for Services Acquisition</a></strong></p>
+              <p class="margin-top-05">DoD handbook on Independent Government Cost Estimate (IGCE).</p>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://event.nps.edu/conf/app/researchsymposium/unsecured/file/553/SYM-AM-19-085_Panel%2026_Leary.pdf">Information Technology Acquisition Best Practices</a></strong></p>
+              <p class="margin-top-05">A report that provides recommendations for best practices, frameworks, and models that will improve IT acquisitions and modernization efforts for network services.</p>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://techfarhub.cio.gov/handbook/">TechFAR Handbook</a></strong></p>
+              <p class="margin-top-05">This is USDS' handbook on procuring agile software development.</p>
+            </div>
+          </div>
+        </section>
       </div>
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
@@ -111,12 +148,38 @@ sidenav: false
             </p>
             </div>
             <div class="tablet:grid-col-4 container">
-            <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
+            <div class="padding-x-2 radius-lg border-05 border-primary-lighter">
                 <p class="font-sans-md margin-top-2"><strong>User Story - FAQ</strong></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf" target="_blank" aria-label="What have other agencies paid for a similar product or service?">What have other agencies paid for a similar product or service?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf" target="_blank">What have other agencies paid for a similar product or service?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/agency-duplicate-contracts.pdf" target="_blank">Does my agency have any duplicative contracts, or multiple contracts with the same vendor for similar services?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/how-much-agency-bic-contracts.pdf" target="_blank">How much does my agency utilize small business via BIC contracts?</a></p>
              </div>
             </div>  
       </div>
+      <section class="grid-row grid-gap margin-top-4">
+          <div class="grid-col-12 tablet:grid-col-6">
+            <div class="bg-primary-lighter padding-105">
+              <h4 class="margin-0">Tools, Utilities, and Dashboards</h4>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://d2d.gsa.gov/report/acquisition-analytics">Acquisition Analytics</a></strong></p>
+              <p class="margin-top-05">A D2D dashboard that provides cost analysis by vendor and product. It is useful in determining historical vendor product pricing.</p>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://d2d.gsa.gov/report/cm-reporting-workbench-cmr-new">CM Reporting Workbench</a></strong></p>
+              <p class="margin-top-05">The Category Management Reporting Workbench allows the user to explore waards, contract inventory, small business comparisons and other analytics</p>
+            </div>
+          </div>
+          <div class="grid-col-12 tablet:grid-col-6">
+            <div class="bg-primary-lighter padding-105">
+              <h4 class="margin-0">Informational Resources</h4>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://www.acquisition.gov/far/part-15#FAR_15_405">FAR Part 15 15.405 Price Negotiation</a></strong></p>
+              <p class="margin-top-05">FAR part 15.Sections 405 and 408 provide details on price negotiation, solicitation provisions and contract clauses - fee incentives.</p>
+            </div>
+          </div>
+        </section>
       </div>
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
@@ -131,7 +194,7 @@ sidenav: false
             <p><strong>NOTE:</strong> Links to additional government wide resources will be shown as they become available.</p>
             </div>
             <div class="tablet:grid-col-4 container">
-            <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
+            <div class="padding-x-2 radius-lg border-05 border-primary-lighter">
                 <p class="font-sans-md margin-top-2"><strong>Agency Specific Resources:</strong></p>
                 <p>Agency specific CMDB, inventory management systems or asset databases will be valuable resources for this stage.</p>
              </div>
@@ -148,15 +211,38 @@ sidenav: false
         <div class="grid-row">
             <div class="tablet:grid-col-8 padding-right-2">
             <p>Implementation consists of all the items related to deployment and achieving steady state. This would include all types of quality assurance, regression testing, performance testing, acceptance testing and preparation of production environments. It provides a plan and roadmap that takes the initiative to the point where it is in use and provides value to the organization. Communication to the impacted constituents is critical to the success of the implementation. Whether it is an enterprise-wide system replacement, network speed, architecture change, or simply provisioning a license, the constituents must be informed of the schedule, trained appropriately and understand the impact. The results and execution of the change management plans from the integration stage are critical to the success of the actual deployment.</p>
-            <p><strong>NOTE:</strong> Links to additional government wide resources will be shown as they become available.</p>
             </div>
             <div class="tablet:grid-col-4 container">
-            <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
+            <div class="padding-x-2 radius-lg border-05 border-primary-lighter">
                 <p class="font-sans-md margin-top-2"><strong>Agency Specific Resources:</strong></p>
                 <p>Agency specific PPM tools, project plans and change management plans will be valuable resources for this stage.</p>
              </div>
             </div>  
       </div>
+        <section class="grid-row grid-gap margin-top-4">
+          <div class="grid-col-12 tablet:grid-col-6">
+            <div class="bg-primary-lighter padding-105">
+              <h4 class="margin-0">Tools, Utilities, and Dashboards</h4>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://d2d.gsa.gov/report/cm-reporting-workbench-cmr-new">CM Reporting Workbench</a></strong></p>
+              <p class="margin-top-05">The Category Management Reporting Workbench allows the user to explore waards, contract inventory, small business comparisons and other analytics</p>
+            </div>
+          </div>
+          <div class="grid-col-12 tablet:grid-col-6">
+            <div class="bg-primary-lighter padding-105">
+              <h4 class="margin-0">Informational Resources</h4>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://www.dau.edu/cop/it/DAU%20Sponsored%20Documents/Contracting%20Considerations%20for%20Agile%20Solutions%20v1.0.pdf">Contracting Considerations for Agile Solutions</a></strong></p>
+              <p class="margin-top-05">Key Agile Concepts and Sample Work Statement Language.</p>
+            </div>
+            <div class="padding-left-105 margin-bottom-4">
+              <p class="margin-bottom-0"><strong><a href="https://tech.gsa.gov/playbooks/tbm/">CTechnology Business Management Playbook</a></strong></p>
+              <p class="margin-top-05">2019 playbook on how to implement TBM in the federal government.</p>
+            </div>
+          </div>
+        </section>
       </div>
        <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
@@ -171,7 +257,7 @@ sidenav: false
             <p><strong>NOTE:</strong> Links to additional government wide resources will be shown as they become available.</p>
             </div>
             <div class="tablet:grid-col-4 container">
-            <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
+            <div class="padding-x-2 radius-lg border-05 border-primary-lighter">
                 <p class="font-sans-md margin-top-2"><strong>Agency Specific Resources:</strong></p>
                 <p>Agency specific support tools, ticketing systems and incident response play an important role within this stage. Data from these systems can provide useful metrics for understanding vendor and product performance.</p>
              </div>
@@ -191,7 +277,7 @@ sidenav: false
             <p><strong>NOTE:</strong> Links to additional government wide resources will be shown as they become available.</p>
             </div>
             <div class="tablet:grid-col-4 container">
-            <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
+            <div class="padding-x-2 radius-lg border-05 border-primary-lighter">
                 <p class="font-sans-md margin-top-2"><strong>Agency Specific Resources:</strong></p>
                 <p>Understanding the dependencies from an agency specific CMDB and aligning to the vendor roadmap or upgrade path are key to defining the path forward.</p>
              </div>
@@ -211,7 +297,7 @@ sidenav: false
             <p><strong>NOTE:</strong> Links to additional government wide resources will be shown as they become available.</p>
             </div>
             <div class="tablet:grid-col-4 container">
-            <div class="padding-x-2 radius-lg" style="background-color: #d9e8f6; padding-top: 3px; padding-bottom: 3px;">
+            <div class="padding-x-2 radius-lg border-05 border-primary-lighter">
                 <p class="font-sans-md margin-top-2"><strong>Agency Specific Resources:</strong></p>
                 <p>Total Cost of Ownership (TCO) inclusive of support, downtime and repair costs should be weighed against just replacement cost to maximize ROI and value to the agency.</p>
              </div>
