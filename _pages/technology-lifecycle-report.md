@@ -92,7 +92,7 @@ sidenav: false
                   <p><a href="{{site.baseurl}}/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf">What have other agencies paid for a similar product or service?</a></p>
                   <p><a href="{{site.baseurl}}/assets/files/tlr/What-are-the-obligations-by-BIC-and-which-agencies-use-them-508.pdf">What are the obligations by BIC and which agencies use them?</a></p>
                   <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf">What is the OEM and vendor spend by agency?</a></p>
-                  <p><a href="{{site.baseurl}}/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf">What percent of products or services are provided by small businesses?</a></p>
+                  <p><a href="{{site.baseurl}}/assets/files/tlr/percent-product-services-small-business.pdf">What percent of products or services are provided by small businesses?</a></p>
                   <p><a href="{{site.baseurl}}/assets/files/tlr/what-products-bic-solutions.pdf">What product and vendors are available via BIC solutions?</a></p>
               </div>
             </div>  
