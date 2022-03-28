@@ -108,7 +108,7 @@ sidenav: false
             </div>
             <div class="padding-left-105 margin-bottom-4">
               <p class="margin-bottom-0"><strong><a href="https://d2d.gsa.gov/report/cm-reporting-workbench-cmr-new">CM Reporting Workbench</a></strong></p>
-              <p class="margin-top-05">The Category Management Reporting Workbench allows the user to explore waards, contract inventory, small business comparisons and other analytics</p>
+              <p class="margin-top-05">The Category Management Reporting Workbench allows the user to explore awards, contract inventory, small business comparisons and other analytics</p>
             </div>
             <div class="padding-left-105 margin-bottom-4">
               <p class="margin-bottom-0"><strong><a href="https://d2d.gsa.gov/report/small-business-dashboard">Small Business Dashboard</a></strong></p>
@@ -238,7 +238,7 @@ sidenav: false
               <p class="margin-top-05">Key Agile Concepts and Sample Work Statement Language.</p>
             </div>
             <div class="padding-left-105 margin-bottom-4">
-              <p class="margin-bottom-0"><strong><a href="https://tech.gsa.gov/playbooks/tbm/">CTechnology Business Management Playbook</a></strong></p>
+              <p class="margin-bottom-0"><strong><a href="https://tech.gsa.gov/playbooks/tbm/">Technology Business Management Playbook</a></strong></p>
               <p class="margin-top-05">2019 playbook on how to implement TBM in the federal government.</p>
             </div>
           </div>
