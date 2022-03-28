@@ -226,7 +226,7 @@ sidenav: false
             </div>
             <div class="padding-left-105 margin-bottom-4">
               <p class="margin-bottom-0"><strong><a href="https://d2d.gsa.gov/report/cm-reporting-workbench-cmr-new">CM Reporting Workbench</a></strong></p>
-              <p class="margin-top-05">The Category Management Reporting Workbench allows the user to explore waards, contract inventory, small business comparisons and other analytics</p>
+              <p class="margin-top-05">The Category Management Reporting Workbench allows the user to explore awards, contract inventory, small business comparisons and other analytics</p>
             </div>
           </div>
           <div class="grid-col-12 tablet:grid-col-6">
