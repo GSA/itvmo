@@ -2,7 +2,11 @@
 
 ## Overview
 
-ITVMO.gov is built using Federalist, which runs on the static stie generator Jekyll. The local environment can be set up using just Jekyll, no need for docker even though it's included in Federalist. Always cut a new feature branch from main when developing, pushing up changes to your feature branch creates a Federalist link that can be shared. Once a feature branch is merged with main, all changes from that branch will be pushed to production.
+ITVMO.gov is built using Federalist, which runs on the static stie generator Jekyll. The local environment can be set up using just Jekyll, no need for docker even though it's included in Federalist. 
+
+## Pushing Changes
+
+Always cut a new feature branch from main when developing, pushing up changes to your feature branch creates a Federalist link that can be shared. Once a feature branch is merged with main, all changes from that branch will be pushed to production.
 
 ## Jekyll and Ruby
 
