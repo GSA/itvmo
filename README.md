@@ -2,7 +2,7 @@
 
 ## Overview
 
-ITVMO.gov is built using Federalist, which runs the static stie generator [Jekyll](https://jekyllrb.com/). The local environment can be set up using just Jekyll, no need for docker even though it's included in Federalist. 
+ITVMO.gov is built using Federalist and USWDS, which runs the static stie generator [Jekyll](https://jekyllrb.com/). The local environment can be set up using just Jekyll, no need for docker even though it's included in Federalist. 
 
 ## Pushing Changes
 
@@ -20,7 +20,7 @@ Install [bundler](https://bundler.io/) on your machine. This is a package manage
 
 ### Node and NPM
 
-There are many guides out there for installing Node and it's package manager NPM. Once it's on your system, run `npm install` from the root of your project. This installs the dependencies needed for USWDS to run as intended in the project.
+There are many guides out there for installing Node and it's package manager NPM. Once it's on your system, run `npm install` from the root of your project. This installs the dependencies needed for USWDS to run as intended in the project. You don't need to keep Node or NPM running in the background or do anything with the `package.json` file. 
 
 ## Installing the Project Files
 
