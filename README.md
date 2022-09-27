@@ -8,7 +8,9 @@ ITVMO.gov is built using Federalist, which runs the static stie generator [Jekyl
 
 Always cut a new feature branch from main when developing, pushing up changes to your feature branch creates a Federalist link that can be shared internally with clients. Once a feature branch is merged with main, all changes from that branch will be pushed to production.
 
-## Jekyll and Ruby
+## Installing Dependencies
+
+### Ruby Version
 
 Jekyll is a static site generator built using Ruby. This project uses a specific version outlined in `.ruby-version` at the project root, and in the `Gemfile`. On windows you must have ruby installed, MacOS it already comes pre-installed. On Mac, the `.ruby-version` file only works with [rbenv](https://github.com/rbenv/rbenv), install that and then from the project root run `rbenv local` which will add the corresponding version to your project.
 
@@ -16,10 +18,14 @@ Jekyll is a static site generator built using Ruby. This project uses a specific
 
 Install [bundler](https://bundler.io/) on your machine. This is a package manager for all your ruby gems and relies on the `Gemfile` to make your project work and fires up the local environment.
 
-## Installing the Project
+### Node and NPM
+
+There are many guides out there for installing Node and it's package manager NPM. Once it's on your system, run `npm install` from the root of your project. This installs the dependencies needed for USWDS to run as intended in the project.
+
+## Installing the Project Files
 
 - Run the command `bundle install` from the project root to pull down all of the gems that Jekyll needs to get started.
-- Run the command `bundle exec jekyll serve --watch` which will start the development server.
+- Run the command `bundle exec jekyll serve --watch` which will start the development server. Always run with the `--watch` flag as this re-builds on changes and makes your files production ready.
 - Don't touch files in the `_site` directory, this gets built out every time a change is made. 
 
 ## Project Files
