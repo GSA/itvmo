@@ -12,7 +12,7 @@ Always cut a new feature branch from main when developing, pushing up changes to
 
 ### Ruby Version
 
-Jekyll is a static site generator built using Ruby. This project uses a specific version outlined in `.ruby-version` at the project root, and in the `Gemfile`. On windows you must have ruby installed, MacOS it already comes pre-installed. On Mac, the `.ruby-version` file only works with [rbenv](https://github.com/rbenv/rbenv), install that and then from the project root run `rbenv local` which will add the corresponding version to your project. You don't need this for Windows.
+Jekyll is a static site generator built using Ruby. This project uses a specific version outlined in `.ruby-version` at the project root, and in the `Gemfile`. On windows you must have ruby installed manually, MacOS it already comes pre-installed. **On Mac**, the `.ruby-version` file only works with [rbenv](https://github.com/rbenv/rbenv), install that and then from the project root run `rbenv local` which will add the corresponding version to your project. You don't need this for Windows, use [RVM](https://rvm.io/) instead which can switch between versions on Windows.
 
 ### Bundler
 
