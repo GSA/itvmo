@@ -153,10 +153,8 @@ sidenav: false
                 <p><a href="{{site.baseurl}}/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf" target="_blank">What have other agencies paid for a similar product or service?</a></p>
                 <p><a href="{{site.baseurl}}/assets/files/tlr/agency-duplicate-contracts.pdf" target="_blank">Does my agency have any duplicative contracts, or multiple contracts with the same vendor for similar services?</a></p>
                 <p><a href="{{site.baseurl}}/assets/files/tlr/how-much-agency-bic-contracts.pdf" target="_blank">How much does my agency utilize small business via BIC contracts?</a></p>
-
-
-                <p><a href="{{site.baseurl}}/assets/files/tlr/A-Guide-to-Finding-SDB-Vendors.pdf" target="_blank">How to find Small Disadvantaged Businesses on Bic contracts?</a></p>
-                <p><a href="{{site.baseurl}}/assets/files/tlr/A-Guide-to-Finding-Vendors-Specializing-in-an-IT-Subcategory.pdf" target="_blank">How to find Vendors Specializing in an IT Subcategory</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/A-Guide-to-Finding-SDB-Vendors.pdf" target="_blank">How can I list Small Disadvantaged Business (SDB) vendors?</a></p>
+                <p><a href="{{site.baseurl}}/assets/files/tlr/A-Guide-to-Finding-Vendors-Specializing-in-an-IT-Subcategory.pdf" target="_blank">How to find Vendors Specializing in an IT Subcategory?</a></p>
 
              </div>
             </div>  
