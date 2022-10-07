@@ -18,7 +18,7 @@ sidenav: false
         </a></li>
         <li><a href="https://www.google.com/" style="text-decoration: none">
         What are common best practices for AWS products and services?
-        </a><</li>
+        </a></li>
         <li><a href="https://www.google.com/" style="text-decoration: none">
         How can I participate in a OEM working group or cohort?
         </a></li>
@@ -54,7 +54,10 @@ sidenav: false
     </p>
 </div>  
 </section>
+
+<section class="grid-container padding-left-0 padding-right-1">
 <p><strong>Don’t see what you’re looking for?</strong><br>
-If your question is not addressed in the above sections, please email us <br> at: <a href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a> and we will get back to you with an answer.</p>
+If your question is not addressed in the above sections, please email us at: <a href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a> and we will get back to you with an answer.</p>
+</section>
 
 
