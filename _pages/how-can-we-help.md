@@ -13,27 +13,27 @@ sidenav: false
     <h2>I am a government acquisition specialist.</h2>
     <p>
       <ol type="1">
-        <li><a href="https://www.google.com/" style="text-decoration: none">
+        <li><a href="" style="text-decoration: none">
+        How can I participate in a OEM working group or cohort?
+        </a></li>
+        <li><a href="https://community.max.gov/display/Egov/2.+Microsoft" style="text-decoration: none">
         How do I prepare for an agency-wide transition from G3 to G5 microsoft solution?
         </a></li>
-        <li><a href="https://www.google.com/" style="text-decoration: none">
-        What are common best practices for AWS products and services?
-        </a></li>
-        <li><a href="https://www.google.com/" style="text-decoration: none">
-        How can I participate in a OEM working group or cohort?
+        <li><a href="https://itvmo.gsa.gov/technology-lifecycle-report/" style="text-decoration: none">
+        What data reports are available to guide my acquisition planning?
         </a></li>
       </ol>
     </p>
     <h2>I am a technology user.</h2>
     <p>
       <ol type="1">
-        <li><a href="https://www.google.com/" style="text-decoration: none">
+        <li><a href="https://itvmo.gsa.gov/best-in-class/" style="text-decoration: none">
         What vehicles have cloud services and products?
         </a></li>
-        <li><a href="https://www.google.com/" style="text-decoration: none">
+        <li><a href="https://itvmo.gsa.gov/leading-edge-tech-report/" style="text-decoration: none">
         What are the latest emerging technology trends?
         </a></li>
-        <li><a href="https://www.google.com/" style="text-decoration: none">
+        <li><a href="https://itvmo.gsa.gov/exec-order-nations-cybersecurity/" style="text-decoration: none">
         What resources exist for the recent Cyber EO?
         </a></li>
       </ol>
@@ -41,13 +41,13 @@ sidenav: false
     <h2>I am a vendor.</h2>
     <p>
       <ol type="1">
-        <li><a href="https://www.google.com/" style="text-decoration: none">
+        <li><a href="https://itvmo.gsa.gov/resources/#subject=.small-business-intelligence&role=*" style="text-decoration: none">
         I am a small business, what resources exist to help my business gain entry to the marketplace?
         </a></li>
-        <li><a href="https://www.google.com/" style="text-decoration: none">
+        <li><a href="" style="text-decoration: none">
         How can I get an award on a BIC vehicle?
         </a></li>
-        <li><a href="https://www.google.com/" style="text-decoration: none">
+        <li><a href="" style="text-decoration: none">
         How can my company be selected for a vendor assessment?
         </a></li>
       </ol>
