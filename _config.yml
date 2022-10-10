@@ -84,8 +84,6 @@ primary_navigation:
     url: /community/
   - name: Contact Info
     url: /contact-info/
-  - name: How can we help?
-    url: /how-can-we-help/
 
 secondary_navigation:
   - name: Contact Us
