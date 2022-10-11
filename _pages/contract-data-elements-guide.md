@@ -25,9 +25,9 @@ Value-add:
 </div>  
 </section>
 
+<section class="grid-container padding-left-0 padding-right-1">
 <div class="usa-accordion">
-<h2></h2>
-
+<br>
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
@@ -251,15 +251,57 @@ Used to determine adherence to “Buy American Act (See FAR 25.1).
       <div id="b-a3" class="usa-accordion__content" hidden="">
       <div class="grid-row">
             <div class="tablet:grid-col-8 padding-right-2">
-            <p></p>
-            <p></p>
+            <!-- <div class="tablet:grid-col-8 padding-right-2"> -->
+
+                <h3>
+                    Small Business & Common/Defense-Centric Spend
+                </h3>
+              <p>
+                The
+                <a href = "https://d2d.gsa.gov/report/small-business-dashboard"> 
+                Small Business Dashboard
+                </a> provides small business
+                designations as well as
+                vendor-attribute designations based
+                on the vendor information and
+                socio-economic flags.
+              </p>
+                <h3>
+                    Agency Profile Report (APR) 2.0
+                </h3>
+              <p>
+                By using 
+                <a href = "https://login.max.gov/cas/login?service=https%3A//d2d.gsa.gov/cas%3Fdestination%3Dnode/9585&securityLevel=securePlus2&renew=true"> 
+                Agency Profile Report (2.0)
+                </a>, agencies are able to: <br>
+                <ul>
+                  <li> 
+                    View spend by Vendor, Contract Type, or Cost Category.
+                  </li> 
+                  <li> 
+                    Compare Total Obligations YoY and Spend Under Management.
+                  </li> 
+                  <li> 
+                     Understand the overall quality of the data for compliance and accuracy.
+                  </li> 
+                  It provides an overall summary of acquisitions by Department and enables peer to peer or Government-wide comparisons.
+
+                </ul>
+
+
+              </p>
 
             </div>
-            <div class="tablet:grid-col-4 container">
-            </div>
+
+            <!-- <div class="padding-x-2 radius-lg border-05 border-primary-lighter">
+                <img class="" src="{{site.baseurl}}/assets/images/screenshot/smal-business-common-centric-spend.png" alt="General Services Administration seal">
+             </div> -->
+
 
       </div>
       </div>
 </div>
+<br>
+</section>
 
 
