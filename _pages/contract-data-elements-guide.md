@@ -11,17 +11,35 @@ sidenav: false
 
 <div class="margin-bottom-2">
 
-<p>The Chief Information Officer’s (CIO) Council and GSA’s Office of Government-wide Policy (OGP) along with the IT Vendor Management Office (ITVMO) and the Federal Technology Investment Management Community of Practice (FTIM CoP), which is committed to maturing the level of integration with Technology Business Management (TBM) and IT Portfolio Management in the federal government, commissioned the following study to enable consistency for agencies to consider as they draft contracts for IT spending. The following sections within this guide are independent and can be referenced based on stakeholder needs.
-</p>
+<div class="blue-bold">
+  <p>
+  Currently, <b>contract data does not accurately represent spending on IT products and services</b>. This is in part due to issues with data inputs that do not provide an appropriate representation of the IT products and services that are being purchased, which limits the ability to provide meaningful analytics and reporting.
+  </p>
+  <p>
+  Understanding these fields and the downstream impacts to information that is reported can help stakeholders improve the quality of their inputs to contract writing and purchasing processes. As a result, the <b>proper entry of codes and descriptions</b> provided by users during the acquisitions process will <b>enhance data quality</b>.
+  </p>
+  <p>
+  Stakeholders need the ability to <b>analyze spending based on reliable data</b>, in order to support data driven decisions and manage the complexities of IT spending.
+  </p>
+  <p>
+  <form action="../assets/files/Contract-Data-Elements-Guidance_TBM_Final.pdf">
+      <input id="pdfDownload" type="submit" value="Contract Data Elements Guidance report" />
+  </form>
+  </p>
+</div>
 
-<h3>
-Value-add:
-</h3>
-<ol type="1">
-  <li>Two-way communication with government and the IT marketplace’s top OEMs</li>
-  <li>Discovery of “win-win” solutions for government and industry</li>
-  <li>Creates incentives for both sides to participate and contribute to govwide solutions</li>
-</ol>
+<h2>
+<u>Purpose</u>
+</h2>
+<p>
+<b>Cost Transparency</b> | Identify components and contributors that enhance cost transparency and management of IT spend.
+</p>
+<p>
+<b>Better Data</b> | Develop guidance to help stakeholders understand the uses of contract data and how to improve the information that can be derived from them.
+</p>
+<p>
+<b>Insights</b> | Provide sample insights into current spending based on updated PSCs and key data points. Supports more informed and focused purchasing decisions.
+</p>
 </div>  
 </section>
 
