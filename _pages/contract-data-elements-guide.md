@@ -22,9 +22,7 @@ sidenav: false
   Stakeholders need the ability to <b>analyze spending based on reliable data</b>, in order to support data driven decisions and manage the complexities of IT spending.
   </p>
   <p>
-  <form action="../assets/files/Contract-Data-Elements-Guidance_TBM_Final.pdf">
-      <input id="pdfDownload" type="submit" value="Contract Data Elements Guidance report" />
-  </form>
+  <a href ="../assets/files/Contract-Data-Elements-Guidance_TBM_Final.pdf" attributes-list download ="Contract Data Elements Guidance TBM Final" > <input id="pdfDownload" type="submit" attributes-list download ="optional-value" value="Contract Data Elements Guidance report.pdf" /> </a> 
   </p>
 </div>
 
@@ -49,7 +47,7 @@ sidenav: false
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
-          Data Sources
+          Data Source
         </button>
       </h3>
       <div id="b-a1" class="usa-accordion__content" hidden="">
@@ -67,24 +65,12 @@ sidenav: false
             government uses the reported FPDS data to measure
             and assess the impact of federal procurement.
             </p>
-
-              <a href = "https://d2d.gsa.gov/report/government-wide-category-management-contract-management-and-operational-reporting-tools">
-              <h3>
-                  Category Management Dashboards (Data 2 Decisions - D2D)
-              </h3>
-            </a>
             <p>
-                Category Management Dashboards use Tableau on the
-                D2D platform to create rich visualizations. The data is
-                sourced from the Federal Acquisition Service (FAS)
-                Procurement Tables, based primarily from the FPDS
-                data source, but also enriched with contract and
-                categorization data.
-                These dashboards are available to all stakeholders.
-                They provide a multitude of perspectives and filtering
-                capabilities that empower stakeholders to perform
-                traditional and advanced analytics, ranging from agency
-                specific to government-wide.
+            FPDS contains more than 150 data elements. This guide 
+            focuses on the data elements that have the most impact
+            on downstream analysis of IT obligations. The elements
+            in the below sections are those that are most frequently
+            used by the analytical tools shown in the dashboard analytics section
             </p>
 
 
@@ -95,12 +81,11 @@ sidenav: false
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">
-          Data Elements Reference Guide
+          Data Elements - Cost/POP
         </button>
       </h3>
       <div id="b-a2" class="usa-accordion__content" hidden="">
       <div class="grid-row">
-      <!-- first table -->
           <table class="styled-table">
               <thead>
                   <tr>
@@ -109,18 +94,6 @@ sidenav: false
                   </tr>
               </thead>
               <tbody>
-                  <tr>
-                      <td>Total Obligated Amount</td>
-                      <td>System generated total that identifies the amount of the contract that has
-been <b>ordered or received, but which has not been disbursed</b>.
-                          <ul>
-                            <li> 
-                              Sum of all amounts entered in “Action Obligation” field for particular PIID and Agency. Ensure accurate amounts are entered.
-                            </li> 
-                          </ul>
-                      </td>
-                  </tr>
-
                   <tr>
                       <td>Period of Performance (PoP) Dates</td>
                       <td>Ensure accurate date is entered and broken out into line items for specific
@@ -141,6 +114,27 @@ entire contract, to include all options of other modifications.
                           </ul>
                       </td>
                   </tr>
+                  
+                  <tr>
+                      <td>Referenced IDV</td>
+                      <td>
+                        <b>Do not omit</b> if contract is a <b>derivative</b>.
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td>Total Obligated Amount</td>
+                      <td>System generated total that identifies the amount of the contract that has
+been <b>ordered or received, but which has not been disbursed</b>.
+                          <ul>
+                            <li> 
+                              Sum of all amounts entered in “Action Obligation” field for particular PIID and Agency. Ensure accurate amounts are entered.
+                            </li> 
+                          </ul>
+                      </td>
+                  </tr>
+
+
 
                   <tr>
                       <td>Unit Price and Quantity</td>
@@ -182,16 +176,18 @@ issue (Ex - each switch costs $2,000); avoid using $1 for unit price.
                       </td>
                   </tr>
 
-                  <tr>
-                      <td>Referenced IDV</td>
-                      <td>
-                        <b>Do not omit</b> if contract is a <b>derivative</b>.
-                      </td>
-                  </tr>
-
               </tbody>
           </table>
-          <!-- second table -->
+      </div>
+      </div>
+      <!-- Use the accurate heading level to maintain the document outline -->
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3">
+          Data Elements - Entity/Contract Type
+        </button>
+      </h3>
+      <div id="b-a3" class="usa-accordion__content" hidden="">
+      <div class="grid-row">
           <table class="styled-table">
               <thead>
                   <tr>
@@ -200,38 +196,6 @@ issue (Ex - each switch costs $2,000); avoid using $1 for unit price.
                   </tr>
               </thead>
               <tbody>
-                  <tr>
-                      <td>Socio-economic Designations</td>
-                      <td>
-                          Flags vendors by <b>special interest groups and type of small business.
-                          Select all applicable</b> small business fields.
-                      </td>
-                  </tr>
-
-                  <tr>
-                      <td>Small Business Designations</td>
-                      <td>
-                        Don’t forget “<b>CO Size Determination</b>” even if not a small business (select “Other than Small”)
-                      </td>
-                  </tr>
-
-                  <tr>
-                      <td>Vendor Information</td>
-                      <td>Ensure <b>consistent input of Vendor Name</b> for proper analytics; can
-reference Unique Entity Identifier (UEI #), but for large businesses, there can still be multiple options.
-                          <ul>
-                            <li> 
-                              Vendor is the entity from which the product or service is being purchased.
-                            </li> 
-                            <li> 
-                              <b>Differentiated from Original Equipment Manufacturer (OEM)</b>
-                              who performs the primary activities to manufacture the goods or
-                              derives at least 40% of its revenues from the services provided.
-                            </li> 
-                          </ul>
-                      </td>
-                  </tr>
-
                   <tr>
                       <td>Place of Manufacture</td>
                       <td>
@@ -249,9 +213,38 @@ Used to determine adherence to “Buy American Act (See FAR 25.1).
                       </td>
                   </tr>
                   <tr>
+                      <td>Small Business Designations</td>
+                      <td>
+                        Don’t forget “<b>CO Size Determination</b>” even if not a small business (select “Other than Small”)
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Socio-economic Designations</td>
+                      <td>
+                          Flags vendors by <b>special interest groups and type of small business.
+                          Select all applicable</b> small business fields.
+                      </td>
+                  </tr>
+                  <tr>
                       <td>State of Incorporation</td>
                       <td>
                         Identify the state the business is <b>registered</b> in.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Vendor Information</td>
+                      <td>Ensure <b>consistent input of Vendor Name</b> for proper analytics; can
+reference Unique Entity Identifier (UEI #), but for large businesses, there can still be multiple options.
+                          <ul>
+                            <li> 
+                              Vendor is the entity from which the product or service is being purchased.
+                            </li> 
+                            <li> 
+                              <b>Differentiated from Original Equipment Manufacturer (OEM)</b>
+                              who performs the primary activities to manufacture the goods or
+                              derives at least 40% of its revenues from the services provided.
+                            </li> 
+                          </ul>
                       </td>
                   </tr>
 
@@ -259,16 +252,107 @@ Used to determine adherence to “Buy American Act (See FAR 25.1).
           </table>
       </div>
       </div>
+      <!-- Use the accurate heading level to maintain the document outline -->
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a4">
+          Data Elements - Technology Categorization
+        </button>
+      </h3>
+      <div id="b-a4" class="usa-accordion__content" hidden="">
+      <div class="grid-row">
+          <table class="styled-table">
+              <thead>
+                  <tr>
+                      <th>Technology Categorization</th>
+                      <th>Guidance on Completing</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Description of Requirement</td>
+                      <td>
+                          Description of Requirement field should be <b>detailed and
+                          consist of keywords that describe what is being purchased</b>.
+                          Used for various filtering, sorting, and categorization of spend.
+                          <br><br>
+                          Add details describing the following:
+                          <ul>
+                            <li><b>Who</b> - Clearly identify the party providing services/products, including OEMs, vendors, and resellers.</li>
+                            <li><b>What</b> - Clearly identify what is to be delivered or service
+                            performed; use sublines to differentiate components and list each
+                             deliverable product or service separately (i.e. - hardware vs. software vs. service).</li>
+                            <li>For modifications, add the details of <b>what is being adjusted/appended to original description</b>.</li>
+                          </ul>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td>Principal NAICS Code</td>
+                      <td>
+                        NAICS Codes <b>designate the major sectors of the economies</b> of Mexico,
+                        Canada and the US for a given business entity.
+                        It is used for <b>statistical analysis</b> and to determine <b>eligibility for specific
+                        government contracts and certify businesses by industry type</b>. 
+
+                        <ul>
+                            <li>Select code used in the solicitation.</li>
+                            <li>Identify primary business activity.</li>
+                            <li>The <a href = "https://navigator.gsa.gov/app/#/home">IT Solutions</a> Navigator provides guidance to customers on selecting
+                              the best solutions from GSA’s IT offerings; suggests solutions based on
+                              PSC, NAICS and key words and will provide mappings between PSCs
+                              and NAICS codes.</li>
+                        </ul>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td>Product Service Code(PSC)</td>
+                      <td><b>Select most accurate PSC</b> to reflect the scope of contract. Resources to help with proper selection: 
+                          <ul>
+                            <li> 
+                              <a href = "https://psctool.us/mappings">PSC Selection Tool</a>
+                            </li> 
+                            <li> 
+                              <a href = "https://dau.csod.com/phnx/driver.aspx?routename=Learning/Curriculum/CurriculumPlayer&TargetUser=980420&curriculumLoId=9bf476bc-e1fe-4de9-8328-8c28c7c1dbe0&isCompletionRedirect=true&loStatus=32&regnum=1">PSC Training</a>
+                            </li> 
+                            <li> 
+                              <a href = "https://www.federalregister.gov/documents/2017/01/13/2016-31495/federal-acquisition-regulation-uniform-use-of-line-items">FAR Rule</a>
+                            </li> 
+                          </ul>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      </div>
 
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a5">
           Dashboard Analytics
         </button>
       </h3>
-      <div id="b-a3" class="usa-accordion__content" hidden="">
+      <div id="b-a5" class="usa-accordion__content" hidden="">
       <div class="grid-row">
-            <div class="tablet:grid-col-8 padding-right-2">
+            <div class=" padding-right-2">
+              <a href = "https://d2d.gsa.gov/report/government-wide-category-management-contract-management-and-operational-reporting-tools">
+              <h3>
+                  Category Management Dashboards (Data 2 Decisions - D2D)
+              </h3>
+            </a>
+            <p>
+                Category Management Dashboards use Tableau on the
+                D2D platform to create rich visualizations. The data is
+                sourced from the Federal Acquisition Service (FAS)
+                Procurement Tables, based primarily from the FPDS
+                data source, but also enriched with contract and
+                categorization data.
+                These dashboards are available to all stakeholders.
+                They provide a multitude of perspectives and filtering
+                capabilities that empower stakeholders to perform
+                traditional and advanced analytics, ranging from agency
+                specific to government-wide.
+            </p>
             <!-- <div class="tablet:grid-col-8 padding-right-2"> -->
 
                 <h3>
@@ -302,11 +386,10 @@ Used to determine adherence to “Buy American Act (See FAR 25.1).
                   <li> 
                      Understand the overall quality of the data for compliance and accuracy.
                   </li> 
-                  It provides an overall summary of acquisitions by Department and enables peer to peer or Government-wide comparisons.
-
                 </ul>
-
-
+              </p>
+              <p>
+               It provides an overall summary of acquisitions by Department and enables peer to peer or Government-wide comparisons.
               </p>
 
             </div>
