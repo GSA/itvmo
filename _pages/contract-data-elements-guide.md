@@ -81,10 +81,13 @@ sidenav: false
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">
-          Data Elements - Cost/POP
+          Data Elements - Cost/PoP
         </button>
       </h3>
       <div id="b-a2" class="usa-accordion__content" hidden="">
+      <p>
+        This section of the guide provides a list of common fields that are related to cost or period of performance (PoP) during the acquisitions process. It provides specific terms of the contract and how best to complete the fields to enable more detailed analytics, such as benchmarking.
+      </p>
       <div class="grid-row">
           <table class="styled-table">
               <thead>
@@ -188,6 +191,9 @@ issue (Ex - each switch costs $2,000); avoid using $1 for unit price.
       </h3>
       <div id="b-a3" class="usa-accordion__content" hidden="">
       <div class="grid-row">
+      <p>
+      This section of the guide provides a list of common fields that describe the type of contract. This includes any type of special designations like small business or socio-economic. It also provides insight into localities and other vendor information and guidance on how best to complete these fields. This data is used to analyze agency small and socio-economic business utilization performance.
+      </p>
           <table class="styled-table">
               <thead>
                   <tr>
@@ -260,6 +266,9 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
       </h3>
       <div id="b-a4" class="usa-accordion__content" hidden="">
       <div class="grid-row">
+      <p>
+      This section of the guide provides a list of key Technology Categorization fields that require very specific and important information. They identify the types of technology being purchased and how. Completing these data fields accurately and thoroughly will improve data quality and enable enhanced analytics, which will aid in informed decision making. The table below lists fields and information on how best to complete them.
+      </p>
           <table class="styled-table">
               <thead>
                   <tr>
@@ -323,6 +332,24 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
                   </tr>
               </tbody>
           </table>
+          <div>
+          <h3>Suggested Format for Input Field:</h3>
+          <p><b><a style="color:#F4BB2F;">MFG/OEM</a> : <a style="color:#84B161;">Vendor/Reseller</a> : <a style="color:#0C44A5 ;">Product Name/SKU/Part #</a> : <a style="color:#805C96;">Unit of Measure</a> : <a style="color:#D73209;">Description</a></b></p>
+          </div>
+          <div>
+              <h3>Service Examples:</h3>
+              <ol type = "1">
+                <li><a style="color:#F4BB2F;">ServiceNow</a>: <a style="color:#84B161;">CarahSoft</a>: <a style="color:#0C44A5 ;">Implementation</a>: <a style="color:#805C96;">Hour</a>: <a style="color:#D73209;">Contracting for a block of 500 hours for the phase I implementation of ServiceNow.</a></li>
+                <li>N/A: HP Enterprise Services: Hosting: Rack: Data center service associated with hosting and operation of the open payments program system. </li>
+                <li>N/A: Iron Bow Technologies: Help Desk Support Services: Hour: IT and Telecom - End User: Help Desk Tier 1-2, Workspace, Print, Productivity Tool.</li>
+              </ol>
+              <h3>Product Examples:</h3>
+              <ol type = "1">
+                <li><a style="color:#F4BB2F;">Microsoft</a>: <a style="color:#84B161;">Dell Marketing L.P.</a>: <a style="color:#0C44A5 ;">O365 License</a>: <a style="color:#805C96;">Per User</a>: <a style="color:#D73209;">Enterprise agreement for 92,000 user subscriptions of Microsoft Office 365, Windows 10 Enterprise </a></li>
+                <li>ServiceNow: CarahSoft: IT Service Management License: Per User: ServiceNow service desk 1000 user licenses.</li>
+                <li>Cisco: Thundercat Technology, LLC: Switches and routers #LG-54401: Each: Cisco infrastructure switches and routers.</li>
+              </ol>
+          </div>
       </div>
       </div>
 
