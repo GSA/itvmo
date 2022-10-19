@@ -13,8 +13,8 @@ sidenav: false
     <h2>I am a government acquisition specialist.</h2>
     <p>
       <ol type="1">
-        <li><a href="" style="text-decoration: none">
-        How can I participate in a OEM working group or cohort?
+        <li><a href="https://itvmo.gsa.gov/community/" style="text-decoration: none">
+        What forums exist for cross-agency knowledge sharing?
         </a></li>
         <li><a href="https://community.max.gov/display/Egov/2.+Microsoft" style="text-decoration: none">
         How do I prepare for an agency-wide transition from G3 to G5 microsoft solution?
@@ -44,11 +44,11 @@ sidenav: false
         <li><a href="https://itvmo.gsa.gov/resources/#subject=.small-business-intelligence&role=*" style="text-decoration: none">
         I am a small business, what resources exist to help my business gain entry to the marketplace?
         </a></li>
-        <li><a href="" style="text-decoration: none">
+        <li><a href="http://hallways.cap.gsa.gov/app/#/gateway/best-class-bic/6692/best-in-class-faqs" style="text-decoration: none">
         How can I get an award on a BIC vehicle?
         </a></li>
-        <li><a href="" style="text-decoration: none">
-        How can my company be selected for a vendor assessment?
+        <li><a href="http://youtube.com/watch?v=mD4iWvAJnyk" style="text-decoration: none">
+        What role does the ITVMO play to help industry partners?
         </a></li>
       </ol>
     </p>
