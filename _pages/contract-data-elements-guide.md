@@ -47,7 +47,7 @@ sidenav: false
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
-          Data Source
+          Data System
         </button>
       </h3>
       <div id="b-a1" class="usa-accordion__content" hidden="">
