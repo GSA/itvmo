@@ -278,24 +278,6 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
               </thead>
               <tbody>
                   <tr>
-                      <td>Description of Requirement</td>
-                      <td>
-                          Description of Requirement field should be <b>detailed and
-                          consist of keywords that describe what is being purchased</b>.
-                          Used for various filtering, sorting, and categorization of spend.
-                          <br><br>
-                          Add details describing the following:
-                          <ul>
-                            <li><b>Who</b> - Clearly identify the party providing services/products, including OEMs, vendors, and resellers.</li>
-                            <li><b>What</b> - Clearly identify what is to be delivered or service
-                            performed; use sublines to differentiate components and list each
-                             deliverable product or service separately (i.e. - hardware vs. software vs. service).</li>
-                            <li>For modifications, add the details of <b>what is being adjusted/appended to original description</b>.</li>
-                          </ul>
-                      </td>
-                  </tr>
-
-                  <tr>
                       <td>Principal NAICS Code</td>
                       <td>
                         NAICS Codes <b>designate the major sectors of the economies</b> of Mexico,
@@ -327,6 +309,23 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
                             <li> 
                               <a href = "https://www.federalregister.gov/documents/2017/01/13/2016-31495/federal-acquisition-regulation-uniform-use-of-line-items">FAR Rule</a>
                             </li> 
+                          </ul>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>Description of Requirement</td>
+                      <td>
+                          Description of Requirement field should be <b>detailed and
+                          consist of keywords that describe what is being purchased</b>.
+                          Used for various filtering, sorting, and categorization of spend.
+                          <br><br>
+                          Add details describing the following:
+                          <ul>
+                            <li><b>Who</b> - Clearly identify the party providing services/products, including OEMs, vendors, and resellers.</li>
+                            <li><b>What</b> - Clearly identify what is to be delivered or service
+                            performed; use sublines to differentiate components and list each
+                             deliverable product or service separately (i.e. - hardware vs. software vs. service).</li>
+                            <li>For modifications, add the details of <b>what is being adjusted/appended to original description</b>.</li>
                           </ul>
                       </td>
                   </tr>
