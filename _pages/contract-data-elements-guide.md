@@ -47,7 +47,7 @@ sidenav: false
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
-          Data System
+          Data Source
         </button>
       </h3>
       <div id="b-a1" class="usa-accordion__content" hidden="">
@@ -55,7 +55,7 @@ sidenav: false
             <!-- <div class="tablet:grid-col-8 padding-right-2"> -->
             <a href = "https://www.fpds.gov/downloads/Version_1.4_specs/FPDSNG_DataDictionary_V1.4.pdf">
               <h3>
-                  Federal Procurement Data Ststem (FPDS)
+                  Federal Procurement Data System (FPDS)
               </h3>
             </a>
             <p>
@@ -332,7 +332,7 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
               </tbody>
           </table>
           <div>
-          <h3>Suggested Format for Input Field:</h3>
+          <h3>Suggested Format for 'Description of Requirement' Input Field:</h3>
           <p><b><a style="color:#F4BB2F;">MFG/OEM</a> : <a style="color:#84B161;">Vendor/Reseller</a> : <a style="color:#0C44A5 ;">Product Name/SKU/Part #</a> : <a style="color:#805C96;">Unit of Measure</a> : <a style="color:#D73209;">Description</a></b></p>
           </div>
           <div>
