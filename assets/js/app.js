@@ -26,16 +26,45 @@ function openModal(date) {
   backDrop.style.display = 'block';
 }
 
-function load() {
+async function load() {
   const dt = new Date();
 
   if (nav !== 0) {
     dt.setMonth(new Date().getMonth() + nav);
   }
 
+  //Retrive the date
   const day = dt.getDate();
   const month = dt.getMonth();
   const year = dt.getFullYear();
+
+  console.log(month);
+  console.log(year);
+
+  if(year === 2022)
+  {
+      //This variable use to point at the specific json file that will be use to retrive this month events.
+      var thisMonthEvent;
+      //Janurary is 0 to December is 11
+      if(month === 0) thisMonthEvent = '../assets/events/2022/janurary.json';
+      else if(month === 1) thisMonthEvent = '../assets/events/2022/february.json';
+      else if(month === 2) thisMonthEvent = '../assets/events/2022/march.json';
+      else if(month === 3) thisMonthEvent = '../assets/events/2022/april.json';
+      else if(month === 4) thisMonthEvent = '../assets/events/2022/may.json';
+      else if(month === 5) thisMonthEvent = '../assets/events/2022/june.json';
+      else if(month === 6) thisMonthEvent = '../assets/events/2022/july.json';
+      else if(month === 7) thisMonthEvent = '../assets/events/2022/august.json';
+      else if(month === 8) thisMonthEvent = '../assets/events/2022/september.json';
+      else if(month === 9) thisMonthEvent = '../assets/events/2022/october.json';
+      else if(month === 10) thisMonthEvent = '../assets/events/2022/november.json'
+      else if(month === 11) thisMonthEvent = '../assets/events/2022/december.json'
+      //retrive the month information
+      const res = await fetch(thisMonthEvent);
+      const thisMonthEvents = await res.json(); //data in this case is array list of items
+      console.log(thisMonthEvents);
+  
+  } 
+
 
   const firstDayOfMonth = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -93,6 +122,7 @@ function closeModal() {
   load();
 }
 
+//Save the event 
 function saveEvent() {
   if (eventTitleInput.value) {
     eventTitleInput.classList.remove('error');
@@ -108,19 +138,22 @@ function saveEvent() {
     eventTitleInput.classList.add('error');
   }
 }
-
+//Remove the event
 function deleteEvent() {
   events = events.filter(e => e.date !== clicked);
   localStorage.setItem('events', JSON.stringify(events));
   closeModal();
 }
 
+//Go to next month
 function initButtons() {
+
   document.getElementById('nextButton').addEventListener('click', () => {
     nav++;
+    //Insert paraemeter here to intake the data and can display on the calendar
     load();
   });
-
+//Go to previous month
   document.getElementById('backButton').addEventListener('click', () => {
     nav--;
     load();
