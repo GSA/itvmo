@@ -172,4 +172,5 @@ function initButtons() {
 }
 
 initButtons();
+localStorage.clear();
 load();
