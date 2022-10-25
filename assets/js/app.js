@@ -12,23 +12,37 @@ const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function openModal(date) {
-  clicked = date;
-
-  const eventForDay = events.find(e => e.date === clicked);
-
-  if (eventForDay) {
-    document.getElementById('eventText').innerText = eventForDay.title;
-    deleteEventModal.style.display = 'block';
-  } else {
-    newEventModal.style.display = 'block';
+  // clicked = date;
+  // const eventForDay = events.find(e => e.date === clicked);
+  const eventForDay = [];
+  for(var i = 0; i < events.length; i++)
+  { 
+    if(events[i].date === date)
+    {
+      eventForDay.push(events[i]);
+    }
   }
-
-  backDrop.style.display = 'block';
+  //event already exist
+    for(var i = 0; i < eventForDay.length; i++)
+    { 
+      if(i == 0)
+        document.getElementById('eventText').innerHTML = 
+        `
+        <p><b>${eventForDay[i].title} </b> <a href="${eventForDay[i].link}">Link</a></p>
+        <p>${eventForDay[i].description}</p>
+        `;
+      else
+        document.getElementById('eventText').innerHTML += 
+        `
+        <p><b>${eventForDay[i].title} </b> <a href="${eventForDay[i].link}">Link</a></p>
+        <p>${eventForDay[i].description}</p>
+        `;
+    }
+    // deleteEventModal.style.display = 'block';
 }
 
 async function load() {
   const dt = new Date();
-
   if (nav !== 0) {
     dt.setMonth(new Date().getMonth() + nav);
   }
@@ -37,9 +51,6 @@ async function load() {
   const day = dt.getDate();
   const month = dt.getMonth();
   const year = dt.getFullYear();
-
-  console.log(month);
-  console.log(year);
 
   if(year === 2022)
   {
@@ -60,15 +71,17 @@ async function load() {
       else if(month === 11) thisMonthEvent = '../assets/events/2022/december.json'
       //retrive the month information
       const res = await fetch(thisMonthEvent);
-      const thisMonthEvents = await res.json(); //data in this case is array list of items
-      console.log(thisMonthEvents);
-  
+      var thisMonthEvents = await res.json(); //data in this case is array list of items
+      thisMonthEvents = thisMonthEvents.events;
+      for(let i = 0; i<thisMonthEvents.length; i++)
+      {
+        saveEvent(thisMonthEvents[i]);
+      }
   } 
 
-
+  //Generate calendar
   const firstDayOfMonth = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();
-  
   const dateString = firstDayOfMonth.toLocaleDateString('en-us', {
     weekday: 'long',
     year: 'numeric',
@@ -91,7 +104,6 @@ async function load() {
     if (i > paddingDays) {
       daySquare.innerText = i - paddingDays;
       const eventForDay = events.find(e => e.date === dayString);
-
       if (i - paddingDays === day && nav === 0) {
         daySquare.id = 'currentDay';
       }
@@ -102,7 +114,8 @@ async function load() {
         eventDiv.innerText = eventForDay.title;
         daySquare.appendChild(eventDiv);
       }
-
+      
+      //add event listener on each day for clicking on the day action
       daySquare.addEventListener('click', () => openModal(dayString));
     } else {
       daySquare.classList.add('padding');
@@ -119,32 +132,15 @@ function closeModal() {
   backDrop.style.display = 'none';
   eventTitleInput.value = '';
   clicked = null;
-  load();
+  // load();
 }
-
 //Save the event 
-function saveEvent() {
-  if (eventTitleInput.value) {
+function saveEvent(currEvent) {
+
     eventTitleInput.classList.remove('error');
-
-    events.push({
-      date: clicked,
-      title: eventTitleInput.value,
-    });
-
+    events.push(currEvent);
     localStorage.setItem('events', JSON.stringify(events));
-    closeModal();
-  } else {
-    eventTitleInput.classList.add('error');
-  }
 }
-//Remove the event
-function deleteEvent() {
-  events = events.filter(e => e.date !== clicked);
-  localStorage.setItem('events', JSON.stringify(events));
-  closeModal();
-}
-
 //Go to next month
 function initButtons() {
 
@@ -158,11 +154,6 @@ function initButtons() {
     nav--;
     load();
   });
-
-  document.getElementById('saveButton').addEventListener('click', saveEvent);
-  document.getElementById('cancelButton').addEventListener('click', closeModal);
-  document.getElementById('deleteButton').addEventListener('click', deleteEvent);
-  document.getElementById('closeButton').addEventListener('click', closeModal);
 }
 
 initButtons();

@@ -46,23 +46,13 @@ sidenav: false
       <button id="cancelButton">Cancel</button>
     </div>
 
-    <div id="deleteEventModal">
-      <h2>Event</h2>
-
-      <p id="eventText"></p>
-
-      <button id="deleteButton">Delete</button>
-      <button id="closeButton">Close</button>
-    </div>
-
-    <div id="modalBackDrop"></div>
 
     <script src="./script.js"></script>
 
     <h2>Events Summary:</h2>
-    <p>
-        Explain in general terms the types/categories of events and who may attend.
-    </p>
+    <div id="eventText"></div>
+
+
     <h2>Events Highlights:</h2>
     <p>
         Blogs, video clips, or participant reviews of past events.
