@@ -12,8 +12,6 @@ const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function openModal(date) {
-  // clicked = date;
-  // const eventForDay = events.find(e => e.date === clicked);
   const eventForDay = [];
   for(var i = 0; i < events.length; i++)
   { 
@@ -28,6 +26,8 @@ function openModal(date) {
       if(i == 0)
         document.getElementById('eventText').innerHTML = 
         `
+        <h2 id="eventsSummary">Events Summary:</h2>
+        <h3 id="header">${date}</h3>
         <p><b>${eventForDay[i].title} </b> <a href="${eventForDay[i].link}">Link</a></p>
         <p>${eventForDay[i].description}</p>
         `;
@@ -73,9 +73,12 @@ async function load() {
       const res = await fetch(thisMonthEvent);
       var thisMonthEvents = await res.json(); //data in this case is array list of items
       thisMonthEvents = thisMonthEvents.events;
+     //Check whether the json file already store in the local storage already or not.
+      // if(events.find(e => e.date === thisMonthEvents[thisMonthEvents.length-1].date) == null)
       for(let i = 0; i<thisMonthEvents.length; i++)
       {
-        saveEvent(thisMonthEvents[i]);
+        if(events.find(e => e.title === thisMonthEvents[i].title) == null)
+          saveEvent(thisMonthEvents[i]);
       }
   } 
 
@@ -103,24 +106,36 @@ async function load() {
 
     if (i > paddingDays) {
       daySquare.innerText = i - paddingDays;
-      const eventForDay = events.find(e => e.date === dayString);
+      // const eventForDay = events.find(e => e.date === dayString);
+
+      const eventForDay = [];
+      for(var a = 0; a < events.length; a++)
+      { 
+        if(events[a].date === dayString)
+        {
+          eventForDay.push(events[a]);
+        }
+      }
+
       if (i - paddingDays === day && nav === 0) {
         daySquare.id = 'currentDay';
       }
 
-      if (eventForDay) {
-        const eventDiv = document.createElement('div');
-        eventDiv.classList.add('event');
-        eventDiv.innerText = eventForDay.title;
-        daySquare.appendChild(eventDiv);
+      if (eventForDay.length > 0) {
+
+          const eventDiv = document.createElement('div');
+          eventDiv.classList.add('event');
+          eventDiv.innerText += eventForDay.length + " EVENTS";
+          daySquare.appendChild(eventDiv);
+
       }
       
       //add event listener on each day for clicking on the day action
       daySquare.addEventListener('click', () => openModal(dayString));
-    } else {
+    } 
+    else {
       daySquare.classList.add('padding');
     }
-
     calendar.appendChild(daySquare);    
   }
 }

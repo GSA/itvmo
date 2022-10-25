@@ -165,12 +165,14 @@ button {
 }
 
 #header {
-  padding: 10px;
+  // padding: 10px;
   color: #d36c6c;
   font-size: 26px;
-  font-family: sans-serif;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   display: flex;
   justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 #header button {
   background-color:#1b2b85;
@@ -218,7 +220,7 @@ button {
 .event {
   font-size: 10px;
   padding: 3px;
-  background-color: #58bae4;
+  background-color: #1b2b85;
   color: white;
   border-radius: 5px;
   max-height: 55px;
@@ -261,9 +263,7 @@ button {
 #saveButton, #closeButton {
   background-color: #92a1d1;
 }
-#eventText {
-  font-size: 14px;
-}
+
 #modalBackDrop {
   display: none;
   top: 0px;

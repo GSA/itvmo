@@ -49,14 +49,13 @@ sidenav: false
 
     <script src="./script.js"></script>
 
-    <h2>Events Summary:</h2>
+    <!-- <h2>Events Summary:</h2> -->
     <div id="eventText"></div>
 
-
-    <h2>Events Highlights:</h2>
+    <!-- <h2>Events Highlights:</h2>
     <p>
         Blogs, video clips, or participant reviews of past events.
-    </p>
+    </p> -->
 </div>  
 </section>
 
