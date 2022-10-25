@@ -11,9 +11,9 @@ sidenav: false
 
 <div class="margin-bottom-2">
 
-    <p>
+    <!-- <p>
       Events in Blue are for Government employees only. Events in red are open to everyone.
-    </p>
+    </p> -->
         
     <div id="container">
       <div id="header">

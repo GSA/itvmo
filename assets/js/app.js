@@ -28,13 +28,13 @@ function openModal(date) {
         `
         <h2 id="eventsSummary">Events Summary:</h2>
         <h3 id="header">${date}</h3>
-        <p><b>${eventForDay[i].title} </b> <a href="${eventForDay[i].link}">Link</a></p>
+        <p><a href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><b>${eventForDay[i].title} </b></a></p>
         <p>${eventForDay[i].description}</p>
         `;
       else
         document.getElementById('eventText').innerHTML += 
         `
-        <p><b>${eventForDay[i].title} </b> <a href="${eventForDay[i].link}">Link</a></p>
+        <p><a href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><b>${eventForDay[i].title} </b></a></p>
         <p>${eventForDay[i].description}</p>
         `;
     }
