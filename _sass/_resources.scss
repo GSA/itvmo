@@ -17,6 +17,7 @@
 
 }
 
+
 .filters {
 
 }
@@ -103,6 +104,26 @@ a.checked {
 .height-full {
   height: 100%;
 }
+
+//Styled for the contract-data-elements-guide page.
+.blue-bold
+{
+  b
+  {
+    color:#1b2b85;
+  }
+}
+
+#pdfDownload
+{
+  color: white;
+  background-color: #1b2b85;
+  border: none;
+  border-radius:1.2em;
+  cursor: pointer;
+  vertical-align: center;
+}
+
 
 //Styled the table on the contract-data-elements-guide page.
 .styled-table {
