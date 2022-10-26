@@ -22,7 +22,9 @@ sidenav: false
   Stakeholders need the ability to <b>analyze spending based on reliable data</b>, in order to support data driven decisions and manage the complexities of IT spending.
   </p>
   <p>
-  <a href ="../assets/files/Contract-Data-Elements-Guidance_TBM_Final.pdf" attributes-list download ="Contract Data Elements Guidance TBM Final" > <input id="pdfDownload" type="submit" attributes-list download ="optional-value" value="Contract Data Elements Guidance report.pdf" /> </a> 
+  This guide was developed to enable consistency and enhance data for agencies as they draft contracts for IT spending.
+  </p>
+  <p>
   </p>
 </div>
 
@@ -38,6 +40,8 @@ sidenav: false
 <p>
 <b>Insights</b> | Provide sample insights into current spending based on updated PSCs and key data points. Supports more informed and focused purchasing decisions.
 </p>
+<p><b>To view the full content with examples and full list of data fields and tips, please see the link below:</b></p>
+<a id="report" href ="https://community.max.gov/display/Egov/ITVMO+Resources" target="_blank" rel="noreferrer noopener" > &nbsp;&nbsp;Contract Data Elements Guidance report&nbsp;&nbsp; </a> 
 </div>  
 </section>
 
@@ -58,19 +62,17 @@ sidenav: false
                   Federal Procurement Data System (FPDS)
               </h3>
             </a>
-            <p>
+            <p class="indent">
             FPDS is the primary source and system of record for
             contract data. FPDS is populated with information
-            directly from agency contract writing system. The
+            directly from agency contract writing systems. The
             government uses the reported FPDS data to measure
             and assess the impact of federal procurement.
             </p>
-            <p>
+            <p class="indent">
             FPDS contains more than 150 data elements. This guide 
             focuses on the data elements that have the most impact
-            on downstream analysis of IT obligations. The elements
-            in the below sections are those that are most frequently
-            used by the analytical tools shown in the dashboard analytics section
+            on downstream analysis of IT obligations. The elements in the sections below are those that are most frequently shown in the Dashboard Analytics section.
             </p>
 
 
@@ -98,12 +100,12 @@ sidenav: false
               </thead>
               <tbody>
                   <tr>
-                      <td>Period of Performance (PoP) Dates</td>
+                      <td class = "fname">Period of Performance (PoP) Dates</td>
                       <td>Ensure accurate date is entered and broken out into line items for specific
 deliverables to measure and track performance; see example below. 
                           <ul>
                             <li> 
-                                <b>Period of Performance Start Date = Effective Date </b>, for entire
+                                <b>Period of Performance Start Date = Effective Date</b>, for entire
                                 contract, not per modification.
                             </li> 
                             <li> 
@@ -119,14 +121,14 @@ entire contract, to include all options of other modifications.
                   </tr>
                   
                   <tr>
-                      <td>Referenced IDV</td>
+                      <td class = "fname">Referenced IDV</td>
                       <td>
                         <b>Do not omit</b> if contract is a <b>derivative</b>.
                       </td>
                   </tr>
 
                   <tr>
-                      <td>Total Obligated Amount</td>
+                      <td class = "fname">Total Obligated Amount</td>
                       <td>System generated total that identifies the amount of the contract that has
 been <b>ordered or received, but which has not been disbursed</b>.
                           <ul>
@@ -140,7 +142,7 @@ been <b>ordered or received, but which has not been disbursed</b>.
 
 
                   <tr>
-                      <td>Unit Price and Quantity</td>
+                      <td class = "fname">Unit Price and Quantity</td>
                       <td>Choose a quantity and unit of measure to describe each deliverable that
 corresponds to <b>how you will measure and track performance</b>.
                           <ul>
@@ -157,23 +159,23 @@ quantities of the same kind to be stated (Ex - an apple)
                             <li> 
                                 <b>Unit of Measure</b> - Any division of quantity accepted as a standard of
 measurement or exchange
-                              <ul>
-                                  <li>
-                                  Suggested format for Unit of Measure: [Count of Quantity]:[Each/Lot/Hour/Unit/Package]
-                                  </li> 
-                                  <li> 
-                                      Example: 100 units of network switches
-                                  </li> 
-                              </ul>
-                            </li> 
-                            <li> 
-                                <b>Unit Price</b>  - The cost or price of an item of supply based on the unit of
-issue (Ex - each switch costs $2,000); avoid using $1 for unit price.
-                              <ul>
-                                  <li>
-                                  Suggested format for Unit Price: [$Awarded price per unit]:
-                                  </li> 
-                              </ul>
+                                <ul>
+                                    <li>
+                                    <em>Suggested format for Unit of Measure: [Count of Quantity]:[Each/Lot/Hour/Unit/Package]</em>
+                                    </li> 
+                                    <li> 
+                                        <em>Example: 100 units of network switches</em>
+                                    </li> 
+                                </ul>
+                              </li> 
+                              <li> 
+                                  <em><b>Unit Price</b>  - The cost or price of an item of supply based on the unit of
+  issue (Ex - each switch costs $2,000); avoid using $1 for unit price.</em>
+                                <ul>
+                                    <li>
+                                    <em>Suggested format for Unit Price: [$Awarded price per unit]:</em>
+                                    </li> 
+                                </ul>
                             </li> 
                           </ul>
                       </td>
@@ -203,14 +205,14 @@ issue (Ex - each switch costs $2,000); avoid using $1 for unit price.
               </thead>
               <tbody>
                   <tr>
-                      <td>Place of Manufacture</td>
+                      <td class = "fname">Place of Manufacture</td>
                       <td>
                         Identifies if products are <b>manufactured inside/outside the US</b>.
-Used to determine adherence to “Buy American Act (See FAR 25.1).
+Used to determine adherence to “Buy American Act" (See FAR 25.1).
                       </td>
                   </tr>
                   <tr>
-                      <td>Principal Place of Performance</td>
+                      <td class = "fname">Principal Place of Performance</td>
                       <td>
                           <p>For Services, the <b>predominant place of performance</b> at the time of
                           award or <b>where subscription/software licenses are used</b>.</p>
@@ -219,26 +221,26 @@ Used to determine adherence to “Buy American Act (See FAR 25.1).
                       </td>
                   </tr>
                   <tr>
-                      <td>Small Business Designations</td>
+                      <td class = "fname">Small Business Designations</td>
                       <td>
-                        Don’t forget “<b>CO Size Determination</b>” even if not a small business (select “Other than Small”)
+                        Don’t forget “<b>CO Size Determination</b>” even if not a small business (select “Other than Small”).
                       </td>
                   </tr>
                   <tr>
-                      <td>Socio-economic Designations</td>
+                      <td class = "fname">Socio-economic Designations</td>
                       <td>
                           Flags vendors by <b>special interest groups and type of small business.
                           Select all applicable</b> small business fields.
                       </td>
                   </tr>
                   <tr>
-                      <td>State of Incorporation</td>
+                      <td class = "fname">State of Incorporation</td>
                       <td>
                         Identify the state the business is <b>registered</b> in.
                       </td>
                   </tr>
                   <tr>
-                      <td>Vendor Information</td>
+                      <td class = "fname">Vendor Information</td>
                       <td>Ensure <b>consistent input of Vendor Name</b> for proper analytics; can
 reference Unique Entity Identifier (UEI #), but for large businesses, there can still be multiple options.
                           <ul>
@@ -267,7 +269,7 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
       <div id="b-a4" class="usa-accordion__content" hidden="">
       <div class="grid-row">
       <p>
-      This section of the guide provides a list of key Technology Categorization fields that require very specific and important information. They identify the types of technology being purchased and how. Completing these data fields accurately and thoroughly will improve data quality and enable enhanced analytics, which will aid in informed decision making. The table below lists fields and information on how best to complete them.
+      This section of the guide provides a list of key Technology Categorization fields that require very specific and important information. They identify the types of technology being purchased and how. Completing these data fields accurately and thoroughly will improve data quality and enable enhanced analytics, which will aid in informed decision making. The table below lists the fields and guidance on how best to complete them.
       </p>
           <table class="styled-table">
               <thead>
@@ -278,13 +280,10 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
               </thead>
               <tbody>
                   <tr>
-                      <td>Principal NAICS Code</td>
+                      <td class = "fname">Principal NAICS Code</td>
                       <td>
                         NAICS Codes <b>designate the major sectors of the economies</b> of Mexico,
-                        Canada and the US for a given business entity.
-                        It is used for <b>statistical analysis</b> and to determine <b>eligibility for specific
-                        government contracts and certify businesses by industry type</b>. 
-
+                        Canada and the US for a given business entity. It is used for <b>statistical analysis, to certify businesses by industry type,</b> and to determine <b>eligibility for specific government contracts</b>. Update Product Service Code (PSC) slightly:  " <b>Select the most accurate PSC</b> to reflect the scope of contract. See resources:
                         <ul>
                             <li>Select code used in the solicitation.</li>
                             <li>Identify primary business activity.</li>
@@ -297,7 +296,7 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
                   </tr>
 
                   <tr>
-                      <td>Product Service Code(PSC)</td>
+                      <td class = "fname">Product Service Code(PSC)</td>
                       <td><b>Select most accurate PSC</b> to reflect the scope of contract. Resources to help with proper selection: 
                           <ul>
                             <li> 
@@ -313,7 +312,7 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
                       </td>
                   </tr>
                   <tr>
-                      <td>Description of Requirement</td>
+                      <td class = "fname">Description of Requirement</td>
                       <td>
                           Description of Requirement field should be <b>detailed and
                           consist of keywords that describe what is being purchased</b>.
@@ -340,13 +339,13 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
               <ol type = "1">
                 <li><a style="color:#F4BB2F;">ServiceNow</a>: <a style="color:#84B161;">CarahSoft</a>: <a style="color:#0C44A5 ;">Implementation</a>: <a style="color:#805C96;">Hour</a>: <a style="color:#D73209;">Contracting for a block of 500 hours for the phase I implementation of ServiceNow.</a></li>
                 <li>N/A: HP Enterprise Services: Hosting: Rack: Data center service associated with hosting and operation of the open payments program system. </li>
-                <li>N/A: Iron Bow Technologies: Help Desk Support Services: Hour: IT and Telecom - End User: Help Desk Tier 1-2, Workspace, Print, Productivity Tool.</li>
+                <li>N/A: Example Technologies: Help Desk Support Services: Hour: IT and Telecom - End User: Help Desk Tier 1-2, Workspace, Print, Productivity Tool.</li>
               </ol>
               <h3>Product Examples:</h3>
               <ol type = "1">
                 <li><a style="color:#F4BB2F;">Microsoft</a>: <a style="color:#84B161;">Dell Marketing L.P.</a>: <a style="color:#0C44A5 ;">O365 License</a>: <a style="color:#805C96;">Per User</a>: <a style="color:#D73209;">Enterprise agreement for 92,000 user subscriptions of Microsoft Office 365, Windows 10 Enterprise </a></li>
                 <li>ServiceNow: CarahSoft: IT Service Management License: Per User: ServiceNow service desk 1000 user licenses.</li>
-                <li>Cisco: Thundercat Technology, LLC: Switches and routers #LG-54401: Each: Cisco infrastructure switches and routers.</li>
+                <li>Cisco: XYZ Technologies, LLC: Switches and routers #LG-54401: Each: Cisco infrastructure switches and routers.</li>
               </ol>
           </div>
       </div>
@@ -361,12 +360,35 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
       <div id="b-a5" class="usa-accordion__content" hidden="">
       <div class="grid-row">
             <div class=" padding-right-2">
+              <h3>
+                    Agency Profile Report (APR) 2.0
+              </h3>
+                <p class="indent">
+                  By using 
+                  <a href = "https://login.max.gov/cas/login?service=https%3A//d2d.gsa.gov/cas%3Fdestination%3Dnode/9585&securityLevel=securePlus2&renew=true"> 
+                  Agency Profile Report (2.0)
+                  </a>, agencies are able to: <br>
+                  <ul>
+                    <li> 
+                      View spend by Vendor, Contract Type, or Cost Category.
+                    </li> 
+                    <li> 
+                      Compare Total Obligations YoY and Spend Under Management.
+                    </li> 
+                    <li> 
+                      Understand the overall quality of the data for compliance and accuracy.
+                    </li> 
+                  </ul>
+                </p>
+                <p class="indent">
+               It provides an overall summary of acquisitions by Department and enables peer to peer or Government-wide comparisons.
+              </p>
               <a href = "https://d2d.gsa.gov/report/government-wide-category-management-contract-management-and-operational-reporting-tools">
               <h3>
                   Category Management Dashboards (Data 2 Decisions - D2D)
               </h3>
             </a>
-            <p>
+            <p class="indent">
                 Category Management Dashboards use Tableau on the
                 D2D platform to create rich visualizations. The data is
                 sourced from the Federal Acquisition Service (FAS)
@@ -384,7 +406,7 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
                 <h3>
                     Small Business & Common/Defense-Centric Spend
                 </h3>
-              <p>
+              <p class="indent">
                 The
                 <a href = "https://d2d.gsa.gov/report/small-business-dashboard"> 
                 Small Business Dashboard
@@ -393,29 +415,6 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
                 vendor-attribute designations based
                 on the vendor information and
                 socio-economic flags.
-              </p>
-                <h3>
-                    Agency Profile Report (APR) 2.0
-                </h3>
-              <p>
-                By using 
-                <a href = "https://login.max.gov/cas/login?service=https%3A//d2d.gsa.gov/cas%3Fdestination%3Dnode/9585&securityLevel=securePlus2&renew=true"> 
-                Agency Profile Report (2.0)
-                </a>, agencies are able to: <br>
-                <ul>
-                  <li> 
-                    View spend by Vendor, Contract Type, or Cost Category.
-                  </li> 
-                  <li> 
-                    Compare Total Obligations YoY and Spend Under Management.
-                  </li> 
-                  <li> 
-                     Understand the overall quality of the data for compliance and accuracy.
-                  </li> 
-                </ul>
-              </p>
-              <p>
-               It provides an overall summary of acquisitions by Department and enables peer to peer or Government-wide comparisons.
               </p>
 
             </div>
@@ -427,6 +426,8 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
 
       </div>
       </div>
+      <br>
+      <p>For additional guidance on navigating the D2D Dashboard analytics, please visit the Technology Lifecycle Report page for detailed user stories.</p>
 </div>
 <br>
 </section>
