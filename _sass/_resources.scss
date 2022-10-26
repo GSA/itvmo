@@ -17,6 +17,7 @@
 
 }
 
+
 .filters {
 
 }
@@ -123,6 +124,8 @@ a.checked {
   vertical-align: center;
 }
 
+
+//Styled the table on the contract-data-elements-guide page.
 .styled-table {
   border-collapse: collapse;
   margin: 25px 0;
@@ -163,29 +166,165 @@ a.checked {
 //   font-weight: bold;
 //   color: #009879;
 // }
-//Styled the calendar on the events page.
-#container
+
+//Styled the calendar for the events page
+
+button {
+  width: 75px;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+#monthDisplay
 {
+  font-size: 40px;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+}
+
+#header {
+  // padding: 10px;
+  color: #d36c6c;
+  font-size: 26px;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#header button {
+  background-color:#1b2b85;
+}
+#container {
   width: 770px;
-  #header {
-    padding: 10px;
-    color: #d36c6c;
-    font-size: 26px;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: space-between;
+}
+#weekdaysDesktop {
+  width: 100%;
+  display: flex;
+  color: black;
+}
+#weekdaysDesktop div {
+  width: 100px;
+  padding: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#weekdays {
+  display: none;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #CBD4C2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day + #currentDay {
+  background-color:#e8f4fa;
+}
+.event {
+  font-size: 10px;
+  padding: 3px;
+  background-color: #1b2b85;
+  color: white;
+  border-radius: 5px;
+  max-height: 55px;
+  overflow: hidden;
+}
+.eventMobile {
+  display: none;
+}
+.eventMobile {
+  font-size: 9px;
+  background-color: #1b2b85;
+  color: white;
+  border-radius: 5px;
+  max-height: 15px;
+  max-width: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.padding {
+  cursor: default !important;
+  background-color: #FFFCFF !important;
+  box-shadow: none !important;
+}
+#newEventModal, #deleteEventModal {
+  display: none;
+  z-index: 20;
+  padding: 25px;
+  background-color: #e8f4fa;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 5px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+}
+#eventTitleInput {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 3px gray;
+}
+
+#modalBackDrop {
+  display: none;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0,0,0,0.8);
+}
+
+//Change the calendar look
+@media only screen and (max-width: 794px)
+{
+  #container {
+    width: 366px;
+    margin: 0 auto
   }
-  #header button {
-    background-color:#92a1d1;
+  #weekdays div {
+    width: 49px;
+    padding: 5px;
+    margin-right: 1.642857142857143px;
+    margin-left: 1.642857142857143px;
   }
+  #weekdaysDesktop {
+    display: none;
+  }
+
   #weekdays {
     width: 100%;
     display: flex;
-    color: #247BA0;
-  }
-  #weekdays div {
-    width: 100px;
-    padding: 10px;
+    color: black;
   }
   #calendar {
     width: 100%;
@@ -194,82 +333,49 @@ a.checked {
     flex-wrap: wrap;
   }
   .day {
-    width: 100px;
-    padding: 10px;
-    height: 100px;
+    width: 49px;
+    padding: 4.9px;
+    height: 49px;
     cursor: pointer;
     box-sizing: border-box;
     background-color: white;
-    margin: 5px;
+    margin: 1.642857142857143px;
     box-shadow: 0px 0px 3px #CBD4C2;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
-  .day:hover {
-    background-color: #e8faed;
-  }
-  
-  .day + #currentDay {
-    background-color:#e8f4fa;
-  }
-  .event {
-    font-size: 10px;
-    padding: 3px;
-    background-color: #58bae4;
-    color: white;
-    border-radius: 5px;
-    max-height: 55px;
-    overflow: hidden;
-  }
-  .padding {
-    cursor: default !important;
-    background-color: #FFFCFF !important;
-    box-shadow: none !important;
-  }
-  #newEventModal, #deleteEventModal {
-    display: none;
-    z-index: 20;
-    padding: 25px;
-    background-color: #e8f4fa;
-    box-shadow: 0px 0px 3px black;
-    border-radius: 5px;
-    width: 350px;
-    top: 100px;
-    left: calc(50% - 175px);
-    position: absolute;
-    font-family: sans-serif;
-  }
-  #eventTitleInput {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 25px;
-    border-radius: 3px;
-    outline: none;
+
+  button {
+    width: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
     border: none;
-    box-shadow: 0px 0px 3px gray;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
   }
-  #eventTitleInput.error {
-    border: 2px solid red;
+  #header {
+    width: 366px;
+    color: #d36c6c;
+    font-size: 18px;
+    font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
   }
-  #cancelButton, #deleteButton {
-    background-color: #d36c6c;
-  }
-  #saveButton, #closeButton {
-    background-color: #92a1d1;
-  }
-  #eventText {
-    font-size: 14px;
-  }
-  #modalBackDrop {
+  .event
+  {
     display: none;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    background-color: rgba(0,0,0,0.8);
   }
+  .eventMobile {
+    display: initial;
+  }
+  #monthDisplay
+  {
+    font-size: 30px;
+  }
+
+
 }
