@@ -180,16 +180,19 @@ button {
 #container {
   width: 770px;
 }
-#weekdays {
+#weekdaysDesktop {
   width: 100%;
   display: flex;
   color: black;
 }
-#weekdays div {
+#weekdaysDesktop div {
   width: 100px;
   padding: 10px;
   margin-right: 5px;
   margin-left: 5px;
+}
+#weekdays {
+  display: none;
 }
 #calendar {
   width: 100%;
@@ -226,6 +229,20 @@ button {
   max-height: 55px;
   overflow: hidden;
 }
+.eventMobile {
+  display: none;
+}
+.eventMobile {
+  font-size: 9px;
+  background-color: #1b2b85;
+  color: white;
+  border-radius: 5px;
+  max-height: 15px;
+  max-width: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
 .padding {
   cursor: default !important;
   background-color: #FFFCFF !important;
@@ -254,15 +271,6 @@ button {
   border: none;
   box-shadow: 0px 0px 3px gray;
 }
-#eventTitleInput.error {
-  border: 2px solid red;
-}
-#cancelButton, #deleteButton {
-  background-color: #d36c6c;
-}
-#saveButton, #closeButton {
-  background-color: #92a1d1;
-}
 
 #modalBackDrop {
   display: none;
@@ -273,4 +281,80 @@ button {
   height: 100vh;
   position: absolute;
   background-color: rgba(0,0,0,0.8);
+}
+
+//Change the calendar look
+@media only screen and (max-width: 794px)
+{
+  #container {
+    width: 366px;
+    margin: 0 auto
+  }
+  #weekdays div {
+    width: 49px;
+    padding: 5px;
+    margin-right: 1.642857142857143px;
+    margin-left: 1.642857142857143px;
+  }
+  #weekdaysDesktop {
+    display: none;
+  }
+
+  #weekdays {
+    width: 100%;
+    display: flex;
+    color: black;
+  }
+  #calendar {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .day {
+    width: 49px;
+    padding: 4.9px;
+    height: 49px;
+    cursor: pointer;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 1.642857142857143px;
+    box-shadow: 0px 0px 3px #CBD4C2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    width: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px gray;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+  }
+  #header {
+    width: 366px;
+    color: #d36c6c;
+    font-size: 18px;
+    font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .event
+  {
+    display: none;
+  }
+  .eventMobile {
+    display: initial;
+  }
+  #monthDisplay
+  {
+    font-size: 30px;
+  }
+
+
 }

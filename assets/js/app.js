@@ -116,9 +116,10 @@ async function load() {
           eventForDay.push(events[a]);
         }
       }
-
+      //Display the Events summary for the current day if there is one
       if (i - paddingDays === day && nav === 0) {
         daySquare.id = 'currentDay';
+        openModal(dayString);
       }
 
       if (eventForDay.length > 0) {
@@ -127,6 +128,11 @@ async function load() {
           eventDiv.classList.add('event');
           eventDiv.innerText += eventForDay.length + " EVENTS";
           daySquare.appendChild(eventDiv);
+
+          const eventDivM = document.createElement('div');
+          eventDivM.classList.add('eventMobile');
+          eventDivM.innerText += eventForDay.length;
+          daySquare.appendChild(eventDivM);
 
       }
       

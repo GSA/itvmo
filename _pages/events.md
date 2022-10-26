@@ -17,14 +17,22 @@ sidenav: false
         
     <div id="container">
       <div id="header">
-        <div id="monthDisplay"></div>
-        <div>
-          <button id="backButton"> < </button>
-          <button id="nextButton"> > </button>
-        </div>
+                  <button id="backButton"> &#x2190; </button>
+                  <div id="monthDisplay"></div>          
+                  <button id="nextButton"> &#x2192; </button>
       </div>
 
       <div id="weekdays">
+        <div>Sun.</div>
+        <div>Mon.</div>
+        <div>Tue.</div>
+        <div>Wed.</div>
+        <div>Thu.</div>
+        <div>Fri.</div>
+        <div>Sat.</div>
+      </div>
+
+      <div id="weekdaysDesktop">
         <div>Sunday</div>
         <div>Monday</div>
         <div>Tuesday</div>
