@@ -44,8 +44,8 @@ sidenav: false
         <li><a href="https://itvmo.gsa.gov/resources/#subject=.small-business-intelligence&role=*" style="text-decoration: none">
         I am a small business, what resources exist to help my business gain entry to the marketplace?
         </a></li>
-        <li><a href="http://hallways.cap.gsa.gov/app/#/gateway/best-class-bic/6692/best-in-class-faqs" style="text-decoration: none">
-        How can I get an award on a BIC vehicle?
+        <li><a href="https://itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-SDB-Vendors.pdf" style="text-decoration: none">
+        How do I know if my company is showing as an SDB on a contract?
         </a></li>
         <li><a href="http://youtube.com/watch?v=mD4iWvAJnyk" style="text-decoration: none">
         What role does the ITVMO play to help industry partners?
