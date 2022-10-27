@@ -175,7 +175,22 @@ a.checked {
 }
 
 //Styled for the events page
-
+.youtube
+{
+  border-top: solid 4px #FF0000;
+}
+.eventHighlight
+{
+  width: 100%;
+  height: 300px;
+  margin: 0 auto
+}
+.eventHighlightContainer
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
 button {
   width: 75px;
   cursor: pointer;
@@ -320,6 +335,12 @@ button {
 //Change the calendar look when the width of the screen below 794px
 @media only screen and (max-width: 794px)
 {
+  .eventHighlightContainer
+  {
+    grid-template-columns: 1fr;
+    width: 340px;
+
+  }
   #container {
     width: 366px;
     margin: 0 auto
