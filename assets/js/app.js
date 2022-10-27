@@ -56,6 +56,7 @@ async function load() {
   {
       //This variable use to point at the specific json file that will be use to retrive this month events.
       var thisMonthEvent;
+      
       //Janurary is 0 to December is 11
       if(month === 0) thisMonthEvent = '../assets/events/2022/janurary.json';
       else if(month === 1) thisMonthEvent = '../assets/events/2022/february.json';

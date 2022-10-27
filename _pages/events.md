@@ -60,10 +60,40 @@ sidenav: false
     <!-- <h2>Events Summary:</h2> -->
     <div id="eventText"></div>
 
-    <!-- <h2>Events Highlights:</h2>
+    <h2>Events Highlights:</h2>
     <p>
-        Blogs, video clips, or participant reviews of past events.
-    </p> -->
+        <p><a><b>
+        The IT Category: Creating Opportunities for Small Business, Oct 6 Meeting 
+        <a href="https://www.youtube.com/watch?v=2-PL5EUwB1s" target="_blank" rel="noreferrer noopener">
+        <img id="youtubeLogo" src="../assets/images/logos/youtube.png" alt="Youtube logo" >
+        </a>
+        </b></a></p>
+        <p>
+        This meeting recording provides an overview of current governmentwide contract opportunities and helps to bring an understanding of resources available for small business acquisitions.
+        </p>
+        <p><a><b>
+        The ITVMO Industry Day
+        <a href="https://www.youtube.com/watch?v=mD4iWvAJnyk" target="_blank" rel="noreferrer noopener">
+        <img id="youtubeLogo" src="../assets/images/logos/youtube.png" alt="Youtube logo" >
+        </a>
+        </b></a></p>
+        <p>
+        This Industry Day overview is intended for a general audience. It presented  the ITVMO’s vision for improving IT acquisitions in the future. No solution is possible without help and input from the IT vendor community and the Industry Day was the first of many opportunities to gather feedback and learn from industry.
+        </p>
+
+        
+        <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover category-management-border">
+          <div class="text-container padding-1 height-full">
+            <span class="card-tag">Category Management</span>
+              <a class="no-style anchor-fill" href="http://www.whitehouse.gov/wp-content/uploads/2019/03/M-19-13.pdf" aria-label="M-19-13, Category Management: Making Smarter Use of Common Contract Solutions and Practices">
+                <p class="title-resources">M-19-13, Category Management: Making Smarter Use of Common Contract Solutions and Practices</p>
+                <p class="description-resources">The purpose of this Memorandum is to provide guidance on the use of category management.</p>
+                <p class="link-type">Hyperlink</p>
+              </a>
+          </div>
+        </div>
+        
+    </p>
 </div>  
 </section>
 

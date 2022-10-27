@@ -174,7 +174,7 @@ a.checked {
   padding-left: 15px;
 }
 
-//Styled the calendar for the events page
+//Styled for the events page
 
 button {
   width: 75px;
@@ -310,8 +310,14 @@ button {
   position: absolute;
   background-color: rgba(0,0,0,0.8);
 }
+#youtubeLogo
+{ padding-top: 5.04px;
+  height: 18px;
+  width: 25px;
+  margin: auto;
+}
 
-//Change the calendar look
+//Change the calendar look when the width of the screen below 794px
 @media only screen and (max-width: 794px)
 {
   #container {
