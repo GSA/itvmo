@@ -15,6 +15,7 @@ sidenav: false
       Events in Blue are for Government employees only. Events in red are open to everyone.
     </p> -->
         
+    <div id="calendarSumContainer">
     <div id="container">
       <div id="header">
                   <button id="backButton"> &#x2190; </button>
@@ -59,6 +60,8 @@ sidenav: false
 
     <!-- <h2>Events Summary:</h2> -->
     <div id="eventText"></div>
+
+    </div>
 
     <h2>Events Highlights:</h2>
     <p>
