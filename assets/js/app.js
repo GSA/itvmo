@@ -78,7 +78,7 @@ async function load() {
       // if(events.find(e => e.date === thisMonthEvents[thisMonthEvents.length-1].date) == null)
       for(let i = 0; i<thisMonthEvents.length; i++)
       {
-        if(events.find(e => e.title === thisMonthEvents[i].title) == null)
+        if(events.find(e => (e.title === thisMonthEvents[i].title) && (e.date === thisMonthEvents[i].date)) == null)
           saveEvent(thisMonthEvents[i]);
       }
   } 

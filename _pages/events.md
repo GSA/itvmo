@@ -83,45 +83,45 @@ sidenav: false
 
         
         <div class="eventHighlightContainer">
+          <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=2-PL5EUwB1s" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
             <div class="text-container padding-1 height-full">
               <span class="card-tag">The IT Category: Creating Opportunities for Small Business, Oct 6 Meeting</span>
-                <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=2-PL5EUwB1s" aria-label="youtube link">
                   <p class="description-resources">
                     This meeting recording provides an overview of current governmentwide contract opportunities and helps to bring an understanding of resources available for small business acquisitions.
                   </p>
                   <p class="link-type">        
                     <img id="youtubeLogo" src="../assets/images/logos/youtube.png" alt="Youtube logo" >
                   </p>
-                </a>
             </div>
           </div>
+          </a>
+          <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=mD4iWvAJnyk" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
             <div class="text-container padding-1 height-full">
               <span class="card-tag">The ITVMO Industry Day</span>
-                <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=mD4iWvAJnyk" aria-label="youtube link">
                   <p class="description-resources">
                     This Industry Day overview is intended for a general audience. It presented  the ITVMO’s vision for improving IT acquisitions in the future. No solution is possible without help and input from the IT vendor community and the Industry Day was the first of many opportunities to gather feedback and learn from industry.
                   </p>
                   <p class="link-type">        
                     <img id="youtubeLogo" src="../assets/images/logos/youtube.png" alt="Youtube logo" >
                   </p>
-                </a>
             </div>
           </div>
+          </a>
+          <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=2-PL5EUwB1s" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
             <div class="text-container padding-1 height-full">
               <span class="card-tag">The IT Category: Creating Opportunities for Small Business, Oct 6 Meeting</span>
-                <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=2-PL5EUwB1s" aria-label="youtube link">
                   <p class="description-resources">
                     This meeting recording provides an overview of current governmentwide contract opportunities and helps to bring an understanding of resources available for small business acquisitions.
                   </p>
                   <p class="link-type">        
                     <img id="youtubeLogo" src="../assets/images/logos/youtube.png" alt="Youtube logo" >
                   </p>
-                </a>
+              </div>
             </div>
-          </div>
+          </a>
 
 
 
