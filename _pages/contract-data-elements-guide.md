@@ -51,7 +51,7 @@ sidenav: false
       <!-- Use the accurate heading level to maintain the document outline -->
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
-          Data Source
+          Data Sources
         </button>
       </h3>
       <div id="b-a1" class="usa-accordion__content" hidden="">
@@ -161,19 +161,19 @@ quantities of the same kind to be stated (Ex - an apple)
 measurement or exchange
                                 <ul>
                                     <li>
-                                    <em>Suggested format for Unit of Measure: [Count of Quantity]:[Each/Lot/Hour/Unit/Package]</em>
+                                    Suggested format for Unit of Measure: <em>[Count of Quantity]:[Each/Lot/Hour/Unit/Package]</em>
                                     </li> 
                                     <li> 
-                                        <em>Example: 100 units of network switches</em>
+                                        Example: <em>100 units of network switches</em>
                                     </li> 
                                 </ul>
                               </li> 
                               <li> 
-                                  <em><b>Unit Price</b>  - The cost or price of an item of supply based on the unit of
-  issue (Ex - each switch costs $2,000); avoid using $1 for unit price.</em>
+                                  <b>Unit Price</b>  - The cost or price of an item of supply based on the unit of
+  issue (Ex - each switch costs $2,000); avoid using $1 for unit price.
                                 <ul>
                                     <li>
-                                    <em>Suggested format for Unit Price: [$Awarded price per unit]:</em>
+                                      Suggested format for Unit Price: <em>[$Awarded price per unit]:</em>
                                     </li> 
                                 </ul>
                             </li> 
@@ -297,7 +297,7 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
 
                   <tr>
                       <td class = "fname">Product Service Code(PSC)</td>
-                      <td><b>Select most accurate PSC</b> to reflect the scope of contract. Resources to help with proper selection: 
+                      <td><b>Select the most accurate PSC</b> to reflect the scope of contract. Resources to help with proper selection: 
                           <ul>
                             <li> 
                               <a href = "https://psctool.us/mappings">PSC Selection Tool</a>
@@ -416,18 +416,13 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
                 on the vendor information and
                 socio-economic flags.
               </p>
+              <p><b>For additional guidance on navigating the D2D Dashboard analytics, please visit the Technology Lifecycle Report page for detailed user stories.</b></p>
 
             </div>
 
-            <!-- <div class="padding-x-2 radius-lg border-05 border-primary-lighter">
-                <img class="" src="{{site.baseurl}}/assets/images/screenshot/smal-business-common-centric-spend.png" alt="General Services Administration seal">
-             </div> -->
-
 
       </div>
       </div>
-      <br>
-      <p>For additional guidance on navigating the D2D Dashboard analytics, please visit the Technology Lifecycle Report page for detailed user stories.</p>
 </div>
 <br>
 </section>
