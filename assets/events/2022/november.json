@@ -42,6 +42,13 @@
             "color": "GREY", 
             "link": "https://members.thecgp.org/Shared_Content/Events/CGPEvent_Display.aspx?EventKey=111622CONF&WebsiteKey=bbbdf8d0-b0ef-4aee-83a7-6ec8ee8afc24", 
             "description": "This hybrid two-day conference will be held on November 16-17 at the Fairview Park Marriott in Falls Church, Virginia, with virtual attendance available, as well. This year’s conference highlights the expectations for Federal procurement policies and programs across the government in the new fiscal year."
+        },
+        {
+            "title": "AWS Office Hours", 
+            "date": "11/10/2022", 
+            "color": "RED", 
+            "link": "null", 
+            "description": "Attend AWS Office Hours for an informal opportunity to speak with AWS representatives and have your questions answered."
         }
     ]
 }

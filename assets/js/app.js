@@ -51,7 +51,7 @@ function openModal(date) {
     <div class="animate fadeInDown">
     <h2 id="eventsSummary">Events Summary:</h2>
     <h3 id="header">${date}</h3>
-    <p><b>There are no upcoming events.</b></p>
+    <p><b>No events planned today.</b></p>
     </div>
     `;
   }
@@ -68,37 +68,35 @@ async function load() {
   const month = dt.getMonth();
   const year = dt.getFullYear();
 
-  if(year === 2022)
+  //Since only data that avaliable is currently only 2022 and 2023
+  if((year >= 2022)&&(year <= 2023))
   {
       //This variable use to point at the specific json file that will be use to retrive this month events.
       var thisMonthEvent;
-      
       //Janurary is 0 to December is 11
-      if(month === 0) thisMonthEvent = '../assets/events/2022/janurary.json';
-      else if(month === 1) thisMonthEvent = '../assets/events/2022/february.json';
-      else if(month === 2) thisMonthEvent = '../assets/events/2022/march.json';
-      else if(month === 3) thisMonthEvent = '../assets/events/2022/april.json';
-      else if(month === 4) thisMonthEvent = '../assets/events/2022/may.json';
-      else if(month === 5) thisMonthEvent = '../assets/events/2022/june.json';
-      else if(month === 6) thisMonthEvent = '../assets/events/2022/july.json';
-      else if(month === 7) thisMonthEvent = '../assets/events/2022/august.json';
-      else if(month === 8) thisMonthEvent = '../assets/events/2022/september.json';
-      else if(month === 9) thisMonthEvent = '../assets/events/2022/october.json';
-      else if(month === 10) thisMonthEvent = '../assets/events/2022/november.json'
-      else if(month === 11) thisMonthEvent = '../assets/events/2022/december.json'
+      if(month === 0) thisMonthEvent = `../assets/events/${year}/janurary.json`;
+      else if(month === 1) thisMonthEvent = `../assets/events/${year}/february.json`;
+      else if(month === 2) thisMonthEvent = `../assets/events/${year}/march.json`;
+      else if(month === 3) thisMonthEvent = `../assets/events/${year}/april.json`;
+      else if(month === 4) thisMonthEvent = `../assets/events/${year}/may.json`;
+      else if(month === 5) thisMonthEvent = `../assets/events/${year}/june.json`;
+      else if(month === 6) thisMonthEvent = `../assets/events/${year}/july.json`;
+      else if(month === 7) thisMonthEvent = `../assets/events/${year}/august.json`;
+      else if(month === 8) thisMonthEvent = `../assets/events/${year}/september.json`;
+      else if(month === 9) thisMonthEvent = `../assets/events/${year}/october.json`;
+      else if(month === 10) thisMonthEvent = `../assets/events/${year}/november.json`;
+      else if(month === 11) thisMonthEvent = `../assets/events/${year}/december.json`;
       //retrive the month information
       const res = await fetch(thisMonthEvent);
       var thisMonthEvents = await res.json(); //data in this case is array list of items
       thisMonthEvents = thisMonthEvents.events;
      //Check whether the json file already store in the local storage already or not.
-      // if(events.find(e => e.date === thisMonthEvents[thisMonthEvents.length-1].date) == null)
       for(let i = 0; i<thisMonthEvents.length; i++)
       {
         if(events.find(e => (e.title === thisMonthEvents[i].title) && (e.date === thisMonthEvents[i].date)) == null)
           saveEvent(thisMonthEvents[i]);
       }
-  } 
-
+  }
   //Generate calendar
   const firstDayOfMonth = new Date(year, month, 1);
   const daysInMonth = new Date(year, month + 1, 0).getDate();

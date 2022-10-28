@@ -63,7 +63,7 @@ sidenav: false
 
     </div>
     <div class="animate fade">
-    <h2>Events Highlights:</h2>
+    <h2>Event Highlights:</h2>
     <p>
        <div class="eventHighlightContainer">
           <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=2-PL5EUwB1s" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
@@ -92,12 +92,12 @@ sidenav: false
             </div>
           </div>
           </a>
-          <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=2-PL5EUwB1s" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
+          <a class="no-style anchor-fill" href="https://community.max.gov/pages/viewpage.action?spaceKey=Egov&title=ITVMO+Vendor+Assessments" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
             <div class="text-container padding-1 height-full">
-              <span class="card-tag">The IT Category: Creating Opportunities for Small Business, Oct 6 Meeting</span>
+              <span class="card-tag">ITVMO Vendor Assessment Webinars</span>
                   <p class="description-resources">
-                    This meeting recording provides an overview of current governmentwide contract opportunities and helps to bring an understanding of resources available for small business acquisitions.
+                    Limited to .gov and .mil viewers, these webinars review comprehensive vendor assessments completed on OEMs.
                   </p>
                   <p class="link-type">        
                     <img id="youtubeLogo" src="../assets/images/logos/youtube.png" alt="Youtube logo" >
