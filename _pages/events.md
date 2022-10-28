@@ -15,7 +15,7 @@ sidenav: false
       Events in Blue are for Government employees only. Events in red are open to everyone.
     </p> -->
         
-    <div id="calendarSumContainer">
+    <div id="calendarSumContainer" class="animate fade">
     <div id="container">
       <div id="header">
                   <button id="backButton"> &#x2190; </button>
@@ -62,7 +62,7 @@ sidenav: false
     <div id="eventText"></div>
 
     </div>
-
+    <div class="animate fade">
     <h2>Events Highlights:</h2>
     <p>
        <div class="eventHighlightContainer">
@@ -106,10 +106,8 @@ sidenav: false
             </div>
           </a>
         </div>
-
-        
-        
-    </p>
+      </p>
+    </div>
 </div>  
 </section>
 

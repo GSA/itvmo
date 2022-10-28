@@ -12,6 +12,7 @@ const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function openModal(date) {
+  // console.log(events.length);
   const eventForDay = [];
   for(var i = 0; i < events.length; i++)
   { 
@@ -21,24 +22,39 @@ function openModal(date) {
     }
   }
   //event already exist
+  if(eventForDay.length > 0)
+  {
+    var eventText = ``;
     for(var i = 0; i < eventForDay.length; i++)
     { 
       if(i == 0)
-        document.getElementById('eventText').innerHTML = 
+        eventText = 
         `
+        <div class="animate fadeInDown">
         <h2 id="eventsSummary">Events Summary:</h2>
         <h3 id="header">${date}</h3>
-        <p><a href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><b>${eventForDay[i].title} </b></a></p>
-        <p>${eventForDay[i].description}</p>
         `;
-      else
-        document.getElementById('eventText').innerHTML += 
+
+      eventText += 
         `
         <p><a href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><b>${eventForDay[i].title} </b></a></p>
         <p>${eventForDay[i].description}</p>
         `;
     }
-    // deleteEventModal.style.display = 'block';
+    eventText += `</div>`
+    document.getElementById('eventText').innerHTML = eventText;
+  }
+  else
+  {
+    document.getElementById('eventText').innerHTML = 
+    `
+    <div class="animate fadeInDown">
+    <h2 id="eventsSummary">Events Summary:</h2>
+    <h3 id="header">${date}</h3>
+    <p><b>There are no upcoming events.</b></p>
+    </div>
+    `;
+  }
 }
 
 async function load() {
