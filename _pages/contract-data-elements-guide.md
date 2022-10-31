@@ -416,7 +416,7 @@ reference Unique Entity Identifier (UEI #), but for large businesses, there can 
                 on the vendor information and
                 socio-economic flags.
               </p>
-              <p><b>For additional guidance on navigating the D2D Dashboard analytics, please visit the Technology Lifecycle Report page for detailed user stories.</b></p>
+              <p><b>For additional guidance on navigating the D2D Dashboard analytics, please visit the <a href= "https://itvmo.gsa.gov/technology-lifecycle-report/">Technology Lifecycle Report page</a> for detailed user stories.</b></p>
 
             </div>
 
