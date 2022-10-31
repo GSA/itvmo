@@ -78,12 +78,16 @@ primary_navigation:
     url: /
   - name: About
     url: /about/
+  - name: Events
+    url: /events/
   - name: Resources
     url: /resources/
   - name: Community
     url: /community/
   - name: Contact Info
     url: /contact-info/
+  - name: How Can We help?
+    url: /how-can-we-help/
 
 secondary_navigation:
   - name: Contact Us
