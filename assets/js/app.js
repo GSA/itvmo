@@ -60,6 +60,7 @@ function openModal(date) {
 async function load() {
   const dt = new Date();
   if (nav !== 0) {
+    dt.setDate(1);
     dt.setMonth(new Date().getMonth() + nav);
   }
 
@@ -67,7 +68,6 @@ async function load() {
   const day = dt.getDate();
   const month = dt.getMonth();
   const year = dt.getFullYear();
-
   //Since only data that avaliable is currently only 2022 and 2023
   if((year >= 2022)&&(year <= 2023))
   {
@@ -121,8 +121,6 @@ async function load() {
 
     if (i > paddingDays) {
       daySquare.innerText = i - paddingDays;
-      // const eventForDay = events.find(e => e.date === dayString);
-
       const eventForDay = [];
       for(var a = 0; a < events.length; a++)
       { 
