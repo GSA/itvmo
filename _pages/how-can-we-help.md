@@ -1,5 +1,5 @@
 ---
-title: How Can We help?
+title: How Can We Help?
 layout: page
 sidenav: false
 ---
@@ -10,7 +10,7 @@ sidenav: false
 <!-- <h2>Overview</h2> -->
 
 <div class="margin-bottom-2">
-    <h2>I Am A Government Acquisition Specialist.</h2>
+    <h2>I am a government acquisition specialist.</h2>
     <p>
       <ol type="1">
         <li><a href="https://itvmo.gsa.gov/community/" style="text-decoration: none">
@@ -24,7 +24,7 @@ sidenav: false
         </a></li>
       </ol>
     </p>
-    <h2>I Am A Technology User.</h2>
+    <h2>I am a technology user.</h2>
     <p>
       <ol type="1">
         <li><a href="https://itvmo.gsa.gov/best-in-class/" style="text-decoration: none">
@@ -38,7 +38,7 @@ sidenav: false
         </a></li>
       </ol>
     </p>
-    <h2>I Am A Vendor.</h2>
+    <h2>I am a vendor.</h2>
     <p>
       <ol type="1">
         <li><a href="https://itvmo.gsa.gov/resources/#subject=.small-business-intelligence&role=*" style="text-decoration: none">
