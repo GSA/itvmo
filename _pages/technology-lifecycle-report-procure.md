@@ -1,6 +1,6 @@
 ---
 title: Technology Lifecycle Report
-permalink: /technology-lifecycle-report/
+permalink: /technology-lifecycle-report-procure/
 layout: page
 sidenav: false
 ---
@@ -70,7 +70,7 @@ sidenav: false
         </section>
       </div>
       <h3 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">
+        <button class="usa-accordion__button" aria-expanded="true" id="procure" aria-controls="b-a2">
          Procure
         </button>
       </h3>
