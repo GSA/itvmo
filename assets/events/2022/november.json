@@ -16,11 +16,11 @@
             "description": "SEWP is holding training on November 3, 1-4 PM - Earn 4.0 CLPs!"
         },
         {
-            "title": "AFCEA Bethesda Energy, Infrastructure, and Environment Summit ",
-            "date": "11/3/2022",
-            "color": "GREY",
-            "link": "https://www.linkedin.com/posts/nasa-sewp_nasasewp-joannewoytek-afcea-activity-6982685793492373504-fZQm?utm_source=share&utm_medium=member_desktop",
-            "description": ""
+            "title": "AFCEA Bethesda Energy, Infrastructure, and Environment Summit", 
+            "date": "11/1/2022", 
+            "color": "GREY", 
+            "link": "https://www.linkedin.com/posts/nasa-sewp_nasasewp-joannewoytek-afcea-activity-6982685793492373504-fZQm?utm_source=share&utm_medium=member_desktop", 
+            "description": "This is a partner event."            
         },
         {
             "title": "CGP Fall Training Conference- Expectations for Fiscal Year 2023",
@@ -47,7 +47,7 @@
             "title": "AWS Office Hours", 
             "date": "11/10/2022", 
             "color": "RED", 
-            "link": "null", 
+            "link": "https://gsa.zoomgov.com/meeting/register/vJItdOurqjIuH71UexrQfEl7FAKY8foLss8?utm_medium=email&utm_source=govDelivery", 
             "description": "Attend AWS Office Hours for an informal opportunity to speak with AWS representatives and have your questions answered. This event is open to .gov/.mil audience only."
         }
     ]

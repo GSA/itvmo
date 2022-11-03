@@ -27,6 +27,7 @@ function openModal(date) {
     var eventText = ``;
     for(var i = 0; i < eventForDay.length; i++)
     { 
+      var audience = "";
       if(i == 0)
         eventText = 
         `
@@ -34,11 +35,17 @@ function openModal(date) {
         <h2 id="eventsSummary">Events Summary:</h2>
         <h3 id="header">${date}</h3>
         `;
+      if(eventForDay[i].color === "GREY")
+        audience = " This is a partner event.";
+      else if(eventForDay[i].color === "RED")
+        audience = " This is open to .gov/.mil audience only.";
+      else if(eventForDay[i].color === "BLUE")
+        audience = " Open to .gov/.mil only.";
 
       eventText += 
         `
         <p><a href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><b>${eventForDay[i].title} </b></a></p>
-        <p>${eventForDay[i].description}</p>
+        <p>${eventForDay[i].description}<b>${audience}</b></p>
         `;
     }
     eventText += `</div>`
@@ -148,7 +155,6 @@ async function load() {
           daySquare.appendChild(eventDivM);
 
       }
-      
       //add event listener on each day for clicking on the day action
       daySquare.addEventListener('click', () => openModal(dayString));
     } 
@@ -177,17 +183,17 @@ function saveEvent(currEvent) {
 }
 //Go to next month
 function initButtons() {
-
-  document.getElementById('nextButton').addEventListener('click', () => {
-    nav++;
-    //Insert paraemeter here to intake the data and can display on the calendar
-    load();
-  });
-//Go to previous month
-  document.getElementById('backButton').addEventListener('click', () => {
-    nav--;
-    load();
-  });
+  
+    document.getElementById('nextButton').addEventListener('click', () => {
+      nav++;
+      //Insert paraemeter here to intake the data and can display on the calendar
+      load();
+    });
+  //Go to previous month
+    document.getElementById('backButton').addEventListener('click', () => {
+      nav--;
+      load();
+    });
 }
 
 initButtons();

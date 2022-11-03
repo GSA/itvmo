@@ -99,9 +99,9 @@ sidenav: false
                   <p class="description-resources">
                     Limited to .gov and .mil viewers, these webinars review comprehensive vendor assessments completed on OEMs.
                   </p>
-                  <p class="link-type">        
+                  <!-- <p class="link-type">        
                     <img id="youtubeLogo" src="../assets/images/logos/youtube.png" alt="Youtube logo" >
-                  </p>
+                  </p> -->
               </div>
             </div>
           </a>

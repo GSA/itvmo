@@ -1,5 +1,5 @@
 ---
-title: How Can We help?
+title: How Can We Help?
 layout: page
 sidenav: false
 ---
