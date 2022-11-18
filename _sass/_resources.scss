@@ -419,4 +419,90 @@ button {
     transform: none;
   }
 }
+//Change the latest update page on the home page
+.latestUpdates
+{
+  width: 100%;
+  text-align: center;
+}
+.learn
+{
+  margin-bottom: 8px;
+}
+.horizontal-snap {
+  background-color: none;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  height: 100%;
+  width: 955px;  
+  padding: 1rem;
+  overflow-y: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  .usa-card
+  {
+    height: 100%;
+    width: 298.66px;
+  }
+}
+.horizontal-snap > a {
+  scroll-snap-align: center;
+}
 
+.horizontal-snap
+{
+  .usa-card
+  {
+    a
+    {
+      .resources-hover
+      {
+        .usa-card__header
+        {
+            transition: transform .3s;
+        }
+        .usa-card__body
+        {
+            transition: transform .3s;
+        }
+      }
+    }
+      .resources-hover:hover
+      {
+        .usa-card__header
+        {
+            transform: scale(1.1);
+        }
+        .usa-card__body
+        {
+            transform: scale(1.1);
+        }
+      }
+  }
+    
+  
+}
+
+@media only screen and (max-width: 970px)
+{
+  .horizontal-snap {
+    height: 100% !important;
+    width: 636.67px !important;  
+  }
+}
+@media only screen and (max-width: 655px)
+{
+  .horizontal-snap {
+    height: 100% !important;
+    width: 318.33px !important;  
+  }
+}
+@media only screen and (max-width: 640px)
+{
+  .horizontal-snap {
+    height: 100% !important;
+    width: 318.33px !important;  
+  }
+}
