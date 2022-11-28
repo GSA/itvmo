@@ -91,7 +91,7 @@ primary_navigation:
 
 secondary_navigation:
   - name: Contact Us
-    url: "mailto:itvmo@gsa.gov"
+    url: /contact-info/
 
 # Search.gov configuration
 #
