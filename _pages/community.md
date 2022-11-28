@@ -13,16 +13,20 @@ sidenav: false
 
 <p>The IT Buyers Community of Practice (ITB CoP) is chartered under the CIO Council’s Enterprise Operations Committee (E-ops), The purpose of the ITB CoP is to create a community of federal IT buyers to share their experience and scale expertise across government. The ITB CoP brings together the acquisition programs at agencies, contract vehicle programs, and procurement specialists from across government to solve common challenges.</p>
 
+<p><strong>The IT Buyers Community maintains a <a href = "https://community.max.gov/pages/viewpage.action?spaceKey=Egov&title=IT+Buyers+Community+of+Practice">CoP MAX</a> page with additional resources available to government users.
+</strong></p>
+
 <p><strong>Interested in the latest updates related to federal IT acquisitions?</strong> Learn about upcoming events, training opportunities, updates, and connect with fellow IT acquisitions professional by joining the the ITB CoP Listserv.</p>
 
+
 <h3>To subscribe to the IT Buyers CoP listserv:</h3>
-<ul>
+<!-- <ul>
   <li>email <a href="mailto:listserv@listserv.gsa.gov">listserv@listserv.gsa.gov</a></li>
   <li>The message should not have a subject</li>
   <li>Please include the text "subscribe ITBCOP" in the body of the message</li>
   <li>You must have a .gov or .mil email address to join the ITB CoP</li>
-</ul>
-
+</ul> -->
+ <a class="usa-button btn-primary learn" href="https://app.smartsheetgov.com/sheets/3rHmXJ25v7Jj539hcgR8jJJ9w5R8F4FWRCJRWP31?view=grid" target="_blank" rel="noreferrer noopener">CoP Registration</a>
 </div>  
 </section>
 
