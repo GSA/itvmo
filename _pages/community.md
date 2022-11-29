@@ -26,7 +26,7 @@ sidenav: false
   <li>Please include the text "subscribe ITBCOP" in the body of the message</li>
   <li>You must have a .gov or .mil email address to join the ITB CoP</li>
 </ul> -->
- <a class="usa-button btn-primary learn" href="https://app.smartsheetgov.com/sheets/3rHmXJ25v7Jj539hcgR8jJJ9w5R8F4FWRCJRWP31?view=grid" target="_blank" rel="noreferrer noopener">CoP Registration</a>
+ <a class="usa-button btn-primary learn" href="https://app.smartsheetgov.com/b/form/c2ecf3cb3df34e6f83524401336f1d8d" target="_blank" rel="noreferrer noopener">CoP Registration</a>
 </div>  
 </section>
 
