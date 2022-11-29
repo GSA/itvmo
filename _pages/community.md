@@ -15,7 +15,7 @@ sidenav: false
 
 <p><strong>Interested in the latest updates related to federal IT acquisitions?</strong> Learn about upcoming events, training opportunities, updates, and connect with fellow IT acquisitions professional by joining the the ITB CoP Listserv.</p>
 
-<h3>To subscribe to the IT Buyers CoP listserv:</h3>
+<h3>To subscribe to the IT Buyers CoP listserv please complete the registration form below:</h3>
 <ul>
   <li>email <a href="mailto:listserv@listserv.gsa.gov">listserv@listserv.gsa.gov</a></li>
   <li>The message should not have a subject</li>
