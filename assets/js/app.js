@@ -196,6 +196,67 @@ function initButtons() {
     });
 }
 
-initButtons();
+
+//
+var timeOut = 5000;
+var slideIndex = 0;
+var autoOn = true;
+
+function autoSlides() {
+    timeOut = timeOut - 20;
+    console.log("autoSlides() ran");
+    if (autoOn == true && timeOut < 0) {
+      console.log("showSLides() ran");
+        showSlides();
+    }
+    setTimeout(autoSlides, 20);
+}
+
+function prevSlide() {
+
+    timeOut = 2000;
+
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slideIndex--;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    if (slideIndex == 0) {
+        slideIndex = 3
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+function showSlides() {
+
+    timeOut = 5000;
+
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
+
+autoSlides();
+
+initButtons();//Crash if not on the Events page, If going to run function that not associate with the Events page then run it before this function.
 localStorage.clear();
 load();

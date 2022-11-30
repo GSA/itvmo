@@ -5,7 +5,7 @@ eight.
 
 
 <section class="usa-graphic-list usa-section highlight-bkgd">
-  <div class="grid-container">
+  <!-- <div class="grid-container">
     <div class="grid-row usa-graphic-list__heading padding-bottom-3">
       <h3 class="margin-top-0 margin-bottom-0 latestUpdates">&larr; Latest Updates &rarr;</h3>
     </div>
@@ -22,7 +22,6 @@ eight.
               <p class="resources-text">This event is open to .gov/.mil audience only. Attend AWS Office Hours for an informal opportunity to speak with AWS representatives and have your questions answered.</p>
             </div>
             <div class="usa-card__footer">
-              <!-- <p>Read more...</p> -->
             </div>      
           </div>
         </a>
@@ -58,9 +57,9 @@ eight.
             </div>      
           </div>
         </a>
-      </div>
+      </div> -->
       <!-- duplication -->
-      <div class="tablet:grid-col-4 usa-card">
+      <!-- <div class="tablet:grid-col-4 usa-card">
         <a href="" style="color:black;text-decoration: none; display: block;" class="height-full">
           <div class="bg-white padding-1 border-top-05 border-accent-warm shadow-5 height-full resources-hover">
             <header class="usa-card__header">
@@ -70,7 +69,6 @@ eight.
               <p class="resources-text">This event is open to .gov/.mil audience only. Attend AWS Office Hours for an informal opportunity to speak with AWS representatives and have your questions answered.</p>
             </div>
             <div class="usa-card__footer">
-              <!-- <p>Read more...</p> -->
             </div>      
           </div>
         </a>
@@ -108,13 +106,151 @@ eight.
         </a>
       </div>
       
+  </div> -->
+
+  <div class="grid-row usa-graphic-list__heading padding-bottom-3">
+    <h3 class="margin-top-0 margin-bottom-0 latestUpdates">&larr; Latest Updates &rarr;</h3>
   </div>
-
-
-
-
-
+  <div class="grid-container row">
+    <div class="column-arrow">
+      <a class="prev" onclick="prevSlide()">&#10094;</a>
     </div>
+    <div class="slideshow-container column-card">
+      <div class="mySlides fade">
+
+          <a href="" style="color:black;text-decoration: none; display: block;" class="height-full width-full">
+            <div class="bg-white padding-1 border-top-05 border-accent-warm shadow-5 height-full resources-hover">
+              <header class="usa-card__header">
+                <h4 class="resources-title">ITVMO Hosted AWS Office Hours</h4>
+              </header>
+              <div class="usa-card__body">
+                <p class="resources-text">This event is open to .gov/.mil audience only. Attend AWS Office Hours for an informal opportunity to speak with AWS representatives and have your questions answered.</p>
+              </div>
+              <div class="usa-card__footer">
+              </div>      
+            </div>
+          </a>
+
+      </div>
+
+      <div class="mySlides fade">
+          <a href="{{site.baseurl}}/technology-lifecycle-report-procure/#procure" style="color:black;text-decoration: none; display: block;" class="height-full">
+            <div class="bg-white padding-1 border-top-05 border-accent-warm shadow-5 height-full resources-hover">
+              <header class="usa-card__header">
+                <h4 class="resources-title">New Technology Life Cycle (TLC) User Stories Added</h4>
+              </header>
+              <div class="usa-card__body">
+                <p class="resources-text">ITVMO has published two new user stories on small business data under the "Procure" lifecycle stage. You can reference these <b><em>NEW</em></b> cards along with other user stories here.</p>
+              </div>
+              <div class="usa-card__footer">
+                <p>Read more...</p>
+              </div>      
+            </div>
+          </a>
+      </div>
+
+      <div class="mySlides fade">
+          <a href="https://gsasolutionssecure.gsa.gov/LP=4199"style="color:black;text-decoration: none; display: block;" class="height-full">
+            <div class="bg-white padding-1 border-top-05 border-accent-warm shadow-5 height-full resources-hover">
+              <header class="usa-card__header">
+                <h4 class="resources-title">IT Buyers Community of Practice (CoP) End-Of-Year Meeting</h4>
+              </header>
+              <div class="usa-card__body">
+                <p class="resources-text">Join the IT Buyers CoP for our End-of-Year forum to hear about the state of the category and our best-in-class solution offerings.
+                </p>
+              </div>
+              <div class="usa-card__footer">
+                <p>Read more...</p>
+              </div>      
+            </div>
+          </a>
+      </div>
+          <div style="text-align:center; margin:-5vh;">
+
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+
+          </div>
+      </div>
+      <div class="column-arrow">
+        <a class="next" onclick="showSlides()">&#10095;</a>
+      </div>
+  </div>
+  
+  <!-- <div class="grid-container">
+    <div class="slideshow-container">
+      
+          <div class="mySlides fade">
+            <div class="tablet:grid-col-4 usa-card">
+              <a href="" style="color:black;text-decoration: none; display: block;" class="height-full">
+                <div class="bg-white padding-1 border-top-05 border-accent-warm shadow-5 height-full resources-hover">
+                  <header class="usa-card__header">
+                    <h4 class="resources-title">ITVMO Hosted AWS Office Hours</h4>
+                  </header>
+                  <div class="usa-card__body">
+                    <p class="resources-text">This event is open to .gov/.mil audience only. Attend AWS Office Hours for an informal opportunity to speak with AWS representatives and have your questions answered.</p>
+                  </div>
+                  <div class="usa-card__footer">
+                  </div>      
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="tablet:grid-col-4 usa-card">
+              <a href="{{site.baseurl}}/technology-lifecycle-report-procure/#procure" style="color:black;text-decoration: none; display: block;" class="height-full">
+                <div class="bg-white padding-1 border-top-05 border-accent-warm shadow-5 height-full resources-hover">
+                  <header class="usa-card__header">
+                    <h4 class="resources-title">New Technology Life Cycle (TLC) User Stories Added</h4>
+                  </header>
+                  <div class="usa-card__body">
+                    <p class="resources-text">ITVMO has published two new user stories on small business data under the "Procure" lifecycle stage. You can reference these <b><em>NEW</em></b> cards along with other user stories here.</p>
+                  </div>
+                  <div class="usa-card__footer">
+                    <p>Read more...</p>
+                  </div>      
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="tablet:grid-col-4 usa-card">
+              <a href="https://gsasolutionssecure.gsa.gov/LP=4199"style="color:black;text-decoration: none; display: block;" class="height-full">
+                <div class="bg-white padding-1 border-top-05 border-accent-warm shadow-5 height-full resources-hover">
+                  <header class="usa-card__header">
+                    <h4 class="resources-title">IT Buyers Community of Practice (CoP) End-Of-Year Meeting</h4>
+                  </header>
+                  <div class="usa-card__body">
+                    <p class="resources-text">Join the IT Buyers CoP for our End-of-Year forum to hear about the state of the category and our best-in-class solution offerings.
+                    </p>
+                  </div>
+                  <div class="usa-card__footer">
+                    <p>Read more...</p>
+                  </div>      
+                </div>
+              </a>
+            </div> 
+          </div>
+          <div style="text-align:center; margin:-5vh;">
+
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+
+          </div>
+          <a class="prev" onclick="prevSlide()">&#10094;</a>
+          <a class="next" onclick="showSlides()">&#10095;</a>
+      </div>
+  </div> -->
+
+
+
+
+
+  </div>
 
   </div>
 </section>
