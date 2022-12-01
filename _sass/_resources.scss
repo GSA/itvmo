@@ -460,15 +460,15 @@ button {
   background-color: #717171;
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+// /* On smaller screens, decrease text size */
+// @media only screen and (max-width: 300px) {
 
-  .prev,
-  .next,
-  .text {
-      font-size: 11px
-  }
-}
+//   .prev,
+//   .next,
+//   .text {
+//       font-size: 11px
+//   }
+// }
 
 /* Next & previous buttons */
 .prev,
@@ -483,6 +483,27 @@ button {
   user-select: none;
   font-size: 120px;
   transform: scale(.6,1.2);
+}
+
+.prev-mobile,
+.next-mobile {
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;;
+  user-select: none;
+  color: white;
+  height: 30px;
+  width: 30px;
+}
+.arrow-span
+{
+  height: 30px;
+  width: 30px;
+  margin: 0 2px;
+  background-color: #1b2b85;
+  border-radius: 50%;
+  display: none;
+  padding-top: 3.5px;
 }
 
 /* Position the "next button" to the right */
@@ -542,4 +563,14 @@ button {
     height: 400px;
     // width: 227.33px;
   }
+
+  .column-arrow
+  {
+    display: none;
+  }
+  .arrow-span
+{
+  display: inline-block;
+}
+  
 }

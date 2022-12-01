@@ -8,10 +8,10 @@ eight.
   <div class="grid-container">
     <div class="grid-row usa-graphic-list__heading padding-bottom-3">
       <!-- <h3 class="margin-top-0 margin-bottom-0 latestUpdates">&larr; Latest Updates &rarr;</h3> -->
-      <h3 class="margin-top-0 margin-bottom-0 latestUpdates"> Latest Updates </h3>
+      <h3 class="margin-top-0 margin-bottom-0 latestUpdates animate fade"> Latest Updates </h3>
     </div>
     <div class="grid-container row">
-      <div class="column-arrow">
+      <div class="column-arrow animate fade">
         <div>
           <a class="prev" onclick="prevSlide()">&#10094;</a>
         </div>
@@ -63,16 +63,22 @@ eight.
               </a>
         </div>
       </div>
-          <div class="column-arrow">
+          <div class="column-arrow animate fade">
             <div><a class="next" onclick="showSlides()">&#10095;</a></div>
           </div>
         </div>
       </div>
     </div>
   </div>
-      <div class = "dotDiv">
+      <div class = "dotDiv animate fade">
+        <span class="arrow-span">
+              <a class="prev-mobile" onclick="prevSlide()">&#10094;</a>
+        </span>
         <span class="dot active"></span>
         <span class="dot"></span>
         <span class="dot"></span>
+        <span class="arrow-span">
+              <a class="next-mobile" onclick="showSlides()">&#10095;</a>
+        </span>
       </div>
 </section>
