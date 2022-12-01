@@ -7,11 +7,14 @@ eight.
 <section class="usa-graphic-list usa-section highlight-bkgd">
   <div class="grid-container">
     <div class="grid-row usa-graphic-list__heading padding-bottom-3">
-      <h3 class="margin-top-0 margin-bottom-0 latestUpdates">&larr; Latest Updates &rarr;</h3>
+      <!-- <h3 class="margin-top-0 margin-bottom-0 latestUpdates">&larr; Latest Updates &rarr;</h3> -->
+      <h3 class="margin-top-0 margin-bottom-0 latestUpdates"> Latest Updates </h3>
     </div>
     <div class="grid-container row">
       <div class="column-arrow">
-        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <div>
+          <a class="prev" onclick="prevSlide()">&#10094;</a>
+        </div>
       </div>
       <div class="slideshow-container column-card"> 
         <div class="mySlides animate fade" style="display: block;">
@@ -28,7 +31,7 @@ eight.
                 </div>
               </a>
         </div>
-        <div class="mySlides animate fade">
+        <div class="mySlides animate fade" >
               <a href="{{site.baseurl}}/technology-lifecycle-report-procure/#procure" style="color:black;text-decoration: none; display: block;" class="height-full">
                 <div class="bg-white padding-1 border-top-05 border-accent-warm shadow-5 height-full resources-hover">
                   <header class="usa-card__header">
@@ -61,7 +64,7 @@ eight.
         </div>
       </div>
           <div class="column-arrow">
-            <a class="next" onclick="showSlides()">&#10095;</a>
+            <div><a class="next" onclick="showSlides()">&#10095;</a></div>
           </div>
         </div>
       </div>
