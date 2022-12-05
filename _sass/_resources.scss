@@ -460,16 +460,6 @@ button {
   background-color: #717171;
 }
 
-// /* On smaller screens, decrease text size */
-// @media only screen and (max-width: 300px) {
-
-//   .prev,
-//   .next,
-//   .text {
-//       font-size: 11px
-//   }
-// }
-
 /* Next & previous buttons */
 .prev,
 .next {
@@ -571,6 +561,11 @@ button {
   .arrow-span
 {
   display: inline-block;
+}
+
+.gap
+{
+  margin-top: 8px;
 }
   
 }
