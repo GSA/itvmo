@@ -174,7 +174,7 @@ a.checked {
   padding-left: 15px;
 }
 
-//Styled for the events page
+/*EVENTPAGE*/
 .youtube
 {
   border-top: solid 4px #FF0000;
@@ -423,6 +423,22 @@ button {
   }
 }
 
+/*HOMEPAGE*/
+
+//Gap between Learn More About Who We Are button and Learn More About What We Do button.
+.gap
+{
+  margin-top: 8px;
+}
+.logo-left {
+  float: right;
+}
+#ServiceNowLogo
+{ 
+  height: 26.39px;
+  width: 165px;
+  margin: auto;
+}
 
 //Change the latest update page on the home page.
 .latestUpdates
@@ -446,8 +462,8 @@ button {
 /* The dots/bullets/indicators */
 .dot {
 
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -471,8 +487,9 @@ button {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  font-size: 120px;
-  transform: scale(.6,1.2);
+  font-size: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 .prev-mobile,
@@ -509,7 +526,7 @@ button {
 }
 .prev:hover,
 .next:hover {
-  transform: scale(.8,1.2);
+  transform: scale(1.05,1.15);
 }
 
 
@@ -525,8 +542,15 @@ button {
   div
   {
     margin: auto; //Center the arrow horizontally
-    width: 61.06px;
-    height: 180px;
+    width: 100px;
+    height: 100px;
+    a
+    {
+      svg
+      {
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 .column-card {
@@ -546,12 +570,11 @@ button {
   margin-top: 15px;
 }
 
-@media only screen and (max-width: 680px)
+@media only screen and (max-width: 825px)
 {
   .row {
     display: flex;
     height: 400px;
-    // width: 227.33px;
   }
 
   .column-arrow
@@ -562,10 +585,8 @@ button {
 {
   display: inline-block;
 }
-
-.gap
-{
-  margin-top: 8px;
-}
   
 }
+
+
+
