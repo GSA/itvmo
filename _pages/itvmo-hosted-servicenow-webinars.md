@@ -10,10 +10,10 @@ sidenav: false
 
 <div class="margin-bottom-2">
                     <ul>
-                      <li><b>Webinar #1</b> - <a href="https://gsa.zoomgov.com/meeting/register/vJIsfumsrj4sHCj8duFTDHUvh6wUuQ7BrcQ?utm_medium=email&utm_source=govDelivery">Introduction to ServiceNow, Strategy and Implementation Approach</a> 
-                      <br><b>December 8, 2022 @ 1:00 PM EST</b></li>
-                      <li><b>Webinar #2</b> - <a href="https://gsa.zoomgov.com/meeting/register/vJItfuCrrjwoEp-Mxz3QnfTRfY7gxeunrH8?utm_medium=email&utm_source=govDelivery">Operating and Maintaining the Platform</a> 
-                      <br><b>December 12, 2022 @11:00am EST</b></li>
+                      <li><b>Webinar 1: 12/8 at 1pm </b> - <a href="https://gsa.zoomgov.com/meeting/register/vJIsfumsrj4sHCj8duFTDHUvh6wUuQ7BrcQ?utm_medium=email&utm_source=govDelivery">Introduction to ServiceNow, Strategy and Implementation Approach</a>
+                      </li> 
+                      <li><b>Webinar 2: 12/12 at 11am</b> - <a href="https://gsa.zoomgov.com/meeting/register/vJItfuCrrjwoEp-Mxz3QnfTRfY7gxeunrH8?utm_medium=email&utm_source=govDelivery">Operating and Maintaining the Platform</a> 
+                      </li>
                     </ul>
                     <p>*Registration for Webinars 3-5 will be available soon*</p>
 </div>
