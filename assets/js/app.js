@@ -198,7 +198,7 @@ function initButtons() {
 
 
 //
-var timeOut = 8000;
+var timeOut = 5000;
 var slideIndex = 1;//The next latest update instead of the first one
 var autoOn = true;
 
@@ -213,7 +213,7 @@ function autoSlides() {
 
 function prevSlide() {
 
-  timeOut = 8000;
+  timeOut = 5000;
 
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
@@ -252,7 +252,7 @@ function prevSlide() {
 // }
 function showSlides() {
 
-  timeOut = 8000;
+  timeOut = 5000;
 
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
