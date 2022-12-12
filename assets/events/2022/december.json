@@ -21,14 +21,14 @@
             "date": "12/8/2022", 
             "color": "BLUE", 
             "link": "", 
-            "description": "ServiceNow Webinar 1 of 5. ServiceNow has become a leading IT platform in the federal government.  Join this webinar to learn more about ServiceNow fundamentals, including basic implementation and maintenance strategy to enhance the effectiveness of your ServiceNow digital transformation"
+            "description": "ServiceNow Webinar 1 of 6. ServiceNow has become a leading IT platform in the federal government.  Join this webinar to learn more about ServiceNow fundamentals, including basic implementation and maintenance strategy to enhance the effectiveness of your ServiceNow digital transformation"
         },
         {
             "title": "Operating and Maintaining the Platform", 
             "date": "12/12/2022", 
             "color": "BLUE", 
             "link": "https://gsa.zoomgov.com/meeting/register/vJItfuCrrjwoEp-Mxz3QnfTRfY7gxeunrH8", 
-            "description": "ServiceNow Webinar 2 of 5. Governance is a decision-making framework that defines how ServiceNow strategy, portfolio, and technical decisions are made and who has the authority to make them. Join this webinar to learn best practices and how to create governance boards specializing in each type of decision-making category to maintain control and get the most value from your ServiceNow investment."
+            "description": "ServiceNow Webinar 2 of 6. Governance is a decision-making framework that defines how ServiceNow strategy, portfolio, and technical decisions are made and who has the authority to make them. Join this webinar to learn best practices and how to create governance boards specializing in each type of decision-making category to maintain control and get the most value from your ServiceNow investment."
         }
     ]
 }
