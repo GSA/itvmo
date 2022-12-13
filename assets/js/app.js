@@ -14,7 +14,7 @@ const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function openModal(date) {
-  // console.log(events.length);
+
   const eventForDay = [];
   for(var i = 0; i < events.length; i++)
   { 
@@ -202,7 +202,6 @@ function initButtons() {
 /** The Home page Latest Update section **/
 var timer; //Store the Timeout for the slide
 var slideIndex = 1;//The next latest update instead of the first one
-// var autoOn = true;
 
 function autoSlides() {
 
