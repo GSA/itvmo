@@ -1,5 +1,7 @@
 // Add your custom javascript here
 // console.log("Hi from Federalist");
+
+/** Event page calendar **/
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
@@ -12,7 +14,7 @@ const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 function openModal(date) {
-  // console.log(events.length);
+
   const eventForDay = [];
   for(var i = 0; i < events.length; i++)
   { 
@@ -197,23 +199,16 @@ function initButtons() {
 }
 
 
-//
-var timeOut = 8000;
+/** The Home page Latest Update section **/
+var timer; //Store the Timeout for the slide
 var slideIndex = 1;//The next latest update instead of the first one
-var autoOn = true;
 
 function autoSlides() {
-  timeOut = timeOut - 20;
 
-  if (autoOn == true && timeOut < 0) {
-      showSlides();
-  }
-  setTimeout(autoSlides, 20);
+    timer = setTimeout("showSlides()", 8000);
 }
 
 function prevSlide() {
-
-  timeOut = 8000;
 
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
@@ -232,28 +227,10 @@ function prevSlide() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+  clearTimeout(timer); //Remove the timer that previously active before click on the previous button
+  autoSlides(); 
 }
-
-// function showSlides() {
-
-//   timeOut = 5000;
-
-//   var slides = document.getElementsByClassName("mySlides");
-//   var dots = document.getElementsByClassName("dot");
-
-//   slides[slideIndex].style.display = "block";
-//   dots[slideIndex].className += " active";
-//   slides[slideIndex-1].style.display = "none";
-//   slideIndex++;
-
-//   if (slideIndex > slides.length) {
-//       slideIndex = 1
-//   }
-// }
 function showSlides() {
-
-  timeOut = 8000;
-
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
 
@@ -268,10 +245,22 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
+  
+  clearTimeout(timer);
+  autoSlides();
 }
 
-autoSlides();
+function stopSlide()
+{
+  clearTimeout(timer);
+}
+function runSlide()
+{
+  timer = setTimeout("showSlides()", 1700);
+}
 
+/** Run functions **/
+autoSlides();
 initButtons();//Crash if not on the Events page, If going to run function that not associate with the Events page then run it before this function.
 localStorage.clear();
 load();
