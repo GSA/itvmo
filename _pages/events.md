@@ -56,7 +56,7 @@ sidenav: false
     </div>
 
 
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
 
     <!-- <h2>Events Summary:</h2> -->
     <div id="eventText"></div>

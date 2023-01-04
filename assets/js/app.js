@@ -260,7 +260,14 @@ function runSlide()
 }
 
 /** Run functions **/
-autoSlides();
-initButtons();//Crash if not on the Events page, If going to run function that not associate with the Events page then run it before this function.
-localStorage.clear();
-load();
+
+if(document.getElementById('homepage-highlight') != null)
+{
+  autoSlides();
+}
+if( document.getElementById('nextButton') != null)
+{
+  initButtons();//Crash if not on the Events page, If going to run function that not associate with the Events page then run it before this function.
+  localStorage.clear();
+  load();
+}
