@@ -19,6 +19,7 @@ const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','
 function openModal(date) {
 
   const eventForDay = [];
+
   for(var i = 0; i < events.length; i++)
   { 
     if(events[i].date === date)
@@ -43,14 +44,14 @@ function openModal(date) {
       if(eventForDay[i].color === "GREY")
         audience = " This is a partner event.";
       else if(eventForDay[i].color === "RED")
-        audience = " This is open to .gov/.mil audience only.";
+        audience = " This is open to all.";
       else if(eventForDay[i].color === "BLUE")
-        audience = " Open to .gov/.mil only.";
+        audience = " This is open to .gov/.mil only.";
 
       eventText += 
         `
         <p><a href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><b>${eventForDay[i].title} </b></a></p>
-        <p>${eventForDay[i].description}<b>${audience}</b></p>
+        <p id="eventDescription">${eventForDay[i].description}<b>${audience}</b></p>
         `;
     }
     eventText += `</div>`
@@ -83,21 +84,6 @@ async function runCalendar() {
   //Since only data that avaliable is currently only 2022 and 2023
   if((year >= 2022)&&(year <= 2023))
   {
-      //This variable use to point at the specific json file that will be use to retrive this month events.
-      // var thisMonthEvent;
-      // //Janurary is 0 to December is 11
-      // if(monthNum === 0) thisMonthEvent = `../assets/events/${year}/janurary.json`;
-      // else if(monthNum === 1) thisMonthEvent = `../assets/events/${year}/february.json`;
-      // else if(monthNum === 2) thisMonthEvent = `../assets/events/${year}/march.json`;
-      // else if(monthNum === 3) thisMonthEvent = `../assets/events/${year}/april.json`;
-      // else if(monthNum === 4) thisMonthEvent = `../assets/events/${year}/may.json`;
-      // else if(monthNum === 5) thisMonthEvent = `../assets/events/${year}/june.json`;
-      // else if(monthNum === 6) thisMonthEvent = `../assets/events/${year}/july.json`;
-      // else if(monthNum === 7) thisMonthEvent = `../assets/events/${year}/august.json`;
-      // else if(monthNum === 8) thisMonthEvent = `../assets/events/${year}/september.json`;
-      // else if(monthNum === 9) thisMonthEvent = `../assets/events/${year}/october.json`;
-      // else if(monthNum === 10) thisMonthEvent = `../assets/events/${year}/november.json`;
-      // else if(monthNum === 11) thisMonthEvent = `../assets/events/${year}/december.json`;
       //retrive the month information
       const res = await fetch(`../assets/events/${year}/${month[monthNum]}.json`);
       var thisMonthEvents = await res.json(); //data in this case is array list of items
@@ -134,11 +120,20 @@ async function runCalendar() {
     if (i > paddingDays) {
       daySquare.innerText = i - paddingDays;
       const eventForDay = [];
+      //These two variable use to determine the color of the squre on specific date of the calendar.
+      var itvmoEvent = false;
+      var otherEvent = false;
       for(var a = 0; a < events.length; a++)
       { 
         if(events[a].date === dayString)
         {
           eventForDay.push(events[a]);
+          //!!Change this later use other field to determine
+          if(otherEvent == false && events[a].type == "OTHER")
+            otherEvent = true;
+          //!!Change this later
+          if(itvmoEvent == false && events[a].type == "ITVMO")
+            itvmoEvent = true;
         }
       }
       //Display the Events summary for the current day if there is one
@@ -157,6 +152,19 @@ async function runCalendar() {
           const eventDivM = document.createElement('div');
           eventDivM.classList.add('eventMobile');
           eventDivM.innerText += eventForDay.length;
+
+          //If ITVMO events only on specific date
+          if(otherEvent == false && itvmoEvent == true)
+            eventDivM.style.cssText += 'background-color: #d36c6c;';
+          //If Other events only on specific date
+          else if(otherEvent == true && itvmoEvent == false)
+            eventDivM.style.cssText += 'background-color: #1b2b85;';
+          //If both ITVMO and other events on specific date
+          else if(otherEvent == true && itvmoEvent == true)
+            eventDivM.style.cssText += 'background: linear-gradient(135deg, #d36c6c 50%, #1b2b85 50%); ';
+          
+          itvmoEvent = false;
+          otherEvent = false;
           daySquare.appendChild(eventDivM);
 
       }

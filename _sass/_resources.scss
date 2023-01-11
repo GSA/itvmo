@@ -175,6 +175,12 @@ a.checked {
 }
 
 /*EVENTPAGE*/
+
+//Make the \n going to break the line in HTML
+#eventDescription
+{
+  white-space: pre-wrap;
+}
 .youtube
 {
   border-top: solid 4px #FF0000;
@@ -278,7 +284,6 @@ button {
 .eventMobile {
   font-size: 9px;
   font-weight: bold;
-  background-color: #1b2b85;
   color: white;
   border-radius: 5px;
   max-height: 15px;

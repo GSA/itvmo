@@ -2,18 +2,41 @@
     "events":
     [
         {
-            "title": "IT Buyer's Community of Practice (CoP) End-of-Year Meeting", 
-            "date": "12/1/2022", 
-            "color": "BLUE", 
-            "link": "https://gsasolutionssecure.gsa.gov/LP=4199", 
-            "description": "Join the IT Buyers Community of Practice for our End-of-Year forum to hear about the state of the category and our best-in-class solution offerings."            
+        "title": "IT Buyers Community of Practice (CoP) End-Of-Year Meeting", 
+        "date": "12/1/2022", 
+        "color": "BLUE", 
+        "link": "https://gsasolutionssecure.gsa.gov/LP=4199", 
+        "description": "Join the IT Buyers Community of Practice for our End-of-Year forum to hear about the state of the category and our best-in-class solution offerings.",
+        "type": "ITVMO"
         },
+        
+        
         {
-            "title": "How the New SBA Past Performance Rule Impacts All Federal Contractors: Sub and Prime/Small and Large", 
-            "date": "12/7/2022", 
-            "color": "GREY", 
-            "link": "https://web.cvent.com/event/f8049828-6bf4-4f30-a909-db11069dc357/summary", 
-            "description": "The U.S. Small Business Administration (SBA) issued a final rule that provides new methods for small business government contractors to obtain CPARS-aligned past performance ratings for work performed as a first-tier subcontractor or as a member of a joint venture to be used with offers on prime contracts with the Federal Government.  The final rule also updates the requirements for small business subcontracting plans adding a requirement for prime contractors to provide past performance to a first-tier, small business subcontractor when requested by the small business. Learn why and how this new SBA rule impacts ALL federal contractors and what you need to know to comply with, and smartly leverage, the SBA rule directives to gain a competitive advantage in the marketplace."
+        "title": "How the New SBA Past Performance Rule Impacts All Federal Contractors: Sub and Prime/Small and Large", 
+        "date": "12/7/2022", 
+        "color": "GREY", 
+        "link": "https://web.cvent.com/event/f8049828-6bf4-4f30-a909-db11069dc357/summary", 
+        "description": "The U.S. Small Business Administration (SBA) issued a final rule that provides new methods for small business government contractors to obtain CPARS-aligned past performance ratings for work performed as a first-tier subcontractor or as a member of a joint venture to be used with offers on prime contracts with the Federal Government.  The final rule also updates the requirements for small business subcontracting plans adding a requirement for prime contractors to provide past performance to a first-tier, small business subcontractor when requested by the small business. Learn why and how this new SBA rule impacts ALL federal contractors and what you need to know to comply with, and smartly leverage, the SBA rule directives to gain a competitive advantage in the marketplace.",
+        "type": "OTHER"
+        },
+        
+        {
+        "title": "Introduction to ServiceNow, Strategy and Implementation Approach", 
+        "date": "12/8/2022", 
+        "color": "BLUE", 
+        "link": "https://gsa.zoomgov.com/meeting/register/vJIsfumsrj4sHCj8duFTDHUvh6wUuQ7BrcQ", 
+        "description": "ServiceNow Webinar 1 of 6. ServiceNow has become a leading IT platform in the federal government.  Join this webinar to learn more about ServiceNow fundamentals, including basic implementation and maintenance strategy to enhance the effectiveness of your ServiceNow digital transformation",
+        "type": "ITVMO"
+        },
+        
+        {
+        "title": "Operating and Maintaining the Platform", 
+        "date": "12/12/2022", 
+        "color": "BLUE", 
+        "link": "https://gsa.zoomgov.com/meeting/register/vJItfuCrrjwoEp-Mxz3QnfTRfY7gxeunrH8", 
+        "description": "ServiceNow Webinar 2 of 6. Governance is a decision-making framework that defines how ServiceNow strategy, portfolio, and technical decisions are made and who has the authority to make them. Join this webinar to learn best practices and how to create governance boards specializing in each type of decision-making category to maintain control and get the most value from your ServiceNow investment.",
+        "type": "ITVMO"
         }
+        
     ]
 }
