@@ -7,13 +7,7 @@ sidenav: false
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
 <h1 class="margin-top-0">{{ page.title }}</h1>
 
-<!-- <h2>Overview</h2> -->
-
 <div class="margin-bottom-2">
-
-    <!-- <p>
-      Events in Blue are for Government employees only. Events in red are open to everyone.
-    </p> -->
         
     <div id="calendarSumContainer" class="animate fade">
     <div id="container">
@@ -44,6 +38,19 @@ sidenav: false
       </div>
 
       <div id="calendar"></div>
+      
+      <div class="eventExplain" id = "firstEventExplain">
+        <div class="eventColor" style="background-color: rgb(211, 108, 108);"></div>
+        <div class="eventColorExplain"> - Only ITVMO events on specific day.</div>
+      </div>
+      <div class="eventExplain">
+        <div class="eventColor" style="background-color: rgb(27, 43, 133);"></div>
+        <div class="eventColorExplain"> - Only non-ITVMO events on specific day.</div>
+      </div>
+      <div class="eventExplain">
+        <div class="eventColor" style="background: linear-gradient(135deg, rgb(211, 108, 108) 50%, rgb(27, 43, 133) 50%);"></div>
+        <div class="eventColorExplain"> - Both ITVMO and non-ITVMO events on specific day.</div>
+      </div>
     </div>
 
     <div id="newEventModal">
