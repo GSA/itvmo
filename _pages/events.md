@@ -41,15 +41,15 @@ sidenav: false
       
       <div class="eventExplain" id = "firstEventExplain">
         <div class="eventColor" style="background-color: rgb(211, 108, 108);"></div>
-        <div class="eventColorExplain"> - Only ITVMO events on that specific day.</div>
+        <div class="eventColorExplain"> - Only ITVMO events.</div>
       </div>
       <div class="eventExplain">
         <div class="eventColor" style="background-color: rgb(27, 43, 133);"></div>
-        <div class="eventColorExplain"> - Only non-ITVMO events on that specific day.</div>
+        <div class="eventColorExplain"> - Only non-ITVMO events.</div>
       </div>
       <div class="eventExplain">
         <div class="eventColor" style="background: linear-gradient(135deg, rgb(211, 108, 108) 50%, rgb(27, 43, 133) 50%);"></div>
-        <div class="eventColorExplain"> - Both ITVMO and non-ITVMO events on that specific day.</div>
+        <div class="eventColorExplain"> - Both ITVMO and non-ITVMO events.</div>
       </div>
     </div>
 
