@@ -2,11 +2,21 @@
     "events":
     [
         {
-            "title": "IT Buyers Community of Practice (CoP) May Meeting", 
-            "date": "5/25/2023", 
-            "color": "BLUE", 
-            "link": "https://community.max.gov/display/Egov/IT+Buyers+Community+of+Practice#", 
-            "description": "The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government."          
+        "title": "CHESS 101: Bi-Monthly", 
+        "date": "5/18/2023", 
+        "color": "BLUE", 
+        "link": "https://chess.army.mil/Account/Logon?returnUrl=https%3A%2F%2Fchess.army.mil%2FChessTraining%2FRequester", 
+        "description": "New to CHESS? Start by learning the fundamentals of the CHESS Program. The CHESS 101 Briefing provides a program overview including detailed information about our Hardware, Software, and Services contracts. Get additional information about the License Tracker for Software (LTS), the RF Process, Statements of Non-Availability, and much more! Learn how to streamline IT procurement by logging into our Bi-monthly Teleconference Sessions.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "IT Buyers Community of Practice (CoP) May Meeting", 
+        "date": "5/25/2023", 
+        "color": "BLUE", 
+        "link": "https://community.max.gov/display/Egov/IT+Buyers+Community+of+Practice#", 
+        "description": "The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government. Open to .gov/.mil only.",
+        "type": "ITVMO"
         }
     ]
 }

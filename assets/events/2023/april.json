@@ -2,11 +2,95 @@
     "events":
     [
         {
-            "title": "IT Buyers Community of Practice (CoP) April Meeting", 
-            "date": "4/27/2023", 
-            "color": "BLUE", 
-            "link": "https://community.max.gov/display/Egov/IT+Buyers+Community+of+Practice#", 
-            "description": "The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government."
+        "title": "Sea-Air-Space Exposition", 
+        "date": "4/3/2023", 
+        "color": "RED", 
+        "link": "https://seaairspace.org/attend/", 
+        "description": "Sea-Air-Space brings the U.S. defense industry and key military decision-makers together for three days of informative educational sessions, important policy discussions and a dynamic exhibit hall floor.",
+        "type": "OTHER"
         }
+        
+        ,{
+        "title": "Sea-Air-Space Exposition", 
+        "date": "4/4/2023", 
+        "color": "RED", 
+        "link": "https://seaairspace.org/attend/", 
+        "description": "Sea-Air-Space brings the U.S. defense industry and key military decision-makers together for three days of informative educational sessions, important policy discussions and a dynamic exhibit hall floor.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "Sea-Air-Space Exposition", 
+        "date": "4/5/2023", 
+        "color": "RED", 
+        "link": "https://seaairspace.org/attend/", 
+        "description": "Sea-Air-Space brings the U.S. defense industry and key military decision-makers together for three days of informative educational sessions, important policy discussions and a dynamic exhibit hall floor.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "HIMSS Global Health Conference & Exhibition", 
+        "date": "4/17/2023", 
+        "color": "RED", 
+        "link": "https://www.himss.org/global-conference/attend-about", 
+        "description": "The HIMSS Global Health Conference & Exhibition is the most influential health information technology event of the year, where 40,000+ professionals throughout the global health ecosystem meet to build relationships during lively networking events, learn from experts in hot topic education sessions and discover innovative health tech products to solve their greatest challenges.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "HIMSS Global Health Conference & Exhibition", 
+        "date": "4/18/2023", 
+        "color": "RED", 
+        "link": "https://www.himss.org/global-conference/attend-about", 
+        "description": "The HIMSS Global Health Conference & Exhibition is the most influential health information technology event of the year, where 40,000+ professionals throughout the global health ecosystem meet to build relationships during lively networking events, learn from experts in hot topic education sessions and discover innovative health tech products to solve their greatest challenges.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "HIMSS Global Health Conference & Exhibition", 
+        "date": "4/19/2023", 
+        "color": "RED", 
+        "link": "https://www.himss.org/global-conference/attend-about", 
+        "description": "The HIMSS Global Health Conference & Exhibition is the most influential health information technology event of the year, where 40,000+ professionals throughout the global health ecosystem meet to build relationships during lively networking events, learn from experts in hot topic education sessions and discover innovative health tech products to solve their greatest challenges.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "HIMSS Global Health Conference & Exhibition", 
+        "date": "4/20/2023", 
+        "color": "RED", 
+        "link": "https://www.himss.org/global-conference/attend-about", 
+        "description": "The HIMSS Global Health Conference & Exhibition is the most influential health information technology event of the year, where 40,000+ professionals throughout the global health ecosystem meet to build relationships during lively networking events, learn from experts in hot topic education sessions and discover innovative health tech products to solve their greatest challenges.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "HIMSS Global Health Conference & Exhibition", 
+        "date": "4/21/2023", 
+        "color": "RED", 
+        "link": "https://www.himss.org/global-conference/attend-about", 
+        "description": "The HIMSS Global Health Conference & Exhibition is the most influential health information technology event of the year, where 40,000+ professionals throughout the global health ecosystem meet to build relationships during lively networking events, learn from experts in hot topic education sessions and discover innovative health tech products to solve their greatest challenges.",
+        "type": "OTHER"
+        }
+        
+        
+        ,{
+        "title": "ACT-IAC IT CYBER SECURITY COI APRIL 2023", 
+        "date": "4/21/2023", 
+        "color": "GREY", 
+        "link": "https://www.actiac.org/act-iac-event/act-iac-cybersecurity-coi-april-2023", 
+        "description": "Join the ACT-IAC Cyber COI member meeting to hear from an invited government speaker.  More information will be available soon.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "IT Buyers Community of Practice (CoP) April Meeting", 
+        "date": "4/27/2023", 
+        "color": "BLUE", 
+        "link": "https://community.max.gov/display/Egov/IT+Buyers+Community+of+Practice#", 
+        "description": "The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government.",
+        "type": "ITVMO"
+        }
+          
     ]
 }

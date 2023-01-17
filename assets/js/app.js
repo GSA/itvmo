@@ -2,6 +2,7 @@
 // console.log("Hi from Federalist");
 
 /** Event page calendar **/
+
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
@@ -12,10 +13,13 @@ const deleteEventModal = document.getElementById('deleteEventModal');
 const backDrop = document.getElementById('modalBackDrop');
 const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','august','september','october','november','december'];
+
 
 function openModal(date) {
 
   const eventForDay = [];
+
   for(var i = 0; i < events.length; i++)
   { 
     if(events[i].date === date)
@@ -40,14 +44,14 @@ function openModal(date) {
       if(eventForDay[i].color === "GREY")
         audience = " This is a partner event.";
       else if(eventForDay[i].color === "RED")
-        audience = " This is open to .gov/.mil audience only.";
+        audience = " This is open to all.";
       else if(eventForDay[i].color === "BLUE")
-        audience = " Open to .gov/.mil only.";
+        audience = " This is open to .gov/.mil only.";
 
       eventText += 
         `
         <p><a href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><b>${eventForDay[i].title} </b></a></p>
-        <p>${eventForDay[i].description}<b>${audience}</b></p>
+        <p id="eventDescription">${eventForDay[i].description}<b>${audience}</b></p>
         `;
     }
     eventText += `</div>`
@@ -66,7 +70,7 @@ function openModal(date) {
   }
 }
 
-async function load() {
+async function runCalendar() {
   const dt = new Date();
   if (nav !== 0) {
     dt.setDate(1);
@@ -75,28 +79,13 @@ async function load() {
 
   //Retrive the date
   const day = dt.getDate();
-  const month = dt.getMonth();
+  const monthNum = dt.getMonth();
   const year = dt.getFullYear();
   //Since only data that avaliable is currently only 2022 and 2023
   if((year >= 2022)&&(year <= 2023))
   {
-      //This variable use to point at the specific json file that will be use to retrive this month events.
-      var thisMonthEvent;
-      //Janurary is 0 to December is 11
-      if(month === 0) thisMonthEvent = `../assets/events/${year}/janurary.json`;
-      else if(month === 1) thisMonthEvent = `../assets/events/${year}/february.json`;
-      else if(month === 2) thisMonthEvent = `../assets/events/${year}/march.json`;
-      else if(month === 3) thisMonthEvent = `../assets/events/${year}/april.json`;
-      else if(month === 4) thisMonthEvent = `../assets/events/${year}/may.json`;
-      else if(month === 5) thisMonthEvent = `../assets/events/${year}/june.json`;
-      else if(month === 6) thisMonthEvent = `../assets/events/${year}/july.json`;
-      else if(month === 7) thisMonthEvent = `../assets/events/${year}/august.json`;
-      else if(month === 8) thisMonthEvent = `../assets/events/${year}/september.json`;
-      else if(month === 9) thisMonthEvent = `../assets/events/${year}/october.json`;
-      else if(month === 10) thisMonthEvent = `../assets/events/${year}/november.json`;
-      else if(month === 11) thisMonthEvent = `../assets/events/${year}/december.json`;
       //retrive the month information
-      const res = await fetch(thisMonthEvent);
+      const res = await fetch(`../assets/events/${year}/${month[monthNum]}.json`);
       var thisMonthEvents = await res.json(); //data in this case is array list of items
       thisMonthEvents = thisMonthEvents.events;
      //Check whether the json file already store in the local storage already or not.
@@ -107,8 +96,8 @@ async function load() {
       }
   }
   //Generate calendar
-  const firstDayOfMonth = new Date(year, month, 1);
-  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  const firstDayOfMonth = new Date(year, monthNum, 1);
+  const daysInMonth = new Date(year, monthNum + 1, 0).getDate();
   const dateString = firstDayOfMonth.toLocaleDateString('en-us', {
     weekday: 'long',
     year: 'numeric',
@@ -126,16 +115,25 @@ async function load() {
     const daySquare = document.createElement('div');
     daySquare.classList.add('day');
 
-    const dayString = `${month + 1}/${i - paddingDays}/${year}`;
+    const dayString = `${monthNum + 1}/${i - paddingDays}/${year}`;
 
     if (i > paddingDays) {
       daySquare.innerText = i - paddingDays;
       const eventForDay = [];
+      //These two variable use to determine the color of the squre on specific date of the calendar.
+      var itvmoEvent = false;
+      var otherEvent = false;
       for(var a = 0; a < events.length; a++)
       { 
         if(events[a].date === dayString)
         {
           eventForDay.push(events[a]);
+          //!!Change this later use other field to determine
+          if(otherEvent == false && events[a].type == "OTHER")
+            otherEvent = true;
+          //!!Change this later
+          if(itvmoEvent == false && events[a].type == "ITVMO")
+            itvmoEvent = true;
         }
       }
       //Display the Events summary for the current day if there is one
@@ -154,6 +152,19 @@ async function load() {
           const eventDivM = document.createElement('div');
           eventDivM.classList.add('eventMobile');
           eventDivM.innerText += eventForDay.length;
+
+          //If ITVMO events only on specific date
+          if(otherEvent == false && itvmoEvent == true)
+            eventDivM.style.cssText += 'background-color: #d36c6c;';
+          //If Other events only on specific date
+          else if(otherEvent == true && itvmoEvent == false)
+            eventDivM.style.cssText += 'background-color: #1b2b85;';
+          //If both ITVMO and other events on specific date
+          else if(otherEvent == true && itvmoEvent == true)
+            eventDivM.style.cssText += 'background: linear-gradient(135deg, #d36c6c 50%, #1b2b85 50%); ';
+          
+          itvmoEvent = false;
+          otherEvent = false;
           daySquare.appendChild(eventDivM);
 
       }
@@ -165,16 +176,6 @@ async function load() {
     }
     calendar.appendChild(daySquare);    
   }
-}
-
-function closeModal() {
-  eventTitleInput.classList.remove('error');
-  newEventModal.style.display = 'none';
-  deleteEventModal.style.display = 'none';
-  backDrop.style.display = 'none';
-  eventTitleInput.value = '';
-  clicked = null;
-  // load();
 }
 //Save the event 
 function saveEvent(currEvent) {
@@ -189,12 +190,12 @@ function initButtons() {
     document.getElementById('nextButton').addEventListener('click', () => {
       nav++;
       //Insert paraemeter here to intake the data and can display on the calendar
-      load();
+      runCalendar();
     });
   //Go to previous month
     document.getElementById('backButton').addEventListener('click', () => {
       nav--;
-      load();
+      runCalendar();
     });
 }
 
@@ -203,7 +204,7 @@ function initButtons() {
 var timer; //Store the Timeout for the slide
 var slideIndex = 1;//The next latest update instead of the first one
 
-function autoSlides() {
+function runHighlight() {
 
     timer = setTimeout("showSlides()", 8000);
 }
@@ -228,7 +229,7 @@ function prevSlide() {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
   clearTimeout(timer); //Remove the timer that previously active before click on the previous button
-  autoSlides(); 
+  runHighlight(); 
 }
 function showSlides() {
   var slides = document.getElementsByClassName("mySlides");
@@ -247,20 +248,32 @@ function showSlides() {
   dots[slideIndex - 1].className += " active";
   
   clearTimeout(timer);
-  autoSlides();
+  runHighlight();
 }
 
+//This function run when the user hover the mouse on the highlight card
 function stopSlide()
 {
   clearTimeout(timer);
 }
+//This function trigger only after user mouse left the highlight card
 function runSlide()
 {
   timer = setTimeout("showSlides()", 1700);
 }
 
 /** Run functions **/
-autoSlides();
-initButtons();//Crash if not on the Events page, If going to run function that not associate with the Events page then run it before this function.
-localStorage.clear();
-load();
+
+//Run Home page 
+if(document.getElementById('homepage-highlight') != null)
+{
+  runHighlight();
+}
+
+//Run Events page
+if( document.getElementById('nextButton') != null)
+{
+  initButtons();
+  localStorage.clear();
+  runCalendar();
+}

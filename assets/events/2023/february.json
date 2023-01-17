@@ -2,11 +2,139 @@
     "events":
     [
         {
-            "title": "IT Buyers Community of Practice (CoP) February Meeting", 
-            "date": "2/23/2023", 
-            "color": "BLUE", 
-            "link": "https://community.max.gov/display/Egov/IT+Buyers+Community+of+Practice#", 
-            "description": "The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government."
+        "title": "Year in Review for Small Business Contractors", 
+        "date": "2/1/2023", 
+        "color": "GREY", 
+        "link": "https://thecgp.org/event/year-in-review-for-small-business-contractors", 
+        "description": "The Coalition’s Small Business Committee will be hosting a presentation, the Year in Review for Small Business Contractors on February 1 from 10 am – 12 pm EST. The event will feature a discussion of the changes in regulation such as the updates to the Mentor-Protégé program. The presentation will feature Ken Dodds, Government Contracting Industry Expert at Live Oak Bank, David Black, Partner at Holland & Knight, and Jonathan Williams, Partner at Pileiro Mazza. To register for the event, click here. Please direct any questions to JSnyderwine@thecgp.org.\n\nThe Coalition is also working to schedule an in-person meeting for the OASIS+ working group with Assistant Commissioner for the Office of Professional Services and Human Capital Categories, Tiffany Hixson. The meeting would be the week of January 23 and would provide members an opportunity to provide in-person feedback and engagement on the first draft proposal.",
+        "type": "OTHER"
         }
+        
+        ,{
+        "title": "Enabling Distributed C2 Symposium", 
+        "date": "2/1/2023", 
+        "color": "BLUE", 
+        "link": "https://www.afceapncevent.org/event-details/enabling-distributed-c2-symposium-at-jblm", 
+        "description": "The purpose of this event is to further educate JBLM Pacific Forces Cyber, IT, and Communications warfighters on Joint All-Domain Command and Control (JADC2) in the Pacific Theater.  JADC2 enabled by cloud, cyber, data, intelligence, information technology, and networks. This will be accomplished by providing SME speaker sessions, panels, and an exhibit hall. Day One will focus on JADC2 operational aspects, and Day Two will focus on the technical side.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "Enabling Distributed C2 Symposium", 
+        "date": "2/2/2023", 
+        "color": "BLUE", 
+        "link": "https://www.afceapncevent.org/event-details/enabling-distributed-c2-symposium-at-jblm", 
+        "description": "The purpose of this event is to further educate JBLM Pacific Forces Cyber, IT, and Communications warfighters on Joint All-Domain Command and Control (JADC2) in the Pacific Theater.  JADC2 enabled by cloud, cyber, data, intelligence, information technology, and networks. This will be accomplished by providing SME speaker sessions, panels, and an exhibit hall. Day One will focus on JADC2 operational aspects, and Day Two will focus on the technical side. ",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "ATARC FEDERAL IT MODERNIZATION SUMMIT", 
+        "date": "2/8/2023", 
+        "color": "GREY", 
+        "link": "https://www.afceapncevent.org/event-details/enabling-distributed-c2-symposium-at-jblm", 
+        "description": "Register for ATARC Federal IT Modernization Summit to hear form a number of panels on varying topics.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "SEWP Reservse Industry Event", 
+        "date": "2/13/2023", 
+        "color": "BLUE", 
+        "link": "https://www.sewp.nasa.gov/sewpvi/", 
+        "description": "The current SEWP V contracts provide the latest in ICT products and services for all Federal Agencies and their approved contractors. This event will offer a unique opportunity to allow industry representatives a chance to offer their perspectives to the Government and to solicit industry feedback regarding innovative solutions the SEWP VI Government-Wide Acquisition Contract (GWAC) should consider.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "West 2023: Readiness, Capability and Capacity: How Do the Sea Services Match Up Against the Future Threat?", 
+        "date": "2/14/2023", 
+        "color": "RED", 
+        "link": "https://www.westconference.org/West23/Public/Enter.aspx", 
+        "description": "Learn and network while exploring and experiencing the latest platforms, leading-edge technologies and state-of-the-art networking capabilities that support the Sea Services' operations.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "ACT-IAC IT MANAGEMENT AND MODERNIZATION COI FEBRUARY 2023", 
+        "date": "2/14/2023", 
+        "color": "GREY", 
+        "link": "https://www.actiac.org/act-iac-event/act-iac-it-management-and-modernization-coi-february-2023", 
+        "description": "Join the ACT-IAC IT Management and Modernization COI February 2023 meeting. Additional event information will be available soon.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "West 2023: Readiness, Capability and Capacity: How Do the Sea Services Match Up Against the Future Threat?", 
+        "date": "2/15/2023", 
+        "color": "RED", 
+        "link": "https://www.westconference.org/West23/Public/Enter.aspx", 
+        "description": "Learn and network while exploring and experiencing the latest platforms, leading-edge technologies and state-of-the-art networking capabilities that support the Sea Services' operations.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "West 2023: Readiness, Capability and Capacity: How Do the Sea Services Match Up Against the Future Threat?", 
+        "date": "2/16/2023", 
+        "color": "RED", 
+        "link": "https://www.westconference.org/West23/Public/Enter.aspx",
+        "description": "Learn and network while exploring and experiencing the latest platforms, leading-edge technologies and state-of-the-art networking capabilities that support the Sea Services' operations.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "Rocky Mountain Cyberspace Symposium 2023", 
+        "date": "2/20/2023", 
+        "color": "RED", 
+        "link": "https://www.eventsquid.com/event.cfm?event_id=16078",
+        "description": "Many senior cyber leaders both within and without of government have advocated zero-trust models to reduce risk exposure by eliminating unnecessary access and privileges across critical systems.  RMCS23 invites Government, Industry, and Academia to join us in an exploration of current requirements, best practices, and case studies in the application of zero trust, least privilege, contextual authentication, exception-based security and similar technologies to our current post-pandemic security environment.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "Rocky Mountain Cyberspace Symposium 2023", 
+        "date": "2/21/2023", 
+        "color": "RED", 
+        "link": "https://www.eventsquid.com/event.cfm?event_id=16078",
+        "description": "Many senior cyber leaders both within and without of government have advocated zero-trust models to reduce risk exposure by eliminating unnecessary access and privileges across critical systems.  RMCS23 invites Government, Industry, and Academia to join us in an exploration of current requirements, best practices, and case studies in the application of zero trust, least privilege, contextual authentication, exception-based security and similar technologies to our current post-pandemic security environment.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "Rocky Mountain Cyberspace Symposium 2023", 
+        "date": "2/22/2023", 
+        "color": "RED", 
+        "link": "https://www.eventsquid.com/event.cfm?event_id=16078",
+        "description": "Many senior cyber leaders both within and without of government have advocated zero-trust models to reduce risk exposure by eliminating unnecessary access and privileges across critical systems.  RMCS23 invites Government, Industry, and Academia to join us in an exploration of current requirements, best practices, and case studies in the application of zero trust, least privilege, contextual authentication, exception-based security and similar technologies to our current post-pandemic security environment.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "Digital Transformation Summit 2023", 
+        "date": "2/22/2023", 
+        "color": "GREY", 
+        "link": "https://web.cvent.com/event/96fec1f1-13a7-4a87-bdcb-a5c06751b502/summary", 
+        "description": "Digital Transformation – the process of using digital technologies to create new or modify existing business process, culture and/or customer experience to meet the changing business and market requirements – Is helping government and industry improve operational efficiency, productivity, and resiliency.  Its success requires savvy leadership that is willing to challenge the status quo, a skilled workforce that is comfortable with trial and error, as well as up-to-date rules and processes, flexible work environments, and massive amounts of high-quality data for effective decision making. \nThis year ACT-IAC and MeriTalk are collaborating on the third Digital Transformation Summit focusing on use cases as well as the culture, customer experience emphasis, and training that are essential to successful implementation of the right digital technology.  We will explore how to select the right technology for your organization and how to measure the return on your investment. ",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "Rocky Mountain Cyberspace Symposium 2023", 
+        "date": "2/23/2023", 
+        "color": "RED", 
+        "link": "https://www.eventsquid.com/event.cfm?event_id=16078",
+        "description": "Many senior cyber leaders both within and without of government have advocated zero-trust models to reduce risk exposure by eliminating unnecessary access and privileges across critical systems.  RMCS23 invites Government, Industry, and Academia to join us in an exploration of current requirements, best practices, and case studies in the application of zero trust, least privilege, contextual authentication, exception-based security and similar technologies to our current post-pandemic security environment.",
+        "type": "OTHER"
+        }
+        
+        ,{
+        "title": "IT Buyers Community of Practice (CoP) February Meeting", 
+        "date": "2/23/2023", 
+        "color": "BLUE", 
+        "link": "https://community.max.gov/display/Egov/IT+Buyers+Community+of+Practice#", 
+        "description": "The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government. Open to .gov/.mil only.",
+        "type": "ITVMO"
+        }
+        
     ]
 }

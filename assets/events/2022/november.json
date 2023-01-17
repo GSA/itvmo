@@ -2,53 +2,58 @@
     "events":
     [
         {
-            "title": "Tradeshow: SAME Federal Small Business Conference",
-            "date": "11/2/2022",
-            "color": "GREY",
-            "link": "https://www.samesbc.org/",
-            "description": "This is your opportunity to connect with a community of leading experts, decision-makers, solution providers, business partners, and federal contracting officers."
+        "title": "AFCEA TechNet Indo-Pacific 2022: SEWP Customer/Provider Training", 
+        "date": "11/3/2022", 
+        "color": "BLUE", 
+        "link": "https://www.linkedin.com/posts/nasa-sewp_sewptraining-afcea-activity-6989208988743598080-Q_yA?utm_source=share&utm_medium=member_desktop", 
+        "description": "SEWP is holding training on November 3, 1-4PM- Earn 4.0 CLPs! This is a partner event.",
+        "type" : "OTHER"
+        },
+        
+        {
+        "title": "AFCEA Bethesda Energy, Infrastructure, and Environment Summit", 
+        "date": "11/1/2022", 
+        "color": "BLUE", 
+        "link": "https://www.linkedin.com/posts/nasa-sewp_nasasewp-joannewoytek-afcea-activity-6982685793492373504-fZQm?utm_source=share&utm_medium=member_desktop", 
+        "description": "This is a partner event.",
+        "type" : "OTHER"
         },
         {
-            "title": "AFCEA TechNet Indo-Pacific 2022: SEWP Customer/Provider Training",
-            "date": "11/3/2022",
-            "color": "GREY",
-            "link": "https://www.linkedin.com/posts/nasa-sewp_sewptraining-afcea-activity-6989208988743598080-Q_yA?utm_source=share&utm_medium=member_desktop",
-            "description": "SEWP is holding training on November 3, 1-4 PM - Earn 4.0 CLPs!"
+        "title": "AWS Office Hours", 
+        "date": "11/10/2022", 
+        "color": "BLUE", 
+        "link": "https://gsa.zoomgov.com/meeting/register/vJItdOurqjIuH71UexrQfEl7FAKY8foLss8?utm_medium=email&utm_source=govDelivery", 
+        "description": "Attend AWS Office Hours for an informal opportunity to speak with AWS representatives and have your questions answered.",
+        "type": "ITVMO"
         },
+        
         {
-            "title": "AFCEA Bethesda Energy, Infrastructure, and Environment Summit", 
-            "date": "11/1/2022", 
-            "color": "GREY", 
-            "link": "https://www.linkedin.com/posts/nasa-sewp_nasasewp-joannewoytek-afcea-activity-6982685793492373504-fZQm?utm_source=share&utm_medium=member_desktop", 
-            "description": "This is a partner event."            
+        "title": "CGP Fall Training Conference- Expectations for Fiscal Year 2023", 
+        "date": "11/16/2022", 
+        "color": "GREY", 
+        "link":"https://www.linkedin.com/posts/nasa-sewp_nasasewp-joannewoytek-afcea-activity-6982685793492373504-fZQm?utm_source=share&utm_medium=member_desktop", 
+        "description": "On November 16, sessions will include a governmentwide focus. Representatives from the Department of Defense (DoD), Department of Homeland Security (DHS), Defense Logistics Agency (DLA), General Services Administration (GSA), National Aeronautics and Space Administration (NASA), National Institutes of Health (NIH), Small Business Administration (SBA), and Department of Veterans Affairs (VA) have been invited to participate. We are excited to share that this year’s conference will open with a Keynote Address from Tom Davis, former Congressman and current Holland & Knight Partner, who will provide analysis of the election results, detailing what happened and what these results mean for the Federal government.",
+        "type" : "OTHER"
         },
+        
         {
-            "title": "CGP Fall Training Conference- Expectations for Fiscal Year 2023",
-            "date": "11/16/2022",
-            "color": "GREY",
-            "link": "https://www.linkedin.com/posts/nasa-sewp_nasasewp-joannewoytek-afcea-activity-6982685793492373504-fZQm?utm_source=share&utm_medium=member_desktop",
-            "description": "On November 16, sessions will include a governmentwide focus. Representatives from the Department of Defense (DoD), Department of Homeland Security (DHS), Defense Logistics Agency (DLA), General Services Administration (GSA), National Aeronautics and Space Administration (NASA), National Institutes of Health (NIH), Small Business Administration (SBA), and Department of Veterans Affairs (VA) have been invited to participate. We are excited to share that this year’s conference will open with a Keynote Address from Tom Davis, former Congressman and current Holland & Knight Partner, who will provide analysis of the election results, detailing what happened and what these results mean for the Federal government."
+        "title": "2022 Fall Conference - Expectations for Gov Fiscal Year 2023 (From 11/16/2022 to 11/17/2022)", 
+        "date": "11/16/2022",
+        "color": "GREY", 
+        "link": "https://members.thecgp.org/Shared_Content/Events/CGPEvent_Display.aspx?EventKey=111622CONF&WebsiteKey=bbbdf8d0-b0ef-4aee-83a7-6ec8ee8afc24", 
+        "description": "This hybrid two-day conference will be held on November 16-17 at the Fairview Park Marriott in Falls Church, Virginia, with virtual attendance available, as well. This year’s conference highlights the expectations for Federal procurement policies and programs across the government in the new fiscal year.",
+        "type" : "OTHER"
         },
+        
         {
-            "title": "2022 Fall Conference - Expectations for Gov Fiscal Year 2023 (From 11/16/2022 to 11/17/2022)", 
-            "date": "11/16/2022",
-            "color": "GREY", 
-            "link": "https://members.thecgp.org/Shared_Content/Events/CGPEvent_Display.aspx?EventKey=111622CONF&WebsiteKey=bbbdf8d0-b0ef-4aee-83a7-6ec8ee8afc24", 
-            "description": "This hybrid two-day conference will be held on November 16-17 at the Fairview Park Marriott in Falls Church, Virginia, with virtual attendance available, as well. This year’s conference highlights the expectations for Federal procurement policies and programs across the government in the new fiscal year."
-        },
-        {
-            "title": "2022 Fall Conference - Expectations for Gov Fiscal Year 2023 (From 11/16/2022 to 11/17/2022)", 
-            "date": "11/17/2022",
-            "color": "GREY", 
-            "link": "https://members.thecgp.org/Shared_Content/Events/CGPEvent_Display.aspx?EventKey=111622CONF&WebsiteKey=bbbdf8d0-b0ef-4aee-83a7-6ec8ee8afc24", 
-            "description": "This hybrid two-day conference will be held on November 16-17 at the Fairview Park Marriott in Falls Church, Virginia, with virtual attendance available, as well. This year’s conference highlights the expectations for Federal procurement policies and programs across the government in the new fiscal year."
-        },
-        {
-            "title": "AWS Office Hours", 
-            "date": "11/10/2022", 
-            "color": "RED", 
-            "link": "https://gsa.zoomgov.com/meeting/register/vJItdOurqjIuH71UexrQfEl7FAKY8foLss8?utm_medium=email&utm_source=govDelivery", 
-            "description": "Attend AWS Office Hours for an informal opportunity to speak with AWS representatives and have your questions answered."
+        "title": "2022 Fall Conference - Expectations for Gov Fiscal Year 2023 (From 11/16/2022 to 11/17/2022)", 
+        "date": "11/17/2022",
+        "color": "GREY", 
+        "link": "https://members.thecgp.org/Shared_Content/Events/CGPEvent_Display.aspx?EventKey=111622CONF&WebsiteKey=bbbdf8d0-b0ef-4aee-83a7-6ec8ee8afc24", 
+        "description": "This hybrid two-day conference will be held on November 16-17 at the Fairview Park Marriott in Falls Church, Virginia, with virtual attendance available, as well. This year’s conference highlights the expectations for Federal procurement policies and programs across the government in the new fiscal year.",
+        "type" : "OTHER"
         }
+        
+        
     ]
 }
