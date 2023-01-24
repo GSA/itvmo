@@ -4,5 +4,5 @@ description: Use this tool for a searchable and filterable interactive way to vi
 external_url: www.acquisition.gov/far-smart-matrix
 content_tags:
 type: link
-filters: p-filter na-branded-offering na-audience
+filters: p-filter
 ---

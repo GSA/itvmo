@@ -4,5 +4,5 @@ description: This webpage identifies each of the categories of IT and summarizes
 external_url: www.gsa.gov/policy-regulations/policy/acquisition-policy/information-technology-acquisition
 content_tags:
 type: link
-filters: p-filter na-branded-offering na-audience
+filters: policy
 ---

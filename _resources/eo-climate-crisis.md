@@ -3,5 +3,5 @@ title: "Executive Order Reference for E.O. 14008: Climate Crisis: Tackling the C
 description: Resources related to the most recent Climate Crisis E.O.
 permalink: /exec-order-climate-crisis
 type: link
-filters: acquisition-best-practices
+filters: p-filter govwide-it-category-management for-program-managers
 ---

@@ -4,5 +4,5 @@ description: This blog provides an overview of FAR Regulation 16.505(B), which m
 external_url: www.nitaac.nih.gov/resources/articles/understanding-fair-opportunity
 content_tags:
 type: link
-filters: vehicle-solutions it-best-in-class-vehicles for-contracting-officers
+filters: acquisition-best-practices it-best-in-class-vehicles for-contracting-officers
 ---

@@ -5,5 +5,5 @@ description: This white paper provides insight into the end user computing envir
 doc-link: assets/files/workstation-End-User-device-environment-and-trends.pdf
 content_tags:
 type: pdf
-filters: emerging-technology
+filters: vehicle-solutions governmentwide-strategic-solutions for-program-managers
 ---
