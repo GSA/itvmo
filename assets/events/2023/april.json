@@ -91,6 +91,30 @@
         "description": "The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government.",
         "type": "ITVMO"
         }
+        ,{
+            "title": "AWS Office Hours- Session 2", 
+            "date": "4/4/2023", 
+            "color": "BLUE", 
+            "link": "https://gsa.zoomgov.com/meeting/register/vJIsceuqrz4iEt-2oXdtskKmytt9R3rqL8c", 
+            "description": "As part of the ITVMO’s effort to foster collaboration and partnering between government acquisition professionals and top IT Original Equipment Manufacturers (OEMs), the ITVMO will be hosting a second Office Hours Q&A session with members of the Amazon Web Services (AWS) federal team.\n\nThis is a follow up to and continuation of the ITVMO’s facilitated AWS Webinar held in Jliy 2022 and Office Hours Session 1 held in November 2022.  Office Hours Sessions unite customers and vendors in a collaborative forum, allowing customers to ask Agency-specific questions to the vendor federal team and get real time answers, clarification on challenges, and when requested, offline one-on-one engagement to support ongoing Agency specific efforts.\n\nThemes for AWS Office Hours - Session 2 may include:<ul><li>Building better relationships with AWS Partners</li><li>What's the difference between purchasing direct vs purchasing through an AWS partner?</li><li>Monitoring and Managing Consumption</li></ul>",
+            "type": "ITVMO"
+        }
+        ,{
+            "title": "CIO-SP3 & CIO-SP3 Small Business GWAC Training", 
+            "date": "4/13/2023", 
+            "color": "BLUE", 
+            "link": "https://nitaac.nih.gov/form/free-training?source_entity_type=node&source_entity_id=168511#no-back", 
+            "description": "To assure our clients have no break in service as we award CIO-SP4, NITAAC is pleased to announce an extension of the CIO-SP3 and CIO-SP3 Small Business Government-Wide Acquisition Contract (GWAC) through 4/29/23. Any task order awarded can have a 5-year period of performance (POP), taking clients into FY28! NITAAC plans to announce CIO-SP4 awards on or before 3/15/23 and this new extension assures continued coverage for agency customers using our contracting vehicles..",
+            "type": "OTHER"            
+        }
+        ,{
+            "title": "NITAAC Monthly GWACs Training Session", 
+            "date": "4/27/2023", 
+            "color": "BLUE", 
+            "link": "https://nitaac.nih.gov/form/free-training?source_entity_type=node&source_entity_id=167936#no-back", 
+            "description": "Let NITAAC show you how easy it is to acquire IT products, services, and solutions through our CIO-SP3, CIO-SP3 Small Business and CIO-CS Government-Wide Acquisition Contracts (GWACs). Just attend one of our upcoming IT GWAC trainings. Contracting Officers, Contract Specialists, Chief Information Officers, IT program officials and anyone on your team who is involved in the IT procurement process can benefit from attending a NITAAC training session. All attendees will receive 2 Continuous Learning Points (CLPs).",
+            "type": "OTHER"            
+        }
           
     ]
 }
