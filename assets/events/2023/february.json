@@ -135,6 +135,30 @@
         "description": "The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government. Open to .gov/.mil only.",
         "type": "ITVMO"
         }
+        ,{
+            "title": "CIO-SP3 & CIO-SP3 Small Business GWAC Training", 
+            "date": "2/9/2023", 
+            "color": "BLUE", 
+            "link": "https://nitaac.nih.gov/form/free-training?source_entity_type=node&source_entity_id=168501#no-back", 
+            "description": "To assure our clients have no break in service as we award CIO-SP4, NITAAC is pleased to announce an extension of the CIO-SP3 and CIO-SP3 Small Business Government-Wide Acquisition Contract (GWAC) through 4/29/23. Any task order awarded can have a 5-year period of performance (POP), taking clients into FY28! NITAAC plans to announce CIO-SP4 awards on or before 3/15/23 and this new extension assures continued coverage for agency customers using our contracting vehicles..",
+            "type": "OTHER"
+        }
+        ,{
+            "title": "NITAAC CIO-CS GWAC Training Session", 
+            "date": "2/15/2023", 
+            "color": "BLUE", 
+            "link": "https://nitaac.nih.gov/form/free-training?source_entity_type=node&source_entity_id=167971#no-back", 
+            "description": "To assure our clients have no break in service as we award CIO-SP4, NITAAC is pleased to announce an extension of the CIO-SP3 and CIO-SP3 Small Business Government-Wide Acquisition Contract (GWAC) through 4/29/23. Any task order awarded can have a 5-year period of performance (POP), taking clients into FY28! NITAAC plans to announce CIO-SP4 awards on or before 3/15/23 and this new extension assures continued coverage for agency customers using our contracting vehicles.",
+            "type": "OTHER"            
+        }
+        ,{
+            "title": "NITAAC Monthly GWACs Training Session", 
+            "date": "2/23/2023", 
+            "color": "BLUE", 
+            "link": "https://nitaac.nih.gov/form/free-training?source_entity_type=node&source_entity_id=167926#no-back", 
+            "description": "Let NITAAC show you how easy it is to acquire IT products, services, and solutions through our CIO-SP3, CIO-SP3 Small Business and CIO-CS Government-Wide Acquisition Contracts (GWACs). Just attend one of our upcoming IT GWAC trainings. Contracting Officers, Contract Specialists, Chief Information Officers, IT program officials and anyone on your team who is involved in the IT procurement process can benefit from attending a NITAAC training session. All attendees will receive 2 Continuous Learning Points (CLPs).",
+            "type": "OTHER"            
+        }
         
     ]
 }

@@ -90,6 +90,14 @@
         "description": "The 2023 AUSA Global Force Symposium & Exposition will explore the capabilities outlined in the Army’s Modernization Strategy to drive transformational change. Special guest presentations, coupled with panel discussions from our senior military and industry leaders, will address critical points of research and development, acquisition and contracting, force sustainment, strategic divestiture, and industry partnerships.\n\nFor the Army, this means greater synergy with industry partners to ensure a modernized defense industrial base and an Army capable of conducting MDO. The Army must continue to streamline its acquisition processes, and continue to invest in the modernization of facilities and infrastructure, training, and skill sets required across the AME, with an eye towards the future, to maintain overmatch for great power competition.\n\nWith support from the Army Materiel Command, the Army Futures Command, alongside the Office of the Assistant Secretary of the Army (Acquisition, Logistics and Technology) and other Army Commands, this three-day event highlights how the Total Army will modernize and transform into a multi-domain capable force.",
         "type": "OTHER"
         }
+        ,{
+            "title": "NITAAC Monthly GWACs Training Session", 
+            "date": "3/30/2023", 
+            "color": "BLUE", 
+            "link": "https://nitaac.nih.gov/form/free-training?source_entity_type=node&source_entity_id=167931#no-back", 
+            "description": "Let NITAAC show you how easy it is to acquire IT products, services, and solutions through our CIO-SP3, CIO-SP3 Small Business and CIO-CS Government-Wide Acquisition Contracts (GWACs). Just attend one of our upcoming IT GWAC trainings. Contracting Officers, Contract Specialists, Chief Information Officers, IT program officials and anyone on your team who is involved in the IT procurement process can benefit from attending a NITAAC training session. All attendees will receive 2 Continuous Learning Points (CLPs).",
+            "type": "OTHER"            
+        }
         
     ]
 }
