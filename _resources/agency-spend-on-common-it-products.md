@@ -4,5 +4,5 @@ description: Acquisition Analytics show the BIC transaction line level detail. I
 external_url: itvmo.gsa.gov/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf
 content_tags:
 type: link
-filters: vendor-intelligence
----
+filters: acquisition-best-practices na-branded-offering na-audience
+--- 
