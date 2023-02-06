@@ -4,5 +4,5 @@ description: The Category Management Workbench allows a user to filter by busine
 external_url: itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-SDB-Vendors.pdf
 content_tags:
 type: link
-filters: small-business-intelligence
+filters: small-business na-branded-offering na-audience
 ---

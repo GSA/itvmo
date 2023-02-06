@@ -4,5 +4,5 @@ description: This guide shows line level detail from acquisition analytics. It a
 external_url: itvmo.gsa.gov/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf
 content_tags:
 type: link
-filters: vendor-intelligence
+filters: market-intelligence na-branded-offering na-audience
 ---

@@ -5,5 +5,5 @@ description: The Solutions Finder provides visibility into the many solution off
 external_url: hallways.cap.gsa.gov/app/#/solutionsfinder
 content_tags:
 type: link
-filters: best-in-class
+filters: vehicle-solutions na-branded-offering na-audience
 ---

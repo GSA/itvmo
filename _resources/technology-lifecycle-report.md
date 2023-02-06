@@ -5,5 +5,5 @@ description: This document describes the series of process stages that follow an
 permalink: /technology-lifecycle-report
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: acquisition-best-practices technology-life-cycle-framework for-program-managers
 ---

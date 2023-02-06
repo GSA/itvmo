@@ -5,5 +5,5 @@ description: The linked section provides guidance on prospective subcontractors 
 external_url: www.ecfr.gov/current/title-32/subtitle-A/chapter-I/subchapter-D/part-117#117.17
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: cybersecurity na-branded-offering na-audience
 ---

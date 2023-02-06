@@ -5,5 +5,5 @@ description: This site page provides training and best practices for planning an
 external_url: www.community.max.gov/display/Egov/2.+Microsoft
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: acquisition-best-practices oem-vendor-initiatives for-contracting-officers
 ---

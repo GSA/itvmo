@@ -5,5 +5,5 @@ description: A government-wide knowledge management portal for innovative acquis
 external_url: www.fai.gov/periodic-table
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: acquisition-best-practices na-branded-offering na-audience
 ---

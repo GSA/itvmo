@@ -5,5 +5,5 @@ description: A DHS initiative that shares innovative procurement techniques and 
 external_url: www.dhs.gov/pil
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: acquisition-best-practices na-branded-offering na-audience
 ---

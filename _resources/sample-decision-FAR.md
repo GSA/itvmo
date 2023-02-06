@@ -4,5 +4,5 @@ description: A resource for the decisions making  documentation process when usi
 external_url: www.fai.gov/sites/default/files/periodic_table/Decision_Document_Comparative_Evaluation.PDF
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: acquisition-best-practices na-branded-offering na-audience
 ---

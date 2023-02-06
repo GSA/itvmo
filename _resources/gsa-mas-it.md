@@ -5,5 +5,5 @@ description: Resources related to MAS IT delivering best value on over 7.5 milli
 external_url: www.gsa.gov/technology/technology-purchasing-programs/mas-information-technology
 content_tags:
 type: link
-filters: best-in-class
+filters: vehicle-solutions it-best-in-class-vehicles for-contracting-officers
 ---

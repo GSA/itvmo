@@ -5,5 +5,5 @@ description: A collection of resources from the National Institute for Standards
 external_url: csrc.nist.gov/projects/cyber-supply-chain-risk-management
 content_tags:
 type: link
-filters: scrm
+filters: cybersecurity na-branded-offering na-audience
 ---

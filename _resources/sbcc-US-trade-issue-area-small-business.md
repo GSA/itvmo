@@ -5,5 +5,5 @@ description: A resource for advantages, opportunities, and workshops available t
 external_url: www.ustr.gov/issue-areas/small-business
 content_tags:
 type: link
-filters: small-business-intelligence
+filters: small-business na-branded-offering na-audience
 ---

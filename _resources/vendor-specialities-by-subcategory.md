@@ -4,5 +4,5 @@ description: The Category Management Workbench can filter by sub categories of s
 external_url: itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-Vendors-Specializing-in-an-IT-Subcategory.pdf
 content_tags:
 type: link
-filters: emerging-technology
+filters: small-business na-branded-offering na-audience
 ---

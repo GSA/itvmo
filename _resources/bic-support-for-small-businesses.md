@@ -4,5 +4,5 @@ description: The operational workbench provides the ability to filter by BIC con
 external_url: itvmo.gsa.gov/assets/files/tlr/How-do-BICs-support-small-business-508.pdf
 content_tags:
 type: link
-filters: small-business-intelligence
+filters: small-business na-branded-offering na-audience
 ---

@@ -6,5 +6,5 @@ description: This tool provides a contract guide for finding and winning federal
 external_url: www.sba.gov/federal-contracting
 content_tags:
 type: link
-filters: small-business-intelligence
+filters: small-business na-branded-offering na-audience
 ---

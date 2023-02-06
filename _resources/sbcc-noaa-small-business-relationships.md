@@ -5,5 +5,5 @@ description: A resource to facilitate strategic relationships to support NOAA’
 external_url: www.noaa.gov/organization/acquisition-grants/small-business
 content_tags:
 type: link
-filters: small-business-intelligence
+filters: small-business na-branded-offering na-audience
 ---

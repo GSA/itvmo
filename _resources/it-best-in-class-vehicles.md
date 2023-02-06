@@ -5,5 +5,5 @@ description: The purpose of this page is to highlight the basic information abou
 permalink: /best-in-class
 content_tags: 
 type: link
-filters: best-in-class
+filters: vehicle-solutions it-best-in-class-vehicles for-contracting-officers
 ---

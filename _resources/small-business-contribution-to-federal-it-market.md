@@ -4,5 +4,5 @@ description: Acquisition Analytics show the BIC transaction line level detail. T
 external_url: itvmo.gsa.gov/assets/files/tlr/percent-product-services-small-business.pdf
 content_tags:
 type: link
-filters: emerging-technology
+filters: small-business na-branded-offering na-audience
 ---

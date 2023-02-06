@@ -4,5 +4,5 @@ description: The small business dashboard calculates the small business utilizat
 external_url: itvmo.gsa.gov/assets/files/tlr/how-much-agency-bic-contracts.pdf
 content_tags:
 type: link
-filters: small-business-intelligence
+filters: small-business na-branded-offering na-audience
 ---

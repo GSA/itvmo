@@ -5,5 +5,5 @@ description: A resource for the steps needed to obtain and maintain and FCL once
 external_url: www.dcsa.mil/mc/isd/fc/
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: cybersecurity na-branded-offering na-audience
 ---

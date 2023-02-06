@@ -5,5 +5,5 @@ description: This tool helps federal contracting officers and others find awarde
 external_url: calc.gsa.gov/
 content_tags:
 type: link
-filters: vendor-intelligence
+filters: acquisition-best-practices na-branded-offering na-audience
 ---

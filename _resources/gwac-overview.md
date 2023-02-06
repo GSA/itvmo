@@ -4,5 +4,5 @@ description: This article provides an overview of GWACs, the many options for su
 external_url: www.gsa.gov/technology/technology-purchasing-programs/governmentwide-acquisition-contracts-gwacs
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: vehicle-solutions na-branded-offering na-audience
 ---

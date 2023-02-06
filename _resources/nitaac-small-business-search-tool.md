@@ -5,5 +5,5 @@ description: This tool provides guidance on identifying small business and set-a
 external_url: www.nitaac.nih.gov/search/contract-holders?f%5B0%5D=gwac%3A7
 content_tags:
 type: link
-filters: small-business-intelligence
+filters: small-business small-business-util for-small-businesses
 ---

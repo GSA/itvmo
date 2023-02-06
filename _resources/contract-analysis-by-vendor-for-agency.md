@@ -4,5 +4,5 @@ description: An agency may consolidate their spend from multiple contracts into 
 external_url: itvmo.gsa.gov/assets/files/tlr/agency-duplicate-contracts.pdf
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: market-intelligence na-branded-offering na-audience
 ---

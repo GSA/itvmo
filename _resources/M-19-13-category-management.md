@@ -5,5 +5,5 @@ description: The purpose of this Memorandum is to provide guidance on the use of
 external_url: www.whitehouse.gov/wp-content/uploads/2019/03/M-19-13.pdf
 content_tags:
 type: link
-filters: category-management
+filters: p-filter na-branded-offering na-audience
 ---

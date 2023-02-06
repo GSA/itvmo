@@ -5,5 +5,5 @@ description: Guidance on the process of getting a security clearance, the backgr
 external_url: www.gogovernment.org/application-process/background-checks-and-security-clearances/
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: cybersecurity na-branded-offering na-audience
 ---

@@ -5,5 +5,5 @@ description: NISP was established by E.O. 12829 to ensure that the cleared US de
 external_url: www.dcsa.mil/mc/isd/nisp/
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: cybersecurity na-branded-offering na-audience
 ---

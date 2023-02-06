@@ -4,5 +4,5 @@ description: This Yearbook highlights stories that exemplify procurement innovat
 external_url: www.dhs.gov/sites/default/files/2022-08/PIL%20Yearbook%20FY%202021_2.pdf
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: acquisition-best-practices na-branded-offering na-audience
 ---

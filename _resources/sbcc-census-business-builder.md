@@ -5,5 +5,5 @@ description: The CBB is a suite of services that provide selected demographic an
 external_url: www.census.gov/data/data-tools/cbb.html
 content_tags:
 type: link
-filters: small-business-intelligence
+filters: small-business na-branded-offering na-audience
 ---

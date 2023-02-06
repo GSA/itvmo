@@ -4,5 +4,5 @@ description: Acquisition Analytics show the BIC transaction line level detail. T
 external_url: itvmo.gsa.gov/assets/files/tlr/what-products-bic-solutions.pdf
 content_tags:
 type: link
-filters: vendor-intelligence
+filters: market-intelligence na-branded-offering na-audience
 ---

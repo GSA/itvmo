@@ -4,5 +4,5 @@ description: The IT dashboard provides a comparison of a selected agency and the
 external_url: itvmo.gsa.gov/assets/files/tlr/how-many-orgs-compare-it-budget-similiar.pdf
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: market-intelligence na-branded-offering na-audience
 ---

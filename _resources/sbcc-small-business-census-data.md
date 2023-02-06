@@ -5,5 +5,5 @@ description: This resource provides detailed statistics about U.S. businesses th
 external_url: www.census.gov/topics/business-economy/small-business.html
 content_tags:
 type: link
-filters: small-business-intelligence
+filters: small-business na-branded-offering na-audience
 ---

@@ -3,5 +3,5 @@ title: "Executive Order Reference for E.O. 14005: Ensuring the Future is Made in
 description: Resources related to the most recent Buy America E.O.
 permalink: /exec-order-americas-workers
 type: link
-filters: scrm
+filters: p-filter govwide-it-category-management for-program-managers
 ---

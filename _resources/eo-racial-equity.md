@@ -3,5 +3,5 @@ title: "Executive Order Reference for E.O. 13985: Advancing Racial Equity and Su
 description: Resources related to the most recent Racial Equity E.O.
 permalink: /exec-order-racial-equity
 type: link
-filters: small-business-intelligence
+filters: p-filter govwide-it-category-management for-program-managers
 ---

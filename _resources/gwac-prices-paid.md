@@ -4,5 +4,5 @@ description: The GWAC Prices Paid Suite of tools provide customer agencies with 
 external_url: www.d2d.gsa.gov/customer/gwac-prices-paid
 content_tags:
 type: link
-filters: acquisition-best-practices
+filters: vehicle-solutions na-branded-offering na-audience
 ---
