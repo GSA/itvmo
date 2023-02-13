@@ -13,13 +13,13 @@ sidenav: false
         <h2>I am an agency buyer…</h2>
         <p>
           <ul style="list-style: none;">
-            <li><a href="/i-am-a-contracting officer" style="text-decoration: none">
+            <li><a href="/i-am-a-contracting-officer" style="text-decoration: none">
             I am a contracting <br>officer…
             </a></li>
-            <li><a href="" style="text-decoration: none">
+            <li><a href="/i-am-a-program-manager" style="text-decoration: none">
             I am a program <br>manager…
             </a></li>
-            <li><a href="" style="text-decoration: none">
+            <li><a href="/i-am-info-security-officials" style="text-decoration: none">
             I am an information<br> security official…
             </a></li>
           </ul>
@@ -29,16 +29,16 @@ sidenav: false
         <h2>I am a supplier…</h2>
         <p>
           <ul style="list-style: none;">
-            <li><a href="" style="text-decoration: none">
+            <li><a href="/i-am-a-small-businesses" style="text-decoration: none">
             I am a small business…
             </a></li>
-            <li><a href="" style="text-decoration: none">
+            <li><a href="/i-am-an-oem" style="text-decoration: none">
             I am an Original <br>Equipment Manufacturer (OEM)...
             </a></li>
-            <li><a href="" style="text-decoration: none">
+            <li><a href="/i-am-a-reseller" style="text-decoration: none">
             I am a reseller…
             </a></li>
-            <li><a href="" style="text-decoration: none">
+            <li><a href="/i-am-a-new-entrant" style="text-decoration: none">
             I am a new entrant…
             </a></li>
           </ul>
@@ -48,16 +48,16 @@ sidenav: false
         <h2>I am a prospective partner…</h2>
         <p>
           <ul style="list-style: none;">
-            <li><a href="" style="text-decoration: none">
+            <li><a href="/i-am-a-prospective-partner" style="text-decoration: none">
             I am with a federal <br>program or office…
             </a></li>
-            <li><a href="" style="text-decoration: none">
+            <li><a href="/i-am-a-prospective-partner" style="text-decoration: none">
             I am a state VMO or local <br>government…
             </a></li>
-            <li><a href="" style="text-decoration: none">
+            <li><a href="/i-am-a-prospective-partner" style="text-decoration: none">
             I am a private-public partner…
             </a></li>
-            <li><a href="" style="text-decoration: none">
+            <li><a href="/i-am-a-prospective-partner" style="text-decoration: none">
             I am with the press or media…
             </a></li>
           </ul>
