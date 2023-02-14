@@ -657,9 +657,9 @@ button {
 {
   .row-text {
     display: table;
-    width: 100%; /*Optional*/
-    table-layout: fixed; /*Optional*/
-    border-spacing: 10px; /*Optional*/
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 10px; 
   
     .column {
       display: table-row;
