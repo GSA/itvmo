@@ -126,15 +126,6 @@
         "description": "Many senior cyber leaders both within and without of government have advocated zero-trust models to reduce risk exposure by eliminating unnecessary access and privileges across critical systems.  RMCS23 invites Government, Industry, and Academia to join us in an exploration of current requirements, best practices, and case studies in the application of zero trust, least privilege, contextual authentication, exception-based security and similar technologies to our current post-pandemic security environment.",
         "type": "OTHER"
         }
-        
-        ,{
-        "title": "IT Buyers Community of Practice (CoP) February Meeting", 
-        "date": "2/23/2023", 
-        "color": "BLUE", 
-        "link": "https://community.max.gov/display/Egov/IT+Buyers+Community+of+Practice#", 
-        "description": "The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government. Open to .gov/.mil only.",
-        "type": "ITVMO"
-        }
         ,{
             "title": "CIO-SP3 & CIO-SP3 Small Business GWAC Training", 
             "date": "2/9/2023", 

@@ -619,5 +619,88 @@ button {
 }
 }
 
+/*HOW CAN WE HELP PAGE*/
+
+.row-text {
+  display: table;
+  width: 100%; /*Optional*/
+  table-layout: fixed; /*Optional*/
+  border-spacing: 10px; /*Optional*/
+
+  .column {
+    h2 
+    {
+      border-bottom: solid;
+      text-align: center;
+      height: 80px;
+    }
+    display: table-cell;
+    ul
+    {
+      padding-left: 0;
+      li
+      {
+        margin: 10px 0;
+        font-weight: 550;
+        font-size: 18px;
+      }
+      li:hover
+      {
+        font-size: 20px;
+        transition: all 100ms;
+      }
+    }
+  }
+}
+//Change the table from display in column to row.               
+@media only screen and (max-width: 965px)
+{
+  .row-text {
+    display: table;
+    width: 100%; 
+    table-layout: fixed; 
+    border-spacing: 10px; 
+  
+    .column {
+      display: table-row;
+    }
+  }
+  
+  
+
+}
+
+.question
+{
+  font-weight: 550;
+  font-size: 18px;
+  margin-top: 0;
+}
+#vendorForm
+{
+  display: block;
+  width: 222.17px;
+  height: 35px;
+  color: white;
+  text-align: center;
+  background-color: #1b2b85;
+  border: none;
+  border-radius:.3em;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+.contactUs
+{
+  background-color: #e17141 !important;
+}
+.marginBottomZero
+{
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+
 
 
