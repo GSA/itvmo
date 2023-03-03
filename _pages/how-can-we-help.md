@@ -6,6 +6,8 @@ sidenav: false
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
 <h1 class="margin-top-0">{{ page.title }}</h1>
+<strong>Don’t see what you’re looking for?</strong><br>
+We are continuously identifying and adding new resources and tools. Please check back frequently or subscribe to our quarterly newsletter for new updates. If your question is not addressed in the following sections, please email us at: <a href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a> and we will get back to you with an answer.
 
 <!-- <h2>Overview</h2> -->
   <div class="margin-bottom-2 row-text">
@@ -67,8 +69,7 @@ sidenav: false
 </section>
 
 <section class="grid-container padding-left-0 padding-right-1">
-<p><strong>Don’t see what you’re looking for?</strong><br>
-If your question is not addressed in the above sections, please email us at: <a href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a> and we will get back to you with an answer.</p>
+
 </section>
 
 
