@@ -5,6 +5,5 @@ description: This document contains an abstract definition of ZTA and gives gene
 external_url: nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf
 content_tags:
 type: pdf
-filters: cybersecurity na-branded-offering na-audience
+filters: cybersecurity na-branded-offering for-info-security-officials
 ---
-

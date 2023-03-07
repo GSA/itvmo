@@ -5,7 +5,7 @@ description: A Zero Trust Architecture helps agencies build zero trust principle
 external_url: www.gsa.gov/technology/technology-products-services/it-security/zero-trust-architecture
 content_tags:
 type: link
-filters: cybersecurity na-branded-offering na-audience
+filters: cybersecurity na-branded-offering for-info-security-officials
 ---
 
 
