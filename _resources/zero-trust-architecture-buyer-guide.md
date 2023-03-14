@@ -5,6 +5,6 @@ description: This buyers guide published by GSA intends to assist agencies with 
 external_url: www.gsa.gov/cdnstatic/Zero%20Trust%20Architecture%20Buyers%20Guide%20v11%2020210810.pdf
 content_tags:
 type: pdf
-filters: cybersecurity na-branded-offering na-audience
+filters: cybersecurity na-branded-offering for-info-security-officials
 ---
 
