@@ -5,5 +5,5 @@ description: On January 26, 2022, the OMB released the below Federal Zero Trust 
 external_url: zerotrust.cyber.gov/federal-zero-trust-strategy/
 content_tags:
 type: link
-filters: cybersecurity na-branded-offering for-info-security-officials
+filters: cybersecurity na-branded-offering na-audience
 ---

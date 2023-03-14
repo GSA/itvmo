@@ -21,23 +21,10 @@ sidenav: false
 <h2></h2>
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
-          Adobe
-        </button>
-      </h3>
-      <div id="b-a1" class="usa-accordion__content" hidden="">
-      <div>
-            <div>
-              <p>The Adobe Vendor Assessment process began in September of 2021. After careful consideration and completion of each phase, the initial Adobe Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
-              <p>Agency buyers click  <a href="https://community.max.gov/display/Egov/4.+Adobe">here</a> for the AWS Buyers Guide on OMB MAX.</p>
-            </div>
-      </div>
-      </div>
-      <h3 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">
           AWS
         </button>
       </h3>
-      <div id="b-a2" class="usa-accordion__content" hidden="">
+      <div id="b-a1" class="usa-accordion__content" hidden="">
       <div>
             <div>
             <p>The Amazon Web Services (AWS) Vendor Assessment process began in August of 2021. After careful consideration and completion of each phase, the initial AWS Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
@@ -46,26 +33,13 @@ sidenav: false
             </div>
       </div>
       </div>
-            <h3 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3">
-          Cisco
-        </button>
-      </h3>
-      <div id="b-a3" class="usa-accordion__content" hidden="">
-      <div>
-            <div>
-              <p>The Cisco Vendor Assessment process began August of 2022. After careful consideration and completion of each phase, the initial Cisco Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
-              <p>Agency buyers click  <a href="https://community.max.gov/display/Egov/5.+Cisco">here</a> for the AWS Buyers Guide on OMB MAX.</p>
-            </div>
-      </div>
-      </div>
 
       <h3 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a4">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">
           Microsoft
         </button>
       </h3>
-      <div id="b-a4" class="usa-accordion__content" hidden="">
+      <div id="b-a2" class="usa-accordion__content" hidden="">
       <div>
             <div>
               <p>The Microsoft (MSFT) Vendor Assessment process began in September of 2021. After careful consideration and completion of each phase, the initial MSFT Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
@@ -75,15 +49,42 @@ sidenav: false
       </div>
 
       <h3 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a5">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3">
           Oracle
+        </button>
+      </h3>
+      <div id="b-a3" class="usa-accordion__content" hidden="">
+      <div>
+            <div>
+              <p>The Oracle Vendor Assessment process began in May of 2021. After careful consideration and completion of each phase, the initial Oracle Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
+              <p>Agency buyers click  <a href="https://community.max.gov/display/Egov/1.+Oracle">here</a> for the AWS Buyers Guide on OMB MAX.</p>
+            </div>
+      </div>
+      </div>
+
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a4">
+          Cisco
+        </button>
+      </h3>
+      <div id="b-a4" class="usa-accordion__content" hidden="">
+      <div>
+            <div>
+              <p>The Cisco Vendor Assessment process began August of 2022. After careful consideration and completion of each phase, the initial Cisco Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
+              <p>Agency buyers click  <a href="https://community.max.gov/display/Egov/5.+Cisco">here</a> for the AWS Buyers Guide on OMB MAX.</p>
+            </div>
+      </div>
+      </div>
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a5">
+          Adobe
         </button>
       </h3>
       <div id="b-a5" class="usa-accordion__content" hidden="">
       <div>
             <div>
-              <p>The Oracle Vendor Assessment process began in May of 2021. After careful consideration and completion of each phase, the initial Oracle Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
-              <p>Agency buyers click  <a href="https://community.max.gov/display/Egov/1.+Oracle">here</a> for the AWS Buyers Guide on OMB MAX.</p>
+              <p>The Adobe Vendor Assessment process began in September of 2021. After careful consideration and completion of each phase, the initial Adobe Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
+              <p>Agency buyers click  <a href="https://community.max.gov/display/Egov/4.+Adobe">here</a> for the AWS Buyers Guide on OMB MAX.</p>
             </div>
       </div>
       </div>

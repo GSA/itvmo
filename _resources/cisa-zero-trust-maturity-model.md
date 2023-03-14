@@ -5,5 +5,5 @@ description: This document supports CISA’s programs and capabilities within a 
 doc-link: itvmo.gsa.gov/assets/files/tlr/how-much-agency-bic-contracts.pdf
 content_tags:
 type: pdf
-filters: cybersecurity na-branded-offering for-info-security-officials
+filters: cybersecurity na-branded-offering na-audience
 ---
