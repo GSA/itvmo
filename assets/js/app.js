@@ -185,7 +185,7 @@ function saveEvent(currEvent) {
     localStorage.setItem('events', JSON.stringify(events));
 }
 //Go to next month
-function initButtons() {
+function initEventButtons() {
   
     document.getElementById('nextButton').addEventListener('click', () => {
       nav++;
@@ -204,6 +204,35 @@ function initButtons() {
 var timer; //Store the Timeout for the slide
 var slideIndex = 1;//The next latest update instead of the first one
 
+function initHighlightButtons()
+{
+  var prev = document.getElementsByClassName('prev')[0];
+  var next = document.getElementsByClassName('next')[0];
+  var prevMobile = document.getElementsByClassName('prev-mobile')[0];
+  var nextMobile = document.getElementsByClassName('next-mobile')[0];
+
+  prev.addEventListener('click', () => prevSlide());
+  next.addEventListener('click', () => showSlides());
+  prevMobile.addEventListener('click', () => prevSlide());
+  nextMobile.addEventListener('click', () => showSlides());
+
+  // Allow user to use the next and previous button without the need of the mouse.
+  prev.onkeydown = function(key){previousSlide(key)};
+  next.onkeydown = function(key){nextSlide(key)};
+  prevMobile.onkeydown = function(key){previousSlide(key)};
+  nextMobile.onkeydown = function(key){nextSlide(key)};
+
+  function nextSlide(key)
+  {
+    if((key.keyCode === 32)||(key.keyCode === 13))
+      showSlides();
+  }
+  function previousSlide(key)
+  {
+    if((key.keyCode === 32)||(key.keyCode === 13))
+    prevSlide();
+  }
+}
 function runHighlight() {
 
     timer = setTimeout("showSlides()", 8000);
@@ -267,13 +296,14 @@ function runSlide()
 //Run Home page 
 if(document.getElementById('homepage-highlight') != null)
 {
+  initHighlightButtons();
   runHighlight();
 }
 
 //Run Events page
 if( document.getElementById('nextButton') != null)
 {
-  initButtons();
+  initEventButtons();
   localStorage.clear();
   runCalendar();
 }
