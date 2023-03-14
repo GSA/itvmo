@@ -37,9 +37,9 @@ We are continuously identifying and adding new resources and tools. Please check
             <li><a href="/i-am-an-oem" style="text-decoration: none">
             I am an Original <br>Equipment Manufacturer (OEM)...
             </a></li>
-            <li><a href="/i-am-a-reseller" style="text-decoration: none">
+            <!-- <li><a href="/i-am-a-reseller" style="text-decoration: none">
             I am a reseller…
-            </a></li>
+            </a></li> -->
             <li><a href="/i-am-a-new-entrant" style="text-decoration: none">
             I am a new entrant…
             </a></li>
