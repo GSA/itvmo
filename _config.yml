@@ -84,10 +84,10 @@ primary_navigation:
     url: /resources/
   - name: Community
     url: /community/
-  # - name: OEM
+  - name: How Can We Help?
+    url: /how-can-we-help/
+  # - name: ITVMO’s Top OEMs
   #   url: /itvmo-top-original-equipment-manufacturers/
-  # - name: How Can We Help?
-  #   url: /how-can-we-help/
 
 secondary_navigation:
   - name: Contact Us

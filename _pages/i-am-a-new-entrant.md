@@ -6,11 +6,14 @@ sidenav: false
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1 animate fade">
 <h1 class="margin-top-0">{{ page.title }}</h1>
-
   <div class="margin-bottom-2">
   <p class="question">Are you looking to enter the space of government contracts?</p>
 
     <div class="animate fade">
+    <p>You are important to us! We are in the process of identifying and creating resources for your role as a new entrant. In the interim, subscribe to our listserv and check back soon.</p>
+    <a id="vendorForm" href ="https://docs.google.com/forms/d/1UJbS9BBPXkSBD8DPDxU1OYOCosIEo_MrZW6qB10LsZA/edit" target="_blank" rel="noreferrer noopener" > &nbsp;&nbsp;Vendor Intake Form&nbsp;&nbsp; </a> 
+  </div>
+  <!-- <div class="animate fade">
       <h2>Check out these ITVMO Resources that may help you:</h2>
           <section class="usa-graphic-list margin-bottom-4">
             <div class="grid-container grid-container margin-0 padding-0">
@@ -20,7 +23,7 @@ sidenav: false
             </div>
           </section>
     <a id="vendorForm" href ="https://docs.google.com/forms/d/1UJbS9BBPXkSBD8DPDxU1OYOCosIEo_MrZW6qB10LsZA/edit" target="_blank" rel="noreferrer noopener" > &nbsp;&nbsp;Vendor Intake Form&nbsp;&nbsp; </a> 
-  </div>
+  </div> -->
   </div> 
 </section>
 
