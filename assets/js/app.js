@@ -39,7 +39,7 @@ function openModal(date) {
         `
         <div class="animate fadeInDown">
         <h2 id="eventsSummary">Events Summary:</h2>
-        <h3 id="header">${date}</h3>
+        <h3>${date}</h3>
         `;
       if(eventForDay[i].color === "GREY")
         audience = " This is a partner event.";
@@ -63,7 +63,7 @@ function openModal(date) {
     `
     <div class="animate fadeInDown">
     <h2 id="eventsSummary">Events Summary:</h2>
-    <h3 id="header">${date}</h3>
+    <h3>${date}</h3>
     <p><b>No events planned today.</b></p>
     </div>
     `;
@@ -113,15 +113,14 @@ async function runCalendar() {
 
   for(let i = 1; i <= paddingDays + daysInMonth; i++) {
     const daySquare = document.createElement('div');
-    daySquare.classList.add('day');
-
+    daySquare.classList.add('day'); 
     const dayString = `${monthNum + 1}/${i - paddingDays}/${year}`;
 
     if (i > paddingDays) {
       daySquare.innerText = i - paddingDays;
       const eventForDay = [];
       //These two variable use to determine the color of the squre on specific date of the calendar.
-      var itvmoEvent = false;
+      var itvmoEvent = false; 
       var otherEvent = false;
       for(var a = 0; a < events.length; a++)
       { 
@@ -136,14 +135,17 @@ async function runCalendar() {
             itvmoEvent = true;
         }
       }
+      daySquare.title = `${dt.toLocaleDateString('en-us', { month: 'long' })} ${i - paddingDays} event count of ${eventForDay.length}`;
       //Display the Events summary for the current day if there is one
       if (i - paddingDays === day && nav === 0) {
         daySquare.id = 'currentDay';
+        daySquare.tabIndex = 0;
         openModal(dayString);
       }
 
       if (eventForDay.length > 0) {
-
+          //Only let user traverse on the calendar with tab on only the day that have event(s).
+          daySquare.tabIndex = 0;
           const eventDiv = document.createElement('div');
           eventDiv.classList.add('event');
           eventDiv.innerText += eventForDay.length + " EVENTS";
@@ -170,6 +172,12 @@ async function runCalendar() {
       }
       //add event listener on each day for clicking on the day action
       daySquare.addEventListener('click', () => openModal(dayString));
+      daySquare.onkeydown = 
+      function(key) 
+      {
+        if((key.keyCode === 32)||(key.keyCode === 13))
+          openModal(dayString);
+      }
     } 
     else {
       daySquare.classList.add('padding');

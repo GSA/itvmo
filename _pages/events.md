@@ -11,10 +11,10 @@ sidenav: false
         
     <div id="calendarSumContainer" class="animate fade">
     <div id="container">
-      <div id="header">
-                  <button id="backButton"> &#x2190; </button>
+      <div id="calendar-header">
+                  <button id="backButton" title="go to previous month"> &#x2190; </button>
                   <div id="monthDisplay"></div>          
-                  <button id="nextButton"> &#x2192; </button>
+                  <button id="nextButton" title="go to next month"> &#x2192; </button>
       </div>
 
       <div id="weekdays">
@@ -73,8 +73,7 @@ sidenav: false
     <h2>Event Highlights:</h2>
     <p>
        <div class="eventHighlightContainer">
-          <a class="no-style anchor-fill" href="" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
-          <!-- <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=2-PL5EUwB1s" aria-label="youtube link" target="_blank" rel="noreferrer noopener"> -->
+          <!-- <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=2-PL5EUwB1s" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
             <div class="text-container padding-1 height-full">
               <span class="card-tag">The IT Category: Creating Opportunities for Small Business, Oct 6 Meeting</span>
@@ -82,13 +81,12 @@ sidenav: false
                     This meeting recording provides an overview of current governmentwide contract opportunities and helps to bring an understanding of resources available for small business acquisitions.
                   </p>
                   <p class="link-type">        
-                    <img id="youtubeLogo" alt="Youtube logo" src="../assets/images/logos/youtube.png" alt="Youtube logo">
+                    <img class="youtubeLogo" alt="Youtube logo" src="../assets/images/logos/youtube.png">
                   </p>
             </div>
           </div>
-          </a>
-          <a class="no-style anchor-fill" href="" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
-          <!-- <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=mD4iWvAJnyk" aria-label="youtube link" target="_blank" rel="noreferrer noopener"> -->
+          </a> -->
+          <!-- <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=mD4iWvAJnyk" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
             <div class="text-container padding-1 height-full">
               <span class="card-tag">The ITVMO Industry Day</span>
@@ -96,11 +94,11 @@ sidenav: false
                     This Industry Day overview is intended for a general audience. It presented  the ITVMO’s vision for improving IT acquisitions in the future. No solution is possible without help and input from the IT vendor community and the Industry Day was the first of many opportunities to gather feedback and learn from industry.
                   </p>
                   <p class="link-type">        
-                    <img id="youtubeLogo" alt="Youtube logo" src="../assets/images/logos/youtube.png" alt="Youtube logo">
+                    <img class="youtubeLogo" alt="Youtube logo" src="../assets/images/logos/youtube.png">
                   </p>
             </div>
           </div>
-          </a>
+          </a> -->
           <a class="no-style anchor-fill" href="https://community.max.gov/display/Egov/ITVMO+Original+Equipment+Manufacturer+%28OEM%29+Assessments" aria-label="external link to ITVMO Vendor Assessment Webinars" target="_blank" rel="noreferrer noopener">
           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
             <div class="text-container padding-1 height-full">

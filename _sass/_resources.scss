@@ -219,7 +219,7 @@ button {
   font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
 }
 
-#header {
+#calendar-header {
   width: 366px;
   color: #d36c6c;
   font-size: 18px;
@@ -229,7 +229,7 @@ button {
   margin-top: 0;
   margin-bottom: 0;
 }
-#header button {
+#calendar-header button {
   background-color:#1b2b85;
 }
 #container {
@@ -349,7 +349,7 @@ button {
   position: absolute;
   background-color: rgba(0,0,0,0.8);
 }
-#youtubeLogo
+.youtubeLogo
 { padding-top: 5.04px;
   height: 18px;
   width: 25px;
