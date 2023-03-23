@@ -96,7 +96,7 @@
             "date": "4/4/2023", 
             "color": "BLUE", 
             "link": "https://gsa.zoomgov.com/meeting/register/vJIsceuqrz4iEt-2oXdtskKmytt9R3rqL8c", 
-            "description": "As part of the ITVMO’s effort to foster collaboration and partnering between government acquisition professionals and top IT Original Equipment Manufacturers (OEMs), the ITVMO will be hosting a second Office Hours Q&A session with members of the Amazon Web Services (AWS) federal team.\n\nThis is a follow up to and continuation of the ITVMO’s facilitated AWS Webinar held in Jliy 2022 and Office Hours Session 1 held in November 2022.  Office Hours Sessions unite customers and vendors in a collaborative forum, allowing customers to ask Agency-specific questions to the vendor federal team and get real time answers, clarification on challenges, and when requested, offline one-on-one engagement to support ongoing Agency specific efforts.\n\nThemes for AWS Office Hours - Session 2 may include:<ul><li>Building better relationships with AWS Partners</li><li>What's the difference between purchasing direct vs purchasing through an AWS partner?</li><li>Monitoring and Managing Consumption</li></ul>",
+            "description": "As part of the ITVMO’s effort to foster collaboration and partnering between government acquisition professionals and top IT Original Equipment Manufacturers (OEMs), the ITVMO will be hosting a second Office Hours Q&A session with members of the Amazon Web Services (AWS) federal team.\n\nThis is a follow up to and continuation of the ITVMO’s facilitated AWS Webinar held in Jliy 2022 and Office Hours Session 1 held in November 2022.  Office Hours Sessions unite customers and vendors in a collaborative forum, allowing customers to ask Agency-specific questions to the vendor federal team and get real time answers, clarification on challenges, and when requested, offline one-on-one engagement to support ongoing Agency specific efforts.\n\nThemes for AWS Office Hours - Session 2 may include:<ol><li>Building better relationships with AWS Partners</li><li>What's the difference between purchasing direct vs purchasing through an AWS partner?</li><li>Monitoring and Managing Consumption</li></ol>",
             "type": "ITVMO"
         }
         ,{
@@ -115,6 +115,39 @@
             "description": "Let NITAAC show you how easy it is to acquire IT products, services, and solutions through our CIO-SP3, CIO-SP3 Small Business and CIO-CS Government-Wide Acquisition Contracts (GWACs). Just attend one of our upcoming IT GWAC trainings. Contracting Officers, Contract Specialists, Chief Information Officers, IT program officials and anyone on your team who is involved in the IT procurement process can benefit from attending a NITAAC training session. All attendees will receive 2 Continuous Learning Points (CLPs).",
             "type": "OTHER"            
         }
+        ,{
+            "title": "The Reservation Economic Summit 2023", 
+            "date": "4/3/2023", 
+            "color": "RED", 
+            "link": "https://seaairspace.org/attend/", 
+            "description": "RES 2023 is the Summit to attend for those looking for high caliber networking, winning teaming opportunities, business development sessions, one-on-one consulting, all centered around American Indian Enterprise. The National Center for American Indian Enterprise Development (NCAIED) is embracing EMPOWERING FOR GENERATIONS for the 2023 Reservation Economic Summit. The event features tribal leaders, members of Congress, federal agency representatives, state and local officials, and top CEO's on a national platform.",
+            "type": "OTHER"
+        }
+        ,{
+            "title": "The Reservation Economic Summit 2023", 
+            "date": "4/4/2023", 
+            "color": "RED", 
+            "link": "https://seaairspace.org/attend/", 
+            "description": "RES 2023 is the Summit to attend for those looking for high caliber networking, winning teaming opportunities, business development sessions, one-on-one consulting, all centered around American Indian Enterprise. The National Center for American Indian Enterprise Development (NCAIED) is embracing EMPOWERING FOR GENERATIONS for the 2023 Reservation Economic Summit. The event features tribal leaders, members of Congress, federal agency representatives, state and local officials, and top CEO's on a national platform.",
+            "type": "OTHER"
+        }
+        ,{
+            "title": "The Reservation Economic Summit 2023", 
+            "date": "4/5/2023", 
+            "color": "RED", 
+            "link": "https://seaairspace.org/attend/", 
+            "description": "RES 2023 is the Summit to attend for those looking for high caliber networking, winning teaming opportunities, business development sessions, one-on-one consulting, all centered around American Indian Enterprise. The National Center for American Indian Enterprise Development (NCAIED) is embracing EMPOWERING FOR GENERATIONS for the 2023 Reservation Economic Summit. The event features tribal leaders, members of Congress, federal agency representatives, state and local officials, and top CEO's on a national platform.",
+            "type": "OTHER"
+        }
+        ,{
+            "title": "The Reservation Economic Summit 2023", 
+            "date": "4/6/2023", 
+            "color": "RED", 
+            "link": "https://seaairspace.org/attend/", 
+            "description": "RES 2023 is the Summit to attend for those looking for high caliber networking, winning teaming opportunities, business development sessions, one-on-one consulting, all centered around American Indian Enterprise. The National Center for American Indian Enterprise Development (NCAIED) is embracing EMPOWERING FOR GENERATIONS for the 2023 Reservation Economic Summit. The event features tribal leaders, members of Congress, federal agency representatives, state and local officials, and top CEO's on a national platform.",
+            "type": "OTHER"
+        }
+
           
     ]
 }
