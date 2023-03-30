@@ -17,7 +17,6 @@ const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','
 
 
 function openModal(date) {
-
   const eventForDay = [];
 
   for(var i = 0; i < events.length; i++)
@@ -198,8 +197,6 @@ function initButtons() {
       runCalendar();
     });
 }
-
-
 /** The Home page Latest Update section **/
 var timer; //Store the Timeout for the slide
 var slideIndex = 1;//The next latest update instead of the first one
