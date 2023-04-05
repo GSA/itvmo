@@ -8,6 +8,63 @@
         "link": "https://chess.army.mil/Account/Logon?returnUrl=https%3A%2F%2Fchess.army.mil%2FChessTraining%2FRequester", 
         "description": "New to CHESS? Start by learning the fundamentals of the CHESS Program. The CHESS 101 Briefing provides a program overview including detailed information about our Hardware, Software, and Services contracts. Get additional information about the License Tracker for Software (LTS), the RF Process, Statements of Non-Availability, and much more! Learn how to streamline IT procurement by logging into our Bi-monthly Teleconference Sessions.",
         "type": "OTHER"
+        },
+        {
+            "title": "AFCEA TechNet Cyber 2023", 
+            "date": "5/2/2023", 
+            "color": "RED", 
+            "link": "https://events.afcea.org/afceacyber23/Public/enter.aspx", 
+            "description": "The harnessing of the right cyber power is more important than ever in a domain deluged by persistent attacks and simultaneous sophisticated campaigns that threaten global political, economic and security interests. A flagship event, AFCEA’s TechNet Cyber serves as a center of gravity for a whole-of-government effort to bring together the policy, strategic architecture, operations and C2— along with the joint capabilities—needed to meet the global security challenges and successfully operate in a digital environment. Join us in Baltimore and be a part of the conversation led by U.S. Cyber Command, DISA, the DoD CIO, and numerous industry and academia partners to deliver solutions for this enduring, no-fail mission.",
+            "type": "OTHER"            
+        },
+        {
+            "title": "AFCEA TechNet Cyber 2023", 
+            "date": "5/3/2023", 
+            "color": "RED", 
+            "link": "https://events.afcea.org/afceacyber23/Public/enter.aspx", 
+            "description": "The harnessing of the right cyber power is more important than ever in a domain deluged by persistent attacks and simultaneous sophisticated campaigns that threaten global political, economic and security interests. A flagship event, AFCEA’s TechNet Cyber serves as a center of gravity for a whole-of-government effort to bring together the policy, strategic architecture, operations and C2— along with the joint capabilities—needed to meet the global security challenges and successfully operate in a digital environment. Join us in Baltimore and be a part of the conversation led by U.S. Cyber Command, DISA, the DoD CIO, and numerous industry and academia partners to deliver solutions for this enduring, no-fail mission.",
+            "type": "OTHER"            
+        },
+        {
+            "title": "AFCEA TechNet Cyber 2023", 
+            "date": "5/4/2023", 
+            "color": "RED", 
+            "link": "https://events.afcea.org/afceacyber23/Public/enter.aspx", 
+            "description": "The harnessing of the right cyber power is more important than ever in a domain deluged by persistent attacks and simultaneous sophisticated campaigns that threaten global political, economic and security interests. A flagship event, AFCEA’s TechNet Cyber serves as a center of gravity for a whole-of-government effort to bring together the policy, strategic architecture, operations and C2— along with the joint capabilities—needed to meet the global security challenges and successfully operate in a digital environment. Join us in Baltimore and be a part of the conversation led by U.S. Cyber Command, DISA, the DoD CIO, and numerous industry and academia partners to deliver solutions for this enduring, no-fail mission.",
+            "type": "OTHER"            
+        },
+        {
+            "title": "GSA & SBA Money Smart Series for Small Businesses- Module #5: Strong Business Credit", 
+            "date": "5/9/2023", 
+            "color": "RED", 
+            "link": "https://gsa.zoomgov.com/webinar/register/WN_VkDR9DiKSbCfxvEPQQnzrQ", 
+            "description": "The General Services Administration (GSA) Office of Small and Disadvantaged Business Utilization (OSDBU) is teaming with the Small Business Administration (SBA) to offer the Money Smart training series. This training explains how to start and manage a business. Module #5: Strong Business Credit gives an overview of credit reporting. You’ll learn how reporting credit can benefit your small business. The webinar is FREE and will last two hours. Sign up today! This event is part of a six-part training series. More information is available at <a href='https://www.gsa.gov/node/125290'>www.gsa.gov/osdbuevents</a>",
+            "type": "OTHER"
+        },
+        {
+            "title": "Webinar Wednesdays- SEWP Overview", 
+            "date": "5/10/2023", 
+            "color": "BLUE", 
+            "link": "https://nasaenterprise.webex.com/webappng/sites/nasaenterprise/meeting/register/71ad9f7630e444a48e479dfa60cf3522?ticket=4832534b000000047bc492ee8b4ec80e8f8f890e65f89bbb5b2b7125aeacac3edeb9dcdd5d1e4029&timestamp=1680030381061&RGID=r939e5fea7dc83ad1fe1d6b0cbf3c55cc", 
+            "description": "Learn more about NASA SEWP.",
+            "type": "OTHER"            
+        },
+        {
+            "title": "GSA & SBA Money Smart Series for Small Businesses- Module #6: Small Business Model Canvas (Part 2)", 
+            "date": "5/11/2023", 
+            "color": "RED", 
+            "link": "https://gsa.zoomgov.com/webinar/register/WN_SYbThvLOQSW2YsTNcWOz5w", 
+            "description": "The General Services Administration (GSA) Office of Small and Disadvantaged Business Utilization (OSDBU) is teaming with the Small Business Administration (SBA) to offer the Money Smart training series. This training explains how to start and manage a business. During Module #6: Business Model Canvas (Part 2) apply what you learned in Part 1 by presenting your Business Model Canvas. Receive guidance and feedback, while networking with other small businesses in attendance. The webinar is FREE and will last two hours. Sign up today! This event is part of a six-part training series. More information is available at <a href='https://www.gsa.gov/node/125290'>www.gsa.gov/osdbuevents</a>.",
+            "type": "OTHER"
+        },
+        {
+            "title": "IPTA Luncheon", 
+            "date": "5/11/2023", 
+            "color": "BLUE", 
+            "link": "https://itpancc.org/event-registration/", 
+            "description": "May 5th Monthly Luncheon – Speaker: Ms. Joanne Woytek, Executive Program Director, NASA SEWP. Upcoming SEWP VI procurement Discussion.",
+            "type": "OTHER"
+            
         }
     ]
 }
