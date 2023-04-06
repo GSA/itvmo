@@ -707,6 +707,27 @@ button {
   font-weight: bold;
 }
 
+//newsletter page
+.centerHeading
+{
+  text-align: center;
+}
+#rate-us
+{
+  position: fixed;
+  right: 10%;
+  bottom: 5%;
+  z-index: 1000;
+  background-color: #1b2b85;
+  color: white;
+  width: 100px;
+  img 
+  {
+    width: 15px;
+    height: 15px;
+  }
+}
+
 
 
 
