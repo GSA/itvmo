@@ -21,6 +21,7 @@ sidenav: false
         <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSdqROLWIEtLmWaFpnTkL04-8JI2Fs4ZQuPedbXt67ViHN-H-g/viewform?usp=sf_link?">Sign up here to receive additional summit information as details are finalized.</a></b>
     </div>
     <br>
+</section>
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
     <br>
