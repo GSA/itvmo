@@ -73,12 +73,14 @@ sidenav: false
     <h2>Event Highlights:</h2>
     <p>
        <div class="eventHighlightContainer">
-          <a class="no-style anchor-fill" href="https://community.max.gov/display/Egov/ITVMO+Original+Equipment+Manufacturer+%28OEM%29+Assessments" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
+          <a class="no-style anchor-fill" href="{{site.baseurl}}/emerge-tech-small-business-event/" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
             <div class="text-container padding-1 height-full">
-              <span class="card-tag">ITVMO Vendor Assessment Webinars</span>
+              <span class="card-tag">Govwide IT Category and ACT-IAC Host Small Business Alliance Forum</span>
                   <p class="description-resources">
-                    Limited to .gov and .mil viewers, these webinars review comprehensive vendor assessments completed on OEMs.
+                    Join the Govwide IT Category and ACT-IAC for a forum on Emerging Technology and Innovation Opportunities for Small Businesses. This event will included a panel of representatives from five different OSDBUs as well as breakout sessions.
+                    <br><br>
+                    Read more…
                   </p>
                   <!-- <p class="link-type">        
                     <img id="youtubeLogo" src="../assets/images/logos/youtube.png" alt="Youtube logo" >

@@ -18,7 +18,10 @@ sidenav: false
     There will be opportunities to engage with agency and industry leaders, hear from a variety of panelists, and user case success stories.
     </div>
     <div class="margin-bottom-2 centerHeading">
-        <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSdqROLWIEtLmWaFpnTkL04-8JI2Fs4ZQuPedbXt67ViHN-H-g/viewform?usp=sf_link?">Sign up here to receive additional summit information as details are finalized.</a></b>
+        <b>Interested in more information?<br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqROLWIEtLmWaFpnTkL04-8JI2Fs4ZQuPedbXt67ViHN-H-g/viewform?usp=sf_link?">Learn more.
+            </a>
+        </b>
     </div>
     <br>
 </section>
@@ -27,7 +30,7 @@ sidenav: false
     <br>
     <h2 class="margin-top-0 centerHeading">Announcing New Emerging Tech / Artificial Intelligence Working Group</h2>
     <div class="margin-bottom-2">
-        The ITVMO’s IT Buyers COP in collaboration with the GSA Office of Innovation is chartering a working group with the goal of identifying governmentwide and agency specific standards for using emerging technologies like artificial intelligence (AI) and natural language processing (NLP) to revolutionize the federal procurement process. 
+        The ITVMO’s IT Buyers COP, in collaboration with the GSA Office of Innovation, is chartering a working group with the goal of identifying governmentwide and agency specific standards for using emerging technologies like artificial intelligence (AI) and natural language processing (NLP) to revolutionize the federal procurement process. 
     </div>
     <div class="margin-bottom-2">
     Today, agency IT buyers are getting locked into multi-year, broad scope contracts before fully understanding the procured emerging technology’s (e.g., AI) solution capability, use, or operability standards. 
@@ -83,18 +86,13 @@ sidenav: false
     <div class="margin-bottom-2">
     Mr. Radziszewski holds a Master of Science degree in Information Systems Management, George Washington University, and a Bachelor of Science in Electronics Engineering Technology, Wentworth Institute of Technology.
     </div>
-    <br>
+    <div class="margin-bottom-2">
+    For more on the ITVMO visit <a href="https://itvmo.gsa.gov/">ITVMO.gsa.gov</a> or email us at <a href="mailto:itvmo@gsa.gov">ITVMO@gsa.gov</a>
+    </div>
 </section>
-
-<!-- <div class="margin-bottom-2">
-<b>For more on the ITVMO visit <a href="https://itvmo.gsa.gov/">ITVMO.gsa.gov</a> or email us at <a href="mailto:itvmo@gsa.gov">ITVMO@gsa.gov</a></b>
-</div>
 <div class="margin-bottom-2">
 <b>We will feature a new team member in every newsletter. Stay tuned to learn more about our dynamic professionals.</b>
-</div> -->
-<div class="margin-bottom-2">
-<br>
-<b>We will feature a new team member in every newsletter. Stay tuned to learn more about our dynamic professionals. For more on the ITVMO visit <a href="https://itvmo.gsa.gov/">ITVMO.gsa.gov</a> or email us at <a href="mailto:itvmo@gsa.gov">ITVMO@gsa.gov</a></b>
 </div>
+
 
 
