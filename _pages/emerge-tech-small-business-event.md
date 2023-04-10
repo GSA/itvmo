@@ -17,7 +17,6 @@ sidenav: false
     <li>US Army – Ms. Kim Buehler</li>
 </ul>
 </div>
-
 <div class="margin-bottom-2">
 The event was well-attended and provided an excellent forum for small businesses to hear agency forecasts, procurement best practices, and to come together to connect how industry and government can move forward to achieve issues at hand.
 </div>
