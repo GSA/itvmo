@@ -10,11 +10,11 @@ sidenav: false
 
 <div class="margin-bottom-2">The event opened with the IT Governmentwide Category Manager, Laura Stanton, followed by Beth Killoran, GSA’s Deputy CIO, who provided the keynote address. After a short break, the event held a panel discussion with agency Office of Small and Disadvantaged Business Utilization (OSDBUs) from: 
 <ul>
-    <li>Department of State (DOS) – George Price</li>
-    <li>U.S. Environmental Protection Agency (EPA) – Denise Sirmons </li>
+    <li>Department of State (DOS) – Mr. George Price</li>
+    <li>U.S. Environmental Protection Agency (EPA) – Ms. Denise Sirmons </li>
     <li>Department of Health and Human Services (HHS) – Mr. Shannon Jackson </li>
-    <li>Office of Personnel Management (OPM) – Desmond Brown </li>
-    <li>US Army – Kim Buehler</li>
+    <li>Office of Personnel Management (OPM) – Mr. Desmond Brown </li>
+    <li>US Army – Ms. Kim Buehler</li>
 </ul>
 </div>
 
