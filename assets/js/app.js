@@ -197,6 +197,11 @@ function initButtons() {
       runCalendar();
     });
 }
+/** The Home page Dropdown menu section **/
+function runDropDownMenu()
+{
+  return 0;
+}
 /** The Home page Latest Update section **/
 var timer; //Store the Timeout for the slide
 var slideIndex = 1;//The next latest update instead of the first one
@@ -265,6 +270,7 @@ function runSlide()
 //Run Home page 
 if(document.getElementById('homepage-highlight') != null)
 {
+  runDropDownMenu();
   runHighlight();
 }
 
