@@ -198,9 +198,17 @@ function initButtons() {
     });
 }
 /** The Home page Dropdown menu section **/
-function runDropDownMenu()
+function hideDropdown(el)
 {
-  return 0;
+  el.classList.remove("display-content");
+  el.classList.add("hide-content");
+}
+
+function showDropdown(el)
+{
+  el.classList.remove("hide-content-start");
+  el.classList.remove("hide-content");
+  el.classList.add("display-content");
 }
 /** The Home page Latest Update section **/
 var timer; //Store the Timeout for the slide
@@ -266,14 +274,11 @@ function runSlide()
 }
 
 /** Run functions **/
-
 //Run Home page 
 if(document.getElementById('homepage-highlight') != null)
 {
-  runDropDownMenu();
   runHighlight();
 }
-
 //Run Events page
 if( document.getElementById('nextButton') != null)
 {

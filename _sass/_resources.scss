@@ -659,13 +659,11 @@ button {
   }
 }
 //Homepage dropdown button 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   .dropdown-content {
     // display: none;
     // opacity: 1;
-    visibility: hidden;
-    
+    // visibility: hidden;
     z-index: -99;
     display: block;
     position: absolute;
@@ -673,30 +671,47 @@ button {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  .dropdown-content a {
-    line-height: 0.9;
-    padding: 1rem; 
-    color: #565c65;
-    display: block;
-    font-weight: 600;
-    font-size: 0.85rem;
+    a 
+    {
+      line-height: 0.9;
+      padding: 1rem; 
+      color: #565c65;
+      display: block;
+      font-weight: 600;
+      font-size: 0.85rem; 
+    }
   }
 }
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover
+//Change color of dropdown links on hover
+.dropdown-content a:hover 
+{
+  background-color: #ddd;
+}
+//Display the dropdown menu on hover 
+.display-content
 {
   .dropdown-content
   {
     visibility: visible;
     z-index: 99;
-    opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
-    // display: block;
+  }
+}
+.hide-content
+{
+  .dropdown-content
+  {
+    z-index: 99;
+    animation-name: fadeOutDown;
+    -webkit-animation-name: fadeOutDown;
+  }
+}
+.hide-content-start
+{
+  .dropdown-content
+  {
+    visibility: hidden;
   }
 }
 
@@ -707,8 +722,6 @@ button {
   animation-duration: 400ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-
-  //Hover-off
   
 }
 
@@ -811,12 +824,10 @@ button {
   -webkit-animation-name: fadeInUp;
 }
 
-.fade-out-down {
-  -webkit-animation-name: fadeOutDown;
+.fadeOutDown {
+  opacity: 0;
   animation-name: fadeOutDown;
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  animation-delay: 0.4s;
+  -webkit-animation-name: fadeOutDown;
 }
 
 @keyframes fadeOutDown {
@@ -827,6 +838,18 @@ button {
   100% {
     opacity: 0;
     transform: translateY(20px);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
   }
 }
 
