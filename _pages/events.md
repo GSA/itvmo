@@ -91,7 +91,7 @@ sidenav: false
             <div class="text-container padding-1 height-full">
               <span class="card-tag">Govwide IT Category and ACT-IAC Host Small Business Alliance Forum</span>
                   <p class="description-resources">
-                    Join the Govwide IT Category and ACT-IAC for a forum on Emerging Technology and Innovation Opportunities for Small Businesses. This event will included a panel of representatives from five different OSDBUs as well as breakout sessions.
+                  On March 7, 2022 the Govwide IT Category and ACT-IAC hosted a forum on Emerging Technology and Innovation Opportunities for Small Businesses. The event included a panel of representatives from five different OSDBUs as well as breakout sessions.
                     <br><br>
                     Read more…
                   </p>

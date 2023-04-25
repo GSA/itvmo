@@ -715,7 +715,84 @@ button {
   }
 }
 
+//Leading Edge Technologies Annual Report page
+.leading-edge-table
+{
+  width: 100%;
+  th, td
+  {
+    // border: 1px solid black; 
+  }
+  th
+  {
+    background-color: #ff590a;
+    color: white;
+    font-size: 18px;
+  }
+  td
+  {
+    font-size: 13.5px;
+    color: black;
+    background-color: #fde1cb;
+    padding: 10px;
+    width: 25%;
+  }
+}
 
+.FY-container
+{
+  display: flex;
+  .FY
+  {
+    h3
+    {
+      margin-bottom: 10px;
+    }
+    flex: 1;
+    width: 45%;
+    .leading-edge-ul
+    {
+      background-color: #1b2b85 !important;
+      color: white;
+      padding: 15px;
+      margin-top: 5px;
+      
+      border-radius: 5px;
+      ul
+      {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .FY2023
+  {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 400px)
+{
+  .leading-edge-table
+  {
+    th 
+    {
+      font-size: 14px;
+    }
+    td
+    {
+      font-size: 10px;
+      padding: 3px;
+    }
+  }
+  .leading-edge-ul
+  {
+    font-size: 12px;
+    ul
+    {
+      padding: 15px;
+    }
+  }
+}
 /*Animation*/
 .dropdown-animate {
   -webkit-animation-duration: 400ms;
