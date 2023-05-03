@@ -32,7 +32,7 @@ Topics include but not limited to: technology segments in cybersecurity, artific
         <h3>
             FY2023 Leading Edge Technologies Report
         </h3>
-        <b>Click <a title="FY2023 report link" href="https://docs.google.com/presentation/d/1DdRfDG9IsJJ9fasF9qVgt6PaopLIv4NLhudWHiTkCc8/edit#slide=id.p1">here</a> to view the FY2023 report.</b>
+        <b>Click <a title="FY2023 report link" href="{{site.baseurl}}/assets/files/tlr/leading-edge-tech-report-2023.pdf">here</a> to view the FY2023 report.</b>
         <br>
         <div class="leading-edge-ul">
         Areas of focus:
@@ -52,7 +52,7 @@ Topics include but not limited to: technology segments in cybersecurity, artific
         <h3>
             FY2022 Leading Edge Technologies Report
         </h3>
-        <b>Click <a title="FY2022 report link" href="https://itvmo.gsa.gov/assets/files/tlr/leading-edge-tech-report-2022.pdf">here</a> to view the FY2022 report.</b>
+        <b>Click <a title="FY2022 report link" href="{{site.baseurl}}/assets/files/tlr/leading-edge-tech-report-2022.pdf">here</a> to view the FY2022 report.</b>
         <br>
         <div class="leading-edge-ul">
         Areas of focus:
