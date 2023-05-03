@@ -84,31 +84,8 @@ primary_navigation:
     url: /resources/
   - name: Community
     url: /community/
-  - name: Testing1
-    url: /#
-    child:
-      - name: Link1
-        url: /how-can-we-help/
-      - name: Link2
-        url: /how-can-we-help/
-      - name: Link3
-        url: /how-can-we-help/
-      - name: Link4
-        url: /how-can-we-help/
-      - name: Link5
-        url: /how-can-we-help/
   - name: How Can We Help?
     url: /how-can-we-help/
-  - name: Testing2
-    url: /#
-    child:
-      - name: Link1
-        url: /how-can-we-help/
-      - name: Link2
-        url: /how-can-we-help/
-      - name: Link3
-        url: /how-can-we-help/
-    
   # - name: ITVMO’s Top OEMs
   #   url: /itvmo-top-original-equipment-manufacturers/
 
