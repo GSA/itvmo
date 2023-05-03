@@ -378,75 +378,6 @@ button {
   }
 }
 
-.animate {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-
-//Fade in animation
-.fadeInDown {
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-  -webkit-animation-delay: 0.2s;
-  -moz-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -35%, 0);
-    transform: translate3d(0, -35%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -35%, 0);
-    transform: translate3d(0, -35%, 0);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-//Fade animation
-.fade {
-  -webkit-animation-name: fade;
-  animation-name: fade;
-  -webkit-animation-delay: 0.4s;
-  -moz-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-@keyframes fade{
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-
 /*HOMEPAGE*/
 .orangeText
 {
@@ -707,6 +638,297 @@ button {
   font-weight: bold;
 }
 
+//newsletter page
+.centerHeading
+{
+  text-align: center;
+}
+#rate-us
+{
+  position: fixed;
+  right: 10%;
+  bottom: 5%;
+  z-index: 1000;
+  background-color: #1b2b85;
+  color: white;
+  width: 100px;
+  img 
+  {
+    width: 15px;
+    height: 15px;
+  }
+}
+//Homepage dropdown button 
+.dropdown {
+  .dropdown-content {
+    // display: none;
+    // opacity: 1;
+    // visibility: hidden;
+    z-index: -99;
+    display: block;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    a 
+    {
+      line-height: 0.9;
+      padding: 1rem; 
+      color: #565c65;
+      display: block;
+      font-weight: 600;
+      font-size: 0.85rem; 
+    }
+  }
+}
+//Change color of dropdown links on hover
+.dropdown-content a:hover 
+{
+  background-color: #ddd;
+}
+//Display the dropdown menu on hover 
+.display-content
+{
+  .dropdown-content
+  {
+    visibility: visible;
+    z-index: 99;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+  }
+}
+.hide-content
+{
+  .dropdown-content
+  {
+    z-index: 99;
+    animation-name: fadeOutDown;
+    -webkit-animation-name: fadeOutDown;
+  }
+}
+.hide-content-start
+{
+  .dropdown-content
+  {
+    visibility: hidden;
+  }
+}
+
+//Leading Edge Technologies Annual Report page
+.leading-edge-table
+{
+  width: 100%;
+  th, td
+  {
+    // border: 1px solid black; 
+  }
+  th
+  {
+    background-color: #ff590a;
+    color: white;
+    font-size: 18px;
+  }
+  td
+  {
+    font-size: 13.5px;
+    color: black;
+    background-color: #fde1cb;
+    padding: 10px;
+    width: 25%;
+  }
+}
+
+.FY-container
+{
+  display: flex;
+  .FY
+  {
+    h3
+    {
+      margin-bottom: 10px;
+    }
+    flex: 1;
+    width: 45%;
+    .leading-edge-ul
+    {
+      background-color: #1b2b85 !important;
+      color: white;
+      padding: 15px;
+      margin-top: 5px;
+      
+      border-radius: 5px;
+      ul
+      {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .FY2023
+  {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 400px)
+{
+  .leading-edge-table
+  {
+    th 
+    {
+      font-size: 14px;
+    }
+    td
+    {
+      font-size: 10px;
+      padding: 3px;
+    }
+  }
+  .leading-edge-ul
+  {
+    font-size: 12px;
+    ul
+    {
+      padding: 15px;
+    }
+  }
+}
+/*Animation*/
+.dropdown-animate {
+  -webkit-animation-duration: 400ms;
+  animation-duration: 400ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+//Fade in animation
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -35%, 0);
+    transform: translate3d(0, -35%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -35%, 0);
+    transform: translate3d(0, -35%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+//Fade animation
+.fade {
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fade{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+//FadeInUp animation
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.fadeOutDown {
+  opacity: 0;
+  animation-name: fadeOutDown;
+  -webkit-animation-name: fadeOutDown;
+}
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+  }
+}
 
 
 

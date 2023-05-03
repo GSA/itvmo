@@ -86,6 +86,18 @@ sidenav: false
               </div>
             </div>
           </a>
+          <a class="no-style anchor-fill" href="{{site.baseurl}}/emerge-tech-small-business-event/" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
+          <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
+            <div class="text-container padding-1 height-full">
+              <span class="card-tag">Govwide IT Category and ACT-IAC Host Small Business Alliance Forum</span>
+                  <p class="description-resources">
+                  On March 7, 2022 the Govwide IT Category and ACT-IAC hosted a forum on Emerging Technology and Innovation Opportunities for Small Businesses. The event included a panel of representatives from five different OSDBUs as well as breakout sessions.
+                    <br><br>
+                    Read more…
+                  </p>
+              </div>
+            </div>
+          </a>
         </div>
       </p>
     </div>
