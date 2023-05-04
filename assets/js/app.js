@@ -197,6 +197,7 @@ function initButtons() {
       runCalendar();
     });
 }
+
 /** The Home page Dropdown menu section **/
 function hideDropdown(el)
 {
@@ -210,6 +211,26 @@ function showDropdown(el)
   el.classList.remove("hide-content");
   el.classList.add("display-content");
 }
+
+//Allow the dropdown menu to be able to access with the keyboard only.
+function showHideDropdown(el, key)
+{
+  if(key.keyCode === 13)
+  {
+    var menuList = document.getElementsByClassName("dropdown");
+    //Fold all other dropdown menus, before the current target dropdown going to be display.
+    for(let i = 0; i < menuList.length; i++)
+    {
+      if(menuList[i].classList.contains('display-content') && (menuList[i] != el))
+        hideDropdown(menuList[i]);
+    }
+    if(el.classList.contains('display-content'))
+      hideDropdown(el);
+    else
+      showDropdown(el);
+  }
+}
+
 /** The Home page Latest Update section **/
 var timer; //Store the Timeout for the slide
 var slideIndex = 1;//The next latest update instead of the first one
