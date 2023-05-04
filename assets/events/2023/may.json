@@ -65,6 +65,22 @@
             "description": "May 5th Monthly Luncheon – Speaker: Ms. Joanne Woytek, Executive Program Director, NASA SEWP. Upcoming SEWP VI procurement Discussion.",
             "type": "OTHER"
             
+        },
+        {
+            "title": "ATARC Roundtable- Using AI to Write Contract Requirements", 
+            "date": "5/17/2023", 
+            "color": "RED", 
+            "link": "", 
+            "description": "The ITVMO has chartered a working group focused on AI Chat Bots/ Emerging Technology in partnership with ATARC. To kick off this initiative, ATARC will be hosting a virtual roundtable on May 17, 2023 at 10am on the topic of “Using AI to Write Contract Requirements.” Please email itvmo@gsa.gov if you are interested in being registered for the event or participating in the working group.",
+            "type": "OTHER"
+        },
+        {
+            "title": "Becoming a SEWP Industry Partner", 
+            "date": "5/23/2023", 
+            "color": "BLUE", 
+            "link": "https://nasaenterprise.webex.com/webappng/sites/nasaenterprise/meeting/register/26c4fe61241840bf8c0518c780dbf53e?ticket=4832534b000000042f247a04ae57883f3183fee5d493528cd8c6783e17ebb299fc41ee66ac8ae880&timestamp=1683208141373&RGID=r5835fcf91aa1fb8b21a57728b68ac26d", 
+            "description": "Register for this virtual training to learn more about how to become a SEWP Industry partner",
+            "type": "OTHER" 
         }
     ]
 }
