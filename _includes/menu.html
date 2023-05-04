@@ -25,14 +25,14 @@ where we provide an easy way to manage your navigation system
         {% if linkdir != "#" %}
         <li class="usa-nav__primary-item">
         {% else %}
-        <li class="usa-nav__primary-item dropdown hide-content-start" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)" onkeydown="showHideDropdown(this, event)">
+        <li class="usa-nav__primary-item dropdown hide-content-start" onkeydown="showHideDropdownKey(this, event)">
         {% endif %}
           <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
           {% if linkdir != "#" %}
             href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
           {% else %}
             aria-label="{{ nav_item.name | escape }} - Submenu"
-            href="#"><span>{{ nav_item.name | escape }}</span></a>
+            href="#" ><span>{{ nav_item.name | escape }}</span></a>
             <div class="dropdown-content dropdown-animate">
               {% for subnav_item in nav_item.child %}
                 <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>

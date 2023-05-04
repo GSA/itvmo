@@ -714,6 +714,59 @@ button {
     visibility: hidden;
   }
 }
+@media only screen and (max-width: 1023px)
+{
+  .dropdown {
+    .dropdown-content {
+      // display: none;
+      // opacity: 1;
+      // visibility: hidden;
+      z-index: -99;
+      display: block;
+      position: relative;
+      background-color: white;
+      min-width: 208px;
+      box-shadow: none;
+      z-index: 1;
+      a 
+      {
+        line-height: 0.9;
+        padding: 1rem; 
+        color: #565c65;
+        display: block;
+        font-weight: 500;
+        font-size: 1.06rem;
+      }
+    }
+  }
+  // .display-content
+  // {
+  //   .dropdown-content
+  //   {
+  //     visibility: visible;
+  //     z-index: 99;
+  //     animation-name: fadeInUp;
+  //     -webkit-animation-name: fadeInUp;
+  //   }
+  // }
+  // .hide-content
+  // {
+  //   .dropdown-content
+  //   {
+  //     visibility: visible !important;//!!
+  //     z-index: 99;
+  //     animation-name: fadeOutDown;
+  //     -webkit-animation-name: fadeOutDown;
+  //   }
+  // }
+  // .hide-content-start
+  // {
+  //   .dropdown-content
+  //   {
+  //     visibility: visible;//!!
+  //   }
+  // }
+}
 
 //Leading Edge Technologies Annual Report page
 .leading-edge-table

@@ -201,35 +201,90 @@ function initButtons() {
 /** The Home page Dropdown menu section **/
 function hideDropdown(el)
 {
-  el.classList.remove("display-content");
-  el.classList.add("hide-content");
+  //For the desktop version
+  if(window.innerWidth>1023)
+  {
+    el.classList.remove("display-content");
+    el.classList.add("hide-content");
+  }
 }
 
 function showDropdown(el)
 {
-  el.classList.remove("hide-content-start");
-  el.classList.remove("hide-content");
-  el.classList.add("display-content");
+  //For the desktop version
+  if(window.innerWidth>1023)
+  {
+    el.classList.remove("hide-content-start");
+    el.classList.remove("hide-content");
+    el.classList.add("display-content");
+  }
+}
+
+
+function showHideDropdown(el)
+{
+  var menuList = document.getElementsByClassName("dropdown");
+  //Fold all other dropdown menus, before the current target dropdown going to be display.
+  for(let i = 0; i < menuList.length; i++)
+  {
+    if(menuList[i].classList.contains('display-content') && (menuList[i] != el))
+      hideDropdown(menuList[i]);
+  }
+
+  if(el.classList.contains("display-content"))
+  {
+    el.classList.remove("display-content");
+    el.classList.add("hide-content");
+  }
+  else
+  {
+    el.classList.remove("hide-content-start");
+    el.classList.remove("hide-content");
+    el.classList.add("display-content");
+  }
 }
 
 //Allow the dropdown menu to be able to access with the keyboard only.
-function showHideDropdown(el, key)
+function showHideDropdownKey(el, key)
 {
   if(key.keyCode === 13)
-  {
-    var menuList = document.getElementsByClassName("dropdown");
-    //Fold all other dropdown menus, before the current target dropdown going to be display.
-    for(let i = 0; i < menuList.length; i++)
-    {
-      if(menuList[i].classList.contains('display-content') && (menuList[i] != el))
-        hideDropdown(menuList[i]);
-    }
-    if(el.classList.contains('display-content'))
-      hideDropdown(el);
-    else
-      showDropdown(el);
-  }
+    showHideDropdown(el);
 }
+
+$(window).resize(function() 
+{
+  var dropdown = document.getElementsByClassName("dropdown");
+
+  //Fold all other dropdown menus when the width of the window size change.
+  for(let i = 0; i < dropdown.length; i++)
+  {
+      hideDropdown(dropdown[i]);
+  }
+  
+  // console.log(dropdown);
+  if ($(window).width() < 1024) 
+  {
+     // use click events
+    //  console.log("Click");
+    for(let i = 0; i < dropdown.length; i++)
+    {
+        dropdown[i].removeEventListener("mouseover",showHideDropdown);
+        dropdown[i].removeEventListener("mouseout",showHideDropdown);
+        dropdown[i].addEventListener("click",() => {showHideDropdown(dropdown[i])});
+    }
+  }
+  else 
+  {
+    // use hover events
+      // console.log("Hover");
+      for(let i = 0; i < dropdown.length; i++)
+      {
+        dropdown[i].removeEventListener("click", showHideDropdown);
+        dropdown[i].addEventListener("mouseover",() => {showHideDropdown(dropdown[i])});
+        dropdown[i].addEventListener("mouseout",() => {showHideDropdown(dropdown[i])});
+      }
+  }
+});
 
 /** The Home page Latest Update section **/
 var timer; //Store the Timeout for the slide
@@ -294,7 +349,26 @@ function runSlide()
   timer = setTimeout("showSlides()", 1700);
 }
 
+//For the ITVMO menu (Every ITVMO page include this).
+function initializeMenu()
+{
+  var width = window.innerWidth;
+  var dropdown = document.getElementsByClassName("dropdown");
+  if(width > 1023)
+    for(let i = 0; i < dropdown.length; i++)
+    {
+      dropdown[i].addEventListener("mouseover",() => {showHideDropdown(dropdown[i])});
+      dropdown[i].addEventListener("mouseout",() => {showHideDropdown(dropdown[i])});
+    }
+  else
+    for(let i = 0; i < dropdown.length; i++)
+    {
+        dropdown[i].addEventListener("click",() => {showHideDropdown(dropdown[i])});
+    }
+}
+
 /** Run functions **/
+initializeMenu();
 //Run Home page 
 if(document.getElementById('homepage-highlight') != null)
 {
