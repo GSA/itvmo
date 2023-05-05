@@ -184,8 +184,8 @@ function saveEvent(currEvent) {
     localStorage.setItem('events', JSON.stringify(events));
 }
 //Go to next month
-function initButtons() {
-  
+function initButtons() 
+{
     document.getElementById('nextButton').addEventListener('click', () => {
       nav++;
       //Insert paraemeter here to intake the data and can display on the calendar
@@ -198,26 +198,19 @@ function initButtons() {
     });
 }
 
+
 /** The Home page Dropdown menu section **/
 function hideDropdown(el)
 {
-  //For the desktop version
-  if(window.innerWidth>1023)
-  {
     el.classList.remove("display-content");
     el.classList.add("hide-content");
-  }
 }
 
 function showDropdown(el)
 {
-  //For the desktop version
-  if(window.innerWidth>1023)
-  {
     el.classList.remove("hide-content-start");
     el.classList.remove("hide-content");
     el.classList.add("display-content");
-  }
 }
 
 
@@ -233,14 +226,11 @@ function showHideDropdown(el)
 
   if(el.classList.contains("display-content"))
   {
-    el.classList.remove("display-content");
-    el.classList.add("hide-content");
+    hideDropdown(el);
   }
   else
   {
-    el.classList.remove("hide-content-start");
-    el.classList.remove("hide-content");
-    el.classList.add("display-content");
+    showDropdown(el);
   }
 }
 
@@ -258,33 +248,51 @@ $(window).resize(function()
   //Fold all other dropdown menus when the width of the window size change.
   for(let i = 0; i < dropdown.length; i++)
   {
-      hideDropdown(dropdown[i]);
+      if(!dropdown[i].classList.contains("hide-content-start"))
+       {
+          dropdown[i].classList.remove("display-content");
+          dropdown[i].classList.add("hide-content-start");
+       }
   }
   
-  // console.log(dropdown);
+  console.log($(window).width());
   if ($(window).width() < 1024) 
   {
-     // use click events
-    //  console.log("Click");
     for(let i = 0; i < dropdown.length; i++)
     {
-        dropdown[i].removeEventListener("mouseover",showHideDropdown);
-        dropdown[i].removeEventListener("mouseout",showHideDropdown);
-        dropdown[i].addEventListener("click",() => {showHideDropdown(dropdown[i])});
+        dropdown[i].removeAttribute("onmouseover");
+        dropdown[i].removeAttribute("onmouseout");
+        dropdown[i].setAttribute("onclick","showHideDropdown(this)");
     }
   }
   else 
   {
-    // use hover events
-      // console.log("Hover");
       for(let i = 0; i < dropdown.length; i++)
       {
-        dropdown[i].removeEventListener("click", showHideDropdown);
-        dropdown[i].addEventListener("mouseover",() => {showHideDropdown(dropdown[i])});
-        dropdown[i].addEventListener("mouseout",() => {showHideDropdown(dropdown[i])});
+        dropdown[i].removeAttribute("onclick");
+        dropdown[i].setAttribute("onmouseover","showHideDropdown(this)");
+        dropdown[i].setAttribute("onmouseout","showHideDropdown(this)");
       }
   }
 });
+
+//This function initialize all the dropdown menu on the dropdown bar.
+function initializeMenu()
+{
+  var width = window.innerWidth;
+  var dropdown = document.getElementsByClassName("dropdown");
+  if(width > 1023)
+    for(let i = 0; i < dropdown.length; i++)
+    {
+      dropdown[i].setAttribute("onmouseover","showHideDropdown(this)");
+      dropdown[i].setAttribute("onmouseout","showHideDropdown(this)");
+    }
+  else
+    for(let i = 0; i < dropdown.length; i++)
+    {
+      dropdown[i].setAttribute("onclick","showHideDropdown(this)");
+    }
+}
 
 /** The Home page Latest Update section **/
 var timer; //Store the Timeout for the slide
@@ -349,25 +357,9 @@ function runSlide()
   timer = setTimeout("showSlides()", 1700);
 }
 
-//For the ITVMO menu (Every ITVMO page include this).
-function initializeMenu()
-{
-  var width = window.innerWidth;
-  var dropdown = document.getElementsByClassName("dropdown");
-  if(width > 1023)
-    for(let i = 0; i < dropdown.length; i++)
-    {
-      dropdown[i].addEventListener("mouseover",() => {showHideDropdown(dropdown[i])});
-      dropdown[i].addEventListener("mouseout",() => {showHideDropdown(dropdown[i])});
-    }
-  else
-    for(let i = 0; i < dropdown.length; i++)
-    {
-        dropdown[i].addEventListener("click",() => {showHideDropdown(dropdown[i])});
-    }
-}
-
 /** Run functions **/
+
+//Since all of the page have the menubar it need to be initialize.
 initializeMenu();
 //Run Home page 
 if(document.getElementById('homepage-highlight') != null)
