@@ -661,9 +661,6 @@ button {
 //Homepage dropdown button 
 .dropdown {
   .dropdown-content {
-    // display: none;
-    // opacity: 1;
-    // visibility: hidden;
     z-index: -99;
     display: block;
     position: absolute;
@@ -717,65 +714,38 @@ button {
 @media only screen and (max-width: 1023px)
 {
   .dropdown {
-    .dropdown-content {
-      // display: none;
-      // opacity: 1;
-      // visibility: hidden;
-      z-index: -99;
+    .dropdown-content 
+    {
+      padding-left: 15px;
       display: block;
       position: relative;
       background-color: white;
       min-width: 208px;
       box-shadow: none;
-      z-index: 1;
+      height: 0px;
       a 
       {
-        line-height: 0.9;
-        padding: 1rem; 
+        line-height: 1.1;
+        padding: 0.5rem 1rem;
         color: #565c65;
-        display: block;
         font-weight: 500;
         font-size: 1.06rem;
       }
     }
   }
-  // .display-content
-  // {
-  //   .dropdown-content
-  //   {
-  //     visibility: visible;
-  //     z-index: 99;
-  //     animation-name: fadeInUp;
-  //     -webkit-animation-name: fadeInUp;
-  //   }
-  // }
-  // .hide-content
-  // {
-  //   .dropdown-content
-  //   {
-  //     visibility: visible !important;//!!
-  //     z-index: 99;
-  //     animation-name: fadeOutDown;
-  //     -webkit-animation-name: fadeOutDown;
-  //   }
-  // }
-  // .hide-content-start
-  // {
-  //   .dropdown-content
-  //   {
-  //     visibility: visible;//!!
-  //   }
-  // }
+  .display-content
+  {
+    .dropdown-content
+    {
+      height: 100%;
+    }
+  }
 }
 
 //Leading Edge Technologies Annual Report page
 .leading-edge-table
 {
   width: 100%;
-  th, td
-  {
-    // border: 1px solid black; 
-  }
   th
   {
     background-color: #ff590a;
