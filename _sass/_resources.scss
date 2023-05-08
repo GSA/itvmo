@@ -741,6 +741,17 @@ button {
     }
   }
 }
+//Leave the nav menu open when click on the submenu.
+.a-is-visible{
+  -webkit-animation:slidein-left 0.3s ease-in-out;
+          animation:slidein-left 0.3s ease-in-out;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+}
+.a-usa-js-mobile-nav--active{
+  overflow:hidden;
+}
 
 //Leading Edge Technologies Annual Report page
 .leading-edge-table
