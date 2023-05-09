@@ -200,27 +200,6 @@ function initButtons()
 
 
 /** The Home page Dropdown menu section **/
-function unhideMenu()
-{
-  var body = document.getElementsByTagName("body");
-  var nav = document.getElementsByClassName("usa-nav");
-  // console.log(body[0]);
-  // console.log(nav[0]);
-  console.log(body);
-  body[0].classList.add("a-usa-js-mobile-nav--active");
-  nav[0].classList.add("a-is-visible");
-
-  // setTimeout(body[0].classList.add("usa-js-mobile-nav--active"),5s);
-  // setTimeout(nav[0].classList.add("is-visible"),5s);
-}
-function hideMenu()
-{
-  var body = document.getElementsByTagName("body");
-  var nav = document.getElementsByClassName("usa-nav");
-  body[0].classList.remove("a-usa-js-mobile-nav--active");
-  nav[0].classList.remove("a-is-visible");
-}
-
 function hideDropdown(el)
 {
     el.classList.remove("display-content");
@@ -259,7 +238,9 @@ function showHideDropdown(el)
 function showHideDropdownKey(el, key)
 {
   if(key.keyCode === 13)
+  {
     showHideDropdown(el);
+  }
 }
 
 $(window).resize(function() 
@@ -283,7 +264,8 @@ $(window).resize(function()
     {
         dropdown[i].removeAttribute("onmouseover");
         dropdown[i].removeAttribute("onmouseout");
-        dropdown[i].setAttribute("onclick","showHideDropdown(this);unhideMenu();");
+        dropdown[i].removeAttribute("onkeydown");
+        dropdown[i].setAttribute("onclick","showHideDropdown(this);");
 
     }
   }
@@ -294,6 +276,7 @@ $(window).resize(function()
         dropdown[i].removeAttribute("onclick");
         dropdown[i].setAttribute("onmouseover","showHideDropdown(this)");
         dropdown[i].setAttribute("onmouseout","showHideDropdown(this)");
+        dropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event)");
       }
   }
 });
@@ -303,38 +286,17 @@ function initializeMenu()
 {
   var width = window.innerWidth;
   var dropdown = document.getElementsByClassName("dropdown");
-  var menuButton = document.getElementsByClassName("usa-menu-btn");
-  var exitButton = document.getElementsByClassName("usa-nav__close");
-  var nav = document.getElementsByClassName("usa-nav");
-  // var body = document.getElementsByTagName("body");
-
-  
-  //Since unable to edit the USWDS.js file 
-  menuButton[0].setAttribute("onclick","unhideMenu()");
-  exitButton[0].setAttribute("onclick","hideMenu()");
-  
-  //Hide the navigation menu when the user click outside the navigation menu area.
-  // $('body,html').click(function(e){
-  //   hideMenu();
-  // });
-  //Prevent the navigation menu to hide when user click on the navigation menu area.
-  // nav[0].addEventListener("click", function(e){e.stopPropagation();});
-
-
-
-
   if(width > 1023)
     for(let i = 0; i < dropdown.length; i++)
     {
       dropdown[i].setAttribute("onmouseover","showHideDropdown(this)");
       dropdown[i].setAttribute("onmouseout","showHideDropdown(this)");
+      dropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event)");
     }
   else
     for(let i = 0; i < dropdown.length; i++)
     {
-      dropdown[i].setAttribute("onclick","showHideDropdown(this)");
-      // dropdown[i].setAttribute("onclick","showHideDropdown(this);unhideMenu();");
-      
+      dropdown[i].setAttribute("onclick","showHideDropdown(this)");      
     }
 }
 
@@ -419,6 +381,3 @@ if( document.getElementById('nextButton') != null)
   localStorage.clear();
   runCalendar();
 }
-
-// unhideMenu();
-// hideMenu();

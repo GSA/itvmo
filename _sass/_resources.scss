@@ -660,6 +660,10 @@ button {
 }
 //Homepage dropdown button 
 .dropdown {
+  button 
+  {
+    width: 100%;
+  }
   .dropdown-content {
     z-index: -99;
     display: block;
