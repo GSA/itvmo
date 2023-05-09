@@ -659,6 +659,10 @@ button {
   }
 }
 //Homepage dropdown button 
+.usa-nav__primary button[aria-expanded=true]
+{
+  background-color: #005ea2;
+}
 .dropdown {
   button 
   {
