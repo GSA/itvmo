@@ -769,8 +769,20 @@ button {
     .dropdown-content
     {
       height: 100%;
+      animation-name: fadeInDown;
+      -webkit-animation-name: fadeInDown;
     }
   }
+    .hide-content
+  {
+    .dropdown-content
+    {
+      animation-name: none;
+      -webkit-animation-name: none;
+      opacity: 0;
+    }
+  }
+  
 }
 //Leave the nav menu open when click on the submenu.
 .a-is-visible{
@@ -972,6 +984,12 @@ button {
   -webkit-animation-name: fadeOutDown;
 }
 
+.fadeOutUp {
+  opacity: 0;
+  animation-name: fadeOutUp;
+  -webkit-animation-name: fadeOutUp;
+}
+
 @keyframes fadeOutDown {
   0% {
     opacity: 1;
@@ -980,6 +998,17 @@ button {
   100% {
     opacity: 0;
     transform: translateY(20px);
+    visibility: hidden;
+  }
+}
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
     visibility: hidden;
   }
 }
