@@ -227,12 +227,10 @@ function showHideDropdown(el)
   if(el.classList.contains("display-content"))
   {
     hideDropdown(el);
-    el.children[0].setAttribute("aria-expanded","false");
   }
   else
   {
     showDropdown(el);
-    el.children[0].setAttribute("aria-expanded","true");
   }
 }
 

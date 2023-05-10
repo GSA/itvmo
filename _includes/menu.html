@@ -31,9 +31,7 @@ where we provide an easy way to manage your navigation system
           <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
             href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
           {% else %}
-          <button class="usa-accordion__button "
-          aria-expanded="false"
-          aria-label="{{ nav_item.name | escape }} - Submenu" type="button"><span>{{ nav_item.name | escape }}</span></button>
+          <button class="" aria-label="Testing3 - Submenu" type="button"><span>{{ nav_item.name | escape }}<img alt="dropdown arrow" class="dropdown-arrow" src="../img/angle-arrow-down.svg"></span></button>
             <div class="dropdown-content dropdown-animate">
               {% for subnav_item in nav_item.child %}
                 <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
@@ -43,10 +41,10 @@ where we provide an easy way to manage your navigation system
         </li>
         {% endfor %}
         
-        <li class="usa-nav__primary-item dropdown hide-content" onmouseover="showHideDropdown(this)" onmouseout="showHideDropdown(this)" onkeydown="showHideDropdownKey(this, event)">
+        <!-- <li class="usa-nav__primary-item dropdown hide-content-start">
         
           
-          <button class="usa-accordion__button " aria-expanded="false" aria-label="Testing2 - Submenu" type="button"><span>Testing2</span></button>
+          <button class="" aria-label="Testing3 - Submenu" type="button"><span>Testing3<img alt="dropdown arrow" class="dropdown-arrow" src="../img/angle-arrow-down.svg"></span></button>
             <div class="dropdown-content dropdown-animate">
               
                 <a href="/how-can-we-help/">Link1</a>
@@ -57,52 +55,8 @@ where we provide an easy way to manage your navigation system
               
             </div>            
           
-        </li>
-        <!-- <li class="usa-nav__primary-item">
-          <button
-            type="button"
-            class="usa-accordion__button usa-nav__link"
-            aria-expanded="false"
-            aria-controls="extended-nav-section-two"
-          >
-            <span>&lt;Section&gt;</span>
-          </button>
-          <ul id="extended-nav-section-two" class="usa-nav__submenu">
-            <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;Navigation link&gt;</span></a>
-            </li>
-            <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;Navigation link&gt;</span></a>
-            </li>
-            <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;Navigation link&gt;</span></a>
-            </li>
-          </ul>
         </li> -->
-        <!-- <li class="usa-nav__primary-item">
-          <button
-            type="button"
-            class="usa-accordion__button usa-nav__link usa-current"
-            aria-expanded="false"
-            aria-controls="extended-nav-section-one"
-          >
-            <span>&lt;Current section&gt;</span>
-          </button>
-          <ul id="extended-nav-section-one" class="usa-nav__submenu">
-            <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;Navigation link&gt;</span></a>
-            </li>
-            <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;Navigation link&gt;</span></a>
-            </li>
-            <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;Navigation link&gt;</span></a>
-            </li>
-            <li class="usa-nav__submenu-item">
-              <a href=""><span>&lt;Navigation link&gt;</span></a>
-            </li>
-          </ul>
-        </li> -->
+
       </ul>
       <div class="usa-nav__secondary">
         <ul class="usa-nav__secondary-links">

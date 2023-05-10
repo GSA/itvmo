@@ -659,14 +659,16 @@ button {
   }
 }
 //Homepage dropdown button 
-.usa-nav__primary button[aria-expanded=true]
-{
-  background-color: #005ea2;
-}
 .dropdown {
   button 
   {
     width: 100%;
+    img 
+    {
+      height: 0.5rem;
+      width: 0.5rem;
+      margin-left: 5px;
+    }
   }
   .dropdown-content {
     z-index: -99;
@@ -695,6 +697,17 @@ button {
 //Display the dropdown menu on hover 
 .display-content
 {
+  button 
+  {
+    img 
+    {
+      -webkit-transform:rotate(180deg); /* Chrome, Safari, Opera */
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);   /* Standard syntax */
+    }
+  }
   .dropdown-content
   {
     visibility: visible;
@@ -722,6 +735,16 @@ button {
 @media only screen and (max-width: 1023px)
 {
   .dropdown {
+    button 
+    {
+      img 
+      {
+        // display: none;
+        float: right;
+        height: 0.9rem;
+        width: 0.9rem;
+      }
+    }
     .dropdown-content 
     {
       padding-left: 15px;
