@@ -204,6 +204,7 @@ function hideDropdown(el)
 {
     el.classList.remove("display-content");
     el.classList.add("hide-content");
+    el.children[0].classList.remove("usa-current");
 }
 
 function showDropdown(el)
@@ -211,6 +212,7 @@ function showDropdown(el)
     el.classList.remove("hide-content-start");
     el.classList.remove("hide-content");
     el.classList.add("display-content");
+    el.children[0].classList.add("usa-current");
 }
 
 

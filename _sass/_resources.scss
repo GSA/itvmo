@@ -747,6 +747,18 @@ button {
     }
     .dropdown-content 
     {
+      .a-usa-current
+      {
+        background-color:#005ea2;
+        border-radius:0;
+        content:'';
+        display:block;
+        position:absolute;
+        height:0.25rem;
+        left:1rem;
+        right:1rem;
+        bottom:-0.25rem;
+      }
       padding-left: 15px;
       display: block;
       position: relative;

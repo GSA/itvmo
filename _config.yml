@@ -88,7 +88,7 @@ primary_navigation:
     url: /#
     child:
       - name: Link1
-        url: /how-can-we-help/
+        url: /emerge-tech-small-business-event/
       - name: Link2
         url: /how-can-we-help/
       - name: Link3
