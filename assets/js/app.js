@@ -216,9 +216,10 @@ function showDropdown(el)
 }
 
 
-function showHideDropdown(el)
+function showHideDropdown(el, cl)
 {
-  var menuList = document.getElementsByClassName("dropdown");
+  
+  var menuList = document.getElementsByClassName(cl);
   //Fold all other dropdown menus, before the current target dropdown going to be display.
   for(let i = 0; i < menuList.length; i++)
   {
@@ -237,13 +238,40 @@ function showHideDropdown(el)
 }
 
 //Allow the dropdown menu to be able to access with the keyboard only.
-function showHideDropdownKey(el, key)
+function showHideDropdownKey(el, key, cl)
 {
   if(key.keyCode === 13)
   {
-    showHideDropdown(el);
+    showHideDropdown(el,cl);
   }
 }
+// function showHideDropdownKey(el, key, cl)
+// {
+//   if(key.keyCode === 13)
+//   {
+//     // console.log(el);
+//     if(cl == 'sideDropdown')
+//       showHideDropdown(el,cl);
+//     else
+//     {
+//       var sideDropdown = el.getElementsByClassName('side-submenu');
+//       // console.log(sideDropdown);
+//       var sideOpen = false;
+//       for(let i = 0; i < sideDropdown.length; i++)
+//       {
+//         if(sideDropdown[i].classList.contains('display-content'))
+//         {
+//           sideOpen = true;
+//         }
+//       }
+//       // console.log(sideOpen);
+//       if(!sideOpen)
+//       {
+//         showHideDropdown(el,cl);
+//       }
+//     }
+//   }
+// }
 
 $(window).resize(function() 
 {
@@ -259,7 +287,7 @@ $(window).resize(function()
        }
   }
   
-  console.log($(window).width());
+  // console.log($(window).width());
   if ($(window).width() < 1024) 
   {
     for(let i = 0; i < dropdown.length; i++)
@@ -288,13 +316,23 @@ function initializeMenu()
 {
   var width = window.innerWidth;
   var dropdown = document.getElementsByClassName("dropdown");
+  var sideDropdown = document.getElementsByClassName('side-submenu') //Menu inside the submenu
+
   if(width > 1023)
+  {
     for(let i = 0; i < dropdown.length; i++)
     {
-      dropdown[i].setAttribute("onmouseover","showHideDropdown(this)");
-      dropdown[i].setAttribute("onmouseout","showHideDropdown(this)");
-      dropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event)");
+      dropdown[i].setAttribute("onmouseover","showHideDropdown(this, 'dropdown')");
+      dropdown[i].setAttribute("onmouseout","showHideDropdown(this, 'dropdown')");
+      dropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'dropdown')");//!
     }
+    for(let i = 0; i < sideDropdown.length; i++)
+    {
+      sideDropdown[i].setAttribute("onmouseover","showHideDropdown(this, 'sideDropdown')");
+      sideDropdown[i].setAttribute("onmouseout","showHideDropdown(this, 'sideDropdown')");
+      sideDropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'sideDropdown')");//!!
+    }
+  }
   else
     for(let i = 0; i < dropdown.length; i++)
     {

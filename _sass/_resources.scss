@@ -696,7 +696,7 @@ button {
     {
       color: #005ea2;
     }
-    .side-submenu 
+    .side-submenu-button 
     {
       .side-arrow
       {
@@ -747,7 +747,7 @@ button {
       transform: rotate(180deg);
     }
   }
-  .dropdown-content
+  .dropdown-content, .sub-content
   {
     visibility: visible;
     z-index: 98;
@@ -763,10 +763,14 @@ button {
     animation-name: fadeOutDown;
     -webkit-animation-name: fadeOutDown;
   }
+  .sub-content
+  {
+    visibility: hidden;
+  }
 }
 .hide-content-start
 {
-  .dropdown-content
+  .dropdown-content, .sub-content
   {
     visibility: hidden;
   }
