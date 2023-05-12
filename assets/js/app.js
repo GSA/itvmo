@@ -205,6 +205,10 @@ function hideDropdown(el)
     el.classList.remove("display-content");
     el.classList.add("hide-content");
     el.children[0].classList.remove("usa-current");
+    var submenu = el.getElementsByClassName("display-content");
+    //When dropdown hide all the submenu on the dropdown hide as well.
+    for(let i = 0; i < submenu.length; i++)
+      hideDropdown(submenu[i]);
 }
 
 function showDropdown(el)
@@ -220,7 +224,7 @@ function showHideDropdown(el, cl)
 {
   
   var menuList = document.getElementsByClassName(cl);
-  //Fold all other dropdown menus, before the current target dropdown going to be display.
+  //Fold all other dropdown menus (or side submenu in the same dropdown), before the current target dropdown going to be display.
   for(let i = 0; i < menuList.length; i++)
   {
     if(menuList[i].classList.contains('display-content') && (menuList[i] != el))
@@ -228,54 +232,24 @@ function showHideDropdown(el, cl)
   }
 
   if(el.classList.contains("display-content"))
-  {
     hideDropdown(el);
-  }
   else
-  {
     showDropdown(el);
-  }
 }
 
 //Allow the dropdown menu to be able to access with the keyboard only.
 function showHideDropdownKey(el, key, cl)
 {
-  if(key.keyCode === 13)
+  if(key.target == key.currentTarget.children[0] && key.keyCode === 13)
   {
     showHideDropdown(el,cl);
   }
 }
-// function showHideDropdownKey(el, key, cl)
-// {
-//   if(key.keyCode === 13)
-//   {
-//     // console.log(el);
-//     if(cl == 'sideDropdown')
-//       showHideDropdown(el,cl);
-//     else
-//     {
-//       var sideDropdown = el.getElementsByClassName('side-submenu');
-//       // console.log(sideDropdown);
-//       var sideOpen = false;
-//       for(let i = 0; i < sideDropdown.length; i++)
-//       {
-//         if(sideDropdown[i].classList.contains('display-content'))
-//         {
-//           sideOpen = true;
-//         }
-//       }
-//       // console.log(sideOpen);
-//       if(!sideOpen)
-//       {
-//         showHideDropdown(el,cl);
-//       }
-//     }
-//   }
-// }
 
 $(window).resize(function() 
 {
   var dropdown = document.getElementsByClassName("dropdown");
+  var sideDropdown = document.getElementsByClassName('side-submenu') //Menu inside the submenu
 
   //Fold all other dropdown menus when the width of the window size change.
   for(let i = 0; i < dropdown.length; i++)
@@ -308,6 +282,12 @@ $(window).resize(function()
         dropdown[i].setAttribute("onmouseout","showHideDropdown(this)");
         dropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event)");
       }
+      for(let i = 0; i < sideDropdown.length; i++)
+      {
+        sideDropdown[i].setAttribute("onmouseover","showHideDropdown(this, 'sideDropdown')");
+        sideDropdown[i].setAttribute("onmouseout","showHideDropdown(this, 'sideDropdown')");
+        sideDropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'side-submenu')");//!!
+      }
   }
 });
 
@@ -330,7 +310,7 @@ function initializeMenu()
     {
       sideDropdown[i].setAttribute("onmouseover","showHideDropdown(this, 'sideDropdown')");
       sideDropdown[i].setAttribute("onmouseout","showHideDropdown(this, 'sideDropdown')");
-      sideDropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'sideDropdown')");//!!
+      sideDropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'side-submenu')");//!!
     }
   }
   else
