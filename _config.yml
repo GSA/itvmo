@@ -86,6 +86,8 @@ primary_navigation:
     url: /community/
   - name: How Can We Help?
     url: /how-can-we-help/
+  - name: Cybersecurity Category Team
+    url: /cybersecurity-category-team/
   # - name: ITVMO’s Top OEMs
   #   url: /itvmo-top-original-equipment-manufacturers/
 
