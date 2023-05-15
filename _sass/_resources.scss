@@ -746,8 +746,8 @@ button {
   {
     visibility: visible;
     z-index: 98;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
+    animation-name: fade;
+    -webkit-animation-name: fade;
   }
 }
 //Rotate the sidemenu arrow to the opposite direction when hover or click.
