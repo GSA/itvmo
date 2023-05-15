@@ -9,10 +9,10 @@ sidenav: false
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
     <h1 class="margin-top-0 centerHeading">ITVMO Newsletter Q2 FY23</h1>
-    <h2 class="margin-top-0 centerHeading">ITVMO Annual Summit -- Coming This Summer!</h2>
+    <h2 class="margin-top-0 centerHeading">ITVMO Annual Summit-- Coming on August 2nd</h2>
 
     <div class="margin-bottom-2">
-    The ITVMO will be hosting an in-person annual summit mid-Summer to convene both industry and government with the goal of <b>Leveraging IT category management for small business, emerging technologies, and Best-in-Class solutions to meet Agency missions</b>.
+        The ITVMO will be hosting an in-person annual summit on August 2nd to convene both industry and government with the goal of <b>Leveraging IT category management for small business, emerging technologies, and Best-in-Class solutions to meet Agency missions</b>.
     </div>
     <div class="margin-bottom-2">
     There will be opportunities to engage with agency and industry leaders, hear from a variety of panelists, and user case success stories.
