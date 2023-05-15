@@ -1,5 +1,5 @@
 ---
-title: 2022 Leading Edge Technologies Report
+title: Leading Edge Technologies Report
 layout: page
 sidenav: false
 ---
