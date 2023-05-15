@@ -31,7 +31,7 @@ where we provide an easy way to manage your navigation system
           <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
             href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
           {% else %}
-          <button class="" aria-label="{{nav_item.name}} - Submenu" type="button"><span>{{ nav_item.name | escape }}<img alt="dropdown arrow" class="dropdown-arrow" src="../img/angle-arrow-down.svg"></span></button>
+          <button class="dropdown-submenu-button" aria-label="{{nav_item.name}} - Submenu" type="button"><span>{{ nav_item.name | escape }}<img alt="dropdown arrow" class="dropdown-arrow" src="../img/angle-arrow-down.svg"></span></button>
             <div class="dropdown-content dropdown-animate">
               {% for subnav_item in nav_item.child %}
                 {%if subnav_item.url != "/#"%}

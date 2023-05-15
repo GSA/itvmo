@@ -708,11 +708,6 @@ button {
         height: 0.5rem;
         width: 0.5rem;
         float: right;
-        // -webkit-transform:rotate(90deg);
-        // -moz-transform: rotate(90deg);
-        // -ms-transform: rotate(90deg);
-        // -o-transform: rotate(90deg);
-        // transform: rotate(90deg);
       }
     }
     .sub-content
@@ -736,7 +731,7 @@ button {
 //Display the dropdown menu on hover 
 .display-content
 {
-  button 
+  .dropdown-submenu-button
   {
     .dropdown-arrow  
     {
@@ -753,6 +748,21 @@ button {
     z-index: 98;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
+  }
+}
+//Rotate the sidemenu arrow to the opposite direction when hover or click.
+.display-content.side-submenu
+{
+  .side-submenu-button
+  {
+    .side-arrow
+    {
+      -webkit-transform:rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
   }
 }
 .hide-content
