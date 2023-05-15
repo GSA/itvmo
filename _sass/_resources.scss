@@ -780,6 +780,7 @@ button {
 }
 .hide-content-start
 {
+  // pointer-events:none;
   .dropdown-content, .sub-content
   {
     visibility: hidden;
@@ -937,11 +938,10 @@ button {
 }
 /*Animation*/
 .dropdown-animate {
-  -webkit-animation-duration: 400ms;
-  animation-duration: 400ms;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  
 }
 
 .animate {
@@ -1064,6 +1064,7 @@ button {
     opacity: 0;
     transform: translateY(20px);
     visibility: hidden;
+    pointer-events:auto;
   }
 }
 @keyframes fadeOutUp {
