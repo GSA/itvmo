@@ -31,42 +31,26 @@ where we provide an easy way to manage your navigation system
           <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
             href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
           {% else %}
-          <button class="" aria-label="Testing3 - Submenu" type="button"><span>{{ nav_item.name | escape }}<img alt="dropdown arrow" class="dropdown-arrow" src="../img/angle-arrow-down.svg"></span></button>
+          <button class="" aria-label="{{nav_item.name}} - Submenu" type="button"><span>{{ nav_item.name | escape }}<img alt="dropdown arrow" class="dropdown-arrow" src="../img/angle-arrow-down.svg"></span></button>
             <div class="dropdown-content dropdown-animate">
               {% for subnav_item in nav_item.child %}
+                {%if subnav_item.url != "/#"%}
                 <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
+                {%else%}
+                <div class="side-submenu hide-content">
+                  <button class="side-submenu-button" aria-label="{{subnav_item.name}} - Submenu" type="button"><span>{{subnav_item.name}}<img alt="side arrow" class="side-arrow" src="../img/angle-arrow-down.svg"></span></button>
+                  <div class="sub-content">
+                    {% for sub_item in subnav_item.child %}
+                      <a href="{{sub_item.url}}">{{sub_item.name}}</a>
+                    {% endfor %}
+                  </div> 
+                </div>
+                {%endif%}
               {% endfor %}
             </div>            
           {% endif %}
         </li>
         {% endfor %}
-        
-        <li class="usa-nav__primary-item dropdown hide-content-start">
-          <button class="" aria-label="Testing3 - Submenu" type="button"><span>Testing3<img alt="dropdown arrow" class="dropdown-arrow" src="../img/angle-arrow-down.svg"></span></button>
-            <div class="dropdown-content dropdown-animate">
-              
-                <a href="/how-can-we-help/">Link1</a>
-                <div class="side-submenu hide-content">
-                  <button class="side-submenu-button" aria-label="TestingSub - Submenu" type="button"><span>TestingSub<img alt="side arrow" class="side-arrow" src="../img/angle-arrow-down.svg"></span></button>
-                  <div class="sub-content">
-                    <a href="/how-can-we-help/">Sub-Link1</a>
-                    <a href="/how-can-we-help/">Sub-Link2</a>
-                    <a href="/how-can-we-help/">Sub-Link3</a>
-                  </div> 
-                </div>
-                <a href="/how-can-we-help/">Link3</a>
-                <div class="side-submenu hide-content">
-                  <button class="side-submenu-button" aria-label="TestingSub - Submenu" type="button"><span>TestingSub<img alt="side arrow" class="side-arrow" src="../img/angle-arrow-down.svg"></span></button>
-                  <div class="sub-content">
-                    <a href="/how-can-we-help/">Sub-Link1</a>
-                    <a href="/how-can-we-help/">Sub-Link2</a>
-                    <a href="/how-can-we-help/">Sub-Link3</a>
-                  </div> 
-                </div>
-            </div>            
-
-        </li>
-
       </ul>
       <div class="usa-nav__secondary">
         <ul class="usa-nav__secondary-links">
