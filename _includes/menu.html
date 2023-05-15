@@ -31,14 +31,14 @@ where we provide an easy way to manage your navigation system
           <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
             href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
           {% else %}
-          <button class="dropdown-submenu-button" aria-label="{{nav_item.name}} - Submenu" type="button"><span>{{ nav_item.name | escape }}<img alt="dropdown arrow" class="dropdown-arrow" src="../img/angle-arrow-down.svg"></span></button>
+          <button class="dropdown-submenu-button" aria-label="{{nav_item.name}} - Submenu" type="button"><span>{{ nav_item.name | escape }}<img alt="dropdown arrow" class="dropdown-arrow" src="{{site.baseurl}}/img/angle-arrow-down.svg"></span></button>
             <div class="dropdown-content dropdown-animate">
               {% for subnav_item in nav_item.child %}
                 {%if subnav_item.url != "/#"%}
                 <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
                 {%else%}
                 <div class="side-submenu hide-content">
-                  <button class="side-submenu-button" aria-label="{{subnav_item.name}} - Submenu" type="button"><span>{{subnav_item.name}}<img alt="side arrow" class="side-arrow" src="../img/angle-arrow-down.svg"></span></button>
+                  <button class="side-submenu-button" aria-label="{{subnav_item.name}} - Submenu" type="button"><span>{{subnav_item.name}}<img alt="side arrow" class="side-arrow" src="{{site.baseurl}}/img/angle-arrow-down.svg"></span></button>
                   <div class="sub-content">
                     {% for sub_item in subnav_item.child %}
                       <a href="{{sub_item.url}}">{{sub_item.name}}</a>
