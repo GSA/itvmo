@@ -84,7 +84,7 @@ Our goal is to focus on contracts, processes, tools, templates or knowledge shar
       </div>
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3">
-          IT BIC Cybersecurity Tools and templates
+          IT BIC Cybersecurity Tools and Templates
         </button>
       </h3>
       <div id="b-a3" class="usa-accordion__content" hidden="">
