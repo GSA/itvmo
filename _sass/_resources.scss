@@ -791,13 +791,23 @@ button {
   .dropdown {
     button 
     {
-      .dropdown-arrow 
+      .dropdown-arrow
       {
         // display: none;
         float: right;
         height: 0.9rem;
         width: 0.9rem;
       }
+    }
+    .sub-content, .dropdown-content
+    {
+      padding-left: 15px;
+      display: block;
+      position: relative;
+      background-color: white;
+      min-width: 208px;
+      box-shadow: none;
+      height: 0px;
     }
     .dropdown-content 
     {
@@ -813,14 +823,7 @@ button {
         right:1rem;
         bottom:-0.25rem;
       }
-      padding-left: 15px;
-      display: block;
-      position: relative;
-      background-color: white;
-      min-width: 208px;
-      box-shadow: none;
-      height: 0px;
-      a 
+      a, button
       {
         line-height: 1.1;
         padding: 0.5rem 1rem;
@@ -828,20 +831,46 @@ button {
         font-weight: 500;
         font-size: 1.06rem;
       }
+      .sub-content
+      {
+        position: relative;
+        z-index: 99;
+        width: 193px;
+        transform: translate(0%,0%);
+        height: 0px;
+      }
     }
   }
-  .display-content
+  .dropdown.display-content
   {
     .dropdown-content
     {
-      height: 100%;
+      height: 100% !important;
       animation-name: fadeInDown;
       -webkit-animation-name: fadeInDown;
     }
   }
-    .hide-content
+  .dropdown.hide-content
   {
     .dropdown-content
+    {
+      animation-name: none;
+      -webkit-animation-name: none;
+      visibility: hidden;
+    }
+  }
+  .side-submenu.display-content
+  {
+    .sub-content
+    {
+      height: 100% !important;
+      animation-name: fadeInDown;
+      -webkit-animation-name: fadeInDown;
+    }
+  }
+  .side-submenu.hide-content
+  {
+    .sub-content
     {
       animation-name: none;
       -webkit-animation-name: none;
