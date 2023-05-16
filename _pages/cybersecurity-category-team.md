@@ -1,5 +1,5 @@
 ---
-title: Cybersecurity Category Team
+title: Cybersecurity Category Team (CCT)
 permalink: /cybersecurity-category-team/
 layout: page
 sidenav: false
