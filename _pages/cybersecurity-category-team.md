@@ -20,25 +20,32 @@ sidenav: false
   <li>Multiple cybersecurity providers on BICs who all state they sell cybersecurity.</li>
 </ul>
 </div>
-<div class="margin-bottom-2">
-Our goal is to focus on contracts, processes, tools, templates or knowledge sharing. The government must: 
-<ul>
-  <li><b>Provide access to vehicles and resources to drive efficient acquisition processes</b>: Enable an agency who has a requirement to gain access to the right GWACs/BICs that can meet those requirements, and then be able to go through the process as efficiently as possible by having access to templates, RFI/solicitations, common SLAs, standard terms, conditions, pricing, etc.</li>
-  <li><b>Collaboration across IT and Acquisition professionals</b>: Achieve a whole-of-government approach by working collectively across federal acquisition programs. The CCT will be chaired by an agency that will set agenda, direction, and deliverables.  Members will include IT practitioners from agencies and BIC solution holders who will share ideas, artifacts, and expertise. </li>
-  <li><b>Provide access to vehicles and resources to drive efficient acquisition processes</b>: Enable an agency who has a requirement to gain access to the right GWACs/BICs that can meet those requirements, and then be able to go through the process as efficiently as possible by having access to templates, RFI/solicitations, common SLAs, standard terms, conditions, pricing, etc.</li>
-  <li><b>Collaboration across IT and Acquisition professionals</b>:  Achieve a whole-of-government approach by working collectively across federal acquisition programs. The CCT will be chaired by an agency that will set agenda, direction, and deliverables.  Members will include IT practitioners from agencies and BIC solution holders who will share ideas, artifacts, and expertise.  </li>
-  <li><b>Develop library of relevant acquisition materials</b>: The ITVMO acts as a broker and resource library to compile the best thinking and information on IT acquisitions from across government. The ITVMO will provide logistics support and help to broker CCT deliverables to IT buyers/agency customers.</li>
-  <li><b>Provide tools to assist federal buyers of Cybersecurity</b>: Review cyber offerings and identify standard requirements, pricing, and terms and conditions.  Evaluate the need and effectiveness of market research tools for IT buyers.</li>
-</ul>
-</div>
 
 <div class="usa-accordion">
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
-          Policy and Guidance
+          Goals
         </button>
       </h3>
       <div id="b-a1" class="usa-accordion__content" hidden="">
+        <div class="grid-row flex-align-center">
+          <p>
+              Our goal is to focus on contracts, processes, tools, templates or knowledge sharing. The government must: 
+              <ul>
+                <li><b>Provide access to vehicles and resources to drive efficient acquisition processes</b>: Enable an agency who has a requirement to gain access to the right GWACs/BICs that can meet those requirements, and then be able to go through the process as efficiently as possible by having access to templates, RFI/solicitations, common SLAs, standard terms, conditions, pricing, etc.</li>
+                <li><b>Collaboration across IT and Acquisition professionals</b>:  Achieve a whole-of-government approach by working collectively across federal acquisition programs. The CCT will be chaired by an agency that will set agenda, direction, and deliverables.  Members will include IT practitioners from agencies and BIC solution holders who will share ideas, artifacts, and expertise.  </li>
+                <li><b>Develop library of relevant acquisition materials</b>: The ITVMO acts as a broker and resource library to compile the best thinking and information on IT acquisitions from across government. The ITVMO will provide logistics support and help to broker CCT deliverables to IT buyers/agency customers.</li>
+                <li><b>Provide tools to assist federal buyers of Cybersecurity</b>: Review cyber offerings and identify standard requirements, pricing, and terms and conditions.  Evaluate the need and effectiveness of market research tools for IT buyers.</li>
+              </ul>
+          </p>
+        </div>
+      </div>
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">
+          Policy and Guidance
+        </button>
+      </h3>
+      <div id="b-a2" class="usa-accordion__content" hidden="">
         <div class="grid-row flex-align-center">
           <p>
             A repository of cybersecurity resources, trends, data, and practices across the government and contract vehicles to promote knowledge sharing.
@@ -59,11 +66,11 @@ Our goal is to focus on contracts, processes, tools, templates or knowledge shar
       </div>
 
       <h3 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3">
          Industry Partnerships
         </button>
       </h3>
-      <div id="b-a2" class="usa-accordion__content" hidden="">
+      <div id="b-a3" class="usa-accordion__content" hidden="">
       <div class="grid-row flex-align-center">
           <p>
             Original Equipment Manufacturers (OEMs) and small businesses that are and/or could potentially provide federal cyber products and services.
@@ -83,11 +90,11 @@ Our goal is to focus on contracts, processes, tools, templates or knowledge shar
         </section>
       </div>
       <h3 class="usa-accordion__heading">
-        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a4">
           IT BIC Cybersecurity Tools and Templates
         </button>
       </h3>
-      <div id="b-a3" class="usa-accordion__content" hidden="">
+      <div id="b-a4" class="usa-accordion__content" hidden="">
         <div class="grid-row">
           <p>
             Available resources to support IT buyers and the IT community in cybersecurity. 
