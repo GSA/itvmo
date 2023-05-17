@@ -198,7 +198,6 @@ function initButtons()
     });
 }
 
-
 /** The Home page Dropdown menu section **/
 function hideDropdown(el)
 {
@@ -223,10 +222,6 @@ function showDropdown(el)
 
 function showHideDropdown(el, cl, event)
 {
-
-  console.log(event.target);
-  console.log(event.currentTarget);
-  console.log(event.currentTarget.children[0].children[0]);
   var menuList = document.getElementsByClassName(cl);
 
   //Prevent the dropdown to hide itself when user use the key to access the submenu inside the dropdown.
@@ -255,20 +250,38 @@ function showHideDropdownKey(el, event, cl)
   }
 }
 
-$(window).resize(function() 
+//Hide all the submenu (dropdown menu and submenu inside the dropdown menu)
+function clearSubmenu()
 {
-  var dropdown = document.getElementsByClassName("dropdown");
-  var sideDropdown = document.getElementsByClassName('side-submenu') //Menu inside the submenu
-
+  var dropdown = document.getElementsByClassName("dropdown"); //Dropdown menu 
+  var sideDropdown = document.getElementsByClassName('side-submenu'); //The submenu inside the dropdown menu
   //Fold all other dropdown menus when the width of the window size change.
   for(let i = 0; i < dropdown.length; i++)
   {
       if(!dropdown[i].classList.contains("hide-content-start"))
        {
           dropdown[i].classList.remove("display-content");
+          dropdown[i].children[0].classList.remove("usa-current");
           dropdown[i].classList.add("hide-content-start");
        }
   }
+  for(let i = 0; i < sideDropdown.length; i++)
+  {
+       if(sideDropdown[i].classList.contains('display-content'))
+       {
+          sideDropdown[i].classList.remove('display-content');
+          sideDropdown[i].children[0].classList.remove("usa-current");
+          sideDropdown[i].classList.add('hide-content');
+       }
+  }
+}
+
+$(window).resize(function() 
+{
+  var dropdown = document.getElementsByClassName("dropdown"); //Dropdown menu 
+  var sideDropdown = document.getElementsByClassName('side-submenu'); //The submenu inside the dropdown menu
+
+  clearSubmenu();
   
   // console.log($(window).width());
   if ($(window).width() < 1024) 
@@ -313,20 +326,21 @@ function initializeMenu()
   var width = window.innerWidth;
   var dropdown = document.getElementsByClassName("dropdown");
   var sideDropdown = document.getElementsByClassName('side-submenu') //Menu inside the submenu
-
+  document.getElementsByClassName('usa-menu-btn')[0].setAttribute("onclick", "clearSubmenu()"); //On mobile version, hide all the dropdown menu and the submenu before user access the navigation menu.
+  
   if(width > 1023)
   {
     for(let i = 0; i < dropdown.length; i++)
     {
       dropdown[i].setAttribute("onmouseenter","showHideDropdown(this, 'dropdown', event)");
       dropdown[i].setAttribute("onmouseleave","showHideDropdown(this, 'dropdown', event)");
-      dropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'dropdown')");//!
+      dropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'dropdown')");
     }
     for(let i = 0; i < sideDropdown.length; i++)
     {
       sideDropdown[i].setAttribute("onmouseenter","showHideDropdown(this, 'side-submenu', event)");
       sideDropdown[i].setAttribute("onmouseleave","showHideDropdown(this, 'side-submenu', event)");
-      sideDropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'side-submenu')");//!!
+      sideDropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'side-submenu')");
     }
   }
   else
@@ -358,7 +372,7 @@ function prevSlide() {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
 
-  console.log(slides.length);
+
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
       dots[i].className = dots[i].className.replace(" active", "");
