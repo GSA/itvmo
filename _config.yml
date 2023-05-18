@@ -77,87 +77,82 @@ primary_navigation:
   - name: Home
     url: /
   - name: About
-    url: /about/
+    url: /#
+    child:
+      - name: Concept of Operations
+        url: /emerge-tech-small-business-event/
+      - name: Our Sponsors (?)
+        url: /#
+        child:
+          - name: SEWP
+            url: /
+          - name: NITAAC
+            url: /
+          - name: CHESS
+            url: /
+          - name: GSA
+            url: /
+      - name: Our Partners
+        url: /#
+        child:
+          - name: TTS TechAqc
+            url: /
+          - name: FTIM
+            url: /
+      - name: Our Community
+        url: /#
+        child:
+          - name: ITB CoP
+            url: /
+          - name: AI Working Group
+            url: /
+          - name: Cybersecurity Category Team
+            url: /
+  - name: Resources
+    url: /#
+    child:
+      - name: Resources by category
+        url: /
+      - name: Resources by job function
+        url: /
+      - name: Resources by solution
+        url: /
+  - name: Our Services
+    url: /#
+    child:
+      - name: Acquisitions
+        url: /#
+        child:
+          - name: Contract Review as a Services
+            url: /
+          - name: OEM Assessments
+            url: /
+          - name: IT Best-in-Class Vehicles
+            url: /
+      - name: Data
+        url: /#
+        child:
+          - name: Technology Life Cycle
+            url: /
+          - name: Contract Data Elements
+            url: /
   - name: Events
     url: /events/
-  - name: Resources
-    url: /resources/
-  - name: Community
-    url: /community/
-  - name: Testing1
+  - name: Insights
     url: /#
     child:
-      - name: Link1
-        url: /emerge-tech-small-business-event/
-      - name: Link2
-        url: /how-can-we-help/
-      - name: Link3
-        url: /how-can-we-help/
-      - name: Link4
-        url: /how-can-we-help/
-      - name: Link5
-        url: /how-can-we-help/
-  - name: How Can We Help?
-    url: /how-can-we-help/
-  # - name: Testing2
-  #   url: /#
-  #   child:
-  #     - name: Link1
-  #       url: /how-can-we-help/
-  #     - name: Link2
-  #       url: /how-can-we-help/
-  #     - name: Link3
-  #       url: /how-can-we-help/
-  - name: Testing2
-    url: /#
-    child:
-      - name: Link1
+      - name: ITVMO Newsletter Archive
+        url: /
+      - name: IT Buyers Bulletin Archive (.gov only)
+        url: /
+      - name: Intelligence <br> Reports
         url: /#
         child:
-          - name: Sub-Link1
-            url: /how-can-we-help/
-          - name: Sub-Link2
-            url: /how-can-we-help/
-          - name: Sub-Link3
-            url: /about/
-      - name: Link2
-        url: /how-can-we-help/
-      - name: Link3
-        url: /#
-        child:
-          - name: Sub-Link1
-            url: /how-can-we-help/
-          - name: Sub-Link2
-            url: /how-can-we-help/
-  - name: Testing3
-    url: /#
-    child:
-      - name: Link1
-        url: /#
-        child:
-          - name: Sub-Link1
-            url: /how-can-we-help/
-          - name: Sub-Link2
-            url: /how-can-we-help/
-          - name: Sub-Link3
-            url: /about/
-          - name: Sub-Link4
-            url: /about/
-          - name: Sub-Link5
-            url: /about/
-      - name: Link2
-        url: /how-can-we-help/
-      - name: Link3
-        url: /#
-        child:
-          - name: Sub-Link1
-            url: /how-can-we-help/
-          - name: Sub-Link2
-            url: /how-can-we-help/
-          - name: Sub-Link3
-            url: /how-can-we-help/
+          - name: Leading Edge Technology
+            url: /
 
-    
+  # - name: Community
+  #   url: /community/
   # - name: ITVMO’s Top OEMs
   #   url: /itvmo-top-original-equipment-manufacturers/
 

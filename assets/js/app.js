@@ -225,7 +225,7 @@ function showHideDropdown(el, cl, event)
   var menuList = document.getElementsByClassName(cl);
 
   //Prevent the dropdown to hide itself when user use the key to access the submenu inside the dropdown.
-  if((event.target == event.currentTarget) || (event.target == event.currentTarget.children[0]) || (event.target == event.currentTarget.children[0].children[0])|| (event.target == event.currentTarget.children[0].children[0].children[0]))
+  if((event.target == event.currentTarget) || (event.target == event.currentTarget.children[0]) || (event.target == event.currentTarget.children[0].children[0])|| (event.target == event.currentTarget.children[0].children[1]))
   {
     //Fold all other dropdown menus (or side submenu in the same dropdown), before the current target dropdown going to be display.
     for(let i = 0; i < menuList.length; i++)
