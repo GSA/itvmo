@@ -658,21 +658,26 @@ button {
     height: 15px;
   }
 }
-//Homepage dropdown button 
-.dropdown {
+
+//Menubar dropdown
+.dropdown-arrow, .side-arrow
+{
+  height: 0.5rem;
+  width: 0.5rem;
+  position: absolute;
+  top:50%;
+  right: 0%;
+  margin-top:-0.25rem;
+}
+
+.dropdown 
+{
   button 
   {
     width: 100%;
     position: relative;
     .dropdown-arrow 
     {
-      height: 0.5rem;
-      width: 0.5rem;
-      
-      position: absolute;
-      top:50%;
-      right: 0%;
-      margin-top:-0.25rem;
       margin-right: 5px;
     }
   }
@@ -713,14 +718,6 @@ button {
         -ms-transform: rotate(-90deg);
         -o-transform: rotate(-90deg);
         transform: rotate(-90deg);
-        height: 0.5rem;
-        width: 0.5rem;
-        // float: right;
-
-        position: absolute;
-        top:50%;
-        right: 0%;
-        margin-top:-0.25rem;
         margin-right: 10px;
       }
     }
@@ -802,50 +799,22 @@ button {
 }
 @media only screen and (max-width: 1023px)
 {
-  //Rotate the arrow of the submenu inside the dropdown menu.
-  // .side-arrow
-  // {
-  //   margin-top: 5px;
-  // }
-  .hide-content.side-submenu
+  //Adjust the side of the arrow for the mobile version of the page.
+  .side-arrow
   {
-    .side-submenu-button 
-    {
-      .side-arrow
-      {
-        -webkit-transform:rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -ms-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
-        transform: rotate(0deg);
-      }
-    }
+    height: 0.7rem;
+    width: 0.7rem;
+    margin-top: -0.35rem;
   }
-  .display-content.side-submenu
+  .dropdown-arrow
   {
-    .side-submenu-button
-    {
-      .side-arrow
-      {
-        -webkit-transform:rotate(180deg);
-        -moz-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        -o-transform: rotate(180deg);
-        transform: rotate(180deg);
-      }
-    }
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-top: -0.45rem;
   }
-  .dropdown {
-    button 
-    {
-      .dropdown-arrow
-      {
-        // margin-top: 3px;
-        float: right;
-        height: 0.9rem;
-        width: 0.9rem;
-      }
-    }
+  //Readjust the design of the dropdown and side dropdown.
+  .dropdown 
+  {
     .sub-content, .dropdown-content
     {
       padding-left: 15px;
@@ -858,18 +827,6 @@ button {
     }
     .dropdown-content 
     {
-      .a-usa-current
-      {
-        background-color:#005ea2;
-        border-radius:0;
-        content:'';
-        display:block;
-        position:absolute;
-        height:0.25rem;
-        left:1rem;
-        right:1rem;
-        bottom:-0.25rem;
-      }
       a, button
       {
         line-height: 1.1;
@@ -888,6 +845,7 @@ button {
       }
     }
   }
+  //Display the dropdown
   .dropdown.display-content
   {
     .dropdown-content
@@ -897,6 +855,7 @@ button {
       -webkit-animation-name: fadeInDown;
     }
   }
+  //Hide the dropdown
   .dropdown.hide-content
   {
     .dropdown-content
@@ -906,6 +865,7 @@ button {
       visibility: hidden;
     }
   }
+  //Display the side dropdown
   .side-submenu.display-content
   {
     .sub-content
@@ -914,7 +874,20 @@ button {
       animation-name: fadeInDown;
       -webkit-animation-name: fadeInDown;
     }
+    //Change arrow direction to up.
+    .side-submenu-button
+    {
+      .side-arrow
+      {
+        -webkit-transform:rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    }
   }
+  //Hide the side dropdown
   .side-submenu.hide-content
   {
     .sub-content
@@ -923,19 +896,20 @@ button {
       -webkit-animation-name: none;
       visibility: hidden;
     }
+    .side-submenu-button 
+    {
+      //Change arrow direction to down.
+      .side-arrow
+      {
+        -webkit-transform:rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
   }
   
-}
-//Leave the nav menu open when click on the submenu.
-.a-is-visible{
-  -webkit-animation:slidein-left 0.3s ease-in-out;
-          animation:slidein-left 0.3s ease-in-out;
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-}
-.a-usa-js-mobile-nav--active{
-  overflow:hidden;
 }
 
 //Leading Edge Technologies Annual Report page
