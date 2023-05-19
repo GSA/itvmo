@@ -199,6 +199,8 @@ function initButtons()
 }
 
 /** The Home page Dropdown menu section **/
+
+//This function hide the dropdown.
 function hideDropdown(el)
 {
     el.classList.remove("display-content");
@@ -210,7 +212,7 @@ function hideDropdown(el)
     for(let i = 0; i < submenu.length; i++)
       hideDropdown(submenu[i]);
 }
-
+//This function display the dropdown.
 function showDropdown(el)
 {
     el.classList.remove("hide-content-start");
@@ -219,7 +221,7 @@ function showDropdown(el)
     el.children[0].classList.add("usa-current");
 }
 
-
+//This function determine if the dropdown going to be display or hide.
 function showHideDropdown(el, cl, event)
 {
   var menuList = document.getElementsByClassName(cl);
@@ -241,7 +243,7 @@ function showHideDropdown(el, cl, event)
   }
 }
 
-//Allow the dropdown menu to be able to access with the keyboard only.
+//This function allow the dropdown menu to be able to access with the keyboard only.
 function showHideDropdownKey(el, event, cl)
 {
   if(event.keyCode === 13)
@@ -250,7 +252,7 @@ function showHideDropdownKey(el, event, cl)
   }
 }
 
-//Hide all the submenu (dropdown menu and submenu inside the dropdown menu)
+//This function hide all the submenu (dropdown menu and submenu inside the dropdown menu).
 function clearSubmenu()
 {
   var dropdown = document.getElementsByClassName("dropdown"); //Dropdown menu 
@@ -276,6 +278,7 @@ function clearSubmenu()
   }
 }
 
+//This function change convert dropdown and submenu attribute when user change the version of the site.
 $(window).resize(function() 
 {
   var dropdown = document.getElementsByClassName("dropdown"); //Dropdown menu 
@@ -288,38 +291,54 @@ $(window).resize(function()
   {
     for(let i = 0; i < dropdown.length; i++)
     {
-        dropdown[i].removeAttribute("onmouseenter");
-        dropdown[i].removeAttribute("onmouseleave");
-        dropdown[i].removeAttribute("onkeydown");
-        dropdown[i].setAttribute("onclick","showHideDropdown(this , 'dropdown', event)");
+      removeAttributeHover(dropdown[i]);
+      setAttributeClick(dropdown[i],"dropdown");
 
     }
     for(let i = 0; i < sideDropdown.length; i++)
     {
-      sideDropdown[i].removeAttribute("onmouseenter");
-      sideDropdown[i].removeAttribute("onmouseleave");
-      sideDropdown[i].removeAttribute("onkeydown");
-      sideDropdown[i].setAttribute("onclick","showHideDropdown(this, 'side-submenu', event)");
+      removeAttributeHover(sideDropdown[i]);
+      setAttributeClick(sideDropdown[i],"side-submenu");
     }
   }
   else 
   {
       for(let i = 0; i < dropdown.length; i++)
       {
-        dropdown[i].removeAttribute("onclick");
-        dropdown[i].setAttribute("onmouseenter","showHideDropdown(this, 'dropdown', event)");
-        dropdown[i].setAttribute("onmouseleave","showHideDropdown(this, 'dropdown', event)");
-        dropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'dropdown')");//!
+        removeAttibuteClick(dropdown[i]);
+        setAttributeHover(dropdown[i],"dropdown");
       }
       for(let i = 0; i < sideDropdown.length; i++)
       {
-        sideDropdown[i].removeAttribute("onclick");
-        sideDropdown[i].setAttribute("onmouseenter","showHideDropdown(this, 'side-submenu', event)");
-        sideDropdown[i].setAttribute("onmouseleave","showHideDropdown(this, 'side-submenu', event)");
-        sideDropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'side-submenu')");//!!
+        removeAttibuteClick(sideDropdown[i]);
+        setAttributeHover(sideDropdown[i],"side-submenu");
       }
   }
 });
+//This function set attribute for the dropdown of desktop version.
+function setAttributeHover(el, cl)
+{
+  el.setAttribute("onmouseenter",`showHideDropdown(this, "${cl}", event)`);
+  el.setAttribute("onmouseleave",`showHideDropdown(this, "${cl}", event)`);
+  el.setAttribute("onkeydown",`showHideDropdownKey(this, event, "${cl}")`);
+}
+//This function remove attributes from the dropdown.
+function removeAttributeHover(el)
+{
+  el.removeAttribute("onmouseenter");
+  el.removeAttribute("onmouseleave");
+  el.removeAttribute("onkeydown");
+}
+//This function set attribute for dropdown elements of mobile version.
+function setAttributeClick(el, cl)
+{
+  el.setAttribute("onclick", `showHideDropdown(this, "${cl}", event)`);
+}
+//This function remove a click attribute form dropdown.
+function removeAttibuteClick(el)
+{
+  el.removeAttribute("onclick");
+}
 //This function initialize all the dropdown menu on the dropdown bar.
 function initializeMenu()
 {
@@ -332,26 +351,22 @@ function initializeMenu()
   {
     for(let i = 0; i < dropdown.length; i++)
     {
-      dropdown[i].setAttribute("onmouseenter","showHideDropdown(this, 'dropdown', event)");
-      dropdown[i].setAttribute("onmouseleave","showHideDropdown(this, 'dropdown', event)");
-      dropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'dropdown')");
+      setAttributeHover(dropdown[i],"dropdown");
     }
     for(let i = 0; i < sideDropdown.length; i++)
     {
-      sideDropdown[i].setAttribute("onmouseenter","showHideDropdown(this, 'side-submenu', event)");
-      sideDropdown[i].setAttribute("onmouseleave","showHideDropdown(this, 'side-submenu', event)");
-      sideDropdown[i].setAttribute("onkeydown","showHideDropdownKey(this, event, 'side-submenu')");
+      setAttributeHover(sideDropdown[i],"side-submenu");
     }
   }
   else
   {
     for(let i = 0; i < dropdown.length; i++)
     {
-      dropdown[i].setAttribute("onclick","showHideDropdown(this, 'dropdown', event)");      
+      setAttributeClick(dropdown[i],"dropdown");    
     }
     for(let i = 0; i < sideDropdown.length; i++)
     {
-      sideDropdown[i].setAttribute("onclick","showHideDropdown(this, 'side-submenu', event)");
+      setAttributeClick(sideDropdown[i],"side-submenu");
     }
   }
 }
