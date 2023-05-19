@@ -39,7 +39,7 @@ where we provide an easy way to manage your navigation system
                 {%else%}
                 <div class="side-submenu hide-content">
                   <button class="side-submenu-button" aria-label="{{subnav_item.name}} - Submenu" type="button"><span>{{subnav_item.name}}</span><img alt="side arrow" class="side-arrow" src="{{site.baseurl}}/img/angle-arrow-down.svg"></button>
-                  <div class="sub-content">
+                  <div class="sub-content dropdown-animate">
                     {% for sub_item in subnav_item.child %}
                       <a href="{{sub_item.url}}">{{sub_item.name}}</a>
                     {% endfor %}

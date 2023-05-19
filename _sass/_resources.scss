@@ -674,6 +674,7 @@ button {
 {
   button 
   {
+    z-index: 99 !important;
     width: 100%;
     position: relative;
     .dropdown-arrow 
@@ -753,7 +754,7 @@ button {
       transform: rotate(180deg);
     }
   }
-  .dropdown-content, .sub-content
+  .dropdown-content
   {
     visibility: visible;
     z-index: 98;
@@ -774,6 +775,13 @@ button {
       -o-transform: rotate(90deg);
       transform: rotate(90deg);
     }
+  }
+  .sub-content
+  {
+    visibility: visible;
+    z-index: 98;
+    animation-name: fade;
+    -webkit-animation-name: fade;
   }
 }
 .hide-content
@@ -838,7 +846,6 @@ button {
       .sub-content
       {
         position: relative;
-        z-index: 99;
         width: 193px;
         transform: translate(0%,0%);
         height: 0px;
@@ -1014,11 +1021,13 @@ button {
     opacity: 0;
     -webkit-transform: translate3d(0, -35%, 0);
     transform: translate3d(0, -35%, 0);
+    z-index: -99;
   }
   100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+    z-index: 98;
   }
 }
 @keyframes fadeInDown {
@@ -1047,8 +1056,8 @@ button {
   }
   100% {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+    // -webkit-transform: none;
+    // transform: none;
   }
 }
 @keyframes fade{
@@ -1057,8 +1066,8 @@ button {
   }
   100% {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+    // -webkit-transform: none;
+    // transform: none;
   }
 }
 //FadeInUp animation
