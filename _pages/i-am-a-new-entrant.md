@@ -6,7 +6,6 @@ sidenav: false
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1 animate fade">
 <h1 class="margin-top-0">{{ page.title }}</h1>
-
   <div class="margin-bottom-2">
   <p class="question">Are you looking to enter the space of government contracts?</p>
 

@@ -54,16 +54,6 @@
         "description": "Join the ACT-IAC Cyber COI member meeting to hear from an invited government speaker.  More information will be available soon.",
         "type": "OTHER"
         }
-        
-        ,{
-        "title": "IT Buyers Community of Practice (CoP) March Meeting", 
-        "date": "3/23/2023", 
-        "color": "BLUE", 
-        "link": "https://community.max.gov/display/Egov/IT+Buyers+Community+of+Practice#", 
-        "description": "The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government.",
-        "type": "ITVMO"
-        }
-        
         ,{
         "title": "Global Force Symposium and Exposition.", 
         "date": "3/28/2023", 
@@ -105,6 +95,13 @@
             "link": "https://web.cvent.com/event/f8049828-6bf4-4f30-a909-db11069dc357/summary", 
             "description": "Emerging technology and innovation are needed by government from both large and small businesses.  Of particular note is the fact that many small businesses harvest emerging technology and innovation, which are considered key components in supporting the federal government with transformation.   As a Small Business, whether you are a seasoned firm or new to government contracting, your firm needs to determine whether its capabilities and skill sets align with the requirements set forth by agency contracting offices.  It is not only understanding the match, but also determining which agency is best aligned with your capabilities. Small businesses need to understand an agency's acquisition needs and requirements, their projected forecast, and their buying habits.<br>This event will include a panel of representatives from five different OSDBUs where they will share with you their top priority pipeline and forecast for the forthcoming year.  After the panel discussion, separate breakout sessions will be held by each OSDBU to discuss their specific forecast and upcoming opportunities and in turn, companies can share their corporate capabilities.  In addition, there will be several mid-sized firms who have graduated from a small business to share their growth stories.  And finally, the event will offer opportunities to network and meet possible future partners.",
             "type": "OTHER"
+        },
+        {
+            "title": "FAST Virtual Conference Series: Successfully Acquiring IT Solutions that Accelerate Modernization", 
+            "date": "3/29/2023", 
+            "color": "BLUE", 
+            "link": "https://gsasolutionssecure.gsa.gov/LP=4510?utm_campaign=23-06-29_05-23-00481_QC0B_Reg_M_Auto_Invite2&utm_medium=email&utm_source=Eloqua&elqTrackId=CDED854A036D17BC8CE13F330883061B&elq=1db8c7a78c514cdea3d721da70044b92&elqaid=11463&elqat=1&elqCampaignId=4590", 
+            "description": "GSA’s 2023 Federal Acquisition Service Training (FAST) Virtual Conference Series continues March 29! Join experts from GSA’s IT category and Technology Transformation Service (TTS) as they outline challenges federal agencies face when adopting the latest technology." 
         }
         
     ]

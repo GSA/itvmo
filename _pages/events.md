@@ -73,38 +73,27 @@ sidenav: false
     <h2>Event Highlights:</h2>
     <p>
        <div class="eventHighlightContainer">
-          <!-- <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=2-PL5EUwB1s" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
-          <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
-            <div class="text-container padding-1 height-full">
-              <span class="card-tag">The IT Category: Creating Opportunities for Small Business, Oct 6 Meeting</span>
-                  <p class="description-resources">
-                    This meeting recording provides an overview of current governmentwide contract opportunities and helps to bring an understanding of resources available for small business acquisitions.
-                  </p>
-                  <p class="link-type">        
-                    <img class="youtubeLogo" alt="Youtube logo" src="../assets/images/logos/youtube.png">
-                  </p>
-            </div>
-          </div>
-          </a> -->
-          <!-- <a class="no-style anchor-fill" href="https://www.youtube.com/watch?v=mD4iWvAJnyk" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
-          <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
-            <div class="text-container padding-1 height-full">
-              <span class="card-tag">The ITVMO Industry Day</span>
-                  <p class="description-resources">
-                    This Industry Day overview is intended for a general audience. It presented  the ITVMO’s vision for improving IT acquisitions in the future. No solution is possible without help and input from the IT vendor community and the Industry Day was the first of many opportunities to gather feedback and learn from industry.
-                  </p>
-                  <p class="link-type">        
-                    <img class="youtubeLogo" alt="Youtube logo" src="../assets/images/logos/youtube.png">
-                  </p>
-            </div>
-          </div>
-          </a> -->
-          <a class="no-style anchor-fill" href="https://community.max.gov/display/Egov/ITVMO+Original+Equipment+Manufacturer+%28OEM%29+Assessments" aria-label="external link to ITVMO Vendor Assessment Webinars" target="_blank" rel="noreferrer noopener">
+          <a class="no-style anchor-fill" href="https://community.max.gov/display/Egov/ITVMO+Original+Equipment+Manufacturer+%28OEM%29+Assessments" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
             <div class="text-container padding-1 height-full">
               <span class="card-tag">ITVMO Vendor Assessment Webinars</span>
                   <p class="description-resources">
                     Limited to .gov and .mil viewers, these webinars review comprehensive vendor assessments completed on OEMs.
+                  </p>
+                  <!-- <p class="link-type">        
+                    <img id="youtubeLogo" src="../assets/images/logos/youtube.png" alt="Youtube logo" >
+                  </p> -->
+              </div>
+            </div>
+          </a>
+          <a class="no-style anchor-fill" href="{{site.baseurl}}/emerge-tech-small-business-event/" aria-label="youtube link" target="_blank" rel="noreferrer noopener">
+          <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover youtube eventHighlight">
+            <div class="text-container padding-1 height-full">
+              <span class="card-tag">Govwide IT Category and ACT-IAC Host Small Business Alliance Forum</span>
+                  <p class="description-resources">
+                  On March 7, 2022 the Govwide IT Category and ACT-IAC hosted a forum on Emerging Technology and Innovation Opportunities for Small Businesses. The event included a panel of representatives from five different OSDBUs as well as breakout sessions.
+                    <br><br>
+                    Read more…
                   </p>
               </div>
             </div>

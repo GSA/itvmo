@@ -17,7 +17,6 @@ const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','
 
 
 function openModal(date) {
-
   const eventForDay = [];
 
   for(var i = 0; i < events.length; i++)
@@ -206,8 +205,19 @@ function initEventButtons() {
       runCalendar();
     });
 }
+/** The Home page Dropdown menu section **/
+function hideDropdown(el)
+{
+  el.classList.remove("display-content");
+  el.classList.add("hide-content");
+}
 
-
+function showDropdown(el)
+{
+  el.classList.remove("hide-content-start");
+  el.classList.remove("hide-content");
+  el.classList.add("display-content");
+}
 /** The Home page Latest Update section **/
 var timer; //Store the Timeout for the slide
 var slideIndex = 1;//The next latest update instead of the first one
@@ -301,14 +311,12 @@ function runSlide()
 }
 
 /** Run functions **/
-
 //Run Home page 
 if(document.getElementById('homepage-highlight') != null)
 {
   initHighlightButtons();
   runHighlight();
 }
-
 //Run Events page
 if( document.getElementById('nextButton') != null)
 {
