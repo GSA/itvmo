@@ -11,10 +11,10 @@ sidenav: false
         
     <div id="calendarSumContainer" class="animate fade">
     <div id="container">
-      <div id="header">
-                  <button id="backButton"> &#x2190; </button>
+      <div id="calendar-header">
+                  <button id="backButton" title="go to previous month"> &#x2190; </button>
                   <div id="monthDisplay"></div>          
-                  <button id="nextButton"> &#x2192; </button>
+                  <button id="nextButton" title="go to next month"> &#x2192; </button>
       </div>
 
       <div id="weekdays">
