@@ -77,17 +77,82 @@ primary_navigation:
   - name: Home
     url: /
   - name: About
-    url: /about/
+    url: /#
+    child:
+      - name: Concept of Operations
+        url: /emerge-tech-small-business-event/
+      - name: Our Sponsors (?)
+        url: /#
+        child:
+          - name: SEWP
+            url: /
+          - name: NITAAC
+            url: /
+          - name: CHESS
+            url: /
+          - name: GSA
+            url: /
+      - name: Our Partners
+        url: /#
+        child:
+          - name: TTS TechAqc
+            url: /
+          - name: FTIM
+            url: /
+      - name: Our Community
+        url: /#
+        child:
+          - name: ITB CoP
+            url: /
+          - name: AI Working Group
+            url: /
+          - name: Cybersecurity Category Team
+            url: /
+  - name: Resources
+    url: /#
+    child:
+      - name: Resources by category
+        url: /
+      - name: Resources by job function
+        url: /
+      - name: Resources by solution
+        url: /
+  - name: Our Services
+    url: /#
+    child:
+      - name: Acquisitions
+        url: /#
+        child:
+          - name: Contract Review as a Services
+            url: /
+          - name: OEM Assessments
+            url: /
+          - name: IT Best-in-Class Vehicles
+            url: /
+      - name: Data
+        url: /#
+        child:
+          - name: Technology Life Cycle
+            url: /
+          - name: Contract Data Elements
+            url: /
   - name: Events
     url: /events/
-  - name: Resources
-    url: /resources/
-  - name: Community
-    url: /community/
-  - name: How Can We Help?
-    url: /how-can-we-help/
-  # - name: CCT
-  #   url: /cybersecurity-category-team/
+  - name: Insights
+    url: /#
+    child:
+      - name: ITVMO Newsletter Archive
+        url: /
+      - name: IT Buyers Bulletin Archive (.gov only)
+        url: /
+      - name: Intelligence <br> Reports
+        url: /#
+        child:
+          - name: Leading Edge Technology
+            url: /
+
+  # - name: Community
+  #   url: /community/
   # - name: ITVMO’s Top OEMs
   #   url: /itvmo-top-original-equipment-manufacturers/
 

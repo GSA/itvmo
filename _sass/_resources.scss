@@ -666,20 +666,44 @@ a.checked {
     height: 15px;
   }
 }
-//Homepage dropdown button 
-.dropdown {
-  .dropdown-content {
-    // display: none;
-    // opacity: 1;
-    // visibility: hidden;
+
+//Menubar dropdown
+.dropdown-arrow, .side-arrow
+{
+  height: 0.5rem;
+  width: 0.5rem;
+  position: absolute;
+  top:50%;
+  right: 0%;
+  margin-top:-0.25rem;
+}
+
+.dropdown 
+{
+  button 
+  {
+    z-index: 99 !important;
+    width: 100%;
+    position: relative;
+    .dropdown-arrow 
+    {
+      margin-right: 5px;
+    }
+  }
+  .dropdown-content, .sub-content
+  {
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .dropdown-content 
+  {
+    
     z-index: -99;
     display: block;
     position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    width: 160px;
     z-index: 1;
-    a 
+    a, button
     {
       line-height: 0.9;
       padding: 1rem; 
@@ -688,49 +712,225 @@ a.checked {
       font-weight: 600;
       font-size: 0.85rem; 
     }
+    //Submenu color change when hover.
+    a:hover, button:hover
+    {
+      color: #005ea2;
+    }
+    .side-submenu-button 
+    {
+      position: relative;
+      .side-arrow
+      {
+        -webkit-transform:rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+        margin-right: 10px;
+      }
+    }
+    .sub-content
+    {
+      position: absolute;
+      z-index: 99;
+      width: 100%;
+      transform: translate(100%,-45.39px);
+    }
+
   }
 }
 //Change color of dropdown links on hover
-.dropdown-content a:hover 
+.dropdown-content 
 {
-  background-color: #ddd;
+  a:hover, button:hover 
+  {
+    background-color: #ddd;
+  }
 }
 //Display the dropdown menu on hover 
 .display-content
 {
+  .dropdown-submenu-button
+  {
+    .dropdown-arrow  
+    {
+      -webkit-transform:rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
   .dropdown-content
   {
     visibility: visible;
-    z-index: 99;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
+    z-index: 98;
+    animation-name: fade;
+    -webkit-animation-name: fade;
+  }
+}
+//Rotate the sidemenu arrow to the opposite direction when hover or click.
+.display-content.side-submenu
+{
+  .side-submenu-button
+  {
+    .side-arrow
+    {
+      -webkit-transform:rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+  }
+  .sub-content
+  {
+    visibility: visible;
+    z-index: 98;
+    animation-name: fade;
+    -webkit-animation-name: fade;
   }
 }
 .hide-content
 {
   .dropdown-content
   {
-    z-index: 99;
+    z-index: 98;
     animation-name: fadeOutDown;
     -webkit-animation-name: fadeOutDown;
+  }
+  .sub-content
+  {
+    visibility: hidden;
   }
 }
 .hide-content-start
 {
-  .dropdown-content
+  // pointer-events:none;
+  .dropdown-content, .sub-content
   {
     visibility: hidden;
   }
+}
+@media only screen and (max-width: 1023px)
+{
+  //Adjust the side of the arrow for the mobile version of the page.
+  .side-arrow
+  {
+    height: 0.7rem;
+    width: 0.7rem;
+    margin-top: -0.35rem;
+  }
+  .dropdown-arrow
+  {
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-top: -0.45rem;
+  }
+  //Readjust the design of the dropdown and side dropdown.
+  .dropdown 
+  {
+    .sub-content, .dropdown-content
+    {
+      padding-left: 15px;
+      display: block;
+      position: relative;
+      background-color: white;
+      min-width: 208px;
+      box-shadow: none;
+      height: 0px;
+    }
+    .dropdown-content 
+    {
+      a, button
+      {
+        line-height: 1.1;
+        padding: 0.5rem 1rem;
+        color: #565c65;
+        font-weight: 500;
+        font-size: 1.06rem;
+      }
+      .sub-content
+      {
+        position: relative;
+        width: 193px;
+        transform: translate(0%,0%);
+        height: 0px;
+      }
+    }
+  }
+  //Display the dropdown
+  .dropdown.display-content
+  {
+    .dropdown-content
+    {
+      height: 100% !important;
+      animation-name: fadeInDown;
+      -webkit-animation-name: fadeInDown;
+    }
+  }
+  //Hide the dropdown
+  .dropdown.hide-content
+  {
+    .dropdown-content
+    {
+      animation-name: none;
+      -webkit-animation-name: none;
+      visibility: hidden;
+    }
+  }
+  //Display the side dropdown
+  .side-submenu.display-content
+  {
+    .sub-content
+    {
+      height: 100% !important;
+      animation-name: fadeInDown;
+      -webkit-animation-name: fadeInDown;
+    }
+    //Change arrow direction to up.
+    .side-submenu-button
+    {
+      .side-arrow
+      {
+        -webkit-transform:rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    }
+  }
+  //Hide the side dropdown
+  .side-submenu.hide-content
+  {
+    .sub-content
+    {
+      animation-name: none;
+      -webkit-animation-name: none;
+      visibility: hidden;
+    }
+    .side-submenu-button 
+    {
+      //Change arrow direction to down.
+      .side-arrow
+      {
+        -webkit-transform:rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+    }
+  }
+  
 }
 
 //Leading Edge Technologies Annual Report page
 .leading-edge-table
 {
   width: 100%;
-  th, td
-  {
-    // border: 1px solid black; 
-  }
   th
   {
     background-color: #ff590a;
@@ -803,11 +1003,10 @@ a.checked {
 }
 /*Animation*/
 .dropdown-animate {
-  -webkit-animation-duration: 400ms;
-  animation-duration: 400ms;
+  -webkit-animation-duration: 250ms;
+  animation-duration: 250ms;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  
 }
 
 .animate {
@@ -830,11 +1029,13 @@ a.checked {
     opacity: 0;
     -webkit-transform: translate3d(0, -35%, 0);
     transform: translate3d(0, -35%, 0);
+    z-index: -99;
   }
   100% {
     opacity: 1;
     -webkit-transform: none;
     transform: none;
+    z-index: 98;
   }
 }
 @keyframes fadeInDown {
@@ -863,8 +1064,8 @@ a.checked {
   }
   100% {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+    // -webkit-transform: none;
+    // transform: none;
   }
 }
 @keyframes fade{
@@ -873,8 +1074,8 @@ a.checked {
   }
   100% {
     opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+    // -webkit-transform: none;
+    // transform: none;
   }
 }
 //FadeInUp animation
@@ -915,6 +1116,12 @@ a.checked {
   -webkit-animation-name: fadeOutDown;
 }
 
+.fadeOutUp {
+  opacity: 0;
+  animation-name: fadeOutUp;
+  -webkit-animation-name: fadeOutUp;
+}
+
 @keyframes fadeOutDown {
   0% {
     opacity: 1;
@@ -923,6 +1130,18 @@ a.checked {
   100% {
     opacity: 0;
     transform: translateY(20px);
+    visibility: hidden;
+    pointer-events:auto;
+  }
+}
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
     visibility: hidden;
   }
 }

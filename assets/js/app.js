@@ -193,7 +193,6 @@ function saveEvent(currEvent) {
 }
 //Go to next month
 function initEventButtons() {
-  
     document.getElementById('nextButton').addEventListener('click', () => {
       nav++;
       //Insert paraemeter here to intake the data and can display on the calendar
@@ -205,19 +204,182 @@ function initEventButtons() {
       runCalendar();
     });
 }
+
 /** The Home page Dropdown menu section **/
+
+//This function hide the dropdown.
 function hideDropdown(el)
 {
-  el.classList.remove("display-content");
-  el.classList.add("hide-content");
+    el.classList.remove("display-content");
+    el.classList.add("hide-content");
+    el.children[0].classList.remove("usa-current");
+    //Get all the children that are submenu in the current object.
+    var submenu = el.getElementsByClassName("display-content");
+    //When dropdown hide all the submenu on the dropdown hide as well.
+    for(let i = 0; i < submenu.length; i++)
+      hideDropdown(submenu[i]);
 }
-
+//This function display the dropdown.
 function showDropdown(el)
 {
-  el.classList.remove("hide-content-start");
-  el.classList.remove("hide-content");
-  el.classList.add("display-content");
+    el.classList.remove("hide-content-start");
+    el.classList.remove("hide-content");
+    el.classList.add("display-content");
+    el.children[0].classList.add("usa-current");
 }
+
+//This function determine if the dropdown going to be display or hide.
+function showHideDropdown(el, cl, event)
+{
+  var menuList = document.getElementsByClassName(cl);
+
+  //Prevent the dropdown to hide itself when user use the key to access the submenu inside the dropdown.
+  if((event.target == event.currentTarget) || (event.target == event.currentTarget.children[0]) || (event.target == event.currentTarget.children[0].children[0])|| (event.target == event.currentTarget.children[0].children[1]))
+  {
+    //Fold all other dropdown menus (or side submenu in the same dropdown), before the current target dropdown going to be display.
+    for(let i = 0; i < menuList.length; i++)
+    {
+      if(menuList[i].classList.contains('display-content') && (menuList[i] != el))
+        hideDropdown(menuList[i]);
+    }
+
+    if(el.classList.contains("display-content"))
+      hideDropdown(el);
+    else
+      showDropdown(el);
+  }
+}
+
+//This function allow the dropdown menu to be able to access with the keyboard only.
+function showHideDropdownKey(el, event, cl)
+{
+  if(event.keyCode === 13)
+  {
+    showHideDropdown(el,cl,event);
+  }
+}
+
+//This function hide all the submenu (dropdown menu and submenu inside the dropdown menu).
+function clearSubmenu()
+{
+  var dropdown = document.getElementsByClassName("dropdown"); //Dropdown menu 
+  var sideDropdown = document.getElementsByClassName('side-submenu'); //The submenu inside the dropdown menu
+  //Fold all other dropdown menus when the width of the window size change.
+  for(let i = 0; i < dropdown.length; i++)
+  {
+      if(!dropdown[i].classList.contains("hide-content-start"))
+       {
+          dropdown[i].classList.remove("display-content");
+          dropdown[i].children[0].classList.remove("usa-current");
+          dropdown[i].classList.add("hide-content-start");
+       }
+  }
+  for(let i = 0; i < sideDropdown.length; i++)
+  {
+       if(sideDropdown[i].classList.contains('display-content'))
+       {
+          sideDropdown[i].classList.remove('display-content');
+          sideDropdown[i].children[0].classList.remove("usa-current");
+          sideDropdown[i].classList.add('hide-content');
+       }
+  }
+}
+
+//This function change convert dropdown and submenu attribute when user change the version of the site.
+$(window).resize(function() 
+{
+  var dropdown = document.getElementsByClassName("dropdown"); //Dropdown menu 
+  var sideDropdown = document.getElementsByClassName('side-submenu'); //The submenu inside the dropdown menu
+
+  clearSubmenu();
+  
+  // console.log($(window).width());
+  if ($(window).width() < 1024) 
+  {
+    for(let i = 0; i < dropdown.length; i++)
+    {
+      removeAttributeHover(dropdown[i]);
+      setAttributeClick(dropdown[i],"dropdown");
+
+    }
+    for(let i = 0; i < sideDropdown.length; i++)
+    {
+      removeAttributeHover(sideDropdown[i]);
+      setAttributeClick(sideDropdown[i],"side-submenu");
+    }
+  }
+  else 
+  {
+      for(let i = 0; i < dropdown.length; i++)
+      {
+        removeAttibuteClick(dropdown[i]);
+        setAttributeHover(dropdown[i],"dropdown");
+      }
+      for(let i = 0; i < sideDropdown.length; i++)
+      {
+        removeAttibuteClick(sideDropdown[i]);
+        setAttributeHover(sideDropdown[i],"side-submenu");
+      }
+  }
+});
+//This function set attribute for the dropdown of desktop version.
+function setAttributeHover(el, cl)
+{
+  el.setAttribute("onmouseenter",`showHideDropdown(this, "${cl}", event)`);
+  el.setAttribute("onmouseleave",`showHideDropdown(this, "${cl}", event)`);
+  el.setAttribute("onkeydown",`showHideDropdownKey(this, event, "${cl}")`);
+}
+//This function remove attributes from the dropdown.
+function removeAttributeHover(el)
+{
+  el.removeAttribute("onmouseenter");
+  el.removeAttribute("onmouseleave");
+  el.removeAttribute("onkeydown");
+}
+//This function set attribute for dropdown elements of mobile version.
+function setAttributeClick(el, cl)
+{
+  el.setAttribute("onclick", `showHideDropdown(this, "${cl}", event)`);
+}
+//This function remove a click attribute form dropdown.
+function removeAttibuteClick(el)
+{
+  el.removeAttribute("onclick");
+}
+//This function initialize all the dropdown menu on the dropdown bar.
+function initializeMenu()
+{
+  var width = window.innerWidth;
+  var dropdown = document.getElementsByClassName("dropdown");
+  var sideDropdown = document.getElementsByClassName('side-submenu') //Menu inside the submenu
+  document.getElementsByClassName('usa-menu-btn')[0].setAttribute("onclick", "clearSubmenu()"); //On mobile version, hide all the dropdown menu and the submenu before user access the navigation menu.
+  
+  if(width > 1023)
+  {
+    for(let i = 0; i < dropdown.length; i++)
+    {
+      setAttributeHover(dropdown[i],"dropdown");
+    }
+    for(let i = 0; i < sideDropdown.length; i++)
+    {
+      setAttributeHover(sideDropdown[i],"side-submenu");
+    }
+  }
+  else
+  {
+    for(let i = 0; i < dropdown.length; i++)
+    {
+      setAttributeClick(dropdown[i],"dropdown");    
+    }
+    for(let i = 0; i < sideDropdown.length; i++)
+    {
+      setAttributeClick(sideDropdown[i],"side-submenu");
+    }
+  }
+}
+
+
+
 /** The Home page Latest Update section **/
 var timer; //Store the Timeout for the slide
 var slideIndex = 1;//The next latest update instead of the first one
@@ -261,7 +423,7 @@ function prevSlide() {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
 
-  console.log(slides.length);
+
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
       dots[i].className = dots[i].className.replace(" active", "");
@@ -311,6 +473,9 @@ function runSlide()
 }
 
 /** Run functions **/
+
+//Since all of the page have the menubar it need to be initialize.
+initializeMenu();
 //Run Home page 
 if(document.getElementById('homepage-highlight') != null)
 {

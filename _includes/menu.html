@@ -17,7 +17,7 @@ where we provide an easy way to manage your navigation system
   </div>
   <nav role="navigation" class="usa-nav">
     <div class="usa-nav__inner">
-       <button class="usa-nav__close">{% asset close.svg alt="close" %}</button>
+       <button class="usa-nav__close" >{% asset close.svg alt="close" %}</button>
      <ul class="usa-nav__primary usa-accordion">
         {% for nav_item in include.primary_navigation %}
         {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
@@ -25,16 +25,27 @@ where we provide an easy way to manage your navigation system
         {% if linkdir != "#" %}
         <li class="usa-nav__primary-item">
         {% else %}
-        <li class="usa-nav__primary-item dropdown hide-content-start" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
+        <li class="usa-nav__primary-item dropdown hide-content-start">
         {% endif %}
-          <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
           {% if linkdir != "#" %}
+          <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
             href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
           {% else %}
-            href="#"><span>{{ nav_item.name | escape }}</span></a>
+          <button class="dropdown-submenu-button" aria-label="{{nav_item.name}} - Submenu" type="button"><span>{{ nav_item.name | escape }}</span><img alt="dropdown arrow" class="dropdown-arrow" src="{{site.baseurl}}/img/angle-arrow-down.svg"></button>
             <div class="dropdown-content dropdown-animate">
               {% for subnav_item in nav_item.child %}
+                {%if subnav_item.url != "/#"%}
                 <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
+                {%else%}
+                <div class="side-submenu hide-content">
+                  <button class="side-submenu-button" aria-label="{{subnav_item.name}} - Submenu" type="button"><span>{{subnav_item.name}}</span><img alt="side arrow" class="side-arrow" src="{{site.baseurl}}/img/angle-arrow-down.svg"></button>
+                  <div class="sub-content dropdown-animate">
+                    {% for sub_item in subnav_item.child %}
+                      <a href="{{sub_item.url}}">{{sub_item.name}}</a>
+                    {% endfor %}
+                  </div> 
+                </div>
+                {%endif%}
               {% endfor %}
             </div>            
           {% endif %}
@@ -52,5 +63,7 @@ where we provide an easy way to manage your navigation system
         {% include searchgov/form.html searchgov=site.searchgov %}
       </div>
     </div>
+
+    
   </nav>
 </header>
