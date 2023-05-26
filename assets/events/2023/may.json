@@ -65,6 +65,38 @@
             "description": "May 5th Monthly Luncheon – Speaker: Ms. Joanne Woytek, Executive Program Director, NASA SEWP. Upcoming SEWP VI procurement Discussion.",
             "type": "OTHER"
             
+        },
+        {
+            "title": "ATARC Roundtable- Using AI to Write Contract Requirements", 
+            "date": "5/17/2023", 
+            "color": "RED", 
+            "link": "", 
+            "description": "The ITVMO has chartered a working group focused on AI Chat Bots/ Emerging Technology in partnership with ATARC. To kick off this initiative, ATARC will be hosting a virtual roundtable on May 17, 2023 at 10am on the topic of “Using AI to Write Contract Requirements.” Please email itvmo@gsa.gov if you are interested in being registered for the event or participating in the working group.",
+            "type": "OTHER"
+        },
+        {
+            "title": "Becoming a SEWP Industry Partner", 
+            "date": "5/23/2023", 
+            "color": "BLUE", 
+            "link": "https://nasaenterprise.webex.com/weblink/register/r5835fcf91aa1fb8b21a57728b68ac26d", 
+            "description": "Register for this virtual training to learn more about how to become a SEWP Industry partner",
+            "type": "OTHER" 
+        },
+        {
+            "title": "IDC Office Hours: May 2023 Reporting - Session 2", 
+            "date": "5/25/2023", 
+            "color": "BLUE", 
+            "link": "", 
+            "description": "This is IDC Office Hours Session 2 for the May 2023 Reporting. The office hours will take place from 12:45pm - 1:45pm. Additional Office Hours Sessions will be held throughout the month of May to provide continued support. These sessions are an informal platform to get questions answered or have discussions regarding the current submission requirements. Agencies may attend as few or as many of the sessions as appropriate to support the May 2023 submission. For questions about this session or to attend please contact the ITVMO at <a href='mailto:itvmo@gsa.gov'>ITVMO@gsa.gov</a>.",
+            "type": "ITVMO"
+        },
+        {
+            "title": "IDC Office Hours: May 2023 Reporting - Session 3", 
+            "date": "5/30/2023", 
+            "color": "BLUE", 
+            "link": "", 
+            "description": "This is IDC Office Hours Session 3 for the May 2023 Reporting. The office hours will take place from 10:45am - 11:45am. This is the final  Office Hours Session being held in May to provide continued support for the May 2023 submission.  These sessions are an informal platform to get questions answered or have discussions regarding the current submission requirements. For questions about this session or to attend please contact the ITVMO at <a href='mailto:itvmo@gsa.gov'>ITVMO@gsa.gov</a>.",
+            "type": "ITVMO"
         }
     ]
 }
