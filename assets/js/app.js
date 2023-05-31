@@ -71,36 +71,31 @@ function openModal(date) {
 
 async function runCalendar(d,m,y) {
   const dt = new Date();
-
+  console.log(dt.getMonth());
   //Nav always start with 0, until user press nextButton or backButton to change the nav value.
   if(nav !== 0)
     dt.setDate(1);
+  else if(d !== null)
+    dt.setDate(d);
 
+  let day, monthNum, year;
   //If there are no url parameters, use the current month to calculate the previous and next month.
   if (m == -1) 
   {
     const currMonth = new Date().getMonth() + nav;
     dt.setMonth(currMonth);
-  }
-  //If there are url parameters, use "m" variable to calculate theprevious and next month.
-  else
-    dt.setMonth(m + nav);
-
-  //Retrive the date, if there is parameters in url then it will use the date on the url, instead of today date.
-  let day, monthNum, year;
-  if(m != dt.getMonth())
-  {
     day = dt.getDate();
     monthNum = dt.getMonth();
     year = dt.getFullYear();
   }
+  //If there are url parameters, use "m" variable to calculate theprevious and next month.
   else
   {
-    day = d;
-    monthNum = m;
-    year = y;
+    dt.setMonth(m + nav);
+    day = dt.getDate()
+    monthNum = dt.getMonth();
+    year = dt.getFullYear();
   }
-
   //Since only data that avaliable is currently only 2022 and 2023
   if((year >= 2022)&&(year <= 2023))
   {
