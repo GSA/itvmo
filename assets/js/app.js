@@ -69,17 +69,33 @@ function openModal(date) {
   }
 }
 
-async function runCalendar() {
+async function runCalendar(d,m,y) {
   const dt = new Date();
-  if (nav !== 0) {
+  console.log(dt.getMonth());
+  //Nav always start with 0, until user press nextButton or backButton to change the nav value.
+  if(nav !== 0)
     dt.setDate(1);
-    dt.setMonth(new Date().getMonth() + nav);
-  }
+  else if(d !== null)
+    dt.setDate(d);
 
-  //Retrive the date
-  const day = dt.getDate();
-  const monthNum = dt.getMonth();
-  const year = dt.getFullYear();
+  let day, monthNum, year;
+  //If there are no url parameters, use the current month to calculate the previous and next month.
+  if (m == -1) 
+  {
+    const currMonth = new Date().getMonth() + nav;
+    dt.setMonth(currMonth);
+    day = dt.getDate();
+    monthNum = dt.getMonth();
+    year = dt.getFullYear();
+  }
+  //If there are url parameters, use "m" variable to calculate theprevious and next month.
+  else
+  {
+    dt.setMonth(m + nav);
+    day = dt.getDate()
+    monthNum = dt.getMonth();
+    year = dt.getFullYear();
+  }
   //Since only data that avaliable is currently only 2022 and 2023
   if((year >= 2022)&&(year <= 2023))
   {
@@ -104,7 +120,6 @@ async function runCalendar() {
     day: 'numeric',
   });
   const paddingDays = weekdays.indexOf(dateString.split(', ')[0]);
-
   document.getElementById('monthDisplay').innerText = 
     `${dt.toLocaleDateString('en-us', { month: 'long' })} ${year}`;
 
@@ -136,7 +151,7 @@ async function runCalendar() {
       }
       daySquare.title = `${dt.toLocaleDateString('en-us', { month: 'long' })} ${i - paddingDays} event count of ${eventForDay.length}`;
       //Display the Events summary for the current day if there is one
-      if (i - paddingDays === day && nav === 0) {
+      if ((i - paddingDays == day && nav === 0)) {
         daySquare.id = 'currentDay';
         daySquare.tabIndex = 0;
         openModal(dayString);
@@ -192,17 +207,17 @@ function saveEvent(currEvent) {
     localStorage.setItem('events', JSON.stringify(events));
 }
 //Go to next month
-function initEventButtons() {
+function initEventButtons(d,m,y) {
   
     document.getElementById('nextButton').addEventListener('click', () => {
       nav++;
-      //Insert paraemeter here to intake the data and can display on the calendar
-      runCalendar();
+      //Insert parameters here to intake the data and can display on the calendar
+      runCalendar(d,m,y);
     });
   //Go to previous month
     document.getElementById('backButton').addEventListener('click', () => {
       nav--;
-      runCalendar();
+      runCalendar(d,m,y);
     });
 }
 /** The Home page Dropdown menu section **/
@@ -317,10 +332,15 @@ if(document.getElementById('homepage-highlight') != null)
   initHighlightButtons();
   runHighlight();
 }
+
 //Run Events page
 if( document.getElementById('nextButton') != null)
 {
-  initEventButtons();
+  const queryString = window.location.search;
+  //Retrive the keys and their value from the URL.
+  const urlParams = new URLSearchParams(queryString);
+  const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
+  initEventButtons(d,m,y);
   localStorage.clear();
-  runCalendar();
+  runCalendar(d,m,y);
 }
