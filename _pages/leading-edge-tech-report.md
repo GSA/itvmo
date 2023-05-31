@@ -6,8 +6,8 @@ sidenav: false
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
 <h1 class="margin-top-0">{{ page.title }}</h1>
-<div class="margin-bottom-2">The IT Governmentwide Category, in partnership with the ACT-IAC 
-The ITVMO authored the <b>Leading Edge Technologies Report</b> to explore emerging technologies and innovative solutions that are disrupting IT acquisitions in the federal marketplace. The report presents an overview of leading edge technology segments and is intended to spur dialogue and information exchange among federal IT buyers. The report identifies emerging technology and procurement trends that will impact agencies' IT buying on a yearly basis. The report is assessed and updated annually. 
+<div class="margin-bottom-2">
+The ITVMO authors the <b>Leading Edge Technologies Report</b> to explore emerging technologies and innovative solutions that are disrupting IT acquisitions in the federal marketplace. The reports present an overview of leading edge technology segments and are intended to spur dialogue and information exchange among federal IT buyers. The reports identify emerging technology and procurement trends that will impact agencies' IT buying on a yearly basis. The reports are assessed and updated annually.
 </div>
 
 <div class="margin-bottom-2">
@@ -25,7 +25,7 @@ The ITVMO authored the <b>Leading Edge Technologies Report</b> to explore emergi
 </div>
 
 <div class="margin-bottom-2">
-Topics include but not limited to: technology segments in cybersecurity, artificial intelligence, machine learning, cloud computing, blockchain technologies, robotic process automation, and big data/advanced analytics. This list is constantly evolving. Check out the ITVMO’s reports below.
+Topics include but are not limited to: technology segments in cybersecurity, artificial intelligence, machine learning, cloud computing, blockchain technologies, robotic process automation, and big data/advanced analytics. This list is constantly evolving. Check out the ITVMO’s reports below.
 </div>
 <div class="FY-container">
     <div class="margin-bottom-2 FY FY2023">
