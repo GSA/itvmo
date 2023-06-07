@@ -29,7 +29,7 @@ sidenav: false
                   <p><a href="{{site.baseurl}}/assets/files/tlr/What-vendors-provide-cloud-based-services-that-are-FedRamp-certified-508.pdf">What vendors provide cloud based services that are FedRamp certified?</a></p>
                   <p><a href="{{site.baseurl}}/assets/files/tlr/How-do-BICs-support-small-business-508.pdf">How do BICs support small business?</a></p>
                   <p><a href="{{site.baseurl}}/assets/files/tlr/how-many-orgs-compare-it-budget-similiar.pdf">How does my organization compare in terms of IT budget with other federal organizations of similar size?</a></p>
-                  <p><b><em>NEW: </em></b><a href="https://drive.google.com/file/d/18Vcui9_RC77F7oeYHV26qsLI8yCEtDNx/view?usp=share_link">How do I find CyberSecurity related obligations?</a></p>
+                  <p><b><em>NEW: </em></b><a href="{{site.baseurl}}/assets/files/tlr/A-Guide-to-Finding-Security-Related-Obligations.pdf">How do I find CyberSecurity related obligations?</a></p>
               </div>
             </div>
         </div>
