@@ -12,26 +12,26 @@ publish_mode: editorial_workflow
 logo_url: https://federalist.18f.gov/assets/images/federalist-logo.png
 
 collections:
-  - label: Posts
-    name: posts
-    folder: _posts/
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'post'}
-      - {label: "Title", name: "title", widget: "string"}
-      - {
-          label: "Publish Date",
-          name: "date",
-          widget: "datetime",
-          format: 'MMMM D, YYYY',
-          dateFormat: 'MMMM D, YYYY',
-          timeFormat: false
-        }
-      - {label: "Body", name: "body", widget: "markdown"}
-      
+  # - label: Posts
+  #   name: posts
+  #   folder: _posts/
+  #   create: true
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'post'}
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {
+  #         label: "Publish Date",
+  #         name: "date",
+  #         widget: "datetime",
+  #         format: 'MMMM D, YYYY',
+  #         dateFormat: 'MMMM D, YYYY',
+  #         timeFormat: false
+  #       }
+  #     - {label: "Body", name: "body", widget: "markdown"}
+
 #Allow admin to create resource cards.
 
   # ---
@@ -50,7 +50,7 @@ collections:
     slug: "{{slug}}"
     fields:
     - {label: "Title", name: "title", widget: "string"}
-    - {label: "Description", name: "description", widget: text"}
+    - {label: "Description", name: "description", widget: "text"}
     - {label: "URL", name: "external_url", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
     - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
     - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
