@@ -666,62 +666,6 @@ a.checked {
     height: 15px;
   }
 }
-//Homepage dropdown button 
-.dropdown {
-  .dropdown-content {
-    // display: none;
-    // opacity: 1;
-    // visibility: hidden;
-    z-index: -99;
-    display: block;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    a 
-    {
-      line-height: 0.9;
-      padding: 1rem; 
-      color: #565c65;
-      display: block;
-      font-weight: 600;
-      font-size: 0.85rem; 
-    }
-  }
-}
-//Change color of dropdown links on hover
-.dropdown-content a:hover 
-{
-  background-color: #ddd;
-}
-//Display the dropdown menu on hover 
-.display-content
-{
-  .dropdown-content
-  {
-    visibility: visible;
-    z-index: 99;
-    animation-name: fadeInUp;
-    -webkit-animation-name: fadeInUp;
-  }
-}
-.hide-content
-{
-  .dropdown-content
-  {
-    z-index: 99;
-    animation-name: fadeOutDown;
-    -webkit-animation-name: fadeOutDown;
-  }
-}
-.hide-content-start
-{
-  .dropdown-content
-  {
-    visibility: hidden;
-  }
-}
 
 //Leading Edge Technologies Annual Report page
 .leading-edge-table

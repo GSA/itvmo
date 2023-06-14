@@ -4,7 +4,8 @@
 
 /*-------------------------------------*/
 .itvmo-logo-size {
-  width: 70%;
+  width: 308px;
+  height: 53px;
 }
 .sect-container {
   margin-bottom: -2.5rem;
@@ -43,7 +44,14 @@
   color: #c05600;
 }
 .search-btn {
-  background-color: #1b2b85;
+  background-color: rgba(239, 97, 26, 1);
+  width: 58px !important;
+  height: 38px !important;
+}
+.search-input
+{
+  width: 322px !important;
+  height: 38px !important;
 }
 .title {
   padding-top: 0;
@@ -230,3 +238,79 @@ address p {
     height: auto;
   }*/
 } 
+
+/*Navigation bar*/
+.nav-background
+{
+  background-color: rgba(6, 35, 73, 1);
+  border-bottom: solid #e17141;
+  height: 128px;
+}
+.navbar, .grid-container, .usa-nav__inner
+{
+  max-width: 80rem !important;
+}
+.navbar
+{
+  height: 100%;
+  margin: auto;
+  position: relative;
+  padding: 0;
+  .secondary-align, .usa-logo
+  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .usa-logo
+  {
+    height: 53px;
+    a 
+    {
+      display: block;
+      height: 100%;
+    }
+  }
+  .secondary-align
+  {
+    height: 63.38px;
+  }
+}
+.search-div
+{
+  max-width: 380px !important;
+}
+.secondary-item
+{
+  color: white !important;
+}
+.secondary-align
+{
+  align-items: flex-start;
+  margin-top: 0;
+}
+
+.usa-nav__primary-item:hover
+{
+  a
+  {
+    color: #e17141 !important;
+  }
+}
+.usa-header--extended .usa-nav__primary-item > .usa-current::after, 
+.usa-header--extended .usa-nav__primary-item > .usa-nav__link:hover::after
+{
+  background-color: #e17141 !important;
+}
+.usa-nav__inner
+{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+// .search-bar
+// {
+//   height: 63.38px;
+//   width: 380px;
+// }
