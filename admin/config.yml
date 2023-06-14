@@ -31,3 +31,48 @@ collections:
           timeFormat: false
         }
       - {label: "Body", name: "body", widget: "markdown"}
+      
+#Allow admin to create resource cards.
+
+  # ---
+  # title: "Identifying Small Disadvantaged Business Vendors"
+  # description: The Category Management Workbench allows a user to filter by business size and by socioeconomic status.
+  # external_url: itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-SDB-Vendors.pdf
+  # [Do not require] content_tags: 
+  # type: link
+  # [Create picklist] filters: small-business na-branded-offering na-audience 
+  # ---
+
+  - label: Resources
+    name: resources
+    folder: _resources/
+    create: true #Allow users to create new documents in this collection.
+    slug: "{{slug}}"
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "description", widget: text"}
+    - {label: "URL", name: "external_url", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
+    - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
+    - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
+
+#Allow admin to create pages.
+
+# title: About
+# layout: page
+# sidenav: false
+
+  - label: Pages
+    name: pages
+    folder: _pages/
+    create: true #Allow users to create new documents in this collection.
+    slug: "{{slug}}"
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Layout", name: "layout", widget: "hidden", default: "page"} #Will not show on the UI and will be auto fill by default value.
+    - {label: "Side Navigation", name: "sidenav", widget: "hidden", default: "false"} #Will not show on the UI and will be auto fill by default value.
+    - {label: "Body", name: "body", widget: "markdown"} 
+
+#Allow user to create events.
+
+
+#Allow user to create News.
