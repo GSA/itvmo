@@ -1,5 +1,5 @@
 backend:
-  name: ITVMO
+  name: itvmo
   repo: GSA/itvmo
   base_url: https://pages.cloud.gov
   auth_endpoint: external/auth/github
