@@ -65,7 +65,7 @@ collections:
     - {label: "Description", name: "description", widget: "text"}
     - {label: "URL", name: "external_url", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
     - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
-    - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
+    # - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
     # - label: "tags"
     #   name: "filter"
     #   widget: "relation"
