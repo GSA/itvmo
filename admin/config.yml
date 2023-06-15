@@ -82,11 +82,31 @@ collections:
       value_field: "tag"
       display_fields: ["name"]
       multiple: false
+    - label: Audience
+      name: audience
+      widget: relation
+      collection: "audience-tags"
+      search_fields: ["name"]
+      value_field: "tag"
+      display_fields: ["name"]
+      multiple: false
 
-#Allow user to create new tags for the resource card
+#Branded Offering tags allow user to use it to tag the resource cards
   - label: Branded Offering tags
     name: bo-tags
     folder: assets/branded-offerings_tags
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+      - {label: Tag, name: tag}
+
+#Audience tags tags allow user to use it to tag the resource cards
+  - label: Audience tags
+    name: audience-tags
+    folder: assets/audience_tags
     create: true
     slug: "{{name}}"
     identifier_field: name
