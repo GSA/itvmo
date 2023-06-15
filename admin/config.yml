@@ -65,25 +65,25 @@ collections:
     - {label: "Description", name: "description", widget: "text"}
     - {label: "URL", name: "external_url", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
     - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
-    - label: "tags"
-      name: "filter"
-      widget: "relation"
-      collection: "tags"
-      search_fields: ["label"]
-      value_field: "name"
-      display_fields: ["label"]
-      multiple: true
+    # - label: "tags"
+    #   name: "filter"
+    #   widget: "relation"
+    #   collection: "tags"
+    #   search_fields: ["label"]
+    #   value_field: "name"
+    #   display_fields: ["label"]
+    #   multiple: true
 
 #Allow user to create new tags for the resource card
-- name: tags
-  label: resource-tags
-  folder: _resources/resource_tags
-  create: true
-  slug: "{{name}}"
-  identifier_field: name
-  summary: "{{name}}"
-  fields: 
-    - {label: Name, name: name}
+  - label: Resources tags
+    name: tags
+    folder: _resources/resource_tags
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
 
 #Allow admin to create pages.
 
