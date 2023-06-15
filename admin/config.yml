@@ -75,18 +75,18 @@ collections:
     #   display_fields: ["label"]
     #   multiple: true
     - label: Branded Offerings
-      name: bo-tags
+      name: branded-offerings
       widget: relation
-      collection: "tags"
+      collection: "bo-tags"
       search_fields: ["name"]
       value_field: "tag"
       display_fields: ["name"]
       multiple: false
 
 #Allow user to create new tags for the resource card
-  - label: Resource tags
-    name: tags
-    folder: assets/resource_tags
+  - label: Branded Offering tags
+    name: bo-tags
+    folder: assets/branded-offerings_tags
     create: true
     slug: "{{name}}"
     identifier_field: name
