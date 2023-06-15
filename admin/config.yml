@@ -73,8 +73,8 @@ collections:
       value_field: "tag"
       display_fields: ["name"]
       multiple: false
-    - {label: ".Gov/.mil only", name: "gov-only",  widget: "boolean", default: false} # Determine if the resource is .Gov/.mil only or not.
-    # - {label: "External Resource", name: "is-external",  widget: "boolean"} #Determine if the resource is external or internal.
+    - {label: ".Gov/.mil only", name: "gov-only",  widget: "boolean"} # Determine if the resource is .Gov/.mil only or not.
+    - {label: "External Resource", name: "is-external",  widget: "boolean"} #Determine if the resource is external or internal.
     # - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
     # - label: "tags"
     #   name: "filter"
