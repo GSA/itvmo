@@ -73,6 +73,14 @@ collections:
     #   value_field: "name"
     #   display_fields: ["label"]
     #   multiple: true
+    - name: tags
+      label: Tags
+      widget: relation
+      collection: "tags"
+      search_fields: ["name"]
+      value_field: "name"
+      display_fields: ["name"]
+      multiple: true
 
 #Allow user to create new tags for the resource card
   - label: Resources tags
