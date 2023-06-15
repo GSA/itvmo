@@ -64,8 +64,17 @@ collections:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Description", name: "description", widget: "text"}
     - {label: "URL", name: "external_url", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
-    - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
-    - {label: ".Gov/.mil only", name: "gov-only",  widget: "boolean", default: "false"} #Determine if it link or PDF
+    # - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
+    - label: File type
+      name: type
+      widget: relation
+      collection: "type-tags"
+      search_fields: ["name"]
+      value_field: "tag"
+      display_fields: ["name"]
+      multiple: false
+    - {label: ".Gov/.mil only", name: "gov-only",  widget: "boolean", default: "false"} # Determine if the resource is .Gov/.mil only or not.
+    - {label: "External Resource", name: "is-external",  widget: "boolean", default: "false"} #Determine if the resource is external or internal.
     # - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
     # - label: "tags"
     #   name: "filter"
@@ -75,6 +84,14 @@ collections:
     #   value_field: "name"
     #   display_fields: ["label"]
     #   multiple: true
+    - label: Resource Filter tags
+      name: filter
+      widget: relation
+      collection: "filter-tags"
+      search_fields: ["name"]
+      value_field: "tag"
+      display_fields: ["name"]
+      multiple: false
     - label: Branded Offerings
       name: branded-offerings
       widget: relation
@@ -93,9 +110,9 @@ collections:
       multiple: false
 
 #Branded Offering tags allow user to use it to tag the resource cards
-  - label: Branded Offering tags
-    name: bo-tags
-    folder: assets/branded-offerings_tags
+  - label: Resource Filter tags
+    name: filter-tags
+    folder: assets/resource_tags/filter_tags
     create: true
     slug: "{{name}}"
     identifier_field: name
@@ -103,11 +120,32 @@ collections:
     fields: 
       - {label: Name, name: name}
       - {label: Tag, name: tag}
-
+#Branded Offering tags allow user to use it to tag the resource cards
+  - label: Branded Offering tags
+    name: bo-tags
+    folder: assets/resource_tags/branded-offerings_tags
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+      - {label: Tag, name: tag}
 #Audience tags tags allow user to use it to tag the resource cards
   - label: Audience tags
     name: audience-tags
-    folder: assets/audience_tags
+    folder: assets/resource_tags/audience_tags
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+      - {label: Tag, name: tag}
+#Type tags tags allow user to use it to tag the resource cards
+  - label: Type tags
+    name: type-tags
+    folder: assets/resource_tags/type_tags
     create: true
     slug: "{{name}}"
     identifier_field: name
