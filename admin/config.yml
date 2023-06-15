@@ -84,7 +84,7 @@ collections:
       multiple: true
 
 #Allow user to create new tags for the resource card
-  - label: Resources tags
+  - label: Resource tags
     name: tags
     folder: assets/resource_tags
     create: true
