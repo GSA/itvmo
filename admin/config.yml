@@ -86,7 +86,7 @@ collections:
 #Allow user to create new tags for the resource card
   - label: Resources tags
     name: tags
-    folder: _resources/resource_tags
+    folder: assets/resource_tags
     create: true
     slug: "{{name}}"
     identifier_field: name
