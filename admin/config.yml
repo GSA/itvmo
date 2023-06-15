@@ -92,6 +92,7 @@ collections:
     summary: "{{name}}"
     fields: 
       - {label: Name, name: name}
+      - {label: Tag, name: tag}
 
 #Allow admin to create pages.
 
