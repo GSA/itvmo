@@ -63,7 +63,7 @@ collections:
     fields:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Description", name: "description", widget: "text"}
-    - {label: "URL", name: "url", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
+    - {label: "URL", name: "url-link", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
     # - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
     - label: File type
       name: type
