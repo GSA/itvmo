@@ -1,7 +1,7 @@
 ---
 title: Testing resource card 2
 description: Testing resource card 2 dest
-url: github.com/GSA/itvmo
+url: github.com/GSA/
 type: hyperlink
 gov-only: false
 is-external: true
