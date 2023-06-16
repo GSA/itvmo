@@ -1,7 +1,7 @@
 ---
 title: Testing resource card
 description: Testing resource card description
-url: itvmo.gsa.gov/how-can-we-help/
+url-link: itvmo.gsa.gov/how-can-we-help/
 type: subpage
 gov-only: true
 is-external: false
