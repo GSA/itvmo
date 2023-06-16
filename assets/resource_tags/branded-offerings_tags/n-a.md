@@ -1,4 +1,4 @@
 ---
-name: N/A.
+name: "-"
 tag: na-branded-offering
 ---
