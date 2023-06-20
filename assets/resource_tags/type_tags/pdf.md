@@ -1,4 +1,4 @@
 ---
 name: PDF
-tag: pdf
+tag: PDF
 ---
