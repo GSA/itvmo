@@ -5,7 +5,7 @@
   <div class="resources">
    
               {% for resources in site.resources %}
-              {% if resources.filters contains 'for-small-businesses' %}
+              {% if resources.filters contains 'for-small-businesses' or resources.audience contains 'for-small-businesses' %}
                       <div class="tablet:grid-col-4 grid-spacing policy {{ resources.filters }}" >
                           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover policy-border">
                                           <div class="text-container padding-1 height-full">
@@ -30,6 +30,14 @@
                                                 <p class="description-resources">{{ resources.description }}</p>
                                                 <p class="link-type">PDF</p>
                                                 </a>
+                                              {% endif %}
+                                              <!-- for new version of the resource card -->
+                                              {% if resources.url-link %}
+                                              <a class="no-style anchor-fill" href="http://{{ resources.url-link }}" aria-label="{{ resources.title }}">
+                                                <p class="title-resources">{{ resources.title }}</p>
+                                                <p class="description-resources">{{ resources.description }}</p>
+                                                <p class="link-type">{{ resources.type }}</p>
+                                              </a>
                                               {% endif %}
                                         </div>
                                     </div>

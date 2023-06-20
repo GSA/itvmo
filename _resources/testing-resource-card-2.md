@@ -7,5 +7,5 @@ gov-only: false
 is-external: true
 filter: cybersecurity
 branded-offerings: contract-data-elements
-audience: for-contracting-officers
+audience: for-small-businesses
 ---
