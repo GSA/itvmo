@@ -5,83 +5,83 @@
   <div class="resources">
    
               {% for resources in site.resources %}
-                      <div class="tablet:grid-col-4 grid-spacing policy {{ resources.filters }}" >
+                      <div class="tablet:grid-col-4 grid-spacing policy {{ resources.filters }} {{resources.filter}}" >
                           <!--sets border logic statements for resources-->
-                          {% if resources.filters contains 'p-filter' %}
+                        {% if resources.filters contains 'p-filter' or resources.filter contains 'p-filter' %}
                           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover policy-border">
-                              {% endif %}
-                          {% if resources.filters contains 'acquisition-best-practices' %}
+                            <div class="text-container padding-1 height-full">
+                              <span class="card-tag">Policy</span>
+                        {% endif %}
+                        {% if resources.filters contains 'acquisition-best-practices' or resources.filter contains 'acquisition-best-practices' %}
                           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover vendor-intelligence-border">
+                            <div class="text-container padding-1 height-full">
+                              <span class="card-tag">Acquisition Best Practices</span>
+                        {% endif %}
+                        {% if resources.filters contains 'small-business' or resources.filter contains 'small-business' %}
+                          <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover small-business-intelligence-border">
+                            <div class="text-container padding-1 height-full">
+                              <span class="card-tag">Small Business</span>
+                        {% endif %}
+                        {% if resources.filters contains 'market-intelligence' or resources.filter contains 'market-intelligence' %}
+                          <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover emerging-technology-border">
+                            <div class="text-container padding-1 height-full">
+                              <span class="card-tag">Market Intelligence</span>
+                        {% endif %}
+                        {% if resources.filters contains 'emerging-technology' or resources.filter contains 'emerging-technology'%}
+                          <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover best-in-class-border">
+                            <div class="text-container padding-1 height-full">
+                              <span class="card-tag">Emerging Technology</span>
+                        {% endif %}
+                        {% if resources.filters contains 'cybersecurity' or resources.filter contains 'cybersecurity' %}
+                          <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover itvmo-admin-border">
+                            <div class="text-container padding-1 height-full">
+                              <span class="card-tag">Cybersecurity</span>
+                        {% endif %}
+                        {% if resources.filters contains 'vehicle-solutions' or resources.filter contains 'vehicle-solutions' %}
+                          <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover scrm-border">
+                            <div class="text-container padding-1 height-full">
+                              <span class="card-tag">Vehicle Solutions</span>
+                        {% endif %}
+                        {% if resources.filters contains 'itvmo-general' or resources.filter contains 'itvmo-general' %}
+                          <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover acqu-best-prac-border">
+                            <div class="text-container padding-1 height-full">
+                              <span class="card-tag">ITVMO General</span>
+                        {% endif %}
+                              {% if resources.external_url %}
+                                <a class="no-style anchor-fill" href="http://{{ resources.external_url }}" aria-label="{{ resources.title }}">
+                                  <p class="title-resources">{{ resources.title }}</p>
+                                  <p class="description-resources">{{ resources.description }}</p>
+                                  <p class="link-type">Hyperlink</p>
+                                </a>
                               {% endif %}
-                              {% if resources.filters contains 'small-business' %}
-                              <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover small-business-intelligence-border">
-                                  {% endif %}
-                                  {% if resources.filters contains 'market-intelligence' %}
-                                  <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover emerging-technology-border">
-                                      {% endif %}
-                                      {% if resources.filters contains 'emerging-technology' %}
-                                      <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover best-in-class-border">
-                                          {% endif %}
-                                          {% if resources.filters contains 'cybersecurity' %}
-                                           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover itvmo-admin-border">
-                                          {% endif %}
-                                          {% if resources.filters contains 'vehicle-solutions' %}
-                                           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover scrm-border">
-                                          {% endif %}
-                                          {% if resources.filters contains 'itvmo-general' %}
-                                           <div class="border-top-05 border-accent-warm bg-white padding-2 shadow-5 height-full resources-hover acqu-best-prac-border">
-                                          {% endif %}
-                                          <div class="text-container padding-1 height-full">
-                                         
-                                            {% if resources.filters contains 'p-filter' %}
-                                           <span class="card-tag">Policy</span>
-                                           {% endif %}
-                                           {% if resources.filters contains 'acquisition-best-practices' %}
-                                           <span class="card-tag">Acquisition Best Practices</span>
-                                           {% endif %}
-                                           {% if resources.filters contains 'small-business' %}
-                                           <span class="card-tag">Small Business</span>
-                                           {% endif %}
-                                           {% if resources.filters contains 'market-intelligence' %}
-                                           <span class="card-tag">Market Intelligence</span>
-                                           {% endif %}
-                                           {% if resources.filters contains 'emerging-technology' %}
-                                           <span class="card-tag">Emerging Technology</span>
-                                           {% endif %}
-                                           {% if resources.filters contains 'cybersecurity' %}
-                                           <span class="card-tag">Cybersecurity</span>
-                                           {% endif %}
-                                           {% if resources.filters contains 'vehicle-solutions' %}
-                                           <span class="card-tag">Vehicle Solutions</span>
-                                           {% endif %}
-                                           {% if resources.filters contains 'itvmo-general' %}
-                                           <span class="card-tag">ITVMO General</span>
-                                           {% endif %}
-                                              {% if resources.external_url %}
-                                                <a class="no-style anchor-fill" href="http://{{ resources.external_url }}" aria-label="{{ resources.title }}">
-                                                <p class="title-resources">{{ resources.title }}</p>
-                                                <p class="description-resources">{{ resources.description }}</p>
-                                                <p class="link-type">Hyperlink</p>
-                                                </a>
-                                              {% endif %}
-                                              {% if resources.permalink %}
-                                                <a class="no-style anchor-fill" href="{{ site.baseurl }}{{ resources.permalink  }}" aria-label="{{ resources.title }}">
-                                                <p class="title-resources">{{ resources.title }}</p>
-                                                <p class="description-resources">{{ resources.description }}</p>
-                                                <p class="link-type">Hyperlink</p>
-                                                </a>
-                                              {% endif %}
-                                              {% if resources.doc-link %}
-                                                <a class="no-style anchor-fill" href="{{ site.baseurl }}/{{ resources.doc-link }}" aria-label="{{ resources.title }}">
-                                                <p class="title-resources">{{ resources.title }}</p>
-                                                <p class="description-resources">{{ resources.description }}</p>
-                                                <p class="link-type">PDF</p>
-                                                </a>
-                                              {% endif %}
-                                           <!--for 508 accessibility-->
-                                        </div>
-                                    </div>
-                                  </div>			
+                              {% if resources.permalink %}
+                                <a class="no-style anchor-fill" href="{{ site.baseurl }}{{ resources.permalink  }}" aria-label="{{ resources.title }}">
+                                  <p class="title-resources">{{ resources.title }}</p>
+                                  <p class="description-resources">{{ resources.description }}</p>
+                                  <p class="link-type">Hyperlink</p>
+                                </a>
+                              {% endif %}
+                              {% if resources.doc-link %}
+                                <a class="no-style anchor-fill" href="{{ site.baseurl }}/{{ resources.doc-link }}" aria-label="{{ resources.title }}">
+                                  <p class="title-resources">{{ resources.title }}</p>
+                                  <p class="description-resources">{{ resources.description }}</p>
+                                  <p class="link-type">PDF</p>
+                                </a>
+                              {% endif %}
+                              
+                              <!-- for new version of the resource card -->
+                              {% if resources.url-link %}
+                                <a class="no-style anchor-fill" href="http://{{ resources.url-link }}" aria-label="{{ resources.title }}">
+                                  <p class="title-resources">{{ resources.title }}</p>
+                                  <p class="description-resources">{{ resources.description }}</p>
+                                  <p class="link-type">{{ resources.type }}</p>
+                                </a>
+                              {% endif %}
+                            
+                            <!--for 508 accessibility-->
+                            </div>
+                          </div>
+                      </div>			
               {% endfor %}
 
   </div>

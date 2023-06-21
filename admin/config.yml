@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: 18f/federalist-uswds-jekyll
-  base_url: https://federalistapp.18f.gov
+  repo: GSA/itvmo
+  base_url: https://pages.cloud.gov
   auth_endpoint: external/auth/github
-  preview_context: federalist/build
+  preview_context: pages/build
   branch: main
 
 media_folder: assets/uploads
@@ -12,22 +12,166 @@ publish_mode: editorial_workflow
 logo_url: https://federalist.18f.gov/assets/images/federalist-logo.png
 
 collections:
-  - label: Posts
-    name: posts
-    folder: _posts/
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    editor:
-      preview: false
+  # - label: Posts
+  #   name: posts
+  #   folder: _posts/
+  #   create: true
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'post'}
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {
+  #         label: "Publish Date",
+  #         name: "date",
+  #         widget: "datetime",
+  #         format: 'MMMM D, YYYY',
+  #         dateFormat: 'MMMM D, YYYY',
+  #         timeFormat: false
+  #       }
+  #     - {label: "Body", name: "body", widget: "markdown"}
+
+#Allow admin to create resource cards.
+
+  # ---
+  # title: "Identifying Small Disadvantaged Business Vendors"
+  # description: The Category Management Workbench allows a user to filter by business size and by socioeconomic status.
+  # external_url: itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-SDB-Vendors.pdf
+  # [Do not require] content_tags: 
+  # type: link
+  # [Create picklist] filters: small-business na-branded-offering na-audience 
+  # ---
+
+  # - label: Resources
+  #   name: resources
+  #   folder: _resources/
+  #   create: true #Allow users to create new documents in this collection.
+  #   slug: "{{slug}}"
+  #   fields:
+  #   - {label: "Title", name: "title", widget: "string"}
+  #   - {label: "Description", name: "description", widget: "text"}
+  #   - {label: "URL", name: "external_url", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
+  #   - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
+  #   - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
+
+  - label: Resources
+    name: resources
+    folder: _resources/
+    create: true #Allow users to create new documents in this collection.
+    slug: "{{slug}}"
     fields:
-      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'post'}
-      - {label: "Title", name: "title", widget: "string"}
-      - {
-          label: "Publish Date",
-          name: "date",
-          widget: "datetime",
-          format: 'MMMM D, YYYY',
-          dateFormat: 'MMMM D, YYYY',
-          timeFormat: false
-        }
-      - {label: "Body", name: "body", widget: "markdown"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "description", widget: "text"}
+    - {label: "URL", name: "url-link", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
+    # - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
+    - label: File type
+      name: type
+      widget: relation
+      collection: "type-tags"
+      search_fields: ["name"]
+      value_field: "tag"
+      display_fields: ["name"]
+      multiple: false
+    - {label: ".Gov/.mil only", name: "gov-only",  widget: "boolean", default: false} # Determine if the resource is .Gov/.mil only or not.
+    - {label: "External Resource", name: "is-external",  widget: "boolean", default: false} #Determine if the resource is external or internal.
+    # - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
+    # - label: "tags"
+    #   name: "filter"
+    #   widget: "relation"
+    #   collection: "tags"
+    #   search_fields: ["label"]
+    #   value_field: "name"
+    #   display_fields: ["label"]
+    #   multiple: true
+    - label: Resource Filter tags
+      name: filter
+      widget: relation
+      collection: "filter-tags"
+      search_fields: ["name"]
+      value_field: "tag"
+      display_fields: ["name"]
+      multiple: false
+    - label: Branded Offerings
+      name: branded-offerings
+      widget: relation
+      collection: "bo-tags"
+      search_fields: ["name"]
+      value_field: "tag"
+      display_fields: ["name"]
+      multiple: false
+    - label: Audience
+      name: audience
+      widget: relation
+      collection: "audience-tags"
+      search_fields: ["name"]
+      value_field: "tag"
+      display_fields: ["name"]
+      multiple: false
+
+#Branded Offering tags allow user to use it to tag the resource cards
+  - label: Resource Filter tags
+    name: filter-tags
+    folder: assets/resource_tags/filter_tags
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+      - {label: Tag, name: tag}
+#Branded Offering tags allow user to use it to tag the resource cards
+  - label: Branded Offering tags
+    name: bo-tags
+    folder: assets/resource_tags/branded-offerings_tags
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+      - {label: Tag, name: tag}
+#Audience tags tags allow user to use it to tag the resource cards
+  - label: Audience tags
+    name: audience-tags
+    folder: assets/resource_tags/audience_tags
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+      - {label: Tag, name: tag}
+#Type tags tags allow user to use it to tag the resource cards
+  - label: Type tags
+    name: type-tags
+    folder: assets/resource_tags/type_tags
+    create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+      - {label: Tag, name: tag}
+
+#Allow admin to create pages.
+
+# title: About
+# layout: page
+# sidenav: false
+
+  - label: Pages
+    name: pages
+    folder: _pages/
+    create: true #Allow users to create new documents in this collection.
+    slug: "{{slug}}"
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Layout", name: "layout", widget: "hidden", default: "page"} #Will not show on the UI and will be auto fill by default value.
+    - {label: "Side Navigation", name: "sidenav", widget: "hidden", default: "false"} #Will not show on the UI and will be auto fill by default value.
+    - {label: "Body", name: "body", widget: "markdown"} 
+
+#Allow user to create events.
+
+
+#Allow user to create News.
