@@ -1,4 +1,4 @@
 ---
 name: Subpage
-tag: Subpage
+tag: Hyperlink
 ---
