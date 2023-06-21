@@ -121,11 +121,10 @@ a.checked {
 
 #report
 {
-  width: 300px;
   color: white;
   background-color: #1b2b85;
   border: none;
-  border-radius:1em;
+  border-radius: 0.75em;
   cursor: pointer;
   vertical-align: center;
   text-decoration: none;
@@ -494,8 +493,6 @@ a.checked {
   transform: scale(1.05,1.15);
 }
 
-
-
 .row {
   display: flex;
   height: 234px;
@@ -801,6 +798,18 @@ a.checked {
     }
   }
 }
+//General class
+
+//Center everything inside the div
+.center-div
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /*Animation*/
 .dropdown-animate {
   -webkit-animation-duration: 400ms;
@@ -937,6 +946,5 @@ a.checked {
     visibility: hidden;
   }
 }
-
 
 
