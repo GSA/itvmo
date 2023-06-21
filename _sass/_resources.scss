@@ -891,4 +891,105 @@ a.checked {
   }
 }
 
+/*Website redesign*/
 
+/*Navigation bar*/
+.nav-background
+{
+  background-color: rgba(6, 35, 73, 1);
+  border-bottom: solid #e17141;
+  height: 128px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+}
+.navbar, .grid-container, .usa-nav__inner
+{
+  max-width: 80rem !important;
+}
+.navbar
+{
+  height: 100%;
+  margin: auto;
+  position: relative;
+  padding: 0;
+  .secondary-align, .usa-logo
+  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .usa-logo
+  {
+    height: 53px;
+    a 
+    {
+      display: block;
+      height: 100%;
+    }
+  }
+  .secondary-align
+  {
+    height: 63.38px;
+  }
+}
+.search-div
+{
+  max-width: 380px !important;
+}
+.secondary-item
+{
+  color: white !important;
+}
+.secondary-align
+{
+  align-items: flex-start;
+  margin-top: 0;
+}
+
+.usa-nav__primary-item:hover
+{
+  a
+  {
+    color: #e17141 !important;
+  }
+}
+.usa-header--extended .usa-nav__primary-item > .usa-current::after, 
+.usa-header--extended .usa-nav__primary-item > .usa-nav__link:hover::after
+{
+  background-color: #e17141 !important;
+  left:0.4rem !important;
+  right:0.4rem !important;
+}
+.usa-header--extended .usa-nav__primary-item > .usa-nav__link:hover::after
+{
+  height:0.1rem !important;
+}
+.usa-header--extended .usa-nav__primary-item > .usa-current::after, .usa-header--extended .usa-nav__primary-item > .usa-current:hover::after
+{
+  height:0.2rem !important;
+}
+
+.usa-nav__inner
+{
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+//New fonts for the new page design.
+.usa-nav__link
+{
+  font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
+}
+
+//Fonts config for the navigation menu.
+.usa-nav__link
+{
+  font-weight: 400 !important;
+  font-style: normal;
+  color: #000000 !important;
+}
+.usa-current
+{
+  font-weight: 650 !important;
+}
