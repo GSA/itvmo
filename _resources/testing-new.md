@@ -2,7 +2,7 @@
 title: Testing new
 description: Testing new
 url-link: itvmo.gsa.gov
-type: Hyperlink
+type: Subpage
 gov-only: true
 is-external: false
 filter: p-filter
