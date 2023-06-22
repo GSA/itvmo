@@ -7,26 +7,10 @@ where we provide an easy way to manage your navigation system
   <div class="nav-background">
     <div class="navbar">
       <div class="usa-logo" id="logo">
-        <!-- <em class="usa-logo-text"> -->
           <a href="{{ site.baseurl }}/" accesskey="1" title="ITVMO.gsa.gov" aria-label="ITVMO.gsa.gov">
             <img class="logo-size itvmo-logo-size" src="{{ site.logo | prepend: site.baseurl }}" alt="United States ITVMO logo">
           </a>
-        <!-- </em> -->
       </div>
-
-      <!-- <div class="search-bar"> -->
-        <div class="usa-nav__secondary secondary-align">
-          <ul class="usa-nav__secondary-links">
-            {% for nav_item in include.secondary_navigation %}
-            <li class="usa-nav__secondary-item">
-              <a class="secondary-item" href="{{ nav_item.url }}">{{ nav_item.name | escape }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-          {% include searchgov/form.html searchgov=site.searchgov %}
-        </div>
-      <!-- </div> -->
-
       <button class="usa-menu-btn">Menu</button>
     </div>
   </div>
@@ -56,7 +40,7 @@ where we provide an easy way to manage your navigation system
         </li>
         {% endfor %}
       </ul>
-      <!-- <div class="usa-nav__secondary secondary-align">
+      <div class="usa-nav__secondary">
         <ul class="usa-nav__secondary-links">
           {% for nav_item in include.secondary_navigation %}
           <li class="usa-nav__secondary-item">
@@ -65,7 +49,7 @@ where we provide an easy way to manage your navigation system
           {% endfor %}
         </ul>
         {% include searchgov/form.html searchgov=site.searchgov %}
-      </div> -->
+      </div>
     </div>
   </nav>
 </header>

@@ -893,18 +893,30 @@ a.checked {
 
 /*Website redesign*/
 
+/*Website new fonts*/
+.usa-nav__link
+{
+  font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
+}
+
 /*Navigation bar*/
 .nav-background
 {
   background-color: rgba(6, 35, 73, 1);
   border-bottom: solid #e17141;
   height: 128px;
-  // padding-top: 10px;
-  // padding-bottom: 10px;
 }
 .navbar, .grid-container, .usa-nav__inner
 {
   max-width: 80rem !important;
+}
+.usa-nav__secondary 
+{
+  bottom: 5rem;
+    .usa-nav__secondary-links 
+    {
+      margin-right: 7px;
+    }
 }
 .navbar
 {
@@ -912,7 +924,8 @@ a.checked {
   margin: auto;
   position: relative;
   padding: 0;
-  .secondary-align, .usa-logo
+
+  .usa-logo
   {
     position: absolute;
     top: 0;
@@ -921,16 +934,12 @@ a.checked {
   }
   .usa-logo
   {
-    height: 53px;
+    height: 53px; //Height of logo on Desktop version
     a 
     {
       display: block;
       height: 100%;
     }
-  }
-  .secondary-align
-  {
-    height: 63.38px;
   }
 }
 .search-div
@@ -940,11 +949,6 @@ a.checked {
 .secondary-item
 {
   color: white !important;
-}
-.secondary-align
-{
-  align-items: flex-start;
-  margin-top: 0;
 }
 
 .usa-nav__primary-item:hover
@@ -976,12 +980,6 @@ a.checked {
   padding-right: 0px !important;
 }
 
-//New fonts for the new page design.
-.usa-nav__link
-{
-  font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
-}
-
 //Fonts config for the navigation menu.
 .usa-nav__link
 {
@@ -993,3 +991,48 @@ a.checked {
 {
   font-weight: 650 !important;
 }
+
+
+/*Mobile version of the site*/
+@media screen and (max-width: 63.99em)
+{
+  /*Navigation bar*/
+  .usa-menu-btn
+  {
+    height: 100% !important;
+    float: right !important;
+  }
+  .nav-background
+  {
+    height: 48px;
+  }
+  .secondary-item
+  {      
+    color: #565c65 !important;
+  }
+  .navbar
+  {
+    .usa-logo
+    {
+      height: 37.5px; //Height of the ITVMO logo on mobile version
+    }
+  }
+  .usa-header--extended .usa-nav__primary-item > .usa-current::after
+  {
+    height: 77% !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+//Give the ITVMO logo space to the left when the width of the browser is <= 80 rem
+@media screen and (max-width: 80rem)
+{
+
+  .navbar .usa-logo,.usa-header--extended .usa-nav__primary
+  {
+    margin-left: 10px;
+  }
+  
+}
+
