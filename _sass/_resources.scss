@@ -894,12 +894,12 @@ a.checked {
 /*Website redesign*/
 
 /*Website new fonts*/
-.usa-nav__link
+html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
 
-/*Navigation bar*/
+/*Header section*/
 .nav-background
 {
   background-color: rgba(6, 35, 73, 1);
@@ -991,6 +991,57 @@ a.checked {
 {
   font-weight: 650 !important;
 }
+
+/*usa-hero section*/
+.usa-hero
+{
+  height: 424px;
+  .grid-container, .usa-hero-panel, .usa-hero-welcome
+  {
+    height: 100%;
+    display: flex;
+  }
+  .usa-hero-panel, .usa-hero-welcome
+  {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  #welcome
+  {
+    h3, p
+    {
+      color: #000000;
+    }
+    h3 
+    {
+      font-family: "SourceSansPro-ExtraLight", "Source Sans Pro Light", sans-serif !important;
+      font-weight: 300;
+      font-size: 32px;
+      margin: 0;
+    }
+    p
+    {
+      font-weight: 650;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: 5px;
+    }
+  }
+  .usa-hero-panel
+  {
+    #dynamic-panel
+    {
+      display: block;
+      width: 361px;
+      height: 324px;
+      background-color: #1b2b85;
+    }
+  }
+}
+
 
 
 /*Mobile version of the site*/
