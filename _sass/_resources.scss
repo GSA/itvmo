@@ -1035,7 +1035,7 @@ html *
     #dynamic-panel
     {
       display: block;
-      width: 361px;
+      width: 490px;
       height: 324px;
       background-color: #1b2b85;
     }
@@ -1073,6 +1073,36 @@ html *
     height: 77% !important;
     left: 0 !important;
     right: 0 !important;
+  }
+  /*usa-hero section*/
+  .usa-hero
+  {
+    height: auto;
+    .grid-container
+    {
+      align-items: flex-start;
+      justify-content: center;
+      .grid-row
+      {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        flex-direction: column;
+      }
+      .usa-hero-panel, .usa-hero-welcome
+      {
+        height: 50%;
+        justify-content: initial;
+      }
+      //Change the design of the dynamic panel for mobile version
+      .usa-hero-panel, .usa-hero-welcome
+      {
+        #dynamic-panel,#welcome
+        {
+          width: 100%;
+          max-width: 490px;
+        }
+      }
+    }
   }
 }
 
