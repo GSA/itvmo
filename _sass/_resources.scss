@@ -1092,7 +1092,7 @@ html *
         .service-image
         {
           height: 70%;
-          border-bottom: solid #d7d7d7;
+          border-bottom: solid 1px #d7d7d7;
           img 
           {
             margin: 8%;
@@ -1192,14 +1192,13 @@ html *
   }
 }
 
-//Give the ITVMO logo space to the left when the width of the browser is <= 80 rem
-@media screen and (max-width: 80rem)
+//Give the site some space to the left and right when the width of the browser is <= 82.5 rem
+@media screen and (max-width: 82.5rem)
 {
-
-  .navbar .usa-logo,.usa-header--extended .usa-nav__primary
+  .navbar .usa-logo,.usa-header--extended .usa-nav__primary, .grid-container
   {
     margin-left: 10px;
+    margin-right: 10px;
   }
-  
 }
 
