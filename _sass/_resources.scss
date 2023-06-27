@@ -1113,6 +1113,14 @@ html *
           }
         }
       }
+      .service-option:hover
+      {
+        border-color: rgba(170, 170, 170, 1);
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 10px;
+        background-color: rgba(242, 242, 242, 1);
+      }
 
     }
   }
