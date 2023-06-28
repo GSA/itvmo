@@ -1205,6 +1205,14 @@ html *
                 width: 75%;
                 justify-content: left;
                 margin-left: 15px;
+                span 
+                {
+                  text-align: left;
+                  br 
+                  {
+                    display: none;
+                  }
+                }
               }
               .service-image, .service-name
               {
