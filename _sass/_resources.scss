@@ -898,6 +898,18 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
+.section-heading
+{
+  width: 100%;
+  h3 
+  {
+    color: #062349;
+    font-weight: 650;
+    font-style: normal;
+    font-size: 26px;
+    margin: 0;
+  }
+}
 /*Light blue background for the site*/
 #core-services
 {
@@ -1057,13 +1069,6 @@ html *
 #core-services
 {
   border-bottom: solid #d7d7d7;
-  h3 
-  {
-    color: #062349;
-    font-weight: 650;
-    font-style: normal;
-    font-size: 26px;
-  }
   .grid-row
   {
     margin-left: -0.89rem;
@@ -1121,9 +1126,97 @@ html *
         border-radius: 10px;
         background-color: rgba(242, 242, 242, 1);
       }
-
     }
   }
+}
+/* Core-services section change for certain width */
+@media screen and (max-width: 82.5em)
+{
+  #core-services
+  {
+    .section-heading
+    {
+      text-align: center;
+    }
+    .grid-container,.grid-row
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .grid-container
+    {
+      flex-direction: column;
+      .grid-row
+      {
+        width: 51.25rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 51.25em)
+{
+  #core-services
+  {
+    .grid-container
+    {
+      .grid-row
+      {
+        width: 50rem;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 32.625em)
+{
+  #core-services
+  {
+    .section-heading
+    {
+      text-align: left;
+      padding-left: 0.50rem;//Align the heading with the service-link.
+    }
+    .grid-container
+    {
+      .grid-row
+      {
+        flex-direction: column;
+        width: 100%;
+        .grid-col-auto
+        {
+          width: 100%;
+          padding: 0.50rem;
+          .service-option
+          {
+            height: 82px;
+            width: 100%;
+            .service-link
+            {
+              display: flex;
+              flex-direction: row;
+              .service-image
+              {
+                border-bottom: none;
+                width: 25%;
+              }
+              .service-name
+              {
+                width: 75%;
+                justify-content: left;
+                margin-left: 15px;
+              }
+              .service-image, .service-name
+              {
+                height: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
 }
 
 /*Mobile version of the site*/
@@ -1191,7 +1284,6 @@ html *
     }
   }
 }
-
 //Give the site some space to the left and right when the width of the browser is <= 82.5 rem
 @media screen and (max-width: 82.5rem)
 {
@@ -1200,5 +1292,5 @@ html *
     margin-left: 10px;
     margin-right: 10px;
   }
-}
 
+}
