@@ -325,6 +325,27 @@ function runSlide()
   timer = setTimeout("showSlides()", 1700);
 }
 
+/*The Back to top button */
+$(document).ready(function (e) {
+
+  // When the user scrolls down 20px from the top of the document, show the button.
+  window.onscroll = function() {scrollFunction()};
+  var topButton= $("#backtotop");
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButton.css('display','flex');
+    } else {
+      topButton.css('display','none');
+    }
+  }
+    // When the user clicks on the button, scroll to the top of the document.
+    topButton.click(function() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    });
+  });
+
 /** Run functions **/
 //Run Home page 
 if(document.getElementById('homepage-highlight') != null)
