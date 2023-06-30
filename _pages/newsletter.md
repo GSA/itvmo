@@ -19,7 +19,7 @@ sidenav: false
     </div>
     <div class="margin-bottom-2 centerHeading">
         <b>Interested in more information?<br>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqROLWIEtLmWaFpnTkL04-8JI2Fs4ZQuPedbXt67ViHN-H-g/viewform?usp=sf_link?">Learn more.
+            <a href="https://www.actiac.org/act-iac-event/leveraging-category-management-it-procurement">Learn more.
             </a>
         </b>
     </div>
