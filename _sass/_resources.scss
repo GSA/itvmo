@@ -798,6 +798,78 @@ a.checked {
     }
   }
 }
+/*Annual Summit page*/
+#annual-summit
+{
+  #itvmo-annual-summit
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span 
+    {
+      text-align: center;
+      max-width: 700px;
+      font-size: 20px;
+      font-weight: 500;
+    }
+    #itvmo-summit-image
+    {
+      margin-top: 10px;
+      width: 250px;
+      height: 125px;
+    }
+  }
+  ul
+  {
+    list-style-type: none;
+    padding-left: 0;
+    li 
+    {
+      p 
+      {
+        display: flex;
+        align-items: center;
+        img 
+        {
+          height: 60px;
+          width: 60px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  #logo-section
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    #actiac-logo
+    {
+      width: 140px;
+      height: 60px;
+    }
+    #itvmo-logo
+    {
+      width: 300px;
+      height: 50px;
+      margin-top: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 470px)
+{
+  #logo-section
+  {
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 10px;
+  }
+}
 //General class
 
 //Center everything inside the div
