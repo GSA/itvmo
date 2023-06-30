@@ -1280,6 +1280,79 @@ html *
   }
 }
 
+/*homepage-body section*/
+#homepage-body
+{
+  #resources-feed
+  {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    #popular-resources, #feed
+    {
+      height: 1125px;
+      .section-heading
+      {
+        margin-bottom: 15px;
+      }
+    }
+    #popular-resources
+    {
+      width: 73%;
+      .resource-cards 
+      {
+        max-width: 929px; //Custom resource card width for the homepage.
+      }
+      #go-to-resources
+      {
+        margin-top: 30px;
+        display: flex;
+        column-gap: 10px;
+        width: 204px;
+        height: 39px;
+        border-radius: 5px;
+        background-color: rgba(11, 71, 120, 1);
+        align-items: center;
+        justify-content: center;
+        border: none;
+        p 
+        {
+          font-size: 14px;
+          color: white;
+        }
+      }
+    }
+    #feed
+    {
+      width: 26.9%;
+      padding-left: 35px;
+    }
+    #divide-line
+    {
+      background-color: #d7d7d7;
+      width: 0.1%;
+      height: 900px;
+    }
+  }
+}
+/*Populate resource card for Homepage and Resources page*/
+.resource-cards
+{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  .resource-card
+  {
+    width: 100%;
+    // width: 929px;
+    height: 162px;
+    background-color: #1b2b85;
+  }
+}
+
+
 /*Mobile version of the site*/
 @media screen and (max-width: 63.99em)
 {
