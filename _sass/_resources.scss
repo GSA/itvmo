@@ -927,26 +927,18 @@ html *
 {
   max-width: 82.5rem !important;
 }
-.navbar, .usa-nav__inner
-{
-  margin: 0 !important;
-  margin-left: 30px !important;
-}
 .usa-nav__secondary 
 {
   bottom: 5rem;
     .usa-nav__secondary-links 
     {
       margin-right: 7px;
-      a 
-      {
-        font-size: 0.83rem;
-      }
     }
 }
 .navbar
 {
   height: 100%;
+  margin: auto;
   position: relative;
   padding: 0;
 
@@ -1548,10 +1540,6 @@ html *
   .secondary-item
   {      
     color: #565c65 !important;
-  }
-  .navbar,.usa-nav__inner
-  {
-    margin-left: 0px !important;
   }
   .navbar
   {
