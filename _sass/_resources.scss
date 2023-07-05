@@ -923,13 +923,9 @@ html *
   border-bottom: solid #e17141;
   height: 128px;
 }
-.navbar, .grid-container
+.navbar, .grid-container, .usa-nav__inner
 {
   max-width: 82.5rem !important;
-}
-.usa-nav__inner
-{
-  max-width: 100% !important;
 }
 .navbar, .usa-nav__inner
 {
