@@ -1171,7 +1171,7 @@ html *
     height: auto;
     width: 100%;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     #popular-resources, #feed
     {
@@ -1183,7 +1183,7 @@ html *
     }
     #popular-resources
     {
-      width: 73%;
+      width: auto;
       // .resource-cards 
       // {
       //   max-width: 929px; //Custom resource card width for the homepage.
@@ -1208,8 +1208,9 @@ html *
       }
       #popular-resources-ending
       {
-        width: 100%;
+        width: 929px;
       }
+      padding-right: 35px;
     }
     #feed
     {
@@ -1218,9 +1219,10 @@ html *
     }
     #divide-line
     {
+      margin-top: 30px;
       background-color: #d7d7d7;
       width: 0.1%;
-      height: 900px;
+      height: 950px;
     }
   }
 }
@@ -1256,6 +1258,8 @@ html *
       // justify-content: center;
       align-items: center;
       text-decoration: none;
+      border-left: 7px solid;
+      border-color:  rgba(89, 185, 222, 1);
       .label-color
       {
         background-color: rgba(89, 185, 222, 1);//This change around according to the resource card filter.
@@ -1294,7 +1298,7 @@ html *
         }
         .resource-detail
         {
-          height: 27px;
+          height: auto;
           width: 100%;
           margin-top: 20px;
           display: flex;
@@ -1302,7 +1306,7 @@ html *
 
           div 
           {
-            height: 100%;
+            height: 27px;
             border-radius: 20px;
             border-width: 1px;
             border-style: solid;
@@ -1388,7 +1392,7 @@ html *
 }
 
 /* Core-services section change for certain width */
-/* hompage-body section change flex from */
+/* hompage-body section change for certain width */
 @media screen and (max-width: 82.5em)
 {
   #core-services
@@ -1414,6 +1418,8 @@ html *
   }
   #homepage-body
   {
+    display: flex;
+    align-items: center;
     #resources-feed
     {
       flex-direction: column;
@@ -1424,17 +1430,94 @@ html *
         flex-direction: column;
         text-align: center;
         align-items: center;
+        padding-right: 0;
         .resource-cards, #popular-resources-ending
         {
           text-align: left;
-          width: 929px;
+          // max-width: 929px;
+          // width: auto;
         }
       }
       #divide-line
       {
-        height: 1px;
-        width: 900px;
-        margin-bottom: 15px;
+        display: none;
+      }
+      #feed
+      {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}
+/* hompage-body section change resource card to mobile version */
+@media screen and (max-width: 59.375em)
+{
+  #homepage-body
+  {
+    #resources-feed
+    {
+      #popular-resources
+      {
+        #popular-resources-ending
+        {
+          width: 100%;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+  .resource-cards
+  {
+    align-items: center;
+    .resource-card
+    {
+      width: 351px;
+      height: 281px;
+      a 
+      {
+        border-left: 7px solid;
+        border-color:  rgba(89, 185, 222, 1);
+        flex-direction: column;
+        .resource-description
+        {
+          p
+          {
+            -webkit-line-clamp: 3 !important;
+          }
+        }
+        .resource-content
+        {
+          width: 100%;
+          height: 80%;
+          .resource-detail
+          {
+            padding-top: 20px;
+            flex-wrap: wrap;
+            row-gap: 10px;
+          }
+        }
+        .resource-line
+        {
+          margin: 0;
+          width: 90%;
+          height: 1px;
+        }
+        .resource-info
+        {
+          height: 20%;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 15px;
+          margin-top: -8px;
+        }
       }
     }
   }
@@ -1592,7 +1675,7 @@ html *
 //Give the site some space to the left and right when the width of the browser is <= 82.5 rem
 @media screen and (max-width: 82.5rem)
 {
-  .navbar .usa-logo,.usa-header--extended .usa-nav__primary, .grid-container
+  .navbar .usa-logo,.usa-header--extended .usa-nav__primary
   {
     margin-left: 10px;
     margin-right: 10px;
