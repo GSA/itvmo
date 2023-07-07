@@ -1162,6 +1162,107 @@ html *
     height: 19px;
   }
 }
+/*footer section*/
+#footer-links
+{
+  .grid-container
+  {
+    padding-top: 20px;
+    // padding-left: 25px;
+    // padding-right: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    column-gap: 350px;
+    div 
+    {
+      column-gap: 10px;
+      ul
+      {
+        padding: 0;
+        margin-right: 20px;
+        li 
+        {
+          list-style-type: none;
+          font-size: 19px;
+          padding-bottom: 10px;
+          color: #333333;
+          a, a:visited
+          {
+            text-decoration: none;
+            color: #0B4778;
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+#footer-gsa
+{
+  background-color: rgba(27, 28, 27, 1);;
+  .grid-container
+  {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    .gsa-link
+    {
+      font-size: 18px;
+      color:#FFFFFF;
+      a, a:visited
+      {
+        color:#FFFFFF;
+      }
+    }
+    #gsa
+    {
+      display: flex;
+      column-gap: 20px;
+      img 
+      {
+        height: 49px;
+        width: 49px;
+      }
+      div 
+      {
+        display: flex;
+        flex-direction: column;
+        p 
+        {
+          margin: 0;
+        }
+        #itvmo
+        {
+          font-size: 16px;
+          color: #A9AEB1;
+        }
+      }
+    }
+    #gsa-options
+    {
+      margin-top: 25px;
+      padding-right: 180px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 10px;
+      div 
+      {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-right: 5px;
+        a 
+        {
+          color: #A9AEB1;
+        }
+      }
+    }
+  }
+}
 
 /*homepage-body section*/
 #homepage-body
@@ -1462,6 +1563,7 @@ html *
   }
 }
 /* hompage-body section change resource card to mobile version */
+/* footer change the flex direction of gsa-options from row to column*/
 @media screen and (max-width: 59.375em)
 {
   #homepage-body
@@ -1526,6 +1628,18 @@ html *
       }
     }
   }
+
+  #footer-gsa
+{
+  .grid-container
+  {
+    #gsa-options
+    {
+      flex-direction: column;
+      padding-right: 0;
+    }
+  }
+}
 }
 /* Core-services section change for certain width */
 @media screen and (max-width: 51.25em)
