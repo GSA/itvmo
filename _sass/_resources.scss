@@ -174,7 +174,49 @@ a.checked {
 }
 
 /*EVENTPAGE*/
-
+#event-annual-summit
+{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+  margin: 20px;
+  div 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    p 
+    {
+      text-align: center;
+      margin: 0;
+      font-weight: bold;
+    }
+    #annual-summit-intro 
+    {
+      font-size: 25px;
+      span
+      {
+        color: #f15922;
+      }
+    }
+    a 
+    {
+      background-color: #bd5727;
+    }
+  }
+  .speaker-image
+  {
+    height: 200px;
+    width: 200px;
+  }
+  .image-flip
+  {
+    transform: scaleX(-1);
+  }
+}
 //Make the \n going to break the line in HTML
 #eventDescription
 {
@@ -376,6 +418,16 @@ a.checked {
     display: flex;
     flex-wrap: wrap;
   }
+  #event-annual-summit
+  {
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    .speaker-image
+    {
+      display: none;
+    }
+  }
 }
 
 /*HOMEPAGE*/
@@ -391,11 +443,26 @@ a.checked {
 .logo-left {
   float: right;
 }
+.with-logo
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  h4 
+  {
+    margin-bottom: 0;
+  }
+}
 #ServiceNowLogo
 { 
-  height: 26.39px;
-  width: 165px;
-  margin: auto;
+  height: 52px;
+  width: 104px;
+}
+#cisa-logo
+{
+  height: 52px;
+  width: 52px;
 }
 #AWSLogo
 { 
@@ -532,11 +599,12 @@ a.checked {
   margin-top: 15px;
 }
 
-@media only screen and (max-width: 825px)
+@media only screen and (max-width: 935px)
 {
   .row {
     display: flex;
     height: 400px;
+    max-width: 400px;
   }
 
   .column-arrow
