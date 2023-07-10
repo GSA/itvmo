@@ -1,12 +1,12 @@
 ---
-title: LEVERAGING CATEGORY MANAGEMENT FOR IT PROCUREMENT
+title: ITVMO Annual Summit
 layout: page
 sidenav: false
 ---
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1 animate fade" id="annual-summit">
 <div class="center-div">
-  <h1 class="margin-0" >{{ page.title }}</h1>
+  <h1 class="margin-0" >LEVERAGING CATEGORY MANAGEMENT FOR IT PROCUREMENT</h1>
   <h3>Wednesday, August 02, 2023 - 09:00 AM - 04:00 PM EDT</h3>
   <a id="report" style="padding: 5px; font-size:20px; margin:auto;" href="https://www.actiac.org/act-iac-event/itvmo-annual-summit-leveraging-it-category-management-small-business">Register here</a>
 </div>
