@@ -1,18 +1,18 @@
 ---
-title: LEVERAGING CATEGORY MANAGEMENT FOR IT PROCUREMENT
+title: ITVMO Annual Summit
 layout: page
 sidenav: false
 ---
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1 animate fade" id="annual-summit">
 <div class="center-div">
-  <h1 class="margin-0" >{{ page.title }}</h1>
+  <h1 class="margin-0" >LEVERAGING CATEGORY MANAGEMENT FOR IT PROCUREMENT</h1>
   <h3>Wednesday, August 02, 2023 - 09:00 AM - 04:00 PM EDT</h3>
   <a id="report" style="padding: 5px; font-size:20px; margin:auto;" href="https://www.actiac.org/act-iac-event/itvmo-annual-summit-leveraging-it-category-management-small-business">Register here</a>
 </div>
 <p id="itvmo-annual-summit">
 <span>Leveraging Category Management for IT Procurement using Small Business, Original Equipment Manufacturers, and Best-in-Class Solutions</span>
-<img id="itvmo-summit-image" alt="ITVMO Annual Summit" src="{{site.baseurl}}/assets/images/logos/itvmo-annual-summit.png">
+<img id="itvmo-summit-image" alt="ITVMO Annual Summit logo" src="{{site.baseurl}}/assets/images/logos/itvmo-annual-summit.png">
 </p>
 <p>
 The focus of the Summit is to convene both industry and government with the goal of increasing knowledge of and fostering collaboration on key original equipment manufacturers (OEM) contract strategies, Best-in-Class IT contracts, small business, and emerging technology to meet Agency missions. This in-person event is intended to allow collaboration, best practice sharing, and support with and between agency practitioners who influence and execute IT buying within their organization and to educate small businesses whose IT solutions can support agency missions. The Summit will be held at the Deloitte Rosslyn location (1919 N Lynn St Suite 1500, Arlington, VA 22209).
