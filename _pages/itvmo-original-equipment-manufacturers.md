@@ -1,0 +1,308 @@
+---
+title: Original Equipment Manufacturers (OEM) Assessment Initiative
+layout: page
+sidenav: false
+---
+
+<section id="itvmo-oem" class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
+<h1 class="margin-top-0">{{ page.title }}</h1>
+<div class="margin-bottom-2">
+
+<p>
+To meet the growing demand for acquisition knowledge share including acquisition strategies, best practices, and governance approaches, the <a href="https://itvmo.gsa.gov/about/">IT Vendor Management Office (ITVMO)</a> developed and implemented the Original Equipment Manufacturer (OEM) Assessment Initiative.  The ITVMO engages directly with agency leadership and acquisition professionals, reviews reporting data, and analyzes annual IT spending trends to identify top OEMs being utilized across the federal government.  OEM Assessments are completed following a <a href="https://drive.google.com/file/d/1OeVIOgixP0g30tJw0y2CW8OEjWeDagBu">seven (7) phase approach</a>.
+</p>
+<p>
+The focus of the OEM Assessment is to work with agency acquisition professionals and Subject Matter Experts (SME) to identify common challenges and opportunities for a specific OEM.  Once identified, the ITVMO, as one voice for the federal government, engages directly with senior leadership at the OEM to develop and negotiate solutions to the common challenges which may include resources such as:
+
+<!-- <ul id="oem-list">
+  <li>Acquisition Strategy Guides</li>
+  <li>Best Practices</li>
+  <li>Buyers Guides</li>
+  <li>Direct engagements with OEMs</li>
+  <li>Office Hours Sessions</li>
+  <li>Recorded Training</li>
+  <li>Unique Terms and Conditions</li>
+  <li>Webinars</li>
+</ul> -->
+
+<table id="oem-table">
+  <tr>
+    <td>Acquisition Strategy Guides</td>
+    <td>Best Practices</td>
+    <td>Buyers Guides</td>
+  </tr>
+  <tr>
+    <td>Direct engagements with OEMs</td>
+    <td>Office Hours Sessions</td>
+    <td>Recorded Training</td>
+  </tr>
+  <tr>
+    <td>Unique Terms and Conditions</td>
+    <td>Webinars</td>
+    <!-- <td>Recorded Training</td> -->
+  </tr>
+</table>
+</p>
+<p>
+Once resources are identified, the ITVMO documents and publishes the resources and reports back to both agency leadership, acquisition professionals, and SMEs informing all customers about the solutions that were developed and how to access all the available resources. 
+</p>
+<p>
+Below are the results of these ongoing efforts.  Written materials are stored on OMB’s MAX portal which requires either a .gov or .mil email address for access.  Webinar and Office Hours Session videos are stored on Acquisition Gateway.
+</p>
+<p>
+To be included in discussions or help identify OEMs for future assessments, please complete our <a href="https://app.smartsheetgov.com/b/form/f642f814dd6f4a3285b06b95fb8e4a7a">Point of Contact (PoC) Survey</a> to ensure you stay up to date on all the work the ITVMO is completing for OEMs.
+</p>
+
+</div>
+
+<div class="usa-accordion">
+<h2></h2>
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
+          Adobe
+        </button>
+      </h3>
+      <div id="b-a1" class="usa-accordion__content" hidden="">
+      <div>
+            <div>
+              <p>
+                In 2021, the ITVMO began evaluating Adobe through the OEM Assessment Process.  As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused on a perceived lack of support from Adobe in supporting Federal Agencies with sufficient explanations on how to leverage the Adobe products best suited for their unique environments.
+              </p>
+              <p>
+                The ITVMO has reengaged with Adobe as of February 2023, and will continue to seek solutions and provide updates to previously identified challenges, as well as document and begin discussions on any new issues that the agency community identifies. 
+              </p>
+              <p>
+                Information, resources, and trainings as a result of the Assessment and ongoing engagements can be found below.
+              </p>
+            </div>
+              <div class="grid-row">
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Assessment Information</h4>
+                  </div>
+                  <ul>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">Agency Challenges & Proposed Solutions</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Summary.pdf?api=v2">OEM Assessment Summary</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Executive%20Memo%20-%20OEM%20Assessment%20Closeout.pdf?api=v2">Executive Close Out Memo</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Closeout.pdf?api=v2">Close Out Flyer</a></li>
+                  </ul>
+                </div>
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Educational Videos</h4>
+                  </div>
+                  <ul>
+                    <li><i>Coming Soon</i></li>
+                  </ul>
+                </div>
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Resources</h4>
+                  </div>
+                  <ul>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Modernize%20the%20Mission%20of%20Government.pdf?api=v2">Adobe Presentation:  Modernizing the Mission of the Government</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Guide.pdf?api=v2">Vendor Assessment Guide</a></li>
+                  </ul>
+                </div>
+              </div>
+      </div>
+      </div>
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a2">
+          Amazon Web Services (AWS)
+        </button>
+      </h3>
+      <div id="b-a2" class="usa-accordion__content" hidden="">
+      <div>
+            <div>
+            <p>
+            In August 2021, the ITVMO began evaluating AWS through the OEM Assessment Process. As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused on monitoring and managing consumption and improved invoice management.  
+            </p>
+            <p>
+              Information, resources, and trainings as a result of the Assessment and ongoing engagements can be found below.
+            </p>
+              <div class="grid-row">
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Assessment Information</h4>
+                  </div>
+                  <ul>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">Agency Challenges & Proposed Solutions</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Vendor%20Assessment%20Summary.pdf?api=v2">OEM Assessment Summary</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Executive%20Memo%20-%20OEM%20Assessment%20Closeout.pdf?api=v2">Executive Close Out Memo</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20OEM%20Assessment%20Close-Out%20Summary.pdf?api=v2">Close Out Flyer</a></li>
+                  </ul>
+                </div>
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Educational Videos</h4>
+                  </div>
+                  <ul>
+                    <li>Webinar - Acquisition Best Practices - <i>Coming Soon</i></li>
+                    <li>Office Hours Session 1 - Best Practices Guidance - <i>Coming Soon</i></li>
+                    <li>Office Hours Session 2 - Management and Vendor Guidance - <i>Coming Soon</i></li>
+                  </ul>
+                </div>
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Resources</h4>
+                  </div>
+                  <ul>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Acquisition%20Best%20Practices.pdf?api=v2">Acquisition Best Practices</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Acquisitions%20Guide.pdf?api=v2">Acquisitions Guide</a></li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+      </div>
+      </div>
+            <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a3">
+          Cisco
+        </button>
+      </h3>
+      <div id="b-a3" class="usa-accordion__content" hidden="">
+      <div>
+            <div>
+              <p>
+              In August 2022, the ITVMO began evaluating Cisco through the OEM Assessment Process. As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused on price escalation and budget planning, license management, end user license agreement confusion, and extended lead times for hardware.
+              </p>
+              <p>
+              Information, resources, and trainings as a result of the Assessment and ongoing engagements can be found below.
+              </p>
+
+              <div class="grid-row">
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Assessment Information</h4>
+                  </div>
+                  <ul>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Cisco%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">Agency Challenges & Proposed Solutions</a></li>
+                    <li>Executive Close Out Memo - <i>Coming Soon</i></li>
+                    <li>Close Out Flyer - <i>Coming Soon</i></li>
+                  </ul>
+                </div>
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Educational Videos</h4>
+                  </div>
+                  <ul>
+                    <li><i>Coming Soon</i></li>
+                  </ul>
+                </div>
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Resources</h4>
+                  </div>
+                  <ul>
+                    <li><i>Coming Soon</i></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      </div>
+      </div>
+
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a4">
+          Microsoft
+        </button>
+      </h3>
+      <div id="b-a4" class="usa-accordion__content" hidden="">
+      <div>
+            <div>
+              <p>
+                In July 2021, the ITVMO began a deep dive of Microsoft to support Agencies with specific procurement issues including transitioning from G3 to G5, negotiating terms and conditions, and contract lifecycle management.  
+              </p>
+              <p>
+                In July 2022, the ITVMO began evaluating Microsoft through the OEM Assessment Process.  As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused on standard terms and conditions, consumption management, extended audit logging concessions, and annual budget forecasting support.  
+              </p>
+              <p>
+                Information, resources, and trainings as a result of the Assessment and ongoing engagements can be found below.
+              </p>
+            </div>
+
+              <div class="grid-row">
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Assessment Information</h4>
+                  </div>
+                  <ul>
+                    <li><a href="#">Agency Challenges & Proposed Solutions</a></li>
+                    <li>OEM Assessment Summary -<br> <i>Coming Soon</i></li>
+                    <li>Executive Close Out Memo -<br> <i>Coming Soon</i></li>
+                    <li>Close Out Flyer -<br> <i>Coming Soon</i></li>
+                  </ul>
+                </div>
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Educational Videos</h4>
+                  </div>
+                  <ul>
+                    <li><a href="https://community.max.gov/download/attachments/2204974006/Microsoft%20Training%201%20Negotiating%20Terms%20and%20Conditions_20210914.pptx?api=v2">Webinar 1: Negotiating Terms and Conditions</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2204974006/Microsoft%20Training%202%20Infrastructure%20and%20Security%20Management_20210923.pptx?api=v2">Webinar 2: Infrastructure and Security Management</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2204974006/Microsoft%20Training%203%20IT%20Contract%20Lifecyle%20Management_20210928.pptx?api=v2">Webinar 3: IT Contract Lifecycle Management</a></li>
+                  </ul>
+                </div>
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Resources</h4>
+                  </div>
+                  <ul>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20G5%20Transition%20Guide.pdf?api=v2">G5 Transition Guide</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Session%201%20-%20Negotiation%20Terms%20and%20Conditions.pdf?api=v2">Session 1:  Negotiating Terms and Conditions</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Session%202%20-%20Infrastructure%20and%20Security%20Management.pdf?api=v2">Session 2:  Infrastructure and Security Management</a></li>
+                    <li><a href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Session%203%20-%20IT%20Contract%20Lifecyle%20Management.pdf?api=v2">Session 3:  IT Contract Lifecycle Management</a></li>
+                  </ul>
+                </div>
+              </div>
+
+      </div>
+      </div>
+
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a5">
+          Oracle
+        </button>
+      </h3>
+      <div id="b-a5" class="usa-accordion__content" hidden="">
+      <div>
+            <div>
+              <p>The Oracle Vendor Assessment process began in May of 2021. After careful consideration and completion of each phase, the initial Oracle Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
+              <p>Agency buyers click  <a href="https://community.max.gov/display/Egov/1.+Oracle">here</a> for the AWS Buyers Guide on OMB MAX.</p>
+            </div>
+      </div>
+      </div>
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a6">
+          Salesforce
+        </button>
+      </h3>
+      <div id="b-a6" class="usa-accordion__content" hidden="">
+      <div>
+            <div>
+              <p>The Salesforce Vendor Assessment process began in September of 2022. After careful consideration and completion of each phase, the initial Abode Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
+              <p>Agency buyers click  <a href="https://community.max.gov/display/Egov/6.+Salesforce">here</a> for the AWS Buyers Guide on OMB MAX.</p>
+            </div>
+      </div>
+      </div>
+      <h3 class="usa-accordion__heading">
+        <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a7">
+          ServiceNow
+        </button>
+      </h3>
+      <div id="b-a7" class="usa-accordion__content" hidden="">
+      <div>
+            <div>
+              <p>The ServiceNow Vendor Assessment process began in March of 2022. After careful consideration and completion of each phase, the initial ServiceNow Assessment is available for viewing for .gov and .mil audiences on OMB MAX.</p>
+              <p>Agency buyers click  <a href="https://community.max.gov/display/Egov/7.+ServiceNow">here</a> for the AWS Buyers Guide on OMB MAX.</p>
+            </div>
+      </div>
+      </div>
+
+
+
+
+
+</div>
+</section>

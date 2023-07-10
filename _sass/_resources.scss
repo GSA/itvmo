@@ -870,6 +870,44 @@ a.checked {
     row-gap: 10px;
   }
 }
+//OEM page
+#itvmo-oem
+{
+  #oem-table
+  {
+    width: 100%;
+    table-layout: fixed;
+    tr, td
+    {
+      border:1px solid black;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 250px;
+      background-color: #1b2b85;
+      color: white;
+
+      // border:3px solid #1b2b85;
+      // border-radius: 10px;
+      // text-align: center;
+      // max-width: 250px;
+      // font-weight:600;
+      // font-size: 15px;
+    }
+  }
+
+  .grid-row
+  {
+    column-gap: 20px;
+    p
+    {
+      background-color: #d9e7f5 ;
+    }
+    ul 
+    {
+      padding-left: 20px;
+    }
+  }
+}
 //General class
 
 //Center everything inside the div
