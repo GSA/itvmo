@@ -1,5 +1,5 @@
 ---
-title: Parallel Processes Can Speed Up  Acquisition
+title: Parallel Processes Can Speed Up Acquisition
 description: Taking the parallel versus sequential route in the acquisition
   process, might speed up the way the DOD gets new systems into the hands of
   warfighters.
