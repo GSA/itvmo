@@ -928,6 +928,42 @@ a.checked {
       margin-top: 10px;
     }
   }
+  .center-table
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .styled-table
+    {
+      min-width: 300px;
+      max-width: 900px;
+      li 
+      {
+        text-align: left;
+      }
+      .location
+      {
+        text-align: end;
+        font-weight: 500;
+      }
+      th 
+      {
+        min-width: 158px;
+      }
+      td 
+      {
+        li 
+        {
+          color:#1b2b85;
+          font-weight: 700;
+          span 
+          {
+            color: #f15922;
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 470px)
 {
