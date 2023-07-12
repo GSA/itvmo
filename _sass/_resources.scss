@@ -878,7 +878,9 @@ a.checked {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-left: 16px;
+    row-gap: 10px;
     li 
     {
       width: 300px;
