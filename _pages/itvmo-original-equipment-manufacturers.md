@@ -14,22 +14,16 @@ To meet the growing demand for acquisition knowledge share including acquisition
 <p>
 The focus of the OEM Assessment is to work with agency acquisition professionals and Subject Matter Experts (SME) to identify common challenges and opportunities for a specific OEM.  Once identified, the ITVMO, as one voice for the federal government, engages directly with senior leadership at the OEM to develop and negotiate solutions to the common challenges which may include resources such as:
 
-<table id="oem-table">
-  <tr>
-    <td>Acquisition Strategy Guides</td>
-    <td>Best Practices</td>
-    <td>Buyers Guides</td>
-  </tr>
-  <tr>
-    <td>Direct engagements with OEMs</td>
-    <td>Office Hours Sessions</td>
-    <td>Recorded Training</td>
-  </tr>
-  <tr>
-    <td>Unique Terms and Conditions</td>
-    <td>Webinars</td>
-  </tr>
-</table>
+<ul id="oem-list">
+    <li>Acquisition Strategy Guides</li>
+    <li>Best Practices</li>
+    <li>Buyers Guides</li>
+    <li>Direct engagements with OEMs</li>
+    <li>Office Hours Sessions</li>
+    <li>Recorded Training</li>
+    <li>Unique Terms and Conditions</li>
+    <li>Webinars</li>
+</ul>
 </p>
 <p>
 Once resources are identified, the ITVMO documents and publishes the resources and reports back to both agency leadership, acquisition professionals, and SMEs informing all customers about the solutions that were developed and how to access all the available resources. 
@@ -66,10 +60,10 @@ To be included in discussions or help identify OEMs for future assessments, plea
               <div class="grid-row">
                 <div class="tablet:grid-col">
                   <div class="bg-primary-lighter padding-105">
-                    <h4 class="margin-0">Assessment Information</h4>
+                    <h4 id="assessment-info" class="margin-0">Assessment Information</h4>
                   </div>
                   <ul>
-                    <li><a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">Agency Challenges & Proposed Solutions</a></li>
+                    <li><a header="assessment-info" target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">Agency Challenges & Proposed Solutions</a></li>
                     <li><a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Summary.pdf?api=v2">OEM Assessment Summary</a></li>
                     <li><a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Executive%20Memo%20-%20OEM%20Assessment%20Closeout.pdf?api=v2">Executive Close Out Memo</a></li>
                     <li><a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Closeout.pdf?api=v2">Close Out Flyer</a></li>
