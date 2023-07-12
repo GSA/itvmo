@@ -1017,22 +1017,21 @@ html *
   height: auto;
   .grid-container
   {
+    justify-content: center;
     flex-wrap: wrap;
-    padding-top: 10px;
-    padding-bottom: 10px
+    row-gap: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   .grid-container, .usa-hero-panel, .usa-hero-welcome
   {
     display: flex;
   }
-  .grid-container, .usa-hero-panel
-  {
-    height: 100%;
-  }
   .usa-hero-panel, .usa-hero-welcome
   {
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    width: 660px;
 
   }
   .usa-hero-panel
@@ -1049,13 +1048,13 @@ html *
       background-color: white;
       border: none;
       border-radius: 30px;
-
-      background-image: url('../assets/images/search-icon.svg'); /* Add a search icon to input */
-      background-position: right 2.5% bottom 50%;
-      background-repeat: no-repeat; /* Do not repeat the icon image */
+      margin-left: 5px;
       padding-left: 20px;
       font-size: 13px;
       font-weight: 400; 
+      background-image: url('../assets/images/search-icon.svg');
+      background-position: right 2.5% bottom 50%;
+      background-repeat: no-repeat; 
     }
     h3, p
     {
@@ -1088,6 +1087,7 @@ html *
       display: block;
       height: 425px;
       width: 645px;
+      border-radius: 10px;
       background-color: white;
     }
   }
@@ -1524,10 +1524,57 @@ html *
   }
 }
 
+/* Hero section change for certain width */
+@media screen and (max-width: 41.25em)
+{
+  .usa-hero
+  {
+    #welcome
+    {
+      p
+      {
+        width: auto;
+        padding-right: 20px;
+      }
+    }
+  //Mobile version of the highlight card.
+    .usa-hero-panel
+    {
+      //Change the highlight to specific width.
+      #dynamic-panel
+      {
+        width: 360px;
+      }
+    }
+  }
+}
+/* Hero section change for certain width */
 /* Core-services section change for certain width */
 /* hompage-body section change for certain width */
 @media screen and (max-width: 82.5em)
 {
+    /*usa-hero section*/
+  .usa-hero
+  {
+    //Readjust the hero background.
+    background-position: right !important;
+    .grid-container
+    {
+      .usa-hero-panel, .usa-hero-welcome
+      {
+        #welcome
+        {
+          //Make searchbar width dynamic.
+          #searchbar
+          {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+          }
+        }
+      }
+    }
+  }
   #core-services
   {
     .section-heading
