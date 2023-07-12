@@ -1014,31 +1014,54 @@ html *
 /*usa-hero section*/
 .usa-hero
 {
-  height: 424px;
+  height: auto;
+  .grid-container
+  {
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px
+  }
   .grid-container, .usa-hero-panel, .usa-hero-welcome
   {
-    height: 100%;
     display: flex;
+  }
+  .grid-container, .usa-hero-panel
+  {
+    height: 100%;
   }
   .usa-hero-panel, .usa-hero-welcome
   {
     flex-direction: column;
-    align-items: center;
     justify-content: space-around;
 
+  }
+  .usa-hero-panel
+  {
+    align-items: center;
   }
   #welcome
   {
     #searchbar
     {
       display: block;
-      width: 100%;
+      width: 584px;
       height: 51px;
-      background-color: #1b2b85;
+      background-color: white;
+      border: none;
+      border-radius: 30px;
+
+      background-image: url('../assets/images/search-icon.svg'); /* Add a search icon to input */
+      background-position: right 2.5% bottom 50%;
+      background-repeat: no-repeat; /* Do not repeat the icon image */
+      padding-left: 20px;
+      font-size: 13px;
+      font-weight: 400; 
     }
     h3, p
     {
-      color: #000000;
+      
+      padding-left: 20px;
+      color: white;
     }
     h3 
     {
@@ -1054,6 +1077,8 @@ html *
       font-size: 18px;
       line-height: 25px;
       margin-top: 5px;
+      margin-bottom: 30px;
+      width: 584px;
     }
   }
   .usa-hero-panel
@@ -1061,9 +1086,9 @@ html *
     #dynamic-panel
     {
       display: block;
-      width: 490px;
-      height: 324px;
-      background-color: #1b2b85;
+      height: 425px;
+      width: 645px;
+      background-color: white;
     }
   }
 }
@@ -1760,39 +1785,37 @@ html *
     right: 0 !important;
   }
   /*usa-hero section*/
-  .usa-hero
-  {
-    height: auto;
-    .grid-container
-    {
-      align-items: flex-start;
-      justify-content: center;
-      .grid-row
-      {
-        margin-top: 10px;
-        margin-bottom: 15px;
-        flex-direction: column;
-      }
-      .usa-hero-panel, .usa-hero-welcome
-      {
-        height: 50%;
-        justify-content: initial;
-      }
-      //Change the design of the dynamic panel for mobile version
-      .usa-hero-panel, .usa-hero-welcome
-      {
-        #dynamic-panel,#welcome
-        {
-          width: 100%;
-          max-width: 490px;
-          #searchbar
-          {
-            margin-bottom: 10px;
-          }
-        }
-      }
-    }
-  }
+  // .usa-hero
+  // {
+  //   height: auto;
+  //   .grid-container
+  //   {
+  //     align-items: flex-start;
+  //     justify-content: center;
+
+  //       // margin-top: 10px;
+  //       // margin-bottom: 15px;
+  //       // flex-direction: column;
+  //     .usa-hero-panel, .usa-hero-welcome
+  //     {
+  //       height: 50%;
+  //       justify-content: initial;
+  //     }
+  //     //Change the design of the dynamic panel for mobile version
+  //     .usa-hero-panel, .usa-hero-welcome
+  //     {
+  //       #dynamic-panel,#welcome
+  //       {
+  //         width: 100%;
+  //         max-width: 490px;
+  //         #searchbar
+  //         {
+  //           margin-bottom: 10px;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 //Give the site some space to the left and right when the width of the browser is <= 82.5 rem
 @media screen and (max-width: 82.5rem)
