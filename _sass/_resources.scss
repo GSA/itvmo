@@ -974,6 +974,37 @@ a.checked {
     row-gap: 10px;
   }
 }
+//OEM page
+#itvmo-oem
+{
+  #oem-list
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 16px;
+    row-gap: 10px;
+    li 
+    {
+      width: 300px;
+      font-weight: 600;
+    }
+  }
+
+  .grid-row
+  {
+    column-gap: 20px;
+    p
+    {
+      background-color: #d9e7f5 ;
+    }
+    ul 
+    {
+      padding-left: 20px;
+    }
+  }
+}
 //General class
 
 //Center everything inside the div
