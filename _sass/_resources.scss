@@ -1378,6 +1378,7 @@ html *
     width: 929px;
     height: 162px;
     background-color: white;
+    border-left: rgba(89, 185, 222, 1) 7px solid;
     a 
     {
       width: 100%;
@@ -1386,8 +1387,9 @@ html *
       // justify-content: center;
       align-items: center;
       text-decoration: none;
-      border-left: 7px solid;
-      border-color:  rgba(89, 185, 222, 1);
+      color: #000000;
+      border: #d7d7d7 1px solid;
+      border-left: none;
       .label-color
       {
         background-color: rgba(89, 185, 222, 1);//This change around according to the resource card filter.
@@ -1421,10 +1423,14 @@ html *
         }
         .resource-name
         {
+          display: flex;
+          align-items: center;
           font-size: 18px;
           font-weight: bold;
+          color: #062349;
           img
           {
+            margin-left: 10px;
             width: 17px;
             height: 14px;
           }
@@ -1514,12 +1520,22 @@ html *
   a:visited 
   {
     color: #000000;
+    .resource-name
+    {
+      color: #062349
+    }
   }
   .resource-card:hover
   {
-    .resource-name
+    a 
     {
-      text-decoration: underline;
+      background-color: #f2f2f2;
+      border: #aaaaaa 1px solid;
+      border-left: none;
+      .resource-name
+      {
+        text-decoration: underline;
+      }
     }
   }
 }
