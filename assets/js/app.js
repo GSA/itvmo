@@ -241,19 +241,19 @@ function initHighlightButtons()
 {
   var prev = document.getElementsByClassName('prev')[0];
   var next = document.getElementsByClassName('next')[0];
-  var prevMobile = document.getElementsByClassName('prev-mobile')[0];
-  var nextMobile = document.getElementsByClassName('next-mobile')[0];
+  // var prevMobile = document.getElementsByClassName('prev-mobile')[0];
+  // var nextMobile = document.getElementsByClassName('next-mobile')[0];
 
   prev.addEventListener('click', () => prevSlide());
   next.addEventListener('click', () => showSlides());
-  prevMobile.addEventListener('click', () => prevSlide());
-  nextMobile.addEventListener('click', () => showSlides());
+  // prevMobile.addEventListener('click', () => prevSlide());
+  // nextMobile.addEventListener('click', () => showSlides());
 
   // Allow user to use the next and previous button without the need of the mouse.
   prev.onkeydown = function(key){previousSlide(key)};
   next.onkeydown = function(key){nextSlide(key)};
-  prevMobile.onkeydown = function(key){previousSlide(key)};
-  nextMobile.onkeydown = function(key){nextSlide(key)};
+  // prevMobile.onkeydown = function(key){previousSlide(key)};
+  // nextMobile.onkeydown = function(key){nextSlide(key)};
 
   function nextSlide(key)
   {
@@ -348,7 +348,7 @@ $(document).ready(function (e) {
 
 /** Run functions **/
 //Run Home page 
-if(document.getElementById('homepage-highlight') != null)
+if(document.getElementById('dynamic-panel') != null)
 {
   initHighlightButtons();
   runHighlight();

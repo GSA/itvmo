@@ -13,13 +13,78 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
             The ITVMO serves as a trusted independent advisor and advocate to help agencies buy common IT goods and services in compliance with procurement laws. As a one-stop shop, we can leverage governmentwide IT procurement data, conduct market research, and develop shared agency acquisition knowledge to support agencies in procurement decisions.
           </p>
           <input id="searchbar" type="text" onkeyup="" placeholder="What are you looking for?">
-          <!-- {% include searchgov/form.html searchgov=site.searchgov %} -->
         </div>
       </div>
       <div class="usa-hero-panel">
         <div id="dynamic-panel">
+          <a class="prev" tabindex="0" title="Go to previous highlight">
+            <img src="/assets/images/icons/arrow-icon.svg" alt="previous arrow">
+          </a>
+          <div class = "dotDiv">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+          <div class="slideshow-container column-card">
+            <div class="mySlides animate fade" onmouseover="stopSlide()" onmouseout="runSlide()" style="display: block;">
+                <img class="highlight-background" src="/assets/images/highlight-images/highlight-image-testing.png" alt="highlight background">
+                <div class="highlight-info">
+                  <div>
+                    <h4>
+                      Govwide IT Category and ACT-IAC Host Small Business Alliance Forum
+                    </h4>
+                    <p class="two-line-max">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laborum voluptatem expedita consequuntur. Amet, quam. Esse, vitae incidunt nihil iure nobis nisi ullam exercitationem quibusdam quae quo repellendus expedita minus eligendi nam nemo beatae. Hic expedita reprehenderit aliquam esse inventore porro voluptatibus temporibus! Vel officiis architecto, maxime odit aspernatur hic.
+                    </p>
+                  </div>
+                  <div class="highlight-info-bottom">
+                    <p class="publish-date">
+                      <img src="/assets/images/icons/clock-icon.svg" alt="Clock icon">
+                      May 13, 2023
+                    </p>
+                    <a class="read-more" href="{{site.baseurl}}/emerge-tech-small-business-event"
+                    aria-label="Topic: Govwide IT Category and ACT-IAC Host Small Business Alliance Forum"
+                    >
+                      <p>READ MORE</p>
+                    </a>
+                  </div>
+                </div>
+            </div>
+            <div class="mySlides animate fade" onmouseover="stopSlide()" onmouseout="runSlide()">
+                <img class="highlight-background" src="/assets/images/highlight-images/highlight-image-testing2.png" alt="highlight background">
+                <div class="highlight-info">
+                  <div>
+                    <h4>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, minima.
+                    </h4>
+                    <p class="two-line-max">
+                      The Emerging Tech Small Business event was held on March 7, 2023 The event navigated the ever-changing federal government contract…
+                    </p>
+                  </div>
+                  <div class="highlight-info-bottom">
+                    <p class="publish-date">
+                      <img src="/assets/images/icons/clock-icon.svg" alt="Clock icon">
+                      May 13, 2023
+                    </p>
+                    <a class="read-more" href="{{site.baseurl}}/emerge-tech-small-business-event"><p>READ MORE</p></a>
+                  </div>
+                </div>
+            </div>
 
+          </div>
+          <a class="next" tabindex="0" title="Go to next highlight">
+            <img src="/assets/images/icons/arrow-icon.svg" alt="next arrow">
+          </a>
         </div>
       </div>
   </div>
 </section>
+
+
+{% comment %}
+Use this section to highlight key elements of your site. Some sites will only have two while others may have six to
+eight.
+{% endcomment %}
+
+
+
+

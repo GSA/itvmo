@@ -4,7 +4,7 @@ layout: page
 sidenav: false
 ---
 
-<button id="rate-us" title="Direct to google form of rating" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdIaGJC3-9xLa0NxwAnNbZUO8ZXirYcjXlf3wEVj5aEBYjCyA/viewform?usp=sf_link?'" type="button">RATE US <img alt="Star" src="{{site.baseurl}}/assets/images/star-icon.svg"></button>
+<button id="rate-us" title="Direct to google form of rating" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdIaGJC3-9xLa0NxwAnNbZUO8ZXirYcjXlf3wEVj5aEBYjCyA/viewform?usp=sf_link?'" type="button">RATE US <img alt="Star" src="{{site.baseurl}}/assets/images/icons/star-icon.svg"></button>
 
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
