@@ -705,6 +705,11 @@ a.checked {
 }
 
 //newsletter page
+.person-intro
+{
+  width: 157px;
+  height: 152px;
+}
 .centerHeading
 {
   text-align: center;
@@ -867,6 +872,15 @@ a.checked {
   }
 }
 /*Annual Summit page*/
+#itvmo-summit-image
+{
+  margin-top: 10px;
+  width: 250px;
+  height: 125px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 #annual-summit
 {
   #itvmo-annual-summit
@@ -880,12 +894,6 @@ a.checked {
       max-width: 700px;
       font-size: 20px;
       font-weight: 500;
-    }
-    #itvmo-summit-image
-    {
-      margin-top: 10px;
-      width: 250px;
-      height: 125px;
     }
   }
   ul
@@ -1006,6 +1014,10 @@ a.checked {
   }
 }
 //General class
+.round-image
+{
+  border-radius: 50%;
+}
 
 //Center everything inside the div
 .center-div

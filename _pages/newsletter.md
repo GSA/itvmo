@@ -4,90 +4,74 @@ layout: page
 sidenav: false
 ---
 
-<button id="rate-us" title="Direct to google form of rating" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdIaGJC3-9xLa0NxwAnNbZUO8ZXirYcjXlf3wEVj5aEBYjCyA/viewform?usp=sf_link?'" type="button">RATE US <img alt="Star" src="{{site.baseurl}}/assets/images/star-icon.svg"></button>
+<button id="rate-us" title="Direct to google form of rating" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfXT6Nn5BiGPMPIJ3EAokFTXLo_Vf758yq6IPFhF7bmNtAMEg/viewform?usp=sf_link'" type="button">RATE US <img alt="Star" src="{{site.baseurl}}/assets/images/star-icon.svg"></button>
 
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
-    <h1 class="margin-top-0 centerHeading">ITVMO Newsletter Q2 FY23</h1>
-    <h2 class="margin-top-0 centerHeading">ITVMO Annual Summit-- Coming on August 2nd</h2>
-
+    <h1 class="margin-top-0 centerHeading">ITVMO Newsletter Q3 FY2023</h1>
+    <h2 class="margin-top-0 centerHeading">ITVMO Annual Summit -- Leveraging Category Management for IT Procurement
+    </h2>
+    <img id="itvmo-summit-image" alt="ITVMO Annual Summit logo" src="{{site.baseurl}}/assets/images/logos/itvmo-annual-summit-large.png">
+    <br>
     <div class="margin-bottom-2">
-        The ITVMO will be hosting an in-person annual summit on August 2nd to convene both industry and government with the goal of <b>Leveraging IT category management for small business, emerging technologies, and Best-in-Class solutions to meet Agency missions</b>.
+        The ITVMO is hosting an Annual Summit on August 2nd, 2023. We will convene both industry and government with the goal of increasing knowledge of and fostering collaboration on key original equipment manufacturers (OEM) contract strategies, Best-in-Class IT contracts, small business, and emerging technology to meet Agency missions. This in-person event is intended to allow collaboration, best practice sharing, and support with and between agency practitioners who influence and execute IT buying within their organization and to educate small businesses whose IT solutions can support agency missions. The Summit will be held at the Deloitte Rosslyn location (1919 N Lynn St Suite 1500, Arlington, VA 22209).
     </div>
     <div class="margin-bottom-2">
-    There will be opportunities to engage with agency and industry leaders, hear from a variety of panelists, and user case success stories.
-    </div>
-    <div class="margin-bottom-2 centerHeading">
-        <b>Interested in more information?<br>
-            <a href="https://www.actiac.org/act-iac-event/leveraging-category-management-it-procurement">Learn more.
-            </a>
-        </b>
+    Participants will have opportunities to engage with government and industry leaders during engaging talks, panel discussions and Q&A sessions. Summit attendees will learn about evolving IT acquisition priorities and opportunities, as well as resources designed to support agency buyers and small businesses looking to participate in the government IT market. 4 Continuous Learning Points (CLP) will be awarded to eligible attendees.
     </div>
     <br>
 </section>
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
     <br>
-    <h2 class="margin-top-0 centerHeading">Announcing New Emerging Tech / Artificial Intelligence Working Group</h2>
+    <h2 class="margin-top-0 centerHeading">Agency Showcase: Uses Cases for AI</h2>
     <div class="margin-bottom-2">
-        The ITVMO’s IT Buyers COP, in collaboration with the GSA Office of Innovation, is chartering a working group with the goal of identifying governmentwide and agency specific standards for using emerging technologies like artificial intelligence (AI) and natural language processing (NLP) to revolutionize the federal procurement process. 
+    Artificial Intelligence (AI) is transforming industries and revolutionizing the way agencies will operate in the future. As agencies strive to enhance their efficiency, effectiveness, and decision-making processes, AI is emerging as a powerful tool in their arsenal. This article details some compelling use cases for AI and explore how it can benefit your agency.
     </div>
     <div class="margin-bottom-2">
-    Today, agency IT buyers are getting locked into multi-year, broad scope contracts before fully understanding the procured emerging technology’s (e.g., AI) solution capability, use, or operability standards. 
+    <b>Are you an AI vendor supporting an agency procurement process? An AI buyer leveraging this emerging tech to enhance your acquisition efforts? Do you have additional AI use cases for the federal government? Join our working group and engage and connect with the IT Buyers community to help us learn more about this emerging technology. Email us at ITBCOP@gsa.gov, subject: AI Use Cases.</b>
     </div>
     <div class="margin-bottom-2">
-    The new working group will pull agency use cases and best practices to inform strategies and encourage cross-agency collaboration. The effort seeks domain expertise from agency practitioners and industry leaders to develop guidance and tools that will support agency buyers in their procurement and use of emerging technology. The end goal is to drive business efficiencies at the agency and governmentwide scale. 
+    <b><u>Intelligent Automation:</u></b> AI-powered automation can streamline repetitive tasks and free up valuable human resources. From automating data entry and document processing to managing routine inquiries and customer support, intelligent automation can significantly improve operational efficiency and reduce costs. Agencies can leverage AI to augment their workforce and enable employees to focus on more complex and strategic activities.
     </div>
     <div class="margin-bottom-2">
-    Join the April IT Buyers CoP to hear more on emerging technology trends and the use of AI in the federal government. The April CoP will also formally announce the working group and call for participants. 
+    <b><u>Data Analytics and Insights:</u></b> With the abundance of data available to agencies, extracting meaningful insights can be a daunting task. AI techniques such as predictive analytics and machine learning enable agencies to analyze vast amounts of structured and unstructured data, uncover hidden patterns, and gain actionable intelligence. This empowers decision-makers to make data-driven choices, enhance policy formulation, and optimize service delivery.
     </div>
-    <div class="margin-bottom-2 centerHeading">
-        <b><a href="https://docs.google.com/forms/d/e/1FAIpQLSchyZcTGa-DyDcR3USPSh7jXtsL2h3EhvilVzNGZuab8IqvHg/viewform?usp=sf_link?">Click here to get involved!</a></b>
+    <div class="margin-bottom-2">
+    <b><u>Natural Language Processing:</u></b> AI's natural language processing capabilities can transform how agencies interact with their stakeholders. Chatbots and virtual assistants equipped with AI algorithms can handle routine inquiries, provide personalized recommendations, and deliver 24/7 support. By leveraging AI, agencies can enhance stakeholder experiences, reduce response times, and improve service delivery.
+    </div>
+    <div class="margin-bottom-2">
+    <b><u>Cybersecurity and Threat Detection:</u></b> AI plays a crucial role in combating cyber threats and securing sensitive information. Machine learning algorithms can analyze vast amounts of network data to identify anomalies, detect potential breaches, and proactively respond to security incidents. AI-powered cybersecurity solutions are essential for safeguarding critical systems, protecting data integrity, and staying one step ahead of sophisticated cyber threats.
+    </div>
+    <div class="margin-bottom-2">
+    The governmentwide ITVMO believes in fostering a collaborative ecosystem for knowledge sharing and innovation. If your agency is utilizing AI technologies or considering AI procurements, we invite you to share your experiences, insights, and use cases with us. By doing so, you can contribute to a collective understanding of AI's impact, challenges, and successes within the government space. Let's work together to accelerate AI adoption and drive positive outcomes for agencies and stakeholders alike.
+    </div>
+    <div class="margin-bottom-2">
+    Whether you work for an agency or in industry you can express your interest and join the conversation. To do so please fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSchyZcTGa-DyDcR3USPSh7jXtsL2h3EhvilVzNGZuab8IqvHg/viewform?usp=sf_link">AI Working Group Interest form</a>. Together, we can shape the future of AI adoption in the government sector and harness its transformative power for the benefit of vendors and agencies alike.
+    </div>
+    <div class="margin-bottom-2">
+    AI has the potential to revolutionize government agencies, enabling them to work smarter, faster, and more efficiently. By embracing AI technologies, agencies can automate repetitive tasks, make data-driven decisions, enhance vendor services, and bolster cybersecurity measures. We encourage agencies to explore the various AI use cases discussed in this article and share their experiences with us.
     </div>
     <br>
 </section>
-
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
     <br>
-    <h2 class="margin-top-0 centerHeading">A Strong Start to Fiscal Year 2023</h2>
-    <div class="margin-bottom-2">
-    The ITVMO in collaboration with the Governmentwide IT Category is preparing for the upcoming mid-year reviews with the Category Management Leadership Council and OMB. As the program takes a look back on the past 6 months, the organization is starting to ramp up for a big close to the fiscal year. 
-    <img alt="Picture of the FY2023 a look back" src="{{site.baseurl}}/assets/images/FY23-a-look-back.png">
-    Already this fiscal year, the ITVMO has provided 287 continuing learning points to agency practitioners for participation in events like the IT Buyers End of Year Meeting on IT BIC Solutions. The program has also collaborated with ServiceNow to host a 6-part Webinar Series that is now published on OMB MAX. In addition, the ITVMO.gsa.gov Resource Library has more than doubled in size with 52 new cards added over the past two quarters. As a one-stop shop for IT acquisition intelligence, the website is critical to brokering access to inhouse created and partner developed resources across the federal IT marketplace. 
-    </div>
-    <!-- <b><h3 style="color:black;">Did you find this useful?</h3></b> -->
-    <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSdIaGJC3-9xLa0NxwAnNbZUO8ZXirYcjXlf3wEVj5aEBYjCyA/viewform?usp=sf_link?"><b><h3>Did you find this useful?</h3></b></a> -->
-    <br>
-</section>
-
-<section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
-<br>
     <div class="margin-bottom-2 centerHeading">
         <h2><b>Meet the ITVMO Team </b></h2>
-        <h3><b style="color:#434343;">Introducing: Mr. John Radziszewski</b></h3>
-        <img alt="Picture of Mr. John Radziszewski" src="{{site.baseurl}}/assets/images/Mr-John-Radziszewski.png">
-    </div>
-
-    <div class="margin-bottom-2">
-    Mr. Radziszewski is the Director of the Governmentwide IT Vendor Management (ITVMO), which was established in October 2020 by GSA, NASA, NIH, and OMB. Following 23 years of honorable service in the U.S. Coast Guard, Mr. Radziszewski retired as a Lieutenant Commander in 2001, and then afterwards worked in the private sector at the executive level before coming to GSA in 2015. Since 2015, Mr. Radziszewski has served as a strategic thought leader supporting the Governmentwide Category Management Framework.
+        <h3><b style="color:#434343;">Introducing: Mrs. Kyra Stewart</b></h3>
+        <img class="round-image person-intro" alt="Picture of Mrs. Kyra Stewart" src="{{site.baseurl}}/assets/images/person/kyra-stewart.jpeg">
     </div>
     <div class="margin-bottom-2">
-    Mr. John Radziszewski is the Director of the Governmentwide IT Vendor Management (ITVMO), which was established in October 2020 by GSA, NASA, NIH, and OMB. Following 23 years of honorable service in the U.S. Coast Guard, Mr. Radziszewski retired as a Lieutenant Commander in 2001, and then afterwards worked in the private sector at the executive level before coming to GSA in 2015. Since 2015, Mr. Radziszewski has served as a strategic thought leader supporting the Governmentwide Category Management Framework. 
+    Mrs. Kyra Stewart is the Program Manager for the Governmentwide IT Vendor Management (ITVMO), she was part of the initial effort to conceptualize and design the ITVMO in collaboration with GSA, NASA, NIH, DoD, and OMB. Kyra has over 20 years of federal government experience. She joined the government as an Economist more than 20 years ago, went on to run a hazardous materials grant program, held the role of Agency Ombudsperson, was Director of Innovation for the Department Of Transportation, and served as a White House Leadership Development Program Fellow in 2018. Mrs. Stewart holds a Masters in Public Administration from American University, and BA in economics from the University of Virginia. 
     </div>
     <div class="margin-bottom-2">
-    Mr. John Radziszewski has influenced and led initiatives that leverage the benefits of category management to implement acquisition strategies around new software policy and reporting. As the director of the ITVMO, he oversees the strategy, business, and operations and serves as the senior most IT expert and authoritative technical consultant. The ITVMO serves as a trusted independent advisor and advocate to help agencies buy common IT goods and services in compliance with procurement laws.  As a one stop shop, the ITVMO leverages governmentwide IT procurement data, conducts market research, and develops shared agency acquisition knowledge to support agencies in procurement decisions. 
+    Mrs. Stewart’s favorite part of being the Program manager for the ITVMO is working with phenomenal IT and acquisition experts and leveraging her program and process improvement experience to strengthen the IT buying across government. In her free time, she is an avid audio book listener, big Stephen King fan, and a self prescribed horror movie junkie. She is a proud fourth generation Washingtonian who still resides in the District with her family.
     </div>
     <div class="margin-bottom-2">
-    In FY2021, Mr. Radziszewski developed the Original Equipment Manufacturer (OEM) Vendor Management Offering to increase knowledge on top OEMs by working collaboratively with vendors and agency buyers to understand and solve common challenges. To date, the ITVMO has completed assessments on Oracle, Mircorost, AWS, and Adobe. 
+    Mrs. Stewart has been an integral part of the ITVMO’s success, helping to oversee its many initiatives. Mrs. Kyra Stewart is spearheading the efforts for the first Annual ITVMO Summit. She is excited to be in partnership with ACT-IAC to host the Summit, allowing industry and agencies to come together, share experiences and best practices, and gain access to resources that support their participation in the government's IT marketplace. She is looking forward to showcasing resources to support small business, IT Best-in-Class Contract Solutions, and key Original Equipment Manufacturers (OEMs). She also assisted in the creation of, and currently leads, the ITVMO’s IT Buyers Community of Practice (CoP). The IT Buyers CoP is a government only entity that meets quarterly to convene agency stakeholders and discuss hot topics such as zero trust, emerging technology, and cyber security. To join the IT Buyers CoP please send an email to <a href="mailto:itbcop@gsa.gov">itbcop@gsa.gov</a>.
     </div>
     <div class="margin-bottom-2">
-    This year, Mr. Radziszewski is forming an internal team of domain experts in IT asset management, pricing, legal, and contract management to launch a new ITVMO offering, Contract Review as a Service. This service will be available to agency buyers for consultation on new contract documentation, review of existing agreements and contract data (e.g., enterprise licensing agreements; statement of works; audit strategies), and comparative analysis on like contracts across government and industry. The team is already working with a few select agencies as a pilot of this offering looking at MSFT and Oracle. 
-    </div>
-    <div class="margin-bottom-2">
-    Mr. Radziszewski holds a Master of Science degree in Information Systems Management, George Washington University, and a Bachelor of Science in Electronics Engineering Technology, Wentworth Institute of Technology.
-    </div>
-    <div class="margin-bottom-2">
-    For more on the ITVMO visit <a href="https://itvmo.gsa.gov/">ITVMO.gsa.gov</a> or email us at <a href="mailto:itvmo@gsa.gov">ITVMO@gsa.gov</a>
+    For more on the ITVMO, visit ITVMO.gsa.gov or email us at <a href="mailto:ITVMO@gsa.gov">ITVMO@gsa.gov</a>.
     </div>
 </section>
 <div class="margin-bottom-2">
