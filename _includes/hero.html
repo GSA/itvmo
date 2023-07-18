@@ -23,9 +23,11 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
           <div class = "dotDiv">
             <span class="dot active"></span>
             <span class="dot"></span>
+            <span class="dot"></span>
           </div>
           <div class="slideshow-container column-card">
-            <div class="mySlides animate fade" onmouseover="stopSlide()" onmouseout="runSlide()" style="display: block;">
+            <!-- <div class="mySlides animate inRight" onmouseover="stopSlide()" onmouseout="runSlide()" style="display: block;"> -->
+            <div class="mySlides animate inRight" onmouseover="stopSlide()" onmouseout="runSlide()">
                 <img class="highlight-background" src="{{site.baseurl}}/assets/images/highlight-images/highlight-image-testing.png" alt="highlight background">
                 <div class="highlight-info">
                   <div>
@@ -49,12 +51,32 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
                   </div>
                 </div>
             </div>
-            <div class="mySlides animate fade" onmouseover="stopSlide()" onmouseout="runSlide()">
+            <div class="mySlides animate outLeft" onmouseover="stopSlide()" onmouseout="runSlide()">
                 <img class="highlight-background" src="{{site.baseurl}}/assets/images/highlight-images/highlight-image-testing2.png" alt="highlight background">
                 <div class="highlight-info">
                   <div>
                     <h4>
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, minima.
+                    </h4>
+                    <p class="two-line-max">
+                      The Emerging Tech Small Business event was held on March 7, 2023 The event navigated the ever-changing federal government contract…
+                    </p>
+                  </div>
+                  <div class="highlight-info-bottom">
+                    <p class="publish-date">
+                      <img src="{{site.baseurl}}/assets/images/icons/clock-icon.svg" alt="Clock icon">
+                      December 30, 2025
+                    </p>
+                    <a class="read-more" href="{{site.baseurl}}/emerge-tech-small-business-event"><p>READ MORE</p></a>
+                  </div>
+                </div>
+            </div>
+            <div class="mySlides animate outLeft" onmouseover="stopSlide()" onmouseout="runSlide()">
+                <img class="highlight-background" src="{{site.baseurl}}/assets/images/highlight-images/highlight-image-testing2.png" alt="highlight background">
+                <div class="highlight-info">
+                  <div>
+                    <h4>
+                      Yooooo Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, minima.
                     </h4>
                     <p class="two-line-max">
                       The Emerging Tech Small Business event was held on March 7, 2023 The event navigated the ever-changing federal government contract…

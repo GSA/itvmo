@@ -273,33 +273,48 @@ function runHighlight() {
 
 function prevSlide() {
 
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  // var slides = document.getElementsByClassName("mySlides");
+  // var dots = document.getElementsByClassName("dot");
 
-  console.log(slides.length);
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slideIndex--;
+  // // console.log(slides.length);
+  // for (i = 0; i < slides.length; i++) {
+  //     // slides[i].style.display = "none";
+  //     // slides[i].style.animationDirection = "reverse";
+  //     slides[i].className = slides[i].className.replace(" inRight", " outRight");
+  //     slides[i].className = slides[i].className.replace(" inLeft", " outRight");
+  //     slides[i].className = slides[i].className.replace(" outLeft", " outRight");
+  //     slides[i].className = slides[i].className.replace(" outRight", " outRight");
 
-  if (slideIndex > slides.length) {
-      slideIndex = 1
-  }
-  if (slideIndex == 0) {
-      slideIndex = slides.length;
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-  clearTimeout(timer); //Remove the timer that previously active before click on the previous button
-  runHighlight(); 
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  
+  // slideIndex--;
+  // console.log(slideIndex);
+
+  // if (slideIndex > slides.length) {
+  //     slideIndex = 1
+  // }
+  // if (slideIndex == 0) {
+  //     slideIndex = slides.length;
+  // }
+  // // slides[slideIndex - 1].style.display = "block";
+  // // slides[slideIndex - 1].style.animationDirection = "reverse";
+  // slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" outLeft", " inLeft");
+  // slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" outRight", " inLeft");
+  // // slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" inLeft", " inLeft");
+  // dots[slideIndex - 1].className += " active";
+  // clearTimeout(timer); //Remove the timer that previously active before click on the previous button
+  // runHighlight(); 
 }
+
 function showSlides() {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
 
   for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+      slides[i].style.animationDirection = "normal";
+      slides[i].className = slides[i].className.replace(" inRight", " outLeft");
+      slides[i].className = slides[i].className.replace(" inLeft", " outLeft");
       dots[i].className = dots[i].className.replace(" active", "");
   }
   slideIndex++;
@@ -307,7 +322,8 @@ function showSlides() {
   if (slideIndex > slides.length) {
       slideIndex = 1
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" outLeft", " inRight");
+  slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" outRight", " inRight");
   dots[slideIndex - 1].className += " active";
   
   clearTimeout(timer);
