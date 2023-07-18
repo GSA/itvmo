@@ -84,8 +84,8 @@ primary_navigation:
     url: /resources/
   - name: Community
     url: /community/
-  - name: How Can We Help?
-    url: /how-can-we-help/
+  # - name: How Can We Help?
+  #   url: /how-can-we-help/
   - name: OEM Information
     url: /oem/
   - name: Cyber Buying
