@@ -1,6 +1,31 @@
 // Add your custom javascript here
 // console.log("Hi from Federalist");
 
+/** Run functions **/
+//Run Home page 
+if(document.getElementById('dynamic-panel') != null)
+{
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++)
+  {
+    slides[i].style.transform = `translateX(${i * 100}%)`;
+  }
+  initHighlightButtons();
+  runHighlight();
+}
+
+//Run Events page
+if( document.getElementById('nextButton') != null)
+{
+  const queryString = window.location.search;
+  //Retrive the keys and their value from the URL.
+  const urlParams = new URLSearchParams(queryString);
+  const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
+  initEventButtons(d,m,y);
+  localStorage.clear();
+  runCalendar(d,m,y);
+}
+
 /** Event page calendar **/
 
 let nav = 0;
@@ -235,25 +260,20 @@ function showDropdown(el)
 }
 /** The Home page Latest Update section **/
 var timer; //Store the Timeout for the slide
-var slideIndex = 1;//The next latest update instead of the first one
+let curSlide = 0; 
+let slideCount = slides.length - 1;//Slide count in the highlight
 
 function initHighlightButtons()
 {
   var prev = document.getElementsByClassName('prev')[0];
   var next = document.getElementsByClassName('next')[0];
-  // var prevMobile = document.getElementsByClassName('prev-mobile')[0];
-  // var nextMobile = document.getElementsByClassName('next-mobile')[0];
 
   prev.addEventListener('click', () => prevSlide());
   next.addEventListener('click', () => showSlides());
-  // prevMobile.addEventListener('click', () => prevSlide());
-  // nextMobile.addEventListener('click', () => showSlides());
 
   // Allow user to use the next and previous button without the need of the mouse.
   prev.onkeydown = function(key){previousSlide(key)};
   next.onkeydown = function(key){nextSlide(key)};
-  // prevMobile.onkeydown = function(key){previousSlide(key)};
-  // nextMobile.onkeydown = function(key){nextSlide(key)};
 
   function nextSlide(key)
   {
@@ -271,65 +291,74 @@ function runHighlight() {
     timer = setTimeout("showSlides()", 8000);
 }
 
-function prevSlide() {
+function prevSlide() 
+{
+  if (curSlide === 0) 
+  {
+    curSlide = slideCount;
+  } 
+  else 
+  {
+    curSlide--;
+  }
+  for (i = 0; i < slides.length; i++)
+  {
+    slides[i].style.transform = `translateX(${100 * (i - curSlide)}%)`;
 
-  // var slides = document.getElementsByClassName("mySlides");
-  // var dots = document.getElementsByClassName("dot");
+    var readButton = slides[i].getElementsByClassName("read-more");
+    if((100 * (i - curSlide)) !== 0)
+    {
+      readButton[0].tabIndex = "-1";
+    }
+    else
+    {
+      readButton[0].tabIndex = "0";
+    }
+  }
 
-  // // console.log(slides.length);
-  // for (i = 0; i < slides.length; i++) {
-  //     // slides[i].style.display = "none";
-  //     // slides[i].style.animationDirection = "reverse";
-  //     slides[i].className = slides[i].className.replace(" inRight", " outRight");
-  //     slides[i].className = slides[i].className.replace(" inLeft", " outRight");
-  //     slides[i].className = slides[i].className.replace(" outLeft", " outRight");
-  //     slides[i].className = slides[i].className.replace(" outRight", " outRight");
-
-  //     dots[i].className = dots[i].className.replace(" active", "");
-  // }
-  
-  // slideIndex--;
-  // console.log(slideIndex);
-
-  // if (slideIndex > slides.length) {
-  //     slideIndex = 1
-  // }
-  // if (slideIndex == 0) {
-  //     slideIndex = slides.length;
-  // }
-  // // slides[slideIndex - 1].style.display = "block";
-  // // slides[slideIndex - 1].style.animationDirection = "reverse";
-  // slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" outLeft", " inLeft");
-  // slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" outRight", " inLeft");
-  // // slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" inLeft", " inLeft");
-  // dots[slideIndex - 1].className += " active";
-  // clearTimeout(timer); //Remove the timer that previously active before click on the previous button
-  // runHighlight(); 
+  updateDots();
+  clearTimeout(timer); //Remove the timer that previously active before click on the previous button
+  runHighlight(); 
 }
 
 function showSlides() {
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
 
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.animationDirection = "normal";
-      slides[i].className = slides[i].className.replace(" inRight", " outLeft");
-      slides[i].className = slides[i].className.replace(" inLeft", " outLeft");
-      dots[i].className = dots[i].className.replace(" active", "");
+  if (curSlide === slideCount) 
+  {
+    curSlide = 0;
+  } 
+  else 
+  {
+    curSlide++;
   }
-  slideIndex++;
+  for (i = 0; i < slides.length; i++)
+  {
+    slides[i].style.transform = `translateX(${100 * (i - curSlide)}%)`;
+    var readButton = slides[i].getElementsByClassName("read-more");
+    if((100 * (i - curSlide)) !== 0)
+    {
+      readButton[0].tabIndex = "-1";
+    }
+    else
+    {
+      readButton[0].tabIndex = "0";
+    }
+  }
 
-  if (slideIndex > slides.length) {
-      slideIndex = 1
-  }
-  slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" outLeft", " inRight");
-  slides[slideIndex - 1].className = slides[slideIndex - 1].className.replace(" outRight", " inRight");
-  dots[slideIndex - 1].className += " active";
-  
-  clearTimeout(timer);
+  updateDots();
+  clearTimeout(timer); //Remove the timer that previously active before click on the previous button
   runHighlight();
 }
-
+//This function update dot allocation on the highlight page
+function updateDots()
+{
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) 
+  {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  dots[curSlide].className += " active";
+}
 //This function run when the user hover the mouse on the highlight card
 function stopSlide()
 {
@@ -361,23 +390,3 @@ $(document).ready(function (e) {
       document.documentElement.scrollTop = 0;
     });
   });
-
-/** Run functions **/
-//Run Home page 
-if(document.getElementById('dynamic-panel') != null)
-{
-  initHighlightButtons();
-  runHighlight();
-}
-
-//Run Events page
-if( document.getElementById('nextButton') != null)
-{
-  const queryString = window.location.search;
-  //Retrive the keys and their value from the URL.
-  const urlParams = new URLSearchParams(queryString);
-  const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
-  initEventButtons(d,m,y);
-  localStorage.clear();
-  runCalendar(d,m,y);
-}
