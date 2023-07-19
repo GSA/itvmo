@@ -154,6 +154,31 @@ collections:
       - {label: Name, name: name}
       - {label: Tag, name: tag}
 
+#Allow user to create highlights.
+  - label: Highlights
+    name: highlights
+    folder: assets/highlights
+    create: true #Allow users to create new documents in this collection.
+    slug: "{{slug}}"
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "description", widget: "text"}
+    - {label: "URL", name: "url-link", widget: "string"}
+    - label: 'Publication date'
+      name: 'publication-date'
+      widget: 'date'
+      default: ''
+      format: 'MMM Do YY'
+    - label: "Background Image"
+      name: "image"
+      widget: "background-image"
+      choose_url: true
+      default: "assets/highlight_images"
+      media_library:
+        config:
+          multiple: true
+
+
 #Allow admin to create pages.
 
 # title: About
