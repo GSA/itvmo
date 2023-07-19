@@ -7,5 +7,5 @@ description: The ITVMO serves as a trusted independent advisor and advocate to
   support agencies in procurement decisions.
 url-link: itvmo.gsa.gov/community/
 publication-date: Jun 28th 23
-background-image: /images/uploads/highlight-image-testing.png
+background-image: /images/uploads/highlight-image-testing2.png
 ---
