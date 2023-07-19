@@ -170,8 +170,8 @@ collections:
       default: ''
       format: 'MMM Do YY'
     - label: "Background Image"
-      name: "image"
-      widget: "background-image"
+      name: "background-image"
+      widget: "image"
       choose_url: true
       default: "assets/highlight_images"
       media_library:
