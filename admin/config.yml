@@ -173,7 +173,8 @@ collections:
       name: "background-image"
       widget: "image"
       choose_url: true
-      default: "assets/highlight_images"
+      media_folder: "assets/highlight_images"
+      default: ""
       media_library:
         config:
           multiple: true
