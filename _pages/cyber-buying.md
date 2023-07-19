@@ -1,6 +1,6 @@
 ---
-title: Cybersecurity Category Team (CCT)
-permalink: /cybersecurity-category-team/
+title: Cyber Category Buying Solutions and Guidance
+permalink: /cyber-buying/
 layout: page
 sidenav: false
 ---
@@ -51,18 +51,24 @@ sidenav: false
             A repository of cybersecurity resources, trends, data, and practices across the government and contract vehicles to promote knowledge sharing.
           </p>
         </div>
-        <section class="grid-row grid-gap margin-top-4">
-            <div class="grid-col-12 tablet:grid-col-6">
-              <div class="bg-primary-lighter padding-105">
-                <h4 class="margin-0">Resources</h4>
-              </div>
-              <div class="padding-left-105 margin-bottom-4">
-                <p class="margin-top-05">
-                  Please check back soon for additional information.
-                </p>
-              </div>
+              <div class="grid-row">
+                <div class="tablet:grid-col">
+                  <div class="bg-primary-lighter padding-105">
+                    <h4 class="margin-0">Resources</h4>
+                  </div>
+                  <ul>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://www.govinfo.gov/content/pkg/FR-2017-05-16/pdf/2017-10004.pdf">Executive Order 13800</a>
+                    , Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure
+                    </li>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://www.congress.gov/bill/115th-congress/senate-bill/3085">Federal Acquisition Supply Chain Security Act of 2018 (FASCSA)</a></li>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://www.govinfo.gov/content/pkg/FR-2019-05-17/pdf/2019-10538.pdf">Executive Order 13873</a>, Securing the Information and Communications Technology and Services Supply Chain</li>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity">Executive Order 14028</a>, Improving the Nation’s Cybersecurity</li>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-161r1.pdf">NIST SP 800-161r1</a>, Cybersecurity Supply Chain Risk Management Practices for Systems and Organizations</li>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://www.whitehouse.gov/wp-content/uploads/2022/09/M-22-18.pdf">OMB Memorandum M-22-18</a>, Enhancing the Security of the Software Supply Chain through Secure Software Development Practices</li>
+                    <li><a target="_blank" rel="noreferrer noopener" href="https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title41-section4713&num=0&edition=prelim">41 USC § 4713</a>, Authorities Relating to Mitigating Supply Chain Risks in the Procurement of Covered Articles</li>
+                  </ul>
+                </div>
             </div>
-        </section>
       </div>
 
       <h3 class="usa-accordion__heading">
