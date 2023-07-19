@@ -168,7 +168,7 @@ collections:
       name: 'publication-date'
       widget: 'date'
       default: ''
-      format: 'MMM Do YY'
+      format: 'MMMM DD YYYY'
     - label: "Background Image"
       name: "background-image"
       widget: "image"
