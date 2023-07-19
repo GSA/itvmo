@@ -1,17 +1,28 @@
 // Add your custom javascript here
 // console.log("Hi from Federalist");
 
+//Variable
+let curSlide = 0; 
+let slideCount, slides, timer;//Slide count in the highlight
+
 /** Run functions **/
 //Run Home page 
 if(document.getElementById('dynamic-panel') != null)
 {
-  var slides = document.getElementsByClassName("mySlides");
+  populateHighlight();
+  initHighlightButtons();
+  runHighlight();
+}
+
+function populateHighlight()
+{
+  slides = document.getElementsByClassName("mySlides");
+  slideCount = slides.length - 1;//Slide count in the highlight
+  //Line up all the sildes together horizontally 
   for (i = 0; i < slides.length; i++)
   {
     slides[i].style.transform = `translateX(${i * 100}%)`;
   }
-  initHighlightButtons();
-  runHighlight();
 }
 
 //Run Events page
@@ -259,9 +270,6 @@ function showDropdown(el)
   el.classList.add("display-content");
 }
 /** The Home page Latest Update section **/
-var timer; //Store the Timeout for the slide
-let curSlide = 0; 
-let slideCount = slides.length - 1;//Slide count in the highlight
 
 function initHighlightButtons()
 {
