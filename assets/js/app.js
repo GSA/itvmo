@@ -3,7 +3,7 @@
 
 //Variable
 let curSlide = 0; 
-let slideCount, slides, timer;//Slide count in the highlight
+let slideCount, slides, timer, dots;//Slide count in the highlight
 
 /** Run functions **/
 //Run Home page 
@@ -16,8 +16,12 @@ if(document.getElementById('dynamic-panel') != null)
 
 function populateHighlight()
 {
+  dots = document.getElementsByClassName("dot");
+  dots[0].classList.add("active");
+
   slides = document.getElementsByClassName("mySlides");
   slideCount = slides.length - 1;//Slide count in the highlight
+
   //Line up all the sildes together horizontally 
   for (i = 0; i < slides.length; i++)
   {
@@ -360,7 +364,6 @@ function showSlides() {
 //This function update dot allocation on the highlight page
 function updateDots()
 {
-  var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) 
   {
       dots[i].className = dots[i].className.replace(" active", "");

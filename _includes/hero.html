@@ -1,7 +1,6 @@
 {% comment %} 
 This will be displayed on the homepage. Ideally, you want to highlight key goals of the website
 {% endcomment %}
-
 <section class="usa-hero">
   <div class="grid-container padding-0">
       <div class="usa-hero-welcome animate fade"> 
@@ -21,76 +20,37 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
             <img src="{{site.baseurl}}/assets/images/icons/arrow-icon.svg" alt="previous arrow">
           </a>
           <div class = "dotDiv">
-            <span class="dot active"></span>
+            {% for highlight in site.highlights %}
             <span class="dot"></span>
-            <span class="dot"></span>
+            {% endfor %}
           </div>
           <div class="slideshow-container column-card">
+            {% for highlight in site.highlights %}
             <div class="mySlides" onmouseover="stopSlide()" onmouseout="runSlide()">
-                <img class="highlight-background" src="{{site.baseurl}}/assets/images/highlight-images/highlight-image-testing.png" alt="highlight background">
-                <div class="highlight-info">
-                  <div>
-                    <h4>
-                      Govwide IT Category and ACT-IAC Host Small Business Alliance Forum
-                    </h4>
-                    <p class="two-line-max">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laborum voluptatem expedita consequuntur. Amet, quam. Esse, vitae incidunt nihil iure nobis nisi ullam exercitationem quibusdam quae quo repellendus expedita minus eligendi nam nemo beatae. Hic expedita reprehenderit aliquam esse inventore porro voluptatibus temporibus! Vel officiis architecto, maxime odit aspernatur hic.
-                    </p>
-                  </div>
-                  <div class="highlight-info-bottom">
-                    <p class="publish-date">
-                      <img src="{{site.baseurl}}/assets/images/icons/clock-icon.svg" alt="Clock icon">
-                      May 13, 2023
-                    </p>
-                    <a class="read-more" tabindex="0" href="{{site.baseurl}}/emerge-tech-small-business-event"
-                    aria-label="Topic: Govwide IT Category and ACT-IAC Host Small Business Alliance Forum"
-                    >
-                      <p >READ MORE</p>
-                    </a>
-                  </div>
+              <img class="highlight-background" src="{{site.baseurl}}/{{highlight.background-image}}" alt="highlight background">
+              <div class="highlight-info">
+                <div>
+                  <h4>
+                    {{highlight.title}}
+                  </h4>
+                  <p class="two-line-max">
+                    {{highlight.description}}
+                  </p>
                 </div>
-            </div>
-            <div class="mySlides" onmouseover="stopSlide()" onmouseout="runSlide()">
-                <img class="highlight-background" src="{{site.baseurl}}/assets/images/highlight-images/highlight-image-testing2.png" alt="highlight background">
-                <div class="highlight-info">
-                  <div>
-                    <h4>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, minima.
-                    </h4>
-                    <p class="two-line-max">
-                      The Emerging Tech Small Business event was held on March 7, 2023 The event navigated the ever-changing federal government contract…
-                    </p>
-                  </div>
-                  <div class="highlight-info-bottom">
-                    <p class="publish-date">
-                      <img src="{{site.baseurl}}/assets/images/icons/clock-icon.svg" alt="Clock icon">
-                      December 30, 2025
-                    </p>
-                    <a class="read-more" tabindex="-1" href="{{site.baseurl}}/emerge-tech-small-business-event"><p>READ MORE</p></a>
-                  </div>
+                <div class="highlight-info-bottom">
+                  <p class="publish-date">
+                    <img src="{{site.baseurl}}/assets/images/icons/clock-icon.svg" alt="Clock icon">
+                    {{highlight.publication-date}}
+                  </p>
+                  <a class="read-more" tabindex="0" href="{{site.baseurl}}/emerge-tech-small-business-event"
+                  aria-label="Topic: Govwide IT Category and ACT-IAC Host Small Business Alliance Forum"
+                  >
+                    <p >READ MORE</p>
+                  </a>
                 </div>
+              </div>
             </div>
-            <div class="mySlides" onmouseover="stopSlide()" onmouseout="runSlide()">
-                <img class="highlight-background" src="{{site.baseurl}}/assets/images/highlight-images/highlight-image-testing2.png" alt="highlight background">
-                <div class="highlight-info">
-                  <div>
-                    <h4>
-                      Yooooo Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, minima.
-                    </h4>
-                    <p class="two-line-max">
-                      The Emerging Tech Small Business event was held on March 7, 2023 The event navigated the ever-changing federal government contract…
-                    </p>
-                  </div>
-                  <div class="highlight-info-bottom">
-                    <p class="publish-date">
-                      <img src="{{site.baseurl}}/assets/images/icons/clock-icon.svg" alt="Clock icon">
-                      May 13, 2023
-                    </p>
-                    <a class="read-more" tabindex="-1" href="{{site.baseurl}}/home"><p>READ MORE</p></a>
-                  </div>
-                </div>
-            </div>
-
+            {% endfor %}
           </div>
           <a class="next" tabindex="0" title="Go to next highlight">
             <img src="{{site.baseurl}}/assets/images/icons/arrow-icon.svg" alt="next arrow">

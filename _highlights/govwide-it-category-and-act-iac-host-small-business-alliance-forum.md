@@ -6,6 +6,6 @@ description: The ITVMO serves as a trusted independent advisor and advocate to
   conduct market research, and develop shared agency acquisition knowledge to
   support agencies in procurement decisions.
 url-link: itvmo.gsa.gov/community/
-publication-date: December 30 2022
+publication-date: July 10 2022
 background-image: assets/images/highlight_images/highlight-image-testing2.png
 ---

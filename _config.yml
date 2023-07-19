@@ -132,6 +132,8 @@ collections:
     output: true
     permalink: /:path/
   resources:
+    output: true
+  highlights:
     output: true  
 
 permalink: pretty
