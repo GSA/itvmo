@@ -16,14 +16,49 @@ if(document.getElementById('dynamic-panel') != null)
 
 function populateHighlight()
 {
+  let slideContainer = document.getElementsByClassName("slideshow-container");
+  let highlightArray = []; //Slides after rearrange.
+  let dupOrder = []; //Store Slides that duplicate order dectect.
   dots = document.getElementsByClassName("dot");
-  dots[0].classList.add("active");
-
   slides = document.getElementsByClassName("mySlides");
   slideCount = slides.length - 1;//Slide count in the highlight
+  order = document.getElementsByClassName("order"); //Retrieve all the order of each slide
+  dots[0].classList.add("active");
+  
+  //Arrange slides according to their order number, if duplicate order number detect it the duplication will be store in sperate array (dupOrder).
+  for (i = 0; i < slides.length; i++)
+  {
+    if(highlightArray[parseInt(order[i].textContent)-1] == null)
+    {
+      highlightArray[parseInt(order[i].textContent)-1] = slides[i].cloneNode(true); 
+    }
+    else
+    {
+      dupOrder[parseInt(order[i].textContent)-1] = slides[i].cloneNode(true);
+    }
+  }
+
+  //Empty out the slideshow-container to prepare for the reorder highlights.
+  slideContainer[0].innerHTML = ''; 
+
+  highlightArray.concat(dupOrder);
+  
+  //Add Order slides into the slideshow-container.
+  for (i = 0; i <= slideCount; i++)
+  {
+    if(highlightArray[i] != null)
+    {
+      slideContainer[0].appendChild(highlightArray[i]);
+    }
+    //If duplication order founded add them next to each other.
+    if(dupOrder[i] != null)
+    {
+      slideContainer[0].appendChild(dupOrder[i]);
+    }
+  }
 
   //Line up all the sildes together horizontally 
-  for (i = 0; i < slides.length; i++)
+  for (i = 0; i <= slideCount; i++)
   {
     slides[i].style.transform = `translateX(${i * 100}%)`;
   }

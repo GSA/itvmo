@@ -396,6 +396,12 @@ a.checked {
 }
 
 //Dynamic highlight on the Hero section of the home page.
+.order
+{
+  visibility: hidden;
+  height: 0px;
+  width: 0px;
+}
 .mySlides {
   // display: none;
   display: block;

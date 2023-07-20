@@ -1,4 +1,5 @@
 ---
+order: 1
 title: 5-Point Blueprint for Public Governance of AI
 description: >-
   Brad Smith, vice chair and president of Microsoft, said there are five actions

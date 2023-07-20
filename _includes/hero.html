@@ -27,6 +27,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
           <div class="slideshow-container column-card">
             {% for highlight in site.highlights %}
             <div class="mySlides" onmouseover="stopSlide()" onmouseout="runSlide()">
+              <div class="order">{{highlight.order}}</div>
               <img class="highlight-background" src="{{site.baseurl}}/{{highlight.background-image}}" alt="highlight background">
               <div class="highlight-info">
                 <div>
@@ -42,7 +43,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
                     <img src="{{site.baseurl}}/assets/images/icons/clock-icon.svg" alt="Clock icon">
                     {{highlight.publication-date}}
                   </p>
-                  <a class="read-more" tabindex="0" href="{{site.baseurl}}/emerge-tech-small-business-event"
+                  <a class="read-more" tabindex="0" target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/emerge-tech-small-business-event"
                   aria-label="Topic: Govwide IT Category and ACT-IAC Host Small Business Alliance Forum"
                   >
                     <p >READ MORE</p>
