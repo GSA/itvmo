@@ -161,14 +161,14 @@ collections:
     create: true
     slug: "{{order}}-{{slug}}"
     fields:
-  - label: "Order" 
-    name: "order"
-    widget: "number"
-    default: 99
-    value_type: "int"
-    min: 1
-    max: 99
-    step: 2
+    - label: "Order" 
+      name: "order"
+      widget: "number"
+      default: 99
+      value_type: "int"
+      min: 1
+      max: 99
+      step: 2
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Description", name: "description", widget: "text"}
     - {label: "URL", name: "url-link", widget: "string"}
