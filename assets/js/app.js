@@ -13,75 +13,15 @@ if(document.getElementById('dynamic-panel') != null)
   initHighlightButtons();
   runHighlight();
 }
-
-function populateHighlight()
+//Run Inner page
+if(document.getElementById('page-directory') != null) //Other page beside homepage contain page-directory.
 {
-  let slideContainer = document.getElementsByClassName("slideshow-container");
-  let highlightArray = []; //Slides after rearrange.
-  let dupOrder = []; //Store Slides that duplicate order dectect.
-  dots = document.getElementsByClassName("dot");
-  slides = document.getElementsByClassName("mySlides");
-  slideCount = slides.length - 1;//Slide count in the highlight
-  order = document.getElementsByClassName("order"); //Retrieve all the order of each slide
-  dots[0].classList.add("active");
-  
-  //Arrange slides according to their order number, if duplicate order number detect it the duplication will be store in sperate array (dupOrder).
-  for (i = 0; i < slides.length; i++)
-  {
-    if(highlightArray[parseInt(order[i].textContent)-1] == null)
-    {
-      highlightArray[parseInt(order[i].textContent)-1] = slides[i].cloneNode(true); 
-    }
-    else
-    {
-      dupOrder[parseInt(order[i].textContent)-1] = slides[i].cloneNode(true);
-    }
-  }
-
-  //Empty out the slideshow-container to prepare for the reorder highlights.
-  slideContainer[0].innerHTML = ''; 
-
-  highlightArray.concat(dupOrder);
-  
-  //Add Order slides into the slideshow-container.
-  for (i = 0; i <= slideCount; i++)
-  {
-    if(highlightArray[i] != null)
-    {
-      slideContainer[0].appendChild(highlightArray[i]);
-    }
-    //If duplication order founded add them next to each other.
-    if(dupOrder[i] != null)
-    {
-      slideContainer[0].appendChild(dupOrder[i]);
-    }
-  }
-
-  //Line up all the sildes together horizontally 
-  for (i = 0; i <= slideCount; i++)
-  {
-    slides[i].style.transform = `translateX(${i * 100}%)`;
-  }
+  populateDirectory();
 }
-
 //Run Events page
-if( document.getElementById('nextButton') != null)
-{
-  const queryString = window.location.search;
-  //Retrive the keys and their value from the URL.
-  const urlParams = new URLSearchParams(queryString);
-  const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
-  initEventButtons(d,m,y);
-  localStorage.clear();
-  runCalendar(d,m,y);
-}
-
-/** Event page calendar **/
-
 let nav = 0;
 let clicked = null;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
-
 const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
 const deleteEventModal = document.getElementById('deleteEventModal');
@@ -89,7 +29,49 @@ const backDrop = document.getElementById('modalBackDrop');
 const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','august','september','october','november','december'];
+const queryString = window.location.search;
+if( document.getElementById('nextButton') != null)
+{
+  //Retrive the keys and their value from the URL.
+  const urlParams = new URLSearchParams(queryString);
+  const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
+  initEventButtons(d,m,y);
+  localStorage.clear();
+  runCalendar(d,m,y);
+}
+/** Populate Inner page **/
 
+//This function populate the directory of the current page that trace back to root (homepage).
+function populateDirectory()
+{
+  let currentUrl = window.location.href;
+  currentUrl = currentUrl.replace("http://","")
+  const urlSplit = currentUrl.split("/")
+  urlSplit.pop();
+  let newElements = ``;
+  for(let i = urlSplit.length-1; i >= 0; i--)
+  {
+    let currentPage = urlToString(urlSplit[i]);
+    currentUrl = currentUrl.replace(`${urlSplit[i+1]}/`,'');
+    if(i > 0)
+    {
+      newElements+= `<a href="http://${currentUrl}">${currentPage}</a><img src="/assets/images/icons/directory-arrow.svg">`
+    }
+    else //"Home" for baseurl
+    {
+      newElements+= `<a href="http://${currentUrl}">Home</a>`
+    }
+  }
+  document.getElementById('page-directory').innerHTML = newElements;
+}
+//This function capitalize first letter and letter after hyphen (-)
+function urlToString(str) {
+  let capitalizedStr = str.charAt(0).toUpperCase() + str.slice(1);
+  capitalizedStr = capitalizedStr.replace(/-(\w)/g, (match, letter) => ' ' + letter.toUpperCase());
+  return capitalizedStr;
+}
+
+/** Event page calendar **/
 
 function openModal(date) {
   const eventForDay = [];
@@ -309,6 +291,55 @@ function showDropdown(el)
   el.classList.add("display-content");
 }
 /** The Home page Latest Update section **/
+function populateHighlight()
+{
+  let slideContainer = document.getElementsByClassName("slideshow-container");
+  let highlightArray = []; //Slides after rearrange.
+  let dupOrder = []; //Store Slides that duplicate order dectect.
+  dots = document.getElementsByClassName("dot");
+  slides = document.getElementsByClassName("mySlides");
+  slideCount = slides.length - 1;//Slide count in the highlight
+  order = document.getElementsByClassName("order"); //Retrieve all the order of each slide
+  dots[0].classList.add("active");
+  
+  //Arrange slides according to their order number, if duplicate order number detect it the duplication will be store in sperate array (dupOrder).
+  for (i = 0; i < slides.length; i++)
+  {
+    if(highlightArray[parseInt(order[i].textContent)-1] == null)
+    {
+      highlightArray[parseInt(order[i].textContent)-1] = slides[i].cloneNode(true); 
+    }
+    else
+    {
+      dupOrder[parseInt(order[i].textContent)-1] = slides[i].cloneNode(true);
+    }
+  }
+
+  //Empty out the slideshow-container to prepare for the reorder highlights.
+  slideContainer[0].innerHTML = ''; 
+
+  highlightArray.concat(dupOrder);
+  
+  //Add Order slides into the slideshow-container.
+  for (i = 0; i <= slideCount; i++)
+  {
+    if(highlightArray[i] != null)
+    {
+      slideContainer[0].appendChild(highlightArray[i]);
+    }
+    //If duplication order founded add them next to each other.
+    if(dupOrder[i] != null)
+    {
+      slideContainer[0].appendChild(dupOrder[i]);
+    }
+  }
+
+  //Line up all the sildes together horizontally 
+  for (i = 0; i <= slideCount; i++)
+  {
+    slides[i].style.transform = `translateX(${i * 100}%)`;
+  }
+}
 
 function initHighlightButtons()
 {

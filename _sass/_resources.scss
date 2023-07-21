@@ -956,6 +956,24 @@ html *
 {
   background-color: #ecf1f6;
 }
+/*Inner pages template*/
+#page-directory
+{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 5px;
+  img
+  {
+    width: 4px;
+    height: 7px;
+  }
+  a,a:visited
+  {
+    color: #0F5ABD;
+  }
+}
 
 /*Header section*/
 .nav-background
