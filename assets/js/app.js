@@ -45,8 +45,8 @@ if( document.getElementById('nextButton') != null)
 function populateDirectory()
 {
   let currentUrl = window.location.href;
-  currentUrl = currentUrl.replace("http://","")
-  const urlSplit = currentUrl.split("/")
+  let urlSplit = currentUrl.replace("http://","")
+  urlSplit = urlSplit.split("/")
   urlSplit.pop();
   let newElements = ``;
   for(let i = urlSplit.length-1; i >= 0; i--)
@@ -55,11 +55,11 @@ function populateDirectory()
     currentUrl = currentUrl.replace(`${urlSplit[i+1]}/`,'');
     if(i > 0)
     {
-      newElements+= `<a href="http://${currentUrl}">${currentPage}</a><img src="/assets/images/icons/directory-arrow.svg">`
+      newElements+= `<a href="${currentUrl}">${currentPage}</a><img src="/assets/images/icons/directory-arrow.svg">`
     }
     else //"Home" for baseurl
     {
-      newElements+= `<a href="http://${currentUrl}">Home</a>`
+      newElements+= `<a href="${currentUrl}">Home</a>`
     }
   }
   document.getElementById('page-directory').innerHTML = newElements;
