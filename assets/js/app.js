@@ -54,6 +54,12 @@ function populateDirectory()
     let currentPage = urlToString(urlSplit[i]);
     currentUrl = currentUrl.replace(`${urlSplit[i+1]}/`,'');
 
+    //This using for the sandbox, delete this later
+    if(currentUrl == 'https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/ITVMO-redesign/')
+    {
+      newElements+= `<a href="${currentUrl}">Home</a>`
+      break;
+    }
     if(i > 0)
     {
       newElements+= `<a href="${currentUrl}">${currentPage}</a><img src="/assets/images/icons/directory-arrow.svg">`
@@ -61,11 +67,6 @@ function populateDirectory()
     else //"Home" for baseurl
     {
       newElements+= `<a href="${currentUrl}">Home</a>`
-    }
-    //This using for the sandbox, delete this later
-    if(currentUrl == 'https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/ITVMO-redesign/')
-    {
-      break;
     }
   }
   document.getElementById('page-directory').innerHTML = newElements;
