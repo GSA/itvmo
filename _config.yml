@@ -88,9 +88,8 @@ primary_navigation:
   #   url: /how-can-we-help/
   - name: OEM Information
     url: /oem/
-  - name: Cyber Buying
-    url: /cyber-buying/
-  
+  # - name: Cyber Buying
+  #   url: /cyber-buying/
   # - name: CCT
   #   url: /cybersecurity-category-team/
   # - name: ITVMO’s Top OEMs
