@@ -31,30 +31,40 @@ collections:
   #         timeFormat: false
   #       }
   #     - {label: "Body", name: "body", widget: "markdown"}
+#Allow user to create highlights.
+  - label: Highlights
+    name: highlights
+    folder: assets/highlights
+    create: true
+    slug: "{{order}}-{{slug}}"
+    fields:
+    - label: "Order" 
+      name: "order"
+      widget: "number"
+      default: 99
+      value_type: "int"
+      min: 1
+      max: 99
+      step: 2
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "description", widget: "text"}
+    - {label: "URL", name: "url-link", widget: "string"}
+    - label: 'Publication date'
+      name: 'publication-date'
+      widget: 'date'
+      default: ''
+      format: 'MMMM DD YYYY'
+    - label: "Background Image"
+      name: "background-image"
+      widget: "image"
+      choose_url: true
+      media_folder: assets/images/highlight_images
+      default: ""
+      media_library:
+        config:
+          multiple: true
 
 #Allow admin to create resource cards.
-
-  # ---
-  # title: "Identifying Small Disadvantaged Business Vendors"
-  # description: The Category Management Workbench allows a user to filter by business size and by socioeconomic status.
-  # external_url: itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-SDB-Vendors.pdf
-  # [Do not require] content_tags: 
-  # type: link
-  # [Create picklist] filters: small-business na-branded-offering na-audience 
-  # ---
-
-  # - label: Resources
-  #   name: resources
-  #   folder: _resources/
-  #   create: true #Allow users to create new documents in this collection.
-  #   slug: "{{slug}}"
-  #   fields:
-  #   - {label: "Title", name: "title", widget: "string"}
-  #   - {label: "Description", name: "description", widget: "text"}
-  #   - {label: "URL", name: "external_url", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
-  #   - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
-  #   - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
-
   - label: Resources
     name: resources
     folder: _resources/
@@ -113,7 +123,7 @@ collections:
   - label: Resource Filter tags
     name: filter-tags
     folder: assets/resource_tags/filter_tags
-    hidden: true
+    hide: true
     # create: true
     slug: "{{name}}"
     identifier_field: name
@@ -125,7 +135,7 @@ collections:
   - label: Branded Offering tags
     name: bo-tags
     folder: assets/resource_tags/branded-offerings_tags
-    hidden: true
+    hide: true
     # create: true
     slug: "{{name}}"
     identifier_field: name
@@ -137,7 +147,7 @@ collections:
   - label: Audience tags
     name: audience-tags
     folder: assets/resource_tags/audience_tags
-    hidden: true
+    hide: true
     # create: true
     slug: "{{name}}"
     identifier_field: name
@@ -149,7 +159,7 @@ collections:
   - label: Type tags
     name: type-tags
     folder: assets/resource_tags/type_tags
-    hidden: true
+    hide: true
     # create: true
     slug: "{{name}}"
     identifier_field: name
@@ -157,40 +167,6 @@ collections:
     fields: 
       - {label: Name, name: name}
       - {label: Tag, name: tag}
-
-#Allow user to create highlights.
-  - label: Highlights
-    name: highlights
-    folder: assets/highlights
-    create: true
-    slug: "{{order}}-{{slug}}"
-    fields:
-    - label: "Order" 
-      name: "order"
-      widget: "number"
-      default: 99
-      value_type: "int"
-      min: 1
-      max: 99
-      step: 2
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Description", name: "description", widget: "text"}
-    - {label: "URL", name: "url-link", widget: "string"}
-    - label: 'Publication date'
-      name: 'publication-date'
-      widget: 'date'
-      default: ''
-      format: 'MMMM DD YYYY'
-    - label: "Background Image"
-      name: "background-image"
-      widget: "image"
-      choose_url: true
-      media_folder: assets/images/highlight_images
-      default: ""
-      media_library:
-        config:
-          multiple: true
-
 
 #Allow admin to create pages.
 
@@ -201,7 +177,7 @@ collections:
   - label: Pages
     name: pages
     folder: _pages/
-    hidden: true
+    hide: true
     # create: true #Allow users to create new documents in this collection.
     slug: "{{slug}}"
     fields:
