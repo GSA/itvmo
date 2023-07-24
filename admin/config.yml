@@ -113,6 +113,7 @@ collections:
   - label: Resource Filter tags
     name: filter-tags
     folder: assets/resource_tags/filter_tags
+    hidden: true
     create: true
     slug: "{{name}}"
     identifier_field: name
@@ -124,6 +125,7 @@ collections:
   - label: Branded Offering tags
     name: bo-tags
     folder: assets/resource_tags/branded-offerings_tags
+    hidden: true
     create: true
     slug: "{{name}}"
     identifier_field: name
@@ -135,6 +137,7 @@ collections:
   - label: Audience tags
     name: audience-tags
     folder: assets/resource_tags/audience_tags
+    hidden: true
     create: true
     slug: "{{name}}"
     identifier_field: name
@@ -146,6 +149,7 @@ collections:
   - label: Type tags
     name: type-tags
     folder: assets/resource_tags/type_tags
+    hidden: true
     create: true
     slug: "{{name}}"
     identifier_field: name
@@ -197,6 +201,7 @@ collections:
   - label: Pages
     name: pages
     folder: _pages/
+    hidden: true
     create: true #Allow users to create new documents in this collection.
     slug: "{{slug}}"
     fields:
