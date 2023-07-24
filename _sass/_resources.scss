@@ -975,6 +975,52 @@ html *
   }
 }
 
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+.tabs {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-bottom:1px solid #ff590a;
+  display:inline-block;
+  position: relative;
+  height: 66px;
+  padding-top: 17px;
+  padding-left: 25px;
+  padding-right: 25px;
+  
+  a {
+    display:block;
+    border-bottom:1px solid #ff590a;
+    height: 49px;
+    position: relative;
+    margin-bottom: -1px; 
+    background-color: inherit;
+    float: left;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+
+    font-size: 18px;
+    color: #555555;
+    font-weight: 500;
+    letter-spacing: normal;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a.active 
+  {
+    color: #062348;
+    font-weight: 650;
+    background-color: white;
+    border: 1px solid #ff590a;
+    border-bottom: 1px solid white;
+  }
+}
+
+
 /*Header section*/
 .nav-background
 {

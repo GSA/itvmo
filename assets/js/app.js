@@ -78,6 +78,20 @@ function urlToString(str) {
   return capitalizedStr;
 }
 
+//This function hide all the tab and display the tab that clicked.
+function openTab(e, tabId) 
+{
+  //Reset all the tabs and all the tab contents.
+  let tabcontent = document.getElementsByClassName("tabcontent");
+  let tabList = document.getElementsByClassName("tab");
+  for (let i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    tabList[i].className = tabList[i].className.replace(" active", "");
+  }
+  document.getElementById(tabId).style.display = "block"; //Display the content of the correct tabId.
+  e.currentTarget.className += " active"; 
+}
+
 /** Event page calendar **/
 
 function openModal(date) {
