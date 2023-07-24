@@ -62,7 +62,7 @@ function populateDirectory()
     }
     if(i > 0)
     {
-      newElements+= `<a href="${currentUrl}">${currentPage}</a><img src="/assets/images/icons/directory-arrow.svg">`
+      newElements+= `<a href="${currentUrl}">${currentPage}</a><img src="${window.location.origin}/assets/images/icons/directory-arrow.svg">`
     }
     else //"Home" for baseurl
     {
