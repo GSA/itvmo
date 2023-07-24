@@ -156,36 +156,3 @@ sidenav: false
     </div>
 
 </section>
-
-<!-- <section class="grid-container padding-left-1 padding-right-1">
-  <h2>Our Partners</h2>
-  <p>The ITVMO is led by an Executive Steering Committee (ESC) that represents several agencies and the largest IT BIC vehicles in the federal government. The ESC determines the strategic direction and project priorities for the ITVMO. ESC members and partner programs include GSA IT Category, NASA SEWP, NIH NITAAC, and DOD OITCM.</p>
-   <div class="grid-container">
-            <div class="usa-graphic-list__row grid-row grid-gap padding-top-0">
-                 <div class="tablet:grid-col-2 container" style="padding:10px;">
-                 <center><a href="https://www.gsa.gov/technology/information-technology-category"><img class="seal" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg" alt="General Services Administration seal"></a></center>
-                    <div class="seal-name">
-                        GSA ITC
-                    </div>
-                </div>
-                <div class="tablet:grid-col-2 container" style="padding:10px;">
-                <center><a href="https://www.sewp.nasa.gov/"><img class="seal-nasa" src="{{site.baseurl}}/assets/images/logos/NASA-SEWP.png" alt="NASA SEWP"></a></center>
-                    <div class="seal-name">
-                        NASA SEWP
-                    </div>
-                </div>
-                <div class="tablet:grid-col-2 container" style="padding:10px;">
-                  <center><a href="https://nitaac.nih.gov/"><img class="seal" src="{{site.baseurl}}/assets/images/logos/NIH NITAAC.png" alt="NIH NITAAC"></a></center>
-                    <div class="seal-name">
-                        NIH NITAAC
-                    </div>
-                </div>
-                <div class="tablet:grid-col-2 container" style="padding:10px;">
-                 <center><img class="seal" src="{{site.baseurl}}/assets/images/logos/department-of-defense.png" alt="Department of Defense seal"></center>
-                    <div class="seal-name">
-                        DOD OITCM
-                    </div>   
-                </div>
-             </div> 
-   </div>	
-</section> -->
