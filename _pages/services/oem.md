@@ -13,12 +13,16 @@ sidenav: false
   <section id="inner-page-tabs">
 
     <div class="tabs">
-      <a class="tab active" onclick="openTab(event, 'vendor-assessments')">Vendor Assessments</a>
+      <a class="tab active-tab" onclick="openTab(event, 'vendor-assessments')">Vendor Assessments</a>
       <a class="tab" onclick="openTab(event, 'contract-review')">Contract Review as a Service</a>
     </div>
 
-    <div id="vendor-assessments" class="tabcontent" style="display: block;">
-    <div class="margin-bottom-2">
+    <div id="vendor-assessments" class="tabcontent" style="display: flex;">
+      <div class="contents">
+      </div>
+      <div class="content-tags">
+      </div>
+    <!-- <div class="margin-bottom-2">
       <p>
       To meet the growing demand for acquisition knowledge share including acquisition strategies, best practices, and governance approaches, the <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/about/">IT Vendor Management Office (ITVMO)</a> developed and implemented the Original Equipment Manufacturer (OEM) Assessment Initiative.  The ITVMO engages directly with agency leadership and acquisition professionals, reviews reporting data, and analyzes annual IT spending trends to identify top OEMs being utilized across the federal government.  OEM Assessments are completed following a <a target="_blank" rel="noreferrer noopener" href="https://drive.google.com/file/d/1OeVIOgixP0g30tJw0y2CW8OEjWeDagBu">seven (7) phase approach</a>.
       </p>
@@ -406,7 +410,7 @@ sidenav: false
                   </div>
             </div>
             </div>
-      </div>
+      </div> -->
     </div>
     <div id="contract-review" class="tabcontent">
     </div>

@@ -86,10 +86,10 @@ function openTab(e, tabId)
   let tabList = document.getElementsByClassName("tab");
   for (let i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
-    tabList[i].className = tabList[i].className.replace(" active", "");
+    tabList[i].className = tabList[i].className.replace(" active-tab", "");
   }
-  document.getElementById(tabId).style.display = "block"; //Display the content of the correct tabId.
-  e.currentTarget.className += " active"; 
+  document.getElementById(tabId).style.display = "flex"; //Display the content of the correct tabId.
+  e.currentTarget.className += " active-tab"; 
 }
 
 /** Event page calendar **/

@@ -977,7 +977,19 @@ html *
 
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  // padding: 6px 12px;
+  .contents
+  {
+    width: 75%;
+    height: 1000px;
+    background-color: red;
+  }
+  .content-tags
+  {
+    width: 25%;
+    height: 1000px;
+    background-color: green;
+  }
 }
 .tabs {
   width: 100%;
@@ -1010,7 +1022,7 @@ html *
   a:hover {
     text-decoration: underline;
   }
-  a.active 
+  .active-tab 
   {
     color: #062348;
     font-weight: 650;
