@@ -1500,13 +1500,7 @@ html *
       color: #000000;
       border: #d7d7d7 1px solid;
       border-left: none;
-      .label-color
-      {
-        background-color: rgba(89, 185, 222, 1);//This change around according to the resource card filter.
-        width: 7px;
-        height: 100%;
-      }
-      .label-color, .resource-content, .resource-info
+      .resource-content, .resource-info
       {
         height: 100%;
       }
@@ -1787,8 +1781,6 @@ html *
       height: 281px;
       a 
       {
-        border-left: 7px solid;
-        border-color:  rgba(89, 185, 222, 1);
         flex-direction: column;
         .resource-description
         {
