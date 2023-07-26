@@ -17,6 +17,53 @@ if(document.getElementById('dynamic-panel') != null)
 if(document.getElementById('page-directory') != null) //Other page beside homepage contain page-directory.
 {
   populateDirectory();
+  initalizeTabIndex();
+}
+//This function display accordion content according to accordion Id that accordion button have.
+function initAccordionButtons(aButton)
+{
+  const ariaControlsValue = aButton.getAttribute("aria-controls");
+  let tabArrow = aButton.getElementsByClassName("tab-arrow");
+  const currA = document.getElementById(ariaControlsValue);
+  //If the Accordion content that retrive from aButton is not open, therefore open the Accordion content.
+  if(currA.classList.contains("accordion-content-display") == false)
+  {
+    let aContent = document.getElementsByClassName("accordion-content-display");
+    //Hide all other Accordion content, and also reset tab arrow to default rotation.
+    if(aContent[0] !== undefined)
+    {
+      assignTabIndex(aContent[0], -1);
+      let tabArrowActive = document.getElementsByClassName("tab-arrow-active")
+      tabArrowActive[0].classList.remove("tab-arrow-active");
+      aContent[0].classList.remove("accordion-content-display");
+    }
+    //Display new Accordion content according to aButton, and also rotate the arrow.
+      tabArrow[0].classList.add("tab-arrow-active");
+      currA.classList.add("accordion-content-display");
+      assignTabIndex(currA, 0);
+  }
+  //If the Accordion content that retrive from aButton is open, therefore close the content.
+  else
+  {
+    tabArrow[0].classList.remove("tab-arrow-active");
+    currA.classList.remove("accordion-content-display");
+    assignTabIndex(currA, -1);
+  }
+}
+//This function assign all the Anchor elements that are children of any accordion-content class to tabindex=-1.
+function initalizeTabIndex()
+{
+  const accordionContentList = document.querySelectorAll('.accordion-content');
+  accordionContentList.forEach(accordionContent => 
+  {
+    assignTabIndex(accordionContent, -1);
+  });
+}
+//This function assignTabIndex assign new tabindex value to all Anchor elements that are children of the "e", according to "index".
+function assignTabIndex(e, index)
+{
+  let aList = e.querySelectorAll('a');
+  aList.forEach((anchor) => {anchor.setAttribute('tabindex', index);});
 }
 //Run Events page
 let nav = 0;
@@ -78,7 +125,7 @@ function urlToString(str) {
   return capitalizedStr;
 }
 
-//This function hide all the tab and display the tab that clicked.
+//This function hide all tabs and display the tab that clicked.
 function openTab(e, tabId) 
 {
   //Reset all the tabs and all the tab contents.
@@ -90,6 +137,14 @@ function openTab(e, tabId)
   }
   document.getElementById(tabId).style.display = "flex"; //Display the content of the correct tabId.
   e.currentTarget.className += " active-tab"; 
+}
+//This function hide tabs and display the tab that press enter or spacebar.
+function openTabKey(e, tabId)
+{
+  if((e.keyCode === 32)||(e.keyCode === 13))
+  {
+    openTab(e, tabId);
+  }
 }
 
 /** Event page calendar **/

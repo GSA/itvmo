@@ -940,6 +940,10 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
+.tab-heading, .tab-supheading, .tab-p
+{
+  font-family: 'Source Sans 3', sans-serif !important;
+}
 .section-heading
 {
   width: 100%;
@@ -977,12 +981,120 @@ html *
 
 .tabcontent {
   display: none;
-  // padding: 6px 12px;
   .contents
   {
     width: 75%;
-    height: 1000px;
-    background-color: red;
+    padding-left: 50px;
+    padding-right: 40px;
+    color: #333333;
+    a,a::after
+    {
+      color: rgb(15, 90, 189);
+      text-decoration: none;
+    }
+    a:hover
+    {
+      text-decoration: underline;
+    }
+    .tab-p, a, li
+    {
+      font-family: 'Source Sans 3', sans-serif !important;
+      font-style: normal;
+      font-size: 16px;
+    }
+    .tab-heading
+    {
+      font-weight: 400;
+      font-size: 26px;
+      color: #000000;
+    }
+    .tab-supheading
+    {
+      font-size: 20px;
+      color: #062349;
+      margin: 0;
+    }
+    .tab-divide-line
+    {
+      height: 1px;
+      width: 90%;
+      background-color: #aaaaaa;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .accordion
+    {
+      z-index: 99;
+      margin-bottom: 15px;
+      -moz-osx-font-smoothing:auto;
+      -webkit-font-smoothing:subpixel-antialiased;
+      color:#005ea2;
+      text-decoration:underline;
+      background-color:transparent;
+      -webkit-box-shadow:none;
+              box-shadow:none;
+      font-weight:normal;
+      margin:0;
+      padding:0;
+      text-align:left;
+      background-repeat:no-repeat;
+      background-color:#f0f0f0;
+      background-position:right 1.25rem center;
+      background-size:1rem;
+      color:#1b1b1b;
+      cursor:pointer;
+      font-weight:bold;
+      margin:0;
+      padding:1rem 3.5rem 1rem 1.25rem;
+      text-decoration:none;
+      width:100%;
+      border-radius: 10px;
+      border: solid 1px #d7d7d7;
+      padding-left: 18px;
+      padding-right: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      span 
+      {
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+      }
+      img 
+      {
+        height: 27px;
+        width: 27px;
+        object-fit: contain;
+      }
+      .tab-arrow
+      {
+        width: 15px;
+        height: 9px;
+        transition: 0.3s;
+      }
+      .tab-arrow-active
+      {
+        transform: rotate(180deg);
+        // transition: 0.3s;
+      }
+    }
+    .accordion-content
+    {
+      padding: 0;
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 500ms;
+      div 
+      {
+        overflow: hidden;
+      }
+    }
+    .accordion-content-display
+    {
+      grid-template-rows: 1fr;
+    }
   }
   .content-tags
   {
