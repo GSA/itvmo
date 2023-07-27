@@ -1,5 +1,5 @@
 ---
-title: Original Equipment Manufacturers (OEM) Assessment Initiative
+title: OEM Initiatives
 layout: page
 sidenav: false
 ---

@@ -101,13 +101,22 @@ function populateDirectory()
     let currentPage = urlToString(urlSplit[i]);
     currentUrl = currentUrl.replace(`${urlSplit[i+1]}/`,'');
 
-    //This using for the sandbox, delete this later
+    //If specific page need specific name on the Directory, insert here
+    currentPage = currentPage.replace(/oem Initiatives/gi, "OEM Support");
+    // currentPage = currentPage.replace(//gi, "");
+    
+
+    //This using for the sandbox, delete this later!!
     if(currentUrl == 'https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/ITVMO-redesign/')
     {
       newElements+= `<a href="${currentUrl}">Home</a>`
       break;
     }
-    if(i > 0)
+    if(i == urlSplit.length-1) //The page that the user currently on, make it not a link.
+    {
+      newElements+= `<p>${currentPage}</p><img src="${window.location.origin}/assets/images/icons/directory-arrow.svg">`
+    }
+    else if(i > 0)
     {
       newElements+= `<a href="${currentUrl}">${currentPage}</a><img src="${window.location.origin}/assets/images/icons/directory-arrow.svg">`
     }

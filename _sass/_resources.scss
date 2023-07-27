@@ -961,8 +961,21 @@ html *
   background-color: #ecf1f6;
 }
 /*Inner pages template*/
-#page-directory
+
+#page-directory, .tabcontent
 {
+  .tab-heading, .tab-supheading, a, li, p
+  {
+    font-family: 'Source Sans 3', sans-serif !important;
+  }
+  .tab-p, a, li, p
+  {
+    font-style: normal;
+    font-size: 16px;
+  }
+}
+#page-directory
+{ 
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -976,6 +989,11 @@ html *
   a,a:visited
   {
     color: #0F5ABD;
+  }
+  p 
+  {
+    font-size: 16px;
+    margin: 0;
   }
 }
 
@@ -995,12 +1013,6 @@ html *
     a:hover
     {
       text-decoration: underline;
-    }
-    .tab-p, a, li
-    {
-      font-family: 'Source Sans 3', sans-serif !important;
-      font-style: normal;
-      font-size: 16px;
     }
     .tab-heading
     {
