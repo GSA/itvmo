@@ -1,6 +1,8 @@
 ---
 title: Original Equipment Manufacturers (OEM) Assessment Initiative
 layout: page
+description: To meet the growing demand for acquisition knowledge share including acquisition strategies, best practices, and governance approaches, the IT Vendor Management Office (ITVMO) developed and implemented the Original Equipment Manufacturer (OEM) Assessment Initiative.  The ITVMO engages directly with agency leadership and acquisition professionals, reviews reporting data, and analyzes annual IT spending trends to identify top OEMs being utilized across the federal government.  OEM Assessments are completed following a seven (7) phase approach
+keywords: Original Equipment Manufacturers Assessment Initiative, OEM, Adobe, AWS, Amazon Web Services, Mircrosoft, Cisco, Oracle, Salesforce, ServiceNow
 sidenav: false
 ---
 
