@@ -158,7 +158,7 @@ function populateDirectory()
     currentUrl = currentUrl.replace(`${urlSplit[i+1]}/`,'');
 
     //If specific page need specific name on the Directory, insert here
-    currentPage = currentPage.replace(/oem Initiatives/gi, "OEM Support");
+    currentPage = currentPage.replace(/oem/gi, "OEM Support");
     // currentPage = currentPage.replace(//gi, "");
     
 
