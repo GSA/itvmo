@@ -18,9 +18,87 @@ if(document.getElementById('page-directory') != null) //Other page beside homepa
 {
   populateDirectory();
   initalizeTabIndex();
+  initalizePageNav();
+}
+//Run Events page
+let nav = 0;
+let clicked = null;
+let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
+const calendar = document.getElementById('calendar');
+const newEventModal = document.getElementById('newEventModal');
+const deleteEventModal = document.getElementById('deleteEventModal');
+const backDrop = document.getElementById('modalBackDrop');
+const eventTitleInput = document.getElementById('eventTitleInput');
+const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','august','september','october','november','december'];
+const queryString = window.location.search;
+if( document.getElementById('nextButton') != null)
+{
+  //Retrive the keys and their value from the URL.
+  const urlParams = new URLSearchParams(queryString);
+  const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
+  initEventButtons(d,m,y);
+  localStorage.clear();
+  runCalendar(d,m,y);
+}
+/** Populate Inner page **/
+//This function initalize all the page-nav click functionality.
+function initalizePageNav()
+{
+  var pageNavList = document.getElementsByClassName('page-nav');
+  for(let i=0; i< pageNavList.length; i++)
+  {
+    pageNavList[i].addEventListener('click', function()
+    {
+      removePageActive();
+      setPageActive(this)
+      navOpenTabContent(this);
+    });
+  }
+}
+//This function remove the page-nav-active from page-nav.
+function removePageActive()
+{
+  let pageActive = document.getElementsByClassName("page-nav-active");
+  if(pageActive[0] != undefined)
+  {
+    pageActive[0].classList.remove("page-nav-active");
+  }
+}
+//This function add the page-nav-active to specific page nav (event).
+function setPageActive(event)
+{
+  event.classList.add("page-nav-active");
+}
+$(function(){    
+	$(window).scroll(function(){ 
+
+        if($(this).scrollTop() >= 0 && $(this).scrollTop() < 450 && $(this).scrollTop() < ($('.content-nav').height() - $('.nav-list').height()))
+        {            
+          $('.nav-list').removeClass('fixed').addClass('absolute').css('top', 0);
+        } 
+        else if($(this).scrollTop() >= 450 && $(this).scrollTop() < ($('.content-nav').height()))
+        {            
+          $('.nav-list').removeClass('absolute').addClass('fixed').css('top', 5); //Need to be change accordingly
+        } 
+        else  {
+            $('.nav-list').removeClass('fixed').addClass('absolute').css('top', $('.content-nav').height() - $('.nav-list').height());
+        } 
+    });
+});
+//This function hide all accordion content and display the correct one, and then scroll to that specific accordion.
+function navOpenTabContent(pageNav)
+{
+  let aButton;
+  if(pageNav.classList.contains("accordion-nav") == true)
+  {
+    aButton = document.getElementById(pageNav.getAttribute("aria-controls"));
+    displayTabContent(aButton);//Hide all accordion content and display the correct one
+    setTimeout(function(){ aButton.scrollIntoView({ behavior: "smooth" });}, 500);//Wait until the displayTabContent animation is over before scroll to the section.
+  }
 }
 //This function display accordion content according to accordion Id that accordion button have.
-function initAccordionButtons(aButton)
+function displayTabContent(aButton)
 {
   const ariaControlsValue = aButton.getAttribute("aria-controls");
   let tabArrow = aButton.getElementsByClassName("tab-arrow");
@@ -65,28 +143,6 @@ function assignTabIndex(e, index)
   let aList = e.querySelectorAll('a');
   aList.forEach((anchor) => {anchor.setAttribute('tabindex', index);});
 }
-//Run Events page
-let nav = 0;
-let clicked = null;
-let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
-const calendar = document.getElementById('calendar');
-const newEventModal = document.getElementById('newEventModal');
-const deleteEventModal = document.getElementById('deleteEventModal');
-const backDrop = document.getElementById('modalBackDrop');
-const eventTitleInput = document.getElementById('eventTitleInput');
-const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','august','september','october','november','december'];
-const queryString = window.location.search;
-if( document.getElementById('nextButton') != null)
-{
-  //Retrive the keys and their value from the URL.
-  const urlParams = new URLSearchParams(queryString);
-  const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
-  initEventButtons(d,m,y);
-  localStorage.clear();
-  runCalendar(d,m,y);
-}
-/** Populate Inner page **/
 
 //This function populate the directory of the current page that trace back to root (homepage).
 function populateDirectory()

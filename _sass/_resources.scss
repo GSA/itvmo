@@ -934,7 +934,10 @@ a.checked {
 }
 
 /*Website redesign*/
-
+html 
+{
+  scroll-behavior: smooth;
+}
 /*Website new fonts*/
 html *
 {
@@ -961,6 +964,10 @@ html *
   background-color: #ecf1f6;
 }
 /*Inner pages template*/
+#page-heading
+{
+  height: 156px;
+}
 
 #page-directory, .tabcontent
 {
@@ -999,6 +1006,7 @@ html *
 
 .tabcontent {
   display: none;
+  position: relative;
   .contents
   {
     width: 75%;
@@ -1108,11 +1116,59 @@ html *
       grid-template-rows: 1fr;
     }
   }
-  .content-tags
+  .content-nav
   {
+    position: absolute;
     width: 25%;
-    height: 1000px;
-    background-color: green;
+    background-color: transparent;
+    position:relative;
+    padding: .5rem;
+    
+    h3
+    {
+      font-size: 16px;
+      color: #333333;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+    .fixed{
+      position: fixed;
+    }
+    .absolute{
+      position:absolute;
+    }
+    .nav-list{
+      background: transparent;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      a 
+      {
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 13px;
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-left:#d7d7d7 1px solid;
+        
+      }
+      a:hover 
+      {
+        text-decoration: underline;
+      }
+      a, a:visited
+      {
+        color:#0F5ABD;
+      }
+      .page-nav-active
+      {
+        border-left:#0f5abd 2px solid;
+      }
+    }
+
+
+
   }
 }
 .tabs {
@@ -1153,6 +1209,20 @@ html *
     background-color: white;
     border: 1px solid #ff590a;
     border-bottom: 1px solid white;
+  }
+}
+@media screen and (max-width: 38.75rem)
+{
+  .tabcontent
+  {
+    .contents
+    {
+      width: 100%;
+    }
+    .content-nav
+    {
+      display: none;
+    }
   }
 }
 

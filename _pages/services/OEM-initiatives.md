@@ -7,7 +7,9 @@ sidenav: false
 <section id="itvmo-oem">
   <section id="inner-page-heading">
     <section id="page-directory"></section>
+    <section id="page-heading">
     <h1 class="margin-top-0">{{ page.title }}</h1>
+    </section>
   </section>
 
   <section id="inner-page-tabs">
@@ -19,7 +21,7 @@ sidenav: false
 
     <div id="vendor-assessments" class="tabcontent" style="display: flex;">
       <div class="contents">
-        <h3 class="tab-heading">
+        <h3 id="oem-assessment-initiative" class="tab-heading">
           Vendor Assessments
         </h3>
         <div class="margin-bottom-2">
@@ -61,7 +63,7 @@ sidenav: false
             Original Equipment Manufacturers (OEM)
           </h3>
                 <h3 class="usa-accordion__heading">
-                  <button class="accordion" aria-expanded="false" aria-controls="b-a1" onclick="initAccordionButtons(this)">
+                  <button id="adobe" class="accordion" aria-expanded="false" aria-controls="b-a1" onclick="displayTabContent(this)">
                   <span>
                     <img src="{{site.baseurl}}/assets/images/logos/company_logos/adobe.png">
                     Adobe
@@ -115,7 +117,7 @@ sidenav: false
                 </div>
                 </div>
                 <h3 class="usa-accordion__heading">
-                  <button class="accordion" aria-expanded="false" aria-controls="b-a2" onclick="initAccordionButtons(this)">                  <span>
+                  <button id="aws" class="accordion" aria-expanded="false" aria-controls="b-a2" onclick="displayTabContent(this)">                  <span>
                   <img src="{{site.baseurl}}/assets/images/logos/company_logos/aws.svg">
                     Amazon Web Services (AWS)
                   </span>
@@ -167,7 +169,7 @@ sidenav: false
                 </div>
                 </div>
                       <h3 class="usa-accordion__heading">
-                  <button class="accordion" aria-expanded="false" aria-controls="b-a3" onclick="initAccordionButtons(this)">                  <span>
+                  <button id="cisco" class="accordion" aria-expanded="false" aria-controls="b-a3" onclick="displayTabContent(this)">                  <span>
                   <img src="{{site.baseurl}}/assets/images/logos/company_logos/cisco.png">
                     Cisco
                   </span>
@@ -217,7 +219,7 @@ sidenav: false
                 </div>
 
                 <h3 class="usa-accordion__heading">
-                  <button class="accordion" aria-expanded="false" aria-controls="b-a4" onclick="initAccordionButtons(this)">                  <span>
+                  <button id="mircosoft" class="accordion" aria-expanded="false" aria-controls="b-a4" onclick="displayTabContent(this)">                  <span>
                   <img src="{{site.baseurl}}/assets/images/logos/company_logos/microsoft.png">
                     Microsoft
                   </span>
@@ -277,7 +279,7 @@ sidenav: false
                 </div>
 
                 <h3 class="usa-accordion__heading">
-                  <button class="accordion" aria-expanded="false" aria-controls="b-a5" onclick="initAccordionButtons(this)">                  <span>
+                  <button id="oracle" class="accordion" aria-expanded="false" aria-controls="b-a5" onclick="displayTabContent(this)">                  <span>
                   <img src="{{site.baseurl}}/assets/images/logos/company_logos/oracle.png">
                     Oracle
                   </span>
@@ -330,7 +332,7 @@ sidenav: false
                 </div>
                 </div>
                 <h3 class="usa-accordion__heading">
-                  <button class="accordion" aria-expanded="false" aria-controls="b-a6" onclick="initAccordionButtons(this)">                  <span>
+                  <button id="salesforce" class="accordion" aria-expanded="false" aria-controls="b-a6" onclick="displayTabContent(this)">                  <span>
                   <img src="{{site.baseurl}}/assets/images/logos/company_logos/salesforce.png">
                     Salesforce
                   </span>
@@ -379,7 +381,7 @@ sidenav: false
                 </div>
                 </div>
                 <h3 class="usa-accordion__heading">
-                  <button class="accordion" aria-expanded="false" aria-controls="b-a7" onclick="initAccordionButtons(this)">                  <span>
+                  <button id="servicenow" class="accordion" aria-expanded="false" aria-controls="b-a7" onclick="displayTabContent(this)">                  <span>
                   <img src="{{site.baseurl}}/assets/images/logos/company_logos/servicenow.png">
                   ServiceNow
                   </span>
@@ -440,7 +442,18 @@ sidenav: false
                 </div>
           </div>
       </div>
-      <div class="content-tags">
+      <div class="content-nav">
+        <div class="nav-list">
+          <h3>On this Tab</h3>
+              <a class="page-nav page-nav-active" href="#oem-assessment-initiative">OEM Assessment Initiative</a>
+              <a class="page-nav accordion-nav" aria-controls="adobe" >Adobe</a>
+              <a class="page-nav accordion-nav" aria-controls="aws">Amazon Web Services (AWS)</a>
+              <a class="page-nav accordion-nav" aria-controls="cisco">Cisco</a>
+              <a class="page-nav accordion-nav" aria-controls="mircosoft">Microsoft</a>
+              <a class="page-nav accordion-nav" aria-controls="oracle">Oracle</a>
+              <a class="page-nav accordion-nav" aria-controls="salesforce">Salesforce</a>
+              <a class="page-nav accordion-nav" aria-controls="servicenow">ServiceNow</a>
+        </div>
       </div>
     </div>
     <div id="contract-review" class="tabcontent">
