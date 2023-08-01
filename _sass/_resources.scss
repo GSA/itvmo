@@ -878,16 +878,27 @@ a.checked {
   width: 250px;
   height: 125px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
 }
 #annual-summit
 {
+  b 
+  {
+    color: #333333;
+  }
+  .itvmo-heading
+  {
+    font-size: 18px;
+    color: #333333;
+    font-family: "Arial-BoldMT", "Arial Bold", "Arial", sans-serif;
+  }
   #itvmo-annual-summit
   {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
+    margin-top: 30px;
+    margin-bottom: 30px;
     span 
     {
       text-align: center;
@@ -957,6 +968,7 @@ a.checked {
       th 
       {
         min-width: 158px;
+        vertical-align: top;
       }
       td 
       {
@@ -969,8 +981,67 @@ a.checked {
             color: #f15922;
           }
         }
+        .speaker
+        {
+          color: #555555;
+        }
+        .details
+        {
+          color: black;
+          font-weight: 500;
+        }
       }
     }
+  }
+}
+.annual-summit-tabcontent
+{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  h3 
+  {
+    font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #062349;
+    margin-bottom: 0;
+  }
+  p 
+  {
+    margin: 0;
+  }
+  .link-description
+  {
+    margin: 0;
+    display: flex;
+    column-gap: 10px;
+    .description-list
+    {
+      margin: 0;
+      list-style-type: disc !important;
+      padding-left: 40px !important;
+      a 
+      {
+        font-weight: 500;
+      }
+    }
+    img 
+    {
+      width: 10px;
+      height: 11px;
+      margin-top: 7.5px;
+    }
+  }
+  a,a::after
+  {
+    font-weight: 600;
+    color: rgb(15, 90, 189);
+    text-decoration: none;
+  }
+  a:hover
+  {
+    text-decoration: underline;
   }
 }
 @media only screen and (max-width: 470px)
