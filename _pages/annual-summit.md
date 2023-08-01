@@ -372,7 +372,6 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>9:30 – 9:55 am</li>
-          <li class="location">23rd Floor Reception</li>
         </ul>
       </th>
       <td>
@@ -386,7 +385,6 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>9:55 – 10:00 am</li>
-          <li class="location">23rd Floor Reception</li>
         </ul>
       </th>
       <td>
@@ -399,13 +397,12 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>10:00 – 10:05 am</li>
-          <li class="location">Anacostia<br> (23S 014A)</li>
         </ul>
       </th>
       <td>
         <ul>
           <li>Welcome</li>
-          <li class="speaker">Kyra Stewart, Governmentwide ITVMO</li>
+          <li class="speaker">Kyra Stewart, Program Manager Governmentwide ITVMO</li>
           <li class="details">Share summit objectives. Provide a quick overview of the day’s sessions and provide relevant logistics.</li>
         </ul>
       </td>
@@ -414,7 +411,6 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>10:05 – 10:15 am</li>
-          <li class="location">Anacostia<br> (23S 014A)</li>
         </ul>
       </th>
       <td>
@@ -429,7 +425,6 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>10:15 – 10:30 am</li>
-          <li class="location">Anacostia<br> (23S 014A)</li>
         </ul>
       </th>
       <td>
@@ -444,14 +439,13 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>10:30 – 11:30 am</li>
-          <li class="location">Anacostia<br> (23S 014A)</li>
         </ul>
       </th>
       <td>
         <ul>
           <li>Fireside Chat – Harnessing the Collective Brain and Buying Power of Government to Optimize IT Buying and Improve Agency Outcomes</li>
           <li class="speaker">Lesley Field, OMB-OFPP Deputy Administrator (Moderator)</li>
-          <li class="speaker">Panelists: Sonny Hashmi, GSA FAS Commissioner;  Jeff Koses, GSA Senior Procurement Executive; Gary Washington, USDA CIO;</li>
+          <li class="speaker">Panelists: Sonny Hashmi, GSA FAS Commissioner;  Jeff Koses, GSA Senior Procurement Executive; Gary Washington, USDA CIO</li>
           <li class="details"><br>With an annual spend of $70B in IT, the government has a challenging job of addressing evolving and diverse agency needs.  It is more important than ever that agencies we work together to harness the collective brain and buying power of the government to procure our key OEM staples that will sustain operations and the emerging technologies, such as artificial intelligence (AI) and natural language processing (NLP), that can innovate constituent engagement and outcomes. See how government leaders are actively embracing the opportunities technology presents for the future of agency operations while innovating tried and true IT resources to produce optimal outcomes.</li>
         </ul>
       </td>
@@ -460,13 +454,13 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>11:30 – 12:30 pm</li>
-          <li class="location">Anacostia<br> (23S 014A)</li>
         </ul>
       </th>
       <td>
         <ul>
           <li>Best-in-Class Leadership Panel Discussion – Overview and Updates on BIC Vehicles</li>
-          <li class="speaker">Warren Blankenship (Moderator) Panelists: Cheryl Thornton-Cameron, GSA ITC;  George Nicol, NASA SEWP Deputy Program Director; Glynis Fisher, NIH NITAAC; Stacy Watson, Army CHESS</li>
+          <li class="speaker">Warren Blankenship (Moderator)</li>
+          <li class="speaker">Panelists: Cheryl Thornton-Cameron, GSA ITC;  George Nicol, NASA SEWP Deputy Program Director; Glynis Fisher, NIH NITAAC; Stacy Watson, Army CHESS</li>
           <li class="details"><br>Best-in-class (BIC) is a government-wide designation for acquisition solutions that can be used by multiple agencies and that satisfy key priority criteria defined by the Office of Management and Budget (OMB). These vehicles reduce contract duplication, increase transparency and standardization, and leverage the government’s shared buying power to reduce administrative costs. Promote the utilization of the IT BIC vehicles and governmentwide IT acquisition best practices to advance category management, boost market equity with small businesses and promote program priorities and opportunities. IT BIC leaders share program priorities, upcoming opportunities, and information on how the IT BICs can provide important agency IT solutions.</li>
         </ul>
       </td>
@@ -475,14 +469,13 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>12:30 – 1:30 pm</li>
-          <li class="location">24th Floor Reception</li>
         </ul>
       </th>
       <td>
         <ul>
           <li>Networking Session / <span>Refreshments Break</span></li>
           <li class="speaker">
-            Small Business Tables -  Jerome Green, EPA; Calvin Mitchell, Ed; Bianca Roberson & Lauren Smith, DOT;
+            Small Business Tables -  Jerome Green, EPA; Calvin Mitchell, Ed; Bianca Roberson & Lauren Smith, DOT
           </li>
           <li class="details">
           <br>
@@ -494,7 +487,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
           </li>
           <br>
           <li class="details">
-            Agency OSDBU representatives provide actionable information to small businesses, contract vehicles and agencies on how small businesses can meet the sophisticated and emerging information technology needs of the federal government.
+            As part of the larger Federal Category Management Framework, the ITVMO works in tandem with the IT Category to drive down federal IT costs. The Best-in-Class (BIC) vehicle solutions leverage federated best practices to ensure agency IT buyers are acquiring common IT goods and services equitably, efficiently, and securely.  The networking session will include representatives from the key IT BIC programs. Summit participants can inquire about opportunities to use or support the vehicles.
           </li>
         </ul>
       </td>
@@ -503,14 +496,13 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>1:30 – 2:30 pm</li>
-          <li class="location">Federal Center<br>(23N 039B)</li>
         </ul>
       </th>
       <td>
         <ul>
           <li>Session 1: Working with Original Equipment Manufacturers</li>
           <li class="speaker">
-            John Radziszewski (Moderator); Panelists: Steve Faehl, Microsoft Federal Security CTO; Mr. Dominic Delmolino, AWS Vice President, Technology & Innovation; Jonathan Alboum, ServiceNow Federal CTO;
+            John Radziszewski (Moderator); Panelists: Steve Faehl, Microsoft Federal Security CTO; Mr. Dominic Delmolino, AWS Vice President, Technology & Innovation; Jonathan Alboum, ServiceNow Federal CTO
           </li>
           <li class="details">
           <br>
@@ -523,7 +515,6 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>2:30 – 3:30 pm</li>
-          <li class="location">Anacostia<br> (23S 014A)</li>
         </ul>
       </th>
       <td>
@@ -546,19 +537,13 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>3:30 pm</li>
-          <li class="location">Federal Center<br> (23N 039B)</li>
-          <li class="location">Anacostia<br> (23S 014A)</li>
         </ul>
       </th>
       <td>
         <ul>
           <li>Closing Remarks</li>
           <li class="speaker">
-            Kyra Stewart, Governmentwide ITVMO
-          </li>
-          <br>
-          <li class="speaker">
-            Warren Blankenship, Governmentwide ITVMO
+            Kyra Stewart, Program Manager Governmentwide ITVMO; Warren Blankenship Deputy IT Category Manager
           </li>
         </ul>
       </td>
@@ -567,8 +552,6 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <th>
         <ul>
           <li>3:30 – 4:00 pm</li>
-          <li class="location">24th Floor Reception</li>
-          <li class="location">(to be confirmed)</li>
         </ul>
       </th>
       <td>
