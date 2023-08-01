@@ -475,7 +475,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
         <ul>
           <li>Networking Session / <span>Refreshments Break</span></li>
           <li class="speaker">
-            Small Business Tables -  Jerome Green, EPA; Calvin Mitchell, Ed; Bianca Roberson & Lauren Smith, DOT
+            Small Business Tables -  Jerome Green, EPA; Calvin Mitchell, Ed; Exodie C. Roe III, Associate Administrator, GSA OSDBU; Bianca Roberson & Lauren Smith, DOT
           </li>
           <li class="details">
           <br>
@@ -524,7 +524,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
             Angela Washington (Moderator)
           </li>
           <li class="speaker">
-            Panelists: Warren Blankenship, IT Category Program Manager; Keith Moore, Operator of the MBDA Federal Procurement Center; Tommy Marks, Executive Director of the MBDA Virginia Business Center; Calvin Mitchell, OSDBU Direction, Dept of Ed
+            Panelists: Warren Blankenship, IT Category Program Manager; Keith Moore, Operator of the MBDA Federal Procurement Center; Tommy Marks, Executive Director of the MBDA Virginia Business Center; Calvin Mitchell, OSDBU Direction, Dept of Ed; Exodie C. Roe III, Associate Administrator, GSA OSDBU
           </li>
           <br>
           <li class="details">
@@ -543,7 +543,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
         <ul>
           <li>Closing Remarks</li>
           <li class="speaker">
-            Kyra Stewart, Program Manager Governmentwide ITVMO; Warren Blankenship Deputy IT Category Manager
+            Kyra Stewart, Program Manager Governmentwide ITVMO; Warren Blankenship, Deputy IT Category Manager
           </li>
         </ul>
       </td>
@@ -575,7 +575,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
 <b>George Nicol</b>, Deputy Program Director, NASA SEWP<br>
 <b>Glynis Fisher</b>, Deputy Director, National Institute of Health, Information Technology Acquisition and Assessment Center<br>
 <b>Stacy Watson</b>, Enterprise Solutions Division Director at PEO EIS-Army Computer Hardware, Enterprise Software and Solutions (CHESS)<br>
-<b>Exodie Roe III</b>, Associate Administrator, GSA OSDBU<br>
+<b>Exodie C. Roe III</b>, Associate Administrator, GSA OSDBU<br>
 <b>Denise Sirmons</b>, Director, U.S Environmental Protection Agency<br>
 <b>Calvin Mitchell</b>, Director Office of Small and Disadvantaged Business Utilization, U.S. Department of Education<br>
 <b>John Radziszewski</b>, Director, Federal Government IT Vendor Management Office, General Services Administration<br>
