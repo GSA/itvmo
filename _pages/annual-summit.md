@@ -355,7 +355,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
   <ul>
     <li><p><img alt="" src="{{site.baseurl}}/assets/images/person/clare-martorana.png"><span><b>Clare Martorana</b>, Federal Chief Information Officer</span></p></li>
     <li><p><img alt="" src="{{site.baseurl}}/assets/images/person/sonny-hashmi.png"><span><b>Sonny Hashmi</b>, Commissioner, GSA - Federal Acquisition Service</span></p></li>
-    <li><p><img alt="" src="{{site.baseurl}}/assets/images/person/lesley-field.png"><span><b>Lesley Field</b>, Deputy Director, OMB Office of Federal Procurement Policy</span></p></li>
+    <li><p><img alt="" src="{{site.baseurl}}/assets/images/person/lesley-field.png"><span><b>Lesley Field</b>, Deputy Administrator, OMB Office of Federal Procurement Policy</span></p></li>
     <li><p><img alt="" src="{{site.baseurl}}/assets/images/person/jeff-koses.png"><span><b>Jeff Koses</b>, Senior Procurement Executive, GSA</span></p></li>
     <li><p><img alt="" src="{{site.baseurl}}/assets/images/person/laura-stanton.png"><span><b>Laura Stanton</b>, Assistant Commissioner, Office of Information Technology Category (ITC), General Services Administration</span></p></li>
   </ul>
@@ -405,7 +405,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
       <td>
         <ul>
           <li>Welcome</li>
-          <li class="speaker">Kyra Stewart and Warren Blankenship, Governmentwide ITVMO</li>
+          <li class="speaker">Kyra Stewart, Governmentwide ITVMO</li>
           <li class="details">Share summit objectives. Provide a quick overview of the day’s sessions and provide relevant logistics.</li>
         </ul>
       </td>
