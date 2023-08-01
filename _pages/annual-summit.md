@@ -26,7 +26,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
 <h2></h2>
       <h3 class="usa-accordion__heading">
         <button class="usa-accordion__button" aria-expanded="false" aria-controls="b-a1">
-          Software Acquisition Initiatives with Original Equipment Manufacturer
+          Software Acquisition Initiatives with Original Equipment Manufacturers
         </button>
       </h3>
       <div id="b-a1" class="usa-accordion__content" hidden="">
@@ -56,13 +56,13 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
               - This guide assessed the risks associated with Microsoft G5 migrations. It was developed to provide agencies with effective acquisition strategies, identify major milestones for contract renewals, and help agencies identify and prioritize relevant factors when considering an upgrade to G5. <b>.gov/.mil audience only</b>
               </p>
             </div>
-            <div class="link-description">
+            <!-- <div class="link-description">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="#">Doing Business with OEMs: How OEMs Operate</a>
                 - This training resource provides an 8-part information series on OEM operating practices to educate agency IT buyers and help them achieve a stronger negotiating position.
               </p>
-            </div>
+            </div> -->
             <div class="link-description">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
@@ -330,7 +330,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
             <div class="link-description">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
-                <a target="_blank" rel="noreferrer noopener"  href="https://app.smartsheetgov.com/b/form/c2ecf3cb3df34e6f83524401336f1d8d">
+                <a target="_blank" rel="noreferrer noopener"  href="https://public.govdelivery.com/accounts/USGSA/subscriber/new?topic_id=USGSA_1229">
                   IT Buyers Listserv
                 </a>
                 - <b>Stay Informed:</b> Interested in the latest updates related to federal IT acquisitions? Learn about upcoming events, training opportunities, updates, and connect with fellow IT acquisitions professionals by joining the ITB CoP Listserv.
@@ -490,20 +490,9 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
           </li>
           <br>
           <li class="speaker">
-            IT BICs -
+            IT BICs - Hasaan Harris, GSA ITC; George Nicol, NASA SEWP; Glynis Fisher, NIH NIAAC; Keith Copeland, Danisesha Moore, Courtney Oszla, Army CHESS.
           </li>
-          <li class="speaker">
-            GSA FAS: Hasaan Harris;
-          </li>
-          <li class="speaker">
-            NASA SEWP: George Nicol;
-          </li>
-          <li class="speaker">
-            NIH NITAAC: Glynis Fisher
-          </li>
-          <li class="speaker">
-            Army CHESS: Keith Copeland, Denisesha Moore and Courtney Olszta
-          </li>
+          <br>
           <li class="details">
             Agency OSDBU representatives provide actionable information to small businesses, contract vehicles and agencies on how small businesses can meet the sophisticated and emerging information technology needs of the federal government.
           </li>
