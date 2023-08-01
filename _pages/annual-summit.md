@@ -483,7 +483,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
           </li>
           <br>
           <li class="speaker">
-            IT BICs - Hasaan Harris, GSA ITC; George Nicol, NASA SEWP; Glynis Fisher, NIH NIAAC; Keith Copeland, Danisesha Moore, Courtney Oszla, Army CHESS
+            IT BICs - Hassan Harris, GSA ITC; George Nicol, NASA SEWP; Glynis Fisher, NIH NIAAC; Keith Copeland, Danisesha Moore, Courtney Oszla, Army CHESS
           </li>
           <br>
           <li class="details">
