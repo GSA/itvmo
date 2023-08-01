@@ -569,13 +569,13 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
   </table>
 </div>
 <p><b>Panelists include:</b></p>
-<b>Angela Washington</b>, Project Assistant, U.S. Health and Human Services<br>
+<b>Angela Washington</b>, MBDA Senior Advisor for Access to Contracts<br>
 <b>Calvin Mitchell</b>, Director Office of Small and Disadvantaged Business Utilization, U.S. Department of Education<br>
 <b>Cheryl Thornton-Cameron</b>, Executive Director, SES Office of Acquisition Operations Information Technology Category Federal Acquisition Service, General Services Administration<br>
 <b>George Nicol</b>, Deputy Program Director, NASA SEWP<br>
 <b>Glynis Fisher</b>, Deputy Director, National Institute of Health, Information Technology Acquisition and Assessment Center<br>
 <b>Stacy Watson</b>, Enterprise Solutions Division Director at PEO EIS-Army Computer Hardware, Enterprise Software and Solutions (CHESS)<br>
-<b>Exodie Rowe</b>, Government Relations and Public Policy Executive, General Services Administration<br>
+<b>Exodie ROE III</b>, Associate Administrator, GSA OSDBU<br>
 <b>Denise Sirmons</b>, Director, U.S Environmental Protection Agency<br>
 <b>Calvin Mitchell</b>, Director Office of Small and Disadvantaged Business Utilization, U.S. Department of Education<br>
 <b>John Radziszewski</b>, Director, Federal Government IT Vendor Management Office, General Services Administration<br>
