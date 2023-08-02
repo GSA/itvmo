@@ -30,40 +30,40 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
         </button>
       </h3>
       <div id="b-a1" class="usa-accordion__content" hidden="">
-      <div class="annual-summit-tabcontent">
+      <div class="arrow-content-list">
             <div>
               <h3>Aligns with Session 1: Working with Original Equipment Manufacturers</h3>
               <p>
                 One of the primary purposes of the governmentwide ITVMO is to serve as a coordinated federal voice, representing all government IT buying interests, to the vendor community. As part of the OEM Assessment Initiative, the program consults with agency IT buyers, analyzes governmentwide IT procurement data, conducts market research, consults with industry experts and collaborates directly with vendors to develop shared agency acquisition resources to support agencies in making procurement decisions.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FAWS%252520-%252520Acquisitions%252520Guide.pdf%253Fapi%253Dv2">AWS Federal Acquisition Guide</a> - This guide provides an overview of the challenges and opportunities the government faces when procuring and using AWS cloud services, specifically consumption management and customer service. <b>.gov/.mil audience only</b>
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p><a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FServiceNow%252520-%252520Introduction%252520to%252520ServiceNow.pdf%253Fapi%253Dv2">Introduction to ServiceNow, Strategy, and Implementation Approaches</a>
               - Leverage this tailored best practice resource provided by ServiceNow for government agencies to help you identify the right sequence and planning approach, based on the business outcomes you envision from your Now Platform. <b>.gov/.mil audience only</b>
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
               <a target="_blank" rel="noreferrer noopener"  href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FMicrosoft%252520-%252520G5%252520Transition%252520Guide.pdf%253Fapi%253Dv2">Microsoft G5 Transition Guide for Agencies</a>
               - This guide assessed the risks associated with Microsoft G5 migrations. It was developed to provide agencies with effective acquisition strategies, identify major milestones for contract renewals, and help agencies identify and prioritize relevant factors when considering an upgrade to G5. <b>.gov/.mil audience only</b>
               </p>
             </div>
-            <!-- <div class="link-description">
+            <div class="arrow-content">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
-                <a target="_blank" rel="noreferrer noopener"  href="#">Doing Business with OEMs: How OEMs Operate</a>
+                <a target="_blank" rel="noreferrer noopener"  href="{{site.baseurl}}/how-oems-operate">Doing Business with OEMs: How OEMs Operate</a>
                 - This training resource provides an 8-part information series on OEM operating practices to educate agency IT buyers and help them achieve a stronger negotiating position.
               </p>
-            </div> -->
-            <div class="link-description">
+            </div>
+            <div class="arrow-content">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FOracle%252520-%252520Vendor%252520Assessment%252520Playbook.pdf%253Fapi%253Dv2">Oracle Federal Vendor Assessment Playbook</a>
@@ -84,42 +84,42 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
         </button>
       </h3>
       <div id="b-a2" class="usa-accordion__content" hidden="">
-      <div class="annual-summit-tabcontent">
+      <div class="arrow-content-list">
             <div>
               <h3>Aligns with AM Leadership Panel Discussion – Overview and Updates on BIC Vehicles</h3>
               <p>
               As part of the larger Federal Category Management Framework, the ITVMO works in tandem with the IT Category to drive down federal IT costs. The Best-in-Class (BIC) vehicle solutions leverage federated best practices to ensure agency IT buyers are acquiring common IT goods and services equitably, efficiently, and securely. IT BIC solutions are evaluated annually to sustain BIC designation and validate compliance to governing policies like small business utilization, cybersecurity, and sustainability.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/best-in-class/">IT Best-in-Class Vehicle Solutions</a>
                 - This page provides a summary of all 13 IT BIC Solutions with quick links to their vehicle pages, highlighting their capabilities and services.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
               <a target="_blank" rel="noreferrer noopener"  href="https://hallways.cap.gsa.gov/app/#/solutionsfinder?agency=8">Solutions Finder</a>
               - This tool provides a search engine for filtering and comparing offerings across the government. The site includes more linked resources on BICs, BPAs, and other contract types.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
               <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/assets/files/tlr/what-products-bic-solutions.pdf">Data How To: What products ands solutions are available by IT BIC Solution</a>
               - Acquisition Analytics show the BIC transaction line level detail. In this view the user can get product and pricing information. This guide shows that you may need to multi select in order to get the appropriate results. There is no restriction or control on the way data gets entered so a company name can be abbreviated, include spaces or not and all permutations would have to be selected.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/assets/files/tlr/What-are-the-obligations-by-BIC-and-which-agencies-use-them-508.pdf">Data How To: What are the obligations by BIC and which agencies use them? </a>
                 - This guide is intended to walk the user through using the operational workbench to find obligations by BIC.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
               <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <div>
                 <p>
@@ -134,7 +134,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 </ul>
               </div>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="#">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://hallways.cap.gsa.gov/app/#/gateway/professional-services/23372/category-management-best-class">Understanding Category Management and the BIC Designation Process</a>
@@ -155,7 +155,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
         </button>
       </h3>
       <div id="b-a3" class="usa-accordion__content" hidden="">
-      <div class="annual-summit-tabcontent">
+      <div class="arrow-content-list">
             <div>
               <h3>
                 Aligns with PM Session-2: Small Business Panel Discussion with the Minority Business Development Agency (MBDA)
@@ -164,7 +164,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 Market equity is extremely important to mitigating risks and advancing government excellence in IT acquisitions. Small business participation is critical for strengthening our IT supply chain by mitigating vendor concentration risks and helping to promote innovation by introducing leading edge and emerging technologies. The ITVMO partners with vehicle solutions and small businesses to increase their access to the market and informs agencies of strategies for utilizing small businesses to support their respective mission needs.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://www.mbda.gov/">
@@ -173,7 +173,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 - This provides a quick link to the MBDA website which provides many great resources, initiatives, events, and data for Minority Business Success in the federal workplace.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/exec-order-racial-equity/">
@@ -182,7 +182,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 - This reference card provides a series of quick links to policies, programs, and tools to help agencies and participants in the federal IT marketplace comply with governing policies related to small business.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://login.max.gov/cas/login?service=https%3A//d2d.gsa.gov/cas%3Fdestination%3Dnode/10389&securityLevel=securePlus2&renew=true">
@@ -191,7 +191,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 - Begin using benchmarking to evaluate opportunities for strengthening supplier diversity. This tool helps to identify recently introduced new entrants to the federal marketplace, specifically small businesses and disadvantaged businesses. .gov/.mil audience only
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/assets/files/tlr/how-much-agency-bic-contracts.pdf">
@@ -200,7 +200,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 - The small business dashboard calculates the small business utilization which is a useful metric used over time to show how small business is performing against larger businesses.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/assets/files/tlr/percent-product-services-small-business.pdf">
@@ -209,7 +209,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                   - Acquisition Analytics show the BIC transaction line level detail. In this view the user can get product and pricing information. This guide shows that you may need to multi select in order to get the appropriate results. There is no restriction or control on the way data gets entered so a company name can be abbreviated, include spaces or not and all permutations would have to be selected.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-SDB-Vendors.pdf">
@@ -230,14 +230,14 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
         </button>
       </h3>
       <div id="b-a4" class="usa-accordion__content" hidden="">
-      <div class="annual-summit-tabcontent">
+      <div class="arrow-content-list">
             <div>
               <h3>Aligns with Fireside Side Chat: Harnessing the Collective Brain and Buying Power of Government to Optimize IT Buying and Improve Agency Outcomes</h3>
               <p>
                 The ITVMO builds coalitions and relationships across the federal marketplace and IT industry to be the one-stop-shop for IT acquisition intelligence. Intelligence has been defined as the ability to provide a central repository of data, tools, insights, knowledge, and wisdom. The ITVMO’s inhouse domain experts provide research and content services as well as broker access to their partner’s sites and resources to increase governmentwide use and adoption.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/exec-order-nations-cybersecurity/">
@@ -246,7 +246,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 - This reference card provides a series of quick links to policies, programs, and tools to help agencies and participants in the federal IT marketplace comply with governing policies related to cybersecurity.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-Security-Related-Obligations.pdf">
@@ -255,7 +255,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 - This guide is intended to assist agencies in finding security and compliance related obligations while also viewing other agencies contract details for similar products and services.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/contract-data-elements-guide/">
@@ -264,7 +264,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 - This guide was developed to enable consistency and enhance data for agencies as they draft contracts for IT spending.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/assets/files/tlr/What-vendors-provide-cloud-based-services-that-are-FedRamp-certified-508.pdf">
@@ -273,7 +273,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 - FedRAMP standardizes security requirements for the authorization and ongoing cybersecurity of cloud services in accordance with FISMA , OMB Circular A-130 , and FedRAMP policy. This one pager provides guide finding businesses that have been FedRamp certified.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/assets/files/tlr/What-have-other-agencies-paid-for-a-similar-product-or-service-508.pdf">
@@ -282,7 +282,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 - This guide is intended for an agency preparing to make a purchase and wanting a comparison of what other organizations within the government paid for similar services or products.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/leading-edge-tech-report/">
@@ -303,14 +303,14 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
         </button>
       </h3>
       <div id="b-a5" class="usa-accordion__content" hidden="">
-      <div class="annual-summit-tabcontent">
+      <div class="arrow-content-list">
             <div>
               <h3>Aligns with Networking Sessions</h3>
               <p>
                 To help extend the ITVMO’s capability and ensure that the organization’s solutions and services are respective of the full, broad Federal IT Marketplace, the IT Buyers Community of Practice was established under the Chief Information Officer’s Council. <b>The IT Buyers Community of Practice unifies agency IT buyers and partners with industry and federal organizations to promote the consistent, repeatable use of IT acquisition best practices</b>. See how to join us today below.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <div>
                 <p>
@@ -327,7 +327,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 </ul>
               </div>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://public.govdelivery.com/accounts/USGSA/subscriber/new?topic_id=USGSA_1229">
@@ -338,7 +338,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
                 For industry partners and to join the ITVMO’s general listserv to include our quarterly Newsletter <a target="_blank" rel="noreferrer noopener" href="https://public.govdelivery.com/accounts/USGSA/subscriber/new?topic_id=USGSA_911">Subscribe Here</a>.
               </p>
             </div>
-            <div class="link-description">
+            <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/contribute/">
