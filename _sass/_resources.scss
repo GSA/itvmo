@@ -943,7 +943,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.tab-heading, .tab-supheading, .tab-p
+.tab-heading, .tab-supheading, .tab-p, .page-heading-title
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -959,14 +959,45 @@ html *
   }
 }
 /*Light blue background for the site*/
-#core-services, #homepage-body
+#core-services, #homepage-body, #main-content
 {
   background-color: #ecf1f6;
 }
 /*Inner pages template*/
+#main-content
+{
+  padding-top: 0;
+  padding-bottom: 90px;
+}
+.inner-page
+{
+  background-color: white;
+}
 #page-heading
 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  align-items: center;
   height: 156px;
+  width: 70%;
+  border-radius: 0px 100px 100px 0px;
+  background-color: #ecf1f6;
+  .page-heading-title
+  {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+  }
+  img 
+  {
+    width: 136px;
+    height: 143px;
+    margin-right: 50px;
+  }
 }
 
 #page-directory, .tabcontent
@@ -988,6 +1019,7 @@ html *
   justify-content: flex-end;
   align-items: center;
   column-gap: 5px;
+  padding: 20px;
   img
   {
     width: 4px;
@@ -1962,8 +1994,14 @@ html *
 }
 /* hompage-body section change resource card to mobile version */
 /* footer change the flex direction of gsa-options from row to column*/
+/* page heading of the inner page width increase */
 @media screen and (max-width: 59.375em)
 {
+
+      #page-heading
+      {
+        width: 95%;
+      }
   #homepage-body
   {
     #resources-feed

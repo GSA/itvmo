@@ -73,11 +73,11 @@ function setPageActive(event)
 $(function(){    
 	$(window).scroll(function(){ 
 
-        if($(this).scrollTop() >= 0 && $(this).scrollTop() < 450 && $(this).scrollTop() < ($('.content-nav').height() - $('.nav-list').height()))
+        if($(this).scrollTop() >= 0 && $(this).scrollTop() < 550 && $(this).scrollTop() < ($('.content-nav').height() - $('.nav-list').height()))
         {            
           $('.nav-list').removeClass('fixed').addClass('absolute').css('top', 0);
         } 
-        else if($(this).scrollTop() >= 450 && $(this).scrollTop() < ($('.content-nav').height()))
+        else if($(this).scrollTop() >= 550 && $(this).scrollTop() < ($('.content-nav').height()))
         {            
           $('.nav-list').removeClass('absolute').addClass('fixed').css('top', 5); //Need to be change accordingly
         } 

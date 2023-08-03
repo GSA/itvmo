@@ -4,11 +4,12 @@ layout: page
 sidenav: false
 ---
 
-<section id="itvmo-oem">
+<section id="itvmo-oem" class="inner-page">
   <section id="inner-page-heading">
     <section id="page-directory"></section>
     <section id="page-heading">
-    <h1 class="margin-top-0">{{ page.title }}</h1>
+      <h1 class="page-heading-title margin-0">{{ page.title }}</h1>
+      <img alt="OEM Support icon" src="{{site.baseurl}}/assets/images/icons/page_icons/oem-initiatives.svg">
     </section>
   </section>
 
