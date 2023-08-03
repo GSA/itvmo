@@ -14,10 +14,9 @@ sidenav: false
   </section>
 
   <section id="inner-page-tabs">
-
     <div class="tabs">
-      <a tabindex="0" class="tab active-tab" onclick="openTab(event, 'vendor-assessments')" onkeydown="openTabKey(event, 'vendor-assessments')">Vendor Assessments</a>
-      <a tabindex="0" class="tab" onclick="openTab(event, 'contract-review')" onkeydown="openTabKey(event, 'contract-review')">Contract Review as a Service</a>
+      <a id="vendor-assessments-header" tabindex="0" class="tab active-tab" onclick="openTab(event, 'vendor-assessments')" onkeydown="openTabKey(event, 'vendor-assessments')">Vendor Assessments</a>
+      <a id="contract-review-header" tabindex="0" class="tab" onclick="openTab(event, 'contract-review')" onkeydown="openTabKey(event, 'contract-review')">Contract Review as a Service</a>
     </div>
 
     <div id="vendor-assessments" class="tabcontent" style="display: flex;">
