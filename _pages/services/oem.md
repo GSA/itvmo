@@ -441,8 +441,27 @@ sidenav: false
                       </div>
                 </div>
                 </div>
+            <div class="tab-divide-line end-content"></div>
+              <section class="page-feedback">
+                <div class="page-feedback-heading">
+                  <img src="{{site.baseurl}}/assets/images/icons/pencil.svg">
+                  <h3>Was this Information helpful?</h3>
+                </div>
+                <div class="page-feedback-button">
+                  <button class="fb-agree">Yes Thanks!</button>
+                  <button class="fb-disagree">Not Really</button>
+                </div>
+                <p class="page-feedback-percentage">
+                  76% found this helpful
+                </p>
+                <p class="page-feedback-info">
+                  If you’d like to get in touch with a member from the support team, please navigate to <a href="{{site.baseurl}}/contact-info">Contact us</a>
+                </p>
+              </section>
+            </div>
           </div>
-      </div>
+        <div id="contract-review" class="tabcontent">
+        </div>
       <div class="content-nav">
         <div class="nav-list">
           <h3>On this Tab</h3>
@@ -457,9 +476,6 @@ sidenav: false
         </div>
       </div>
     </div>
-    <div id="contract-review" class="tabcontent">
-    </div>
-
   </section>
 
 

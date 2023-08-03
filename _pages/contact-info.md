@@ -1,5 +1,5 @@
 ---
-title: Contact Info
+title: Contact Us
 layout: page
 sidenav: false
 ---

@@ -943,7 +943,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.tab-heading, .tab-supheading, .tab-p, .page-heading-title
+.tab-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -1073,6 +1073,12 @@ html *
       background-color: #aaaaaa;
       margin-top: 15px;
       margin-bottom: 15px;
+    }
+    .end-content
+    {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      width: 100%;
     }
 
     .accordion
@@ -1242,6 +1248,94 @@ html *
     background-color: white;
     border: 1px solid #ff590a;
     border-bottom: 1px solid white;
+  }
+}
+.page-feedback
+{
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .page-feedback-heading
+  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    margin-bottom: 25px;
+    h3
+    {
+      color: #333333;
+      margin: 0;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    img 
+    {
+      width: 17px;
+      height: 17px;
+    }
+  }
+  .page-feedback-button
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    column-gap: 25px;
+    button 
+    {
+      width: 131px;
+      height: 48px;
+      border-radius: 10px;
+      font-weight: 400;
+      font-size: 16px;
+      font-family: 'Source Sans 3', sans-serif !important;
+      background-color: white;
+      border-style: solid;
+    }
+    .fb-agree
+    {
+      // border-width: 2px;
+      // border-style: solid;
+      border-color: #00BE84;
+      color: #00BE84;
+    }
+    .fb-agree:hover
+    {
+      background-color: #00BE84;
+      color: white;
+    }
+
+    .fb-disagree
+    {
+      border-color: #D40000;
+      color: #D40000;
+    }
+    .fb-disagree:hover
+    {
+      background-color: #D40000;
+      color: white;
+    }
+    margin-bottom: 15px;
+  }
+  p
+  {
+    font-weight: 400;
+    margin: 0;
+  }
+  .page-feedback-percentage
+  {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  .page-feedback-info
+  {
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 38.75rem)
