@@ -14,6 +14,14 @@ sidenav: false
   </section>
 
   <section id="inner-page-tabs">
+    <!-- Inner tab dropdown for the mobile version -->
+    <div id="tabs-mobile-container">
+        <select id="tabs-mobile" onchange="openTabDropdown();">
+          <option value="vendor-assessments-header">Vendor Assessments</option>
+          <option value="contract-review-header">Contract Review as a Service</option>
+        </select>
+    </div>
+    <!-- Inner tab dropdown for the desktop version -->
     <div class="tabs">
       <a id="vendor-assessments-header" tabindex="0" class="tab active-tab" onclick="openTab(event, 'vendor-assessments')" onkeydown="openTabKey(event, 'vendor-assessments')">Vendor Assessments</a>
       <a id="contract-review-header" tabindex="0" class="tab" onclick="openTab(event, 'contract-review')" onkeydown="openTabKey(event, 'contract-review')">Contract Review as a Service</a>
@@ -459,8 +467,6 @@ sidenav: false
               </section>
             </div>
           </div>
-        <div id="contract-review" class="tabcontent">
-        </div>
       <div class="content-nav">
         <div class="nav-list">
           <h3>On this Tab</h3>
@@ -473,6 +479,13 @@ sidenav: false
               <a class="page-nav accordion-nav" aria-controls="salesforce">Salesforce</a>
               <a class="page-nav accordion-nav" aria-controls="servicenow">ServiceNow</a>
         </div>
+      </div>
+    </div>
+    <div id="contract-review" class="tabcontent">
+      <div class="contents">
+        <h3 id="oem-assessment-initiative" class="tab-heading">
+          Contract Review as a Service
+        </h3>
       </div>
     </div>
   </section>

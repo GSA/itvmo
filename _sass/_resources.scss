@@ -1210,31 +1210,39 @@ html *
 
   }
 }
-.inner-page-tabs
-{ 
-  /* Style the dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  
-  /* Style the links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color on hover */
-  .dropdown-content a:hover {
-    background-color: #f1f1f1;
+#tabs-mobile-container
+{
+  width: auto;
+  float: right;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 30px;
+  background-color: #ecf1f6;
+  border-radius: 100px 0px 0px 100px;
+  visibility: hidden;
+  max-height: 0;
+  #tabs-mobile
+  {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 44px;
+    padding: 0 1.8em 0 1em;
+    border:1px solid #ff590a;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url("../assets/images/icons/arrow-down.svg") no-repeat #fff;
+    background-position: right 4% bottom 50%;
+    text-overflow: ellipsis;
+    color: #062348;
+    font-weight: 650;
+    font-size: 14px;
   }
 }
+
 .tabs {
   width: 100%;
   background-color: #f1f1f1;
@@ -1362,27 +1370,21 @@ html *
     font-size: 15px;
   }
 }
+/*Tabs swap to Tabs mobile version when reach the certain width.*/
 @media screen and (max-width: 850px) {
+  #tabs-mobile-container
+  {
+    visibility: visible;
+    max-height: fit-content;
+  }
   .tabs
   {
-    .tab
-    {
-      border: none;
-      margin-bottom: 0;
-      font-size: 13px;
-      height: 35.5px;
-      padding: 7px 8px;
-    }
-    .active-tab
-    {
-      border: none;
-      border-radius: 20px;
-      border: #ff590a 1px solid;
-    }
-    padding-bottom: 10px;
+    visibility: hidden;
+    max-height: 0;
   }
 
 }
+/*Hide the side bar page navigation when reach the certain width*/
 @media screen and (max-width: 38.75rem)
 {
   .tabcontent

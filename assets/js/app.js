@@ -202,6 +202,9 @@ function openTab(e, tabId)
   }
   document.getElementById(tabId).style.display = "flex"; //Display the content of the correct tabId.
   e.currentTarget.className += " active-tab"; 
+
+  //Update the dropdown value for the mobile version of the inner tabs well.
+  document.getElementById('tabs-mobile').value = e.currentTarget.id;
 }
 //This function hide tabs and display the tab that press enter or spacebar.
 function openTabKey(e, tabId)
@@ -210,6 +213,10 @@ function openTabKey(e, tabId)
   {
     openTab(e, tabId);
   }
+}
+function openTabDropdown()
+{
+  document.getElementById(document.getElementById('tabs-mobile').value).click();
 }
 
 /** Event page calendar **/
