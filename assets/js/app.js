@@ -100,12 +100,21 @@ function navOpenTabContent(pageNav)
 //This function display accordion content according to accordion Id that accordion button have.
 function displayTabContent(aButton)
 {
+  //If there is accordion-active class exist remove it.
+  let aActive = document.getElementsByClassName("accordion-active");
+  if(aActive[0] !== undefined)
+  {
+    aActive[0].classList.remove("accordion-active");
+  }
+
   const ariaControlsValue = aButton.getAttribute("aria-controls");
   let tabArrow = aButton.getElementsByClassName("tab-arrow");
   const currA = document.getElementById(ariaControlsValue);
   //If the Accordion content that retrive from aButton is not open, therefore open the Accordion content.
   if(currA.classList.contains("accordion-content-display") == false)
   {
+    //Add accordion-active style to the Accordion that clicked (aButton).
+    aButton.classList.add("accordion-active"); 
     let aContent = document.getElementsByClassName("accordion-content-display");
     //Hide all other Accordion content, and also reset tab arrow to default rotation.
     if(aContent[0] !== undefined)

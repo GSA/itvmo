@@ -963,6 +963,97 @@ html *
 {
   background-color: #ecf1f6;
 }
+/* Links list design */
+.links-list
+{
+  margin-bottom: 30px;
+  .links-list-heading
+  {
+    h4 
+    {
+      font-weight: 700;
+      font-style: normal;
+      font-size: 18px;
+      color: #062349;
+    }
+  }
+  .coming-soon 
+  {
+    margin: 0;
+    color: #333333;
+    font-weight: 400;
+    font-style: italic !important;
+    font-size: 15px !important;
+  }
+  ul 
+  {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    li 
+    {
+      height: 43px;
+      max-width: 518px;
+      .front-icon
+      {
+        margin-right: 5px;
+      }
+      a
+      {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-left: 10px;
+        padding-right: 30px;
+        border-style: solid;
+        border-color: rgba(215, 215, 215, 1);
+        border-radius: 10px;
+        text-overflow: ellipsis;
+        line-height: 1;
+        p 
+        {
+          margin: 0;
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+          font-weight: 400;
+          font-size: 14px;
+          color: #0F5ABD;
+        }
+      }
+      a:hover
+      {
+        background-color:#f0f0f0;
+      }
+    }
+    .login-require
+    {
+      a
+      {
+        background-image: url('../assets/images/icons/lock.svg');
+        background-position: right 2.5% bottom 50%;
+        background-repeat: no-repeat; 
+      }
+    }
+  } 
+}
+
+/* links-list convert to mobile version at certain width */
+@media screen and (max-width: 38.75rem)
+{
+  .links-list
+  {
+    ul 
+    {
+      li 
+      {
+        height: 70px;
+      }
+    }
+  }
+}
 /*Inner pages template*/
 #main-content
 {
@@ -972,7 +1063,6 @@ html *
 .inner-page
 {
   background-color: white;
-  line-height: 30px;
 }
 #page-heading
 {
@@ -1046,6 +1136,7 @@ html *
     padding-left: 50px;
     padding-right: 40px;
     color: #333333;
+    line-height: 30px;
     a,a::after
     {
       color: rgb(15, 90, 189);
@@ -1081,7 +1172,6 @@ html *
       margin-bottom: 3rem;
       width: 100%;
     }
-
     .accordion
     {
       z-index: 99;
@@ -1142,17 +1232,29 @@ html *
     .accordion-content
     {
       padding: 0;
+      padding-left: 15px;
+      padding-right: 15px;
       display: grid;
       grid-template-rows: 0fr;
       transition: grid-template-rows 500ms;
+      line-height: 30px;
       div 
       {
         overflow: hidden;
       }
     }
+    .accordion-active
+    {
+      border-radius: 20px 20px 0px 0px;
+      background-color: white;
+      border-bottom: none;
+    }
     .accordion-content-display
     {
       grid-template-rows: 1fr;
+      border: #d7d7d7 1px solid;
+      border-top: none;
+      border-radius: 0px 0px 20px 20px;
     }
   }
   .content-nav
