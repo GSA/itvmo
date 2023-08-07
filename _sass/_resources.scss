@@ -1316,12 +1316,14 @@ html *
 #tabs-mobile-container
 {
   width: auto;
-  float: right;
-  display: flex;
-  flex-direction: row-reverse;
-  padding-right: 30px;
-  background-color: #ecf1f6;
-  border-radius: 100px 0px 0px 100px;
+  // float: right;
+  // display: flex;
+  // flex-direction: row-reverse;
+  // padding-right: 30px;
+  // background-color: #ecf1f6;
+  // border-radius: 100px 0px 0px 100px;
+  padding-left: 30px;
+  background-color: #f6f6f6;
   visibility: hidden;
   max-height: 0;
   #tabs-mobile
