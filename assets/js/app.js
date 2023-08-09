@@ -1,11 +1,11 @@
 // Add your custom javascript here
 // console.log("Hi from Federalist");
 
-//Variable
+/** Run functions **/
+
+//Highlights section Variables
 let curSlide = 0; 
 let slideCount, slides, timer, dots;//Slide count in the highlight
-
-/** Run functions **/
 //Run Home page 
 if(document.getElementById('dynamic-panel') != null)
 {
@@ -41,6 +41,234 @@ if( document.getElementById('nextButton') != null)
   localStorage.clear();
   runCalendar(d,m,y);
 }
+//Run Resources page
+
+//Faceted Navigation Variables
+let filteredResults, facets, resources, searchInput;
+if(document.getElementById('resources') != null)
+{
+  //Display all the resource cards right away.
+  document.addEventListener("DOMContentLoaded", () => {
+    updateResults();
+  });
+  retriveResourceData();
+  initalizeSearch();
+  initalizeClearAll();
+  initalizeFacets();
+}
+
+/** Resources page **/
+
+//Faceted Navigation
+
+//This function will update resource cards according to both search and facets
+function updateResultsSearch() 
+{
+  const selectedFacets = facets.map(facet =>
+    Array.from(facet.querySelectorAll("input:checked")).map(input => input.value)
+  );
+  const filteredResources = getFilteredRecources(selectedFacets); 
+  const searchTerm = searchInput.value;
+  const searchData = filterBySearch(filteredResources, searchTerm);
+  displayResults(searchData);
+}
+
+//This function return the filter resources that also match the search input that user inserted.
+function filterBySearch(filteredResources, searchTerm) 
+{
+  if (!searchTerm) 
+  {
+    return filteredResources;
+  }
+  searchTerm = searchTerm.toLowerCase();
+  return filteredResources.filter(item => { return item.title.toLowerCase().includes(searchTerm) || item.description.toLowerCase().includes(searchTerm);});
+}
+
+//This function dropdown the facet list when click on it heading button.
+function displayDropdownContent(aButton)
+{
+  const ariaControlsValue = aButton.getAttribute("aria-controls");
+  const aButtonArrow = aButton.children[1];
+  const currA = document.getElementById(ariaControlsValue);
+  if(currA.classList.contains("facet-list-active") == false)
+  { 
+    aButtonArrow.classList.add("dropdown-arrow-active");
+    currA.classList.add("facet-list-active");
+  }
+  else 
+  {
+    aButtonArrow.classList.remove("dropdown-arrow-active");
+    currA.classList.remove("facet-list-active");
+  }
+}
+//This function initalize the search on the Resoruces page
+function initalizeSearch()
+{
+  searchInput = document.getElementById("search-input");
+  searchInput.addEventListener("input", updateResultsSearch);
+}
+//This function initalize the Clear All button on the page
+function initalizeClearAll()
+{
+  const clearAllButton = document.getElementById("clear-all");
+  clearAllButton.addEventListener("click", clearAllFacets);
+}
+//This function initalize all the Facets on the page
+function initalizeFacets()
+{
+  filteredResults = document.getElementById("filtered-results");
+  facets = [document.getElementById("topic-area"), document.getElementById("audience"), document.getElementById("resource-type"), document.getElementById("resource-source"), document.getElementById("filtered-results")];
+  for (const facet of facets) {
+    facet.addEventListener("change", updateResults);
+  }
+}
+
+//This function retrive the Resource Data from Resource page to prepare to display.
+function retriveResourceData()
+{
+  resources = document.getElementsByClassName("raw-resource-data");
+  let finalResources = [];
+  for( resource of resources)
+  {
+    finalResources.push(
+      {
+      "title":resource.getAttribute("data-title"),
+      "description":resource.getAttribute("data-description"), 
+      "link":resource.getAttribute("data-url"),
+      "type":resource.getAttribute("data-type"),
+      "govOnly":resource.getAttribute("data-gov-only"),
+      "isExternal":resource.getAttribute("data-is-external"),
+      "filter":resource.getAttribute("data-filter"),
+      "brandOffering":resource.getAttribute("data-branded-offerings"),
+      "audience":resource.getAttribute("data-audience"),
+      "date":resource.getAttribute("data-publication-date"),
+      "readTime":resource.getAttribute("data-reading-time"),
+      "resourceType":resource.getAttribute("data-resource-type"),
+    })
+  }
+  resources = finalResources;
+}
+
+//This function will update the result according to the input on all of the facets
+function updateResults() 
+{
+  //Each facet in facets create a  array of input that checked by the user.
+  const selectedFacets = facets.map(facet =>
+    Array.from(facet.querySelectorAll("input:checked")).map(input => input.value)
+  );
+  const filteredResources = getFilteredRecources(selectedFacets); 
+  displayResults(filteredResources);
+}
+
+//This function retrive resources that match facets requirement.
+function getFilteredRecources(selectedFacets) 
+{
+  const filteredResources = resources.filter(resource => {
+
+    const [selectedTotalArea, selectedAudience, selectedResourceType, selectedSource] = selectedFacets;
+    const totalAreaMatch = selectedTotalArea.length === 0 || selectedTotalArea.includes(resource.filter);
+    const audienceMatch = selectedAudience.length === 0 || selectedAudience.includes(resource.audience);
+    const resourceTypeMatch = selectedResourceType.length === 0 || selectedResourceType.includes(resource.resourceType);
+    const sourceMatch = selectedSource.length === 0 || selectedSource.includes(resource.govOnly);
+    return totalAreaMatch && audienceMatch && resourceTypeMatch && sourceMatch;
+  });
+
+  return filteredResources;
+}
+
+//This function reset all the Facets.
+function clearAllFacets() 
+{
+  const checkboxes = document.querySelectorAll(".facet-options input[type='checkbox']");
+
+  for (const checkbox of checkboxes) {
+    checkbox.checked = false;
+  }
+
+  updateResults();
+}
+
+//This function will display each resources into resource cards according to the filterResources that pass through, 
+//This function also update the Resoruce cards count on the page.
+function displayResults(filterResources) 
+{
+  filteredResults.innerHTML = "";
+
+  if (filterResources.length === 0) {
+    filteredResults.innerHTML = "No results found.";
+  } 
+  else 
+  {
+    let resourceCardList = ``;
+    let resourcesCount = 0;
+    for (const resource of filterResources) 
+    {//["", ""]
+      let filterMap = new Map([["p-filter", "Policy"],["acquisition-best-practices", "Acquisition Best Practices"],["small-business", "Small Business"],["market-intelligence", "Market Intelligence"],["technology", "Technology"],["contract-solution", "Contract Solutions"],["itvmo-general", "ITVMO General"]]);
+      let bOfferingMap = new Map([["govwide-it-category-management", "Govwide IT"]]);
+      let audienceMap = new Map([["for-contracting-officers", "Contracting Officers"],["for-program-managers","Program Managers"],["for-info-security-officials","Information Security Officials"],["for-industry", "Industry"]]);
+      let resourceF = filterMap.get(resource.filter);
+      let resourceBO = bOfferingMap.get(resource.brandOffering);
+      let resourceA = audienceMap.get(resource.audience);
+      let resultItem = 
+      `
+        <div class="resource-card">
+          <a href="${resource.link}">
+              <div class="resource-content">
+                <div aria-label="Filter: ${resourceF}" class="resource-filter"><span>${resourceF}</span></div>
+                <div aria-label="Title: ${resource.title}" class="resource-name">${resource.title}
+                `
+                if(resource.isExternal == 'true')
+                {resultItem +=`<img alt="External icon" src="${window.location.origin}/assets/images/icons/external.svg">`;}
+                
+                resultItem +=`</div>
+                <div aria-label="Description: ${resource.description}" class="resource-description" aria-details="description"><p class="two-line-max">${resource.description}</p></div>
+                <div class="resource-detail">
+                  <div class="file-type">
+                    <p>${resource.type}</p>
+                  </div>`;
+
+                  if(resource.govOnly == 'true')
+                  {
+                    resultItem +=`<div class="govmil">
+                      <img alt="Lock icon" src="${window.location.origin}/assets/images/icons/lock.svg">
+                    </div>`
+                  }
+                  
+                  resultItem +=`<div class="audience">
+                    <p>${resourceA}</p>
+                  </div>
+                  <div class="branded-offerings">
+                    <p>${resourceBO}</p>
+                  </div>
+                </div>
+              </div>
+
+            <div class="resource-line"></div>
+
+            <div class="resource-info">
+              <div class="resource-date">
+                <img alt="Calendar icon" src="${window.location.origin}/assets/images/icons/calendar.svg">
+                <div class="resource-logo"><span>${resource.date}</span></div>
+              </div>
+              <div class="resource-rtime">
+                <img alt="Stop watch icon" src="${window.location.origin}/assets/images/icons/stop-watch.svg">
+                <div class="resource-logo"><span>${resource.readTime} minute read</span></div>
+              </div>
+              <div class="resource-view">
+                <img alt="Eye icon" src="${window.location.origin}/assets/images/icons/eye.svg">
+                <div class="resource-logo"><span>28 View</span></div>
+              </div>
+            </div>
+          </a>
+        </div>
+      `;
+      resourceCardList += resultItem;
+      resourcesCount++;
+    }
+    filteredResults.innerHTML = `<p>${resourcesCount} Items</p>` + resourceCardList;
+  }
+}
+
 /** Populate Inner page **/
 //This function initalize all the page-nav click functionality.
 function initalizePageNav()
@@ -113,7 +341,7 @@ function displayTabContent(aButton)
   //If the Accordion content that retrive from aButton is not open, therefore open the Accordion content.
   if(currA.classList.contains("accordion-content-display") == false)
   {
-    //Add accordion-active style to the Accordion that clicked (aButton).
+    //Add accordion-active style to the Accordion that clicked (aButton)
     aButton.classList.add("accordion-active"); 
     let aContent = document.getElementsByClassName("accordion-content-display");
     //Hide all other Accordion content, and also reset tab arrow to default rotation.

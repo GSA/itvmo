@@ -2017,7 +2017,81 @@ html *
     }
   }
 }
+/* Faceted Navigation on the Resources page*/
+.facet-dropdown
+{
+  display: flex;
+  align-items: center;
+  .dropdown-arrow
+  {
+    width: 15px;
+    height: 9px;
+    transition: 0.3s;
+  }
+  .dropdown-arrow-active
+  {
+    transform: rotate(180deg);
+  }
+}
+
+#resources 
+{
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+  .faceted-nav 
+  {
+    display: flex;
+    flex-direction: column;
+    width: 276px;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .facet {
+    border: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .facet-list
+  {
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms;
+    line-height: 30px;
+    ul
+    {
+      overflow: hidden;
+    }
+  }
+
+  .facet-options 
+  {
+    line-height: 30px;
+    list-style: none;
+    padding: 0;
+  }
+  .facet-list-active
+  {
+    grid-template-rows: 1fr;
+  }
+  
+  .filtered-results {
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+}
 /*Populate resource card for Homepage and Resources page*/
+.resource-cards-data
+{
+  display: none !important;
+  visibility:hidden !important;
+}
 .resource-cards
 {
   p 
@@ -2057,10 +2131,15 @@ html *
       {
         height: 100%;
       }
+      .resource-filter
+      {
+        height: 18px;
+      }
       .resource-content
       {
         width: 80%;
         padding: 15px;
+        font-size: 16px;
         .resource-name, .resource-description
         {
           margin-top: 5px;
@@ -2069,6 +2148,10 @@ html *
         {
           width: 100%;
           height: 36.8px;
+          p 
+          {
+            width: 100%;
+          }
         }
         .resource-name
         {
@@ -2077,6 +2160,7 @@ html *
           font-size: 18px;
           font-weight: bold;
           color: #062349;
+          height: 21px;
           img
           {
             margin-left: 10px;
