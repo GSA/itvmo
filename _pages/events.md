@@ -4,22 +4,6 @@ layout: page
 sidenav: false
 ---
 <h1 class="margin-top-0">{{ page.title }}</h1>
-<section class="usa-hero" id="event-annual-summit">
-  <img class="speaker-image" alt="Speaker image" src="{{site.baseurl}}/assets/images/speaker.png">
-  <div>
-    <p id="annual-summit-intro">
-    Don’t forget to register for the <br> 
-    <span>ITVMO Annual Summit: Leveraging Category <br> 
-    Management for IT Procurement</span>
-    </p>
-    <p>
-      August 2nd, 9:30-3pm<br>
-      Deloitte- Rosslyn VA
-    </p>
-    <a id="report" style="padding: 5px; font-size:20px; margin:auto;" href="https://www.actiac.org/act-iac-event/leveraging-category-management-it-procurement">Register here</a>
-  </div>
-  <img class="speaker-image image-flip" alt="Speaker image" src="{{site.baseurl}}/assets/images/speaker.png">
-</section>
 
 <section class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
 <div></div>
