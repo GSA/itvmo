@@ -806,7 +806,6 @@ function positionHighlight()
       readButton[0].tabIndex = "0";
     }
   }
-  clearTimeout(timer); //Remove the timer that previously active before click on the previous button
 }
 //This function update dot allocation on the highlight page
 function updateDots()
