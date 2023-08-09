@@ -12,6 +12,10 @@ if(document.getElementById('dynamic-panel') != null)
   populateHighlight();
   initHighlightButtons();
   runHighlight();
+  document.addEventListener("DOMContentLoaded", () => 
+  {
+    positionHighlight();
+  });
 }
 //Run Inner page
 if(document.getElementById('page-directory') != null) //Other page beside homepage contain page-directory.
@@ -764,21 +768,7 @@ function prevSlide()
   {
     curSlide--;
   }
-  for (i = 0; i < slides.length; i++)
-  {
-    slides[i].style.transform = `translateX(${100 * (i - curSlide)}%)`;
-
-    var readButton = slides[i].getElementsByClassName("read-more");
-    if((100 * (i - curSlide)) !== 0)
-    {
-      readButton[0].tabIndex = "-1";
-    }
-    else
-    {
-      readButton[0].tabIndex = "0";
-    }
-  }
-
+  positionHighlight();
   updateDots();
   clearTimeout(timer); //Remove the timer that previously active before click on the previous button
   runHighlight(); 
@@ -794,6 +784,15 @@ function showSlides() {
   {
     curSlide++;
   }
+  positionHighlight();
+  updateDots();
+  clearTimeout(timer); //Remove the timer that previously active before click on the previous button
+  runHighlight();
+}
+
+//This function position hightlights and assign tabindex accordingly.
+function positionHighlight()
+{
   for (i = 0; i < slides.length; i++)
   {
     slides[i].style.transform = `translateX(${100 * (i - curSlide)}%)`;
@@ -807,10 +806,7 @@ function showSlides() {
       readButton[0].tabIndex = "0";
     }
   }
-
-  updateDots();
   clearTimeout(timer); //Remove the timer that previously active before click on the previous button
-  runHighlight();
 }
 //This function update dot allocation on the highlight page
 function updateDots()
