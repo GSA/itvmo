@@ -2113,7 +2113,7 @@ html *
   {
     // width: 100%;
     width: 929px;
-    height: 162px;
+    height: auto;
     background-color: white;
     border-left: rgba(89, 185, 222, 1) 7px solid;
     a 
@@ -2160,7 +2160,9 @@ html *
           font-size: 18px;
           font-weight: bold;
           color: #062349;
-          height: 21px;
+          height: auto;
+          width: 100%;
+          overflow: hidden;
           img
           {
             margin-left: 10px;
@@ -2210,13 +2212,19 @@ html *
           }
           .audience
           {
-            width: 135px;
+            min-width: 135px;
+            width: auto;
+            padding-left: 10px;
+            padding-right: 10px;
             border-color: rgba(148, 75, 187, 1);
             color: rgba(148, 75, 187, 1);
           }
           .branded-offerings
           {
-            width: 135px;
+            min-width: 135px;
+            width: auto;
+            padding-left: 10px;
+            padding-right: 10px;
             border-color: rgba(8, 122, 145, 1);
             color: rgba(8, 122, 145, 1);
           }
@@ -2232,6 +2240,7 @@ html *
         {
           display: flex;
           column-gap: 5px;
+          align-items: center;
         }
         img 
         {
@@ -2421,7 +2430,7 @@ html *
     .resource-card
     {
       width: 351px;
-      height: 281px;
+      height: auto;
       a 
       {
         flex-direction: column;
@@ -2451,7 +2460,7 @@ html *
         }
         .resource-info
         {
-          height: 20%;
+          height: 56px;
           flex-direction: row;
           align-items: center;
           column-gap: 15px;
