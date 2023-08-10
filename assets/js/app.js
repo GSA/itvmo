@@ -49,6 +49,9 @@ if( document.getElementById('nextButton') != null)
 
 //Faceted Navigation Variables
 let filteredResults, facets, resources, searchInput;
+const filterMap = new Map([["p-filter", "Policy"],["acquisition-best-practices", "Acquisition Best Practices"],["small-business", "Small Business"],["market-intelligence", "Market Intelligence"],["technology", "Technology"],["contract-solution", "Contract Solutions"],["itvmo-general", "ITVMO General"]]);
+const bOfferingMap = new Map([["govwide-it-category-management", "Govwide IT Category Management"],["contract-data-elements", "Contract Data Elements"],["cyber-category", "Cyber Category"],["governmentwide-strategic-solutions", "Governmentwide Strategic Solutions"],["it-best-in-class-vehicles", "IT Best-in-Class Vehicles"],["it-buyers-community-of-practice", "IT Buyers Community of Practice"],["leading-edge-technologies", "Leading Edge Technologies"],["market-intelligence", "Market Intelligence"],["oem-vendor-initiatives", "OEM Vendor Initiatives"],["small-business-util", "Small Business Utilization/Equity"],["supply-chain-risk-management", "Supply Chain Risk Management"],["technology-life-cycle-framework", "Technology Life Cycle Framework"]]);
+const audienceMap = new Map([["for-contracting-officers", "Contracting Officers"],["for-program-managers","Program Managers"],["for-info-security-officials","Information Security Officials"],["for-industry", "Industry"]]);
 if(document.getElementById('resources') != null)
 {
   //Display all the resource cards right away.
@@ -207,9 +210,6 @@ function displayResults(filterResources)
     let resourcesCount = 0;
     for (const resource of filterResources) 
     {//["", ""]
-      let filterMap = new Map([["p-filter", "Policy"],["acquisition-best-practices", "Acquisition Best Practices"],["small-business", "Small Business"],["market-intelligence", "Market Intelligence"],["technology", "Technology"],["contract-solution", "Contract Solutions"],["itvmo-general", "ITVMO General"]]);
-      let bOfferingMap = new Map([["govwide-it-category-management", "Govwide IT"]]);
-      let audienceMap = new Map([["for-contracting-officers", "Contracting Officers"],["for-program-managers","Program Managers"],["for-info-security-officials","Information Security Officials"],["for-industry", "Industry"]]);
       let resourceF = filterMap.get(resource.filter);
       let resourceBO = bOfferingMap.get(resource.brandOffering);
       let resourceA = audienceMap.get(resource.audience);
