@@ -7,9 +7,9 @@ gov-only: false
 is-external: true
 filter: small-business
 branded-offerings: govwide-it-category-management
-audience: for-program-managers
+audience: for-info-security-officials
 publication-date: June 25, 2023 #Need to add this ('MMMM DD, YYYY')
 reading-time: 60 #Need to add this 
-resource-type: guidance
+resource-type: report
 
 ---

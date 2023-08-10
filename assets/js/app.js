@@ -49,7 +49,8 @@ if( document.getElementById('nextButton') != null)
 
 //Faceted Navigation Variables
 let filteredResults, facets, resources, searchInput;
-const filterMap = new Map([["p-filter", "Policy"],["acquisition-best-practices", "Acquisition Best Practices"],["small-business", "Small Business"],["market-intelligence", "Market Intelligence"],["technology", "Technology"],["contract-solution", "Contract Solutions"],["itvmo-general", "ITVMO General"]]);
+const filterMap = new Map([["p-filter", "Policy"],["acquisition-best-practices", "Acquisition Best Practices"],["small-business", "Small Business"],["market-intelligence", "Market Intelligence"],["technology", "Technology"],["contract-solutions", "Contract Solutions"],["itvmo-general", "ITVMO General"]]);
+const filterColorMap = new Map([["p-filter", "#f2938c"],["acquisition-best-practices", "#59b9de"],["small-business", "#abace5"],["market-intelligence", "#3e4ded"],["technology", "#ddaa01"],["contract-solutions", "#5abf95"],["itvmo-general", "#b04abd"]]);
 const bOfferingMap = new Map([["govwide-it-category-management", "Govwide IT Category Management"],["contract-data-elements", "Contract Data Elements"],["cyber-category", "Cyber Category"],["governmentwide-strategic-solutions", "Governmentwide Strategic Solutions"],["it-best-in-class-vehicles", "IT Best-in-Class Vehicles"],["it-buyers-community-of-practice", "IT Buyers Community of Practice"],["leading-edge-technologies", "Leading Edge Technologies"],["market-intelligence", "Market Intelligence"],["oem-vendor-initiatives", "OEM Vendor Initiatives"],["small-business-util", "Small Business Utilization/Equity"],["supply-chain-risk-management", "Supply Chain Risk Management"],["technology-life-cycle-framework", "Technology Life Cycle Framework"]]);
 const audienceMap = new Map([["for-contracting-officers", "Contracting Officers"],["for-program-managers","Program Managers"],["for-info-security-officials","Information Security Officials"],["for-industry", "Industry"]]);
 if(document.getElementById('resources') != null)
@@ -213,9 +214,10 @@ function displayResults(filterResources)
       let resourceF = filterMap.get(resource.filter);
       let resourceBO = bOfferingMap.get(resource.brandOffering);
       let resourceA = audienceMap.get(resource.audience);
+      let resourceColor = filterColorMap.get(resource.filter);
       let resultItem = 
       `
-        <div class="resource-card">
+        <div class="resource-card" style="border-color: ${resourceColor};">
           <a href="${resource.link}">
               <div class="resource-content">
                 <div aria-label="Filter: ${resourceF}" class="resource-filter"><span>${resourceF}</span></div>
