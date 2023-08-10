@@ -53,7 +53,7 @@ collections:
       name: 'publication-date'
       widget: 'date'
       default: ''
-      format: 'MMMM DD YYYY'
+      format: 'MMMM DD, YYYY'
     - label: "Background Image"
       name: "background-image"
       widget: "image"
@@ -75,6 +75,17 @@ collections:
     - {label: "Description", name: "description", widget: "text"}
     - {label: "URL", name: "url-link", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
     # - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
+    - label: 'Publication date'
+      name: 'publication-date'
+      widget: 'date'
+      default: ''
+      format: 'MMMM DD, YYYY'
+    - label: "Reading time"
+      name: "reading-time"
+      widget: "number"
+      default: 30
+      valueType: "int"
+      min: 1
     - label: File type
       name: type
       widget: relation
@@ -94,18 +105,10 @@ collections:
     #   value_field: "name"
     #   display_fields: ["label"]
     #   multiple: true
-    - label: Resource Filter tags
+    - label: Topic Area
       name: filter
       widget: relation
       collection: "filter-tags"
-      search_fields: ["name"]
-      value_field: "tag"
-      display_fields: ["name"]
-      multiple: false
-    - label: Branded Offerings
-      name: branded-offerings
-      widget: relation
-      collection: "bo-tags"
       search_fields: ["name"]
       value_field: "tag"
       display_fields: ["name"]
@@ -118,8 +121,36 @@ collections:
       value_field: "tag"
       display_fields: ["name"]
       multiple: false
+    - label: Resource Type
+      name: resource-type
+      widget: relation
+      collection: "resource-type-tags"
+      search_fields: ["name"]
+      value_field: "tag"
+      display_fields: ["name"]
+      multiple: false
+    - label: Branded Offerings
+      name: branded-offerings
+      widget: relation
+      collection: "bo-tags"
+      search_fields: ["name"]
+      value_field: "tag"
+      display_fields: ["name"]
+      multiple: false
+#Resource Type tags allow user to use it to tag the resource cards
+  - label: Resource Filter tags
+    name: resource-type-tags
+    folder: assets/resource_tags/resource_type_tags
+    hide: true
+    # create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+      - {label: Tag, name: tag}
 
-#Branded Offering tags allow user to use it to tag the resource cards
+#Resource Filter tags allow user to use it to tag the resource cards
   - label: Resource Filter tags
     name: filter-tags
     folder: assets/resource_tags/filter_tags

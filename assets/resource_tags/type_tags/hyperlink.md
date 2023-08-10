@@ -1,4 +1,4 @@
 ---
 name: Hyperlink
-tag: Hyperlink
+tag: HTML
 ---

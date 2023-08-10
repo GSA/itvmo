@@ -1,4 +1,0 @@
----
-name: Cybersecurity
-tag: cybersecurity
----
