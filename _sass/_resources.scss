@@ -285,25 +285,32 @@ a.checked {
   overflow: hidden;
   text-align: center;
 }
-.eventExplain
+.event-color-explain
 {
-  margin-top: 5px;
-  height: 15px 
+  display: flex;
+  flex-direction: column;
+  .eventExplain
+  {
+    display: flex;
+    align-items: center;
+    .eventColor
+    {
+      border-radius: 5px;
+      height: 12px;
+      width: 17px;
+      float: left;
+    }
+    .eventColorExplain
+    {
+      padding-left: 5px;
+      float: left;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 16px;
+    }
+  }
 }
-.eventColor
-{
-  border-radius: 5px;
-  height: 15px;
-  width: 15px;
-  float: left;
-}
-.eventColorExplain
-{
-  padding-left: 5px;
-  float: left;
-  font-size: 13px;
-  font-weight: bold;
-}
+
 .padding {
   cursor: default !important;
   background-color: #FFFCFF !important;
@@ -943,7 +950,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.tab-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p
+.tab-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, .eventColorExplain
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
