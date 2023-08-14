@@ -2306,6 +2306,33 @@ html *
 {
   #resources 
   {
+    #open-filters
+    {
+      display: block;
+      position: fixed;
+
+      right: 0;
+      font-style: normal;
+      color: #0f5abd;
+      background-color: white;
+          padding: 10px;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #0f5abd;
+          border-radius: 63px 0px 0px 63px;
+          font-size: 16px;
+          cursor: pointer;
+          img 
+          {
+            filter: invert(23%) sepia(99%) saturate(1745%) hue-rotate(203deg) brightness(91%) contrast(94%);
+            height: 12px;
+            width: 12px;
+          }
+        }
+        #open-filters:hover
+        {
+          text-decoration: underline;
+        }
     #faceted-nav 
     {
       visibility: none;
@@ -2366,33 +2393,33 @@ html *
       {
         display: flex;
         justify-content: space-between;
-        #open-filters
-        {
-          display: block;
-          position: fixed;
+        // #open-filters
+        // {
+        //   display: block;
+        //   position: fixed;
 
-          right: 0;
-          font-style: normal;
-          color: #0f5abd;
-          background-color: white;
-          padding: 10px;
-          border-width: 1px;
-          border-style: solid;
-          border-color: #0f5abd;
-          border-radius: 63px 0px 0px 63px;
-          font-size: 16px;
-          cursor: pointer;
-          img 
-          {
-            filter: invert(23%) sepia(99%) saturate(1745%) hue-rotate(203deg) brightness(91%) contrast(94%);
-            height: 12px;
-            width: 12px;
-          }
-        }
-        #open-filters:hover
-        {
-          text-decoration: underline;
-        }
+        //   right: 0;
+        //   font-style: normal;
+        //   color: #0f5abd;
+        //   background-color: white;
+        //   padding: 10px;
+        //   border-width: 1px;
+        //   border-style: solid;
+        //   border-color: #0f5abd;
+        //   border-radius: 63px 0px 0px 63px;
+        //   font-size: 16px;
+        //   cursor: pointer;
+        //   img 
+        //   {
+        //     filter: invert(23%) sepia(99%) saturate(1745%) hue-rotate(203deg) brightness(91%) contrast(94%);
+        //     height: 12px;
+        //     width: 12px;
+        //   }
+        // }
+        // #open-filters:hover
+        // {
+        //   text-decoration: underline;
+        // }
       }
     }
   }
@@ -2412,6 +2439,10 @@ html *
 
 }
 /*Populate resource card for Homepage and Resources page*/
+#open-filters
+{
+  display: none;
+}
 .resource-cards-data
 {
   display: none !important;
@@ -2426,10 +2457,6 @@ html *
   #resources-count
   {
     width: 100%;
-    #open-filters
-    {
-      display: none;
-    }
   }
   span 
   {

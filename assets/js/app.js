@@ -417,7 +417,7 @@ function displayResults(filterResources)
       resourceCardList += resultItem;
       resourcesCount++;
     }
-    filteredResults.innerHTML = `<p id="resources-count">${resourcesCount} Items <a tabindex="0" aria-label="Open the filters menu button" id="open-filters" onclick="openFacetedNav()" onkeydown="openFacetedNavKey(event)">Filters<img src="${baseUrl}/assets/images/icons/filter.svg"></a></p>` + resourceCardList;
+    filteredResults.innerHTML = `<p id="resources-count">${resourcesCount} Items </p>` + resourceCardList;
   }
 }
 
