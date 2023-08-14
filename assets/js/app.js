@@ -53,6 +53,7 @@ const filterMap = new Map([["p-filter", "Policy"],["acquisition-best-practices",
 const filterColorMap = new Map([["p-filter", "#f2938c"],["acquisition-best-practices", "#59b9de"],["small-business", "#abace5"],["market-intelligence", "#3e4ded"],["technology", "#ddaa01"],["contract-solutions", "#5abf95"],["itvmo-general", "#b04abd"]]);
 const bOfferingMap = new Map([["govwide-it-category-management", "Govwide IT Category Management"],["contract-data-elements", "Contract Data Elements"],["cyber-category", "Cyber Category"],["governmentwide-strategic-solutions", "Governmentwide Strategic Solutions"],["it-best-in-class-vehicles", "IT Best-in-Class Vehicles"],["it-buyers-community-of-practice", "IT Buyers Community of Practice"],["leading-edge-technologies", "Leading Edge Technologies"],["market-intelligence", "Market Intelligence"],["oem-vendor-initiatives", "OEM Vendor Initiatives"],["small-business-util", "Small Business Utilization/Equity"],["supply-chain-risk-management", "Supply Chain Risk Management"],["technology-life-cycle-framework", "Technology Life Cycle Framework"]]);
 const audienceMap = new Map([["for-contracting-officers", "Contracting Officers"],["for-program-managers","Program Managers"],["for-info-security-officials","Information Security Officials"],["for-industry", "Industry"]]);
+let clearAllButton, facetNav, resourceOverlay, facetList, facetButton, closeButton;
 if(document.getElementById('resources') != null)
 {
   //Display all the resource cards right away.
@@ -63,12 +64,105 @@ if(document.getElementById('resources') != null)
   initalizeSearch();
   initalizeClearAll();
   initalizeFacets();
+  initalizeOverlay();
+  initalizeWindow();
 }
 
 /** Resources page **/
 
-//Faceted Navigation
+/** Resource page Faceted Navigation **/
 
+//This function initalize Overlay on the Resources page. 
+//While Faceted Navigation displayed (Mobile Version), if user click on the overlay the Faceted Navigation and overlay will be hidden.
+function initalizeOverlay()
+{
+  resourceOverlay = document.getElementById("custom-overlay");
+  resourceOverlay.addEventListener("click", closeFacetedNav);
+}
+//This function add evenlistener to the window.
+function initalizeWindow()
+{
+  // Call the checkScreenWidth function when the window is resized
+  window.addEventListener("resize", checkScreenWidth);
+  // Call the checkScreenWidth function initially to handle the initial window width
+  checkScreenWidth();
+}
+
+//This function if the width of the screen is lesser than 1230 (Mobile version of the Faceted Navigation), all the Facets on the Faceted Navigation will be unhide.
+function checkScreenWidth() {
+  const thresholdWidth = 1230; // Adjust this value as needed
+
+  // Get the current width of the browser window
+  const screenWidth = window.innerWidth;
+  if (screenWidth < thresholdWidth) 
+  {
+    hideFacets();
+  }
+  else
+  {
+    unhideFacets();
+    // const facetList = document.getElementsByClassName("facet-list");
+    for(let i=1; i< facetList.length; i++)
+    {
+      facetList[i].classList.remove("facet-list-active");
+      setCheckboxesTabIndex(facetList[i],-1);
+    }
+  }
+}
+//This function make all the facets display their dropdown list.
+function unhideFacets()
+{
+  closeButton[0].tabIndex = 0;
+  for(let i=0; i< facetButton.length; i++)
+  {
+    facetButton[i].tabIndex = 0;
+  }
+  for(let i=0; i< facetList.length; i++)
+  {
+    if(!facetList[i].classList.contains("facet-list-active"))
+    {
+      facetList[i].classList.add("facet-list-active");
+      setCheckboxesTabIndex(facetList[i],0);
+    }
+  }
+}
+//This function make all the facets hide their dropdown list, except the very first facet.
+function hideFacets()
+{
+  closeButton[0].tabIndex = -1;
+  for(let i=0; i< facetButton.length; i++)
+  {
+    facetButton[i].tabIndex = -1;
+  }
+  for(let i=0; i< facetList.length; i++)
+  {
+    facetList[i].classList.remove("facet-list-active");
+    setCheckboxesTabIndex(facetList[i],-1);
+  }
+}
+//This function unhide the Faceted navigation (mobile version of the page).
+function openFacetedNav() 
+{
+  resourceOverlay.classList.add("overlay-active");
+  facetNav.classList.add("faceted-display-mobile");
+  unhideFacets();
+
+}
+//This function hide tabs and display the tab that press enter or spacebar.
+function openFacetedNavKey(e)
+{
+  if((e.keyCode === 32)||(e.keyCode === 13))
+  {
+    openFacetedNav();
+  }
+}
+//This function hide the Faceted navigation (mobile version of the page).
+function closeFacetedNav() 
+{
+  resourceOverlay.classList.remove("overlay-active");
+  facetNav.classList.remove("faceted-display-mobile");
+  hideFacets();
+}
 //This function will update resource cards according to both search and facets
 function updateResultsSearch() 
 {
@@ -102,11 +196,22 @@ function displayDropdownContent(aButton)
   { 
     aButtonArrow.classList.add("dropdown-arrow-active");
     currA.classList.add("facet-list-active");
+    setCheckboxesTabIndex(currA, 0);
   }
   else 
   {
     aButtonArrow.classList.remove("dropdown-arrow-active");
     currA.classList.remove("facet-list-active");
+    setCheckboxesTabIndex(currA, -1);
+  }
+}
+//This function set all the checkboxes inside the facet tabindex according to the parameter that passing through.
+function setCheckboxesTabIndex(currFacetList,tabI)
+{
+  const checkboxList = currFacetList.children[0].children;
+  for(let i = 0; i < checkboxList.length; i++)
+  {
+    checkboxList[i].children[0].tabIndex = tabI;
   }
 }
 //This function initalize the search on the Resoruces page
@@ -118,13 +223,17 @@ function initalizeSearch()
 //This function initalize the Clear All button on the page
 function initalizeClearAll()
 {
-  const clearAllButton = document.getElementById("clear-all");
+  clearAllButton = document.getElementById("clear-all");
   clearAllButton.addEventListener("click", clearAllFacets);
 }
 //This function initalize all the Facets on the page
 function initalizeFacets()
 {
+  facetList = document.getElementsByClassName("facet-list");
+  facetButton = document.getElementsByClassName("facet-dropdown");
+  closeButton = document.getElementsByClassName("closebtn");
   filteredResults = document.getElementById("filtered-results");
+  facetNav= document.getElementById("faceted-nav");
   facets = [document.getElementById("topic-area"), document.getElementById("audience"), document.getElementById("resource-type"), document.getElementById("resource-source"), document.getElementById("filtered-results")];
   for (const facet of facets) {
     facet.addEventListener("change", updateResults);
@@ -164,8 +273,37 @@ function updateResults()
   const selectedFacets = facets.map(facet =>
     Array.from(facet.querySelectorAll("input:checked")).map(input => input.value)
   );
+  updateFacetsListChecked(selectedFacets);
   const filteredResources = getFilteredRecources(selectedFacets); 
   displayResults(filteredResources);
+}
+//This function display checked count on for each facet, 
+//if total checked of all facets combine is greater than 0 display clear all button.
+function updateFacetsListChecked(selectedFacets)
+{
+  let checkedCountList = document.getElementsByClassName("checked-count");
+  let totalCheckedCount = 0;
+
+  for(let i = 0; i < checkedCountList.length; i++)
+  {
+    if(selectedFacets[i].length != 0)
+    {
+      checkedCountList[i].innerHTML = `(${selectedFacets[i].length})`;
+      totalCheckedCount++;
+    }
+    else
+    {
+      checkedCountList[i].innerHTML = "";
+    }
+  }
+  if(totalCheckedCount > 0)
+  {
+    clearAllButton.style.display = "block";
+  }
+  else
+  {
+    clearAllButton.style.display = "none";
+  }
 }
 
 //This function retrive resources that match facets requirement.
@@ -210,7 +348,8 @@ function displayResults(filterResources)
     let resourceCardList = ``;
     let resourcesCount = 0;
     for (const resource of filterResources) 
-    {//["", ""]
+    {
+      let viewCount = 30; //!!Query and insert the view counts here
       let resourceF = filterMap.get(resource.filter);
       let resourceBO = bOfferingMap.get(resource.brandOffering);
       let resourceA = audienceMap.get(resource.audience);
@@ -262,7 +401,7 @@ function displayResults(filterResources)
               </div>
               <div class="resource-view">
                 <img alt="Eye icon" src="${window.location.origin}/assets/images/icons/eye.svg">
-                <div class="resource-logo"><span>28 View</span></div>
+                <div class="resource-logo"><span>${viewCount} View</span></div>
               </div>
             </div>
           </a>
@@ -271,9 +410,11 @@ function displayResults(filterResources)
       resourceCardList += resultItem;
       resourcesCount++;
     }
-    filteredResults.innerHTML = `<p>${resourcesCount} Items</p>` + resourceCardList;
+    filteredResults.innerHTML = `<p id="resources-count">${resourcesCount} Items <a tabindex="0" aria-label="Open the filters menu button" id="open-filters" onclick="openFacetedNav()" onkeydown="openFacetedNavKey(event)">Filters<img src="${window.location.origin}/assets/images/icons/filter.svg"></a></p>` + resourceCardList;
   }
 }
+
+
 
 /** Populate Inner page **/
 //This function initalize all the page-nav click functionality.

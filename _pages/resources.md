@@ -19,10 +19,8 @@ mainpage: true
 
   <section id="main-page-content" class="usa-graphic-list margin-bottom-4 grid-container padding-0">
     <section id="page-directory" class="grid-container padding-0"></section>
-      <div class="grid-container grid-container margin-0 padding-0">
-          <div class="usa-graphic-list__row grid-row grid-gap">
-              {% include resource-data.html %}
-          </div>
-      </div>
+    <div class="grid-container grid-container margin-0 padding-0">
+            {% include resource-data.html %}
+    </div>
   </section>
 

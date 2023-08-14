@@ -1,8 +1,6 @@
 <!--********Generates resource catalog items. Individual cards live in the in the _resources folder**************-->
-
-<div class="usa-media-block tablet:grid-col-9">
-  <p class="subject card-tag margin-top-0 text-gray-50 text-thin count"></p>
-  <div id="resources">
+  <div class="overlay" id="custom-overlay"></div>
+  <div id="resources" data-sitebase="{{site.baseurl}}">
     <div class="resource-cards-data">
     {% for resources in site.resources %}
       <div class="raw-resource-data" 
@@ -17,76 +15,93 @@
       data-audience="{{resources.audience}}"
       data-publication-date="{{resources.publication-date}}"
       data-reading-time="{{resources.reading-time}}"
-      data-resource-type="{{resources.resource-type}}">
+      data-resource-type="{{resources.resource-type}}">is-visible
       </div>
     {% endfor %}
     </div>
-              <div class="faceted-nav">
-                <div>
-                  <div class="clear-button">
-                    <p>Filters</p><button id="clear-all">Clear</button>
-                  </div>
+              <div id="faceted-nav">
+                <div id="close-faceted-nav-div">
+                  <a href="javascript:void(0)" aria-label="Close the filters menu button" class="closebtn" onclick="closeFacetedNav()">Close</a>
                 </div>
-                <div class="facet">
-                  <button class="facet-dropdown" aria-controls="facet_1" onclick="displayDropdownContent(this)">
-                    <h3>Topic Area</h3>
-                    <img class="dropdown-arrow" src="/assets/images/icons/arrow-down.svg">
-                  </button>
-                  <div class="facet-list " id="facet_1">
-                    <ul class="facet-options" id="topic-area">
-                      <li><input type="checkbox" value="p-filter">Policy</li>
-                      <li><input type="checkbox" value="acquisition-best-practices">Acquisition Best Practices</li>
-                      <li><input type="checkbox" value="small-business">Small Business</li>
-                      <li><input type="checkbox" value="market-intelligence">Market Intelligence</li>
-                      <li><input type="checkbox" value="technology">Technology</li>
-                      <li><input type="checkbox" value="contract-solutions">Contract Solutions</li>
-                      <li><input type="checkbox" value="itvmo-general">ITVMO General</li>
-                    </ul>
+                <div id="facets">
+                  <div>
+                    <div class="clear-button">
+                      <p>Filters</p><button id="clear-all">Clear x</button>
+                    </div>
                   </div>
-                </div>
-                <div class="facet">
-                  <button class="facet-dropdown" aria-controls="facet_2" onclick="displayDropdownContent(this)">
-                    <h3>Audience</h3>
-                    <img class="dropdown-arrow" src="/assets/images/icons/arrow-down.svg">
-                  </button>
-                  <div class="facet-list " id="facet_2">
-                    <ul class="facet-options" id="audience">
-                      <li><input type="checkbox" value="for-contracting-officers">Contracting Officers</li>
-                      <li><input type="checkbox" value="for-program-managers">Program Managers</li>
-                      <li><input type="checkbox" value="for-info-security-officials">Information Security Officials</li>
-                      <li><input type="checkbox" value="for-industry">Industry</li>
-                    </ul>
+                  <div class="facet">
+                    <button class="facet-dropdown" aria-controls="facet_1" onclick="displayDropdownContent(this)">
+                      <div class="facet-title-count">
+                        <h3>Topic Area</h3>
+                        <p class="checked-count"></p>
+                      </div>
+                      <img class="dropdown-arrow" src="/assets/images/icons/arrow-down.svg">
+                    </button>
+                    <div class="facet-list facet-list-active" id="facet_1">
+                      <ul class="facet-options" id="topic-area">
+                        <li><input tabindex="0" type="checkbox" id="check1" value="p-filter"><label for="check1">Policy</label></li>
+                        <li><input tabindex="0" type="checkbox" id="check2" value="acquisition-best-practices"><label for="check2">Acquisition Best Practices</label></li>
+                        <li><input tabindex="0" type="checkbox" id="check3" value="small-business"><label for="check3">Small Business</label></li>
+                        <li><input tabindex="0" type="checkbox" id="check4" value="market-intelligence"><label for="check4">Market Intelligence</label></li>
+                        <li><input tabindex="0" type="checkbox" id="check5" value="technology"><label for="check5">Technology</label></li>
+                        <li><input tabindex="0" type="checkbox" id="check6" value="contract-solutions"><label for="check6">Contract Solutions</label></li>
+                        <li><input tabindex="0" type="checkbox" id="check7" value="itvmo-general"><label for="check7">ITVMO General</label></li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="facet">
-                  <button class="facet-dropdown" aria-controls="facet_3" onclick="displayDropdownContent(this)">
-                    <h3>Resource Type</h3>
-                    <img class="dropdown-arrow" src="/assets/images/icons/arrow-down.svg">
-                  </button>
-                  <div class="facet-list " id="facet_3">
-                    <ul class="facet-options" id="resource-type">
-                      <li><input type="checkbox" value="guidance">Guidance</li>
-                      <li><input type="checkbox" value="use-case">Use Case</li>
-                      <li><input type="checkbox" value="report">Report</li>
-                      <li><input type="checkbox" value="information-slick">Information Slick</li>
-                      <li><input type="checkbox" value="tool">Tool</li>
-                    </ul>
+                  <div class="facet">
+                    <button class="facet-dropdown" aria-controls="facet_2" onclick="displayDropdownContent(this)">
+                      <div class="facet-title-count">
+                        <h3>Audience</h3>
+                        <p class="checked-count"></p>
+                      </div>
+                      <img class="dropdown-arrow" src="/assets/images/icons/arrow-down.svg">
+                    </button>
+                    <div class="facet-list" id="facet_2">
+                      <ul class="facet-options" id="audience">
+                        <li><input tabindex="-1" type="checkbox" id="check8" value="for-contracting-officers"><label for="check8">Contracting Officers</label></li>
+                        <li><input tabindex="-1" type="checkbox" id="check9" value="for-program-managers"><label for="check9">Program Managers</label></li>
+                        <li><input tabindex="-1" type="checkbox" id="check10" value="for-info-security-officials"><label for="check10">Information Security Officials</label></li>
+                        <li><input tabindex="-1" type="checkbox" id="check11" value="for-industry"><label for="check11">Industry</label></li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-                <div class="facet">
-                  <button class="facet-dropdown" aria-controls="facet_4" onclick="displayDropdownContent(this)">
-                    <h3>Source</h3>
-                    <img class="dropdown-arrow" src="/assets/images/icons/arrow-down.svg">
-                  </button>
-                  <div class="facet-list " id="facet_4">
-                    <ul class="facet-options" id="resource-source">
-                      <li><input type="checkbox" value="false"> Public Resource</li>
-                      <li><input type="checkbox" value="true"> Goverment/Military Access Only</li>
-                    </ul>
+                  <div class="facet">
+                    <button class="facet-dropdown" aria-controls="facet_3" onclick="displayDropdownContent(this)">
+                      <div class="facet-title-count">
+                        <h3>Resource Type</h3>
+                        <p class="checked-count"></p>
+                      </div>
+                      <img class="dropdown-arrow" src="/assets/images/icons/arrow-down.svg">
+                    </button>
+                    <div class="facet-list" id="facet_3">
+                      <ul class="facet-options" id="resource-type">
+                        <li><input tabindex="-1" type="checkbox" id="check12" value="guidance"><label for="check12">Guidance</label></li>
+                        <li><input tabindex="-1" type="checkbox" id="check13" value="use-case"><label for="check13">Use Case</label></li>
+                        <li><input tabindex="-1" type="checkbox" id="check14" value="report"><label for="check14">Report</label></li>
+                        <li><input tabindex="-1" type="checkbox" id="check15" value="information-slick"><label for="check15">Information Slick</label></li>
+                        <li><input tabindex="-1" type="checkbox" id="check16" value="tool"><label for="check16">Tool</label></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="facet">
+                    <button class="facet-dropdown" aria-controls="facet_4" onclick="displayDropdownContent(this)">
+                      <div class="facet-title-count">
+                        <h3>Source</h3>
+                        <p class="checked-count"></p>
+                      </div>
+                      <img class="dropdown-arrow" src="/assets/images/icons/arrow-down.svg">
+                    </button>
+                    <div class="facet-list" id="facet_4">
+                      <ul class="facet-options" id="resource-source">
+                        <li><input tabindex="-1" type="checkbox" id="check17" value="false"><label for="check17">Public Resource</label></li>
+                        <li><input tabindex="-1" type="checkbox" id="check18" value="true"><label for="check18">Goverment/Military Access Only</label></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div>
+              <div class="search-resource-cards">
                 <div class="search-bar">
                   <input type="text" id="search-input" placeholder="Search items...">
                 </div>
@@ -99,4 +114,3 @@
   </div>
   <p><strong>Don’t see what you’re looking for?</strong><br>
     We are constantly updating our resources but if you can’t find what you’re looking for or would like to work with us on developing artifacts, white papers, templates, or other resources, please reach out to us by email at <a href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a>.</p>
-</div>
