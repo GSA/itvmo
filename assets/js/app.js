@@ -4,10 +4,10 @@
 /** Run functions **/
 
 let baseUrl = window.location.origin;
-//If detect that it is the sanbox change the base url.
+//If detected that it is the sanbox url, change the base url. Change the baseurl to sanbox directory that able to obtain images.
 if(baseUrl.includes("federalist"))
 {
-  baseUrl = `/preview/gsa/itvmo/ITVMO-redesign/`;
+  baseUrl = `/preview/gsa/itvmo/ITVMO-redesign`;
 }
 
 //Highlights section Variables
