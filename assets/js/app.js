@@ -3,6 +3,13 @@
 
 /** Run functions **/
 
+let baseUrl = window.location.origin;
+//If detect that it is the sanbox change the base url.
+if(baseUrl.includes("federalist"))
+{
+  baseUrl = `/preview/gsa/itvmo/ITVMO-redesign/`;
+}
+
 //Highlights section Variables
 let curSlide = 0; 
 let slideCount, slides, timer, dots;//Slide count in the highlight
@@ -363,7 +370,7 @@ function displayResults(filterResources)
                 <div aria-label="Title: ${resource.title}" class="resource-name">${resource.title}
                 `
                 if(resource.isExternal == 'true')
-                {resultItem +=`<img alt="External icon" src="${window.location.origin}/assets/images/icons/external.svg">`;}
+                {resultItem +=`<img alt="External icon" src="${baseUrl}/assets/images/icons/external.svg">`;}
                 
                 resultItem +=`</div>
                 <div aria-label="Description: ${resource.description}" class="resource-description" aria-details="description"><p class="two-line-max">${resource.description}</p></div>
@@ -375,7 +382,7 @@ function displayResults(filterResources)
                   if(resource.govOnly == 'true')
                   {
                     resultItem +=`<div class="govmil">
-                      <img alt="Lock icon" src="${window.location.origin}/assets/images/icons/lock.svg">
+                      <img alt="Lock icon" src="${baseUrl}/assets/images/icons/lock.svg">
                     </div>`
                   }
                   
@@ -392,15 +399,15 @@ function displayResults(filterResources)
 
             <div class="resource-info">
               <div class="resource-date">
-                <img alt="Calendar icon" src="${window.location.origin}/assets/images/icons/calendar.svg">
+                <img alt="Calendar icon" src="${baseUrl}/assets/images/icons/calendar.svg">
                 <div class="resource-logo"><span>${resource.date}</span></div>
               </div>
               <div class="resource-rtime">
-                <img alt="Stop watch icon" src="${window.location.origin}/assets/images/icons/stop-watch.svg">
+                <img alt="Stop watch icon" src="${baseUrl}/assets/images/icons/stop-watch.svg">
                 <div class="resource-logo"><span>${resource.readTime} minute read</span></div>
               </div>
               <div class="resource-view">
-                <img alt="Eye icon" src="${window.location.origin}/assets/images/icons/eye.svg">
+                <img alt="Eye icon" src="${baseUrl}/assets/images/icons/eye.svg">
                 <div class="resource-logo"><span>${viewCount} View</span></div>
               </div>
             </div>
@@ -410,7 +417,7 @@ function displayResults(filterResources)
       resourceCardList += resultItem;
       resourcesCount++;
     }
-    filteredResults.innerHTML = `<p id="resources-count">${resourcesCount} Items <a tabindex="0" aria-label="Open the filters menu button" id="open-filters" onclick="openFacetedNav()" onkeydown="openFacetedNavKey(event)">Filters<img src="${window.location.origin}/assets/images/icons/filter.svg"></a></p>` + resourceCardList;
+    filteredResults.innerHTML = `<p id="resources-count">${resourcesCount} Items <a tabindex="0" aria-label="Open the filters menu button" id="open-filters" onclick="openFacetedNav()" onkeydown="openFacetedNavKey(event)">Filters<img src="${baseUrl}/assets/images/icons/filter.svg"></a></p>` + resourceCardList;
   }
 }
 
@@ -554,11 +561,11 @@ function populateDirectory()
     }
     if(i == urlSplit.length-1) //The page that the user currently on, make it not a link.
     {
-      newElements+= `<p>${currentPage}</p><img src="${window.location.origin}/assets/images/icons/directory-arrow.svg">`
+      newElements+= `<p>${currentPage}</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
     }
     else if(i > 0)
     {
-      newElements+= `<a href="${currentUrl}">${currentPage}</a><img src="${window.location.origin}/assets/images/icons/directory-arrow.svg">`
+      newElements+= `<a href="${currentUrl}">${currentPage}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
     }
     else //"Home" for baseurl
     {
