@@ -2577,21 +2577,19 @@ html *
             border-color: rgba(0, 115, 186, 1);
             color: rgba(0, 115, 186, 1);
           }
+          .audience, .branded-offerings
+          {
+            width: auto;
+            padding-left: 12px;
+            padding-right: 12px;
+          }
           .audience
           {
-            min-width: 135px;
-            width: auto;
-            padding-left: 10px;
-            padding-right: 10px;
             border-color: rgba(148, 75, 187, 1);
             color: rgba(148, 75, 187, 1);
           }
           .branded-offerings
           {
-            min-width: 135px;
-            width: auto;
-            padding-left: 10px;
-            padding-right: 10px;
             border-color: rgba(8, 122, 145, 1);
             color: rgba(8, 122, 145, 1);
           }
