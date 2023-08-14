@@ -2144,6 +2144,29 @@ html *
   .search-resource-cards
   {
     width: 79%;
+    #search-input
+    {
+      font-family: 'Source Sans 3', sans-serif !important;
+      color: #7f7f7f;
+      font-size: 17px;
+      font-weight: 400;
+      width: 100%;
+      height: 53px;
+      padding: 2px 15px 2px;
+      background-image: url(../assets/images/icons/search-icon-large.svg);
+      background-position: right 1% bottom 50%;
+      background-repeat: no-repeat;
+      border: #bfbfbf 1px solid;
+    }
+    .resource-cards
+    {
+      #resources-count 
+      {
+        padding-top: 20px;
+        margin-bottom: -15px;
+        color: #333333;
+      }
+    }
   }
   
   .facet-list
@@ -2421,8 +2444,7 @@ html *
   row-gap: 20px;
   .resource-card
   {
-    // width: 100%;
-    width: 929px;
+    width: 100%;
     height: auto;
     background-color: white;
     border-left: 7px solid;
@@ -2738,9 +2760,10 @@ html *
   .resource-cards
   {
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
     .resource-card
     {
-      width: 351px;
       height: auto;
       a 
       {
