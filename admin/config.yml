@@ -69,27 +69,11 @@ collections:
     name: events
     folder: _events/
     create: true
-    slug: "{{order}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
     - {label: "Organizer", name: "organizer", widget: "string"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Description", name: "description", widget: "text"}
-    # - label: 'Event date'
-    #   name: 'event-date'
-    #   widget: 'date'
-    #   default: ''
-    #   format: 'MMMM DD, YYYY'
-    # - label: 'Start Time'
-    #   name: 'start-time'
-    #   widget: 'date'
-    #   default: ''
-    #   format: 'H:MM'
-    # - label: 'End Time'
-    #   name: 'end-time'
-    #   widget: 'date'
-    #   default: ''
-    #   format: 'H:MM'
-    # - {label: "End time", name: "end", widget: "datetime", default: "", date_format: "MM/DD/YYYY", format: "MM-DD-YYYY HH:mm ZZ", picker_utc: false}
     - label: "Start time"
       name: "start-time"
       widget: "datetime"
