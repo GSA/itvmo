@@ -554,7 +554,7 @@ function populateDirectory()
     
 
     //This using for the sandbox, delete this later!!
-    if(currentUrl == 'https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/ITVMO-redesign/')
+    if(currentUrl.includes("federalist"))
     {
       newElements+= `<a href="${currentUrl}">Home</a>`
       break;
