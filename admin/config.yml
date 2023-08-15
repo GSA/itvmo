@@ -95,7 +95,7 @@ collections:
       widget: "datetime"
       default: ""
       date_format: "MMMM DD, YYYY" # e.g. 24.12.2021
-      time_format: "H:mm" # e.g. 21:07
+      time_format: "HH:mm" # e.g. 21:07
       format: "YYYY-MM-DDTHH:mm:ss.sss-05:00"
       picker_utc: false
     - label: "End time"
