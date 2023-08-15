@@ -1,15 +1,72 @@
 {% comment %} 
 This will be displayed on the homepage. Ideally, you want to highlight key goals of the website
 {% endcomment %}
-
 <section class="usa-hero">
-  <div class="grid-container">
-    <div class="usa-hero__callout custom-callout">
-      <h1 class="usa-hero__heading"><span class="usa-hero__heading--alt">What’s new?</span></h1>
-      <p>The ITVMO is a collaborative effort across government to make IT acquisitions faster and more cost effective.</p>
-      <a class="usa-button btn-primary learn" href="{{site.baseurl}}/about/" >Learn More About Who We Are</a>
-      <a class="usa-button btn-primary gap" href="{{site.baseurl}}/assets/files/22-11_ITVMO_Fact-Sheet_R3.pdf" target="_blank" rel="noreferrer noopener">Learn More About What We Do</a>
-      <a class="usa-button btn-primary gap" href="{{site.baseurl}}/annual-summit">Learn More About Annual Summit</a>
-    </div>
+  <div class="grid-container padding-0">
+      <div class="usa-hero-welcome animate fade"> 
+        <div id="welcome">
+          <h3>
+            Welcome to ITVMO
+          </h3>
+          <p>
+            The ITVMO serves as a trusted independent advisor and advocate to help agencies buy common IT goods and services in compliance with procurement laws. As a one-stop shop, we can leverage governmentwide IT procurement data, conduct market research, and develop shared agency acquisition knowledge to support agencies in procurement decisions.
+          </p>
+          <input id="searchbar" type="text" onkeyup="" placeholder="What are you looking for?">
+        </div>
+      </div>
+      <div class="usa-hero-panel animate fade">
+        <div id="dynamic-panel">
+          <a class="prev" tabindex="0" title="Go to previous highlight">
+            <img src="{{site.baseurl}}/assets/images/icons/arrow-icon.svg" alt="previous arrow">
+          </a>
+          <div class = "dotDiv">
+            {% for highlight in site.highlights %}
+            <span class="dot"></span>
+            {% endfor %}
+          </div>
+          <div class="slideshow-container column-card">
+            {% for highlight in site.highlights %}
+            <div class="mySlides" onmouseover="stopSlide()" onmouseout="runSlide()">
+              <div class="order">{{highlight.order}}</div>
+              <img class="highlight-background" src="{{site.baseurl}}/{{highlight.background-image}}" alt="highlight background">
+              <div class="highlight-info">
+                <div>
+                  <h4>
+                    {{highlight.title}}
+                  </h4>
+                  <p class="two-line-max">
+                    {{highlight.description}}
+                  </p>
+                </div>
+                <div class="highlight-info-bottom">
+                  <p class="publish-date">
+                    <img src="{{site.baseurl}}/assets/images/icons/clock-icon.svg" alt="Clock icon">
+                    {{highlight.publication-date}}
+                  </p>
+                  <a class="read-more" tabindex="0" target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/emerge-tech-small-business-event"
+                  aria-label="Topic: Govwide IT Category and ACT-IAC Host Small Business Alliance Forum"
+                  >
+                    <p >READ MORE</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <a class="next" tabindex="0" title="Go to next highlight">
+            <img src="{{site.baseurl}}/assets/images/icons/arrow-icon.svg" alt="next arrow">
+          </a>
+        </div>
+      </div>
   </div>
 </section>
+
+
+{% comment %}
+Use this section to highlight key elements of your site. Some sites will only have two while others may have six to
+eight.
+{% endcomment %}
+
+
+
+

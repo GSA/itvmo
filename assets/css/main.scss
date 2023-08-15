@@ -4,7 +4,8 @@
 
 /*-------------------------------------*/
 .itvmo-logo-size {
-  width: 70%;
+  width: 308px;
+  height: 53px;
 }
 .sect-container {
   margin-bottom: -2.5rem;
@@ -12,8 +13,8 @@
 .usa-hero {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-image: url(../assets/images/background.png);
-  background-position: center;
+  background-image: url(../assets/images/itvmo-hero-background.png);
+  background-position: left;
   background-size: cover;
 } 
 .custom-callout {
@@ -44,7 +45,14 @@
   color: #c05600;
 }
 .search-btn {
-  background-color: #1b2b85;
+  background-color: rgba(239, 97, 26, 1);
+  width: 58px !important;
+  height: 38px !important;
+}
+.search-input
+{
+  width: 322px !important;
+  height: 38px !important;
 }
 .title {
   padding-top: 0;
