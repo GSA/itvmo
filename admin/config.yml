@@ -72,6 +72,7 @@ collections:
     slug: "{{slug}}"
     fields:
     - {label: "Organizer", name: "organizer", widget: "string"}
+    - {label: "URL", name: "url-link", widget: "string"}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Description", name: "description", widget: "text"}
     - label: "Start time"
