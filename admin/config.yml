@@ -64,6 +64,71 @@ collections:
         config:
           multiple: true
 
+#Allow user to create events.
+  - label: Events
+    name: events
+    folder: _events/
+    create: true
+    slug: "{{order}}-{{slug}}"
+    fields:
+    - {label: "Organizer", name: "organizer", widget: "string"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "description", widget: "text"}
+    # - label: 'Event date'
+    #   name: 'event-date'
+    #   widget: 'date'
+    #   default: ''
+    #   format: 'MMMM DD, YYYY'
+    # - label: 'Start Time'
+    #   name: 'start-time'
+    #   widget: 'date'
+    #   default: ''
+    #   format: 'H:MM'
+    # - label: 'End Time'
+    #   name: 'end-time'
+    #   widget: 'date'
+    #   default: ''
+    #   format: 'H:MM'
+    # - {label: "End time", name: "end", widget: "datetime", default: "", date_format: "MM/DD/YYYY", format: "MM-DD-YYYY HH:mm ZZ", picker_utc: false}
+    - label: "Start time"
+      name: "start-time"
+      widget: "datetime"
+      default: ""
+      date_format: "MMMM DD, YYYY" # e.g. 24.12.2021
+      time_format: "HH:mm" # e.g. 21:07
+      format: "YYYY-MM-DDTHH:mm:ss.sss-05:00"
+      picker_utc: false
+    - label: "End time"
+      name: "end-time"
+      widget: "datetime"
+      default: ""
+      date_format: "MMMM DD, YYYY" # e.g. 24.12.2021
+      time_format: "H:mm" # e.g. 21:07
+      format: "YYYY-MM-DDTHH:mm:ss.sss-05:00"
+      picker_utc: false
+    - label: Event Type
+      name: event-type
+      widget: relation
+      collection: "events-types"
+      search_fields: ["name"]
+      value_field: "name"
+      display_fields: ["name"]
+      multiple: false
+    - {label: ".Gov/.mil only", name: "gov-only",  widget: "boolean", default: false} # Determine if the resource is .Gov/.mil only or not.
+    - {label: "ITVMO Event", name: "is-itvmo",  widget: "boolean", default: false}
+
+#Events Types allow user to use it to determine the type of the Event.
+  - label: Events Types
+    name: events-types
+    folder: assets/events_type
+    hide: true
+    # create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+      
 #Allow admin to create resource cards.
   - label: Resources
     name: resources
