@@ -34,7 +34,7 @@ collections:
 #Allow user to create highlights.
   - label: Highlights
     name: highlights
-    folder: assets/highlights
+    folder: _highlight/
     create: true
     slug: "{{order}}-{{slug}}"
     fields:
