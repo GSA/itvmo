@@ -139,6 +139,8 @@ collections:
     output: true
   highlights:
     output: true  
+  events:
+    output: true  
 
 permalink: pretty
 
