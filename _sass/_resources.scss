@@ -1333,7 +1333,7 @@ html *
     {
       a
       {
-        background-image: url('../assets/images/icons/lock.svg');
+        background-image: url('../images/icons/lock.svg');
         background-position: right 2.5% bottom 50%;
         background-repeat: no-repeat; 
       }
@@ -1640,7 +1640,7 @@ html *
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url("../assets/images/icons/arrow-down.svg") no-repeat #fff;
+    background: url("../images/icons/arrow-down.svg") no-repeat #fff;
     background-position: right 4% bottom 50%;
     text-overflow: ellipsis;
     color: #062348;
@@ -1950,7 +1950,7 @@ html *
       padding-left: 20px;
       font-size: 13px;
       font-weight: 400; 
-      background-image: url('../assets/images/icons/search-icon.svg');
+      background-image: url('../images/icons/search-icon.svg');
       background-position: right 2.5% bottom 50%;
       background-repeat: no-repeat; 
     }
@@ -2454,7 +2454,7 @@ html *
       width: 100%;
       height: 53px;
       padding: 2px 15px 2px;
-      background-image: url(../assets/images/icons/search-icon-large.svg);
+      background-image: url(../images/icons/search-icon-large.svg);
       background-position: right 1% bottom 50%;
       background-repeat: no-repeat;
       border: #bfbfbf 1px solid;
@@ -2515,7 +2515,7 @@ html *
       }
       input[type="checkbox"]:checked
       {
-        content: url('../assets/images/icons/black-check.svg');
+        content: url('../images/icons/black-check.svg');
         border: none;
         height: 15px;
         width: 15px;
@@ -2560,37 +2560,37 @@ html *
     }
     #check1:checked
     {
-      content: url('../assets/images/icons/pink-check.svg');
+      content: url('../images/icons/pink-check.svg');
       background-color: #f2938c;
     }
     #check2:checked
     {
-      content: url('../assets/images/icons/blue-check.svg');
+      content: url('../images/icons/blue-check.svg');
       background-color: #59b9de;
     }
     #check3:checked
     {
-      content: url('../assets/images/icons/purple-check.svg');
+      content: url('../images/icons/purple-check.svg');
       background-color: #8889db;
     }
     #check4:checked
     {
-      content: url('../assets/images/icons/dark-blue-check.svg');
+      content: url('../images/icons/dark-blue-check.svg');
       background-color: #3e4ded;
     }
     #check5:checked
     {
-      content: url('../assets/images/icons/yellow-check.svg');
+      content: url('../images/icons/yellow-check.svg');
       background-color: #ddaa01;
     }
     #check6:checked
     {
-      content: url('../assets/images/icons/green-check.svg');
+      content: url('../images/icons/green-check.svg');
       background-color: #5abf95;
     }
     #check7:checked
     {
-      content: url('../assets/images/icons/dark-purple-check.svg');
+      content: url('../images/icons/dark-purple-check.svg');
       background-color: #b04abd;
     }
 
