@@ -76,24 +76,16 @@ ga:
 primary_navigation:
   - name: Home
     url: /
-  - name: About
-    url: /about/
+  - name: News
+    url: /news/
   - name: Events
     url: /events/
-  - name: Resources
-    url: /resources/
   - name: Community
     url: /community/
-  # - name: How Can We Help?
-  #   url: /how-can-we-help/
-  - name: OEM Information
-    url: /oem/
-  # - name: Cyber Buying
-  #   url: /cyber-buying/
-  # - name: CCT
-  #   url: /cybersecurity-category-team/
-  # - name: ITVMO’s Top OEMs
-  #   url: /itvmo-top-original-equipment-manufacturers/
+  - name: Services
+    url: /Services/
+  - name: Resources
+    url: /resources/
 
 secondary_navigation:
   - name: IT Vehicles

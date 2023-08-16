@@ -1821,6 +1821,7 @@ html *
 .usa-nav__secondary 
 {
   bottom: 5rem;
+  right: 0.5rem;
     .usa-nav__secondary-links 
     {
       margin-right: 7px;
@@ -1850,9 +1851,23 @@ html *
     }
   }
 }
-.search-div
+.usa-header [role="search"] 
 {
   max-width: 380px !important;
+  input::placeholder
+  {
+    font-family: 'Source Sans 3', sans-serif !important;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    outline: none;
+  }
+}
+.usa-search [type="submit"] 
+{
+  background-image: url('../images/icons/search-icon-white.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .secondary-item
@@ -2782,6 +2797,7 @@ html *
       width: 100%;
       height: 100%;
       display: flex;
+      column-gap: 10px;
       // justify-content: center;
       align-items: center;
       text-decoration: none;
@@ -2799,7 +2815,12 @@ html *
       .resource-content
       {
         width: 80%;
-        padding: 15px;
+        // padding: 15px;
+        border-right: #d7d7d7 1px solid;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
         font-size: 16px;
         .resource-name, .resource-description
         {
@@ -2908,14 +2929,14 @@ html *
           width: 14px;
         }
       }
-      .resource-line
-      {
-        background-color: #d7d7d7;
-        width: 1px;
-        height: 90%;
-        // margin-left: 15px;
-        margin-right: 15px;
-      }
+      // .resource-line
+      // {
+      //   background-color: #d7d7d7;
+      //   width: 1px;
+      //   height: 90%;
+      //   // min-height: 150px;
+      //   margin-right: 15px;
+      // }
     }
   }
   a:visited 
@@ -3112,12 +3133,12 @@ html *
             row-gap: 10px;
           }
         }
-        .resource-line
-        {
-          margin: 0;
-          width: 90%;
-          height: 1px;
-        }
+        // .resource-line
+        // {
+        //   margin: 0;
+        //   width: 90%;
+        //   height: 1px;
+        // }
         .resource-info
         {
           height: 56px;
