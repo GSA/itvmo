@@ -1,7 +1,3 @@
-// Import the US Web Design System SASS.
-
-@import "../../_sass/_resources";
-
 /*-------------------------------------*/
 .itvmo-logo-size {
   width: 308px;
@@ -13,8 +9,8 @@
 .usa-hero {
   padding-top: 0px;
   padding-bottom: 0px;
-  background-image: url(../assets/images/itvmo-hero-background.png);
-  background-position: left;
+  background-image: url(../images/background.png);
+  background-position: center;
   background-size: cover;
 } 
 .custom-callout {
