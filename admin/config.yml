@@ -100,7 +100,7 @@ collections:
       display_fields: ["name"]
       multiple: false
     - {label: ".Gov/.mil only", name: "gov-only",  widget: "boolean", default: false} # Determine if the resource is .Gov/.mil only or not.
-    - {label: "ITVMO Event", name: "is-itvmo",  widget: "boolean", default: false}
+    - {label: "ITVMO Event", name: "is-external",  widget: "boolean", default: false}
 
 #Events Types allow user to use it to determine the type of the Event.
   - label: Events Types

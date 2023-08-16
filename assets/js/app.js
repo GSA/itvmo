@@ -34,6 +34,7 @@ if(document.getElementById('page-directory') != null) //Other page beside homepa
 //Run Events page
 let nav = 0;
 let clicked = null;
+let eventList;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
 const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
@@ -43,8 +44,9 @@ const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','august','september','october','november','december'];
 const queryString = window.location.search;
-if( document.getElementById('nextButton') != null)
+if( document.getElementById('events-page') != null)
 {
+  retriveEventsData();
   //Retrive the keys and their value from the URL.
   const urlParams = new URLSearchParams(queryString);
   const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
@@ -608,6 +610,55 @@ function openTabKey(e, tabId)
 function openTabDropdown()
 {
   document.getElementById(document.getElementById('tabs-mobile').value).click();
+}
+
+/** Events page**/
+
+//This function retrive all event data from Events page to prepare to display.
+function retriveEventsData()
+{
+  eventList = document.getElementsByClassName("raw-event-data");
+  let eventListArray = [];
+  for( ev of eventList)
+  {
+    const startTime = new Date(ev.getAttribute("data-st"));
+    const endTime = new Date(ev.getAttribute("data-et"))
+    console.log(startTime);
+    console.log(weekdays[startTime.getDay()]);
+    console.log(startTime.getDate());
+    console.log(getDateTime(startTime));
+    console.log(getDateTime(endTime));
+     eventListArray.push(
+      {
+      "organizer":ev.getAttribute("data-organizer"),
+      "title":ev.getAttribute("data-title"),
+      "description":ev.getAttribute("data-description"), 
+      "link":ev.getAttribute("data-url"),
+      "startTime":ev.getAttribute("data-st"),
+      "endTime":ev.getAttribute("data-et"),
+      "eventType":ev.getAttribute("data-event-type"),
+      "govOnly":ev.getAttribute("data-gov-only"),
+      "isExternal":ev.getAttribute("data-is-external"),
+
+    })
+  }
+  eventList = eventListArray;
+  console.log(eventList);
+}
+
+//This function extract the time from the date, and assign AM or PM depend on the time.
+function getDateTime(date) 
+{
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
+
+  const ampm = hours >= 12 ? "PM" : "AM";
+
+  const formattedHours = hours % 12 === 0 ? 12 : hours % 12;
+  const formattedMinutes = String(minutes).padStart(2, "0");
+
+  const formattedTime = `${formattedHours}:${formattedMinutes} ${ampm}`;
+  return formattedTime;
 }
 
 /** Event page calendar **/
