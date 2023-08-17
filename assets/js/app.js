@@ -34,14 +34,15 @@ if(document.getElementById('page-directory') != null) //Other page beside homepa
 //Run Events page
 let nav = 0;
 let clicked = null;
-let eventList;
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
+const eventList = [], pastEventList = [], futureEventList = [];
 const calendar = document.getElementById('calendar');
 const newEventModal = document.getElementById('newEventModal');
 const deleteEventModal = document.getElementById('deleteEventModal');
 const backDrop = document.getElementById('modalBackDrop');
 const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const weekdaysShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','august','september','october','november','december'];
 const queryString = window.location.search;
 if( document.getElementById('events-page') != null)
@@ -614,43 +615,54 @@ function openTabDropdown()
 
 /** Events page**/
 
-//This function retrive all event data from Events page to prepare to display.
+//This function retrive all events data from Events page to prepare to display.
 function retriveEventsData()
 {
-  eventList = document.getElementsByClassName("raw-event-data");
-  let eventListArray = [];
-  for( ev of eventList)
+  const rawEventList = document.getElementsByClassName("raw-event-data");
+  const currentDate = new Date(); //use to determine if events will be store in pastEventList or futureEventList
+  currentDate.setHours(0, 0, 0, 0); //So all the event that the same date as current date but the time is lesser than the current date will be count as futureEventList as well.
+  for( ev of rawEventList)
   {
     const startTime = new Date(ev.getAttribute("data-st"));
-    const endTime = new Date(ev.getAttribute("data-et"))
-    console.log(startTime);
-    console.log(weekdays[startTime.getDay()]);
-    console.log(startTime.getDate());
-    console.log(getDateTime(startTime));
-    console.log(getDateTime(endTime));
-     eventListArray.push(
-      {
+    const endTime = new Date(ev.getAttribute("data-et"));
+    const eventTime = `${getDateTime(startTime)} - ${getDateTime(endTime)} EST`;
+    const currEvent =       
+    {
       "organizer":ev.getAttribute("data-organizer"),
       "title":ev.getAttribute("data-title"),
       "description":ev.getAttribute("data-description"), 
       "link":ev.getAttribute("data-url"),
-      "startTime":ev.getAttribute("data-st"),
-      "endTime":ev.getAttribute("data-et"),
+      "date":startTime,
+      "day":weekdaysShort[startTime.getDay()],
+      "dateNumber":startTime.getDate(),
+      "fromTo":eventTime,
       "eventType":ev.getAttribute("data-event-type"),
       "govOnly":ev.getAttribute("data-gov-only"),
       "isExternal":ev.getAttribute("data-is-external"),
+    }
+     eventList.push(currEvent);
+     if(startTime < currentDate)
+     {
+      pastEventList.push(currEvent);
+     }
+     else
+     {
+      futureEventList.push(currEvent)
+     }
 
-    })
   }
-  eventList = eventListArray;
-  console.log(eventList);
+
+  console.log("All Events:", eventList);
+  console.log("Past Events:", pastEventList);
+  console.log("Future Events:", futureEventList);
+
 }
 
 //This function extract the time from the date, and assign AM or PM depend on the time.
 function getDateTime(date) 
 {
-  const hours = date.getHours();
-  const minutes = date.getMinutes();
+  const hours = date.getUTCHours();
+  const minutes = date.getUTCMinutes();
 
   const ampm = hours >= 12 ? "PM" : "AM";
 
