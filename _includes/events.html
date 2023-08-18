@@ -921,44 +921,36 @@
          </div>
       </div>
       <div id="calendar-tab" class="tabcontent">
-         <div class="contents">
-               <div class="margin-bottom-2">
-                   <div class="event-color-explain">
-                     <div class="eventExplain" id = "firstEventExplain">
-                        <div class="eventColor" style="background-color: rgb(211, 108, 108);"></div>
-                        <div class="eventColorExplain"> ITVMO Events</div>
-                      </div>
-                      <div class="eventExplain">
-                        <div class="eventColor" style="background-color: rgb(27, 43, 133);"></div>
-                        <div class="eventColorExplain"> Non-ITVMO Events</div>
-                      </div>
+         <div class="contents contents-no-side-nav">
+            <div class="event-color-explain">
+               <div class="eventExplain" id = "firstEventExplain">
+                  <div class="eventColor" style="background-color: rgb(211, 108, 108);"></div>
+                     <div class="eventColorExplain"> ITVMO Events</div>
                    </div>
-                   <div id="calendarSumContainer" class="animate fade">
-                   <div id="container">
+                   <div class="eventExplain">
+                     <div class="eventColor" style="background-color: rgb(27, 43, 133);"></div>
+                  <div class="eventColorExplain"> Non-ITVMO Events</div>
+               </div>
+            </div>
+               <div id="calendar-section">
+                   <div id="calendarSumContainer">
+                   <div id="calendar-container">
                      <div id="calendar-header">
-                                 <button id="backButton" title="go to previous month"> &#x2190; </button>
-                                 <div id="monthDisplay"></div>          
-                                 <button id="nextButton" title="go to next month"> &#x2192; </button>
+                        <div id="calendar-month-button">
+                           <button id="backButton" title="go to previous month"><img class="image-flip" src="{{site.baseurl}}/assets/images/icons/directory-arrow-grey.svg" alt="previous arrow"></button>
+                           <div id="monthDisplay"></div>          
+                           <button id="nextButton" title="go to next month"><img src="{{site.baseurl}}/assets/images/icons/directory-arrow-grey.svg" alt="next arrow"></button>
+                        </div>
                      </div>
                
                      <div id="weekdays">
-                       <div>Sun.</div>
-                       <div>Mon.</div>
-                       <div>Tue.</div>
-                       <div>Wed.</div>
-                       <div>Thu.</div>
-                       <div>Fri.</div>
-                       <div>Sat.</div>
-                     </div>
-               
-                     <div id="weekdaysDesktop">
-                       <div>Sunday</div>
-                       <div>Monday</div>
-                       <div>Tuesday</div>
-                       <div>Wednesday</div>
-                       <div>Thursday</div>
-                       <div>Friday</div>
-                       <div>Saturday</div>
+                       <div>Sun</div>
+                       <div>Mon</div>
+                       <div>Tue</div>
+                       <div>Wed</div>
+                       <div>Thu</div>
+                       <div>Fri</div>
+                       <div>Sat</div>
                      </div>
                
                      <div id="calendar">
@@ -974,7 +966,7 @@
                      <button id="saveButton">Save</button>
                      <button id="cancelButton">Cancel</button>
                    </div>
-                   <div id="eventText"></div>
+                   <div id="current-day-events"></div>
                
                    </div>
                </div>  
