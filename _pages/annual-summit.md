@@ -240,15 +240,6 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
             <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
-                <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/exec-order-nations-cybersecurity/">
-                  EO Policy Reference Card: Improving Nation’s Cybersecurity
-                </a>
-                - This reference card provides a series of quick links to policies, programs, and tools to help agencies and participants in the federal IT marketplace comply with governing policies related to cybersecurity.
-              </p>
-            </div>
-            <div class="arrow-content">
-            <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
-              <p>
                 <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-Security-Related-Obligations.pdf">
                   Data How To: Cybersecurity Budget Planning
                 </a>
