@@ -370,13 +370,13 @@ function displayResults(filterResources)
           <a href="${resource.link}">
               <div class="resource-content">
                 <div aria-label="Filter: ${resourceF}" class="resource-filter"><span>${resourceF}</span></div>
-                <div aria-label="Title: ${resource.title}" class="resource-name">${resource.title}
+                <div aria-label="Title: ${resource.title}" class="resource-name"><p class="two-line-max">${resource.title}</p>
                 `
                 if(resource.isExternal == 'true')
                 {resultItem +=`<img alt="External icon" src="${baseUrl}/assets/images/icons/external.svg">`;}
                 
                 resultItem +=`</div>
-                <div aria-label="Description: ${resource.description}" class="resource-description" aria-details="description"><p class="two-line-max">${resource.description}</p></div>
+                <div aria-label="Description: ${resource.description}" class="resource-description" aria-details="description"><p class="">${resource.description}</p></div>
                 <div class="resource-detail">
                   <div class="file-type">
                     <p>${resource.type}</p>
