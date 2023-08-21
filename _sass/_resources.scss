@@ -1173,9 +1173,9 @@ a.checked {
   }
 }
 //OEM page
-#itvmo-oem
+#redesign-page
 {
-  #oem-list
+  #redesign-list
   {
     display: flex;
     flex-direction: row;
@@ -1398,10 +1398,11 @@ html *
   }
 }
 /*Light blue background for the site*/
-#core-services, #homepage-body, #main-content
+#core-services, #homepage-body, #new-main-content
 {
   background-color: #ecf1f6;
 }
+
 /* Links list design */
 .links-list
 {
@@ -1494,10 +1495,22 @@ html *
   }
 }
 /*Inner pages template*/
-#main-content
+
+//For the new redesign page.
+#new-main-content
 {
   padding-top: 0;
   padding-bottom: 90px;
+}
+//For the pre-existing page.
+#main-content
+{
+  // padding-top: 20px;
+  padding-top: 0;
+  #page-directory
+  {
+    padding-left: 0;
+  }
 }
 .inner-page
 {

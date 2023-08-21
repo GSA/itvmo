@@ -1,16 +1,13 @@
 ---
 title: OEM Initiatives
+title-image: "/assets/images/icons/page_icons/oem-initiatives.svg"
+description: ""
 layout: page
 sidenav: false
+redesign: true
+mainpage: false
+
 ---
-<section id="itvmo-oem" class="inner-page">
-   <section id="inner-page-heading">
-      <section id="page-directory"></section>
-      <section id="page-heading">
-         <h1 class="page-heading-title margin-0">{{ page.title }}</h1>
-         <img alt="OEM Support icon" src="{{site.baseurl}}/assets/images/icons/page_icons/oem-initiatives.svg">
-      </section>
-   </section>
    <section id="inner-page-tabs">
       <!-- Inner tab dropdown for the mobile version -->
       <div id="tabs-mobile-container">
@@ -39,7 +36,7 @@ sidenav: false
                <p class="tab-p">
                   The focus of the OEM Assessment is to work with agency acquisition professionals and Subject Matter Experts (SME) to identify common challenges and opportunities for a specific OEM.  Once identified, the ITVMO, as one voice for the federal government, engages directly with senior leadership at the OEM to develop and negotiate solutions to the common challenges which may include resources such as:
                   <b>
-               <ul id="oem-list" class="tab-p">
+               <ul id="redesign-list" class="tab-p">
                <li>Acquisition Strategy Guides</li>
                <li>Best Practices</li>
                <li>Buyers Guides</li>
@@ -912,4 +909,3 @@ sidenav: false
          </div>
       </div>
    </section>
-</section>
