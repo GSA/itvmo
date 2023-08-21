@@ -388,7 +388,31 @@ a.checked {
             border: none;
           }
         }
-        
+        .event-color-explain-mobile
+        {
+          display: none;
+          flex-direction: column;
+          .eventExplain
+          {
+            display: flex;
+            align-items: center;
+            .eventColor
+            {
+              border-radius: 5px;
+              height: 12px;
+              width: 17px;
+              float: left;
+            }
+            .eventColorExplain
+            {
+              padding-left: 5px;
+              float: left;
+              font-weight: 400;
+              font-style: normal;
+              font-size: 16px;
+            }
+          }
+        }
       }
       #current-day-events
       {
@@ -536,7 +560,7 @@ a.checked {
     {
       .event-color-explain
       {
-        top: 460px;
+        display: none;
       }
     }
     #calendar-section
@@ -568,6 +592,12 @@ a.checked {
               width: 50px;
             }
           }
+          .event-color-explain-mobile
+          {
+            display: flex;
+            margin: 2%;
+            padding: 10px 0px 10px 0px;
+          }
         }
       }
     }
@@ -579,10 +609,11 @@ a.checked {
   #calendar-tab #calendar-section #calendarSumContainer #current-day-events
   {
     min-width: 0;
-  }
-  #calendar-tab #calendar-section #calendarSumContainer #current-day-events #calendar-date-display 
-  {
-    display: none;
+    border: none;
+    #calendar-date-display 
+    {
+      display: none;
+    }
   }
   .contents-calendar
   {
@@ -592,7 +623,6 @@ a.checked {
   {
     flex-direction: column;
     align-items: center;
-    row-gap: 85px;
     #calendar-container
     {
       padding: 0 !important;
@@ -604,8 +634,7 @@ a.checked {
       {
         .event-color-explain
         {
-          top: 420px;
-          left: 16px;
+          display: none;
         }
       }
   }
