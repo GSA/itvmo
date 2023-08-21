@@ -691,6 +691,10 @@ function openModal(eventForDay, dayString) {
         colorLine = "#1b2b85";
         inEx = "Non-ITVMO Event"
       }
+      if(!eventForDay[i].link.includes('https://'))
+      {
+        eventForDay[i].link = `https://${eventForDay[i].link}`
+      } 
       eventText += 
         `
         <div class="event">
