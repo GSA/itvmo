@@ -708,7 +708,7 @@ function openModal(eventForDay, dayString) {
               <p><img src="${baseUrl}/assets/images/icons/location-icon-grey.svg">${eventForDay[i].eventType}</p>
               <p><img src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">${inEx}</p>
             </div>
-            <a aria-label="Event link of Organization:${eventForDay[i].organizer}, Title:${eventForDay[i].title}" class="event-link" href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><b><img src="${baseUrl}/assets/images/icons/external-white.svg">View Event</b></a>
+            <a aria-label="Event link of Organization:${eventForDay[i].organizer}, Title:${eventForDay[i].title}" class="event-link" href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><img src="${baseUrl}/assets/images/icons/external-white.svg"><p>View Event</p></a>
           </div>
         </div>
         `;

@@ -403,14 +403,93 @@ a.checked {
           font-size: 20px;
           color: #555555;
         }
+        .event
+        {
+          min-width: 400px;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 20px;
+          margin-bottom: 25px;
+          border-bottom: #d7d7d7 1px solid;
+          p, h3, h2 
+          {
+            margin: 0;
+          }
+          .event-org
+          {
+            font-weight: 600;
+            font-size: 16px;
+            color: #016FA0;
+          }
+          .event-title
+          {
+            font-weight: 700;
+            font-size: 22px;
+            color: #062349;
+            margin-top: -5px;
+          }
+          .event-color
+          {
+            height: 4px;
+            width: 50%;
+            margin: 5px 0px 7px 0px;
+          }
+          .event-description
+          {
+            // white-space: pre-wrap;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: normal;
+          }
+          .event-info-link
+          {
+            margin: 15px 10px 0px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+          }
+            .event-info 
+            {
+              display: flex;
+              flex-direction: column;
+              row-gap: 10px;
+              p 
+              {
+                display: flex;
+                align-items: center;
+                column-gap: 15px;
+                font-weight: 400;
+                font-size: 16px;
+                color: #555555;
+              }
+            }
+            .event-link 
+            {
+              height: 39px;
+              width: 136px;
+              border-radius: 5px;
+              display: flex;
+              background-color: rgba(11, 71, 120, 1);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              column-gap: 7px;
+              p 
+              {
+                font-weight: 650;
+                font-size: 14px;
+                color: #FFFFFF;
+                height: 28px;
+              }
+            }
+          
+        }
       }
     }
 
   }
-}
-.event-description
-{
-  white-space: pre-wrap;
 }
 .youtube
 {
@@ -428,40 +507,7 @@ a.checked {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5px;
 }
-.event
-{
-  p, h3, h2 
-  {
-    margin: 0;
-  }
-  width: 400px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  .event-color
-  {
-    height: 4px;
-    width: 50%;
-  }
-  .event-info-link
-  {
-    display: flex;
-    flex-direction: row;
-    .event-info 
-    {
-      p 
-      {
-        display: flex;
-        align-items: center;
-      }
-    }
-    .event-link 
-    {
-      display: flex;
-      flex-direction: column-reverse;
-    }
-  }
-}
+
 .event-count {
   display: initial;
 }
