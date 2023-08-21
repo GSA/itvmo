@@ -37,10 +37,6 @@ let clicked = null;
 // let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
 const eventList = [], pastEventList = [], futureEventList = [];
 const calendar = document.getElementById('calendar');
-const newEventModal = document.getElementById('newEventModal');
-const deleteEventModal = document.getElementById('deleteEventModal');
-const backDrop = document.getElementById('modalBackDrop');
-const eventTitleInput = document.getElementById('eventTitleInput');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const weekdaysShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','august','september','october','november','december'];
@@ -729,7 +725,7 @@ function openModal(eventForDay, dayString) {
     `
     <h3 id="calendar-date-display">${dayString}</h3>
     <div>
-    <p><b>No events planned today.</b></p>
+    <p><b>There don't appear to be any scheduled events for today.</b></p>
     </div>
     `;
   }
@@ -898,13 +894,6 @@ function setActiveDay(daySquare)
       activeDay[0].classList.remove('active-day');
     }
   daySquare.classList.add('active-day');
-}
-//Save the event 
-function saveEvent(currEvent) {
-
-    eventTitleInput.classList.remove('error');
-    events.push(currEvent);
-    localStorage.setItem('events', JSON.stringify(events));
 }
 //Go to next month
 function initEventButtons(d,m,y) {

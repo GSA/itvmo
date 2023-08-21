@@ -222,7 +222,7 @@ a.checked {
     {
       position: absolute;
       top: 25px;
-      left: 25px;
+      left: 42px;
       display: flex;
       flex-direction: column;
       .eventExplain
@@ -251,9 +251,8 @@ a.checked {
   {
     #calendarSumContainer
     {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-gap: 5px;
+      display: flex;
+      column-gap: 5px;
       #calendar-container 
       {
         width: auto;
@@ -305,7 +304,8 @@ a.checked {
           padding-top: 25px;
           width: 100%;
           display: flex;
-          justify-content: center;
+          margin-left: 2%;
+          // justify-content: center;
           color: #5a5a5a;
           div 
           {
@@ -322,7 +322,7 @@ a.checked {
           display: flex;
           flex-wrap: wrap;
           border-radius: 10px;
-          
+          margin-left: 2%;
           .day 
           {
             display: flex;
@@ -394,6 +394,8 @@ a.checked {
       {
         border-left: #d7d7d7 1px solid;
         padding: 0px 15px 0px 15px;
+        width: 100%;
+        min-width: 400px;
         #calendar-date-display
         {
           position: absolute;
@@ -405,7 +407,7 @@ a.checked {
         }
         .event
         {
-          min-width: 400px;
+          // min-width: 400px;
           height: auto;
           display: flex;
           flex-direction: column;
@@ -491,10 +493,6 @@ a.checked {
 
   }
 }
-.youtube
-{
-  border-top: solid 4px #FF0000;
-}
 .eventHighlight
 {
   width: 100%;
@@ -530,85 +528,95 @@ a.checked {
   border-radius: 5px;
   
 }
-
-
-// .padding {
-//   cursor: default !important;
-//   background-color: #FFFCFF !important;
-//   box-shadow: none !important;
-// }
-#newEventModal, #deleteEventModal {
-  display: none;
-  z-index: 20;
-  padding: 25px;
-  background-color: #e8f4fa;
-  box-shadow: 0px 0px 3px black;
-  border-radius: 5px;
-  width: 350px;
-  top: 100px;
-  left: calc(50% - 175px);
-  position: absolute;
-  font-family: sans-serif;
-}
-#eventTitleInput {
-  padding: 10px;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 25px;
-  border-radius: 3px;
-  outline: none;
-  border: none;
-  box-shadow: 0px 0px 3px gray;
-}
-
-#modalBackDrop {
-  display: none;
-  top: 0px;
-  left: 0px;
-  z-index: 10;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  background-color: rgba(0,0,0,0.8);
-}
-.youtubeLogo
-{ padding-top: 5.04px;
-  height: 18px;
-  width: 25px;
-  margin: auto;
-}
-
-//Change the calendar look when the width of the screen below 794px
-@media only screen and (max-width: 794px)
+@media only screen and (max-width: 1300px)
 {
-  .eventHighlightContainer
+  #calendar-tab
   {
-    grid-template-columns: 1fr;
-    width: 340px;
-
+    .contents-no-side-nav
+    {
+      .event-color-explain
+      {
+        top: 460px;
+      }
+    }
+    #calendar-section
+    {
+      #calendarSumContainer
+      { 
+        #calendar-container
+        {
+          width: 358px;
+          margin: 0;
+          #calendar
+          {
+            .day 
+            {
+              width: 50px;
+              .event-count-section
+              {
+                .event-count 
+                {
+                  width: 17px;
+                }
+              }
+            }
+          }
+          #weekdays
+          {
+            div 
+            {
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Readjust the page When the page tabs seclection converted to dropdown picklist.
+@media screen and (max-width: 850px) 
+{
+  #calendar-tab #calendar-section #calendarSumContainer #current-day-events
+  {
+    min-width: 0;
+  }
+  #calendar-tab #calendar-section #calendarSumContainer #current-day-events #calendar-date-display 
+  {
+    display: none;
+  }
+  .contents-calendar
+  {
+    padding: 0 !important;
   }
   #calendarSumContainer
   {
-    grid-template-columns: 1fr;
-
+    flex-direction: column;
+    align-items: center;
+    row-gap: 85px;
+    #calendar-container
+    {
+      padding: 0 !important;
+    }
   }
-  #calendar {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+  #calendar-tab
+  {
+      .contents-no-side-nav
+      {
+        .event-color-explain
+        {
+          top: 420px;
+          left: 16px;
+        }
+      }
   }
-  // #event-annual-summit
-  // {
-  //   justify-content: center;
-  //   margin-left: 0;
-  //   margin-right: 0;
-  //   .speaker-image
-  //   {
-  //     display: none;
-  //   }
-  // }
+  .event 
+  {
+    min-width: 0 !important;
+  }
+  
+  
 }
+
 
 /*HOMEPAGE*/
 
