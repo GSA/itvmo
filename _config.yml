@@ -127,6 +127,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  news:
+    output: true
+    permalink: /:path/
   resources:
     output: true
   highlights:

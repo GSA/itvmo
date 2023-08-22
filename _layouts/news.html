@@ -1,0 +1,28 @@
+---
+layout: base
+---
+<!doctype html>
+<div id="main-content" class="usa-layout-docs usa-section padding-top-3 sect-container">
+    <div class="">
+      {% if page.sidenav == true %}
+      {% include sidenav.html %}
+      {% endif %}
+      <main>
+        <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
+          <section id="main-page-heading">
+            <div class="grid-container padding-0">
+              <div id="main-page-heading-detail">
+                      <h3>
+                        {{page.title}}
+                      </h3>
+                      <p>
+                        {{page.description}}
+                      </p>
+              </div>
+            </div>
+          </section>
+            {{ content }}
+        </div>
+      </main>
+    </div>
+</div>
