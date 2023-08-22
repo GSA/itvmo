@@ -168,11 +168,300 @@ a.checked {
 }
 
 /*EVENTPAGE*/
+#upcoming-events, #past-events
+{
+  justify-content: center;
+}
+#calendar-tab
+{
+  justify-content: flex-start;
+}
 #events-page
 {
   #inner-page-tabs
   {
     position: relative;
+    .tabcontent
+    {
+      .contents
+      {
+        width: 86%;
+      }
+      .content-nav
+      {
+        width: 14%;
+      }
+    }
+  }
+}
+
+.event-cards 
+{
+  .tab-heading 
+  {
+    margin-bottom: 0;
+  }
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  .event-card
+  {
+    width: 100%;
+    height: 171px;
+    border: #aaaaaa 1px solid;
+    border-radius: 20px;
+    display: flex;
+    .event-card-day
+    {
+      width: 11.5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 15px;
+      .card-day, .card-date-num
+      {
+        font-weight: 600;
+        color: rgb(6, 35, 73);
+      }
+      .card-day 
+      {
+        font-size: 24px;
+      }
+      .card-date-num
+      {
+        font-size: 52px;
+      }
+    }
+    .event-card-gov 
+    {
+      width: 3.5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .event-card-gov-line
+      {
+        height: 87%;
+        width: 1px;
+        background-color: #aaaaaa;
+      }
+      .event-card-gov-lock
+      {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .event-card-content
+    {
+      width: 66%;
+      display: flex;
+      flex-direction: column;
+      padding: 15px 20px 15px 20px;
+      p, h3, h2 
+      {
+        margin: 0;
+      }
+      .event-org
+      {
+        font-weight: 600;
+        font-size: 16px;
+        color: #016FA0;
+      }
+      .event-title
+      {
+        font-weight: 700;
+        font-size: 22px;
+        color: #062349;
+        margin-top: -5px;
+      }
+      .event-color
+      {
+        height: 4px;
+        width: 50%;
+        margin: 5px 0px 7px 0px;
+      }
+      .event-description
+      {
+        color: #333333;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: normal;
+      }
+    }
+    .event-card-info
+    {
+      width: 19%;
+      display: flex;
+      align-items: center;
+      .event 
+      {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        border-left: #aaaaaa 1px solid;
+        padding-left: 10px;
+        p 
+        {
+          display: flex;
+          align-items: center;
+          // justify-content: center;
+
+          column-gap: 10px;
+          font-weight: 400;
+          font-size: 14.5px;
+          color: #555555;
+          margin: 0;
+        }
+      }
+    }
+
+  }
+  .event-card-mobile
+  {
+    display: none;
+    // display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    height: auto;
+    border: #aaaaaa 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    .event-card-day
+    {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 10px;
+      border-bottom: #aaaaaa 1px solid;
+      // .card-day, .card-date-num
+      // {
+      //   font-weight: 600;
+      //   color: rgb(6, 35, 73);
+      // }
+      // .card-day 
+      // {
+      //   font-size: 24px;
+      // }
+      // .card-date-num
+      // {
+      //   font-size: 52px;
+      // }
+      p 
+      {
+        margin: 0;
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .event-card-content
+    {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      p, h3, h2 
+      {
+        margin: 0;
+      }
+      .event-org
+      {
+        font-weight: 600;
+        font-size: 16px;
+        color: #016FA0;
+      }
+      .event-title
+      {
+        font-weight: 700;
+        font-size: 22px;
+        color: #062349;
+        margin-top: -5px;
+        img 
+        {
+          margin-left: 5px;
+        }
+      }
+      .event-color
+      {
+        height: 4px;
+        width: 50%;
+        margin: 5px 0px 7px 0px;
+      }
+      .event-description
+      {
+        // white-space: pre-wrap;
+        color: #333333;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: normal;
+      }
+    }
+    .event-card-info
+    {
+      // width: 19%;
+      display: flex;
+      align-items: center;
+      .event 
+      {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        // border-left: #aaaaaa 1px solid;
+        // padding-left: 10px;
+        p 
+        {
+          display: flex;
+          align-items: center;
+          // justify-content: center;
+
+          column-gap: 10px;
+          font-weight: 400;
+          font-size: 14.5px;
+          color: #555555;
+          margin: 0;
+        }
+      }
+    }
+
+  }
+  // .event-card, .event-card-mobile
+  // {
+  //   text-decoration: none;
+  // }
+  .event-card:hover
+  {
+    background-color: #f2f2f2;
+    border: rgb(127, 127, 127) 1px solid;
+    .event-card-gov
+    {
+      .event-card-gov-lock
+      {
+        background-color: rgb(215, 215, 215);
+      }
+    }
+      // .resource-name
+      // {
+      //   text-decoration: underline;
+      // }
+  }
+  a:hover
+  {
+    text-decoration: none !important;
+    .event-card-content
+    {
+      .event-title
+      {
+        text-decoration: underline !important;
+      }
+    }
   }
 }
 // #event-annual-summit
@@ -322,7 +611,7 @@ a.checked {
           padding-top: 25px;
           width: 100%;
           display: flex;
-          margin-left: 2%;
+          // margin-left: 2%;
           // justify-content: center;
           color: #5a5a5a;
           div 
@@ -340,7 +629,7 @@ a.checked {
           display: flex;
           flex-wrap: wrap;
           border-radius: 10px;
-          margin-left: 2%;
+          // margin-left: 2%;
           .day 
           {
             display: flex;
@@ -612,9 +901,54 @@ a.checked {
     }
   }
 }
+@media screen and (max-width: 1320px)
+{
+  #events-page
+  {
+    #inner-page-tabs
+    {
+      position: relative;
+      .tabcontent
+      {
+        .contents
+        {
+          width: 80%;
+        }
+        .content-nav
+        {
+          width: 20%;
+        }
+      }
+    }
+  }
+  .event-cards 
+  {
+    padding-left: 10px;
+    .event-card
+    {
+      display: none;
+    }
+    .event-card-mobile
+    {
+      display: flex;
+    }
+  }
+}
+//Remove the Padding on calendar cards.
+@media screen and (max-width: 38.75rem)
+{
+  .event-cards 
+  {
+    padding: 0;
+  }
+}
 //Readjust the page When the page tabs seclection converted to dropdown picklist.
 @media screen and (max-width: 850px) 
 {
+  #calendar-tab
+  {
+    justify-content: center;
+  }
   #calendar-date-display 
   {
     display: none;
@@ -632,7 +966,7 @@ a.checked {
   {
     flex-direction: column;
     align-items: center;
-    #calendar-container
+    #calendar-container, #current-day-events
     {
       padding: 0 !important;
     }
@@ -1310,6 +1644,15 @@ a.checked {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+//If text in this class exceed 5 line the remaining line will be hidden.
+.four-line-max
+{
+  display: -webkit-box;
+  width: 100%;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 
 //Center everything inside the div
 .center-div
@@ -1474,7 +1817,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.tab-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *
+.tab-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -1674,6 +2017,7 @@ html *
 .tabcontent {
   display: none;
   position: relative;
+  // justify-content: center;
   .contents
   {
     width: 75%;
@@ -2290,8 +2634,8 @@ html *
 {
   #page-directory
   {
-    padding: 15px;
-    padding-left: 0;
+    padding: 15px 15px 15px 0px;
+    // padding-left: 0;
   }
 }
 @media screen and (max-width: 1320px)
@@ -2300,6 +2644,15 @@ html *
   {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .main-page-content-no-padding
+  {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    #page-directory
+    {
+      padding-left: 10px !important;
+    }
   }
   #main-page-heading
   {
