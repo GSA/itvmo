@@ -619,8 +619,8 @@ function retriveEventsData()
   currentDate.setHours(0, 0, 0, 0); //So all the event that the same date as current date but the time is lesser than the current date will be count as futureEventList as well.
   for( ev of rawEventList)
   {
-    const startTime = new Date(ev.getAttribute("data-st"));
-    const endTime = new Date(ev.getAttribute("data-et"));
+    const startTime = new Date((ev.getAttribute("data-st").replace(" ","T")).replace(" +","+"));
+    const endTime = new Date((ev.getAttribute("data-et").replace(" ","T")).replace(" +","+"));
     const eventTime = `${getDateTime(startTime)} - ${getDateTime(endTime)} EST`;
     const currEvent =       
     {
