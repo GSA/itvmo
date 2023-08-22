@@ -329,8 +329,11 @@ a.checked {
     width: 100%;
     height: auto;
     border: #aaaaaa 1px solid;
+    -moz-box-shadow: 5px 5px 5px rgba(215, 215, 215, 0.34901960784313724);
+    -webkit-box-shadow: 5px 5px 5px rgba(215, 215, 215, 0.34901960784313724);
+    box-shadow: 5px 5px 5px rgba(215, 215, 215, 0.34901960784313724);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px 10px 20px 10px;
     .event-card-day
     {
       width: 100%;
@@ -341,26 +344,16 @@ a.checked {
       align-items: center;
       row-gap: 10px;
       border-bottom: #aaaaaa 1px solid;
-      // .card-day, .card-date-num
-      // {
-      //   font-weight: 600;
-      //   color: rgb(6, 35, 73);
-      // }
-      // .card-day 
-      // {
-      //   font-size: 24px;
-      // }
-      // .card-date-num
-      // {
-      //   font-size: 52px;
-      // }
       p 
       {
+        color: #333333;
         margin: 0;
         display: flex;
-        column-gap: 15px;
+        column-gap: 9px;
         align-items: center;
         justify-content: center;
+        height: 25px;
+        padding-bottom: 10px;
       }
     }
     .event-card-content
