@@ -168,6 +168,13 @@ a.checked {
 }
 
 /*EVENTPAGE*/
+#events-page
+{
+  #inner-page-tabs
+  {
+    position: relative;
+  }
+}
 // #event-annual-summit
 // {
 //   padding: 15px;
@@ -211,6 +218,17 @@ a.checked {
 //     transform: scaleX(-1);
 //   }
 // }
+#calendar-date-display
+{
+  font-family: 'Source Sans 3', sans-serif !important;
+  position: absolute;
+  top: 0;
+  right: 35px;
+  z-index: 99;
+  font-weight: 400;
+  font-size: 20px;
+  color: #555555;
+}
 //Make the \n going to break the line in HTML
 #calendar-tab
 {
@@ -420,15 +438,6 @@ a.checked {
         padding: 0px 15px 0px 15px;
         width: 100%;
         min-width: 400px;
-        #calendar-date-display
-        {
-          position: absolute;
-          top: -75px;
-          right: 30px;
-          font-weight: 400;
-          font-size: 20px;
-          color: #555555;
-        }
         .event
         {
           // min-width: 400px;
@@ -606,14 +615,14 @@ a.checked {
 //Readjust the page When the page tabs seclection converted to dropdown picklist.
 @media screen and (max-width: 850px) 
 {
+  #calendar-date-display 
+  {
+    display: none;
+  }
   #calendar-tab #calendar-section #calendarSumContainer #current-day-events
   {
     min-width: 0;
     border: none;
-    #calendar-date-display 
-    {
-      display: none;
-    }
   }
   .contents-calendar
   {

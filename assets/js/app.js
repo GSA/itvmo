@@ -41,12 +41,15 @@ const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Frida
 const weekdaysShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','august','september','october','november','december'];
 const queryString = window.location.search;
+let dateDisplay;
 if( document.getElementById('events-page') != null)
 {
   retriveEventsData();
   //Retrive the keys and their value from the URL.
   const urlParams = new URLSearchParams(queryString);
   const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
+  dateDisplay = document.getElementById("calendar-date-display");
+  // console.log(dateDisplay);
   initEventButtons(d,m,y);
   localStorage.clear();
   runCalendar(d,m,y);
@@ -667,7 +670,7 @@ function getDateTime(date)
 
 /** Event page calendar **/
 
-function openModal(eventForDay, dayString) {
+function openModal(eventForDay) {
   if(eventForDay.length > 0)
   {
     // var eventText =
@@ -677,7 +680,6 @@ function openModal(eventForDay, dayString) {
     // `;
     var eventText =
     `
-    <h3 id="calendar-date-display">${dayString}</h3>
     <div>
     `;
     for(var i = 0; i < eventForDay.length; i++)
@@ -727,7 +729,6 @@ function openModal(eventForDay, dayString) {
     // `;
     document.getElementById('current-day-events').innerHTML = 
     `
-    <h3 id="calendar-date-display">${dayString}</h3>
     <div>
     <p><b>There don't appear to be any scheduled events for today.</b></p>
     </div>
@@ -791,14 +792,11 @@ async function runCalendar(d,m,y) {
     `${monthString} ${year}`;
 
   calendar.innerHTML = '';
-
   for(let i = 1; i <= paddingDays + daysInMonth; i++) 
   {
     let itvmoEventCount = 0;
     const daySquare = document.createElement('div');
     daySquare.classList.add('day'); 
-    const dayString = `${monthString} ${i - paddingDays}, ${year}`;
-
     //Round the corner of the specific date to make the calendar corner look round.
     if(i == 1)
     {
@@ -836,10 +834,11 @@ async function runCalendar(d,m,y) {
       daySquare.title = `${dt.toLocaleDateString('en-us', { month: 'long' })} ${i - paddingDays} event count of ${eventForDay.length}`;
       //Display the Events summary for the current day if there is one
       if ((i - paddingDays == day && nav === 0)) {
+        dateDisplay.innerHTML = `${monthString} ${daysInMonth}, ${year}`;
         daySquare.id = 'currentDay';
         daySquare.classList.add('active-day');
         daySquare.tabIndex = 0;
-        openModal(eventForDay, dayString);
+        openModal(eventForDay);
       }
       if (eventForDay.length > 0) 
       {
@@ -870,7 +869,7 @@ async function runCalendar(d,m,y) {
       daySquare.addEventListener('click', () => 
       {
         setActiveDay(daySquare);
-        openModal(eventForDay, dayString)
+        openModal(eventForDay)
       });
       daySquare.onkeydown = 
       function(key) 
@@ -878,7 +877,7 @@ async function runCalendar(d,m,y) {
         if((key.keyCode === 32)||(key.keyCode === 13))
         {
           setActiveDay(daySquare);
-          openModal(eventForDay, dayString);
+          openModal(eventForDay);
         }
       }
     } 
