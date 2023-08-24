@@ -136,7 +136,11 @@ collections:
     output: true  
   events:
     output: true  
-
+  events-page-announcements:
+    output: true
+  past-event-highlights:
+    output: true
+    
 permalink: pretty
 
 markdown: kramdown
