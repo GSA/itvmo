@@ -186,6 +186,68 @@ a.checked {
       .contents
       {
         width: 86%;
+        padding-left: 25px;
+        padding-right: 25px;
+        #past-event-highlights
+        {
+          #event-highlights-container
+          {
+            display: flex;
+            column-gap: 30px;
+            row-gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .event-highlight
+            {
+              width: 341px;
+              //width: 330px;
+              // flex: 1;
+              height: 450px;
+              border: #aaaaaa 1px solid;
+              border-radius: 20px;
+              padding: 20px 15px 20px 15px;
+              img, .highlight-description 
+              {
+                height: 50%;
+                width: 100%;
+                object-fit: contain;
+              }
+              img
+              {
+                padding-bottom: 10px;
+                border-bottom: #aaaaaa 1px solid;
+              }
+              .highlight-description
+              { 
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+                h2, p 
+                {
+                  margin: 0;
+                }
+                h2 
+                {
+                  font-weight: 700;
+                  font-size: 22px;
+                  color: #062349;
+                  margin-top: -5px;
+                }
+                p 
+                {
+                  // height: 80%;
+                  overflow: hidden;
+                  // white-space: nowrap;
+                  text-overflow: ellipsis;
+                  color: #333333;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: normal;
+                }
+              }
+            }
+          }
+        }
       }
       .content-nav
       {
@@ -808,22 +870,22 @@ a.checked {
 
   }
 }
-.eventHighlight
-{
-  width: 100%;
-  height: 300px;
-  margin: 0 auto
-}
-.eventHighlightContainer
-{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 5px;
-}
+// .eventHighlight
+// {
+//   width: 100%;
+//   height: 300px;
+//   margin: 0 auto
+// }
+// .eventHighlightContainer
+// {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+//   grid-gap: 5px;
+// }
 
-.event-count {
-  display: initial;
-}
+// .event-count {
+//   display: initial;
+// }
 .event-count-section
 {
   display: flex;
@@ -916,7 +978,6 @@ a.checked {
   }
   .event-cards 
   {
-    padding-left: 10px;
     .event-card
     {
       display: none;
@@ -925,6 +986,10 @@ a.checked {
     {
       display: flex;
     }
+  }
+  #past-event-highlights, .event-cards 
+  {
+    padding-left: 10px;
   }
 }
 //Remove the Padding on calendar cards.
@@ -980,6 +1045,24 @@ a.checked {
   }
   
   
+}
+
+//If the Past Events Highlight text in this class exceed 7 line the remaining line will be hidden.
+.past-event-highlight
+{
+  display: -webkit-box;
+  width: 100%;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+//The Past Events Highlight card description change from 7 line max to 5 line max.
+@media screen and (max-width: 350px) 
+{
+  .past-event-highlight
+  {
+    -webkit-line-clamp: 5 !important;
+  }
 }
 
 
@@ -2180,6 +2263,12 @@ html *
         padding-top: 10px;
         padding-bottom: 10px;
         border-left:#d7d7d7 1px solid;
+        span 
+        {
+          font-weight: 400;
+          font-size: 13;
+          color: rgb(127, 127, 127);
+        }
         
       }
       a:hover 

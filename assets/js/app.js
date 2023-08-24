@@ -9,7 +9,6 @@ if(baseUrl.includes("federalist"))
 {
   baseUrl = `/preview/gsa/itvmo/main-itvmo-redesign-up-to-date`;
 }
-
 //Highlights section Variables
 let curSlide = 0; 
 let slideCount, slides, timer, dots;//Slide count in the highlight
@@ -24,13 +23,6 @@ if(document.getElementById('dynamic-panel') != null)
     positionHighlight();
   });
 }
-//Run Inner page
-if(document.getElementById('page-directory') != null) //Other page beside homepage contain page-directory.
-{
-  populateDirectory();
-  initalizeTabIndex();
-  initalizePageNav();
-}
 //Run Events page
 let nav = 0;
 let clicked = null;
@@ -39,20 +31,22 @@ const eventList = [], pastEventList = [], futureEventList = [];
 const calendar = document.getElementById('calendar');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const weekdaysShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-const month = ['janurary', 'february', 'march', 'april', 'may', 'june', 'july','august','september','october','november','december'];
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const queryString = window.location.search;
 let dateDisplay;
 if( document.getElementById('events-page') != null)
 {
   retriveEventsData();
   //Retrive the keys and their value from the URL.
+  // localStorage.clear();
   const urlParams = new URLSearchParams(queryString);
   const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
   dateDisplay = document.getElementById("calendar-date-display");
-  // console.log(dateDisplay);
   initEventButtons(d,m,y);
-  localStorage.clear();
   runCalendar(d,m,y);
+  displayEvents(document.getElementsByClassName('nav-list')[0],'upcoming-events', futureEventList);
+  displayEvents(document.getElementsByClassName('nav-list')[1],'past-events', pastEventList);
+  
 }
 //Run Resources page
 
@@ -77,10 +71,25 @@ if(document.getElementById('resources') != null)
   initalizeWindow();
 }
 
+//Run Inner page
+
+let pageHeadingHeight; //Use to calculate whether when the side nav bar should start moving.
+try {
+  pageHeadingHeight = document.getElementById('main-page-heading').offsetHeight;
+} catch (error) {
+  pageHeadingHeight = document.getElementById('inner-page-heading').offsetHeight;
+}
+
+if(document.getElementById('page-directory') != null) //Other page beside homepage contain page-directory.
+{
+  populateDirectory();
+  initalizeTabIndex();
+  initalizePageNav();
+}
+
 /** Resources page **/
 
 /** Resource page Faceted Navigation **/
-
 //This function initalize Overlay on the Resources page. 
 //While Faceted Navigation displayed (Mobile Version), if user click on the overlay the Faceted Navigation and overlay will be hidden.
 function initalizeOverlay()
@@ -426,24 +435,31 @@ function displayResults(filterResources)
 
 
 /** Populate Inner page **/
+
 //This function initalize all the page-nav click functionality.
 function initalizePageNav()
 {
-  var pageNavList = document.getElementsByClassName('page-nav');
-  for(let i=0; i< pageNavList.length; i++)
+  //Each nav-list have it own page-nav and their page-nav are not associate to each other.
+  var navList = document.getElementsByClassName('nav-list');
+  for(let i = 0; i < navList.length; i++)
   {
-    pageNavList[i].addEventListener('click', function()
+    var pageNavs = navList[i].getElementsByClassName('page-nav')
+    for(let j=0; j< pageNavs.length; j++)
     {
-      removePageActive();
-      setPageActive(this)
-      navOpenTabContent(this);
-    });
+      pageNavs[j].addEventListener('click', function()
+      {
+        removePageActive(navList[i]);
+        setPageActive(this)
+        navOpenTabContent(this);
+      });
+    }
   }
 }
-//This function remove the page-nav-active from page-nav.
-function removePageActive()
+//This function remove the page-nav-active from page-nav in the current inner tab, 
+//and not associate with the page-nav in other inner tab of the same page.
+function removePageActive(nav)
 {
-  let pageActive = document.getElementsByClassName("page-nav-active");
+  let pageActive = nav.getElementsByClassName("page-nav-active");
   if(pageActive[0] != undefined)
   {
     pageActive[0].classList.remove("page-nav-active");
@@ -455,20 +471,31 @@ function setPageActive(event)
   event.classList.add("page-nav-active");
 }
 $(function(){    
-	$(window).scroll(function(){ 
+  function updateNavPosition($navList, scrollTop, contentNavHeight, totalHeightAbove) {
+      if(scrollTop >= 0 && scrollTop < totalHeightAbove && scrollTop < (contentNavHeight - $navList.height())) {            
+          $navList.removeClass('fixed').addClass('absolute').css('top', 0);
+      } 
+      else if(scrollTop >= totalHeightAbove && scrollTop < contentNavHeight) {            
+          $navList.removeClass('absolute').addClass('fixed').css('top', 5); //Need to be change accordingly
+      } 
+      else {
+          $navList.removeClass('fixed').addClass('absolute').css('top', contentNavHeight - $navList.height());
+      } 
+  }
 
-        if($(this).scrollTop() >= 0 && $(this).scrollTop() < 550 && $(this).scrollTop() < ($('.content-nav').height() - $('.nav-list').height()))
-        {            
-          $('.nav-list').removeClass('fixed').addClass('absolute').css('top', 0);
-        } 
-        else if($(this).scrollTop() >= 550 && $(this).scrollTop() < ($('.content-nav').height()))
-        {            
-          $('.nav-list').removeClass('absolute').addClass('fixed').css('top', 5); //Need to be change accordingly
-        } 
-        else  {
-            $('.nav-list').removeClass('fixed').addClass('absolute').css('top', $('.content-nav').height() - $('.nav-list').height());
-        } 
-    });
+  $(window).scroll(function(){ 
+
+      $('.content-nav').each(function() {
+          var $contentNav = $(this);
+          var $navList = $contentNav.find('.nav-list');
+          var contentNavHeight = $contentNav.height();
+          var scrollTop = $(window).scrollTop();
+          var totalHeightAbove = 360 + pageHeadingHeight;
+          console.log(totalHeightAbove);
+
+          updateNavPosition($navList, scrollTop, contentNavHeight, totalHeightAbove);
+      });
+  });
 });
 //This function hide all accordion content and display the correct one, and then scroll to that specific accordion.
 function navOpenTabContent(pageNav)
@@ -651,6 +678,12 @@ function retriveEventsData()
      }
 
   }
+  
+  //Sort futureEventList in ascending order of date.
+  futureEventList.sort((a,b) => a.date - b.date);
+  //Sort pastEventList in descending of date.
+  pastEventList.sort((a,b) => b.date - a.date);
+
 }
 
 //This function extract the time from the date, and assign AM or PM depend on the time.
@@ -669,6 +702,188 @@ function getDateTime(date)
 }
 
 /** Event page calendar **/
+
+//This function generate Upcoming Events tab or Past Events tab depend on the arguments.
+async function displayEvents(navList, tabId ,currEventList)
+{
+  let eventContainer = document.getElementById(tabId).children[0];
+  let currMonth = "";
+  let monthEventCount = 0;
+  let active = true; //Allow the first month on the side nav to be active.
+  let currMonthDiv;
+  navList.innerHTML = 
+  ` 
+    <h3>On this Page</h3>    
+  `
+  if(tabId == 'past-events')
+  {
+    navList.innerHTML += 
+    `
+    <a aria-label="Side navigation direct to Past Event Highlights" class="page-nav page-nav-active" href="#past-event-highlights">Past Event Highlights</a>
+    `;
+    eventContainer.innerHTML = 
+    `
+      <div id="past-event-highlights">
+        <h3 class="tab-heading">Past Event Highlights</h3>
+        <div id="event-highlights-container" >
+          <a href="#" class="event-highlight">
+            <img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">
+            <div class="highlight-description">
+              <h2>2023 Annual ITVMO Summit</h2>
+              <p class="past-event-highlight">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque autem eius a voluptates, temporibus ratione, illo minima fuga laudantium perferendis dolores dignissimos optio labore recusandae cumque alias! Non earum quidem ipsum doloribus exercitationem impedit beatae, amet, officiis, distinctio ipsa ab natus maxime quos illum ea similique nulla fugiat repudiandae.
+              </p>
+            </div>
+          </a>
+          <a href="#" class="event-highlight">
+            <img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">
+            <div class="highlight-description">
+              <h2>2023 Annual ITVMO Summit Annual ITVMO Summit</h2>
+              <p class="past-event-highlight">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque autem eius a voluptates, temporibus ratione, illo minima fuga laudantium perferendis dolores dignissimos optio labore recusandae cumque alias! Non earum quidem ipsum doloribus exercitationem impedit beatae, amet, officiis, distinctio ipsa ab natus maxime quos illum ea similique nulla fugiat repudiandae.
+              </p>
+            </div>
+          </a>
+          <a href="#" class="event-highlight">
+            <img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">
+            <div class="highlight-description">
+            </div>
+          </a>
+        <div>
+      </div>
+    `;
+    active = false; //Since Past Event Hightlights already active.
+  }
+  for(let i = 0; i < currEventList.length; i++)
+  {
+    let currEventMonth = `${currEventList[i].date.getMonth()+1}${currEventList[i].date.getFullYear()}`;
+    if(currMonth == "")
+    {
+      //Create Unique ID for the div (month + year + the container of the ID ). Since Past event can have a same month as the Upcoming, this will eliminate the issue.
+      currMonth = currEventMonth+tabId;
+      currMonthDiv = setMonthDiv(eventContainer, currMonth, months[currEventList[i].date.getMonth()], currEventList[i].date.getFullYear());
+    }
+    //If detect that currEventMonth is no longer equal to currMonth, therefore change the currMonth to currEventMonth and reset the monthEventCount to 1.
+    if(currMonth != currEventMonth+tabId)
+    {
+      setPageNav(navList, currMonth, monthEventCount, months[currEventList[i-1].date.getMonth()], currEventList[i].date.getFullYear(), active); //i-1 because the current futureEventList[i] already the different month.
+      currMonth = currEventMonth+tabId;
+      monthEventCount = 1;
+      active = false;
+      currMonthDiv = setMonthDiv(eventContainer, currMonth, months[currEventList[i].date.getMonth()], currEventList[i].date.getFullYear());
+    }
+    else
+    {
+      monthEventCount++;
+    }
+    if(i == (currEventList.length-1))
+    {
+      setPageNav(navList, currMonth, monthEventCount, months[currEventList[i].date.getMonth()], currEventList[i].date.getFullYear(), active);
+      // setMonthDiv(currMonth);
+    }
+    setEventDiv(currMonthDiv, currEventList[i], `${months[currEventList[i].month]} ${currEventList[i].dateNumber}, ${currEventList[i].date.getFullYear()}`)
+  }
+}
+//This function intalize the page-nav in nav-list.
+function setPageNav(navList, monthId, monthCount, fullMonth, fullYear, active)
+{
+  if(active == true)
+  {
+    navList.innerHTML += `<a aria-label="Side navigation direct to ${fullMonth} ${fullYear} have the event count of ${monthCount}" class="page-nav page-nav-active" href="#${monthId}">${fullMonth} ${fullYear} <span>(${monthCount})</span></a>`
+  }
+  else
+  {
+    navList.innerHTML += `<a aria-label="Side navigation direct to ${fullMonth} ${fullYear} have the event count of ${monthCount}" class="page-nav" href="#${monthId}">${fullMonth} ${fullYear} <span>(${monthCount})</span></a>`
+  }
+}
+//This function create div that have the id set to monthId.
+function setMonthDiv(eventContainer, monthId, fullMonth, fullYear)
+{
+  eventContainer.innerHTML += `
+  <div id="${monthId}" class="event-cards">
+    <h3 class="tab-heading">
+      ${fullMonth} ${fullYear}
+    </h3>
+  </div>
+  `;
+  return document.getElementById(monthId);
+}
+function setEventDiv(monthDiv, currEvent, currDate)
+{
+  let gOnly = `<div class="event-card-gov-line"></div>`
+  let gLogo = ``;
+  if(currEvent.govOnly == 'true')
+  {
+    gOnly = 
+    `
+      <div class="event-card-gov-lock">
+        <img aria-label="This is Gov only event" src="${baseUrl}/assets/images/icons/lock-blue.svg" alt="Lock icon">
+      </div>
+    `
+    gLogo =`<img aria-label="This is Gov only event" src="${baseUrl}/assets/images/icons/lock-blue.svg" alt="Lock icon">`;
+  }
+  let isEx = `ITVMO Event`;
+  let exLogo = ``;
+  if(currEvent.isExternal == 'true')
+  {
+    isEx = `Non-ITVMO Event`;
+    exLogo = `<img src="${baseUrl}/assets/images/icons/external.svg" alt="External icon">`;
+  }
+  monthDiv.innerHTML += 
+  `
+      <a href="${currEvent.link}" class="event-card">
+      <div aria-hidden="true" class="event-card-day">
+        <div class="card-day">
+            ${currEvent.day}
+        </div>
+        <div class="card-date-num">
+          ${currEvent.dateNumber}
+        </div>
+      </div>
+      <div class="event-card-gov">
+        ${gOnly}
+      </div>
+      <div class="event-card-content">
+        <h3 aria-label="Organizer: ${currEvent.organizer}" class="event-org">${currEvent.organizer}</h3>
+        <h2 aria-label="Title: ${currEvent.title}" class="event-title">${currEvent.title}</h2>
+        <p class="event-description four-line-max">
+        ${currEvent.description}
+        </p>
+      </div>
+      <div class="event-card-info">
+        <div class="event">
+            <p aria-label="Event time: ${currEvent.fromTo}"><img alt="clock icon" src="${baseUrl}/assets/images/icons/clock-icon-grey.svg">${currEvent.fromTo}</p>
+            <p aria-label="Event type: ${currEvent.eventType}"><img alt="location icon" src="${baseUrl}/assets/images/icons/location-icon-grey.svg">${currEvent.eventType}</p>
+            <p aria-label="Event is: ${isEx}"><img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">${isEx}</p>
+            <p aria-label="Event Date: ${currDate}"><img alt="calendar icon" src="${baseUrl}/assets/images/icons/calendar-grey.svg">${currDate}</p>
+        </div>
+      </div>
+    </a>
+  `;
+  monthDiv.innerHTML += 
+  `
+    <a href="${currEvent.link}" class="event-card-mobile">
+    <div class="event-card-day">
+      <p>${gLogo}${currDate}</p>
+      <p aria-label="Event type: ${currEvent.eventType}"><img alt="location icon" src="${baseUrl}/assets/images/icons/location-icon-grey.svg">${currEvent.eventType}</p>
+    </div>
+    <div class="event-card-content">
+      <h3 aria-label="Organizer: ${currEvent.organizer}" class="event-org">${currEvent.organizer}</h3>
+      <h2 aria-label="Title: ${currEvent.title}" class="event-title">${currEvent.title}${exLogo}</h2>
+      <p class="event-description">
+        ${currEvent.description}
+      </p>
+    </div>
+    <div class="event-card-info">
+      <div class="event">
+          <p aria-label="Event time: ${currEvent.fromTo}" ><img alt="clock icon" src="${baseUrl}/assets/images/icons/clock-icon-grey.svg">${currEvent.fromTo}</p>
+          <p aria-label="Event is: ${isEx}"><img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">${isEx}</p>
+      </div>
+    </div>
+  </a>
+  `;
+}
+
 
 function openModal(eventForDay) {
   if(eventForDay.length > 0)
@@ -706,9 +921,9 @@ function openModal(eventForDay) {
           <p class="event-description">${eventForDay[i].description}</p>
           <div class="event-info-link">
             <div class="event-info">
-              <p><img src="${baseUrl}/assets/images/icons/clock-icon-grey.svg">${eventForDay[i].fromTo}</p>
-              <p><img src="${baseUrl}/assets/images/icons/location-icon-grey.svg">${eventForDay[i].eventType}</p>
-              <p><img src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">${inEx}</p>
+              <p><img alt="clock icon" src="${baseUrl}/assets/images/icons/clock-icon-grey.svg">${eventForDay[i].fromTo}</p>
+              <p><img alt="location icon" src="${baseUrl}/assets/images/icons/location-icon-grey.svg">${eventForDay[i].eventType}</p>
+              <p><img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">${inEx}</p>
             </div>
             <a aria-label="Event link of Organization:${eventForDay[i].organizer}, Title:${eventForDay[i].title}" class="event-link" href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><img src="${baseUrl}/assets/images/icons/external-white.svg"><p>View Event</p></a>
           </div>
@@ -831,10 +1046,10 @@ async function runCalendar(d,m,y) {
         }
       }
       let nonItvmoCount = eventForDay.length - itvmoEventCount;
-      daySquare.title = `${dt.toLocaleDateString('en-us', { month: 'long' })} ${i - paddingDays} event count of ${eventForDay.length}`;
+      daySquare.ariaLabel = `${dt.toLocaleDateString('en-us', { month: 'long' })} ${i - paddingDays} event count of ${eventForDay.length}`;
       //Display the Events summary for the current day if there is one
       if ((i - paddingDays == day && nav === 0)) {
-        dateDisplay.innerHTML = `${monthString} ${daysInMonth}, ${year}`;
+        dateDisplay.innerHTML = `${monthString} ${i - paddingDays}, ${year}`;
         daySquare.id = 'currentDay';
         daySquare.classList.add('active-day');
         daySquare.tabIndex = 0;
