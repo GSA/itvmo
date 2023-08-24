@@ -119,6 +119,7 @@ collections:
     fields:
     - {label: "URL", name: "url-link", widget: "string"}
     - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "description", widget: "text"}
     - label: "Highlight Image"
       name: "highlight-image"
       widget: "image"
