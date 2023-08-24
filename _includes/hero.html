@@ -28,7 +28,7 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
             {% for highlight in site.highlights %}
             <div class="mySlides" onmouseover="stopSlide()" onmouseout="runSlide()">
               <div class="order">{{highlight.order}}</div>
-              <img class="highlight-background" src="{{site.baseurl}}{{highlight.background-image}}" alt="highlight background">
+              <img class="highlight-background" src="{{site.baseurl}}/{{highlight.background-image}}" alt="highlight background">
               <div class="highlight-info">
                 <div>
                   <h4>

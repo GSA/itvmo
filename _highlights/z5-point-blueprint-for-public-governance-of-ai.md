@@ -14,5 +14,5 @@ description: >-
   Another step governments should take is requiring effective safety brakes for AI platforms that control critical infrastructure, Smith wrote in a blog post published Thursday.
 url-link: executivegov.com/2023/05/microsofts-brad-smith-on-5-point-blueprint-for-public-governance-of-ai/
 publication-date: September 02 2023
-background-image: ../assets/images/highlight_images/highlight-image-testing3.png
+background-image: assets/uploads/highlight-image-testing3.png
 ---
