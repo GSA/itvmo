@@ -58,7 +58,7 @@ collections:
       name: "background-image"
       widget: "image"
       choose_url: true
-      media_folder: assets/images/highlight_images
+      media_folder: ../assets/images/highlight_images
       default: ""
       media_library:
         config:
@@ -124,7 +124,7 @@ collections:
       name: "highlight-image"
       widget: "image"
       choose_url: true
-      media_folder: assets/images/highlight_images
+      media_folder: ../assets/images/highlight_images
       default: ""
       media_library:
         config:
