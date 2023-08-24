@@ -129,11 +129,18 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  news:
+    output: true
+    permalink: /:path/
   resources:
     output: true
-  events-page-announcements:
+  highlights:
+    output: true  
+  events:
+    output: true  
+  events_page_announcements:
     output: true
-  past-event-highlights:
+  past_event_highlight:
     output: true
     
 permalink: pretty
