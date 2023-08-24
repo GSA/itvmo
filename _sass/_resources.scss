@@ -249,35 +249,43 @@ a.checked {
             justify-content: center;
             .event-highlight
             {
+              -webkit-box-shadow: 5px 5px 5px rgba(215, 215, 215, 0.34901960784313724);
+              box-shadow: 5px 5px 5px rgba(215, 215, 215, 0.34901960784313724);
               width: 341px;
-              //width: 330px;
+              // width: 330px;
               // flex: 1;
               height: 450px;
               border: #aaaaaa 1px solid;
               border-radius: 20px;
-              padding: 20px 15px 20px 15px;
+              overflow: hidden;
+              // padding: 20px 15px 20px 15px;
               img, .highlight-description 
               {
-                height: 50%;
+                // height: 50%;
                 width: 100%;
-                object-fit: contain;
               }
               img
               {
-                padding-bottom: 10px;
-                border-bottom: #aaaaaa 1px solid;
+                height: 49%;
+                // border-bottom: #aaaaaa 1px solid;
+                padding: 10px 15px 5px 15px;
+                object-fit: contain;
               }
               .highlight-description
               { 
+                height: 51%;
                 display: flex;
                 flex-direction: column;
                 row-gap: 5px;
+                padding: 0px 15px 15px 15px;
                 h2, p 
                 {
                   margin: 0;
                 }
                 h2 
                 {
+                  border-top: #aaaaaa 1px solid;
+                  padding-top: 10px;
                   font-weight: 700;
                   font-size: 22px;
                   color: #062349;
@@ -294,6 +302,42 @@ a.checked {
                   font-size: 14px;
                   line-height: normal;
                 }
+              }
+            }
+            // .bg-img 
+            // {
+            //   img 
+            //   {
+            //     padding: 0;
+            //     object-fit: cover;
+            //   }
+            //   img, .highlight-description 
+            //   {
+            //     height: 50%;
+            //   }
+            //   .highlight-description
+            //   {
+            //     h2 
+            //     {
+            //       border-top: none;
+            //     } 
+            //   }
+            // }
+          }
+          .event-highlight:hover
+          {
+            background-color: #f2f2f2;
+            border: rgb(127, 127, 127) 1px solid;
+          }
+          a:hover
+          {
+            text-decoration: none !important;
+            .highlight-description
+            {
+              h2 
+              {
+                text-decoration: underline !important;
+                text-decoration-color: #333333;
               }
             }
           }

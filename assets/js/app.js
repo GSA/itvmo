@@ -27,7 +27,7 @@ if(document.getElementById('dynamic-panel') != null)
 let nav = 0;
 let clicked = null;
 // let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
-const eventList = [], pastEventList = [], futureEventList = [];
+const eventList = [], pastEventList = [], futureEventList = [], pastEventHighlight = [];
 const calendar = document.getElementById('calendar');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const weekdaysShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
@@ -645,6 +645,7 @@ function openTabDropdown()
 function retriveEventsData()
 {
   const rawEventList = document.getElementsByClassName("raw-event-data");
+  const rawPastHighlights = document.getElementsByClassName("raw-past-event-highlight-data");
   const currentDate = new Date(); //use to determine if events will be store in pastEventList or futureEventList
   currentDate.setHours(0, 0, 0, 0); //So all the event that the same date as current date but the time is lesser than the current date will be count as futureEventList as well.
   for( ev of rawEventList)
@@ -678,11 +679,22 @@ function retriveEventsData()
      }
 
   }
-  
   //Sort futureEventList in ascending order of date.
   futureEventList.sort((a,b) => a.date - b.date);
   //Sort pastEventList in descending of date.
   pastEventList.sort((a,b) => b.date - a.date);
+  for( ev of rawPastHighlights)
+  {
+    const currEvent =       
+    {
+      "title":ev.getAttribute("data-title"),
+      "description":ev.getAttribute("data-description"), 
+      "link":ev.getAttribute("data-url"),
+      "image":ev.getAttribute("data-image")
+    }
+    pastEventHighlight.push(currEvent);
+  }
+  console.log(pastEventHighlight);
 
 }
 
@@ -715,6 +727,7 @@ async function displayEvents(navList, tabId ,currEventList)
   ` 
     <h3>On this Page</h3>    
   `
+  //If the tab is Past Events tab
   if(tabId == 'past-events')
   {
     navList.innerHTML += 
@@ -724,34 +737,32 @@ async function displayEvents(navList, tabId ,currEventList)
     eventContainer.innerHTML = 
     `
       <div id="past-event-highlights">
-        <h3 class="tab-heading">Past Event Highlights</h3>
-        <div id="event-highlights-container" >
-          <a href="#" class="event-highlight">
-            <img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">
-            <div class="highlight-description">
-              <h2>2023 Annual ITVMO Summit</h2>
-              <p class="past-event-highlight">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque autem eius a voluptates, temporibus ratione, illo minima fuga laudantium perferendis dolores dignissimos optio labore recusandae cumque alias! Non earum quidem ipsum doloribus exercitationem impedit beatae, amet, officiis, distinctio ipsa ab natus maxime quos illum ea similique nulla fugiat repudiandae.
-              </p>
-            </div>
-          </a>
-          <a href="#" class="event-highlight">
-            <img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">
-            <div class="highlight-description">
-              <h2>2023 Annual ITVMO Summit Annual ITVMO Summit</h2>
-              <p class="past-event-highlight">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque autem eius a voluptates, temporibus ratione, illo minima fuga laudantium perferendis dolores dignissimos optio labore recusandae cumque alias! Non earum quidem ipsum doloribus exercitationem impedit beatae, amet, officiis, distinctio ipsa ab natus maxime quos illum ea similique nulla fugiat repudiandae.
-              </p>
-            </div>
-          </a>
-          <a href="#" class="event-highlight">
-            <img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">
-            <div class="highlight-description">
-            </div>
-          </a>
-        <div>
       </div>
     `;
+    console.log(eventContainer.children[0]);
+    //
+    eventContainer.children[0].innerHTML = 
+    `
+    <h3 class="tab-heading">Past Event Highlights</h3>
+    <div id="event-highlights-container"><div>
+    `;
+    console.log(eventContainer.children[0].children[1]);
+    eventContainer.children[0].children[1].innerHTML = ""
+    for(ev of pastEventHighlight)
+    {
+      eventContainer.children[0].children[1].innerHTML += 
+      `
+      <a href="${ev.link}" class="event-highlight bg-img">
+        <img alt="Highlight background image" src="${baseUrl}/${ev.image}">
+        <div class="highlight-description">
+          <h2 title="Event highlight title:">${ev.title}</h2>
+          <p class="past-event-highlight">
+          ${ev.description}
+          </p>
+        </div>
+      </a>
+      `
+    }
     active = false; //Since Past Event Hightlights already active.
   }
   for(let i = 0; i < currEventList.length; i++)
