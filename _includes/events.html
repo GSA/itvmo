@@ -16,6 +16,16 @@
      is-visible
    </div>
    {% endfor %}
+   {% for event in site.past_event_highlight %}
+   <div
+     class="raw-past-event-highlight-data"
+     data-title="{{event.title}}"
+     data-description="{{event.description}}"
+     data-url="{{event.url-link}}"
+     data-image="{{event.highlight-image}}"
+   >
+   </div>
+   {% endfor %}
 </div>
 <section id="page-announcements">
    {% for announcement in site.events_page_announcements %}
