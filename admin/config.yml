@@ -63,7 +63,16 @@ collections:
       media_library:
         config:
           multiple: true
-
+#Allow user to create announcement.
+  - label: Events page Announcements
+    name: events-page-announcements
+    folder: _events_page_announcements/
+    create: true
+    slug: "{{slug}}"
+    fields:
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Description", name: "description", widget: "text"}
+    - {label: "URL", name: "url-link", widget: "string"}
 #Allow user to create events.
   - label: Events
     name: events
@@ -101,7 +110,24 @@ collections:
       multiple: false
     - {label: ".Gov/.mil only", name: "gov-only",  widget: "boolean", default: false} # Determine if the resource is .Gov/.mil only or not.
     - {label: "External Resource", name: "is-external",  widget: "boolean", default: false}
-
+#Allow user to create Past Event Highlights
+  - label: Past Event Highlights
+    name: past-event-highlights
+    folder: _past_event_highlight/
+    create: true
+    slug: "{{slug}}"
+    fields:
+    - {label: "URL", name: "url-link", widget: "string"}
+    - {label: "Title", name: "title", widget: "string"}
+    - label: "Highlight Image"
+      name: "highlight-image"
+      widget: "image"
+      choose_url: true
+      media_folder: assets/images/highlight_images
+      default: ""
+      media_library:
+        config:
+          multiple: true
 #Events Types allow user to use it to determine the type of the Event.
   - label: Events Types
     name: events-types
