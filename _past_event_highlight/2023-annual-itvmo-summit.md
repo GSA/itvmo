@@ -6,5 +6,5 @@ description: On August 2, 2023, the ITVMO partnered with ACT-IAC to host the
   government together to foster collaboration and increase knowledge sharing on
   IT acquisition contract strategies, Best-in-Class IT vehicle solutions, and
   federal marketplace opportunities for small businesses.
-highlight-image: assets/images/highlight_images/annual-summit.svg
+highlight-image: ../assets/images/highlight_images/annual-summit.svg
 ---
