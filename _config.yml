@@ -136,9 +136,9 @@ collections:
     output: true  
   events:
     output: true  
-  events-page-announcements:
+  events_page_announcements:
     output: true
-  past-event-highlights:
+  past_event_highlight:
     output: true
     
 permalink: pretty

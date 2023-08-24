@@ -168,6 +168,56 @@ a.checked {
 }
 
 /*EVENTPAGE*/
+
+//Events page announcements
+#page-announcements
+{
+  padding: 15px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  .announcement
+  {
+    width: 100%;
+    height: auto;
+    padding: 18px 15px 18px 15px;
+    background-color: #faf3d0;
+    border-left: #ffbe2f 10px solid;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    img 
+    {
+      width: 36px;
+      height: 32px;
+      margin-top: -10px;
+    }
+    .announcement-info
+    {
+      h3, p 
+      {
+        margin: 0;
+        color: #000000;
+      }
+      h3 
+      {
+        font-weight: 700;
+        font-size: 21px;
+      }
+      p 
+      {
+        font-size: 17px;
+        a 
+        {
+          font-weight: 650;
+          color: #437bac;
+        }
+      }
+    }
+  }
+}
+
+//Events page
 #upcoming-events, #past-events
 {
   justify-content: center;
@@ -1893,7 +1943,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.tab-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *
+.tab-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -3444,6 +3494,7 @@ html *
 {
   display: none;
 }
+//Populate data on page but not display to the user, then the data will be use and manipulate by JavaScript.
 .page-data
 {
   display: none !important;
