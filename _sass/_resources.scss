@@ -1818,7 +1818,7 @@ a.checked {
 .two-line-max
 {
   display: -webkit-box;
-  width: 100%;
+  // width: 100%;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
