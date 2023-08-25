@@ -1141,12 +1141,21 @@ a.checked {
   
 }
 
-//If the Past Events Highlight text in this class exceed 7 line the remaining line will be hidden.
+//If the Past Events Highlight text in this class exceed 8 line the remaining line will be hidden.
 .past-event-highlight
 {
   display: -webkit-box;
   width: 100%;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+//If title of the  Past Events Highlight exceed 1 line, apply this class to it description instead.
+.past-event-highlight-shorten
+{
+  display: -webkit-box;
+  width: 100%;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }

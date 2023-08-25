@@ -759,7 +759,11 @@ async function displayEvents(navList, tabId ,currEventList)
     eventContainer.children[0].children[1].innerHTML = ""
     for(ev of pastEventHighlight)
     {
+      console.log(ev.title.length);
+      console.log(ev.title.length > 25);
+
       let currHighlight = '';
+      //If the Past Event Highlight have image file that is not SVG, display change the style of the image.
       if(!ev.image.includes('.svg'))
       {
         currHighlight += 
@@ -778,14 +782,30 @@ async function displayEvents(navList, tabId ,currEventList)
       `
         <img alt="Highlight background image" src="${baseUrl}/${ev.image}">
         <div class="highlight-description">
-          <h2 title="Event highlight title:">${ev.title}</h2>
-          <p class="past-event-highlight">
-          ${ev.description}
-          </p>
-        </div>
-      </a>
+          <h2 class="two-line-max" title="Event highlight title:">${ev.title}</h2>
       `
-
+      if(ev.title.length > 25)
+      {
+        currHighlight += 
+        `
+            <p class="past-event-highlight-shorten">
+            ${ev.description}
+            </p>
+          </div>
+        </a>
+        `
+      }
+      else 
+      {
+        currHighlight += 
+        `
+            <p class="past-event-highlight">
+            ${ev.description}
+            </p>
+          </div>
+        </a>
+        `
+      }
       eventContainer.children[0].children[1].innerHTML += currHighlight;
     }
     active = false; //Since Past Event Hightlights already active.
