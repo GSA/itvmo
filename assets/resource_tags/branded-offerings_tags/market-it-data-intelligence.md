@@ -1,4 +1,4 @@
 ---
-name: "-"
-tag: na-branded-offering
+name: "Market & IT Data Intelligence"
+tag: market-it-data-intelligence
 ---

@@ -1,4 +1,4 @@
 ---
-name: Industry (Includes Large & Small Businesses)
-tag: Industry
+name: "Industry (All Businesses)"
+tag: industry-all-businesses
 ---

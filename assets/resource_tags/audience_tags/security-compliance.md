@@ -1,4 +1,4 @@
 ---
-name: For information security officials
-tag: for-info-security-officials
+name: Security/Compliance
+tag: security-compliance
 ---
