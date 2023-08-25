@@ -3549,6 +3549,14 @@ html *
 }
 .resource-cards
 {
+  .no-results 
+  {
+    padding-top: 20px;
+    margin-bottom: -15px;
+    color: #333333;
+    font-size: 1.06rem;
+    line-height: 1.5;
+  }
   p 
   {
     margin: 0;
@@ -3908,6 +3916,7 @@ html *
         {
           width: 100%;
           height: 80%;
+          border-right: none;
           .resource-detail
           {
             padding-top: 20px;
@@ -3926,7 +3935,7 @@ html *
           height: 56px;
           flex-direction: row;
           align-items: center;
-          column-gap: 15px;
+          column-gap: 10px;
           margin-top: -8px;
         }
       }

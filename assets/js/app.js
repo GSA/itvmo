@@ -368,7 +368,7 @@ function displayResults(filterResources)
   filteredResults.innerHTML = "";
 
   if (filterResources.length === 0) {
-    filteredResults.innerHTML = "No results found.";
+    filteredResults.innerHTML = `<p class="no-results">No results found.</p>`;
   } 
   else 
   {
