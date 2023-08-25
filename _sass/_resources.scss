@@ -304,25 +304,25 @@ a.checked {
                 }
               }
             }
-            // .bg-img 
-            // {
-            //   img 
-            //   {
-            //     padding: 0;
-            //     object-fit: cover;
-            //   }
-            //   img, .highlight-description 
-            //   {
-            //     height: 50%;
-            //   }
-            //   .highlight-description
-            //   {
-            //     h2 
-            //     {
-            //       border-top: none;
-            //     } 
-            //   }
-            // }
+            .bg-img 
+            {
+              img 
+              {
+                padding: 0;
+                object-fit: cover;
+              }
+              img, .highlight-description 
+              {
+                height: 50%;
+              }
+              .highlight-description
+              {
+                h2 
+                {
+                  border-top: none;
+                } 
+              }
+            }
           }
           .event-highlight:hover
           {

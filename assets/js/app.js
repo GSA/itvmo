@@ -74,9 +74,18 @@ if(document.getElementById('resources') != null)
 //Run Inner page
 
 let pageHeadingHeight; //Use to calculate whether when the side nav bar should start moving.
+
+//If Main page.
 try {
   pageHeadingHeight = document.getElementById('main-page-heading').offsetHeight;
-} catch (error) {
+  //If Events page there are Announcement as well that need tp be add to pageHeadingheight.
+  if(document.getElementById('page-announcements') != null)
+  {
+    pageHeadingHeight += document.getElementById('page-announcements').offsetHeight;
+  }
+} 
+//If Inner page
+catch (error) {
   pageHeadingHeight = document.getElementById('inner-page-heading').offsetHeight;
 }
 
@@ -739,20 +748,34 @@ async function displayEvents(navList, tabId ,currEventList)
       <div id="past-event-highlights">
       </div>
     `;
-    console.log(eventContainer.children[0]);
+    // console.log(eventContainer.children[0]);
     //
     eventContainer.children[0].innerHTML = 
     `
     <h3 class="tab-heading">Past Event Highlights</h3>
     <div id="event-highlights-container"><div>
     `;
-    console.log(eventContainer.children[0].children[1]);
+    // console.log(eventContainer.children[0].children[1]);
     eventContainer.children[0].children[1].innerHTML = ""
     for(ev of pastEventHighlight)
     {
-      eventContainer.children[0].children[1].innerHTML += 
+      let currHighlight = '';
+      if(!ev.image.includes('.svg'))
+      {
+        currHighlight += 
+        `
+        <a href="${ev.link}" class="event-highlight bg-img">
+        `
+      }
+      else
+      {
+        currHighlight += 
+        `
+        <a href="${ev.link}" class="event-highlight">
+        `
+      }
+      currHighlight += 
       `
-      <a href="${ev.link}" class="event-highlight bg-img">
         <img alt="Highlight background image" src="${baseUrl}/${ev.image}">
         <div class="highlight-description">
           <h2 title="Event highlight title:">${ev.title}</h2>
@@ -762,6 +785,8 @@ async function displayEvents(navList, tabId ,currEventList)
         </div>
       </a>
       `
+
+      eventContainer.children[0].children[1].innerHTML += currHighlight;
     }
     active = false; //Since Past Event Hightlights already active.
   }
