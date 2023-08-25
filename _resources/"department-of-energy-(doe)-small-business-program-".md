@@ -1,0 +1,14 @@
+---
+title: "Department of Energy (DoE) Small Business Program "
+description: "The Office of Small and Disadvantaged Business Utilization OSDBU maximizes contract opportunities for small businesses while advancing the Agency’s missions.  The office works to make it easier for small businesses to do business with the DOE, maximizing business opportunities and awards and improving socio-economic category performance."
+url-link: "https://www.energy.gov/osdbu/office-small-and-disadvantaged-business-utilization"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

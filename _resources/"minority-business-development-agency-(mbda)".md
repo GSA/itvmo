@@ -1,0 +1,14 @@
+---
+title: "Minority Business Development Agency (MBDA)"
+description: "The U.S. Department of Commerce, Minority Business Development Agency (MBDA) is the only federal agency solely dedicated to the growth and global competitiveness of minority business enterprises."
+url-link: "https://www.mbda.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "10"
+resource-type: "Guidance"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

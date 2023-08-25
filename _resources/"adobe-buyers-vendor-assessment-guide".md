@@ -1,0 +1,14 @@
+---
+title: "Adobe Buyers Vendor Assessment Guide"
+description: "Review this Adobe Vendor assessment guide for the full documentation on guidance provided for agencies procuring Adobe."
+url-link: "https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Guide.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "July 01, 2022"
+reading-time: "25"
+resource-type: "Guidance"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "oem-acquisition-initiatives"
+---

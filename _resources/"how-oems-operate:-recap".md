@@ -1,0 +1,14 @@
+---
+title: "How OEMs Operate: Recap"
+description: "Recap of understanding how OEMs are organized and operate. .gov/.mil audience only"
+url-link: "https://community.max.gov/download/attachments/2403246889/Module-8--%20IBT_OEM%20Operations_%20Module%20Recap.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "July 01, 2023"
+reading-time: "5"
+resource-type: "Guidance"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "it-buyers-training-support "
+---

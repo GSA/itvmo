@@ -1,0 +1,14 @@
+---
+title: "NASA SEWP Small Business Contract Holders"
+description: "This tool shows small business on vehicle with NASA SEWP. "
+url-link: "https://www.sewp.nasa.gov/sewp5public/contractholders#/smallbusinesslist"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "July 01, 2023"
+reading-time: "5"
+resource-type: "Tool"
+filter: "small-business"
+audience: "contracts-acquisitions"
+branded-offerings: "small-business-support"
+---

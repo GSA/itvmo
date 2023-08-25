@@ -1,0 +1,14 @@
+---
+title: "Office of Personnel Management (OPM) Small Business Program "
+description: "OPM has established a world-class small business program at OPM by using the authorities of small business legislation to expedite the acquisition process in order to maximize the use of small businesses that provide the best value to OPM."
+url-link: "https://www.opm.gov/about-us/doing-business-with-opm/small-business-program/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

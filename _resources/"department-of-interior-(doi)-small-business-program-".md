@@ -1,0 +1,14 @@
+---
+title: "Department of Interior (DOI) Small Business Program "
+description: "The Department of the Interior's Office of Small and Disadvantaged Business Utilization (OSDBU) advises the Secretary of the Interior on all matters related to small business and collaborates with leadership throughout the Department to maximize opportunities for small businesses in our acquisitions.  The OSDBU implements policies, procedures, and training programs for the Department to emphasize our commitment to contracting with small businesses. Our mission also includes outreach to small and disadvantaged business communities, including Indian economic enterprises, small disadvantaged, women-owned, veteran-owned, service disabled veteran owned, and small businesses located in historically underutilized business zones (HUBZone) areas."
+url-link: "https://www.doi.gov/pmb/osdbu"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

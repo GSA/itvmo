@@ -1,0 +1,14 @@
+---
+title: "Department of State Small Business Program "
+description: "How small businesses can do business with the Department of State. "
+url-link: "https://www.state.gov/marketing-resources-doing-business-with-the-department-of-state/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

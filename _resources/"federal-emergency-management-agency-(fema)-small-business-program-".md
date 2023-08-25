@@ -1,0 +1,14 @@
+---
+title: "Federal Emergency Management Agency (FEMA) Small Business Program "
+description: "FEMA’s Small Business Program’s (SBP) mission is to assist small businesses in the pursuit of federal procurements. The SBP office actively engages with FEMA’s procurement personnel to ensure that small businesses have the maximum practicable opportunity to participate in contracts."
+url-link: "https://www.fema.gov/business-industry/doing-business/small-business"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

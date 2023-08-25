@@ -1,0 +1,14 @@
+---
+title: "Department of  Homeland Security (DHS) Small Business Program "
+description: "At DHS, we understand that small businesses are vital to our national strength. We ensure that small businesses have a fair opportunity to compete for our contracts."
+url-link: "https://www.dhs.gov/small-business-assistance"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

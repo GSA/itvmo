@@ -1,0 +1,14 @@
+---
+title: "GSA Alliant 2 IT Best-in-Class Vehicle"
+description: "Alliant 2, a Best-in-Class GWAC that is preferred governmentwide solution, offers artificial intelligence (AI), distributed ledger technology (DLT), robotic process automation (RPA), and other types of emerging technologies."
+url-link: "https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/governmentwide-acquisition-contracts/alliant-2"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "May 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "contract-solutions"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

@@ -1,0 +1,14 @@
+---
+title: "Open FAR Cases Report (updated bi-weekly)"
+description: "This agency provides an updated bi-weekly report of open Federal Acquisition Regulation (FAR) cases. Visit the site and click open cases for the latest bi-weekly PDF report. "
+url-link: "https://www.acq.osd.mil/dpap/dars/far_case_status.html"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "5"
+resource-type: "Report"
+filter: "p-filter"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

@@ -1,0 +1,14 @@
+---
+title: "Contract Data (Formerly FPDS)"
+description: "The FPDS reports transition is complete and the  DataBank  is the only place to go to create and run contract data reports. If you are searching for contract data (i.e., searching for specific contracts), you must do so at  FPDS.gov , which remains the authoritative source for contract data."
+url-link: "https://sam.gov/content/contract-data"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "5"
+resource-type: "Tool"
+filter: "market-intelligence"
+audience: "contracts-acquisitions"
+branded-offerings: "market-it-data-intelligence"
+---

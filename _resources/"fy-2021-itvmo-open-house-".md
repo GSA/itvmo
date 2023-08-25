@@ -1,0 +1,14 @@
+---
+title: "FY 2021 ITVMO Open House "
+description: "THe ITVMO hosted an Open House for government IT buyers and program managers to increase understanding and awareness of the program's capabilities. "
+url-link: "https://www.youtube.com/watch?v=9mYx4RfcO-4"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2021"
+reading-time: "60"
+resource-type: "Guidance"
+filter: "itvmo-general"
+audience: "contracts-acquisitions"
+branded-offerings: "it-buyers-training-support "
+---

@@ -1,0 +1,14 @@
+---
+title: "US Trade Representative Small Business Report"
+description: "This site page provides an overview of the US Trade Representative's Office for Small Business to include its domain experts evaluating small business performance. Refer to this page for added access to small business reports and analysis. "
+url-link: "https://ustr.gov/issue-areas/small-business"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "45"
+resource-type: "Report"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

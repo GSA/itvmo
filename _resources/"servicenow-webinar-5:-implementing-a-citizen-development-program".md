@@ -1,0 +1,14 @@
+---
+title: "ServiceNow Webinar 5: Implementing a Citizen Development Program"
+description: "Low- and no-code development can help your organization expand its application development to include citizen developers.  With effective management in place, citizen development boosts your digital transformation efforts and delivers more innovation because it extends your development potential beyond the IT developer team, generating flexibility and efficiency."
+url-link: "https://vimeo.com/gsavisualcommunications/review/801300432/4ac0f0841e"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "March 01, 2023"
+reading-time: "60"
+resource-type: "Guidance"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "oem-acquisition-initiatives"
+---

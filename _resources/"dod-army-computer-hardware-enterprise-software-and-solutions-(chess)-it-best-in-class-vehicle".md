@@ -1,0 +1,14 @@
+---
+title: "DoD Army Computer Hardware, Enterprise Software and Solutions (CHESS) IT Best-in-Class Vehicle"
+description: "CHESS provides architecturally sound standards and policy-compliant IT enterprise solutions from more than 20 prime industry IT providers to all Army activities and organizations."
+url-link: "https://www.eis.army.mil/programs/chess"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "May 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "contract-solutions"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

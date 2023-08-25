@@ -1,0 +1,14 @@
+---
+title: "North American Industry Classification System (NAICS) Search Tool "
+description: "This official U.S. Government Web site provides the latest information on plans for NAICS revisions, as well as access to various NAICS reference files and tools. Additional information on the background and development of NAICS is available in the History section of this Web site."
+url-link: "https://www.census.gov/naics/"
+type: "Subpage"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Tool"
+filter: "market-intelligence"
+audience: "industry-all-businesses"
+branded-offerings: "market-it-data-intelligence"
+---

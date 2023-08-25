@@ -1,0 +1,14 @@
+---
+title: "FAR 16.505 Ordering vs FAR 15.3 Negotiated Procurements"
+description: "Article explaining typical mistakes to avoid when ordering off a Governmentwide Acquisition Contract (GWAC) and other  indefinite delivery/indefinite quantity (IDIQ)-type contracts. Refer to Pages 3 and 4 providing a comparative analysis of the major differences between FAR 16.505 and FAR 15.3."
+url-link: "https://www.gsa.gov/system/files/Article%20-%20FAR%2016505%20Ordering%20vs%20FAR%20153%20Negotiated%20Procurements%20-%20Copy%20-%20508.pdf"
+type: "PDF"
+gov-only: "false"
+is-external: "true"
+publication-date: "November 01, 2022"
+reading-time: "10"
+resource-type: "Information Slick"
+filter: "p-filter"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

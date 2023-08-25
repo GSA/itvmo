@@ -1,0 +1,14 @@
+---
+title: "Equity in Procurement "
+description: "This page provides quick access to government wide policy on small business procurement strategies and access to the federal marketplace. Access the page for latest copies of policy, agency small business policies, and the small business landscape. "
+url-link: "https://www.acquisitiongateway.gov/category-management/resources/4259"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "10"
+resource-type: "Guidance"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

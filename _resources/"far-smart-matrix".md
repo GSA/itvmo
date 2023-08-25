@@ -1,0 +1,14 @@
+---
+title: "FAR Smart Matrix"
+description: "Searchable and filterable interactive tool to view or research information within the FAR."
+url-link: "https://www.acquisition.gov/smart-matrix"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2021"
+reading-time: "5"
+resource-type: "Tool"
+filter: "p-filter"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

@@ -1,0 +1,14 @@
+---
+title: "M-21-26, Increasing Opportunities for Domestic Sourcing and Reducing the Need for Waivers from Made in America Laws"
+description: "Agencies must designate a Senior Accountable Official (SAO) to oversee implementation of Made in America laws and work with the new Made in America Office (MIAO) on waiver reviews and domestic sourcing strategies. MIAO will conduct phased-in reviews of certain waivers, beginning with non-availability and Jones Act waivers from CFO Act agencies. Agencies must provide standardized information to justify waivers."
+url-link: "https://www.whitehouse.gov/wp-content/uploads/2021/06/M-21-26.pdf"
+type: "PDF"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2021"
+reading-time: "30"
+resource-type: "Guidance"
+filter: "p-filter"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

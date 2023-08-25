@@ -1,0 +1,14 @@
+---
+title: "Coalition for Government Procurement: Small Business Committee"
+description: "Through our Small Business Committee, the Coalition provides updates on small business-related acquisition rules, regulations, programs, and Federal contract opportunities for small businesses. Agencies include DoD, GSA, OMB, SBA, and the VA."
+url-link: "https://thecgp.org/current-issues/small-business/#:~:text=Through%20our%20Small%20Business%20Committee,%2C%20SBA%2C%20and%20the%20VA."
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "July 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "contracts-acquisitions"
+branded-offerings: "small-business-support"
+---

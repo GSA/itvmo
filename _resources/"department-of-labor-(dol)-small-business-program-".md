@@ -1,0 +1,14 @@
+---
+title: "Department of Labor (DoL) Small Business Program "
+description: "The Office of Small and Disadvantaged Business Utilization (OSDBU) administers the U.S. Department of Labor's responsibility to ensure procurement opportunities for small businesses, small, disadvantaged businesses, women-owned small businesses, HUBZone businesses, and businesses owned by service-disabled veterans. "
+url-link: "https://www.dol.gov/agencies/oasam/centers-offices/office-of-the-senior-procurement-executive/office-of-small-and-disadvantaged-business-utilization"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

@@ -1,0 +1,14 @@
+---
+title: "ACT IAC Small Business Alliance "
+description: "ACT-IAC is committed to fostering the growth of small businesses and ensuring that they continue to play an important role in the government information technology marketplace - which is why ACT-IAC launched the Small Business Alliance in March 2014. This member-focused group is chartered to promote the interests and contributions of Small Business through programs and events designed to increase member engagement, enable stronger liaison across ACT-IAC offerings and provide an in-depth Community of Interest specific to the affinity of small business, tailored to the varying levels of maturity of our members."
+url-link: "https://www.actiac.org/small-business-alliance"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "10"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

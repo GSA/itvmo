@@ -1,0 +1,14 @@
+---
+title: "Department of Defense (DoD) Small Business Program"
+description: "The DoD’s Office of Small Business Programs maximizes opportunities for small businesses to contribute to national security by providing combat power for our troops and economic power for our nation."
+url-link: "https://business.defense.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

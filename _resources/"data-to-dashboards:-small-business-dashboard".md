@@ -1,0 +1,14 @@
+---
+title: "Data to Dashboards: Small Business Dashboard"
+description: "Small Business Dashboard pulls from the Federal Procurement Database System (FPDS) plus Category Management data augmentations.Note that DOD and military branch obligation data may be delayed up to 90 days; other departments' reporting is through date indicated within dashboard"
+url-link: "https://d2d.gsa.gov/report/small-business-dashboard"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "5"
+resource-type: "Tool"
+filter: "market-intelligence"
+audience: "industry-all-businesses"
+branded-offerings: "market-it-data-intelligence"
+---

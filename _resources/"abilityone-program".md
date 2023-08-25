@@ -1,0 +1,14 @@
+---
+title: "AbilityOne Program"
+description: "Providing employment opportunities to approximately 40,000 people who are blind or have significant disabilities, including more than 2,500 veterans, the AbilityOne Program is among the nation’s largest providers of jobs for people who are blind or have significant disabilities. "
+url-link: "https://www.abilityone.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "45"
+resource-type: "Information Slick"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

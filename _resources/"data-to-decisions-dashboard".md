@@ -1,0 +1,14 @@
+---
+title: "Data to Decisions Dashboard"
+description: "The D2D Portal is the gateway to data-driven decisions. It is a data analytics portal that is used to share business insights, including visualizations, reports and datasets. The D2D Portal enables users to search for, access, and share dashboards, datasets, and other content supporting data-driven decision-making across a broad range of stakeholders. Some dashboards are limited to government-only, others are open to industry and the public. "
+url-link: "https://d2d.gsa.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "false"
+publication-date: "August 01, 2023"
+reading-time: "5"
+resource-type: "Tool"
+filter: "market-intelligence"
+audience: "contracts-acquisitions"
+branded-offerings: "market-it-data-intelligence"
+---

@@ -1,0 +1,14 @@
+---
+title: "Periodic Table of Acquisition Innovations"
+description: "The governmentwide acquisition knowledge management portal for innovative business practices and technologies."
+url-link: "https://www.fai.gov/periodic-table"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "45"
+resource-type: "Tool"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "it-buyers-training-support "
+---

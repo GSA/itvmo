@@ -1,0 +1,14 @@
+---
+title: "Cloud and Infrastructure Community Guides & Resources"
+description: "Provides resources for federal agencies to consolidate and modernize their IT infrastructure."
+url-link: "http://cio.gov/about/members-and-leadership/cloud-infrastructure-cop/guidance-and-resources/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "10"
+resource-type: "Guidance"
+filter: "technology"
+audience: "program-operations"
+branded-offerings: "it-buyers-training-support "
+---

@@ -1,0 +1,14 @@
+---
+title: "Small Business Census Data"
+description: "Here you will find detailed statistics about U.S. businesses that are essential to help small businesses succeed and grow."
+url-link: "https://www.census.gov/topics/business-economy/small-business.html"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "July 01, 2023"
+reading-time: "10"
+resource-type: "Report"
+filter: "small-business"
+audience: "contracts-acquisitions"
+branded-offerings: "small-business-support"
+---

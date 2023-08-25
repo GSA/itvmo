@@ -1,0 +1,14 @@
+---
+title: "SBA's Contracting Guide for Small Businesses"
+description: "The federal government contracts with small businesses to buy products and services. This page provides access to several resources, tools, and guidance reports to help small businesses navigate the Federal Marketplace. "
+url-link: "https://www.sba.gov/federal-contracting/contracting-guide"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "15"
+resource-type: "Guidance"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

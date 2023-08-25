@@ -1,0 +1,18 @@
+---
+title: "ITVMO MAX Portal "
+description: "All ITVMO .gov and .mil only developed materials and training will be posted on the ITVMO MAX page. This MAX page link will be shared via events, ITB CoPs, and the Newsletter. .gov/.mil employees may also request access through the OMB MAX portal. The landing page will spotlight recent updates. Includes: 
+>> Trainings/ Webinars
+>> .gov/.mil Resources
+>> Tools
+>> Knowledge Sharing"
+url-link: "https://community.max.gov/pages/viewpage.action?pageId=2170862337"
+type: "HTML"
+gov-only: "true"
+is-external: "false"
+publication-date: "August 01, 2023"
+reading-time: "5"
+resource-type: "Guidance"
+filter: "itvmo-general"
+audience: "contracts-acquisitions"
+branded-offerings: "it-buyers-training-support "
+---

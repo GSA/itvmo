@@ -1,0 +1,14 @@
+---
+title: "Veteran Affairs Small Business Program"
+description: "The office of Small & Disadvantaged Business Utilization programs implement the requirements to aid, counsel, assist, and protect the interests of small and Veteran business concerns."
+url-link: "https://www.va.gov/osdbu/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

@@ -1,0 +1,20 @@
+---
+title: "IT Buyers MAX Portal "
+description: "All IT Buyers Community of Practice materials will be posted on the ITB CoP MAX page. This MAX page link will be shared via the CoP meetings and email correspondences.Includes: 
+>>Trainings/ Webinars
+>> ITB Resources
+>> ITB Tools
+>> ITB Knowledge Sharing 
+>> Cohorts 
+>> SME POCs"
+url-link: "https://community.max.gov/pages/viewpage.action?spaceKey=Egov&title=IT+Buyers+Community+of+Practice"
+type: "HTML"
+gov-only: "true"
+is-external: "false"
+publication-date: "August 01, 2023"
+reading-time: "5"
+resource-type: "Guidance"
+filter: "itvmo-general"
+audience: "contracts-acquisitions"
+branded-offerings: "it-buyers-training-support "
+---

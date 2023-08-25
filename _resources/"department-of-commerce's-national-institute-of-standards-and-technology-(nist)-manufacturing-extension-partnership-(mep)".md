@@ -1,0 +1,14 @@
+---
+title: "Department of Commerce’s National Institute of Standards and Technology (NIST) Manufacturing Extension Partnership (MEP)"
+description: "Providing any U.S. manufacturer with access to resources they need to succeed."
+url-link: "http://www.nist.gov/mep"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2021"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "market-intelligence"
+audience: "industry-all-businesses"
+branded-offerings: "acquisition-policy-it-category"
+---

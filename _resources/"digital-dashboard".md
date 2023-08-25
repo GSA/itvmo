@@ -1,0 +1,14 @@
+---
+title: "Digital Dashboard"
+description: "Enables agencies to monitor and improve their digital capabilities"
+url-link: "https://digitaldashboard.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2022"
+reading-time: "15"
+resource-type: "Guidance"
+filter: "technology"
+audience: "program-operations"
+branded-offerings: "market-it-data-intelligence"
+---

@@ -1,0 +1,14 @@
+---
+title: "NIH NITAAC Small Business Search Tool"
+description: "This tool provides guidance on identifying small business and set-aside categories through the NITAAC website."
+url-link: "https://www.nitaac.nih.gov/search/contract-holders?f%5B0%5D=gwac%3A7"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "July 01, 2023"
+reading-time: "5"
+resource-type: "Tool"
+filter: "small-business"
+audience: "contracts-acquisitions"
+branded-offerings: "small-business-support"
+---

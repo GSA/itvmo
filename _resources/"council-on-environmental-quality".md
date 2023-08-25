@@ -1,0 +1,14 @@
+---
+title: "Council on Environmental Quality"
+description: "Coordinates the federal government’s efforts to improve, preserve, and protect America’s public health and environment and assists the FAR in developing regulatory amendments to promote increased contractor attention on reduced carbon emission."
+url-link: "http://www.whitehouse.gov/ceq/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "February 01, 2021"
+reading-time: "5"
+resource-type: "Guidance"
+filter: "acquisition-best-practices"
+audience: "program-operations"
+branded-offerings: "acquisition-policy-it-category"
+---

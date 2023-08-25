@@ -1,0 +1,14 @@
+---
+title: "AWS OEM Assessment Summary"
+description: "The ITVMO supports agency acquisitions by providing subject matter expertise on IT vendors. This document highlights common challenges agencies identifies when acquiring AWS products and services."
+url-link: "https://community.max.gov/download/attachments/2314102898/AWS%20-%20Vendor%20Assessment%20Summary.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "July 01, 2022"
+reading-time: "5"
+resource-type: "Report"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "oem-acquisition-initiatives"
+---

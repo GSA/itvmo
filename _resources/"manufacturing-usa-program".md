@@ -1,0 +1,14 @@
+---
+title: "Manufacturing USA Program"
+description: "National network created to secure U.S. global leadership in advanced manufacturing through large scale public-private collaboration on technology, supply chain and workforce development."
+url-link: "http://www.manufacturingusa.com"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2021"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "market-intelligence"
+audience: "industry-all-businesses"
+branded-offerings: "acquisition-policy-it-category"
+---

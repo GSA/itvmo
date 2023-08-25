@@ -1,0 +1,14 @@
+---
+title: "Environmental Protection Agency (EPA) Small Business Program "
+description: "The EPA Small Business Solutions and Opportunities (SBSO) team is responsible for the implementation of Section 15(k) of the Small Business Act to ensure that small businesses are afforded the maximum practicable opportunity to participate in EPA’s acquisitions."
+url-link: "https://www.epa.gov/resources-small-businesses"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

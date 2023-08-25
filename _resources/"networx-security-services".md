@@ -1,0 +1,14 @@
+---
+title: "Networx Security Services"
+description: "The Networx contracts require a basic level of security management for its contractors that ensures compliance with Federal Government generally accepted security principles and practices, or better. The contracts employ adequate and reasonable means to ensure and protect the integrity, confidentiality, and availability of Networx services, Operational Support Systems (OSS), and Government information transported or stored in the contractors Networx services infrastructure. These requirements are detailed in Section C.3.3.2 of the Networx contracts."
+url-link: "https://networx-public-pricer.eos.gsa.gov/guide/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "25"
+resource-type: "Tool"
+filter: "contract-solutions"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

@@ -1,0 +1,14 @@
+---
+title: "AWS Close Out Flyer"
+description: "The ITVMO categorized agency challenges and worked with AWS to provide solutions. The resulting procurement related best practices series significantly reduced the challenges and impacts previously identified."
+url-link: "https://community.max.gov/download/attachments/2314102898/AWS%20-%20OEM%20Assessment%20Close-Out%20Summary.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "July 01, 2022"
+reading-time: "5"
+resource-type: "Report"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "oem-acquisition-initiatives"
+---

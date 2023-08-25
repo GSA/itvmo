@@ -1,0 +1,14 @@
+---
+title: "System for Award Management (SAM)"
+description: "Register to do business with the U.S. Government. Update, renew, or check the status of your entity registration."
+url-link: "http://www.sam.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "10"
+resource-type: "Tool"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

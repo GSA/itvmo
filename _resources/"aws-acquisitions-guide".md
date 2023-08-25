@@ -1,0 +1,14 @@
+---
+title: "AWS Acquisitions Guide"
+description: "Review this AWS Vendor assessment guide for the full documentation on guidance provided for agencies procuring AWS."
+url-link: "https://community.max.gov/download/attachments/2314102898/AWS%20-%20Acquisitions%20Guide.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "July 01, 2022"
+reading-time: "25"
+resource-type: "Guidance"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "oem-acquisition-initiatives"
+---

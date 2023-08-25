@@ -1,0 +1,14 @@
+---
+title: "Small Business Mentor-Protégé Programs Congressional Research Services Report"
+description: "This is a CRS report from 2021. This report provides an overview of the federal government’s various small business mentor-protégé programs. All of these programs are intended to assist small businesses in performing as contractors, subcontractors, or suppliers on federal or federally funded contracts, but the programs differ in their scope and operations. The federal government currently has several mentor-protégé programs to assist small businesses in various ways. Other agencies also have agency-specific mentor-protégé programs designed to assist various types of small businesses or other entities in obtaining and performing subcontracts under agency prime contracts."
+url-link: "https://crsreports.congress.gov/product/pdf/R/R41722"
+type: "PDF"
+gov-only: "false"
+is-external: "true"
+publication-date: "June 01, 2022"
+reading-time: "52"
+resource-type: "Guidance"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

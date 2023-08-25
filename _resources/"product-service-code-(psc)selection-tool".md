@@ -1,0 +1,14 @@
+---
+title: "Product Service Code (PSC)Selection Tool"
+description: "This tool allows users to search for the right PSC by keyword search, code search, or using the Federal Government's category management (CM) spend categories. These categories, as established by the Office of Management and Budget (OMB) and the cross-agency Category Management Leadership Council (CMLC), group together like products or services to enable the government to buy smarter and more like a single enterprise, delivering more savings, value, and efficiency for Federal Agencies. The tool also allows searches by DOD's legacy sixteen portfolio groups that were established under the Better Buying Power initiative."
+url-link: "https://psctool.us/home"
+type: "Subpage"
+gov-only: "false"
+is-external: "true"
+publication-date: "April 01, 2022"
+reading-time: "5"
+resource-type: "Tool"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "market-it-data-intelligence"
+---

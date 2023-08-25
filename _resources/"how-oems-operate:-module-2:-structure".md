@@ -1,0 +1,14 @@
+---
+title: "How OEMs Operate: Module-2: Structure"
+description: "Understanding the various teams and support functions within the OEM organization helps customers be better prepared for acquisitions and be better positioned to maintain a beneficial relationship with the OEM over the course of the contract. .gov/.mil audience only"
+url-link: "https://community.max.gov/download/attachments/2403246889/Module-2%20--%20IBT_OEM%20Operations_%20Structure.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "July 01, 2023"
+reading-time: "5"
+resource-type: "Guidance"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "it-buyers-training-support "
+---

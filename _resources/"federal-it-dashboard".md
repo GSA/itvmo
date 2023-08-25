@@ -1,0 +1,14 @@
+---
+title: "Federal IT Dashboard"
+description: "The IT Portfolio is a management tool that contains budgetary data for Federal IT investments and displays key performance indicators (KPI), metrics and key data points to monitor the health of different investments."
+url-link: "https://www.itdashboard.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "15"
+resource-type: "Report"
+filter: "market-intelligence"
+audience: "program-operations"
+branded-offerings: "market-it-data-intelligence"
+---

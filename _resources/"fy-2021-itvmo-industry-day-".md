@@ -1,0 +1,14 @@
+---
+title: "FY 2021 ITVMO Industry Day "
+description: "The ITVMO hosted an Industry Day to engage industry as an ITVMO partner to inform acquisition trends and priorities. "
+url-link: "https://www.youtube.com/watch?v=mD4iWvAJnyk"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2021"
+reading-time: "60"
+resource-type: "Guidance"
+filter: "itvmo-general"
+audience: "industry-all-businesses"
+branded-offerings: "it-buyers-training-support "
+---

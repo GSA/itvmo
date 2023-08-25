@@ -1,0 +1,14 @@
+---
+title: "NITAAC Independent Government Cost Estimate (IGCE ) Template"
+description: "The NITAAC Independent Government Cost Estimate (IGCE ) is used to assist in the determination of the acquisition strategy, as well as an estimated cost for the proposed effort."
+url-link: "https://nitaac.nih.gov/resources/tools-and-templates/independent-government-cost-estimate-igce-template"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "November 01, 2020"
+reading-time: "5"
+resource-type: "Tool"
+filter: "contract-solutions"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

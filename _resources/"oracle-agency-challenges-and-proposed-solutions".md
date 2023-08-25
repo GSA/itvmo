@@ -1,0 +1,14 @@
+---
+title: "Oracle Agency Challenges & Proposed Solutions"
+description: "In May 2021, the ITVMO began evaluating Adobe through the OEM Assessment Process. As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused certification and audit clauses, price holds, maintenance and support caps, and virtualization."
+url-link: "https://community.max.gov/download/attachments/2314102898/Oracle%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "November 01, 2021"
+reading-time: "25"
+resource-type: "Report"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "oem-acquisition-initiatives"
+---

@@ -1,0 +1,17 @@
+---
+title: "Public CM Dashboards and Analytics"
+description: "A similar collection as the Govt-wide CM tools with the addition of:
+Awards Exploration
+>> Contract Inventory Exploration
+>> Vendor Managed Spend"
+url-link: "https://d2d.gsa.gov/report/public-category-management-dashboards-analytics"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "5"
+resource-type: "Tool"
+filter: "market-intelligence"
+audience: "industry-all-businesses"
+branded-offerings: "market-it-data-intelligence"
+---

@@ -1,0 +1,14 @@
+---
+title: "NOAA Small Business News Page"
+description: "This page provides a compilation of recent and past articles related to NOAA's efforts to increase small business and opportunities for small businesses to support NOAA. "
+url-link: "https://www.noaa.gov/topic-tags/small-business"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "30"
+resource-type: "Report"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

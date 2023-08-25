@@ -1,0 +1,14 @@
+---
+title: "Federal Deposit Insurance Corporation (FDIC) Small Business Program"
+description: "Small business ownership can help individuals and families nationwide achieve financial stability and build long-term wealth. Access to credit and participation in the banking system among existing or aspiring small businesses is vital to the success of communities and the broader economy. The FDIC offers a wide range of resources and tools to consumers and bankers that help plan, launch, manage and grow small business initiatives in their communities. The FDIC also supports small business lending through technical assistance, education, and access to government guaranteed loan programs."
+url-link: "https://www.fdic.gov/resources/consumers/small-business-topics/index.html"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

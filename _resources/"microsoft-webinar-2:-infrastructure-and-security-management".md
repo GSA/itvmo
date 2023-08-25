@@ -1,0 +1,14 @@
+---
+title: "Microsoft Webinar 2: Infrastructure and Security Management"
+description: "The second session covered IT Infrastructure and Security best practice from an acquisitions perspective  and focused on the suite of Microsoft cloud products, best practices for managing these services, and recommendations on how to implement them effectively. "
+url-link: "https://community.max.gov/download/attachments/2204974006/Microsoft%20Training%202%20Infrastructure%20and%20Security%20Management_20210923.pptx?api=v2"
+type: "HTML"
+gov-only: "true"
+is-external: "false"
+publication-date: "Janaury 2022"
+reading-time: "60"
+resource-type: "Guidance"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "oem-acquisition-initiatives"
+---

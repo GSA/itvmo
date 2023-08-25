@@ -1,0 +1,14 @@
+---
+title: "Housing and Urban Development (HUD) Small Business Program"
+description: "The HUD OSDBU is responsible for ensuring that small businesses are treated fairly and that they have an opportunity to compete and be selected for a fair amount of the Agency's prime and subcontracting opportunities."
+url-link: "https://www.hud.gov/smallbusiness"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

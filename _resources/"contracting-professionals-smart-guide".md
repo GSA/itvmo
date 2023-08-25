@@ -1,0 +1,14 @@
+---
+title: "Contracting Professionals Smart Guide"
+description: "The Contracting Professionals Smart Guide is organized into two sections: Contract Formation and Contract Administration. The tables below link to the Activities and their corresponding flow charts."
+url-link: "https://www.fai.gov/tools/contracting-professionals-smart-guide"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "45"
+resource-type: "Tool"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "it-buyers-training-support "
+---

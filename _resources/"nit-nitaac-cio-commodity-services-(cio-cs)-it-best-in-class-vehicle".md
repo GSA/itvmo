@@ -1,0 +1,14 @@
+---
+title: "NIT NITAAC CIO Commodity Services (CIO-CS) IT Best-in-Class Vehicle"
+description: "Every IT commodity you can think of and any IT commodity-enabling solution you can imagine, can be procured through the CIO-CS contract. From Cloud Computing, Cyber Security and Mobility CIO-CS contractors have a solution."
+url-link: "https://nitaac.nih.gov/gwacs/cio-cs"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "May 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "contract-solutions"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

@@ -1,0 +1,22 @@
+---
+title: "Governmentwide Technology Playbooks"
+description: "Comprehensive guides to various technical topics from both  a tactical and a strategic perspective. 
+Includes: 
+>> Application Rationalization
+>> Technology Business Management
+>> Robotic Process Automation
+>> Database Transformation
+>> 18F User Experience 
+>> Federal IT Accessibility
+>> Digital Services"
+url-link: "https://tech.gsa.gov/playbooks/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2022"
+reading-time: "25"
+resource-type: "Guidance"
+filter: "technology"
+audience: "program-operations"
+branded-offerings: "market-it-data-intelligence"
+---

@@ -1,0 +1,14 @@
+---
+title: "Federal Risk and Authorization Management Program (FedRAMP®) "
+description: "The Federal Risk and Authorization Management Program (FedRAMP®) provides a standardized approach to security authorizations for Cloud Service Offerings."
+url-link: "https://www.fedramp.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "25"
+resource-type: "Information Slick"
+filter: "technology"
+audience: "security-compliance"
+branded-offerings: "acquisition-policy-it-category"
+---

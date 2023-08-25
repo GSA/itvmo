@@ -1,0 +1,14 @@
+---
+title: "SBA’s Small Business Investment Company (SBIC) program"
+description: "Seeks to stimulate and supplement the flow of private equity capital and long-term loan funds to small businesses, which small business concerns need for the sound financing of their business operations and for their growth, expansion, and modernization when such capital is not available in adequate supply."
+url-link: "https://www.govloans.gov/loans/equity-investment-small-business-investment-company-(sbic)-program/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "10"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

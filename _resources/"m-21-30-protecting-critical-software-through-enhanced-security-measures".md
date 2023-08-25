@@ -1,0 +1,14 @@
+---
+title: "M-21-30 Protecting Critical Software Through Enhanced Security Measures"
+description: "Provides instructions for the implementation of those fundamental measures required to secure the use of software falling within NIST’s definition of critical software and directs executive departments and agencies to implement those measures in phases."
+url-link: "https://www.whitehouse.gov/wp-content/uploads/2021/08/M-21-30.pdf"
+type: "PDF"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2021"
+reading-time: "8"
+resource-type: "Guidance"
+filter: "p-filter"
+audience: "security-compliance"
+branded-offerings: "acquisition-policy-it-category"
+---

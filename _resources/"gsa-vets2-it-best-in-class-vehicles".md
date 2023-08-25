@@ -1,0 +1,14 @@
+---
+title: "GSA VETS2 IT Best-in-Class Vehicles"
+description: "The VETS 2 GWAC is the only GWAC set aside exclusively for Service-Disabled, Veteran-Owned Small Businesses (SDVOSB). It's designed to meet diverse agency IT services requirements, including new and emerging technologies."
+url-link: "https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/governmentwide-acquisition-contracts/vets-2-sdvosb"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "May 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "contract-solutions"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

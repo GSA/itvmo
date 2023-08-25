@@ -1,0 +1,14 @@
+---
+title: "How OEMs Operate: Module-3: Sales Roles"
+description: "The forward-facing part of product companies is in their sales organization. The OEM’s salespeople approach all parts of your IT organization to explain their value proposition for their products. They are also instrumental in approaching your acquisition personnel on how to purchase their products. .gov/.mil audience only"
+url-link: "https://community.max.gov/download/attachments/2403246889/Module-3--%20IBT_OEM%20Operations_%20Sales%20Roles.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "July 01, 2023"
+reading-time: "5"
+resource-type: "Guidance"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "it-buyers-training-support "
+---

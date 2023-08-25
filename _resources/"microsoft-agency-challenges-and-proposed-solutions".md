@@ -1,0 +1,14 @@
+---
+title: "Microsoft Agency Challenges & Proposed Solutions"
+description: "In July 2021, the ITVMO began a deep dive of Microsoft to support Agencies with specific procurement issues including transitioning from G3 to G5, negotiating terms and conditions, and contract lifecycle management."
+url-link: "https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "Janaury 2022"
+reading-time: "25"
+resource-type: "Report"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "oem-acquisition-initiatives"
+---

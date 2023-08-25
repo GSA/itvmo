@@ -1,0 +1,14 @@
+---
+title: "Small Business Innovation Research Program (SBIR)"
+description: "Small Business Innovation Research Program (SBIR) and Small Business Technology Transfer (STTR) programs are highly competitive programs that encourage domestic small businesses to engage in Federal Research/Research and Development (R/R&D) with the potential for commercialization."
+url-link: "https://www.sbir.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "10"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

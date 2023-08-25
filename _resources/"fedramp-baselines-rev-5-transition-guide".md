@@ -1,0 +1,14 @@
+---
+title: "FedRAMP Baselines Rev 5 Transition Guide"
+description: "The purpose of this document is to facilitate a structured approach to completing security assessments and reports required to meet FedRAMP compliance based on NIST SP 800-53, Rev. 5. In addition, it defines the required deadlines for transitioning from Revision 4 (Rev. 4) to Rev. 5."
+url-link: "https://www.fedramp.gov/assets/resources/documents/FedRAMP_Baselines_Rev5_Transition_Guide.pdf"
+type: "PDF"
+gov-only: "false"
+is-external: "true"
+publication-date: "May 01, 2023"
+reading-time: "32"
+resource-type: "Guidance"
+filter: "technology"
+audience: "security-compliance"
+branded-offerings: "acquisition-policy-it-category"
+---

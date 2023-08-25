@@ -1,0 +1,14 @@
+---
+title: "Contracting Officer Representative Toolkit"
+description: "The Contracting Officer Representative Toolkit is a knowledge base tool, developed by a Spring 2020 LEAP team in partnership with FAI. Some of the links provided require an additional user ID and password to access the material."
+url-link: "https://www.fai.gov/resources/cor-toolkit"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "45"
+resource-type: "Tool"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "it-buyers-training-support "
+---

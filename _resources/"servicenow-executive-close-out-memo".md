@@ -1,0 +1,14 @@
+---
+title: "ServiceNow Executive Close Out Memo"
+description: "In 2021, the ITVMO launched an OEM assessment of ServiceNow. This memo serves as an executive summary of the engagement."
+url-link: "https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Executive%20Memo%20-%20Assessment%20Closeout.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "August 01, 2022"
+reading-time: "5"
+resource-type: "Report"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "oem-acquisition-initiatives"
+---

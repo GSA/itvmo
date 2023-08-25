@@ -1,0 +1,14 @@
+---
+title: "Acquisition Gateway"
+description: "A platform for information sharing about Government-wide Acquisition programs, policies, initiatives and tools.A workspace for acquisition professionals and federal buyers to connect with information and resources to improve acquisition governmentwide."
+url-link: "https://www.acquisitiongateway.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "July 01, 2023"
+reading-time: "60"
+resource-type: "Guidance"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "acquisition-policy-it-category"
+---

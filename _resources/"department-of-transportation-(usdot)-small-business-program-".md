@@ -1,0 +1,14 @@
+---
+title: "Department of Transportation (USDOT) Small Business Program "
+description: "The United States Department of Transportation (USDOT), Office of Small and Disadvantaged Business Utilization (OSDBU) mission is to ensure Small Business policies and goals of the Secretary of Transportation are implemented in a fair, efficient and effective manner."
+url-link: "https://www.transportation.gov/osdbu"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

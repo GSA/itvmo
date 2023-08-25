@@ -1,0 +1,14 @@
+---
+title: "Department of Commerce (DOC) Small Business Program "
+description: "The Office of Small and Disadvantaged Business Utilization (OSDBU) is an advocacy and advisory office responsible for promoting the use of small, small disadvantaged, 8(a), women-owned, veteran-owned, service-disabled veteran-owned, and HUBZone small businesses within the U.S. Department of Commerce's acquisition process. This involves promoting small business prime and subcontracting opportunities in accordance with Federal laws, regulations, and policies and the utilization of products from the National Industries for the Blind and services provided by SourceAmerica."
+url-link: "https://www.commerce.gov/bureaus-and-offices/os/cfo-asa/small-and-disadvantaged-business-utilization"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

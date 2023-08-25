@@ -1,0 +1,14 @@
+---
+title: "Cloud Information Center (CIC)"
+description: "The CIC is designed to educate on all aspects of the acquisition lifecycle, including business, technical, and contractual aspects of cloud solutions."
+url-link: "https://cic.gsa.gov/"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "January 01, 2023"
+reading-time: "10"
+resource-type: "Guidance"
+filter: "technology"
+audience: "program-operations"
+branded-offerings: "it-buyers-training-support "
+---

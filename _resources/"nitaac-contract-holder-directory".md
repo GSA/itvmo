@@ -1,0 +1,14 @@
+---
+title: "NITAAC Contract Holder Directory"
+description: "Search 450+ contract holders using the NITAAC contract holder directory tool. "
+url-link: "https://nitaac.nih.gov/search/contract-holders"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "August 01, 2023"
+reading-time: "5"
+resource-type: "Tool"
+filter: "contract-solutions"
+audience: "contracts-acquisitions"
+branded-offerings: "market-it-data-intelligence"
+---

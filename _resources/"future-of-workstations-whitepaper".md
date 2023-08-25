@@ -1,0 +1,14 @@
+---
+title: "Future of Workstations Whitepaper"
+description: "This white-paper informs how the Federal Acquisition Programs join forces to produce annual standards for procuring end user solutions for desktops and laptops."
+url-link: "https://itvmo.gsa.gov/assets/files/workstation-End-User-device-environment-and-trends.pdf"
+type: "PDF"
+gov-only: "false"
+is-external: "true"
+publication-date: "November 01, 2021"
+reading-time: "56"
+resource-type: "Report"
+filter: "technology"
+audience: "program-operations"
+branded-offerings: "market-it-data-intelligence"
+---

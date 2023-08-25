@@ -1,0 +1,14 @@
+---
+title: "Federal Register 101"
+description: "The office annually compiles all current regulations into the bound volumes of the Code of Federal Regulations (CFR). This is an information slick that explains the register. "
+url-link: "https://www.federalregister.gov/uploads/2011/01/fr_101.pdf"
+type: "PDF"
+gov-only: "false"
+is-external: "true"
+publication-date: "Spring 2010"
+reading-time: "6"
+resource-type: "Information Slick"
+filter: "p-filter"
+audience: "industry-all-businesses"
+branded-offerings: "acquisition-policy-it-category"
+---

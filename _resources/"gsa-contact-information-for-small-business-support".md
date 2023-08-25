@@ -1,0 +1,14 @@
+---
+title: "GSA Contact information for small business support"
+description: "GSA's small business contacts provide access to GSA’s nationwide procurement opportunities through outreach, training, and counseling. They are advocates for small businesses, including small disadvantaged businesses, women-owned small businesses, service-disabled veteran-owned small businesses, HUBZone small businesses, and veteran-owned firms."
+url-link: "https://www.gsa.gov/small-business/small-business-resources/contact-information-for-small-business-support"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "July 01, 2023"
+reading-time: "5"
+resource-type: "Information Slick"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

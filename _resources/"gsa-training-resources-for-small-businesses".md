@@ -1,0 +1,14 @@
+---
+title: "GSA Training Resources for Small Businesses"
+description: "This page provides a list of available training materials and opportunities for small businesses, which help them to do better business with government. "
+url-link: "https://www.gsa.gov/small-business/small-business-resources/training-resources"
+type: "HTML"
+gov-only: "false"
+is-external: "true"
+publication-date: "July 01, 2023"
+reading-time: "5"
+resource-type: "Guidance"
+filter: "small-business"
+audience: "industry-all-businesses"
+branded-offerings: "small-business-support"
+---

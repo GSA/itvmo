@@ -1,0 +1,14 @@
+---
+title: "AWS Acquisition Best Practices"
+description: "This AWS presentation reviews best practices for Government Cloud Acquisitions. Review AWS recommendations to help better procure your next AWS need."
+url-link: "https://community.max.gov/download/attachments/2314102898/AWS%20-%20Acquisition%20Best%20Practices.pdf?api=v2"
+type: "PDF"
+gov-only: "true"
+is-external: "false"
+publication-date: "July 01, 2022"
+reading-time: "25"
+resource-type: "Guidance"
+filter: "acquisition-best-practices"
+audience: "contracts-acquisitions"
+branded-offerings: "oem-acquisition-initiatives"
+---
