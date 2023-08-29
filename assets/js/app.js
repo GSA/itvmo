@@ -384,7 +384,7 @@ function displayResults(filterResources)
       let resultItem = 
       `
         <div class="resource-card" style="border-color: ${resourceColor};">
-          <a href="${resource.link}">
+          <a target="_blank" rel="noreferrer" href="${resource.link}" >
               <div class="resource-content">
                 <div aria-label="Filter: ${resourceF}" class="resource-filter"><span>${resourceF}</span></div>
                 <div aria-label="Title: ${resource.title}" class="resource-name"><p class="two-line-max">${resource.title}</p>

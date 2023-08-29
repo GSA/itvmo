@@ -169,55 +169,6 @@ a.checked {
 
 /* Events page */
 
-//Events page announcements
-#page-announcements
-{
-  padding: 15px 15px 15px 15px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 15px;
-  .announcement
-  {
-    width: 100%;
-    height: auto;
-    padding: 18px 15px 18px 15px;
-    background-color: #faf3d0;
-    border-left: #ffbe2f 10px solid;
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-    img 
-    {
-      width: 36px;
-      height: 32px;
-      margin-top: -10px;
-    }
-    .announcement-info
-    {
-      h3, p 
-      {
-        margin: 0;
-        color: #000000;
-      }
-      h3 
-      {
-        font-weight: 700;
-        font-size: 21px;
-      }
-      p 
-      {
-        font-size: 17px;
-        a 
-        {
-          font-weight: 650;
-          color: #437bac;
-        }
-      }
-    }
-  }
-}
-
-//Events page
 #upcoming-events, #past-events
 {
   justify-content: center;
@@ -1990,7 +1941,7 @@ a.checked {
   }
 }
 
-/*Website redesign*/
+/*------Website redesign-----*/
 html 
 {
   scroll-behavior: smooth;
@@ -1999,6 +1950,11 @@ html
 {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+.no-padding
+{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 /*Website new fonts*/
 html *
@@ -2030,6 +1986,53 @@ html *
 #core-services, #homepage-body, #new-main-content
 {
   background-color: #ecf1f6;
+}
+/* Page Announcements */
+#page-announcements
+{
+  padding: 15px 0px 15px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  .announcement
+  {
+    width: 100%;
+    height: auto;
+    padding: 18px 15px 18px 15px;
+    background-color: #faf3d0;
+    border-left: #ffbe2f 10px solid;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    img 
+    {
+      width: 36px;
+      height: 32px;
+      margin-top: -10px;
+    }
+    .announcement-info
+    {
+      h3, p 
+      {
+        margin: 0;
+        color: #000000;
+      }
+      h3 
+      {
+        font-weight: 700;
+        font-size: 21px;
+      }
+      p 
+      {
+        font-size: 17px;
+        a 
+        {
+          font-weight: 650;
+          color: #437bac;
+        }
+      }
+    }
+  }
 }
 
 /* Links list design */
@@ -2161,9 +2164,10 @@ html *
   {
     padding-left: 0px !important;
     padding-right: 0px !important;
-    #page-directory
+    #page-directory, #page-announcements
     {
       padding-left: 10px !important;
+      padding-right: 10px !important;
     }
   }
   #main-page-heading
@@ -3424,7 +3428,7 @@ html *
     {
       display: block;
       position: fixed;
-
+      top: 350px;
       right: 0;
       font-style: normal;
       color: #0f5abd;
@@ -3640,6 +3644,7 @@ html *
           p 
           {
             width: 100%;
+            font-weight: 300;
           }
         }
         .resource-name
