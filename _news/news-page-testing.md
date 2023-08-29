@@ -23,7 +23,7 @@ mainpage: false
       </div>
       <div id="vendor-assessments" class="tabcontent" style="display: flex;">
          <div class="contents">
-            <h3 id="oem-assessment-initiative" class="tab-heading">
+            <h3 id="oem-assessment-initiative" class="topic-heading">
                Vendor Assessments
             </h3>
             <div class="margin-bottom-2">
@@ -189,7 +189,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Agency Challenges & Proposed Solutions
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -903,7 +903,7 @@ mainpage: false
       </div>
       <div id="contract-review" class="tabcontent">
          <div class="contents">
-            <h3 id="oem-assessment-initiative" class="tab-heading">
+            <h3 id="oem-assessment-initiative" class="topic-heading">
                Contract Review as a Service
             </h3>
          </div>

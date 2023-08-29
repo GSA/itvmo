@@ -752,7 +752,7 @@ async function displayEvents(navList, tabId ,currEventList)
     //
     eventContainer.children[0].innerHTML = 
     `
-    <h3 class="tab-heading">Past Event Highlights</h3>
+    <h3 class="topic-heading">Past Event Highlights</h3>
     <div id="event-highlights-container"><div>
     `;
     // console.log(eventContainer.children[0].children[1]);
@@ -857,7 +857,7 @@ function setMonthDiv(eventContainer, monthId, fullMonth, fullYear)
 {
   eventContainer.innerHTML += `
   <div id="${monthId}" class="event-cards">
-    <h3 class="tab-heading">
+    <h3 class="topic-heading">
       ${fullMonth} ${fullYear}
     </h3>
   </div>

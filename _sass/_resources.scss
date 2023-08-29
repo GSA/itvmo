@@ -167,7 +167,7 @@ a.checked {
   padding-left: 15px;
 }
 
-/*EVENTPAGE*/
+/* Events page */
 
 //Events page announcements
 #page-announcements
@@ -353,7 +353,7 @@ a.checked {
 
 .event-cards 
 {
-  .tab-heading 
+  .topic-heading 
   {
     margin-bottom: 0;
   }
@@ -1823,6 +1823,15 @@ a.checked {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+//If text in this class exceed 3 line the remaining line will be hidden.
+.three-line-max
+{
+  display: -webkit-box;
+  // width: 100%;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 //If text in this class exceed 5 line the remaining line will be hidden.
 .four-line-max
 {
@@ -1996,7 +2005,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.tab-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *
+.topic-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -2010,6 +2019,12 @@ html *
     font-size: 26px;
     margin: 0;
   }
+}
+.topic-heading
+{
+  font-weight: 550;
+  font-size: 26px;
+  color: #000000;
 }
 /*Light blue background for the site*/
 #core-services, #homepage-body, #new-main-content
@@ -2094,6 +2109,84 @@ html *
   } 
 }
 
+/*Main page heading design (All the page that are on the main navigation tab)*/
+#main-page-heading
+{
+  p, h3, h4
+  {
+    font-family: 'Source Sans 3', sans-serif !important;
+  }
+  padding-top: 40px;
+  padding-bottom: 0px;
+  background-color: #0a4777;
+  height: 162px;
+  #main-page-heading-detail
+  {
+    h3, p
+    {
+      color: white;
+    }
+    h3 
+    {
+      font-weight: 200;
+      font-size: 40px;
+      margin: 0;
+      margin-bottom: -7px;
+    }
+    p
+    {
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0;
+      width: 65%;
+    }
+  }
+}
+#main-page-content
+{
+  #page-directory
+  {
+    padding: 15px 15px 15px 0px;
+    // padding-left: 0;
+  }
+}
+@media screen and (max-width: 1320px)
+{
+  #main-page-heading, #main-page-content
+  {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .main-page-content-no-padding
+  {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    #page-directory
+    {
+      padding-left: 10px !important;
+    }
+  }
+  #main-page-heading
+  {
+    #main-page-heading-detail
+    {
+      p 
+      {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 860px)
+{
+  #main-page-heading
+  {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 200px;
+  }
+}
+
 /* links-list convert to mobile version at certain width */
 @media screen and (max-width: 38.75rem)
 {
@@ -2108,8 +2201,8 @@ html *
     }
   }
 }
-/*Inner pages template*/
 
+/*Inner pages template*/
 //For the new redesign page.
 #new-main-content
 {
@@ -2159,7 +2252,7 @@ html *
 
 #page-directory, .tabcontent
 {
-  .tab-heading, .tab-supheading, a, li, p
+  .tab-supheading, a, li, p
   {
     font-family: 'Source Sans 3', sans-serif !important;
   }
@@ -2212,12 +2305,6 @@ html *
     a:hover
     {
       text-decoration: underline;
-    }
-    .tab-heading
-    {
-      font-weight: 400;
-      font-size: 26px;
-      color: #000000;
     }
     .tab-supheading
     {
@@ -2689,6 +2776,8 @@ html *
   font-weight: 650 !important;
 }
 
+/* Homepage */
+
 /*usa-hero section*/
 .usa-hero
 {
@@ -2776,83 +2865,7 @@ html *
     }
   }
 }
-/*Main page (All the page that is on the main navigation tab)*/
-#main-page-heading
-{
-  p, h3, h4
-  {
-    font-family: 'Source Sans 3', sans-serif !important;
-  }
-  padding-top: 40px;
-  padding-bottom: 0px;
-  background-color: #0a4777;
-  height: 162px;
-  #main-page-heading-detail
-  {
-    h3, p
-    {
-      color: white;
-    }
-    h3 
-    {
-      font-weight: 200;
-      font-size: 40px;
-      margin: 0;
-      margin-bottom: -7px;
-    }
-    p
-    {
-      font-weight: 400;
-      font-size: 16px;
-      margin: 0;
-      width: 65%;
-    }
-  }
-}
-#main-page-content
-{
-  #page-directory
-  {
-    padding: 15px 15px 15px 0px;
-    // padding-left: 0;
-  }
-}
-@media screen and (max-width: 1320px)
-{
-  #main-page-heading, #main-page-content
-  {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .main-page-content-no-padding
-  {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    #page-directory
-    {
-      padding-left: 10px !important;
-    }
-  }
-  #main-page-heading
-  {
-    #main-page-heading-detail
-    {
-      p 
-      {
-        width: 100%;
-      }
-    }
-  }
-}
-@media screen and (max-width: 860px)
-{
-  #main-page-heading
-  {
-    padding-top: 10px;
-    padding-left: 10px;
-    height: 200px;
-  }
-}
+
 /*Core Services*/
 #core-services
 {
@@ -3115,6 +3128,9 @@ html *
     }
   }
 }
+
+/* Resources page */
+
 /* Faceted Navigation on the Resources page*/
 .facet-dropdown
 {
@@ -3536,7 +3552,8 @@ html *
   }
 
 }
-/*Populate resource card for Homepage and Resources page*/
+
+/* Resource card for Homepage and Resources page */
 #open-filters
 {
   display: none;
@@ -3751,6 +3768,215 @@ html *
     }
   }
 }
+
+/* News page */
+#news
+{
+  #news-updates-highlights 
+  {
+    display: flex;
+    row-gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    #news-updates  
+    {
+      border-right: #d7d7d7 1px solid;
+      padding-right: 15px;
+    }
+    #news-highlights
+    {
+      padding-left: 15px;
+    }
+    #news-updates, #news-highlights
+    {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      width: 50%;
+      h3 
+      {
+        margin: 0;
+      
+      }
+      .update-highlight-card-mobile, .update-highlight-card
+      {
+        text-decoration: none !important;
+        border: rgba(215, 215, 215, 1) 1px solid;
+        border-radius: 10px;
+        -webkit-box-shadow: 5px 5px 5px rgba(215, 215, 215, 0.34901960784313724);
+        box-shadow: 5px 5px 5px rgba(215, 215, 215, 0.34901960784313724);
+
+        h4, p 
+        {
+          margin: 0;
+          line-height: 1.3;
+        }
+        h4 
+        {
+          font-weight: 650;
+          font-size: 18px;
+          color: #0B4778;
+          img 
+          {
+            width: 14px;
+            height: 11px;
+          }
+        }
+        p 
+        {
+          font-weight: 400;
+          font-size: 14px;
+          color: #333333;
+        }
+      }
+      .update-highlight-card-mobile:hover, .update-highlight-card:hover
+      {
+        background-color: #f2f2f2;
+        border: rgb(127, 127, 127) 1px solid;
+        -webkit-box-shadow: 5px 5px 5px rgba(127, 127, 127, 0.34901960784313724);
+        box-shadow: 5px 5px 5px rgba(127, 127, 127, 0.34901960784313724);
+      }
+      .update-highlight-card-mobile
+      {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 155px;
+        // width: 384px;
+        // height: 139px;
+        padding: 10px;
+        background-color: white;
+        .uh-card-image-title
+        {
+          display: flex;
+          flex-direction: row;
+          column-gap: 13px;
+          align-items: center;
+          height: 40%;
+          padding-bottom: 10px;
+          border-bottom: #d7d7d7 1px solid;
+          .uh-card-image
+          {
+            width: 48px;
+            height: 100%;
+          }
+          .uh-title
+          {
+            .uh-lock
+            {
+              width: 13px;
+              height: 15px;
+            }
+            .uh-external
+            {
+              width: 14px;
+              height: 11px;
+            }
+          }
+        }
+        .uh-info-mobile
+        {
+          padding-top: 10px;
+        }
+
+      }
+      .update-highlight-card
+      {
+        width: 644px;
+        height: 134px;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        .uh-card-image 
+        {
+          width: 25%;
+          height: 100%;
+          padding: 10px 0px 10px 20px;
+        }
+        .uh-card-gov 
+        {
+          width: 9.5%;
+          padding: 0px 15px 0px 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .uh-card-gov-line
+          {
+            height: 83%;
+            width: 1px;
+            background-color: #d7d7d7;
+          }
+          .uh-card-gov-lock
+          {
+            background-color: #f2f2f2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .uh-card-info
+        {
+          padding: 15px 20px 15px 0px;
+          width: 65.5%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          row-gap: 3px;
+        }
+      }
+    }
+  }
+}
+//News Updates Highlights section from row display to column display.
+@media screen and (max-width: 1320px)
+{
+  #news
+  {
+    #news-updates-highlights 
+    {
+      #news-updates, #news-highlights
+      {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 25px;
+        border-bottom: #d7d7d7 1px solid;
+        align-items: center;
+      }
+      #news-updates  
+      {
+        border-right: none;
+      }
+    }
+  }
+
+}
+//Display the Update Highlight Cards mobile version, and hide the desktop version.
+@media screen and (max-width: 660px)
+{
+  #news
+  {
+    #news-updates-highlights 
+    {
+      #news-updates, #news-highlights
+      {
+        .update-highlight-card
+        {
+          display: none;
+        }
+        .update-highlight-card-mobile
+        {
+          display: flex;
+        }
+      }
+    }
+  }
+
+}
+
 
 /* Hero section change for certain width */
 @media screen and (max-width: 41.25em)
