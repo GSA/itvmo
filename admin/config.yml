@@ -145,7 +145,7 @@ collections:
     name: news
     folder: _news/
     create: true #Allow users to create new documents in this collection.
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{publication-date}}-{{slug}}"
     fields:
     - label: Publisher
       name: publisher
@@ -168,7 +168,7 @@ collections:
 #Allow user to create publisher, that will be the pick list for the Articles collection.
   - label: Publishers
     name: publishers
-    folder: assets/article_publishers
+    folder: _article_publishers/
     hide: true
     # create: true
     slug: "{{name}}"

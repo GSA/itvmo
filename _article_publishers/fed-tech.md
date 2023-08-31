@@ -1,5 +1,5 @@
 ---
 name: Fed Tech
-url-link: https://fedtechmagazine.com/
+url-link: www.fedtechmagazine.com
 publisher-logo: assets/uploads/fed-tech.svg
 ---

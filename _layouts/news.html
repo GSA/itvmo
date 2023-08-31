@@ -2,26 +2,35 @@
 layout: base
 ---
 <!doctype html>
-<div id="main-content" class="usa-layout-docs usa-section padding-top-3 sect-container">
-    <div class="">
-      {% if page.sidenav == true %}
-      {% include sidenav.html %}
-      {% endif %}
+<div id="new-main-content" class="usa-layout-docs usa-section padding-top-3 sect-container">
+    <div class="grid-container padding-0">
       <main>
         <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
-          <section id="main-page-heading">
-            <div class="grid-container padding-0">
-              <div id="main-page-heading-detail">
-                      <h3>
-                        {{page.title}}
-                      </h3>
-                      <p>
-                        {{page.description}}
-                      </p>
+          <section id="redesign-page" class="inner-page">
+            <section id="inner-page-heading">
+               <section id="page-directory"></section>
+               <section id="page-heading">
+                  <h1 class="page-heading-title margin-0">Relating to ITVMO</h1>
+                  <img alt="{{ page.title }} icon" src="{{site.baseurl}}/assets/images/icons/page_icons/quaterly-itvmo-newsletter.svg">
+               </section>
+               <div class="article-page-content">
+                <div class="article-page-heading">
+                  {% for publisher in site.article_publishers %}
+                    {% if publisher.name == {{page.publisher}} %}
+                      <!-- {{publisher.name}} -->
+                      <img src="{{base.url}}/{{publisher.publisher-logo}}" alt="{{publisher.name}} logo">
+                      <h1>{{page.title}}</h1>
+                      <a href="https://{{publisher.url-link}}">{{publisher.url-link}}</a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <div class="article-page-detail">
+                  {{page.synopsis}}
+                  <a href="{{page.url-link}}">Read Article</a>
+                </div>
               </div>
-            </div>
+            </section>
           </section>
-            {{ content }}
         </div>
       </main>
     </div>

@@ -130,6 +130,8 @@ collections:
   news:
     output: true
     permalink: /:path/
+  article_publishers:
+    output: true
   resources:
     output: true
   highlights:

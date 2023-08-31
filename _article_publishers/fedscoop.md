@@ -1,5 +1,5 @@
 ---
 name: FEDSCOOP
-url-link: https://fedscoop.com/
+url-link: www.fedscoop.com
 publisher-logo: assets/uploads/fedscoop.svg
 ---

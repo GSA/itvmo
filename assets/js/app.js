@@ -77,18 +77,65 @@ if(document.getElementById('news') != null)
   let articles;
   let prevButton, nextButton, startButton, endButton, totalPages;
   const buttonMap = new Map();
+  const publisherMap = new Map();
   const itemsPerPage = 9; // Number of items to display per page
   const pageMax = 5; // Max page button that going to be display on the page.
   const pageMaxHalf = Math.floor(pageMax / 2); // Half page count from the pageMax.
   let currentPage = 1;
 
   retriveArticlesData();
+  retrivePublisher();
   initPagination();
 
   //This function get all the Articles data.
   function retriveArticlesData()
   {
     articles = ["Item 1", "Item 2", "Item 3","Item 4","Item 5","Item 6","Item 7","Item 8","Item 9","Item 10","Item 11","Item 12","Item 13","Item 14","Item 15","Item 16","Item 17","Item 18","Item 19","Item 20","Item 21","Item 22","Item 23","Item 24","Item 25","Item 26","Item 27","Item 28","Item 29","Item 30"];  
+    articlesData = document.getElementsByClassName("raw-article-data");
+    let finalArticles = [];
+    for( a of articlesData)
+    {
+      finalArticles.push(
+        {
+        "publisher":a.getAttribute("data-publisher"),
+        "title":a.getAttribute("data-title"),
+        "description":a.getAttribute("data-description"), 
+        "link":a.getAttribute("data-url"),
+        "date":a.getAttribute("data-publication-date"),
+        "synopsis":a.getAttribute("data-synopsis")
+      });
+
+      
+      // let currArticle =
+      // {
+      //   "publisher":resource.getAttribute("data-publisher"),
+      //   "title":resource.getAttribute("data-title"),
+      //   "description":resource.getAttribute("data-description"), 
+      //   "link":resource.getAttribute("data-url"),
+      //   "date":resource.getAttribute("data-publication-date"),
+      //   "synopsis":resource.getAttribute("data-synopsis"),
+      // };
+      // finalArticles.set(currArticle.name)
+    }
+    articles = finalArticles;
+    console.log(articles);
+  }
+
+ //This function get all the Publisher data.
+  function retrivePublisher()
+  {
+    publisherData = document.getElementsByClassName("raw-publisher-data");
+    for( publisher of publisherData)
+    {
+      let currPublisher =
+      {
+        "name":publisher.getAttribute("data-publisher"),
+        "link":publisher.getAttribute("data-url"),
+        "logo":publisher.getAttribute("data-logo")
+      };
+      publisherMap.set(currPublisher.name, currPublisher);
+    }
+    console.log(publisherMap);
   }
 
   //This function initalize Pagination.
@@ -133,10 +180,25 @@ if(document.getElementById('news') != null)
     articleList.innerHTML = "";
     for (let i = startIndex; i < endIndex && i < articles.length; i++) 
     {
+      let publisher = publisherMap.get(articles[i].publisher);
+      console.log(articles[i].synopsis != "");
+      let articleLink = articles[i].link;
+      if(articles[i].synopsis != "")
+      {
+        articleLink = baseUrl; //!!File slug
+      }
       dispalyArticles +=     
       `
-        <a target="_blank" rel="noreferrer" href="#" class="article">
-          ${articles[i]}
+        <a target="_blank" rel="noreferrer" href="${articleLink}" class="article">
+          ${articles[i].publisher}
+          ${articles[i].title}
+          ${articles[i].description}
+          ${articles[i].link}
+          ${articles[i].date}
+
+          ${publisher.name}
+          ${publisher.link}
+          <img src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
         </a>
       `;
     }

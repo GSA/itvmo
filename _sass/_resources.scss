@@ -1961,7 +1961,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.topic-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *
+.topic-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -4030,6 +4030,21 @@ html *
   }
 
 }
+
+/* Article template*/
+.article-page-content
+{
+  .article-page-heading
+  {
+    h1 
+    {
+      font-weight: 600;
+      font-size: 30px;
+      color: #000000;
+    }
+  }
+}
+
 
 
 /* Hero section change for certain width */

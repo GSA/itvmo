@@ -1,5 +1,5 @@
 ---
 name: ATARC
-url-link: https://atarc.org/
+url-link: www.atarc.org
 publisher-logo: assets/uploads/atarc.svg
 ---

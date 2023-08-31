@@ -1,25 +1,27 @@
 
-  <!-- <div class="page-data">
-    {% for resources in site.resources %}
+  <div class="page-data">
+    {% for article in site.news %}
     <div
-      class="raw-resource-data"
-      data-title="{{resources.title}}"
-      data-description="{{resources.description}}"
-      data-url="{{resources.url-link}}"
-      data-type="{{resources.type}}"
-      data-gov-only="{{resources.gov-only}}"
-      data-is-external="{{resources.is-external}}"
-      data-filter="{{resources.filter}}"
-      data-branded-offerings="{{resources.branded-offerings}}"
-      data-audience="{{resources.audience}}"
-      data-publication-date="{{resources.publication-date}}"
-      data-reading-time="{{resources.reading-time}}"
-      data-resource-type="{{resources.resource-type}}"
+      class="raw-article-data"
+      data-publisher="{{article.publisher}}"
+      data-title="{{article.title}}"
+      data-description="{{article.description}}"
+      data-url="{{article.url-link}}"
+      data-publication-date="{{article.publication-date}}"
+      data-synopsis="{{article.synopsis}}"
     >
-      is-visible
     </div>
     {% endfor %}
-  </div> -->
+    {% for publisher in site.article_publishers %}
+    <div
+      class="raw-publisher-data"
+      data-publisher="{{publisher.name}}"
+      data-logo="{{publisher.publisher-logo}}"
+      data-url="{{publisher.url-link}}"
+    >
+    </div>
+    {% endfor %}
+  </div>
 <section id="news-articles">
   <h3 id="article-heading" class="topic-heading">
     All News Articles
@@ -34,3 +36,4 @@
   papers, templates, or other resources, please reach out to us by email at
   <a href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a>.
 </p>
+
