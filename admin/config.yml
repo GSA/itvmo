@@ -140,7 +140,48 @@ collections:
     summary: "{{name}}"
     fields: 
       - {label: Name, name: name}
-      
+#Allow admin to create articles.
+  - label: News
+    name: news
+    folder: _news/
+    create: true #Allow users to create new documents in this collection.
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+    - label: Publisher
+      name: publisher
+      widget: relation
+      collection: "publishers"
+      search_fields: ["name"]
+      value_field: "name"
+      display_fields: ["name"]
+      multiple: false
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "URL", name: "url-link", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
+    - label: 'Publication date'
+      name: 'publication-date'
+      widget: 'date'
+      default: ''
+      format: 'MMMM DD, YYYY'
+    - {label: "Description", name: "description", widget: "text"}
+    - {label: "Synopsis", name: "synopsis", widget: "markdown", required: false}
+
+#Allow user to create publisher, that will be the pick list for the Articles collection.
+  - label: Publishers
+    name: publishers
+    folder: assets/article_publishers
+    hide: true
+    # create: true
+    slug: "{{name}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+      - {label: "URL", name: "url-link", widget: "string"}
+      - label: "Publisher logo"
+        name: "publisher-logo"
+        widget: "image"
+        choose_url: true
+
 #Allow admin to create resource cards.
   - label: Resources
     name: resources
