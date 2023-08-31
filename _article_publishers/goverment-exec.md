@@ -1,5 +1,5 @@
 ---
 name: Goverment Executive
-url-link: https://www.govexec.com/
+url-link: www.govexec.com
 publisher-logo: assets/uploads/govexec.svg
 ---

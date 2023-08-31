@@ -1,5 +1,5 @@
 ---
 name: FEDERAL TIMES
-url-link: https://www.federaltimes.com/
+url-link: www.federaltimes.com
 publisher-logo: assets/uploads/federal-times.svg
 ---
