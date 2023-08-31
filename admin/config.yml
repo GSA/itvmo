@@ -150,7 +150,7 @@ collections:
     - label: Publisher
       name: publisher
       widget: relation
-      collection: "publisher"
+      collection: "publishers"
       search_fields: ["name"]
       value_field: "name"
       display_fields: ["name"]
