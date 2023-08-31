@@ -3935,6 +3935,55 @@ html *
       }
     }
   }
+  #news-articles
+  {
+    #articles-container
+    {
+      display: flex;
+      flex-direction: column;
+      row-gap: 25px;
+      .article 
+      {
+        width: 100%;
+        height: 267px;
+        background-color: white;
+      }
+    }
+    #pagination
+    {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      column-gap: 5px;
+      button
+      {
+        width: 38px;
+        height: 38px;
+        border: none; 
+        border-radius: 50px;
+        font-weight: 650;
+        font-size: 15px;
+        color: #1A4480;
+        background-color: transparent;
+      }
+      button:hover
+      {
+       background-color: #bee4f7; 
+       cursor: pointer;
+      }
+      .articles-page-active
+      {
+        background-color: #0a4777;
+        color: white;
+        // color: #000000;
+      }
+      .img-border-right
+      {
+        border-right: #194480 2px solid;
+        padding-right: 4px;
+      }
+    }
+  }
 }
 //News Updates Highlights section from row display to column display.
 @media screen and (max-width: 1320px)

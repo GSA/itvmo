@@ -49,7 +49,6 @@ if( document.getElementById('events-page') != null)
   
 }
 //Run Resources page
-
 //Faceted Navigation Variables
 let filteredResults, facets, resources, searchInput;
 const filterMap = new Map([["p-filter", "Policy"],["acquisition-best-practices", "Acquisition Best Practices"],["small-business", "Small Business"],["market-intelligence", "Market Intelligence"],["technology", "Technology"],["contract-solutions", "Contract Solutions"],["itvmo-general", "ITVMO General"]]);
@@ -69,6 +68,187 @@ if(document.getElementById('resources') != null)
   initalizeFacets();
   initalizeOverlay();
   initalizeWindow();
+}
+
+//Run News page
+if(document.getElementById('news') != null)
+{
+  //Collect Artcles data here
+  let articles;
+  let prevButton, nextButton, startButton, endButton, totalPages;
+  const buttonMap = new Map();
+  const itemsPerPage = 9; // Number of items to display per page
+  const pageMax = 5; // Max page button that going to be display on the page.
+  const pageMaxHalf = Math.floor(pageMax / 2); // Half page count from the pageMax.
+  let currentPage = 1;
+
+  retriveArticlesData();
+  initPagination();
+
+  //This function get all the Articles data.
+  function retriveArticlesData()
+  {
+    articles = ["Item 1", "Item 2", "Item 3","Item 4","Item 5","Item 6","Item 7","Item 8","Item 9","Item 10","Item 11","Item 12","Item 13","Item 14","Item 15","Item 16","Item 17","Item 18","Item 19","Item 20","Item 21","Item 22","Item 23","Item 24","Item 25","Item 26","Item 27","Item 28","Item 29","Item 30"];  
+  }
+
+  //This function initalize Pagination.
+  function initPagination() 
+  {
+    totalPages = Math.ceil(articles.length / itemsPerPage);
+    createPaginationButtons(totalPages);
+    displayArticles(currentPage);
+  }
+
+  //This function display the articles according to the page number.
+  function displayArticles(page) 
+  {
+    if(page == 1) 
+    {
+      startButton.style.display = "none";
+      prevButton.style.display = "none";
+    }
+    else
+    {
+      startButton.style.display = "block";
+      prevButton.style.display = "block";
+    }
+
+    if(page == totalPages)
+    {
+      nextButton.style.display = "none";
+      endButton.style.display = "none";
+    }
+    else
+    {
+      nextButton.style.display = "block";
+      endButton.style.display = "block";
+    }
+    
+
+    const articleList = document.getElementById('articles-container');
+    articleList.innerHTML = ''; // Clear previous content
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    let dispalyArticles = "";
+    articleList.innerHTML = "";
+    for (let i = startIndex; i < endIndex && i < articles.length; i++) 
+    {
+      dispalyArticles +=     
+      `
+        <a target="_blank" rel="noreferrer" href="#" class="article">
+          ${articles[i]}
+        </a>
+      `;
+    }
+    articleList.innerHTML = dispalyArticles;
+  }
+
+  //This function populate Pagination on the News page.
+  function createPaginationButtons(totalPages) 
+  {
+    const pagination = document.getElementById('pagination');
+    pagination.innerHTML = '';
+
+    //Populate Start button
+    startButton = document.createElement('button');
+    startButton.innerHTML = `<img class="image-flip img-border-right" alt="right arrow icon" src="${baseUrl}/assets/images/arrows/end-arrow.svg">`;
+    startButton.ariaLabel = 'This button direct to the first page of the articles';
+    startButton.addEventListener('click', () => {
+      if (currentPage > 1) 
+      {
+        currentPage = 1;
+        buttonMap.get(currentPage.toString()).click();
+      }
+    });
+
+    //Populate Previous button
+    prevButton = document.createElement('button');
+    prevButton.innerHTML = `<img class="image-flip" alt="right arrow icon" src="${baseUrl}/assets/images/arrows/right-arrow-news.svg">`;
+    prevButton.ariaLabel = 'This button will direct to the previous page articles';
+    prevButton.addEventListener('click', () => {
+      if (currentPage > 1) 
+      {
+        currentPage--;
+        buttonMap.get(currentPage.toString()).click();
+      }
+    });
+  ;
+    //Populate Pagination number button, and store it in the buttonMap.
+    for (let i = 1; i <= totalPages; i++) {
+      const button = document.createElement('button');
+      if(i == 1) button.classList.add("articles-page-active");
+      button.classList.add("articles-page");
+      button.textContent = i;
+      button.ariaLabel = `Article page ${i}`;
+      button.addEventListener('click', () => 
+      {
+        currentPage = i;
+        let acActive = document.getElementsByClassName("articles-page-active")
+        if(acActive[0] != null) acActive[0].classList.remove("articles-page-active");
+        setPagination();  
+        button.classList.add("articles-page-active");    
+        displayArticles(currentPage);
+        document.getElementById("article-heading").scrollIntoView({ behavior: "smooth"});  
+      });
+      buttonMap.set(button.textContent, button);
+    }
+    //Populate Next button
+    nextButton = document.createElement('button');
+    nextButton.innerHTML = `<img alt="right arrow icon" src="${baseUrl}/assets/images/arrows/right-arrow-news.svg">`;
+    nextButton.ariaLabel = 'This button will direct to the next page articles';
+    nextButton.addEventListener('click', () => {
+      if (currentPage < totalPages) 
+      {
+        currentPage++;
+        buttonMap.get(currentPage.toString()).click();
+      }
+    });
+
+    //Populate End button
+    endButton = document.createElement('button');
+    endButton.innerHTML = `<img class="img-border-right" alt="right arrow icon" src="${baseUrl}/assets/images/arrows/end-arrow.svg">`;
+    endButton.ariaLabel = 'This button direct to the last page of the articles';
+    endButton.addEventListener('click', () => {
+      if (currentPage < totalPages) 
+      {
+        currentPage = totalPages;
+        buttonMap.get(currentPage.toString()).click();
+      }
+    });
+    setPagination();
+  }
+
+  //This function set Pagination page buttons according to the array that return from getFromToButton().
+  function setPagination()
+  {
+    pagination.innerHTML = '';
+    pagination.appendChild(startButton);
+    pagination.appendChild(prevButton);
+    const buttonDisplayList = getFromToButton(); //use the value in the array to get buttons from the map to display on the pagenation.
+    for( buttonKey of buttonDisplayList)
+    {
+      pagination.appendChild(buttonMap.get(buttonKey.toString()));
+    }
+    pagination.appendChild(nextButton);
+    pagination.appendChild(endButton);
+  }
+
+  //This function return array of page number that going to be display on Pagination.
+  function getFromToButton()
+  {
+      let to = pageMax;
+      
+      if(currentPage + pageMaxHalf >= totalPages) {
+        to = totalPages;
+      } else if(currentPage > pageMaxHalf) {
+        to = currentPage + pageMaxHalf ;
+      }
+      
+      let from = Math.max(to - pageMax, 0);
+    
+      return Array.from({length: Math.min(totalPages, pageMax)}, (_, i) => (i + 1) + from);
+  }
+
 }
 
 //Run Inner page
@@ -500,7 +680,6 @@ $(function(){
           var contentNavHeight = $contentNav.height();
           var scrollTop = $(window).scrollTop();
           var totalHeightAbove = 360 + pageHeadingHeight;
-          console.log(totalHeightAbove);
 
           updateNavPosition($navList, scrollTop, contentNavHeight, totalHeightAbove);
       });
