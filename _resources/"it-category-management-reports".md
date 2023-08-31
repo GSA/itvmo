@@ -1,8 +1,6 @@
 ---
 title: "IT Category Management Reports"
-description: "Includes CM IT Key Performance Indicators (KPI) across agency, expiring awards and contracts, market landscape, price analysis, and spend channel analysis:
->> IT Agency Profile
->> GSA FAS acquisitions analytics - IT category"
+description: "Includes CM IT Key Performance Indicators (KPI) across agency, expiring awards and contracts, market landscape, price analysis, and spend channel analysis: IT Agency Profile and GSA FAS acquisitions analytics - IT category."
 url-link: "https://d2d.gsa.gov/report/it-category-management-reports"
 type: "HTML"
 gov-only: "true"

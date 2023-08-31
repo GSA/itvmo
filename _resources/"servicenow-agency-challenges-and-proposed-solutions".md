@@ -1,5 +1,5 @@
 ---
-title: "ServiceNow Agency Challenges & Proposed Solutions"
+title: "ServiceNow Agency Challenges & Proposed Resolutions"
 description: "In February 2022, the ITVMO began evaluating ServiceNow through the OEM Assessment Process. As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused on best practices and operations and maintenance."
 url-link: "https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2"
 type: "PDF"

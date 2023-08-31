@@ -1,12 +1,6 @@
 ---
 title: "Acquisition analytics"
-description: "Acquisition Analytics from cost management, manufacturer analysis, vendors, order size, and price analysis. Includes acquisition data such as:
->> Category overview
->> Manufacturer analysis
->> Price Analysis
->> Vendor analysis
->> Order size analysis
->> Cost avoidance"
+description: "Acquisition Analytics from cost management, manufacturer analysis, vendors, order size, and price analysis. Includes acquisition data such as: Category overview, Manufacturer analysis, Price Analysis, Vendor analysis, Order size analysis, Cost avoidance."
 url-link: "https://d2d.gsa.gov/report/acquisition-analytics"
 type: "HTML"
 gov-only: "true"
