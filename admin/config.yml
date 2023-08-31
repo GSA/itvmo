@@ -145,7 +145,7 @@ collections:
     name: news
     folder: _news/
     create: true #Allow users to create new documents in this collection.
-    slug: "{{publication-date}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
     - label: Publisher
       name: publisher

@@ -69,10 +69,6 @@ if(document.getElementById('resources') != null)
   initalizeOverlay();
   initalizeWindow();
 }
-
-//Run News page
-if(document.getElementById('news') != null)
-{
   //Collect Artcles data here
   let articles;
   let prevButton, nextButton, startButton, endButton, totalPages;
@@ -83,6 +79,9 @@ if(document.getElementById('news') != null)
   const pageMaxHalf = Math.floor(pageMax / 2); // Half page count from the pageMax.
   let currentPage = 1;
 
+//Run News page
+if(document.getElementById('news') != null)
+{
   retriveArticlesData();
   retrivePublisher();
   initPagination();
@@ -90,7 +89,6 @@ if(document.getElementById('news') != null)
   //This function get all the Articles data.
   function retriveArticlesData()
   {
-    articles = ["Item 1", "Item 2", "Item 3","Item 4","Item 5","Item 6","Item 7","Item 8","Item 9","Item 10","Item 11","Item 12","Item 13","Item 14","Item 15","Item 16","Item 17","Item 18","Item 19","Item 20","Item 21","Item 22","Item 23","Item 24","Item 25","Item 26","Item 27","Item 28","Item 29","Item 30"];  
     articlesData = document.getElementsByClassName("raw-article-data");
     let finalArticles = [];
     for( a of articlesData)
@@ -118,7 +116,7 @@ if(document.getElementById('news') != null)
       // finalArticles.set(currArticle.name)
     }
     articles = finalArticles;
-    console.log(articles);
+    articles.sort((a, b) => new Date(b.date) - new Date(a.date)); //Sort Article in decending order.
   }
 
  //This function get all the Publisher data.
@@ -185,7 +183,7 @@ if(document.getElementById('news') != null)
       let articleLink = articles[i].link;
       if(articles[i].synopsis != "")
       {
-        articleLink = baseUrl; //!!File slug
+        articleLink = baseUrl+"/"+stringToSlug(articles[i].title); //!!File slug
       }
       dispalyArticles +=     
       `
@@ -203,6 +201,15 @@ if(document.getElementById('news') != null)
       `;
     }
     articleList.innerHTML = dispalyArticles;
+  }
+
+  function stringToSlug(inputString) 
+  {
+    return inputString
+      .toLowerCase()                       // Convert to lowercase
+      .replace(/[^a-zA-Z0-9-]+/g, '-')    // Replace non-alphanumeric characters with hyphens
+      .replace(/^-+|-+$/g, '')            // Remove hyphens from the beginning and end
+      .trim();                            // Trim any extra spaces
   }
 
   //This function populate Pagination on the News page.
@@ -824,12 +831,12 @@ function populateDirectory()
   let newElements = ``;
   for(let i = urlSplit.length-1; i >= 0; i--)
   {
-    let currentPage = urlToString(urlSplit[i]);
+    let cp = urlToString(urlSplit[i]);
     currentUrl = currentUrl.replace(`${urlSplit[i+1]}/`,'');
 
     //If specific page need specific name on the Directory, insert here
-    currentPage = currentPage.replace(/oem/gi, "OEM Support");
-    // currentPage = currentPage.replace(//gi, "");
+    cp = cp.replace(/oem/gi, "OEM Support");
+    // cp = cp.replace(//gi, "");
     
 
     //This using for the sandbox, delete this later!!
@@ -840,11 +847,11 @@ function populateDirectory()
     }
     if(i == urlSplit.length-1) //The page that the user currently on, make it not a link.
     {
-      newElements+= `<p>${currentPage}</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
+      newElements+= `<p>${cp}</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
     }
     else if(i > 0)
     {
-      newElements+= `<a href="${currentUrl}">${currentPage}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
+      newElements+= `<a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
     }
     else //"Home" for baseurl
     {
