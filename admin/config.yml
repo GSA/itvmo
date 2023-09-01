@@ -143,7 +143,7 @@ collections:
 #Allow admin to create articles.
   - label: News
     name: news
-    folder: _news/
+    folder: _news/news/
     create: true #Allow users to create new documents in this collection.
     slug: "{{slug}}"
     fields:

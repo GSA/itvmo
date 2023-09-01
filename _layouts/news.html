@@ -18,15 +18,20 @@ layout: base
                   {% for publisher in site.article_publishers %}
                     {% if publisher.name == {{page.publisher}} %}
                       <!-- {{publisher.name}} -->
-                      <img src="{{base.url}}/{{publisher.publisher-logo}}" alt="{{publisher.name}} logo">
-                      <h1>{{page.title}}</h1>
-                      <a href="https://{{publisher.url-link}}">{{publisher.url-link}}</a>
+                      <img class="publisher-logo" src="{{site.baseurl}}/{{publisher.publisher-logo}}" alt="{{publisher.name}} logo">
+                      <div>
+                        <h1>{{page.title}}</h1>
+                        <a href="https://{{publisher.url-link}}">{{publisher.url-link}} <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg"></a>
+                      </div>
                     {% endif %}
                   {% endfor %}
                 </div>
                 <div class="article-page-detail">
                   {{page.synopsis | markdownify | liquify }}
-                  <a href="{{page.url-link}}">Read Article</a>
+                  <a class="external-link" href="{{page.url-link}}">
+                    <p>Read Article</p>
+                    <img src="{{site.baseurl}}/assets/images/arrows/right-arrow-white.svg" alt="right arrow">
+                  </a>
                 </div>
               </div>
             </section>

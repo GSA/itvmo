@@ -889,25 +889,6 @@ a.checked {
                 color: #555555;
               }
             }
-            .event-link 
-            {
-              height: 39px;
-              width: 136px;
-              border-radius: 5px;
-              display: flex;
-              background-color: rgba(11, 71, 120, 1);
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              column-gap: 7px;
-              p 
-              {
-                font-weight: 650;
-                font-size: 14px;
-                color: #FFFFFF;
-                height: 28px;
-              }
-            }
           
         }
       }
@@ -1961,7 +1942,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.topic-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *
+.topic-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -1986,6 +1967,26 @@ html *
 #core-services, #homepage-body, #new-main-content
 {
   background-color: #ecf1f6;
+}
+/* Link that direct user to external site*/
+.external-link 
+{
+  height: 39px;
+  width: 136px;
+  border-radius: 5px;
+  display: flex;
+  background-color: rgba(11, 71, 120, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7px;
+  p 
+  {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #FFFFFF !important;
+    height: 28px !important;
+  }
 }
 /* Page Announcements */
 #page-announcements
@@ -4034,17 +4035,121 @@ html *
 /* Article template*/
 .article-page-content
 {
+  padding: 0px 50px 50px 30px;
+  width: 76%;
   .article-page-heading
   {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding-bottom: 20px;
+    .publisher-logo
+    {
+      width: 125px;
+      height: 125px;
+    }
+    div 
+    {
+      h1 
+      {
+        font-weight: 600;
+        font-size: 30px;
+        color: #000000;
+        margin: 0;
+      }
+      a 
+      {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #016FA0;
+        text-decoration: none;
+      }
+      a:hover 
+      {
+        text-decoration: underline;
+      }
+
+    }
+  }
+  .article-page-detail
+  {
+    padding-left: 30px;
     h1 
     {
-      font-weight: 600;
-      font-size: 30px;
-      color: #000000;
+      font-weight: 700;
+      font-size: 20px;
+      color: rgb(6, 35, 73);
+    }
+    p 
+    {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px
+    }
+  }
+  
+}
+@media screen and (max-width: 1320px)
+{
+  .article-page-content
+  {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  .article-page-content
+  {
+    padding: 0px 20px 50px 20px;
+    width: 100%;
+    .article-page-heading
+    {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      padding-bottom: 20px;
+      .publisher-logo
+      {
+        width: 90px;
+        height: 90px;
+      }
+      div 
+      {
+        h1 
+        {
+          font-weight: 600;
+          font-size: 23px;
+          color: #000000;
+          margin: 0;
+        }
+        a 
+        {
+          font-weight: 400;
+          font-style: normal;
+          font-size: 16px;
+          color: #016FA0;
+          text-decoration: none;
+        }
+        a:hover 
+        {
+          text-decoration: underline;
+        }
+  
+      }
+    }
+  }
+  .article-page-detail
+  {
+    padding-left: 10px !important;
+    h1 
+    {
+      font-weight: 700;
+      font-size: 20px;
+      color: rgb(6, 35, 73);
     }
   }
 }
-
 
 
 /* Hero section change for certain width */

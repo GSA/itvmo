@@ -183,7 +183,7 @@ if(document.getElementById('news') != null)
       let articleLink = articles[i].link;
       if(articles[i].synopsis != "")
       {
-        articleLink = baseUrl+"/"+stringToSlug(articles[i].title); //!!File slug
+        articleLink = baseUrl+"/news/"+stringToSlug(articles[i].title); //!!File slug
       }
       dispalyArticles +=     
       `
@@ -195,7 +195,7 @@ if(document.getElementById('news') != null)
           ${articles[i].date}
 
           ${publisher.name}
-          ${publisher.link}
+          <span><a href="${publisher.link}">${publisher.link}</span>
           <img src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
         </a>
       `;
@@ -851,7 +851,12 @@ function populateDirectory()
     }
     else if(i > 0)
     {
-      newElements+= `<a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
+      if(cp == 'News')
+      {
+          newElements = `<p>Relating to ITVMO</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg"><a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
+      }
+      else 
+        newElements+= `<a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
     }
     else //"Home" for baseurl
     {
@@ -1229,7 +1234,7 @@ function openModal(eventForDay) {
               <p><img alt="location icon" src="${baseUrl}/assets/images/icons/location-icon-grey.svg">${eventForDay[i].eventType}</p>
               <p><img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">${inEx}</p>
             </div>
-            <a aria-label="Event link of Organization:${eventForDay[i].organizer}, Title:${eventForDay[i].title}" class="event-link" href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><img src="${baseUrl}/assets/images/icons/external-white.svg"><p>View Event</p></a>
+            <a aria-label="Event link of Organization:${eventForDay[i].organizer}, Title:${eventForDay[i].title}" class="external-link" href="${eventForDay[i].link}" target="_blank" rel="noreferrer noopener"><img src="${baseUrl}/assets/images/icons/external-white.svg"><p>View Event</p></a>
           </div>
         </div>
         `;
