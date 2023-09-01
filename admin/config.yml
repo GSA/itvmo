@@ -147,6 +147,7 @@ collections:
     create: true #Allow users to create new documents in this collection.
     slug: "{{slug}}"
     fields:
+    - {label: Layout,  name: layout, widget: string, default: "news", immutable: true }
     - label: Publisher
       name: publisher
       widget: relation
