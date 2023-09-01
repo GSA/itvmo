@@ -25,7 +25,7 @@ layout: base
                   {% endfor %}
                 </div>
                 <div class="article-page-detail">
-                  {{page.synopsis}}
+                  {{page.synopsis | markdownify | liquify }}
                   <a href="{{page.url-link}}">Read Article</a>
                 </div>
               </div>
