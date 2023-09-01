@@ -168,8 +168,7 @@ if(document.getElementById('news') != null)
       nextButton.style.display = "block";
       endButton.style.display = "block";
     }
-    
-
+  
     const articleList = document.getElementById('articles-container');
     articleList.innerHTML = ''; // Clear previous content
     const startIndex = (page - 1) * itemsPerPage;
@@ -186,18 +185,30 @@ if(document.getElementById('news') != null)
         articleLink = baseUrl+"/news/"+stringToSlug(articles[i].title); //!!File slug
       }
       dispalyArticles +=     
-      `
-        <a target="_blank" rel="noreferrer" href="${articleLink}" class="article">
-          ${articles[i].publisher}
-          ${articles[i].title}
-          ${articles[i].description}
-          ${articles[i].link}
-          ${articles[i].date}
-
-          ${publisher.name}
-          <span><a href="${publisher.link}">${publisher.link}</span>
-          <img src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
-        </a>
+      `<div class="article-card-container">
+          <a target="_blank" rel="noreferrer" href="${articleLink}" class="article-card">
+            <div class="article-card-upper">
+              <div class="article-card-upper-left">
+                <img class="article-card-publisher-logo" src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
+                <h1 class="two-line-max">${articles[i].title}</h1>
+              </div>
+              <div class="article-card-upper-right">
+                <div>
+                  <h1 class="one-line-max">${articles[i].title}</h1>
+                  <p class="four-line-max">${articles[i].description}</p>
+                </div>
+                <p class="article-card-date" >${articles[i].date}</p>
+              </div>
+            </div>
+            <div class="article-card-lower">
+            </div>
+          </a>
+          <a aria-label="Direct to ${publisher.name} homepage" target="_blank" rel="noreferrer" class="article-card-publisher" href="https://${publisher.link}">
+            <img class="article-card-publisher-logo" src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
+            ${publisher.link}
+            <img alt="External icon" src="${baseUrl}/assets/images/icons/external-small.svg">
+          </a>
+        </div>
       `;
     }
     articleList.innerHTML = dispalyArticles;
