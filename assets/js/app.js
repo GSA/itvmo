@@ -26,7 +26,6 @@ if(document.getElementById('dynamic-panel') != null)
 //Run Events page
 let nav = 0;
 let clicked = null;
-// let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : [];
 const eventList = [], pastEventList = [], futureEventList = [], pastEventHighlight = [];
 const calendar = document.getElementById('calendar');
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -917,6 +916,7 @@ function openTabDropdown()
 //This function retrive all events data from Events page to prepare to display.
 function retriveEventsData()
 {
+  const utcOptions = { timeZone: 'UTC', hour12: false };
   const rawEventList = document.getElementsByClassName("raw-event-data");
   const rawPastHighlights = document.getElementsByClassName("raw-past-event-highlight-data");
   const currentDate = new Date(); //use to determine if events will be store in pastEventList or futureEventList
@@ -933,9 +933,9 @@ function retriveEventsData()
       "description":ev.getAttribute("data-description"), 
       "link":ev.getAttribute("data-url"),
       "date":startTime,
-      "day":weekdaysShort[startTime.getDay()],
-      "dateNumber":startTime.getDate(),
-      "month":startTime.getMonth(),
+      "day":weekdaysShort[startTime.getUTCDay()],
+      "dateNumber":startTime.getUTCDate(),
+      "month":startTime.getUTCMonth(),
       "fromTo":eventTime,
       "eventType":ev.getAttribute("data-event-type"),
       "govOnly":ev.getAttribute("data-gov-only"),
