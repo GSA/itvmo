@@ -636,7 +636,7 @@ function displayResults(filterResources)
     let resourcesCount = 0;
     for (const resource of filterResources) 
     {
-      let viewCount = 30; //!!Query and insert the view counts here
+      let viewCount = 30; //!!Query and insert the view counts here, currently hide the view for now until it intregate.
       let resourceF = filterMap.get(resource.filter);
       let resourceBO = bOfferingMap.get(resource.brandOffering);
       let resourceA = audienceMap.get(resource.audience);
@@ -686,10 +686,10 @@ function displayResults(filterResources)
                 <img alt="Stop watch icon" src="${baseUrl}/assets/images/icons/stop-watch.svg">
                 <div class="resource-logo"><span>${resource.readTime} minute read</span></div>
               </div>
-              <div class="resource-view">
-                <img alt="Eye icon" src="${baseUrl}/assets/images/icons/eye.svg">
-                <div class="resource-logo"><span>${viewCount} View</span></div>
-              </div>
+              <!-- <div class="resource-view">
+              <img alt="Eye icon" src="${baseUrl}/assets/images/icons/eye.svg">
+              <div class="resource-logo"><span>${viewCount} View</span></div>
+              </div> -->
             </div>
           </a>
         </div>
