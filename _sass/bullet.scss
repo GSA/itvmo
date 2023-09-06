@@ -20,10 +20,11 @@ ul.experiences li:before {
     /* lines */
     content:"";
     position: absolute;
-    left: -17px; /* adjust manually */
+    left: -17px; 
     border-left: 1px solid #BCBCBC;
     height: 100%;
     width: 1px;
+    top: -19px;
 }
 
 
@@ -34,19 +35,15 @@ ul.experiences li:first-child:before {
 
 ul.experiences li:last-child:before {
     /* last li's line */
-   height: 6px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+   height: 30px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
 }
 
 
 ul.experiences {
-    padding-left: 16px;
-    margin-top: 5px;
+    padding-left: 15px;
+    margin-top: -21px;
     padding-top: 40px;
-    border-left: 1px solid #BCBCBC;
     margin-left: 30px;
-    position: absolute;
-    top: 0;
-    bottom: 80%;
 
 }
 ul.experiences li {
@@ -75,7 +72,7 @@ position: relative;
 
 .topLine{
     margin-top:-18px;
-    width: 6%;
+    width: 54px;
     height: 1px;
     background-color: white;
     padding: 0px 10px 10px 0px;
