@@ -891,13 +891,13 @@ mainpage: false
             <div class="nav-list">
                <h3>On this Tab</h3>
                <a class="page-nav page-nav-active" href="#oem-assessment-initiative" onclick="return removeTabContent(this)">OEM Assessment Initiative</a>
-               <a class="page-nav accordion-nav" aria-controls="adobe" >Adobe</a>
-               <a class="page-nav accordion-nav" aria-controls="aws">Amazon Web Services (AWS)</a>
-               <a class="page-nav accordion-nav" aria-controls="cisco">Cisco</a>
-               <a class="page-nav accordion-nav" aria-controls="mircosoft">Microsoft</a>
-               <a class="page-nav accordion-nav" aria-controls="oracle">Oracle</a>
-               <a class="page-nav accordion-nav" aria-controls="salesforce">Salesforce</a>
-               <a class="page-nav accordion-nav" aria-controls="servicenow">ServiceNow</a>
+               <a tabindex="0" class="page-nav accordion-nav" aria-controls="adobe" >Adobe</a>
+               <a tabindex="0" class="page-nav accordion-nav" aria-controls="aws">Amazon Web Services (AWS)</a>
+               <a tabindex="0" class="page-nav accordion-nav" aria-controls="cisco">Cisco</a>
+               <a tabindex="0" class="page-nav accordion-nav" aria-controls="mircosoft">Microsoft</a>
+               <a tabindex="0" class="page-nav accordion-nav" aria-controls="oracle">Oracle</a>
+               <a tabindex="0" class="page-nav accordion-nav" aria-controls="salesforce">Salesforce</a>
+               <a tabindex="0" class="page-nav accordion-nav" aria-controls="servicenow">ServiceNow</a>
             </div>
          </div>
       </div>
