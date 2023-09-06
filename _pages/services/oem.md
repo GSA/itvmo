@@ -890,7 +890,7 @@ mainpage: false
          <div class="content-nav">
             <div class="nav-list">
                <h3>On this Tab</h3>
-               <a class="page-nav page-nav-active" href="#oem-assessment-initiative">OEM Assessment Initiative</a>
+               <a class="page-nav page-nav-active" href="#oem-assessment-initiative" onclick="return removeTabContent(this)">OEM Assessment Initiative</a>
                <a class="page-nav accordion-nav" aria-controls="adobe" >Adobe</a>
                <a class="page-nav accordion-nav" aria-controls="aws">Amazon Web Services (AWS)</a>
                <a class="page-nav accordion-nav" aria-controls="cisco">Cisco</a>

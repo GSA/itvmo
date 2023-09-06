@@ -775,11 +775,32 @@ function navOpenTabContent(pageNav)
     setTimeout(function(){ aButton.scrollIntoView({ behavior: "smooth" });}, 500);//Wait until the displayTabContent animation is over before scroll to the section.
   }
 }
+//This function use to hide accordion when click on the side nav options that are not accordion options.
+function removeTabContent()
+{
+  let aActive = document.getElementsByClassName("accordion-active");
+  if(aActive[0] !== undefined)
+  {
+    aActive[0].classList.remove("accordion-active");
+  }
+  let aContent = document.getElementsByClassName("accordion-content-display");
+  //Hide all other Accordion content, and also reset tab arrow to default rotation.
+  if(aContent[0] !== undefined)
+  {
+    assignTabIndex(aContent[0], -1);
+    let tabArrowActive = document.getElementsByClassName("tab-arrow-active")
+    tabArrowActive[0].classList.remove("tab-arrow-active");
+    aContent[0].classList.remove("accordion-content-display");
+  }
+  return true;
+}
+
 //This function display accordion content according to accordion Id that accordion button have.
 function displayTabContent(aButton)
 {
   //If there is accordion-active class exist remove it.
   let aActive = document.getElementsByClassName("accordion-active");
+
   if(aActive[0] !== undefined)
   {
     aActive[0].classList.remove("accordion-active");
