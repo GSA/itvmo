@@ -720,6 +720,15 @@ function initalizePageNav()
         setPageActive(this)
         navOpenTabContent(this);
       });
+      pageNavs[j].addEventListener('keypress', function(e)
+      {
+        if(e.key === 'Enter')
+        {
+          removePageActive(navList[i]);
+          setPageActive(this)
+          navOpenTabContent(this);
+        }
+      });
     }
   }
 }
