@@ -1,5 +1,6 @@
 /****************************styling for resource catalog******************************/
 @import 'bullet';
+@import'table';
 .no-style {
   text-decoration: none;
   color: black;
@@ -100,74 +101,6 @@ a.checked {
   line-height: 20px;
   font-weight: 500; 
 }
-
-//Styled for the contract-data-elements-guide page.
-.blue-bold
-{
-  b
-  {
-    color:#1b2b85;
-  }
-}
-.fname
-{
-  font-weight: bold;
-}
-
-#report
-{
-  color: white;
-  background-color: #1b2b85;
-  border: none;
-  border-radius: 0.75em;
-  cursor: pointer;
-  vertical-align: center;
-  text-decoration: none;
-}
-
-
-//Styled the table on the contract-data-elements-guide page.
-.styled-table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  font-family: sans-serif;
-  min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  b
-  {
-    color:#1b2b85;
-  }
-}
-
-.styled-table thead tr {
-  background-color: #1b2b85;
-  color: #ffffff;
-  text-align: left;
-}
-
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-
-.styled-table tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #1b2b85;
-}
-
-.indent
-{
-  padding-left: 15px;
-}
-
 /* Events page */
 
 #upcoming-events, #past-events
@@ -1952,7 +1885,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.topic-heading, .sub-topic-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link, .article-card-container *, #page-heading-description, .links-list-heading *
+.topic-heading, .sub-topic-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link, .article-card-container *, #page-heading-description, .links-list-heading *, .styled-table *
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -2053,19 +1986,19 @@ html *
 }
 
 /* Links list design */
+.links-list-heading
+{
+  h4 
+  {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #062349 !important;
+  }
+}
 .links-list
 {
   margin-bottom: 30px;
-  .links-list-heading
-  {
-    h4 
-    {
-      font-weight: 700;
-      font-style: normal;
-      font-size: 18px;
-      color: #062349;
-    }
-  }
   .coming-soon 
   {
     margin: 0;
@@ -2286,14 +2219,30 @@ html *
 
 #page-directory, .tabcontent
 {
-  .tab-supheading, a, li, p
+  .tab-supheading, a, li, p, b
   {
     font-family: 'Source Sans 3', sans-serif !important;
   }
   .tab-p, a, li, p
   {
-    font-style: normal;
     font-size: 16px;
+  }
+  .tab-p-large
+  {
+    font-size: 18px;
+    font-weight: 600 !important;
+    a 
+    {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  .tab-header-link
+  {
+
+    font-size: 18px;
+    font-weight: 650;
+
   }
 }
 #page-directory
@@ -2428,7 +2377,7 @@ html *
       line-height: 30px;
       div 
       {
-        overflow: hidden;
+        overflow: auto;
       }
     }
     .accordion-active

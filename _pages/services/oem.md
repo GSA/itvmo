@@ -93,7 +93,7 @@ mainpage: false
                            <li class="login-require">
                               <a header="assessment-info" target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Agency Challenges & Proposed Solutions
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -102,7 +102,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Summary.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     OEM Assessment Summary
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -111,7 +111,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Executive%20Memo%20-%20OEM%20Assessment%20Closeout.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Executive Close Out Memo
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -120,7 +120,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Closeout.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Close Out Flyer
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -144,7 +144,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Modernize%20the%20Mission%20of%20Government.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Adobe Presentation:  Modernizing the Mission of the Government
                               </a>
                               <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
@@ -154,7 +154,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Guide.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Vendor Assessment Guide
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -189,7 +189,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Agency Challenges & Proposed Solutions
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -198,7 +198,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Vendor%20Assessment%20Summary.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        OEM Assessment Summary
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -207,7 +207,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Executive%20Memo%20-%20OEM%20Assessment%20Closeout.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Executive Close Out Memo
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -216,7 +216,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20OEM%20Assessment%20Close-Out%20Summary.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Close Out Flyer
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -266,7 +266,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Acquisition%20Best%20Practices.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Acquisition Best Practices
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -275,7 +275,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Acquisitions%20Guide.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Acquisitions Guide
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -311,7 +311,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Cisco%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Agency Challenges & Proposed Solutions
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -320,7 +320,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Executive Close Out Memo
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -329,7 +329,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974017%252FITVMO%252520Adobe%252520Vendor%252520Assessment%252520Closeout%252520Summary.pdf%253Fapi%253Dv2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Close Out Flyer
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -385,7 +385,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Agency Challenges & Proposed Solutions
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -394,7 +394,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="#">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     OEM Assessment Summary
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -403,7 +403,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="#">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Executive Close Out Memo
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -412,7 +412,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="#">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Close Out Flyer
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -462,7 +462,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20G5%20Transition%20Guide.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     G5 Transition Guide
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -471,7 +471,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Session%201%20-%20Negotiation%20Terms%20and%20Conditions.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Session 1:  Negotiating Terms and Conditions
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -480,7 +480,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Session%202%20-%20Infrastructure%20and%20Security%20Management.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Session 2:  Infrastructure and Security Management
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -489,7 +489,7 @@ mainpage: false
                            <li class="login-require">
                               <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Session%203%20-%20IT%20Contract%20Lifecyle%20Management.pdf?api=v2">
                                  <p>
-                                    <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Session 3:  IT Contract Lifecycle Management
                                     <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </p>
@@ -525,22 +525,22 @@ mainpage: false
                            </div>
                            <ul>
                               <!-- <li class="login-require">
-                                 <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                 <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Oracle%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">Agency Challenges & Proposed Solutions</a>
                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </li>
                                  <li class="login-require">
-                                 <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                 <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                  <a target="_blank" rel="noreferrer noopener" href="#">OEM Assessment Summary</a>
                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </li>
                                  <li class="login-require">
-                                 <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                 <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                  <a target="_blank" rel="noreferrer noopener" href="#">Executive Close Out Memo</a>
                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                  </li>
                                  <li class="login-require">
-                                 <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                 <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
                                        Close Out Flyer
@@ -551,7 +551,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Oracle%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Agency Challenges & Proposed Solutions
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -560,7 +560,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        OEM Assessment Summary
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -569,7 +569,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Executive Close
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -578,7 +578,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Close Out Flyer
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -602,7 +602,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Oracle%20-%20Vendor%20Assessment%20Playbook.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Oracle Vendor Assessment Playbook
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -638,7 +638,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Agency Challenges & Proposed Solutions
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -647,7 +647,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Executive Close Out Memo
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -656,7 +656,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Close Out Flyer
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -708,7 +708,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Agency Challenges & Proposed Solutions
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -717,7 +717,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Executive%20Memo%20-%20Assessment%20Closeout.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Executive Close Out Memo
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -726,7 +726,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Assessment%20Close-Out%20Summary.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Close Out Flyer
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -803,7 +803,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        ServiceNow Acquisition Playbook
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -812,7 +812,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Introduction%20to%20ServiceNow.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Introduction to ServiceNow, Strategy, and Implementation Approaches
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -821,7 +821,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Operating%20and%20Maintaining%20the%20ServiceNow%20Platform.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Operating and Maintaining the ServiceNow Platform
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -830,7 +830,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Technology%20Roadmap%20Part%201.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Roadmap Part 1
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -839,7 +839,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Technology%20Roadmap%20Part%202.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Roadmap Part 2
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -848,7 +848,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Implementing%20a%20Citizen%20Development%20Program.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Implementing a Citizen Development Program
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
@@ -857,7 +857,7 @@ mainpage: false
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Licensing%20Model%20and%20Pricing%20Framework.pdf?api=v2">
                                     <p>
-                                       <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Understanding the Licensing Model and Pricing Framework
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
