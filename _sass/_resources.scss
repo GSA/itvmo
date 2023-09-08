@@ -1652,7 +1652,7 @@ a.checked {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 16px;
+    // padding-left: 16px;
     row-gap: 10px;
     li 
     {
@@ -1912,6 +1912,12 @@ html *
   font-size: 27px;
   color: #FF5400;
 }
+.blue-bold 
+{
+  font-weight: 700;
+  color: #005087;
+  font-size: 18px;
+}
 /*Light blue background for the site*/
 #core-services, #homepage-body, #new-main-content
 {
@@ -1996,17 +2002,63 @@ html *
     color: #062349 !important;
   }
 }
+.coming-soon, .coming-soon-list 
+{
+  margin: 0;
+  color: #333333;
+  font-weight: 400;
+  font-style: italic !important;
+  font-size: 15px !important;
+}
+.coming-soon-list
+{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  margin-bottom: 30px;
+  li 
+  {
+    font-size: 15px !important;
+  }
+}
+.after-links-list
+{
+  margin-top: -40px;
+  padding-left: 23px;
+}
+
+.list-number-bold
+{
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  padding-left: 20px;
+  margin: 0;
+  li::marker 
+  {
+    font-weight: bold;
+  }
+  li 
+  {
+    font-size: 18px !important;
+    ul 
+    {
+      list-style-type: disc;
+      padding: 0;
+      li 
+      {
+        font-size: 16px !important;
+      }
+    }
+    p 
+    {
+      margin: 0;
+    }
+  } 
+}
 .links-list
 {
   margin-bottom: 30px;
-  .coming-soon 
-  {
-    margin: 0;
-    color: #333333;
-    font-weight: 400;
-    font-style: italic !important;
-    font-size: 15px !important;
-  }
   ul 
   {
     list-style: none;
@@ -2213,12 +2265,13 @@ html *
     color: #555555;
     line-height: 30px;
     padding-left: 20px;
+    width: 67%;
   }
 }
 
 #page-directory, .tabcontent
 {
-  .tab-supheading, a, li, p, b
+  .tab-supheading, a, li, p, b, span, u
   {
     font-family: 'Source Sans 3', sans-serif !important;
   }
@@ -2234,6 +2287,10 @@ html *
     {
       font-size: 18px;
       font-weight: 600;
+    }
+    span 
+    {
+      font-weight: 400;
     }
   }
   .tab-header-link
@@ -2619,7 +2676,7 @@ html *
   }
 }
 /*Tabs swap to Tabs mobile version when reach the certain width.*/
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1300px) {
   #tabs-mobile-container
   {
     visibility: visible;
@@ -4419,7 +4476,7 @@ html *
 {
   #inner-page-heading
   {
-    #page-heading
+    #page-heading, #page-heading-description
     {
       width: 97%;
     }

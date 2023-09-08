@@ -1,7 +1,7 @@
 ---
-title: OEM Initiatives
+title: OEM & Acquisition Initiatives
 title-image: "/assets/images/icons/page_icons/oem-initiatives.svg"
-description: ""
+heading-description: "The ITVMO provides thought leadership, consulting, and research services in IT policy, acquisitions, technology adoption, and data analytics to increase acquisition efficiencies, strengthen procurement strategies, facilitate knowledge sharing, and deliver best practices and lessons learned  across government."
 layout: page
 sidenav: false
 redesign: true
@@ -12,41 +12,47 @@ mainpage: false
       <!-- Inner tab dropdown for the mobile version -->
       <div id="tabs-mobile-container">
          <select id="tabs-mobile" onchange="openTabDropdown();">
-            <option value="vendor-assessments-header">Vendor Assessments</option>
-            <option value="contract-review-header">Contract Review as a Service</option>
+            <option value="oem-assessments-header">OEM Assessments</option>
+            <option value="contract-review-header">Contract Review Services</option>
+            <option value="idc-header">Integrated Data Collection (IDC)</option>
+            <option value="gas-header">Govwide Acquisition Strategies</option>
+            <option value="ai-header">Acquisition Intelligence</option>
          </select>
       </div>
       <!-- Inner tab dropdown for the desktop version -->
       <div class="tabs">
-         <a id="vendor-assessments-header" tabindex="0" class="tab active-tab" onclick="openTab(event, 'vendor-assessments')" onkeydown="openTabKey(event, 'vendor-assessments')">Vendor Assessments</a>
-         <a id="contract-review-header" tabindex="0" class="tab" onclick="openTab(event, 'contract-review')" onkeydown="openTabKey(event, 'contract-review')">Contract Review as a Service</a>
+         <a id="oem-assessments-header" tabindex="0" class="tab active-tab" onclick="openTab(event, 'oem-assessments')" onkeydown="openTabKey(event, 'oem-assessments')">OEM Assessments</a>
+         <a id="contract-review-header" tabindex="0" class="tab" onclick="openTab(event, 'contract-review')" onkeydown="openTabKey(event, 'contract-review')">Contract Review Services</a>
+         <a id="idc-header" tabindex="0" class="tab" onclick="openTab(event, 'idc')" onkeydown="openTabKey(event, 'idc')">Integrated Data Collection (IDC)</a>
+         <a id="gas-header" tabindex="0" class="tab" onclick="openTab(event, 'gas')" onkeydown="openTabKey(event, 'gas')">Govwide Acquisition Strategies</a>
+         <a id="ai-header" tabindex="0" class="tab" onclick="openTab(event, 'ai')" onkeydown="openTabKey(event, 'ai')">Acquisition Intelligence</a>
       </div>
-      <div id="vendor-assessments" class="tabcontent" style="display: flex;">
-         <div class="contents">
-            <h3 id="oem-assessment-initiative" class="topic-heading">
-               Vendor Assessments
+      <div id="oem-assessments" class="tabcontent" style="display: flex;">
+         <div class="contents padding-bottom-5">
+            <h3 id="oem-assessments-overview" class="topic-heading">
+               OEM Assessments
             </h3>
             <div class="margin-bottom-2">
-               <h3 class="tab-supheading">
-                  Original Equipment Manufacturers (OEM) Assessment Initiative
-               </h3>
+              <h3 class="sub-topic-heading">
+                Overview
+              </h3>
                <p class="tab-p">
                   To meet the growing demand for acquisition knowledge share including acquisition strategies, best practices, and governance approaches, the <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/about/">IT Vendor Management Office (ITVMO)</a> developed and implemented the Original Equipment Manufacturer (OEM) Assessment Initiative.  The ITVMO engages directly with agency leadership and acquisition professionals, reviews reporting data, and analyzes annual IT spending trends to identify top OEMs being utilized across the federal government.  OEM Assessments are completed following a <a target="_blank" rel="noreferrer noopener" href="https://drive.google.com/file/d/1OeVIOgixP0g30tJw0y2CW8OEjWeDagBu">seven (7) phase approach</a>.
                </p>
                <p class="tab-p">
-                  The focus of the OEM Assessment is to work with agency acquisition professionals and Subject Matter Experts (SME) to identify common challenges and opportunities for a specific OEM.  Once identified, the ITVMO, as one voice for the federal government, engages directly with senior leadership at the OEM to develop and negotiate solutions to the common challenges which may include resources such as:
+                  The focus of the OEM Assessment is to work with agency acquisition professionals and Subject Matter Experts (SMEs) to identify common challenges and opportunities for a specific OEM.  Once identified, the ITVMO, as one voice for the federal government, engages directly with senior leadership at the OEM to develop and negotiate solutions to the common challenges which may include resources such as:
                   <b>
-               <ul id="redesign-list" class="tab-p">
-               <li>Acquisition Strategy Guides</li>
-               <li>Best Practices</li>
-               <li>Buyers Guides</li>
-               <li>Direct engagements with OEMs</li>
-               <li>Office Hours Sessions</li>
-               <li>Recorded Training</li>
-               <li>Unique Terms and Conditions</li>
-               <li>Webinars</li>
-               </ul>
-               </b>
+                    <ul id="redesign-list" class="tab-p">
+                      <li>Acquisition Strategy Guides</li>
+                      <li>Best Practices</li>
+                      <li>Buyers Guides</li>
+                      <li>Direct engagements with OEMs</li>
+                      <li>Office Hours Sessions</li>
+                      <li>Recorded Training</li>
+                      <li>Unique Terms and Conditions</li>
+                      <li>Webinars</li>
+                    </ul>
+                  </b>
                </p>
                <p class="tab-p">
                   Once resources are identified, the ITVMO documents and publishes the resources and reports back to both agency leadership, acquisition professionals, and SMEs informing all customers about the solutions that were developed and how to access all the available resources.
@@ -55,12 +61,12 @@ mainpage: false
                   Below are the results of these ongoing efforts.  Written materials are stored on OMB’s MAX portal which requires either a .gov or .mil email address for access.  Webinar and Office Hours Session videos are stored on Acquisition Gateway.
                </p>
                <p class="tab-p">
-                  To be included in discussions or help identify OEMs for future assessments, please complete our <a target="_blank" rel="noreferrer noopener" href="https://app.smartsheetgov.com/b/form/f642f814dd6f4a3285b06b95fb8e4a7a">Point of Contact (PoC) Survey</a> to ensure you stay up to date on all the work the ITVMO is completing for OEMs.
+                  To be included in discussions or help identify OEMs for future assessments, please complete our <a target="_blank" rel="noreferrer noopener" href="https://app.smartsheetgov.com/b/form/f642f814dd6f4a3285b06b95fb8e4a7a">Point of Contact (PoC)</a> Survey to ensure you stay up to date on all the work the ITVMO is completing for OEMs. You can also contact our OEM team at <a href="mailto:itvmo@gsa.gov">ITVMO@gsa.gov</a>
                </p>
             </div>
             <div class="tab-divide-line"></div>
             <div class="usa-accordion">
-               <h3 class="tab-supheading">
+               <h3 class="sub-topic-heading padding-bottom-0">
                   Original Equipment Manufacturers (OEM)
                </h3>
                <h3 class="usa-accordion__heading">
@@ -79,10 +85,10 @@ mainpage: false
                            In 2021, the ITVMO began evaluating Adobe through the OEM Assessment Process.  As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused on a perceived lack of support from Adobe in supporting Federal Agencies with sufficient explanations on how to leverage the Adobe products best suited for their unique environments.
                         </p>
                         <p class="tab-p">
-                           The ITVMO has reengaged with Adobe as of February 2023, and will continue to seek solutions and provide updates to previously identified challenges, as well as document and begin discussions on any new issues that the agency community identifies.
+                          The ITVMO plans to reengaged with Adobe in fiscal year 2024, and will continue to seek solutions and provide updates to previously identified challenges, as well as document and begin discussions on any new issues that the agency community identifies.
                         </p>
                         <p class="tab-p">
-                           Information, resources, and trainings as a result of the Assessment and ongoing engagements can be found below.
+                          Information, resources, and trainings as a result of the Assessment and ongoing engagements can be found below.
                         </p>
                      </div>
                      <div class="links-list">
@@ -91,7 +97,7 @@ mainpage: false
                         </div>
                         <ul>
                            <li class="login-require">
-                              <a header="assessment-info" target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
+                              <a header="assessment-info" target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974017%252FAdobe%252520Challenges%252520and%252520Proposed%252520Resolutions%252520Overview.pdf%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Agency Challenges & Proposed Solutions
@@ -100,7 +106,7 @@ mainpage: false
                               </a>
                            </li>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Summary.pdf?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974017%252FITVMO%252520Adobe%252520Forum%252520Summary%252520Final%252520%25281%2529.pdf%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     OEM Assessment Summary
@@ -109,7 +115,7 @@ mainpage: false
                               </a>
                            </li>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Executive%20Memo%20-%20OEM%20Assessment%20Closeout.pdf?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974017%252FITVMO%252520Adobe%252520Vendor%252520Assessment%252520Closeout%252520Summary.pdf%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Executive Close Out Memo
@@ -118,7 +124,7 @@ mainpage: false
                               </a>
                            </li>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Closeout.pdf?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FAdobe%252520-%252520Vendor%252520Assessment%252520Closeout.pdf%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Close Out Flyer
@@ -142,17 +148,16 @@ mainpage: false
                         </div>
                         <ul>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Modernize%20the%20Mission%20of%20Government.pdf?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FAdobe%252520-%252520Modernize%252520the%252520Mission%252520of%252520Government.pdf%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Adobe Presentation:  Modernizing the Mission of the Government
-                              </a>
                               <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                               </p>
                               </a>
                            </li>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Guide.pdf?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974017%252FAdobe%252520Vendor%252520Assessment%252520Guide.pdf%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Vendor Assessment Guide
@@ -187,7 +192,7 @@ mainpage: false
                            </div>
                            <ul>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FAWS%252520-%252520Challenges%252520and%252520Proposed%252520Resolutions%252520Overview.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Agency Challenges & Proposed Solutions
@@ -196,7 +201,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Vendor%20Assessment%20Summary.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FAWS%252520-%252520Vendor%252520Assessment%252520Summary.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        OEM Assessment Summary
@@ -205,7 +210,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Executive%20Memo%20-%20OEM%20Assessment%20Closeout.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FAWS%252520-%252520Executive%252520Memo%252520-%252520OEM%252520Assessment%252520Closeout.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Executive Close Out Memo
@@ -214,7 +219,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20OEM%20Assessment%20Close-Out%20Summary.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FAWS%252520-%252520OEM%252520Assessment%252520Close-Out%252520Summary.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Close Out Flyer
@@ -224,11 +229,16 @@ mainpage: false
                               </li>
                            </ul>
                         </div>
-                        <div class="links-list">
+                        <!-- <div class="links-list"> -->
                            <div class="links-list-heading">
                               <h4 class="margin-0">Educational Videos</h4>
                            </div>
-                           <ul>
+                                <ul class="coming-soon-list">
+                                    <li>Webinar - Acquisition Best Practices - Coming Soon</li>
+                                    <li>Office Hours Session 1 - Best Practices Guidance - Coming Soon</li>
+                                    <li>Office Hours Session 2 - Management and Vendor Guidance - Coming Soon</li>
+                                </ul>
+                           <!-- <ul>
                               <li class="login-require">
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
@@ -256,15 +266,15 @@ mainpage: false
                                     </p>
                                  </a>
                               </li>
-                           </ul>
-                        </div>
+                           </ul> -->
+                        <!-- </div> -->
                         <div class="links-list">
                            <div class="links-list-heading">
                               <h4 class="margin-0">Resources</h4>
                            </div>
                            <ul>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Acquisition%20Best%20Practices.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FAWS%252520-%252520Acquisition%252520Best%252520Practices.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Acquisition Best Practices
@@ -273,7 +283,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/AWS%20-%20Acquisitions%20Guide.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FAWS%252520-%252520Acquisitions%252520Guide.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Acquisitions Guide
@@ -303,13 +313,13 @@ mainpage: false
                         <p class="tab-p">
                            Information, resources, and trainings as a result of the Assessment and ongoing engagements can be found below.
                         </p>
-                        <div class="links-list">
+                        <div class="links-list margin-bottom-0">
                            <div class="links-list-heading">
                               <h4 class="margin-0">Assessment Information</h4>
                            </div>
                            <ul>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Cisco%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974017%252FAdobe%252520Challenges%252520and%252520Proposed%252520Resolutions%252520Overview.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Agency Challenges & Proposed Solutions
@@ -318,25 +328,20 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="#">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974017%252FAdobe%252520Challenges%252520and%252520Proposed%252520Resolutions%252520Overview.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                       Executive Close Out Memo
-                                       <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                    </p>
-                                 </a>
-                              </li>
-                              <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974017%252FITVMO%252520Adobe%252520Vendor%252520Assessment%252520Closeout%252520Summary.pdf%253Fapi%253Dv2">
-                                    <p>
-                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                       Close Out Flyer
+                                       OEM Assessment Summary
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
                                  </a>
                               </li>
                            </ul>
                         </div>
+                        <ul class="coming-soon-list after-links-list">
+                          <li>Executive Close Out Memo - Coming Soon</li>
+                          <li>Close Out Flyer - Coming Soon</li>
+                        </ul>
                         <div class="links-list">
                            <div class="links-list-heading">
                               <h4 class="margin-0">Educational Videos</h4>
@@ -368,13 +373,13 @@ mainpage: false
                   <div>
                      <div>
                         <p class="tab-p">
-                           In July 2021, the ITVMO began a deep dive of Microsoft to support Agencies with specific procurement issues including transitioning from G3 to G5, negotiating terms and conditions, and contract lifecycle management.
+                          In July 2021, the ITVMO began a deep dive of Microsoft to support Agencies with specific procurement issues including transitioning from G3 to G5, negotiating terms and conditions, and contract lifecycle management.
                         </p>
                         <p class="tab-p">
                            In July 2022, the ITVMO began evaluating Microsoft through the OEM Assessment Process.  As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused on standard terms and conditions, consumption management, extended audit logging concessions, and annual budget forecasting support.
                         </p>
                         <p class="tab-p">
-                           Information, resources, and trainings as a result of the Assessment and ongoing engagements can be found below.
+                          Information, resources, and training as a result of the Assessment and ongoing engagements can be found below.
                         </p>
                      </div>
                      <div class="links-list">
@@ -383,7 +388,7 @@ mainpage: false
                         </div>
                         <ul>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974017%252FAdobe%252520Challenges%252520and%252520Proposed%252520Resolutions%252520Overview.pdf%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Agency Challenges & Proposed Solutions
@@ -391,42 +396,20 @@ mainpage: false
                                  </p>
                               </a>
                            </li>
-                           <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="#">
-                                 <p>
-                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                    OEM Assessment Summary
-                                    <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                 </p>
-                              </a>
-                           </li>
-                           <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="#">
-                                 <p>
-                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                    Executive Close Out Memo
-                                    <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                 </p>
-                              </a>
-                           </li>
-                           <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="#">
-                                 <p>
-                                    <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                    Close Out Flyer
-                                    <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                 </p>
-                              </a>
-                           </li>
                         </ul>
                      </div>
+                      <ul class="coming-soon-list after-links-list">
+                        <li>OEM Assessment Summary  - Coming Soon</li>
+                        <li>Executive Close Out Memo  - Coming Soon</li>
+                        <li>Close Out Flyer  - Coming Soon</li>
+                      </ul>
                      <div class="links-list">
                         <div class="links-list-heading">
                            <h4 class="margin-0">Educational Videos</h4>
                         </div>
                         <ul>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2204974006/Microsoft%20Training%201%20Negotiating%20Terms%20and%20Conditions_20210914.pptx?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974006%252FMicrosoft%252520Training%2525201%252520Negotiating%252520Terms%252520and%252520Conditions_20210914.pptx%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/video-icon.svg">
                                     Webinar 1: Negotiating Terms and Conditions
@@ -435,7 +418,7 @@ mainpage: false
                               </a>
                            </li>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2204974006/Microsoft%20Training%202%20Infrastructure%20and%20Security%20Management_20210923.pptx?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974006%252FMicrosoft%252520Training%2525202%252520Infrastructure%252520and%252520Security%252520Management_20210923.pptx%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/video-icon.svg">
                                     Webinar 2: Infrastructure and Security Management
@@ -444,7 +427,7 @@ mainpage: false
                               </a>
                            </li>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2204974006/Microsoft%20Training%203%20IT%20Contract%20Lifecyle%20Management_20210928.pptx?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974006%252FMicrosoft%252520Training%2525203%252520IT%252520Contract%252520Lifecyle%252520Management_20210928.pptx%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/video-icon.svg">
                                     Webinar 3: IT Contract Lifecycle Management
@@ -469,7 +452,7 @@ mainpage: false
                               </a>
                            </li>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Session%201%20-%20Negotiation%20Terms%20and%20Conditions.pdf?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2204974017%252FAdobe%252520Vendor%252520Assessment%252520Guide.pdf%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Session 1:  Negotiating Terms and Conditions
@@ -478,7 +461,7 @@ mainpage: false
                               </a>
                            </li>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Session%202%20-%20Infrastructure%20and%20Security%20Management.pdf?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FMicrosoft%252520-%252520Session%2525202%252520-%252520Infrastructure%252520and%252520Security%252520Management.pdf%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Session 2:  Infrastructure and Security Management
@@ -487,7 +470,7 @@ mainpage: false
                               </a>
                            </li>
                            <li class="login-require">
-                              <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20Session%203%20-%20IT%20Contract%20Lifecyle%20Management.pdf?api=v2">
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FMicrosoft%252520-%252520Session%2525203%252520-%252520IT%252520Contract%252520Lifecyle%252520Management.pdf%253Fapi%253Dv2">
                                  <p>
                                     <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                     Session 3:  IT Contract Lifecycle Management
@@ -511,45 +494,21 @@ mainpage: false
                   <div>
                      <div>
                         <p class="tab-p">
-                           In May 2021, the ITVMO began evaluating Adobe through the OEM Assessment Process.  As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused certification and audit clauses, price holds, maintenance and support caps, and virtualization.
+                          In May 2021, the ITVMO began evaluating Oracle through the OEM Assessment Process.  As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused certification and audit clauses, price holds, maintenance and support caps, and virtualization.
                         </p>
                         <p class="tab-p">
-                           The ITVMO has reengaged with Oracle as of February 2023, and will continue to seek solutions and provide updates to previously identified challenges, as well as document and begin discussions on any new issues that the agency community identifies.
+                          The ITVMO plans to reengaged with Oracle in fiscal year 2024, and will continue to seek solutions and provide updates to previously identified challenges, as well as document and begin discussions on any new issues that the agency community identifies.
                         </p>
                         <p class="tab-p">
-                           Information, resources, and trainings as a result of the Assessment and ongoing engagements can be found below.
+                          Information, resources, and training as a result of the Assessment and ongoing engagements can be found below.
                         </p>
                         <div class="links-list">
                            <div class="links-list-heading">
                               <h4 class="margin-0">Assessment Information</h4>
                            </div>
                            <ul>
-                              <!-- <li class="login-require">
-                                 <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Oracle%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">Agency Challenges & Proposed Solutions</a>
-                                 <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                 </li>
-                                 <li class="login-require">
-                                 <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                 <a target="_blank" rel="noreferrer noopener" href="#">OEM Assessment Summary</a>
-                                 <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                 </li>
-                                 <li class="login-require">
-                                 <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                 <a target="_blank" rel="noreferrer noopener" href="#">Executive Close Out Memo</a>
-                                 <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                 </li>
-                                 <li class="login-require">
-                                 <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                 <a target="_blank" rel="noreferrer noopener" href="#">
-                                    <p>
-                                       Close Out Flyer
-                                    </p>
-                                 </a>
-                                 <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                 </li> -->
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/Oracle%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FOracle%252520-%252520Challenges%252520and%252520Proposed%252520Resolutions%252520Overview.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Agency Challenges & Proposed Solutions
@@ -557,35 +516,13 @@ mainpage: false
                                     </p>
                                  </a>
                               </li>
-                              <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="#">
-                                    <p>
-                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                       OEM Assessment Summary
-                                       <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                    </p>
-                                 </a>
-                              </li>
-                              <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="#">
-                                    <p>
-                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                       Executive Close
-                                       <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                    </p>
-                                 </a>
-                              </li>
-                              <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="#">
-                                    <p>
-                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                       Close Out Flyer
-                                       <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                    </p>
-                                 </a>
-                              </li>
                            </ul>
                         </div>
+                        <ul class="coming-soon-list after-links-list">
+                          <li>OEM Assessment Summary  - Coming Soon</li>
+                          <li>Executive Close Out Memo - Coming Soon</li>
+                          <li>Close Out Flyer - Coming Soon</li>
+                        </ul>
                         <div class="links-list">
                            <div class="links-list-heading">
                               <h4 class="margin-0">Educational Videos</h4>
@@ -639,31 +576,18 @@ mainpage: false
                                  <a target="_blank" rel="noreferrer noopener" href="#">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                       Agency Challenges & Proposed Solutions
-                                       <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                    </p>
-                                 </a>
-                              </li>
-                              <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="#">
-                                    <p>
-                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                       Executive Close Out Memo
-                                       <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                    </p>
-                                 </a>
-                              </li>
-                              <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="#">
-                                    <p>
-                                       <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                       Close Out Flyer
+                                       Agency Challenges & Proposed Solutions !!!
                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
                                     </p>
                                  </a>
                               </li>
                            </ul>
                         </div>
+                        <ul class="coming-soon-list after-links-list">
+                          <li>OEM Assessment Summary  - Coming Soon</li>
+                          <li>Executive Close Out Memo - Coming Soon</li>
+                          <li>Close Out Flyer - Coming Soon</li>
+                        </ul>
                         <div class="links-list">
                            <div class="links-list-heading">
                               <h4 class="margin-0">Educational Videos</h4>
@@ -706,7 +630,7 @@ mainpage: false
                            </div>
                            <ul>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FServiceNow%252520-%252520Challenges%252520and%252520Proposed%252520Resolutions%252520Overview.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Agency Challenges & Proposed Solutions
@@ -724,7 +648,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Assessment%20Close-Out%20Summary.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FServiceNow%252520-%252520Assessment%252520Close-Out%252520Summary.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Close Out Flyer
@@ -775,7 +699,7 @@ mainpage: false
                                     </p>
                                  </a>
                               </li>
-                              <li class="login-require">
+                              <li class="">
                                  <a target="_blank" rel="noreferrer noopener" href="https://vimeo.com/gsavisualcommunications/review/801300432/4ac0f0841e">
                                     <p>
                                        <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/video-icon.svg">
@@ -784,7 +708,7 @@ mainpage: false
                                     </p>
                                  </a>
                               </li>
-                              <li class="login-require">
+                              <li class="">
                                  <a target="_blank" rel="noreferrer noopener" href="https://vimeo.com/gsavisualcommunications/review/801300403/10b41cd269">
                                     <p>
                                        <img class="front-icon" alt="External icon" src="{{site.baseurl}}/assets/images/icons/video-icon.svg">
@@ -810,7 +734,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Introduction%20to%20ServiceNow.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FServiceNow%252520-%252520Introduction%252520to%252520ServiceNow.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Introduction to ServiceNow, Strategy, and Implementation Approaches
@@ -819,7 +743,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Operating%20and%20Maintaining%20the%20ServiceNow%20Platform.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FServiceNow%252520-%252520Operating%252520and%252520Maintaining%252520the%252520ServiceNow%252520Platform.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Operating and Maintaining the ServiceNow Platform
@@ -828,7 +752,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Technology%20Roadmap%20Part%201.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FServiceNow%252520-%252520Technology%252520Roadmap%252520Part%2525201.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Roadmap Part 1
@@ -837,7 +761,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Technology%20Roadmap%20Part%202.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FServiceNow%252520-%252520Technology%252520Roadmap%252520Part%2525202.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Roadmap Part 2
@@ -846,7 +770,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Implementing%20a%20Citizen%20Development%20Program.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FServiceNow%252520-%252520Implementing%252520a%252520Citizen%252520Development%252520Program.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Implementing a Citizen Development Program
@@ -855,7 +779,7 @@ mainpage: false
                                  </a>
                               </li>
                               <li class="login-require">
-                                 <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Licensing%20Model%20and%20Pricing%20Framework.pdf?api=v2">
+                                 <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2314102898%252FServiceNow%252520-%252520Licensing%252520Model%252520and%252520Pricing%252520Framework.pdf%253Fapi%253Dv2">
                                     <p>
                                        <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
                                        Understanding the Licensing Model and Pricing Framework
@@ -865,10 +789,13 @@ mainpage: false
                               </li>
                            </ul>
                         </div>
+                        <ul class="coming-soon-list after-links-list">
+                          <li>ServiceNow Acquisition Playbook- Coming Soon</li>
+                        </ul>
                      </div>
                   </div>
                </div>
-               <div class="tab-divide-line end-content"></div>
+               <!-- <div class="tab-divide-line end-content"></div>
                <section class="page-feedback">
                   <div class="page-feedback-heading">
                      <img src="{{site.baseurl}}/assets/images/icons/pencil.svg">
@@ -882,15 +809,15 @@ mainpage: false
                      76% found this helpful
                   </p>
                   <p class="page-feedback-info">
-                     If you’d like to get in touch with a member from the support team, please navigate to <a href="{{site.baseurl}}/contact-info">Contact us</a>
+                     If you’d like to get in touch with a member from the support team, please navigate to <a href="{{site.baseurl}}/contact-us">Contact us</a>
                   </p>
-               </section>
+               </section> -->
             </div>
          </div>
          <div class="content-nav">
             <div class="nav-list">
                <h3>On this Tab</h3>
-               <a class="page-nav page-nav-active" href="#oem-assessment-initiative" onclick="return removeTabContent(this)">OEM Assessment Initiative</a>
+               <a class="page-nav page-nav-active" href="#oem-assessments-overview" onclick="return removeTabContent(this)">Overview</a>
                <a tabindex="0" class="page-nav accordion-nav" aria-controls="adobe" >Adobe</a>
                <a tabindex="0" class="page-nav accordion-nav" aria-controls="aws">Amazon Web Services (AWS)</a>
                <a tabindex="0" class="page-nav accordion-nav" aria-controls="cisco">Cisco</a>
@@ -902,10 +829,238 @@ mainpage: false
          </div>
       </div>
       <div id="contract-review" class="tabcontent">
-         <div class="contents">
-            <h3 id="oem-assessment-initiative" class="topic-heading">
-               Contract Review as a Service
+         <div class="contents padding-bottom-5">
+            <h3 id="crs-overview" class="topic-heading">
+               Contract Review Services
             </h3>
+            <div class="margin-bottom-2">
+              <h3 class="sub-topic-heading">
+                Overview
+              </h3>
+              <p class="tab-p">
+                Multi-year, enterprise-wide contracts to acquire software made by top Original Equipment Manufacturers (OEMs) represent significant investments for all federal agencies.  For the OEMs, these contracts represent some of the largest revenue commitments of their entire year. The OEMs and their Value Added Resellers (VARs) invest substantial resources in maximizing the value of these contracts through terms, conditions, pricing, and a thorough understanding of agencies IT infrastructure, maintaining a clear advantage over buyers that are often understaffed and uninformed as to what constitutes a “good deal”. The ITVMO, recognizing this information disadvantage, is offering a service to help agencies gain confidence in their software contract investments.
+              </p>
+              <p class="tab-p">
+                The ITVMO’s Contract Review Service (CRS) offers subject matter expertise and guidance via targeted, agency-specific software contract reviews to better prepare agencies for their next renewal.
+              </p>
+              <h3 id="crs-process" class="sub-topic-heading">
+                CRS Process
+              </h3>
+              <ol type="1" class="list-number-bold">
+                <li>
+                  <b>Let’s Get To Know Each Other</b>
+                  <ul>
+                    <li>Our questionnaire will establish the basic framework for the engagement, identifying important data points as well as priorities for the agency’s next contract.</li>
+                    <li>Kickoff meeting with identified POC(s) to discuss the engagement and questionnaire results.</li>
+                    <li>Sharing of data elements such as current contract documents, term sheets, and Statement of Work (depending on survey results and preliminary discussions).</li>
+                  </ul>
+                </li>
+                <li>
+                  <b>Our SMEs Go To Work</b>
+                  <p class="tab-p">
+                    ITVMO will review the relevant shared documents and once complete, we'll convene to discuss preliminary findings, confirm our understanding, and ask relevant questions.
+                  </p>
+                </li>
+                <li>
+                  <b>Here’s What We Think…</b>
+                  <p class="tab-p">
+                    ITVMO will deliver a recommendations report which summarizes our understanding and identifies our recommended areas of focus, pinpointing specific terms and concepts where appropriate. A final meeting will allow for questions or revised recommendations as necessary.
+                  </p>
+                </li>
+              </ol>
+              <h3 id="crs-benefits" class="sub-topic-heading">
+                Benefits
+              </h3>
+              <div class="bulletSections">
+                <div class="topLine"></div>
+                  <ul class="experiences">
+                    <li class="bulletText"><b>Improved Negotiating Position:</b> you’ll be better equipped to achieve prioritized concessions after learning what’s possible.</li>
+                    <li class="bulletText"><b>Heightened Buyer Confidence:</b> begin your contract renewal process knowing you’ve taken steps to close the information gap.</li>
+                    <li class="bulletText"><b>Help Your Federal Colleagues:</b> every contract we review represents another data point from which to derive future recommendations.</li>
+                  </ul>
+                </div>
+            </div>
+            <p class="tab-p-large">
+              At this time, the ITVMO’s Contract Review Services is a FREE service being offered to all federal agencies.
+              <br>
+              <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/contact-us">
+                Contact Us 
+              </a> <span>to schedule an exploratory discussion</span>
+            </p>
          </div>
+         <div class="content-nav">
+            <div class="nav-list">
+               <h3>On this Tab</h3>
+               <a class="page-nav page-nav-active" href="#crs-overview" onclick="return removeTabContent(this)">Overview</a>
+               <a class="page-nav " href="#crs-process" onclick="return removeTabContent(this)">CRS Process</a>
+               <a class="page-nav " href="#crs-benefits" onclick="return removeTabContent(this)">Benefits</a>
+            </div>
+         </div>
+      </div>
+      <div id="idc" class="tabcontent">
+         <div class="contents padding-bottom-5">
+            <h3 id="" class="topic-heading">
+               Integrated Data Collection (IDC)
+            </h3>
+            <div class="margin-bottom-2">
+              <h3 class="sub-topic-heading">
+                Overview
+              </h3>
+              <p class="tab-p">
+                The ITVMO has invested in enhancing the <b>Federal Integrated Data Collection (IDC)</b> for IT related categories (specifically Hardware and Software) to get clearer data from agencies to drive governmentwide procurement and acquisition strategies. The ITVMO uses the data provided by agencies through the IDC to drive decisions about <b>Original Equipment Manufacturers (OEM), Engagements,</b> and <b>government wide enterprise purchasing</b>. The data is used to prioritize the chartering of interagency working groups, developmenting special studies, and promoting useful resources that can be used to drive efficiencies across the acquisition landscape
+              </p>
+              <p class="tab-p">
+                As part of the IDC improvements, the ITVMO has planned for added agency IDC contributor support throughout the reporting process lifecycle. Today the ITVMO offers:
+              </p>
+              <div class="bulletSections">
+                <div class="topLine"></div>
+                  <ul class="experiences">
+                    <li class="bulletText"><b>Quarterly Kick Off Meeting</b></li>
+                    <li class="bulletText"><b>Current Submission Office Hours (during open reporting period)</b></li>
+                    <li class="bulletText"><b>Information on what is required and guidance for responding</b></li>
+                    <li class="bulletText"><b>Submission Reviews</b></li>
+                    <li class="bulletText"><b>Personal Engagements for submission clarification</b></li>
+                    <li class="bulletText"><b>Quarterly Debriefing</b></li>
+                  </ul>
+              </div>
+              <p class="tab-p-large">
+              Want to be kept up to date on upcoming IDC resources and meetings?
+              <br> <span>Email us at</span> <a href="mailto:itvmo@gsa.gov">ITVMO@gsa.gov</a>
+              </p>
+            </div>
+         </div>
+      </div>
+      <div id="gas" class="tabcontent">
+         <div class="contents padding-bottom-5">
+            <h3 id="gas-overview" class="topic-heading">
+               Govwide Acquisition Strategies
+            </h3>
+            <div class="margin-bottom-2">
+              <h3 class="sub-topic-heading">
+                Overview
+              </h3>
+              <p class="tab-p">
+                The President Management Agenda (PMA) Priority 3 is focused on Managing the Business of Government, driving lasting improvements that impact how the Government buys products and services to increase efficiencies and drive down costs. Pending new legislation will help improve acquisition flexibility and eliminate barriers to cost savings. The ITVMO in support of these actions will seek out top acquisition actions to prioritize and facilitate the development and implementation of a multi-phased approach to standardize key components of select Original Equipment Manufacturer (OEM) and Value Added Reseller (VAR) agreements. The ITVMO does this with the intent to ensure all federal customers experience the same contractual benefits.
+              </p>
+              <h3 id="gas-sa" class="sub-topic-heading">
+                Strategic Approach
+              </h3>
+              <p class="tab-p">
+                Achieving government wide contract solutions for select OEMs will take time, resources, and WILLINGNESS by the agencies. The ITVMO in partnership with the Office of Management and Budget’s Office of Procurement Policy will use a phased approach to scale the solution to gain buy-in and adoption.
+              </p>
+              <p class="tab-p">
+                <b class="blue-bold">Goal</b> - Greater value from agency spend, improved cybersecurity posture, increased efficiencies, & more favorable Terms and Conditions for specified OEMs.
+              </p>
+              <b class="blue-bold">Strategic Approach</b>
+              <ol type="1" class="list-number-bold padding-top-1">
+                <li>
+                  <b>Collect Agency Data</b>
+                  <p class="tab-p">
+                    Gather CIO/CAO Agency OEM contract artifacts including pricing.
+                  </p>
+                </li>
+                <li>
+                  <b>Integrated Project Team (IPT)</b>
+                  <p class="tab-p">
+                    Identify 5-6 stakeholder agencies to identify the best terms, conditions, and pricing strategies.
+                  </p>
+                </li>
+                <li>
+                  <b>OEM Negotiation</b>
+                  <p class="tab-p">
+                    Engage with the OEM Senior Level Leadership to negotiate an overall pricing discount and finalize terms and conditions.
+                  </p>
+                </li>
+                <li>
+                  <b>Contract Modifications</b>
+                  <p class="tab-p">
+                    Amend all contracts to incorporate new pricing strategy and terms and conditions.
+                  </p>
+                </li>
+              </ol>
+              <p class="tab-p">
+                <b class="blue-bold">Results</b> - Establish more favorable, standardized terms and conditions including those supporting cybersecurity risk management, and a new governmentwide baseline price discount.
+              </p>
+              <h3 id="gas-dt" class="sub-topic-heading">
+                Governmentwide Acquisition Strategies, Data, and Tools
+              </h3>
+              <p class="tab-p">
+                Coming soon.......
+              </p>
+              <p class="tab-p-large">
+                <span>
+                  For more information about the ITVMO’s Governmentwide Acquisition Strategy efforts <a href="{{site.baseurl}}/contact-us/">Contact Us</a>, or email us at <a href="mailto:itvmo@gsa.gov">ITVMO@gsa.gov</a>
+                </span> 
+              </p>
+            </div>
+         </div>
+          <div class="content-nav">
+              <div class="nav-list">
+                <h3>On this Tab</h3>
+                <a class="page-nav page-nav-active" href="#gas-overview" onclick="return removeTabContent(this)">Overview</a>
+                <a class="page-nav " href="#gas-sa" onclick="return removeTabContent(this)">Strategic Approach</a>
+                <a class="page-nav " href="#gas-dt" onclick="return removeTabContent(this)">Governmentwide Acquisition Strategies, Data, and Tools</a>
+              </div>
+          </div>
+      </div>
+      <div id="ai" class="tabcontent">
+         <div class="contents padding-bottom-5">
+            <h3 id="ai-overview" class="topic-heading">
+               Acquisition Intelligence
+            </h3>
+            <div class="margin-bottom-2">
+              <h3 class="sub-topic-heading">
+                Overview
+              </h3>
+              <p class="tab-p">
+                The ITVMO works across acquisition and data partners to unify information from a variety of sources (obligations, transactions, etc.) to create an integrated, enhanced view of federal spend to inform agency acquisition planning. This capability assesses federal spend and contracting in the IT space to determine drivers of trends and changes over time
+              </p>
+              <h3 id="ai-a" class="sub-topic-heading">
+                Approach
+              </h3>
+              <p class="tab-p">
+                The analysis covers major spend features as listed below in the approach overview
+              </p>
+              <table class="styled-table fixed-height" style="width: 100%">
+                <thead>
+                  <tr>
+                    <th style="border-right: white 1px solid">Analysis</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="fname-b"><b>WHAT</b> was procured?</td>
+                    <td>Category Overview<br>Market Analysis</td>
+                  </tr>
+                  <tr>
+                    <td class="fname-b"><b>WHO</b> was involved?</td>
+                    <td>Customer Analysis<br>Vendor Analysis</td>
+                  </tr>
+                  <tr>
+                    <td class="fname-b"><b>WHERE</b> was it procured?</td>
+                    <td>Vehicle Analysis</td>
+                  </tr>
+                  <tr>
+                    <td class="fname-b">Obligations vs Budget Delta</td>
+                    <td>Analysis of the delta between obligated dollars and resolved budget metrics</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="tab-p-large">
+                Acquisition Intelligence Reporting is a <u>FREE</u> service being offered to federal agencies.<br>
+                <span>
+                  <a href="{{site.baseurl}}/contact-us/">Contact Us</a> to request an IT spend and landscape report for your respective agency.
+                </span> 
+              </p>
+            </div>
+         </div>
+          <div class="content-nav">
+              <div class="nav-list">
+                <h3>On this Tab</h3>
+                <a class="page-nav page-nav-active" href="#ai-overview" onclick="return removeTabContent(this)">Overview</a>
+                <a class="page-nav " href="#ai-a" onclick="return removeTabContent(this)">Approach</a>
+              </div>
+          </div>
       </div>
    </section>

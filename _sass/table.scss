@@ -11,6 +11,14 @@
   font-weight: bold;
   border-right: #d7d7d7 1px solid;
 }
+.fname-b 
+{
+    border-right: #d7d7d7 1px solid;
+    b 
+    {
+        color: #002656;
+    }
+}
 
 #report
 {
@@ -63,6 +71,7 @@
         flex-direction: column;
         row-gap: 15px;
     }
+    min-height: 400px;
   }
   tbody 
   {
@@ -71,4 +80,12 @@
           background-color: #f3f3f3;
       }
   }
+}
+.fixed-height
+{
+    table-layout: fixed;
+    td 
+    {
+        height: 81px;
+    }
 }
