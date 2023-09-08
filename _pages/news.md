@@ -1,7 +1,7 @@
 ---
 title: News & Updates
 title-image: ""
-description: Take advantage of the ITVMO’s reach and discover ITVMO updates, the latest relevant news, and other recent publications. We have gathered federal, trusted, and open source articles and publications below for your convenience.
+heading-description: Take advantage of the ITVMO’s reach and discover ITVMO updates, the latest relevant news, and other recent publications. We have gathered federal, trusted, and open source articles and publications below for your convenience.
 layout: page
 sidenav: false
 mainpage: true

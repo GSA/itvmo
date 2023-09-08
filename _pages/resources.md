@@ -1,7 +1,7 @@
 ---
 title: Resources
 title-image: ""
-description: The ITVMO has developed and collected helpful resources to make government IT acquisitions smarter and faster. Review these knowledge cases to learn more about specific topics. We will regularly update and add to the resources posted to this page.
+heading-description: The ITVMO has developed and collected helpful resources to make government IT acquisitions smarter and faster. Review these knowledge cases to learn more about specific topics. We will regularly update and add to the resources posted to this page.
 layout: page
 sidenav: false
 mainpage: true

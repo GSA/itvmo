@@ -1,8 +1,5 @@
 ---
 layout: news
-sidenav: false
-redesign: true
-mainpage: false
 publisher: FEDSCOOP
 title: White House federal agency AI guidelines may focus on pilots and info sharing
 url-link: https://fedscoop.com/white-house-federal-agency-ai-guidelines-may-focus-on-pilots-and-info-sharing/
