@@ -332,7 +332,7 @@ This page compiles resources relevant to the 2023 Summit focus areas. Informatio
             <div class="arrow-content">
             <img src="{{site.baseurl}}/assets/images/arrows/right-arrow.svg">
               <p>
-                <a target="_blank" rel="noreferrer noopener"  href="https://itvmo.gsa.gov/contribute/">
+                <a target="_blank" rel="noreferrer noopener"  href="{{site.baseurl}}/contribute/">
                   Contribute Today
                 </a>
                 - <b>Share Insights:</b> We invite you to share your expertise, perspectives, and resources. We are seeking insights, intelligence, and information to normalize the procurement of emerging technologies, boost market equity through small business utilization, enhance zero trust cybersecurity knowledge, and build a more robust software supply chain. Share and connect with us today.

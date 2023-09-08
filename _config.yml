@@ -89,15 +89,15 @@ primary_navigation:
 
 secondary_navigation:
   - name: IT Vehicles
-    url: /contact-info/
+    url: /it-vehicles/
   - name: About
-    url: /contact-info/
+    url: /about/
   - name: Subscribe
-    url: /contact-info/
+    url: /subscribe/
   - name: Contribute
-    url: /contact-info/
+    url: /contribute/
   - name: Contact Us
-    url: /contact-info/
+    url: /contact-us/
 
 # Search.gov configuration
 #
