@@ -2029,11 +2029,10 @@ html *
         height: 100%;
         padding-left: 10px;
         padding-right: 30px;
-        border-style: solid;
-        border-color: rgba(215, 215, 215, 1);
         border-radius: 10px;
         text-overflow: ellipsis;
         line-height: 1;
+        border: 1px solid #d7d7d7;
         p 
         {
           margin: 0;
