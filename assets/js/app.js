@@ -353,6 +353,29 @@ if(document.getElementById('page-directory') != null) //Other page beside homepa
   populateDirectory();
   initalizeTabIndex();
   initalizePageNav();
+  directToTab();
+}
+
+/**
+This function when call will check if the URL contain the payload that will direct the user to specific tab of the page and specific sub heading on the side navigation of the tab.
+Not all the side nav on the page have the id, create id for the side nav first before contain it on the payload.
+Example: "href="{{site.baseurl}}/services/oem?tabName=contract-review-header&sideNav=sn-crs-process""
+**/
+function directToTab() 
+{
+  const urlParams = new URLSearchParams(window.location.search);
+  console.log(urlParams)
+  var tabName = urlParams.get("tabName");
+  var sideNav = urlParams.get("sideNav");
+  if (tabName != null) 
+  {
+    document.getElementById(tabName).click();
+  }
+  if (sideNav != null) 
+  {
+    console.log(document.getElementById(sideNav));
+    document.getElementById(sideNav).click();
+  }
 }
 
 /** Resources page **/
