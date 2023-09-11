@@ -1885,7 +1885,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.topic-heading, .sub-topic-heading, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link, .article-card-container *, #page-heading-description, .links-list-heading *, .styled-table *
+.topic-heading, .sub-topic-heading, .sub-topic-heading-italic, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link, .article-card-container *, #page-heading-description, .links-list-heading *, .styled-table *
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -1911,6 +1911,13 @@ html *
   font-weight: 600;
   font-size: 27px;
   color: #FF5400;
+}
+.sub-topic-heading-italic
+{
+  color: #000000;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
 }
 .blue-bold 
 {
@@ -2110,7 +2117,45 @@ html *
         background-repeat: no-repeat; 
       }
     }
-  } 
+  }
+  .links-with-descriptions
+  {
+    row-gap: 20px;
+    .link-with-description
+    {
+      max-width: none;
+      width: 100%;
+      height: auto;
+      a 
+      {
+        display: flex;
+        padding: 0px 10px;
+        flex-direction: column;
+        .link-heading, .link-description
+        {
+          line-height: 20px;
+        }
+        .link-heading
+        {
+          border-bottom: #d7d7d7 1px solid;
+          font-weight: 600;
+          font-size: 16px;
+          padding: 15px 0px;
+          column-gap: 8px;
+        }
+        .link-description
+        {
+          color: #555555;
+          padding: 15px 10px;
+        }
+      }
+      a:hover 
+      {
+        text-decoration: none;
+      }
+
+    }
+  }
 }
 
 /*Main page heading design (All the page that are on the main navigation tab)*/
@@ -2251,7 +2296,7 @@ html *
     }
     img 
     {
-      width: 136px;
+      max-width: 215px;
       height: 143px;
       margin-right: 50px;
     }
@@ -2268,7 +2313,14 @@ html *
     width: 67%;
   }
 }
-
+.list-margin-bottom 
+{
+  li:not(:last-child) 
+  {
+    margin-bottom: 15px;
+  }
+  
+}
 #page-directory, .tabcontent
 {
   .tab-supheading, a, li, p, b, span, u
@@ -2278,6 +2330,10 @@ html *
   .tab-p, a, li, p
   {
     font-size: 16px;
+  }
+  .tab-image-overflow
+  {
+    width: 100%;
   }
   .tab-p-large
   {
@@ -4479,6 +4535,13 @@ html *
     #page-heading, #page-heading-description
     {
       width: 97%;
+    }
+    #page-heading
+    {
+      img 
+      {
+        max-width: 135px;
+      }
     }
   }
 
