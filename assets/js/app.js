@@ -888,13 +888,10 @@ function assignTabIndex(e, index)
 function populateDirectory()
 {
   let currentUrl = window.location.href;
+  currentUrl = currentUrl.split('#')[0]; //Remove HTML ID
+  currentUrl = currentUrl.split('?')[0]; //Remove Parameters
   let urlSplit = currentUrl.replace("http://","")
   urlSplit = urlSplit.split("/")
-  //If contain # meaning that it have HTML ID on the url, therefore remove it from the currentUrl before proceed.
-  if(currentUrl.includes('#'))
-  {
-    currentUrl = currentUrl.replace(`${urlSplit[urlSplit.length-1]}`,'');
-  }
   urlSplit.pop();
   let newElements = ``;
   for(let i = urlSplit.length-1; i >= 0; i--)
