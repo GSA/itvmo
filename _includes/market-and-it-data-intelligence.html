@@ -1,0 +1,930 @@
+<section id="inner-page-tabs">
+    <!-- Inner tab dropdown for the mobile version -->
+    <div id="tabs-mobile-container">
+       <select id="tabs-mobile" onchange="openTabDropdown();">
+          <option value="market-acquisition-research-header">Market & Acquisition Research</option>
+          <option value="contract-data-elements-header">Contract Data Elements</option>
+          <option value="data-tools-header">Data Tools</option>
+       </select>
+    </div>
+    <div class="tabs">
+       <a id="market-acquisition-research-header" tabindex="0" class="tab active-tab" onclick="openTab(event, 'market-acquisition-research')" onkeydown="openTabKey(event, 'market-acquisition-research')">Market & Acquisition Research</a>
+       <a id="contract-data-elements-header" tabindex="0" class="tab" onclick="openTab(event, 'contract-data-elements')" onkeydown="openTabKey(event, 'contract-data-elements')">Contract Data Elements</a>
+       <a id="data-tools-header" tabindex="0" class="tab" onclick="openTab(event, 'data-tools')" onkeydown="openTabKey(event, 'data-tools')">Data Tools</a>
+    </div>
+    <div id="market-acquisition-research" class="tabcontent" style="display: flex;">
+       <div class="contents">
+          <h3 id="market-acquisition-research-overview" class="topic-heading">
+             Market & Acquisition Research
+          </h3>
+          <h3 class="sub-topic-heading">
+             Overview
+          </h3>
+          <p class="tab-p">
+              The ITVMO plays a pivotal role throughout many stages of the acquisition life cycle. At the front end the ITVMO can assist in providing resources that evaluate new technologies against past purchases and future needs. It enhances the purchasing process through vendor relationships. And in the latter stages the ITVMO can utilize historical data to aid in the vendor selection and purchasing of replacement technologies.
+          </p>
+          <p class="tab-p">
+              Our market and acquisition research services leverage the government’s many data sources to help agency buyers, federal IT suppliers, and governmentwide acquisition vehicles make informed decisions to drive their federal IT acquisition strategies forward.
+          </p>
+          <h3 id="evaluate-assess" class="sub-topic-heading">
+             Evaluate and Assess
+          </h3>
+          <p class="tab-p">
+              The ITVMO starts where the acquisition life cycle begins, which is with a clear understanding of the business need, use cases, and requirements. Business analysts and business leadership need to communicate with technology analysts and technology leadership to brainstorm viable paths forward. It is also the primary point to look for innovation opportunities to improve process, performance, and productivity. It is with this understanding that the intersection between the business needs and the technical environment comes to consensus on appropriate technologies to create the solution. The solution does not necessarily imply a 100% new approach. It should leverage existing assets, software, services and technologies to maximize the value to the organization.
+          </p>
+          <h3 id="procurement" class="sub-topic-heading">
+             Procurement
+          </h3>
+          <p class="tab-p">
+              The procurement stage utilizes the requirements and objectives laid out in the assess phase. It identifies the necessary technology assets and the logistics/timeline of required purchases, as well as the funding sources/investment for them.
+          </p>
+          <p class="tab-p">
+              The appropriate contract vehicles and qualified vendors are evaluated to determine the pool of suppliers that can best fulfill the requirements. Vendor evaluation criteria must meet (but not limited to) the standards of a vendor health assessment which determines:
+              <b>
+                  <ul>
+                      <li>Financial stability</li>
+                      <li>Risk and security assessment</li>
+                      <li>Supply chain constraints</li>
+                  </ul>
+              </b>
+          </p>
+          <p class="tab-p">
+              It considers resource availability, funding, timeline and other constraints to execute the established plan and move the initiative forward to contract and negotiation.
+          </p>
+          <h3 id="negotiate" class="sub-topic-heading">
+             Negotiate
+          </h3>
+          <p class="tab-p">
+              In the negotiation stage it is important to look at the big picture and understand contracts and contract term periods. This is the stage where consolidation can occur and economies of scale can be leveraged for the organization.
+          </p>
+          <p class="tab-p">
+              Although oftentimes impractical, it is useful for the contract period to align with the funding period. It provides for smoother transactions on the financial side over time.
+          </p>
+          <p class="tab-p"></p>
+          <div class="tab-divide-line end-content"></div>
+          <div class="usa-accordion">
+              <h3 id="studies-research-guides" class="sub-topic-heading">
+              Studies, Research, and Guides
+              </h3>
+             <h3 class="usa-accordion__heading">
+                <button id="vendor-research" class="accordion" aria-expanded="false" aria-controls="b-a1" onclick="displayTabContent(this)">
+                <span>
+                Vendor Research
+                </span>
+                <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
+                </button>
+             </h3>
+             <div id="b-a1" class="accordion-content ">
+                <div>
+                   <div class="links-list">
+                      <div class="links-list-heading">
+                         <h4  class="margin-0 margin-top-2">
+                              Data User Stories:          
+                          </h4>
+                      </div>
+                      <ul>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/What-vendors-provide-cloud-based-services-that-are-FedRamp-certified-508.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  What vendors provide cloud based services that are FedRamp certified?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/assets/files/A-Guide-to-Finding-New-Entrants-in-the-Federal-Marketplace.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  How do I find new Entrants in the Federal Marketplace
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/agency-duplicate-contracts.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  Does my agency have any duplicative contracts, or multiple contracts with the same vendor for similar services?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-Vendors-Specializing-in-an-IT-Subcategory.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  How to find Vendors Specializing in an IT Subcategory?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                 What is the OEM and vendor spend by agency?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/what-products-bic-solutions.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                 What product and vendors are available via BIC solutions?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                      </ul>
+                   </div>
+                </div>
+             </div>
+             <h3 class="usa-accordion__heading">
+                <button id="small-business-research" class="accordion" aria-expanded="false" aria-controls="b-a2" onclick="displayTabContent(this)">
+                <span>
+                Small Business Research
+                </span>
+                <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
+                </button>
+             </h3>
+             <div id="b-a2" class="accordion-content ">
+                <div>
+                   <div class="links-list">
+                      <div class="links-list-heading">
+                         <h4  class="margin-0 margin-top-2">
+                              Market Equity Studies:          
+                          </h4>
+                      </div>
+                      <p class="coming-soon">
+                         Waiting For updates
+                      </p>
+                      <div class="links-list-heading">
+                         <h4  class="margin-0 margin-top-2">
+                              Data User Stories:          
+                          </h4>
+                      </div>
+                      <ul>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/How-do-BICs-support-small-business-508.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  How do BICs support small business?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/how-much-agency-bic-contracts.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  How much does my agency utilize small business via BIC contracts?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-SDB-Vendors.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  How can I list Small Disadvantaged Business (SDB) vendors?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/percent-product-services-small-business.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  What percent of products or services are provided by small businesses?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                      </ul>
+                   </div>
+                </div>
+             </div>
+             <h3 class="usa-accordion__heading">
+                <button id="budget-spend-obligation-research" class="accordion" aria-expanded="false" aria-controls="b-a3" onclick="displayTabContent(this)">
+                <span>
+                Budget, Spend, Obligation Research
+                </span>
+                <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
+                </button>
+             </h3>
+             <div id="b-a3" class="accordion-content margin-bottom-4">
+                <div>
+                   <div class="links-list">
+                      <div class="links-list-heading">
+                         <h4  class="margin-0 margin-top-2">
+                              Data User Stories:          
+                          </h4>
+                      </div>
+                      <ul>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/What-vendors-provide-cloud-based-services-that-are-FedRamp-certified-508.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  What vendors provide cloud based services that are FedRamp certified?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/assets/files/A-Guide-to-Finding-New-Entrants-in-the-Federal-Marketplace.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  How do I find new Entrants in the Federal Marketplace
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/agency-duplicate-contracts.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  Does my agency have any duplicative contracts, or multiple contracts with the same vendor for similar services?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/A-Guide-to-Finding-Vendors-Specializing-in-an-IT-Subcategory.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  How to find Vendors Specializing in an IT Subcategory?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/What-is-the-OEM-and-vendor-spend-by-agency-508.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  What is the OEM and vendor spend by agency?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                         <li class="">
+                            <a target="_blank" rel="noreferrer noopener" href="https://itvmo.gsa.gov/assets/files/tlr/what-products-bic-solutions.pdf">
+                               <p>
+                                  <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                                  What product and vendors are available via BIC solutions?
+                                  <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                               </p>
+                            </a>
+                         </li>
+                      </ul>
+                   </div>
+                </div>
+             </div>
+          </div>
+      </div>
+       <div class="content-nav">
+          <div class="nav-list">
+             <h3>On this Tab</h3>
+             <a class="page-nav page-nav-active" href="#market-acquisition-research-overview" onclick="return removeTabContent(this)">Market & Acquisition Research</a>
+             <a class="page-nav" href="#evaluate-assess"
+             onclick="return removeTabContent(this)">Evaluate and Assess</a>
+             <a class="page-nav" href="#procurement" onclick="return removeTabContent(this)">Procurement</a>
+             <a class="page-nav" href="#negotiate" onclick="return removeTabContent(this)">Negotiate</a>
+             <a tabindex="0" class="page-nav accordion-nav" aria-controls="vendor-research" >Vendor Research</a>
+             <a tabindex="0" class="page-nav accordion-nav" aria-controls="small-business-research" >Small Business Research</a>
+             <a tabindex="0" class="page-nav accordion-nav" aria-controls="budget-spend-obligation-research" >Budget, Spend, Obligation Research</a>
+          </div>
+       </div>
+    </div>
+    <div id="contract-data-elements" class="tabcontent">
+       <div class="contents">
+          <div>
+              <div>
+                  <h3 id="contract-guidance-overview" class="topic-heading">
+                  Contract Guidance
+                  </h3>
+                  <h3 class="sub-topic-heading">
+                  Overview
+                  </h3>
+                  <p class="tab-p">
+                  Currently, contract data does not accurately represent spending on IT products and services. This is in part due to issues with data inputs that do not provide an appropriate representation of the IT products and services that are being purchased, which limits the ability to provide meaningful analytics and reporting.
+                  </p>
+                  <p class="tab-p">
+                  Understanding these fields and the downstream impacts to information that is reported can help stakeholders improve the quality of their inputs to contract writing and purchasing processes. As a result, the proper entry of codes and descriptions provided by users during the acquisitions process will enhance data quality.
+                  </p>
+                  <p class="tab-p">
+                  Stakeholders need the ability to analyze spending based on reliable data, in order to support data driven decisions and manage the complexities of IT spending.
+                  </p>
+                  <p class="tab-p">
+                  This guide was developed to enable consistency and enhance data for agencies as they draft contracts for IT spending.
+                  </p>
+                  <h3 id="purpose" class="sub-topic-heading">
+                  Purpose
+                  </h3>
+                  <div class="bulletSections">
+                      <div class="topLine"></div>
+                      <ul class="experiences">
+                          <li class="bulletText"><b>Cost Transparency:</b> Identify components and contributors that enhance cost transparency and management of IT spend.</li>
+                          <li class="bulletText"><b>Better Data:</b> Develop guidance to help stakeholders understand the uses of contract data and how to improve the information that can be derived from them.</li>
+                          <li class="bulletText"><b>Insights:</b> Provide sample insights into current spending based on updated PSCs and key data points. Supports more informed and focused purchasing decisions.</li>
+                      </ul>
+                  </div>
+                  <p class="tab-p-large">
+                      To view the full content with examples and full list of data fields and tips, please visit:
+                      <br>
+                      <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FspaceKey%253DEgov%2526title%253DITVMO%252BResources">
+                      Contract Data Elements Guidance report
+                      <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                      </a>
+                  </p>
+                  <div class="tab-divide-line end-content"></div>
+                  <h3 class="sub-topic-heading">
+                      Guidance
+                  </h3>
+                  <h3 class="usa-accordion__heading">
+                      <button id="data-sources" class="accordion" aria-expanded="false" aria-controls="b-a4" onclick="displayTabContent(this)">
+                      <span>
+                      Data Sources
+                      </span>
+                      <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
+                      </button>
+                  </h3>
+                  <div id="b-a4" class="accordion-content ">
+                      <div>
+                          <div class="links-list">
+                              <div class="links-list-heading">
+                                      <a target="_blank" rel="noreferrer noopener" class="tab-header-link" href="https://www.fpds.gov/downloads/Version_1.4_specs/FPDSNG_DataDictionary_V1.4.pdf  ">
+                                      Federal Procurement Data System (FPDS)
+                                      <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                                      </a>
+                                  <p class="tab-p">
+                                      FPDS is the primary source and system of record for contract data. FPDS is populated with information directly from agency contract writing systems. The government uses the reported FPDS data to measure and assess the impact of federal procurement.
+                                  </p>
+                                  <p class="tab-p">
+                                      FPDS contains more than 150 data elements. This guide focuses on the data elements that have the most impact on downstream analysis of IT obligations. The elements in the sections below are those that are most frequently shown in the Dashboard Analytics section.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <h3 class="usa-accordion__heading">
+                      <button id="data-elements-cost-pop" class="accordion" aria-expanded="false" aria-controls="b-a5" onclick="displayTabContent(this)">
+                      <span>
+                      Data Elements - Cost/PoP
+                      </span>
+                      <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
+                      </button>
+                  </h3>
+                  <div id="b-a5" class="accordion-content ">
+                      <div>
+                                  <p class="tab-p">
+                                      This section of the guide provides a list of common fields that are related to cost or period of performance (PoP) during the acquisitions process. It provides specific terms of the contract and how best to complete the fields to enable more detailed analytics, such as benchmarking.
+                                  </p>
+                                  <table class="styled-table">
+                                      <thead>
+                                          <tr>
+                                              <th style="border-right: white 1px solid">Cost/PoP Related</th>
+                                              <th>Guidance on Completing</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class = "fname">Period of Performance (PoP) Dates</td>
+                                              <td>
+                                              Ensure accurate date is entered and broken out into line items for specific deliverables to measure and track performance; see example below. 
+                                                  <ul>
+                                                      <li> 
+                                                          <b>Period of Performance Start Date = Effective Date</b>, for entire contract, not per modification.
+                                                      </li> 
+                                                      <li> 
+                                                          <b>Completion Date = Current Completion Date based on the schedule in the contract</b>, including extended options that have been exercised.
+                                                      </li> 
+                                                      <li> 
+                                                          <b>Est. Ultimate Completion Date = Ultimate Completion Date</b> for the entire contract, to include all options of other modifications.
+                                                      </li> 
+                                                  </ul>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class = "fname">Referenced IDV</td>
+                                              <td>
+                                                  <b>Do not omit</b> if contract is a <b>derivative</b>.
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class = "fname">Total Obligated Amount</td>
+                                              <td>System generated total that identifies the amount of the contract that has been <b>ordered or received, but which has not been disbursed</b>.
+                                                  <ul>
+                                                      <li> 
+                                                      Sum of all amounts entered in “Action Obligation” field for particular PIID and Agency. Ensure accurate amounts are entered.
+                                                      </li> 
+                                                  </ul>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class = "fname">Unit Price and Quantity</td>
+                                              <td>Choose a quantity and unit of measure to describe each deliverable that
+                                                  corresponds to <b>how you will measure and track performance</b>.
+                                                  <ul>
+                                                      <li> 
+                                                      Consider how supplies will be packaged and shipped
+                                                      </li> 
+                                                      <li> 
+                                                      Consider how often services will be accepted and paid for
+                                                      </li> 
+                                                      <li> 
+                                                          <b>Unit</b> - A precisely specified quantity that allows the magnitudes of other quantities of the same kind to be stated (Ex - an apple)
+                                                      </li> 
+                                                      <li> 
+                                                          <b>Unit of Measure</b> - Any division of quantity accepted as a standard of measurement or exchange
+                                                          <p>
+                                                          <ul>
+                                                              <li>
+                                                              Suggested format for Unit of Measure: <em>[Count of Quantity]:[Each/Lot/Hour/Unit/Package]</em>
+                                                              </li> 
+                                                              <li> 
+                                                                  Example: <em>100 units of network switches</em>
+                                                              </li> 
+                                                          </ul>
+                                                          </p>
+                                                      </li> 
+                                                      <li> 
+                                                          <b>Unit Price</b>  - The cost or price of an item of supply based on the unit of issue (Ex - each switch costs $2,000); avoid using $1 for unit price.
+                                                          <ul>
+                                                              <li>
+                                                              Suggested format for Unit Price: <em>[$Awarded price per unit]:</em>
+                                                              </li> 
+                                                          </ul>
+                                                      </li> 
+                                                  </ul>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                      </div>
+                  </div>
+                  <h3 class="usa-accordion__heading">
+                      <button id="data-elements-enitity-contract-type" class="accordion" aria-expanded="false" aria-controls="b-a6" onclick="displayTabContent(this)">
+                      <span>
+                      Data Elements - Entity/Contract Type
+                      </span>
+                      <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
+                      </button>
+                  </h3>
+                  <div id="b-a6" class="accordion-content ">
+                      <div>
+                          <p class="tab-p">
+                              This section of the guide provides a list of common fields that describe the type of contract. This includes any type of special designations like small business or socio-economic. It also provides insight into localities and other vendor information and guidance on how best to complete these fields. This data is used to analyze agency small and socio-economic business utilization performance.
+                          </p>
+                          <table class="styled-table">
+                                      <thead>
+                                          <tr>
+                                              <th style="border-right: white 1px solid">Entity/Contract Type </th>
+                                              <th>Guidance on Completing</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="fname">Place of Manufacture</td>
+                                              <td>
+                                                  Identifies if products are <b>manufactured inside/outside the US</b>.
+                          Used to determine adherence to “Buy American Act" (See FAR 25.1).
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="fname">Principal Place of Performance</td>
+                                              <td>
+                                                  <p>For Services, the <b>predominant place of performance</b> at the time of
+                                                  award or <b>where subscription/software licenses are used</b>.</p>
+                                                  <p>For Goods/Supplies, use manufacture site or location item was taken
+                                                  from inventory.</p>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="fname">Small Business Designations</td>
+                                              <td>
+                                                  Don’t forget “<b>CO Size Determination</b>” even if not a small business (select “Other than Small”).
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="fname">Socio-economic Designations</td>
+                                              <td>
+                                                  Flags vendors by <b>special interest groups and type of small business.
+                                                  Select all applicable</b> small business fields.
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="fname">State of Incorporation</td>
+                                              <td>
+                                                  Identify the state the business is <b>registered</b> in.
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="fname">Vendor Information</td>
+                                              <td>Ensure <b>consistent input of Vendor Name</b> for proper analytics; can
+                          reference Unique Entity Identifier (UEI #), but for large businesses, there can still be multiple options.
+                                                  <ul>
+                                                      <li> 
+                                                      Vendor is the entity from which the product or service is being purchased.
+                                                      </li> 
+                                                      <li> 
+                                                      <b>Differentiated from Original Equipment Manufacturer (OEM)</b>
+                                                      who performs the primary activities to manufacture the goods or
+                                                      derives at least 40% of its revenues from the services provided.
+                                                      </li> 
+                                                  </ul>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                      </div>
+                  </div>
+                  <h3 class="usa-accordion__heading">
+                      <button id="data-elements-technology-categorization" class="accordion" aria-expanded="false" aria-controls="b-a7" onclick="displayTabContent(this)">
+                      <span>
+                      Data Elements - Technology Categorization
+                      </span>
+                      <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
+                      </button>
+                  </h3>
+                  <div id="b-a7" class="accordion-content ">
+                      <div>
+                          <!-- <div class="links-list"> -->
+                              <div>
+                                  <p class="tab-p">
+                                      This section of the guide provides a list of key Technology Categorization fields that require very specific and important information. They identify the types of technology being purchased and how. Completing these data fields accurately and thoroughly will improve data quality and enable enhanced analytics, which will aid in informed decision making. The table below lists the fields and guidance on how best to complete them.
+                                  </p>
+                                  <table class="styled-table">
+                                      <thead>
+                                          <tr>
+                                              <th>Technology Categorization</th>
+                                              <th>Guidance on Completing</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody>
+                                          <tr>
+                                              <td class="fname">Principal NAICS Code</td>
+                                              <td>
+                                                  NAICS Codes <b>designate the major sectors of the economies</b> of Mexico,
+                                                  Canada and the US for a given business entity. It is used for <b>statistical analysis, to certify businesses by industry type,</b> and to determine <b>eligibility for specific government contracts</b>. Update Product Service Code (PSC) slightly:  " <b>Select the most accurate PSC</b> to reflect the scope of contract. See resources:
+                                                  <ul>
+                                                      <li>Select code used in the solicitation.</li>
+                                                      <li>Identify primary business activity.</li>
+                                                      <li>The <a href="https://navigator.gsa.gov/app/#/home">IT Solutions</a> Navigator provides guidance to customers on selecting
+                                                      the best solutions from GSA’s IT offerings; suggests solutions based on
+                                                      PSC, NAICS and key words and will provide mappings between PSCs
+                                                      and NAICS codes.</li>
+                                                  </ul>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="fname">Product Service Code(PSC)</td>
+                                              <td><b>Select the most accurate PSC</b> to reflect the scope of contract. Resources to help with proper selection: 
+                                                  <ul>
+                                                      <li> 
+                                                      <a href="https://psctool.us/mappings">PSC Selection Tool</a>
+                                                      </li> 
+                                                      <li> 
+                                                      <a href="https://dau.csod.com/phnx/driver.aspx?routename=Learning/Curriculum/CurriculumPlayer&amp;TargetUser=980420&amp;curriculumLoId=9bf476bc-e1fe-4de9-8328-8c28c7c1dbe0&amp;isCompletionRedirect=true&amp;loStatus=32&amp;regnum=1">PSC Training</a>
+                                                      </li> 
+                                                      <li> 
+                                                      <a href="https://www.federalregister.gov/documents/2017/01/13/2016-31495/federal-acquisition-regulation-uniform-use-of-line-items">FAR Rule</a>
+                                                      </li> 
+                                                  </ul>
+                                              </td>
+                                          </tr>
+                                          <tr>
+                                              <td class="fname">Description of Requirement</td>
+                                              <td>
+                                                  Description of Requirement field should be <b>detailed and
+                                                  consist of keywords that describe what is being purchased</b>.
+                                                  Used for various filtering, sorting, and categorization of spend.
+                                                  <br><br>
+                                                  Add details describing the following:
+                                                  <ul>
+                                                      <li><b>Who</b> - Clearly identify the party providing services/products, including OEMs, vendors, and resellers.</li>
+                                                      <li><b>What</b> - Clearly identify what is to be delivered or service
+                                                      performed; use sublines to differentiate components and list each
+                                                      deliverable product or service separately (i.e. - hardware vs. software vs. service).</li>
+                                                      <li>For modifications, add the details of <b>what is being adjusted/appended to original description</b>.</li>
+                                                  </ul>
+                                              </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                  <div>
+                                  <div class="links-list-heading">
+                                      <h4 class="margin-0 margin-top-2">
+                                          Suggested Format for 'Description of Requirement' Input Field:        
+                                      </h4>
+                                  </div>
+                                  <p style="background-color:#333333; color:white;" class="padding-1">
+                                      <a style="color:#8bffff;">MFG/OEM</a> : <a style="color:#fe945d;">Vendor/Reseller</a> : <a style="color:#ffd66b ;">Product Name/SKU/Part #</a> : <a style="color:#c180fe;">Unit of Measure</a> : <a style="color:#c9f982;">Description</a>
+                                  </p>
+                                  <div class="links-list-heading">
+                                      <h4 class="margin-0 margin-top-2">
+                                          Service Examples:       
+                                      </h4>
+                                  </div>
+                                  <p style="background-color:#333333; color:white;" class="padding-1">
+                                      <a style="color:#8bffff;">ServiceNow</a> : <a style="color:#fe945d;">CarahSoft</a> : <a style="color:#ffd66b ;">Implementation</a> : <a style="color:#c180fe;">Hour</a> : <a style="color:#c9f982;">Contracting for a block of 500 hours for the phase I implementation of ServiceNow.</a>
+                                  </p>
+                                  <ul>
+                                      <li>N/A: HP Enterprise Services: Hosting: Rack: Data center service associated with hosting and operation of the open payments program system. </li>
+                                      <li>N/A: Example Technologies: Help Desk Support Services: Hour: IT and Telecom - End User: Help Desk Tier 1-2, Workspace, Print, Productivity Tool.</li>
+                                  </ul>
+                                  <div class="links-list-heading">
+                                      <h4 class="margin-0 margin-top-2">
+                                          Product Examples:      
+                                      </h4>
+                                  </div>
+                                  <p style="background-color:#333333; color:white;" class="padding-1">
+                                      <a style="color:#8bffff;">Microsoft</a> : <a style="color:#fe945d;">Dell Marketing L.P.</a> : <a style="color:#ffd66b ;">O365 License</a> : <a style="color:#c180fe;">Per User</a> : <a style="color:#c9f982;">Enterprise agreement for 92,000 user subscriptions of Microsoft Office 365, Windows 10 Enterprise </a>
+                                  </p>
+                                  <ul>
+                                      <li>ServiceNow: CarahSoft: IT Service Management License: Per User: ServiceNow service desk 1000 user licenses.</li>
+                                      <li>Cisco: XYZ Technologies, LLC: Switches and routers #LG-54401: Each: Cisco infrastructure switches and routers.</li>
+                                  </ul>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+                  <h3 class="usa-accordion__heading">
+                      <button id="dashboard-analytics" class="accordion" aria-expanded="false" aria-controls="b-a8" onclick="displayTabContent(this)">
+                      <span>
+                      Dashboard Analytics
+                      </span>
+                      <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
+                      </button>
+                  </h3>
+                  <div id="b-a8" class="accordion-content ">
+                      <div>
+                          <div class="links-list-heading">
+                              <h4  class="margin-0 margin-top-2">
+                                  Suggested Format for 'Description of Requirement' Input Field:        
+                              </h4>
+                          </div>
+                          <p class="tab-p">
+                              By using 
+                              <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A//d2d.gsa.gov/cas%3Fdestination%3Dnode/9585&securityLevel=securePlus2&renew=true">Agency Profile Report (2.0)
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                              </a>, agencies are able to:
+                              <br>
+                              <ul>
+                                  <li> 
+                                  View spend by Vendor, Contract Type, or Cost Category.
+                                  </li> 
+                                  <li> 
+                                  Compare Total Obligations YoY and Spend Under Management.
+                                  </li> 
+                                  <li> 
+                                  Understand the overall quality of the data for compliance and accuracy.
+                                  </li> 
+                              </ul>
+                          </p>
+                          <p class="tab-p">
+                              It provides an overall summary of acquisitions by Department and enables peer to peer or Government-wide comparisons.
+                          </p>
+                          <div class="links-list-heading">
+                              <a target="_blank" rel="noreferrer noopener" class="tab-header-link" href="https://d2d.gsa.gov/report/government-wide-category-management-contract-management-and-operational-reporting-tools" tabindex="0">
+                                      Category Management Dashboards (Data 2 Decisions - D2D)
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                              </a>
+                          </div>
+                          <p class="tab-p">
+                              Category Management Dashboards use Tableau on the D2D platform to create rich visualizations. The data is sourced from the Federal Acquisition Service (FAS) Procurement Tables, based primarily from the FPDS data source, but also enriched with contract and categorization data. These dashboards are available to all stakeholders. They provide a multitude of perspectives and filtering capabilities that empower stakeholders to perform traditional and advanced analytics, ranging from agency specific to government-wide.
+                          </p>
+                          <div class="links-list-heading">
+                              <h4  class="margin-0 margin-top-2">
+                                  Small Business & Common/Defense-Centric Spend      
+                              </h4>
+                          </div>
+                          <p class="tab-p">
+                              The
+                              <a target="_blank" rel="noreferrer noopener" href="https://d2d.gsa.gov/report/small-business-dashboard">Small Business Dashboard
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                              </a>
+                              provides small business designations as well as vendor-attribute designations based on the vendor information and socio-economic flags.
+                          </p>
+                      </div>
+                  </div>
+                  <p class="tab-p-large">
+                      For additional guidance on navigating the D2D Dashboard analytics, please visit our 
+                      <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/services/market-and-it-data-intelligence/#studies-research-guides">
+                      Studies, Research, and Guides
+                      </a>
+                      Studies, Research, and Guides on the earlier page for more.
+                  </p>
+              </div>
+          </div>
+      </div>
+       <div class="content-nav">
+          <div class="nav-list">
+             <h3>On this Tab</h3>
+             <a class="page-nav page-nav-active" href="#contract-guidance-overview" onclick="return removeTabContent(this)">Market & Acquisition Research</a>
+             <a class="page-nav" href="#purpose" onclick="return removeTabContent(this)">Purpose</a>
+             <a 
+             tabindex="0" class="page-nav accordion-nav" aria-controls="data-sources">
+             Data Sources
+             </a>
+             <a
+             tabindex="0" class="page-nav accordion-nav" aria-controls="data-elements-cost-pop">
+             Data Elements - Cost/PoP
+             </a>
+             <a
+             tabindex="0" class="page-nav accordion-nav" aria-controls="data-elements-enitity-contract-type">
+             Data Elements - Entity/Contract Type
+             </a>
+             <a
+             tabindex="0" class="page-nav accordion-nav" aria-controls="data-elements-technology-categorization">
+             Data Elements - Technology Categorization
+             </a>
+             <a
+             tabindex="0" class="page-nav accordion-nav" aria-controls="dashboard-analytics">
+             Dashboard Analytics
+             </a>
+          </div>
+       </div>
+    </div>
+    <div id="data-tools" class="tabcontent">
+       <div class="contents">
+          <h3 id="" class="topic-heading">
+             Data Tools
+          </h3>
+          <h3 id="product-service-code-guide" class="sub-topic-heading">
+             Product Service Codes Guide
+          </h3>
+          <p class="tab-p">
+              In FY21 a new structure was collaboratively derived to address both the IT Community need to identify the spend and type of technology resource being acquired, and the acquisition community need to identify the method of acquisition. This retained the existing 4 character code limitation without interfering with any other existing PSCs in use. To identify the type of technology resource being acquired, three different PSC types were specified: * Technical and Professional services, which represents contract labor * Capability as a Service to represent cloud-based services acquired on a term or subscription basis * Hardware and Software products acquired on a permanent or perpetual basis
+          </p>
+          <div class="links-list">
+              <ul>
+                  <li class="">
+                      <a target="_blank" rel="noreferrer noopener" href="https://www.acquisition.gov/psc-manual" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
+                              Product Service Code Manual with resources 
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+                  <li class="">
+                      <a target="_blank" rel="noreferrer noopener" href="https://www.acquisition.gov/sites/default/files/manual/PSC%20Manual%20April%202022.pdf" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                              Product Service Code Manual
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+                  <li class="">
+                      <a target="_blank" rel="noreferrer noopener" href="https://psctool.us/home" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
+                              Product Service Code Select Tool
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+                  <li class="">
+                      <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/assets/files/A-Guide-to-Finding-PSC-codes-508dk.pdf" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                              Product Service Code User Story
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <h3 id="naics" class="sub-topic-heading">
+              North American Industry Classification System (NAICS)
+          </h3>
+          <p class="tab-p">
+              NAICS was developed under the auspices of the Office of Management and Budget (OMB), and adopted in 1997 to replace the Standard Industrial Classification (SIC) system. It was developed jointly by the U.S. Economic Classification Policy Committee (ECPC), Statistics Canada, and Mexico's Instituto Nacional de Estadistica y Geografia, to allow for a high level of comparability in business statistics among the North American countries.
+          </p>
+          <div class="links-list">
+              <ul>
+                  <li class="">
+                      <a target="_blank" rel="noreferrer noopener" href="https://www.census.gov/naics/" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
+                              NAICS Code Website
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+                  <li class="">
+                      <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/assets/files/A-Guide-to-Finding-NAICS-codes-508dk.pdf" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
+                              NAICS Guide User Story
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <h3 id="d2d" class="sub-topic-heading">
+              Data Analysis Dashboard (D2D)
+          </h3>
+          <p class="tab-p">
+              Government-Wide Category Management Reporting and Analytics maintains a series of dashboards and tools to support stakeholders in the full CM lifecycle.  The D2D Portal is the gateway to data-driven decisions. It is a data analytics portal that is used to share business insights, including visualizations, reports and datasets. The D2D Portal enables users to search for, access, and share dashboards, datasets, and other content supporting data-driven decision-making across a broad range of stakeholders.
+          </p>
+          <div class="links-list">
+              <ul>
+                  <li class="login-require">
+                      <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A//d2d.gsa.gov/cas%3Fdestination%3Dnode/8166&securityLevel=securePlus2&renew=true" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="Graph icon" src="{{site.baseurl}}/assets/images/icons/graph-icon.svg">
+                              Acquisition Analytics
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+                  <li class="">
+                      <a target="_blank" rel="noreferrer noopener" href="https://www.fedramp.gov/program-basics/" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
+                              FedRAMP
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+                  <li class="login-require">
+                      <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A//d2d.gsa.gov/cas%3Fdestination%3Dnode/9576&securityLevel=securePlus2&renew=true" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="Graph icon" src="{{site.baseurl}}/assets/images/icons/graph-icon.svg">
+                              Operational Reporting Workbench
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+                  <li class="">
+                      <a target="_blank" rel="noreferrer noopener" href="https://d2d.gsa.gov/report/cm-reporting-workbench-cmr" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="Graph icon" src="{{site.baseurl}}/assets/images/icons/graph-icon.svg">
+                              CM Reporting Workbench
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+                  <li class="">
+                      <a target="_blank" rel="noreferrer noopener" href="https://d2d.gsa.gov/report/small-business-dashboard" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="Graph icon" src="{{site.baseurl}}/assets/images/icons/graph-icon.svg">
+                              Small Business Dashboard
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+                  <li class="login-require">
+                      <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A//d2d.gsa.gov/cas%3Fdestination%3Dnode/10389&securityLevel=securePlus2&renew=true" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="Graph icon" src="{{site.baseurl}}/assets/images/icons/graph-icon.svg">
+                              GW Procurement Equity Tool
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <h3 id="it-dashboard" class="sub-topic-heading">
+          IT Dashboard
+          </h3>
+          <p class="tab-p">
+              The IT Dashboard  provides Federal agencies and the public with the ability to view details of Federal information technology (IT) investments online and to track their progress over time.
+          </p>
+          <p class="tab-p">
+              The Federal IT Dashboard helps the Office of Management and Budget (OMB) meet their statutory collection and reporting obligations by streamlining data submissions and transforming the Federal IT Data collection into a coherent, modularized ecosystem. This ecosystem is centered around an improved data collection effort that better supports partner agencies and OMB. In addition, the modernization of the Federal IT Dashboard includes the enhancement of visual renderings through an updated user interface. This will act as a premier user-centric site, allowing for integrated metrics, enhanced analytics, and decision support tools.
+          </p>
+          <div class="links-list">
+              <ul>
+                  <li class="login-require">
+                      <a target="_blank" rel="noreferrer noopener" href="https://www.itdashboard.gov/" tabindex="0">
+                          <p>
+                              <img class="front-icon" alt="Graph icon" src="{{site.baseurl}}/assets/images/icons/graph-icon.svg">
+                              Federal IT Dashboard
+                              <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
+                          </p>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+       <div class="content-nav">
+          <div class="nav-list">
+             <h3>On this Tab</h3>
+             <a class="page-nav page-nav-active" href="#product-service-code-guide" onclick="return removeTabContent(this)">Market & Product Service Codes Guide</a>
+             <a class="page-nav" href="#naics" onclick="return removeTabContent(this)">North American Industry Classification System (NAICS)</a>
+             <a class="page-nav" href="#d2d" onclick="return removeTabContent(this)">
+             Data Analysis Dashboard (D2D)
+             </a>
+             <a class="page-nav" href="#it-dashboard" onclick="return removeTabContent(this)">
+             IT Dashboard
+             </a>
+          </div>
+       </div>
+    </div>
+  </section>
