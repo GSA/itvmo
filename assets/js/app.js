@@ -357,7 +357,7 @@ if(document.getElementById('page-directory') != null) //Other page beside homepa
 }
 
 /**
-This function when call will check if the URL contain the payload that will direct the user to specific tab of the page and specific sub heading on the side navigation of the tab.
+This function when call will check if the URL contain parameters that will direct the user to specific tab of the page and specific sub heading on the side navigation of the tab.
 Not all the side nav on the page have the id, create id for the side nav first before contain it on the payload.
 Example: "href="{{site.baseurl}}/services/oem?tabName=contract-review-header&sideNav=sn-crs-process""
 **/
@@ -890,6 +890,11 @@ function populateDirectory()
   let currentUrl = window.location.href;
   let urlSplit = currentUrl.replace("http://","")
   urlSplit = urlSplit.split("/")
+  //If contain # meaning that it have HTML ID on the url, therefore remove it from the currentUrl before proceed.
+  if(currentUrl.includes('#'))
+  {
+    currentUrl = currentUrl.replace(`${urlSplit[urlSplit.length-1]}`,'');
+  }
   urlSplit.pop();
   let newElements = ``;
   for(let i = urlSplit.length-1; i >= 0; i--)
@@ -901,7 +906,6 @@ function populateDirectory()
     cp = cp.replace(/oem/gi, "OEM Support");
     // cp = cp.replace(//gi, "");
     
-
     //This using for the sandbox, delete this later!!
     if(currentUrl == "https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/main-itvmo-redesign-up-to-date/")
     {
