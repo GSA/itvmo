@@ -170,9 +170,9 @@ collections:
   - label: Publishers
     name: publishers
     folder: _article_publishers/
-    hide: true
-    # create: true
-    slug: "{{name}}"
+    # hide: true
+    create: true
+    slug: "{{slug}}"
     identifier_field: name
     summary: "{{name}}"
     fields: 
