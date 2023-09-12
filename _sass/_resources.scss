@@ -2001,6 +2001,9 @@ html *
 /* Links list design */
 .links-list-heading
 {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
   h4 
   {
     font-weight: 700;
@@ -2155,6 +2158,13 @@ html *
       }
 
     }
+    .login-require
+    {
+      a
+      {
+        background-position: right 10px bottom 75%;
+      }
+    }
   }
 }
 
@@ -2246,7 +2256,13 @@ html *
     {
       li 
       {
-        height: 80px;
+        height: auto;
+        a 
+        {
+          height: auto;
+          min-height: 50px;
+          padding: 10px 10% 10px 10px;
+        }
       }
     }
   }
