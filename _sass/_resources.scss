@@ -1925,6 +1925,11 @@ html *
   color: #005087;
   font-size: 18px;
 }
+.blue-600
+{
+    font-weight: 600;
+    color: #005087;
+}
 /*Light blue background for the site*/
 #core-services, #homepage-body, #new-main-content
 {
@@ -1949,6 +1954,14 @@ html *
     color: #FFFFFF !important;
     height: 28px !important;
   }
+}
+.external-link-it-buyers
+{
+  width: 265px;
+}
+.external-link-subscribe
+{
+  width: 167px;
 }
 /* Page Announcements */
 #page-announcements
@@ -2149,7 +2162,7 @@ html *
           border-bottom: #d7d7d7 1px solid;
           font-weight: 600;
           font-size: 16px;
-          padding: 15px 0px;
+          padding: 15px 8% 15px 0px;
           column-gap: 8px;
         }
         .link-description
@@ -2157,12 +2170,56 @@ html *
           color: #555555;
           padding: 15px 10px;
         }
+        .two-column-link-list-container
+        {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+          padding: 15px;
+          .link-heading-list
+          {
+            overflow: unset;
+            height: auto;
+            h4 
+            {
+              margin: 0;
+              font-weight: 600;
+              font-size: 16px;
+            }
+          }
+          .link-description-list
+          {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 100px;
+            row-gap: 5px;
+            ul 
+            {
+              list-style-type: disc;
+              padding-left: 20px;
+              li 
+              {
+                max-width: none;
+                height: auto;
+                color: #333333;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
       }
       a:hover 
       {
         text-decoration: none;
       }
 
+    }
+    .link-with-description-width
+    {
+      max-width: 620px;
     }
     .login-require
     {
@@ -2345,7 +2402,7 @@ html *
 }
 #page-directory, .tabcontent
 {
-  .tab-supheading, a, li, p, b, span, u
+  .tab-supheading, a, li, p, b, span, u, i
   {
     font-family: 'Source Sans 3', sans-serif !important;
   }
@@ -2436,6 +2493,12 @@ html *
       background-color: #aaaaaa;
       margin-top: 15px;
       margin-bottom: 15px;
+    }
+    .end-content
+    {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      width: 100%;
     }
     .end-content
     {
