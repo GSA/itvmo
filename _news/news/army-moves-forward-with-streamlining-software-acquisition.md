@@ -14,7 +14,7 @@ synopsis: >-
   acquisition reform, highlighted both successes and challenges at an AFCEA NOVA
   event. 
 
-  * Thi approach to software acquisition acknowledges the short lifespan of technology and aims to streamline the process. The software acquisition pathway, introduced by the Pentagon in 2020, provides flexibility for acquisition professionals.
+  * This approach to software acquisition acknowledges the short lifespan of technology and aims to streamline the process. The software acquisition pathway, introduced by the Pentagon in 2020, provides flexibility for acquisition professionals.
 
   * Currently, the Army has nine programs in the software acquisition pathway, ranging from complex to straightforward. Four of these programs are already in the execution phase with scheduled deliveries of iterative capabilities.
 ---
