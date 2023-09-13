@@ -95,11 +95,12 @@ if(document.getElementById('news') != null)
       finalArticles.push(
         {
         "publisher":a.getAttribute("data-publisher"),
-        "title":a.getAttribute("data-title"),
-        "description":a.getAttribute("data-description"), 
+        "title":a.children[0].innerHTML,
+        "description":a.children[1].innerHTML, 
         "link":a.getAttribute("data-url"),
         "date":a.getAttribute("data-publication-date"),
-        "synopsis":a.getAttribute("data-synopsis")
+        "synopsis":a.children[2].innerHTML,
+        "path":a.getAttribute("data-path")
       });
 
       
@@ -128,7 +129,8 @@ if(document.getElementById('news') != null)
       {
         "name":publisher.getAttribute("data-publisher"),
         "link":publisher.getAttribute("data-url"),
-        "logo":publisher.getAttribute("data-logo")
+        "logo":publisher.getAttribute("data-logo"),
+        "path":a.getAttribute("data-path")
       };
       publisherMap.set(currPublisher.name, currPublisher);
     }
@@ -181,7 +183,7 @@ if(document.getElementById('news') != null)
       let articleLink = articles[i].link;
       if(articles[i].synopsis != "")
       {
-        articleLink = baseUrl+"/news/"+stringToSlug(articles[i].title); //!!File slug
+        articleLink = baseUrl+articles[i].path.replace("_news", "").replace(".md",""); //!!File slug
       }
       dispalyArticles +=     
       `<div class="article-card-container">
@@ -211,15 +213,6 @@ if(document.getElementById('news') != null)
       `;
     }
     articleList.innerHTML = dispalyArticles;
-  }
-
-  function stringToSlug(inputString) 
-  {
-    return inputString
-      .toLowerCase()                       // Convert to lowercase
-      .replace(/[^a-zA-Z0-9-]+/g, '-')    // Replace non-alphanumeric characters with hyphens
-      .replace(/^-+|-+$/g, '')            // Remove hyphens from the beginning and end
-      .trim();                            // Trim any extra spaces
   }
 
   //This function populate Pagination on the News page.
@@ -982,9 +975,9 @@ function retriveEventsData()
     const eventTime = `${getDateTime(startTime)} - ${getDateTime(endTime)} EST`;
     const currEvent =       
     {
-      "organizer":ev.getAttribute("data-organizer"),
-      "title":ev.getAttribute("data-title"),
-      "description":ev.getAttribute("data-description"), 
+      "organizer":ev.children[0].innerHTML,
+      "title":ev.children[1].innerHTML,
+      "description":ev.children[2].innerHTML, 
       "link":ev.getAttribute("data-url"),
       "date":startTime,
       "day":weekdaysShort[startTime.getUTCDay()],

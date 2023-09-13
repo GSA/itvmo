@@ -3743,6 +3743,11 @@ html *
 {
   display: none !important;
   visibility:hidden !important;
+  .raw-event-data
+  {
+    display: none !important;
+    visibility:hidden !important;
+  }
 }
 .resource-cards
 {

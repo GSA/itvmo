@@ -5,11 +5,13 @@
       class="raw-article-data"
       data-publisher="{{article.publisher}}"
       data-title="{{article.title}}"
-      data-description="{{article.description}}"
       data-url="{{article.url-link}}"
       data-publication-date="{{article.publication-date}}"
-      data-synopsis="{{article.synopsis}}"
+      data-path="{{article.path}}"
     >
+      <p>{{article.title}}</p>
+      <p>{{article.description}}</p>
+      <p>{{article.synopsis}}</p>
     </div>
     {% endfor %}
     {% for publisher in site.article_publishers %}
@@ -18,6 +20,7 @@
       data-publisher="{{publisher.name}}"
       data-logo="{{publisher.publisher-logo}}"
       data-url="{{publisher.url-link}}"
+      data-path="{{publisher.path}}"
     >
     </div>
     {% endfor %}

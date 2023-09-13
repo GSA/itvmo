@@ -2,9 +2,6 @@
    {% for event in site.events %}
    <div
      class="raw-event-data"
-     data-organizer="{{event.organizer}}"
-     data-title="{{event.title}}"
-     data-description="{{event.description}}"
      data-url="{{event.url-link}}"
      data-st="{{event.start-time}}"
      data-et="{{event.end-time}}"
@@ -12,8 +9,9 @@
      data-gov-only="{{event.gov-only}}"
      data-is-external="{{event.is-external}}"
    >
-      {{event.title}}
-     is-visible
+      <p>{{event.organizer}}</p>
+      <p>{{event.title}}</p>
+      <p>{{event.description}}</p>
    </div>
    {% endfor %}
    {% for event in site.past_event_highlight %}

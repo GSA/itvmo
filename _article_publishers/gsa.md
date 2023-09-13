@@ -1,5 +1,5 @@
 ---
 name: GSA
-url-link: www.gsa.gov/
+url-link: www.gsa.gov
 publisher-logo: assets/uploads/gsa-final.png
 ---
