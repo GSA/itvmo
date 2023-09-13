@@ -1,5 +1,5 @@
 ---
 name: Executivegov
-url-link: executivegov.com/
+url-link: www.executivegov.com
 publisher-logo: assets/uploads/executivegov-modified.png
 ---
