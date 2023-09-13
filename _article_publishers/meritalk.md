@@ -1,5 +1,5 @@
 ---
 name: Meritalk
 url-link: www.meritalk.com
-publisher-logo: assets/uploads/meri.png
+publisher-logo: assets/uploads/img_0298.png
 ---
