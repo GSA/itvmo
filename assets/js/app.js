@@ -797,7 +797,6 @@ function navOpenTabContent(pageNav)
   {
     aButton = document.getElementById(pageNav.getAttribute("aria-controls"));
     displayTabContent(aButton);//Hide all accordion content and display the correct one
-    setTimeout(function(){ aButton.scrollIntoView({ behavior: "smooth" });}, 500);//Wait until the displayTabContent animation is over before scroll to the section.
   }
 }
 //This function use to hide accordion when click on the side nav options that are not accordion options.
@@ -860,6 +859,7 @@ function displayTabContent(aButton)
     currA.classList.remove("accordion-content-display");
     assignTabIndex(currA, -1);
   }
+  setTimeout(function(){ aButton.scrollIntoView({ behavior: "smooth" });}, 500);//Wait until the displayTabContent animation is over before scroll to the section.
 }
 //This function assign all the Anchor elements that are children of any accordion-content class to tabindex=-1.
 function initalizeTabIndex()
