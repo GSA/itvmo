@@ -1,4 +1,6 @@
 ul.experiences li {
+    height: auto !important;
+    max-width: none !important;
     position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
     /* use padding-bottom instead of margin-bottom.*/ 
     margin-bottom: 0; /* This overrides previously specified margin-bottom */
@@ -40,7 +42,8 @@ ul.experiences li:last-child:before {
 
 
 ul.experiences {
-    padding-left: 15px;
+    display: block !important;
+    padding-left: 15px !important;
     margin-top: -21px;
     padding-top: 40px;
     margin-left: 30px;
@@ -54,6 +57,15 @@ ul.experiences li {
 .bulletText {
     font-size: 1em;
     line-height:2;
+}
+.dropdown-bulletText
+{
+
+}
+.dropdown-topLine
+{
+    overflow: unset !important;
+    margin-top: -6px !important;
 }
 
 .pre-bulletText{

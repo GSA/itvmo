@@ -1885,7 +1885,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.topic-heading, .sub-topic-heading, .sub-topic-heading-italic, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link, .article-card-container *, #page-heading-description, .links-list-heading *, .styled-table *
+.topic-heading, .sub-topic-heading, .sub-topic-heading-italic, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link, .article-card-container *, #page-heading-description, .links-list-heading *, .styled-table *, .link-description-list *
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -2103,7 +2103,7 @@ html *
       {
         margin-right: 5px;
       }
-      a
+      a, .div-a
       {
         display: flex;
         width: 100%;
@@ -2132,7 +2132,7 @@ html *
     }
     .login-require
     {
-      a
+      a, .div-a
       {
         background-image: url('../images/icons/lock.svg');
         background-position: right 2.5% bottom 50%;
@@ -2148,7 +2148,7 @@ html *
       max-width: none;
       width: 100%;
       height: auto;
-      a 
+      a, .div-a 
       {
         display: flex;
         padding: 0px 10px;
@@ -2159,19 +2159,25 @@ html *
         }
         .link-heading
         {
-          border-bottom: #d7d7d7 1px solid;
           font-weight: 600;
           font-size: 16px;
           padding: 15px 8% 15px 0px;
           column-gap: 8px;
         }
+        .link-heading-black
+        {
+          color: #333333;
+        }
         .link-description
         {
+          display: block;
+          border-top: #d7d7d7 1px solid;
           color: #555555;
           padding: 15px 10px;
         }
         .two-column-link-list-container
         {
+          border-top: #d7d7d7 1px solid;
           display: flex;
           flex-direction: column;
           row-gap: 10px;
@@ -2210,12 +2216,139 @@ html *
             }
           }
         }
+        .one-column-link-list-container
+        {
+          border-top: #d7d7d7 1px solid;
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+          padding: 15px;
+          .link-description-list
+          {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            column-gap: 100px;
+            row-gap: 5px;
+            ul 
+            {
+              list-style-type: disc;
+              padding-left: 20px;
+              display: flex;
+              flex-direction: column;
+              row-gap: 15px;
+              li, li *
+              {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+              }
+              li 
+              {
+                ul 
+                {
+                  list-style-type:circle;
+                  row-gap: 5px;
+                  color: #333333;
+                }
+                max-width: none;
+                height: auto;
+                p
+                {
+                  color: #333333;
+                }
+                .large-text
+                {
+                  font-weight: 600;
+                  font-size: 16px;
+                  line-height: 36px;
+                }
+                a 
+                {
+                 display: flex;
+                 flex-direction: row;
+                 align-items: center;  
+                 column-gap: 5px;
+                 border: none;
+                 padding: 0;
+                 height: auto;
+                 width: fit-content;
+                }
+                a:hover
+                {
+                  background-color: transparent !important;
+                  text-decoration: underline;
+                }
+                .link-description-list-a
+                {
+                  display: inline;
+                  a
+                  {
+                    display: inline;
+                    border: none;
+                    padding: 0;
+                    font-size: 14px;
+                    line-height: 20px;
+                  }
+                  a:hover 
+                  {
+                    background-color: transparent !important;
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
       a:hover 
       {
         text-decoration: none;
       }
-
+      .div-a
+      {
+        p 
+        {
+          color: #333333;
+        }
+        .link-heading
+        {
+          display: inline;
+          border: none;
+          width: fit-content;
+          padding: 0;
+          margin: 15px 8% 15px 0px;
+          .link-icon
+          {
+            margin-right: 3px;
+          }
+          .external-icon
+          {
+            margin-left: 3px;
+          }
+        }
+        a:hover 
+        {
+          background-color: transparent !important;
+          text-decoration: underline;
+        }
+        .link-description
+        {
+          a
+          {
+            display: inline;
+            border: none;
+            padding: 0;
+            font-size: 14px;
+            line-height: 20px;
+          }
+          a:hover 
+          {
+            background-color: transparent !important;
+            text-decoration: underline;
+          }
+        }
+      }
     }
     .link-with-description-width
     {
@@ -2320,7 +2453,7 @@ html *
       li 
       {
         height: auto;
-        a 
+        a , .div-a
         {
           height: auto;
           min-height: 50px;
@@ -2410,9 +2543,27 @@ html *
   {
     font-size: 16px;
   }
+  .tab-p
+  {
+    a 
+    {
+      img 
+      {
+        padding-left: 3px;
+      }
+    }
+  }
   .tab-image-overflow
   {
     width: 100%;
+  }
+  .tab-p-small-bold
+  {
+    font-size: 14px;
+    color: #37465e;
+    line-height: 17px;
+    font-weight: 700;
+    
   }
   .tab-p-large
   {
