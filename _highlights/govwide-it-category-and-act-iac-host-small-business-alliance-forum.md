@@ -6,7 +6,7 @@ description: The ITVMO serves as a trusted independent advisor and advocate to
   laws. As a one-stop shop, we can leverage governmentwide IT procurement data,
   conduct market research, and develop shared agency acquisition knowledge to
   support agencies in procurement decisions.
-url-link: itvmo.gsa.gov/community/
+url-link: https://itvmo.gsa.gov/community/
 publication-date: July 10 2022
 background-image: assets/uploads/highlight-image-testing2.png
 ---
