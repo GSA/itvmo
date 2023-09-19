@@ -3,6 +3,8 @@
 @import'table';
 @import 'beta-release';
 @import 'inner-page-link-description';
+@import 'about';
+@import 'partner';
 .no-style {
   text-decoration: none;
   color: black;
@@ -2547,6 +2549,7 @@ html *
   }
   .tab-p
   {
+    color: #333333 !important;
     a 
     {
       img 

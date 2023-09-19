@@ -1,0 +1,232 @@
+#team-container
+{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 47px;
+    row-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    .team-member
+    {
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        width: 282px;
+        height: 384px;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+        border: #d7d7d7 1px solid;
+        border-radius: 10px;
+        -moz-box-shadow: 5px 5px 5px rgba(85, 85, 85, 0.34901960784313724);
+        -webkit-box-shadow: 5px 5px 5px rgba(85, 85, 85, 0.34901960784313724);
+        box-shadow: 5px 5px 5px rgba(85, 85, 85, 0.34901960784313724);
+        .profile-pic
+        {
+            height: 260px;
+            width: 260px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        h1 , p
+        {
+            margin: 0;
+        }
+        .profile-name
+        {
+            font-weight: 650;
+            font-size: 23px;
+            color: #005087;
+            margin-bottom: 5px;
+        }
+        .profile-title
+        {
+            color: #636363;
+            line-height: 22px;
+            font-size: 18px;
+            font-style: italic;
+        }
+        
+    }
+    .team-member:hover 
+    {
+        background-color: rgba(242, 242, 242, 1);
+    }
+}
+.overlay-team-member
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    .profile-pic
+    {
+        height: 260px;
+        width: 260px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    h1 , p
+    {
+        margin: 0;
+    }
+    .profile-name
+    {
+        font-weight: 650;
+        font-size: 23px;
+        color: #005087;
+        margin-bottom: 0px;
+    }
+    .profile-title
+    {
+        color: #636363;
+        line-height: 22px;
+        font-size: 18px;
+        font-style: italic;
+    }
+    .overlay-team-member-left
+    {
+        width: 28%;
+        .profile-name, .profile-title
+        {
+            display: none;
+            visibility: hidden;
+        }
+    }
+    .overlay-team-member-right
+    {
+        width: 72%;
+    }
+}
+.profile-detail
+{
+    border-top: #d5d5d5 1px solid;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    font-size: 16px;
+    div 
+    {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        img 
+        {
+            width: 16px;
+            height: 19px;
+        }
+    }
+}
+.profile-About
+{
+    border-top: #ebebeb 1px solid;
+    margin-top: 20px;
+    padding-top: 20px;
+    h4, p 
+    {
+        color: #333333;
+        margin: 0;
+    }
+    h4 
+    {
+        font-weight: 650;
+        font-size: 21px;
+    }
+    p
+    {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
+.usa-modal-team-member 
+{
+    max-width: 1158px;
+    width: 100%;
+    .profile-pic
+    {
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.usa-modal__footer
+{
+    float: right;
+    .team-member-button
+    {
+        background-color: #005087;
+    }
+}
+.usa-modal__close
+{
+    padding: 1.25rem 1.25rem;
+}
+@media screen and (max-width: 1158px)
+{
+    .usa-modal-team-member 
+    {
+        max-width: 500px;
+        width: 100%;
+    }
+    .overlay-team-member
+    {
+        display: flex;
+        flex-direction: column;
+        column-gap: 30px;
+
+        .overlay-team-member-left
+        {
+            width: 100%;
+            .profile-name, .profile-title
+            {
+                display: block;
+                visibility: visible;
+            }
+            .profile-title
+            {
+                margin-bottom: 15px;
+            }
+        }
+        .overlay-team-member-right
+        {
+            width: 100%;
+            .profile-name, .profile-title
+            {
+                display: none;
+                visibility: hidden;
+            }
+        }
+    }
+    .profile-About
+    {
+        border-top: none;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .overlay-team-member-left
+    {
+        .profile-pic
+        {
+            height: 263px;
+            width: 263px;
+        }
+        .profile-title
+        {
+            font-size: 16px;
+        }
+    }
+    .profile-detail
+    {
+        p 
+        {
+            font-size: 15px;
+        }
+    }
+}

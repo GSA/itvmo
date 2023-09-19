@@ -1,0 +1,153 @@
+.usa-card__container
+{
+    max-width: 900px;
+    padding: 10px;
+}
+.leftPort
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 500px) {
+    .resCardSec
+    {
+        img 
+        {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+        a 
+        {
+            h2
+            {
+                font-size: 19px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 800px) {
+    .serviceCard {
+      display: none !important;
+
+    }
+    .resCardSec{
+    border-bottom: 1px solid #D7D7D7;
+    display: flex !important;
+    align-items: center;
+    column-gap: 8px !important;
+    img 
+    {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    a 
+    {
+        text-decoration: none;
+    }
+    a:hover 
+    {
+        text-decoration: underline;
+    }
+
+    }
+    .resCardSec:hover
+    {
+        background-color: transparent !important;
+    }
+    .usa-card__body{
+        margin-left: 0rem !important;
+    }
+    .usa-card__footer{
+        margin-left: 0rem !important;
+    }
+    .resHeading{
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 11px;
+        
+    }
+    .resCardSec:hover{
+        background-color: #F2F2F2;
+        text-decoration: underline;
+    }
+    .partnerHeader{
+        display: none;
+    }
+  
+
+  }
+
+@media only screen and (min-width: 800px) {
+    .resCardSec{
+    display: none;
+    }
+    .resTitle{
+        margin-top: 0px;
+    }
+    .serviceCard{
+        margin-top: 13px;
+    margin-bottom: 13px;
+    }
+
+    .usa-card__heading{
+        padding-bottom: 10px;
+    }
+  }
+
+
+.serviceCard{
+    text-align: center;
+    border-right: 1px solid #D7D7D7;
+
+
+}
+
+
+
+.imgCont{
+    padding-left: 10px;
+}
+.imgContres{
+padding: 0px;
+}
+.cardBody{
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+
+.plink{
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color:#0F5ABD;
+    text-decoration: none;
+}
+
+
+
+.usa-card__heading{
+    color:#0F5ABD;
+    font-family:"SourceSansPro-Bold","Source Sans Pro Bold","Source Sans Pro",sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.partnerHeader{
+    color:#0F5ABD;
+    font-family:"SourceSansPro-Bold","Source Sans Pro Bold","Source Sans Pro",sans-serif;
+    font-size: 20px !important;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
