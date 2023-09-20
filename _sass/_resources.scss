@@ -2378,7 +2378,7 @@ html *
   padding-top: 40px;
   padding-bottom: 0px;
   background-color: #0a4777;
-  height: 162px;
+  min-height: 162px;
   #main-page-heading-detail
   {
     h3, p
@@ -2397,7 +2397,8 @@ html *
       font-weight: 400;
       font-size: 16px;
       margin: 0;
-      width: 65%;
+      width: 75%;
+      padding-bottom: 10px;
     }
   }
 }
@@ -2443,7 +2444,7 @@ html *
   {
     padding-top: 10px;
     padding-left: 10px;
-    height: 200px;
+    height: auto;
   }
 }
 
