@@ -9,6 +9,27 @@
     align-items: center;
     justify-content: center;
 }
+.leftPort-flex-start
+{
+    justify-content: flex-start;
+}
+.cardBody
+{
+    .links-list
+    {
+        padding-top: 20px;
+        .links-with-descriptions
+        {
+            .link-with-description
+            {
+                a 
+                {
+                    text-decoration: none !important;
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 500px) {
     .resCardSec
     {
