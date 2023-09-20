@@ -1,0 +1,171 @@
+.service-card
+{
+    margin-left: -25px;
+}
+
+@media only screen and (max-width: 620px) {
+    .service-card
+    {
+        margin-left: 0px;
+    }
+
+    .serviceCard {
+      display: none !important;
+
+    }
+}
+@media only screen and (max-width: 800px) {
+    .serviceCard {
+      display: none !important;
+
+    }
+    .service-link
+    {
+        padding: 0;
+        margin-left: 1.5rem !important;
+    }
+    .resCardSec{
+    border-bottom: 1px solid #D7D7D7;
+    }
+    .usa-card__body{
+        margin-left: 0rem !important;
+    }
+    .usa-card__footer{
+        margin-left: 0rem !important;
+    }
+    .resHeading{
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-left: 11px;
+    }
+    .resCardSec:hover{
+        background-color: #F2F2F2;
+        text-decoration: underline;
+    }
+  
+
+  }
+
+@media only screen and (min-width: 800px) {
+    .resCardSec{
+    display: none;
+    }
+    .resTitle{
+        margin-top: 0px;
+    }
+    .serviceCard{
+        margin-top: 13px;
+    margin-bottom: 13px;
+    }
+    .serviceCard:hover{
+        // background-color:#F2F2F2;
+        cursor: pointer;
+    }
+    .usa-card__heading{
+        padding-bottom: 10px;
+    }
+  }
+
+
+.serviceCard{
+    text-align: center;
+    border-right: 1px solid #D7D7D7;
+    .leftPort{
+        flex-direction: column;
+
+        text-align: center;
+        width: 15rem;
+        font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+        font-weight: 650;
+        font-style: normal;
+        font-size: 20px;
+        color: #005087;
+        text-align: center;
+        text-decoration: none;
+        line-height: 1.2;
+        margin: 0;
+        padding-left: 13px;
+        padding-right: 13px;
+
+        a 
+        {
+            text-decoration: none;
+        }
+        a:hover 
+        {
+            text-decoration: underline;
+            text-decoration-color: #0F5ABD;
+        }
+
+    }
+
+
+}
+
+.imgContSVG
+{
+    min-width: 100px;
+    min-height: 100px;
+    padding: 0;
+}
+
+
+.cardBody{
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.cardHeading{
+    color:#062349;
+    font-family:'Source Sans 3', sans-serif !important;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: -13px;
+}
+
+.usa-card__heading{
+    color:#0F5ABD;
+    font-family:'Source Sans 3', sans-serif !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+.serviceLinks{
+    color:#0F5ABD;
+    font-family:'Source Sans 3', sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #D7D7D7;
+    border-radius: 10px;
+    padding: 10px;
+    // margin-top: 10px;
+    text-decoration: none !important;
+}
+.serviceLinks:hover{
+ background-color:#F2F2F2 ;
+ text-decoration: none;
+}
+
+.linkSec{
+    padding-bottom: 10px;
+}
+
+.noDec{
+    text-decoration: none !important;
+    height: auto;
+    width: auto;
+}
+
+.service-link
+{
+    margin-left: 16.5rem;
+    // padding-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 10px;
+}
+

@@ -1,12 +1,16 @@
 ---
-title: Services 
+title: Services
+title-image: ""
+heading-description: The ITVMO offers a coordinate voice representing agency IT buyers to the vendor community providing domain expertise in OEM and acquisition strategy, market and data intelligence, customer support, small business support, as well as IT policy and catgegory management.
 layout: page
 sidenav: false
+mainpage: true
+redesign: true
 ---
+  <section id="main-page-content" class="usa-graphic-list margin-bottom-4 grid-container padding-0">
+    <section id="page-directory" class="grid-container padding-0"></section>
+    <div class="grid-container grid-container margin-0 padding-0">
+            {% include services.html %}
+    </div>
+  </section>
 
-<section id="redesign-page" class="grid-container border-bottom border-gray-30 padding-left-0 padding-right-1">
-<h1 class="margin-top-0">{{ page.title }}</h1>
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nemo totam nostrum quis voluptate. Cumque placeat deserunt vero laudantium unde, molestiae expedita sit ea exercitationem ad ipsam corporis porro voluptas doloremque officiis maxime, consequatur nesciunt ex aliquam esse recusandae explicabo asperiores. Ea sed expedita eum commodi eveniet fugit, doloremque provident veniam officiis. Sint, earum temporibus? Atque asperiores blanditiis vitae necessitatibus distinctio laborum culpa suscipit mollitia repellat alias. Deserunt nesciunt omnis deleniti temporibus minus officiis numquam amet iusto fugiat id in, corporis facilis atque eveniet dicta earum, corrupti veritatis reiciendis dolorem facere qui ab. Mollitia repudiandae voluptatem illum, minus tempore exercitationem.
-</p>
-</section>
