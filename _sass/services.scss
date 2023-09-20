@@ -1,6 +1,26 @@
+.usa-card:last-child 
+{
+    margin-bottom: 0 !important;
+}
 .service-card
 {
     margin-left: -25px;
+}
+.service-end
+{
+    font-weight: 400;
+    font-size: 17px !important;
+    a, a::after
+    {
+        color: #0F5ABD;
+        text-decoration: none;
+
+    }
+    a:hover 
+    {
+        text-decoration: underline;
+        text-decoration-color: #0F5ABD;
+    }
 }
 
 @media only screen and (max-width: 620px) {
@@ -106,7 +126,6 @@
 {
     min-width: 100px;
     min-height: 100px;
-    padding: 0;
 }
 
 
