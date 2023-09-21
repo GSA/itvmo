@@ -1891,7 +1891,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.topic-heading, .sub-topic-heading, .sub-topic-heading-italic, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link, .article-card-container *, #page-heading-description, .links-list-heading *, .styled-table *, .link-description-list *
+.topic-heading, .sub-topic-heading, .sub-topic-heading-italic, .sub-topic-heading-blue, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link, .article-card-container *, #page-heading-description, .links-list-heading *, .styled-table *, .link-description-list *
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -1917,6 +1917,12 @@ html *
   font-weight: 600;
   font-size: 27px;
   color: #FF5400;
+}
+.sub-topic-heading-blue
+{
+  font-weight: 600;
+  font-size: 27px;
+  color: #062349;
 }
 .sub-topic-heading-italic
 {
@@ -2555,6 +2561,24 @@ html *
   {
     font-family: 'Source Sans 3', sans-serif !important;
   }
+  .tab-img-p
+  {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    align-items: center;
+    #annual-summit-logo
+    {
+      width: 277px;
+      height: 298px;
+    }
+    #kyra
+    {
+      width: 286px;
+      height: 272px;
+      border-radius: 10px;
+    }
+  }
   .tab-p, a, li, p
   {
     font-size: 16px;
@@ -3008,6 +3032,16 @@ html *
   {
     visibility: hidden;
     max-height: 0;
+  }
+  .tabcontent
+  {
+    .tab-img-p
+    {
+      display: flex;
+      flex-direction: column;
+      column-gap: 10px;
+      align-items: center;
+    }
   }
 
 }
