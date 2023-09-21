@@ -1,6 +1,6 @@
 ---
 title: ITVMO ‘Contribute’ Page
-title-image: "/assets/images/icons/page_icons/small-business.svg"
+title-image: "/assets/images/icons/page_icons/contribute-dox.svg"
 heading-description: ""
 layout: page
 sidenav: false
