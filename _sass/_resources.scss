@@ -873,6 +873,10 @@ a.checked {
 }
 @media only screen and (max-width: 1300px)
 {
+  #calendar-date-display 
+  {
+    display: none;
+  }
   #calendar-tab
   {
     .contents-no-side-nav
@@ -972,10 +976,6 @@ a.checked {
   #calendar-tab
   {
     justify-content: center;
-  }
-  #calendar-date-display 
-  {
-    display: none;
   }
   #calendar-tab #calendar-section #calendarSumContainer #current-day-events
   {
