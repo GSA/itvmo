@@ -887,11 +887,11 @@ function populateDirectory()
   urlSplit = urlSplit.split("/")
   urlSplit.pop();
   let newElements = ``;
+  let oldCp = "";
   for(let i = urlSplit.length-1; i >= 0; i--)
   {
     let cp = urlToString(urlSplit[i]);
     currentUrl = currentUrl.replace(`${urlSplit[i+1]}/`,'');
-    console.log(cp);
     //If specific page need specific name on the Directory, insert here
     cp = cp.replace(/oem/gi, "OEM Support");
     cp = cp.replace(/contact us contribute/gi, "ITVMO Support Communication");
@@ -910,7 +910,7 @@ function populateDirectory()
     }
     else if(i > 0)
     {
-      if(cp == 'News')
+      if((cp == 'News' ) && ((oldCp !== "Annual Leading Edge Technologies Report") && (oldCp !== "Quarterly Itvmo Newsletter")))
       {
           newElements = `<p>Relating to ITVMO</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg"><a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
       }
@@ -921,6 +921,7 @@ function populateDirectory()
     {
       newElements+= `<a href="${currentUrl}">Home</a>`
     }
+    oldCp = cp;
   }
   document.getElementById('page-directory').innerHTML = newElements;
 }
