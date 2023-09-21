@@ -895,6 +895,7 @@ function populateDirectory()
     //If specific page need specific name on the Directory, insert here
     cp = cp.replace(/oem/gi, "OEM Support");
     cp = cp.replace(/contact us contribute/gi, "ITVMO Support Communication");
+    cp = cp.replace(/contribute dox/gi, "ITVMO ‘Contribute’ Page");
     // cp = cp.replace(//gi, "");
     
     //This using for the sandbox, delete this later!!
