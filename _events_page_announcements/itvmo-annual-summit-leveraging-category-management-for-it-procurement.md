@@ -1,5 +1,8 @@
 ---
-title: "ITVMO Annual Summit: Leveraging Category Management for IT Procurement"
-description: August 2nd, 9:30-3pm Deloitte- Rosslyn VA,
-url-link: https://www.actiac.org/act-iac-event/leveraging-category-management-it-procurement
+title: Upcoming October IT Buyers COP Meeting
+description: “Mark your calendars for the October IT Buyers COP Meeting (gov
+  only) and keep an eye out for open registration for the November
+  7th  Innovating Government Acquisitions through Emerging Tech Event. Check
+  back often as we add more to the calendar!"
+url-link: https://forms.gle/4vG6kcvJuHPVhR8i7
 ---
