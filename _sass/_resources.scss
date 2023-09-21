@@ -2511,7 +2511,7 @@ html *
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 156px;
+    min-height: 156px;
     width: 70%;
     border-radius: 0px 100px 100px 0px;
     background-color: #ecf1f6;
@@ -2540,6 +2540,19 @@ html *
     line-height: 30px;
     padding-left: 20px;
     width: 67%;
+  }
+}
+@media screen and (max-width: 500px)
+{
+  #inner-page-heading
+  {
+    #page-heading
+    {
+      .page-heading-title
+      {
+        font-size: 28px;
+      }
+    }
   }
 }
 .list-margin-bottom 
