@@ -891,9 +891,10 @@ function populateDirectory()
   {
     let cp = urlToString(urlSplit[i]);
     currentUrl = currentUrl.replace(`${urlSplit[i+1]}/`,'');
-
+    console.log(cp);
     //If specific page need specific name on the Directory, insert here
     cp = cp.replace(/oem/gi, "OEM Support");
+    cp = cp.replace(/contact us contribute/gi, "ITVMO Support Communication");
     // cp = cp.replace(//gi, "");
     
     //This using for the sandbox, delete this later!!

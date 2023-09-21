@@ -96,9 +96,9 @@ secondary_navigation:
   - name: Subscribe
     url: /subscribe/
   - name: Contribute
-    url: /contribute/
+    url: /contact-us-contribute/?tabName=contribute-header
   - name: Contact Us
-    url: /contact-us/
+    url: /contact-us-contribute/?tabName=contact-us-header
 
 # Search.gov configuration
 #

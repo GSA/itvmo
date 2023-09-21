@@ -23,6 +23,18 @@ This template is for a single page that does not have a date associated with it.
         <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
           <!-- if the page is the new redesign version, use the new heading design -->
           {% if page.redesign == true %}
+          {% if page.title == 'Contact Us' %}
+          <section id="redesign-page" class="">
+            <section id="inner-page-heading"  class="inner-page-heading-margin-0">
+               <section id="page-directory"></section>
+               <!-- <section id="page-heading">
+                  <h1 class="page-heading-title margin-0">{{ page.title }}</h1>
+                  <img alt="{{ page.title }} icon" src="{{site.baseurl}}{{page.title-image}}">
+               </section> -->
+               <!-- <p id="page-heading-description">{{page.heading-description}}</p> -->
+            </section>
+            <div class="overlay" id="custom-overlay"></div>
+          {% else %}
           <section id="redesign-page" class="inner-page">
             <section id="inner-page-heading">
                <section id="page-directory"></section>
@@ -32,6 +44,7 @@ This template is for a single page that does not have a date associated with it.
                </section>
                <p id="page-heading-description">{{page.heading-description}}</p>
             </section>
+            {% endif %}
             <div class="overlay" id="custom-overlay"></div>
             {{ content }}
           </section>

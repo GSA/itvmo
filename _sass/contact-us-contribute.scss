@@ -1,0 +1,90 @@
+#contact-us
+{
+
+
+.container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 1500px;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+  
+  }
+  
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* height: 100%; */
+    border-right: 1px solid #D7D7D7;
+  }
+
+  .ContCardHeading{
+    color: #FF5400;
+    font-family:"SourceSansPro-Bold","Source Sans Pro Bold","Source Sans Pro",sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+  }
+
+  .cardBody{
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 10px;
+}
+
+.coloredBG{
+    background-color: #ECF1F7;
+}
+
+.itvmoButton{
+ background-color: #0B4778;
+ font-family:"SourceSansPro-Bold","Source Sans Pro Bold","Source Sans Pro",sans-serif;
+ font-size: 16px;
+ font-weight: 500;
+ margin-bottom: 10px;
+ margin-top: 10px;
+ 
+}
+
+.itvmoButton:hover{
+    background-color: #092C60;
+    cursor: pointer;
+ }
+
+.cardImage{
+    background-color: #fff;
+    padding: 30px;
+}
+
+.rightSection{
+    padding-top: 10px;
+}
+}
+
+@media screen and (max-width: 1300px)
+{
+    .tabs-border
+    {
+        border-radius: none;
+    }
+    .inner-page-tab-border
+    {
+        border: none !important;
+    }
+    
+}
+@media screen and (max-width: 640px)
+{
+    .responsive-iframe 
+    {
+        border-right: none !important;
+    }
+    #redesign-page .grid-row ul 
+    {
+        padding-left: 0px !important;
+    }
+    
+}

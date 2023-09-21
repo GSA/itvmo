@@ -6,6 +6,7 @@
 @import 'about';
 @import 'partner';
 @import 'services';
+@import 'contact-us-contribute';
 .no-style {
   text-decoration: none;
   color: black;
@@ -1669,10 +1670,10 @@ a.checked {
   .grid-row
   {
     column-gap: 20px;
-    p
-    {
-      background-color: #d9e7f5 ;
-    }
+    // p
+    // {
+    //   background-color: #d9e7f5 ;
+    // }
     ul 
     {
       padding-left: 20px;
@@ -2491,6 +2492,10 @@ html *
 {
   background-color: white;
 }
+.inner-page-heading-margin-0
+{
+  margin-bottom: 0px !important;
+}
 #inner-page-heading
 {
   margin-bottom: 40px;
@@ -2538,6 +2543,11 @@ html *
     margin-bottom: 15px;
   }
   
+}
+.inner-page-tab-border
+{
+  border: 1px solid #aaaaaa;
+  border-radius: 10px;
 }
 #page-directory, .tabcontent
 {
@@ -2974,6 +2984,15 @@ html *
     font-size: 15px;
   }
 }
+.tabs-white
+{
+  background-color: white;
+}
+.tabs-border
+{
+  border-radius: 10px 10px 0px 0px;
+}
+
 /*Tabs swap to Tabs mobile version when reach the certain width.*/
 @media screen and (max-width: 1300px) {
   #tabs-mobile-container
