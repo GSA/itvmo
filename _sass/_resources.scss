@@ -2604,6 +2604,10 @@ html *
 
   }
 }
+.page-directory-no-left-padding
+{
+  padding-left: 0 !important;
+}
 #page-directory
 { 
   display: flex;

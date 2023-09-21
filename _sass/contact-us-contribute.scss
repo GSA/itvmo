@@ -1,7 +1,25 @@
-#contact-us
+
+#inner-page-tabs
 {
-
-
+    #social-media-container
+    {
+        background-color: rgba(11, 71, 120, 1);;
+        width: 50px;
+        height: 110px;
+        position: absolute;
+        right: -50px;
+        top: 131px;
+        border-radius: 0px 10px 41px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        // border-top-left-radius: 0px;
+        // border-bottom-left-radius: 0px;
+    }
+}
+#contact-us, #contribute
+{
 .container {
     position: relative;
     width: 100%;
@@ -64,6 +82,18 @@
 }
 }
 
+@media screen and (max-width: 1430px)
+{
+    #inner-page-tabs
+    {
+        #social-media-container
+        {
+            display: none;
+            visibility: hidden;
+        }
+    }
+    
+}
 @media screen and (max-width: 1300px)
 {
     .tabs-border

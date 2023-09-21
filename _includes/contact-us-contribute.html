@@ -1,5 +1,13 @@
 <section id="inner-page-tabs" class="inner-page-tab-border">
     <!-- Inner tab dropdown for the mobile version -->
+    <div id="social-media-container">
+      <a target="_blank" rel="noreferrer noopener" href="" class="social-media-link">
+        <img src="{{site.baseurl}}/assets/images/logos/small-twitter-logo.svg" alt="Twitter logo">
+      </a>
+      <a target="_blank" rel="noreferrer noopener" href="" class="social-media-link">
+        <img src="{{site.baseurl}}/assets/images/logos/small-linkedln-logo.svg" alt="Linkedln logo">
+      </a>
+    </div>
     <div id="tabs-mobile-container">
        <select id="tabs-mobile" onchange="openTabDropdown();">
           <option value="contribute-header">Contributes</option>
@@ -12,9 +20,67 @@
     </div>
     <div id="contribute" class="tabcontent" style="display: flex;">
        <div class="contents-no-side-nav padding-top-3">
-        <h3 id="contract-guidance-overview" class="topic-heading">
+        <!-- <h3 id="contract-guidance-overview" class="topic-heading">
           Contribute
-        </h3>
+        </h3> -->
+        <div class="grid-container coloredBG">   
+          <div class="grid-row grid-gap-6">
+          <div  class="tablet:grid-col container">
+            <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdOiymQJoBc3ehFPCvKHxjDGDVdzZWb4h-hkJzsB6Ic1cnElQ/viewform?embedded=true" width="640" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+          </div>
+          
+          
+          
+          <div class="tablet:grid-col rightSection">
+            <ul class="usa-card-group">
+            <li class="usa-card grid-col-12">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h2 class="usa-card__heading ContCardHeading">Contribute</h2>
+                </div>
+                <div class="usa-card__media">
+                  <div class="usa-card__img cardImage">
+                    <img
+                      src="{{site.baseurl}}/assets/images/icons/page_icons/contribute.svg"
+                      alt="A placeholder image"
+                    />
+                  </div>
+                </div>
+                <div class="usa-card__body cardBody">
+                  <p>
+                    As a governmentwide intelligence center, we are always looking for internal and external contributors to help us evolve our repository of resources and data. We invite you to share your
+                     expertise, perspectives, and resources to strengthen governmentwide procurement practices. We are seeking insights, intelligence, and information to normalize the procurement of emerging technologies, 
+                     boost market equity through small business utilization, enhance zero trust cybersecurity knowledge, 
+                     and build a more robust software supply chain. Through this we hope to advance interoperability, mitigate risks, and improve the effectiveness of the government.
+                  </p>
+                </div>
+                <div class="usa-card__footer">
+                  <a href="#" class="usa-button itvmoButton">View Article</a>
+                </div>
+              </div>
+            </li>
+        
+            <li class="usa-card grid-col-12">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h2 class="usa-card__heading ContCardHeading">Upload Files</h2>
+                </div>
+               
+                <div class="usa-card__body cardBody">
+                  <p>
+                    Please submit the “Contribute” form before navigating to the upload file page. Ensure that you 
+                    use the same email on the “Upload Page” as the “Contribute” form. Its mandatory that all files that you upload comply with Section 508 Guidelines
+                  </p>
+                </div>
+                <div class="usa-card__footer">
+                  <a href="#" class="usa-button itvmoButton">Upload Files</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          </div>
+        </div>
+        </div>
       </div>
     </div>
     <div id="contact-us" class="tabcontent">
