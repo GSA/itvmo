@@ -190,6 +190,7 @@ collections:
     create: true #Allow users to create new documents in this collection.
     slug: "{{slug}}"
     fields:
+    - {label: "Highlight", name: "highlight",  widget: "boolean", default: false}
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Description", name: "description", widget: "text"}
     - {label: "URL", name: "url-link", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
