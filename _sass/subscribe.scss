@@ -1,0 +1,81 @@
+@media only screen and (max-width: 40em) {
+    .sub-button-panel{
+      padding-inline-start: 5px !important;
+      margin-top: 10px;
+    }
+    .sub-form{
+      padding-inline-start: 5px !important;
+    }
+  
+  }
+  
+  
+  
+  .SubscriptionSection{
+    background-color: #2B2C40;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .subscribeText{
+    color: #fff;
+  }
+  
+  .SubscribeSec{
+    padding-right: 20px;
+  }
+  .subscribeText{
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400 !important;
+    line-height: 1.5;
+    strong{
+        font-weight: 600;
+        font-size: 16px;
+      
+      }
+  }
+  
+  
+  .sub-email-field{
+    display: grid;
+    color: #fff;
+    label 
+    {
+        color: #fff;
+    }
+    line-height: 2;
+  }
+  
+  .sub-required{
+    width: 11px;
+    padding-bottom: 6px;
+    padding-left: 4px;
+  }
+  .sub-button-panel{
+    padding-inline-start: 40px;
+    margin-top: 10px;
+  }
+  .sr-button{
+    background-color: #fff;
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  .sr-button:hover{
+    cursor: pointer;
+    background-color: #f2f2f2;
+  }
+  
+  .subscribeFooterText{
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    padding-top: 20px;
+    color: #fff;
+    font-style: italic;
+    font-weight: 600;
+  
+  }
