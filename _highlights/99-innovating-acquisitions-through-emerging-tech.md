@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 5
 title: Innovating Acquisitions through Emerging Tech
 description: Registration is now open for the November 7th Innovating Government
   Acquisitions through Emerging Tech Event co-sponsored with ATARC and GSAs Open
