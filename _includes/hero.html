@@ -24,7 +24,28 @@ This will be displayed on the homepage. Ideally, you want to highlight key goals
           <p>
             The ITVMO serves as a trusted independent advisor and advocate to help agencies buy common IT goods and services in compliance with procurement laws. As a one-stop shop, we can leverage governmentwide IT procurement data, conduct market research, and develop shared agency acquisition knowledge to support agencies in procurement decisions.
           </p>
-          <input id="searchbar" type="text" onkeyup="" placeholder="What are you looking for?">
+          <form
+          id="search_form"
+          class=""
+          role="search"
+          accept-charset="UTF-8"
+          action="https://search.usa.gov/search"
+          method="get"
+        >
+          <input name="utf8" type="hidden" value="✓" />
+          <input id="affiliate" name="affiliate" type="hidden" value="gsa-itvmo" />
+          <div role="search">
+            <input
+              class=""
+              id="searchbar"
+              type="search"
+              name="query"
+              autocomplete="off"
+              placeholder="What are you looking for?"
+            />
+          </div>
+        </form>
+
         </div>
       </div>
       <div class="usa-hero-panel animate fade">
