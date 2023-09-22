@@ -23,11 +23,14 @@ This template is for a single page that does not have a date associated with it.
         <div class="usa-layout-docs__main desktop:grid-col-12 usa-prose">
           <!-- if the page is the new redesign version, use the new heading design -->
           {% if page.redesign == true %}
-          {% if page.title == 'Contact Us' %}
+          {% if page.title == 'Contact Us'%}
           <section id="redesign-page" class="">
             <section id="inner-page-heading"  class="inner-page-heading-margin-0">
                <section id="page-directory" class="page-directory-no-left-padding"></section>
             </section>
+            <div class="overlay" id="custom-overlay"></div>
+          {% elsif page.title == 'Coming Soon'%}
+          <section id="redesign-page" class="">
             <div class="overlay" id="custom-overlay"></div>
           {% else %}
           <section id="redesign-page" class="inner-page">
