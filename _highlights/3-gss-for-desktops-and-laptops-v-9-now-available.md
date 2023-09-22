@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 5
 title: GSS for Desktops and Laptops v.9 Now Available
 description: A comprehensive refresh has been done to the Governmentwide
   Strategic Solutions (GSS) for Desktops and Laptops. Check out what has changed
