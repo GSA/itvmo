@@ -2150,7 +2150,7 @@ html *
       a, .div-a
       {
         background-image: url('../images/icons/lock.svg');
-        background-position: right 2.5% bottom 50%;
+        background-position: right 2.5% bottom 50%; 
         background-repeat: no-repeat; 
       }
     }
@@ -2374,6 +2374,13 @@ html *
       a
       {
         background-position: right 10px bottom 75%;
+      }
+    }
+    .login-require-commnuity
+    {
+      a
+      {
+        background-position: right 10px bottom 85% !important;
       }
     }
   }
