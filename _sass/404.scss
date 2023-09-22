@@ -1,0 +1,142 @@
+@media only screen and (max-width: 40em) {
+    .ImgCont{
+      display:none !important;
+  
+    }
+    .TextCont{
+  
+      padding-right: 50px;
+    
+    }
+    .RouteContainer{
+      padding-top: 50px !important;
+      padding-bottom:50px !important;
+    
+    }
+    .PL-6{
+      margin-left: 20px !important;
+    }
+  
+  
+  }
+  .RouteContainer{
+    background-color: #fff;
+    margin-top: 20px;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom:100px;
+  
+  }
+  
+  .RouteImage{
+    width: 100%;
+    position: absolute;
+  
+  
+  
+  }
+  
+  .ImgCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top:-20px;
+  }
+  
+  .TextCont{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-right: 50px;
+    padding-bottom: 20px;
+  
+  }
+  
+  .RouteSub{
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0B4778;
+    padding-bottom: 8px;
+  }
+  
+  .RouteHead{
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: #474570;
+    padding-bottom: 15px;
+  
+  }
+  
+  .RouteBody{
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 21px;
+    font-weight: 100;
+    color: #000000;
+    line-height: 1.7;
+    padding-bottom: 20px;
+  }
+  
+  .RouteLinkSec{
+    padding-top: 20px;
+    padding-bottom: 10px;
+  
+  }
+  
+  .RouteLink{
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0F5ABD;
+    text-decoration: none;
+  
+  }
+  .RouteLink:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  
+  }
+  
+  .RouteFooterText{
+   font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+  }
+  
+  .PL-6{
+  margin-left:60px;
+  }
+  .PR-6{
+  margin-right: 60px;
+  }
+  
+  .itvmoButton{
+    background-color: #0B4778;
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .itvmoButton:hover{
+    background-color: #093671;
+    
+  }
+  
+  .itvmoButtonOutline{
+    color: #333;
+    box-shadow: inset 0 0 0 2px #797979 !important;
+    font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .itvmoButtonOutline:hover{
+    color:#000 ;
+    background-color: #f2f2f2;
+  }
+  
+  .ButtonSpacing{
+    line-height: 2.8;
+  }
