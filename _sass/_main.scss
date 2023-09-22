@@ -166,7 +166,18 @@ address p {
   font-weight: 700;
   color: #76766a;
  }
+ /* ---------------- Site navigation change ----------------------- */
+ @media (max-width: 1023px) {
  
+  .search-input
+  {
+    width: 100% !important;
+  }
+  .search-input::placeholder
+  {
+    font-size: 12px !important;
+  }
+}
 /* ---------------- IPAD CSS ----------------------- */
 @media (max-width: 768px) {
   .logo-size{
