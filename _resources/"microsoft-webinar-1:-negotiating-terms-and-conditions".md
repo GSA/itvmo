@@ -1,5 +1,5 @@
 ---
-highlight: "false" 
+highlight: "true" 
 title: "Microsoft Webinar 1: Negotiating Terms and Conditions"
 description: "The first training session on Negotiating Terms and Conditions presented the latest knowledge and best practices on negotiating with Microsoft including licensing agreements, pricing and cost information, and discount approaches. "
 url-link: "https://community.max.gov/download/attachments/2204974006/Microsoft%20Training%201%20Negotiating%20Terms%20and%20Conditions_20210914.pptx?api=v2"
