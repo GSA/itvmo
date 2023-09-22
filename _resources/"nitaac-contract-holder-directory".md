@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "NITAAC Contract Holder Directory"
 description: "Search 450+ contract holders using the NITAAC contract holder directory tool. "
 url-link: "https://nitaac.nih.gov/search/contract-holders"

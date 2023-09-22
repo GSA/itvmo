@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Forecast of Contracting Opportunities Tool"
 description: "The goal of this tool is to provide a nationwide dashboard of upcoming federal contracting opportunities. All projected procurements are subject to revision or cancellation. Final decisions on the extent of competition, small business participation, estimated value, or any aspect of the procurement are made if/when a solicitation is posted to SAM.gov. Forecast data is for planning purposes only and is not a commitment by the Government to purchase the described products and/or services. Address questions regarding a planned procurement to the point of contact listed in the record. "
 url-link: "https://www.acquisitiongateway.gov/forecast"

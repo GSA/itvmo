@@ -11,12 +11,86 @@ eight.
         <h3>Popular Guides and Resources</h3>
       </div>
       <div class="resource-cards">
-        <div class="resource-card">
+        {% for resources in site.resources %}
+          {% assign hl = resources.highlight %}
+          {% if hl == "true" %} 
+            {% assign filter = resources.filter %}
+            {% if filter == "p-filter" %} 
+            <div class="resource-card " style="border-color: #f2938c">
+            {% elsif filter == "acquisition-best-practices"%}
+            <div class="resource-card " style="border-color: #59b9de;">
+            {% elsif filter == "small-business"%}
+            <div class="resource-card " style="border-color: #abace5;">
+            {% elsif filter == "market-intelligence"%}
+            <div class="resource-card " style="border-color: #3e4ded;">
+            {% elsif filter == "technology"%}
+            <div class="resource-card " style="border-color: #ddaa01;">
+            {% elsif filter == "contract-solutions"%}
+            <div class="resource-card " style="border-color: #5abf95;">
+            {% elsif filter == "itvmo-general"%}
+            <div class="resource-card " style="border-color: #b04abd;">
+            {% endif %}
+              <a href="{{resources.url-link}}">
+                  <div class="resource-content">
+                    {% assign filter = resources.filter %}
+                    {% if filter == "p-filter" %} 
+                    <div aria-label="Filter: Policy" class="resource-filter"><span>Policy</span></div>
+                    {% elsif filter == "acquisition-best-practices"%}
+                    <div aria-label="Filter: Acquisition Best Practices" class="resource-filter"><span>Acquisition Best Practices</span></div>
+                    {% elsif filter == "small-business"%}
+                    <div aria-label="Filter: Small Business" class="resource-filter"><span>Small Business</span></div>
+                    {% elsif filter == "market-intelligence"%}
+                    <div aria-label="Filter: Market Intelligence" class="resource-filter"><span>Market Intelligence</span></div>
+                    {% elsif filter == "technology"%}
+                    <div aria-label="Filter: Technology" class="resource-filter"><span>Technology</span></div>
+                    {% elsif filter == "contract-solutions"%}
+                    <div aria-label="Filter: Contract Solutions" class="resource-filter"><span>Contract Solutions</span></div>
+                    {% elsif filter == "itvmo-general"%}
+                    <div aria-label="Filter: ITVMO General" class="resource-filter"><span>ITVMO General</span></div>
+                    {% endif %}
+                    <div aria-label="Title: {{resources.title}}" class="resource-name">{{resources.title}}<img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external.svg"></div>
+                    <div aria-label="Description: {{resources.description}}" class="resource-description" aria-details="description"><p class="two-line-max">{{resources.description}}</p></div>
+                    <div class="resource-detail">
+                      <div class="file-type">
+                        <p>{{resources.type}}</p>
+                      </div>
+                      {% assign gm = resources.gov-only %}
+                      {% if gm == "true" %}
+                      <div class="govmil">
+                        <img alt="Lock icon" src="{{site.baseurl}}/assets/images/icons/lock.svg">
+                      </div>
+                      {% endif %}
+                      <div class="audience">
+                        <p>{{resources.audience}}</p>
+                      </div>
+                      <div class="branded-offerings">
+                        <p>{{resources.branded-offerings}}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="resource-line"></div>
+
+                <div class="resource-info">
+                  <div class="resource-date">
+                    <img alt="Calendar icon" src="{{site.baseurl}}/assets/images/icons/calendar.svg">
+                    <div class="resource-logo"><span>{{resources.publication-date}}</span></div>
+                  </div>
+                  <div class="resource-rtime">
+                    <img alt="Stop watch icon" src="{{site.baseurl}}/assets/images/icons/stop-watch.svg">
+                    <div class="resource-logo"><span>{{resources.reading-time}} minute read</span></div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          {% endif %}
+        {% endfor %}
+        <!-- <div class="resource-card">
           <a href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FspaceKey%253DEgov%2526title%253D2.%252BMicrosoft">
               <div class="resource-content">
-                <div aria-label="Filter: Acquisition Best Practices" class="resource-filter"><span>Acquisition Best Practices</span></div>
+                <div aria-label="Filter: {{resources.filter}}" class="resource-filter"><span>{{resources.filter}}</span></div>
                 <div aria-label="Title: AWS Buyers Guide" class="resource-name">AWS Buyers Guide<img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external.svg"></div>
-                <div aria-label="Description: This site page provides training and best practices for planning and preparing for transitioning from MSFT G3 to G5." class="resource-description" aria-details="description"><p class="two-line-max">This site page provides training and best practices for planning and preparing for transitioning from MSFT G3 to G5.</p></div>
+                <div aria-label="Description: {{resources.description}}" class="resource-description" aria-details="description"><p class="two-line-max">{{resources.description}}</p></div>
                 <div class="resource-detail">
                   <div class="file-type">
                     <p>HTML</p>
@@ -25,7 +99,7 @@ eight.
                     <img alt="Lock icon" src="{{site.baseurl}}/assets/images/icons/lock.svg">
                   </div>
                   <div class="audience">
-                    <p>Contracting Officers</p>
+                    <p>{{resources.audience}}</p>
                   </div>
                   <div class="branded-offerings">
                     <p>OEM Vendor Initiatives</p>
@@ -50,19 +124,7 @@ eight.
               </div>
             </div>
           </a>
-        </div>
-        <div class="resource-card">
-
-        </div>
-        <div class="resource-card">
-
-        </div>
-        <div class="resource-card">
-
-        </div>
-        <div class="resource-card">
-
-        </div>
+        </div> -->
       </div>
       <div id="popular-resources-ending">
         <a id="go-to-resources" href="{{site.baseurl}}/resources">

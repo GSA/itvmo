@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "North American Industry Classification System (NAICS) Search Tool "
 description: "This official U.S. Government Web site provides the latest information on plans for NAICS revisions, as well as access to various NAICS reference files and tools. Additional information on the background and development of NAICS is available in the History section of this Web site."
 url-link: "https://www.census.gov/naics/"

@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Adobe Buyers Vendor Assessment Guide"
 description: "Review this Adobe Vendor assessment guide for the full documentation on guidance provided for agencies procuring Adobe."
 url-link: "https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Guide.pdf?api=v2"

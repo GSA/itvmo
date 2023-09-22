@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "AbilityOne Program"
 description: "Providing employment opportunities to approximately 40,000 people who are blind or have significant disabilities, including more than 2,500 veterans, the AbilityOne Program is among the nation’s largest providers of jobs for people who are blind or have significant disabilities. "
 url-link: "https://www.abilityone.gov/"

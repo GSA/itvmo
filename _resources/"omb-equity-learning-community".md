@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "OMB Equity Learning Community"
 description: "Provides a community of equity leaders that meet weekly to ask questions and share knowledge on implementing the new executive order. This community is for government-only. "
 url-link: "https://d2d.gsa.gov/report/government-wide-procurement-equity-tool"

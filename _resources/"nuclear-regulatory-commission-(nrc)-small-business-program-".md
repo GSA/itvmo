@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Nuclear Regulatory Commission (NRC) Small Business Program "
 description: "The U.S. Nuclear Regulatory Commission (NRC) is committed to ensuring that small businesses are afforded the maximum practicable prime and subcontract opportunities in support of agency mission operations. The Small Business Program takes the lead in this effort by serving the NRC and the business community by advocating for small businesses, including businesses owned by the disadvantaged, women, veterans, and service-disabled veterans, as well as companies located in Historically Underutilized Business Zones (HUBZones). "
 url-link: "https://www.nrc.gov/about-nrc/contracting/small-business.html"

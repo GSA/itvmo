@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "How OEMs Operate: Partners"
 description: "The OEM has a partner network to expand its reach to all potential customers. Often referred to as the channel, these partners are an extension of the sales arm of the OEM."
 url-link: "https://community.max.gov/download/attachments/2403246889/Module-4--%20IBT_OEM%20Operations_%20Partners.pdf?api=v2"

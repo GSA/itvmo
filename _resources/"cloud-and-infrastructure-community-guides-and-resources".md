@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Cloud and Infrastructure Community Guides & Resources"
 description: "Provides resources for federal agencies to consolidate and modernize their IT infrastructure."
 url-link: "http://cio.gov/about/members-and-leadership/cloud-infrastructure-cop/guidance-and-resources/"

@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "DoD Army Computer Hardware, Enterprise Software and Solutions (CHESS) IT Best-in-Class Vehicle"
 description: "CHESS provides architecturally sound standards and policy-compliant IT enterprise solutions from more than 20 prime industry IT providers to all Army activities and organizations."
 url-link: "https://www.eis.army.mil/programs/chess"

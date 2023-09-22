@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "GSA Enterprise Infrastructure Solutions (EIS) IT Best-in-Class Vehicle"
 description: "Enterprise Infrastructure Solutions (EIS) is the go-to contract for enterprise telecommunications and networking solutions."
 url-link: "https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/telecommunications-and-network-services/enterprise-infrastructure-solutions"

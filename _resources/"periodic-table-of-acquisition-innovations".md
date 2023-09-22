@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Periodic Table of Acquisition Innovations"
 description: "The governmentwide acquisition knowledge management portal for innovative business practices and technologies."
 url-link: "https://www.fai.gov/periodic-table"

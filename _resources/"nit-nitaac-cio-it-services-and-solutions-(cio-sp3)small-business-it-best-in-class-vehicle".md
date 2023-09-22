@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "NIT NITAAC CIO IT Services and Solutions (CIO-SP3)Small Business  IT Best-in-Class Vehicle"
 description: "The CIO-SP3 vehicle provides federal or civilian agencies a mechanism for efficiently ordering IT solutions and services at equitable and reasonable prices while helping to achieve their socio-economic contracting goals."
 url-link: "https://nitaac.nih.gov/gwacs/cio-sp3-small-business"

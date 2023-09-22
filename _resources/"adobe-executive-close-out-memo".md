@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Adobe Executive Close Out Memo"
 description: "In 2021, the ITVMO launched an OEM assessment of Adobe. This memo serves as an executive summary of the engagement."
 url-link: "https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Executive%20Memo%20-%20OEM%20Assessment%20Closeout.pdf?api=v2"

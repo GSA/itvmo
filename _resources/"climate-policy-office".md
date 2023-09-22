@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Climate Policy Office"
 description: "Implements the President’s domestic climate agenda, coordinating the all-of-government approach to tackle the climate crisis, create good-paying, union jobs, and advance environmental justice."
 url-link: "http://www.whitehouse.gov/cpo"

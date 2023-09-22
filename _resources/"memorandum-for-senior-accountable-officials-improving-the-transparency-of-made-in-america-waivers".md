@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Memorandum for Senior Accountable Officials, Improving the Transparency of Made in America Waivers"
 description: "Agencies must submit proposed non-availability waivers to a new public website, MadeInAmerica.gov, prior to awarding contracts to foreign suppliers. This promotes transparency. Certain waiver information will be public, allowing domestic manufacturers to better understand federal needs. The goal is to expand the supplier base and reduce the need for waivers. OMB's Made in America Office will review waivers, focusing on mission impact, market research, and public feedback. Reviews aim to avoid unnecessary waivers while not unduly delaying awards."
 url-link: "https://whitehouse.gov/wp-content/uploads/2021/10/Guidance-Memo-Improving-the-Transparency-of-Made-in-America-Waivers.pdf"

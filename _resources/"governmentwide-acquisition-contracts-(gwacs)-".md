@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Governmentwide Acquisition Contracts (GWACs) "
 description: "Using pre-competed Governmentwide Acquisition Contracts (GWACs) will help your agency buy total IT solutions more efficiently and economically. Federal contracting officers must follow these steps to begin using GSA's GWACs."
 url-link: "https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/governmentwide-acquisition-contracts/how-to-use-gwacs"

@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Agency for International Development (USAID) Small Business Program"
 description: "The Office of Small and Disadvantaged Business Utilization (OSDBU) is responsible for monitoring USAID’s implementation and execution of the small business programs and advising the Administrator and senior leadership."
 url-link: "https://www.usaid.gov/about-us/organization/office-small-and-disadvantaged-business-utilization"

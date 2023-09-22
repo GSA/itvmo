@@ -1478,6 +1478,7 @@ a.checked {
 }
 #annual-summit
 {
+  font-family: 'Source Sans 3', sans-serif !important;
   b 
   {
     color: #333333;
@@ -1486,7 +1487,7 @@ a.checked {
   {
     font-size: 18px;
     color: #333333;
-    font-family: "Arial-BoldMT", "Arial Bold", "Arial", sans-serif;
+    // font-family: "Arial-BoldMT", "Arial Bold", "Arial", sans-serif;
   }
   #itvmo-annual-summit
   {
@@ -1507,6 +1508,7 @@ a.checked {
   {
     list-style-type: none;
     padding-left: 0;
+    row-gap: 0px;
     li 
     {
       p 

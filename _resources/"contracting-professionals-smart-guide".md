@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Contracting Professionals Smart Guide"
 description: "The Contracting Professionals Smart Guide is organized into two sections: Contract Formation and Contract Administration. The tables below link to the Activities and their corresponding flow charts."
 url-link: "https://www.fai.gov/tools/contracting-professionals-smart-guide"

@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "GSA Complex Commercial Satellite Communications (SATCOM) IT Best-in-Class Vehicle"
 description: "Complex Commercial Satellite Communications (SATCOM) Solutions allows federal agencies to build large, complex, custom satellite solutions. Solutions include satellite transport (bandwidth), fixed or mobile satellite service, and service-enabling components such as terminals, handsets, and tail circuits with engineering services to integrate, operate, and maintain the solution"
 url-link: "https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/multiple-award-schedule-it/comsatcom-1?gclid=CjwKCAjw_uGmBhBREiwAeOfsd0fmpduVnSbtB5Ne3C2_acIS2Xgd2GCkGBMQEs27cmqt3hMGStdgPhoCbvoQAvD_BwE"

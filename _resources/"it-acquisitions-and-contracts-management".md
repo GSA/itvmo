@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "IT Acquisitions and Contracts Management"
 description: "STATE OF FEDERAL IT REPORT / PUBLIC RELEASE VERSION 1.0. Provides a state of the IT Portfolio, many of these policies and guidance still relevant today. "
 url-link: "https://www.cio.gov/assets/resources/sofit/02.06.acquisition.pdf"

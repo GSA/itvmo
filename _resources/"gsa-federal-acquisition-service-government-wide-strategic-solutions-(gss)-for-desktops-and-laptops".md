@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "GSA Federal Acquisition Service Government-wide Strategic Solutions (GSS) for Desktops and Laptops"
 description: "The GSS systems were implemented for purchase in 2015. A comprehensive refresh process has been deployed every year since in which Agencies provide updates to their requirements, and industry shares its directions and feedback. GSS Version 8 systems have been available since July 2022. GSS Version 9 systems are now available. GSS Version 8 systems will still be offered until they reach end-of-life or are no longer available from the manufacturer."
 url-link: "https://www.gsaadvantage.gov/advdata/gss/GSS-Desktop-Laptop-Guide.pdf"

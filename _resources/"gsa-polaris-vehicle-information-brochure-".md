@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "GSA Polaris Vehicle Information Brochure "
 description: "Planned for 2023, Polaris will be a multiple-award indefinite-delivery/indefinite-quantity (MA-IDIQ)
 Governmentwide Acquisition Contract (GWAC). Polaris will provide access to customized information technology (IT) services and IT service-based solutions from small businesses. "

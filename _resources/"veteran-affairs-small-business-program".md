@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Veteran Affairs Small Business Program"
 description: "The office of Small & Disadvantaged Business Utilization programs implement the requirements to aid, counsel, assist, and protect the interests of small and Veteran business concerns."
 url-link: "https://www.va.gov/osdbu/"

@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "M-23-10, The Registration and Use of .gov Domains in the Federal Government"
 description: "Agencies must use .gov or .mil domains for all official communications, information, and services, with limited exceptions. Non-.gov usage will be reviewed and restricted by OMB.
 New .gov registrations and renewals require CIO or agency head approval and detailed justification on usage and conformance to policies. OMB will review requests. Agencies must review previously registered domains for compliance with .gov requirements within 180 days and identify any non-compliant domains to OMB."

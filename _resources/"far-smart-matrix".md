@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "FAR Smart Matrix"
 description: "Searchable and filterable interactive tool to view or research information within the FAR."
 url-link: "https://www.acquisition.gov/smart-matrix"

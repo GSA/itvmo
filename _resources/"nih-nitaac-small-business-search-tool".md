@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "NIH NITAAC Small Business Search Tool"
 description: "This tool provides guidance on identifying small business and set-aside categories through the NITAAC website."
 url-link: "https://www.nitaac.nih.gov/search/contract-holders?f%5B0%5D=gwac%3A7"

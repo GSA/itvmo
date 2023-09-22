@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "AWS Acquisitions Guide"
 description: "Review this AWS Vendor assessment guide for the full documentation on guidance provided for agencies procuring AWS."
 url-link: "https://community.max.gov/download/attachments/2314102898/AWS%20-%20Acquisitions%20Guide.pdf?api=v2"

@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Category Management Basics, Policies, and  Guidance"
 description: "Provides an overview of common category management (CM) principles and policies. Scroll to mid-page for several attachments on amendments and updates to CM and acquisition policies, to include new small business utilization requirements. "
 url-link: "https://www.acquisitiongateway.gov/Category-management/resources/4161"

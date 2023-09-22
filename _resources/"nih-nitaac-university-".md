@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "NIH NITAAC University "
 description: "Welcome to NITAAC University, where you can begin your education on Information Technology (IT) acquisitions and find trainings that cover the basics of using our Government-Wide Acquisition Contracts (GWACs).  Our hope is to simplify the complexities of acquisitions enough to assure our clients enjoy the faster, easier procurements that are available through NITAAC."
 url-link: "https://nitaac.nih.gov/resources/nitaac-university"

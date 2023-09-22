@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "July 2023 Monthly Bulletin: Growing Small Business via IT Category Management"
 description: "The federal government spent over $72B on IT in FY
 22. Of this $72B, 38% was spent on small businesses

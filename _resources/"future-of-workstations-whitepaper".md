@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Future of Workstations Whitepaper"
 description: "This white-paper informs how the Federal Acquisition Programs join forces to produce annual standards for procuring end user solutions for desktops and laptops."
 url-link: "https://itvmo.gsa.gov/assets/files/workstation-End-User-device-environment-and-trends.pdf"

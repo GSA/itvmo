@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Social Security Administration (SSA) Small Business Program "
 description: "The Social Security Administration (SSA), is committed to advancing the small business procurement program, by provide maximum practicable opportunities in SSA acquisitions to small business, veteran-owned small business, service-disabled veteran-owned small business, HUBZone small business, small disadvantaged business, and women-owned small business concerns."
 url-link: "https://www.ssa.gov/osdbu/"

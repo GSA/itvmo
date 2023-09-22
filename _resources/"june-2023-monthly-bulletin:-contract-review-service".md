@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "June 2023 Monthly Bulletin: Contract Review Service"
 description: "The ITVMO is thrilled to announce the establishment of its newest service offering, Contract Review as a Service (CRaaS). Over the last several years, the ITVMO has worked with dozens of agencies to identify and resolve common Original Equipment Manufacturer (OEM) related challenges, ranging from customer service issues to product deficiencies to contractual “gotchas”. Our collaboration with customer agencies and top OEMs has led to enhanced communication and industry partnership commitments that will certainly help agencies get the most out of their IT investments. Continuing reading...(government-only) "
 url-link: "https://community.max.gov/download/attachments/2384565414/June%202023%20IT%20Buyers%20Bulletin.pdf?api=v2"

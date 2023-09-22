@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "GSA FAS GWAC Sales Dashboard"
 description: "The GWAC dashboard displays obligated sales and task orders by agency, bureau and by industry partner for three GWAC programs: 8A Stars II, Alliant 2 and VETS 2."
 url-link: "https://d2d.gsa.gov/report/gsa-fas-gwac-sales-dashboard"

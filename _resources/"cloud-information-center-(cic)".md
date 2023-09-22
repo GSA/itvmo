@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Cloud Information Center (CIC)"
 description: "The CIC is designed to educate on all aspects of the acquisition lifecycle, including business, technical, and contractual aspects of cloud solutions."
 url-link: "https://cic.gsa.gov/"

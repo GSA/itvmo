@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Food and Drug Administration(FDA) requirements for Cybersecurity in Medical Devices"
 description: "Ensures that manufacturers of cyber devices provide a software bill of materials (SBOM) for the commercial, open-source, and off-the-shelf software components contained within the device. Forces manufacturers of cyber devices to make available postmarket updates and patches to the device and related systems to address vulnerabilities. Requires manufacturers of cyber devices to submit plans to manage vulnerabilities and exploits as part of their premarket submissions.
 "

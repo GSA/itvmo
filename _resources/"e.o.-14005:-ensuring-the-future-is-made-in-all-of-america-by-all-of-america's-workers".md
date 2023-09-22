@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "E.O. 14005: Ensuring the Future Is Made in All of America by All of America’s Workers"
 description: "Ensuring the Future is Made in All of America by All of America’s Workforce: The United States Government should, whenever possible, procure goods, products, materials, and services from sources that will help American businesses compete in strategic industries and help America's workers thrive."
 url-link: "https://www.federalregister.gov/documents/2021/01/28/2021-02038/ensuring-the-future-is-made-in-all-of-america-by-all-of-americas-workers"

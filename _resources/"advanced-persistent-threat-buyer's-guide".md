@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Advanced Persistent Threat Buyer's Guide"
 description: "Advanced Persistent Threat Buyer's Guide: helps organizations evaluate potential products and solutions that detect, respond to, and recover from APTs. It provides guidance on engaging capable, proven industry partners to minimize APTs and enhance the overall resilience of the nation's cybersecurity. "
 url-link: "https://www.gsa.gov/system/files/APT_Buyers_Guide_v2_July_2022.pdf"

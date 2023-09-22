@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Department of Commerce’s National Institute of Standards and Technology (NIST) Manufacturing Extension Partnership (MEP)"
 description: "Providing any U.S. manufacturer with access to resources they need to succeed."
 url-link: "http://www.nist.gov/mep"

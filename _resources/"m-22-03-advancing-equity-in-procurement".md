@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "M-22-03 Advancing Equity in Procurement"
 description: "Sets a goal of increasing the percentage of federal contracts awarded to small disadvantaged businesses (SDBs) to 15% by 2025. Agencies are instructed to negotiate higher SDB contracting goals for 2022 to help meet this target.
 "

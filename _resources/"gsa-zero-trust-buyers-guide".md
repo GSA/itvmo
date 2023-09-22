@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "GSA Zero Trust Buyers Guide"
 description: "GSA Zero Trust Buyers Guide: your agency's roadmap to designing and deploying ZTA, and maps the components defined by NIST to the GSA solutions that help meet them. We offer a variety of ZTA solutions across contract vehicles."
 url-link: "https://www.gsa.gov/system/files/Zero_Trust_Architecture_Buyers_Guide_v2_July_2022.pdf"

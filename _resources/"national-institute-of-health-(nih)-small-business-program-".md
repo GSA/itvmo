@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "National Institute of Health (NIH) Small Business Program "
 description: "If you're a small business interested in contracting at NIH, please start by reading the information provided by our parent Agency, the Department of Health and Human Services. "
 url-link: "https://www.nih.gov/about-nih/what-we-do/get-involved-nih/small-business-opportunities"

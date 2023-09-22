@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Federal Acquisition Regulation
 "
 description: "Browse Federal Acquisition Regulations (FAR) Part/Subpart or download in various formats. Complete FAR also available for download. "

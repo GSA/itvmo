@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Oracle Vendor Assessment Playbook"
 description: " This training resource provides an 8-part information series on OEM operating practices to educate agency IT buyers and help them achieve a stronger negotiating position challenges. .gov/.mil audience only"
 url-link: "https://community.max.gov/download/attachments/2314102898/Oracle%20-%20Vendor%20Assessment%20Playbook.pdf?api=v2"

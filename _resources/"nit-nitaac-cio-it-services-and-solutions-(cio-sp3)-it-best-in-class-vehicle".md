@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "NIT NITAAC CIO IT Services and Solutions (CIO-SP3) IT Best-in-Class Vehicle"
 description: "With more than 137 labor categories and 10 task areas, the CIO-SP3 contract is designed to give federal agencies a streamlined ordering process to acquire a wide range of IT services and solutions"
 url-link: "https://nitaac.nih.gov/gwacs/cio-sp3"

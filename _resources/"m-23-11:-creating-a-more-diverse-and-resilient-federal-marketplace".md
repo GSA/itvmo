@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "M-23-11: Creating a More Diverse and Resilient Federal Marketplace"
 description: "Issued guidance directing agencies to use a common definition for “new entrant” as they take steps to find small disadvantaged businesses and other contractors and measure progress in diversifying the federal supplier base. Guidance starts on Page 2. "
 url-link: "https://www.whitehouse.gov/wp-content/uploads/2023/02/M-23-11-Creating-a-More-Diverse-and-Resilient-Federal-Marketplace.pdf"

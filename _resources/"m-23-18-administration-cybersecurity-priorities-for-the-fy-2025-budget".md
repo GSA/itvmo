@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "M-23-18, Administration Cybersecurity Priorities for the FY 2025 Budget"
 description: "Agencies must continue improving cybersecurity through initiatives like zero trust architecture implementation and IT modernization. Budgets should show progress on meeting goals in key strategy documents.
 Critical infrastructure collaboration is a priority, with budgets needing to show increased capacity for public-private partnerships and information sharing. Combating cybercrime and ransomware is a focus area. Relevant agencies must prioritize resources for investigating and disrupting these threats. Cyber workforce expansion is emphasized, with budgets needing to demonstrate initiatives to develop talent and expand the workforce through inclusive hiring practices."

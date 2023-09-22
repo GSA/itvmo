@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "FAR Part 19 -- Small Business Programs"
 description: "This part implements the acquisition-related sections of the Small Business Act ( 10 U.S.C. 3063-3064 and 3203), applicable sections of the Armed Services Procurement Act ( 10 U.S.C. 2302, et seq.), 41 U.S.C. 3104, and Executive Order 12138, May 18, 1979."
 url-link: "https://www.acquisition.gov/far/part-19"

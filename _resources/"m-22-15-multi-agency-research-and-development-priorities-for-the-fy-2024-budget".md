@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "M-22-15, Multi-Agency Research and Development Priorities for the FY 2024 Budget"
 description: "Global Competitiveness and Risk Reduction: Prioritize investments in science, technology, and innovation for long-term competitiveness and reduction of catastrophic risks from emerging technologies.
 Collaboration and World-Leading Innovation: Agencies should unite for world-class research in critical technologies like AI, QIS, and space tech. Foster collaboration with non-government entities for multidisciplinary research on emerging technologies.

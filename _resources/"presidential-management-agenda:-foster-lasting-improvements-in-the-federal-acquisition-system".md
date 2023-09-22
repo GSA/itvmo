@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Presidential Management Agenda: Foster lasting improvements in the Federal acquisition system"
 description: "Follow progress on the Administration's Priority 3, Strategy 1 set of goals to strengthen the U.S. domestic manufacturing base, support American workers, lead by example toward sustainable climate solutions, and create opportunities for underserved communities."
 url-link: "https://www.performance.gov/pma/businessofgov/strategy/1/#gl-1.1"

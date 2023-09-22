@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "The Manufacturing Institute"
 description: "Grows and supports the industry’s skilled workers for the advancement of modern manufacturing. The MI’s diverse initiatives support all American workers, including emerging workers, women, veterans and students, through skilled training programs, community building and career growth.
 "

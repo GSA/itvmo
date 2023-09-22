@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "May 2023 Monthly Bulletin: Cloud Acquisitions: FinOps"
 description: "Last fall GSA’s Office of Government wide Policy through the Federal Technology Investment Management (FTIM) Community of Practice (CoP) and the Cloud and Infrastructure (C&I) Community of Practice established a FinOps Pilot project to better understand cloud cost management and optimization in alignment with the best practices of the FinOps Foundation (a non-profit organization creating standards around cloud financial management). Continuing reading...(government-only) "
 url-link: "https://community.max.gov/download/attachments/2384565414/%20May%202023%20ITB%20Bulletin.pdf?api=v2"

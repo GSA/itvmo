@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "US Trade Representative Small Business Report"
 description: "This site page provides an overview of the US Trade Representative's Office for Small Business to include its domain experts evaluating small business performance. Refer to this page for added access to small business reports and analysis. "
 url-link: "https://ustr.gov/issue-areas/small-business"

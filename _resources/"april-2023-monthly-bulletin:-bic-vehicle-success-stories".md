@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "April 2023 Monthly Bulletin: BIC Vehicle Success Stories"
 description: "The IT Buyers CoP is starting a new initiative to
 highlight all of The IT Best-in-Class (BIC) contract

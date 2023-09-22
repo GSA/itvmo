@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "White Paper: Analysis of Small Business Utilization within the Information Technology Category"
 description: "The Data Analytics and AI Working Group recently published a White Paper on their findings from a lab project, where the Government could leverage and understand the potential of state of the art Analytics and AI tools, as applied to Agency provided use cases."
 url-link: "https://atarc.org/wp-content/uploads/2022/05/ATARC-AI-Lab-report_FINAL.pdf"

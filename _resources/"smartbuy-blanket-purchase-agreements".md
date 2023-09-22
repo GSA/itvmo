@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "SmartBUY Blanket Purchase Agreements"
 description: "Through SmartBUY government-wide blanket purchase agreements, agencies can (1) order commercial off the shelf software with pre-negotiated terms and conditions; (2) reduce risks, costs, and administrative burden.
 support the SmartBUY Federal Strategic Sourcing Initiative, (3) a partnership with the Department of Defense Enterprise Software Initiative, GSA, and software vendors."

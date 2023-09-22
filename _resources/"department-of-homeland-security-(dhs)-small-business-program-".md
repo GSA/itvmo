@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Department of  Homeland Security (DHS) Small Business Program "
 description: "At DHS, we understand that small businesses are vital to our national strength. We ensure that small businesses have a fair opportunity to compete for our contracts."
 url-link: "https://www.dhs.gov/small-business-assistance"

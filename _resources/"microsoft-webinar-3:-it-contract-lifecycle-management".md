@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Microsoft Webinar 3: IT Contract Lifecycle Management"
 description: "The final session addressed Microsoft Contract and Lifecycle Management best practices including how to manage requirements, ensure audi readiness, and recommendations on how to centralize Microsoft services within an agency."
 url-link: "https://community.max.gov/download/attachments/2204974006/Microsoft%20Training%203%20IT%20Contract%20Lifecyle%20Management_20210928.pptx?api=v2"

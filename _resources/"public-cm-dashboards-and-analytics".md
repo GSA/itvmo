@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Public CM Dashboards and Analytics"
 description: "A similar collection as the Govt-wide CM tools with the addition of: Awards Exploration, Contract Inventory Exploration, Vendor Managed Spend."
 url-link: "https://d2d.gsa.gov/report/public-category-management-dashboards-analytics"

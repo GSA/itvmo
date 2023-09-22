@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Department of Defense (DoD) Small Business Program"
 description: "The DoD’s Office of Small Business Programs maximizes opportunities for small businesses to contribute to national security by providing combat power for our troops and economic power for our nation."
 url-link: "https://business.defense.gov/"

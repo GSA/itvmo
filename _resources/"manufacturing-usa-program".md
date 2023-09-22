@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Manufacturing USA Program"
 description: "National network created to secure U.S. global leadership in advanced manufacturing through large scale public-private collaboration on technology, supply chain and workforce development."
 url-link: "http://www.manufacturingusa.com"

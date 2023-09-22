@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "E.O. 13985 Advancing Racial Equity and Support for Underserved Communities Through the Federal Government:"
 description: "Our Nation deserves an ambitious whole-of-government equity agenda that matches the scale of the opportunities and challenges that we face. The Federal Government should pursue a comprehensive approach to advancing equity for all, including people of color and others who have been historically underserved, marginalized, and adversely affected by persistent poverty and inequality.
 "

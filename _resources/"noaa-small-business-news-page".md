@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "NOAA Small Business News Page"
 description: "This page provides a compilation of recent and past articles related to NOAA's efforts to increase small business and opportunities for small businesses to support NOAA. "
 url-link: "https://www.noaa.gov/topic-tags/small-business"

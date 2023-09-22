@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "SBA's Contracting Guide for Small Businesses"
 description: "The federal government contracts with small businesses to buy products and services. This page provides access to several resources, tools, and guidance reports to help small businesses navigate the Federal Marketplace. "
 url-link: "https://www.sba.gov/federal-contracting/contracting-guide"

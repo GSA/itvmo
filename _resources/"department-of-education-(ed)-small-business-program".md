@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Department of Education (Ed) Small Business Program"
 description: "The Office of Small and Disadvantaged Business Utilization (OSDBU) works as an advocate to maximize participation of small businesses in Department contracts, through outreach to the business community and partnerships with Department offices to develop and implement acquisition strategies for achieving ED’s mission."
 url-link: "https://www2.ed.gov/about/offices/list/ofo/osdbu/index.html"

@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "FY 2021 ITVMO Industry Day "
 description: "The ITVMO hosted an Industry Day to engage industry as an ITVMO partner to inform acquisition trends and priorities. "
 url-link: "https://www.youtube.com/watch?v=mD4iWvAJnyk"

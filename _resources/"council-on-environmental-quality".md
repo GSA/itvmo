@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Council on Environmental Quality"
 description: "Coordinates the federal government’s efforts to improve, preserve, and protect America’s public health and environment and assists the FAR in developing regulatory amendments to promote increased contractor attention on reduced carbon emission."
 url-link: "http://www.whitehouse.gov/ceq/"

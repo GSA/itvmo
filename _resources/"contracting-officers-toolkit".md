@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Contracting Officers Toolkit"
 description: "The Contracting Officer Toolkit is a knowledge based, ready reference guide, developed by the Fall 2020 LEAP team in partnership with FAI. Some of the links provided may require you to register and login in order to access the material."
 url-link: "https://www.fai.gov/resources/co-toolkit"

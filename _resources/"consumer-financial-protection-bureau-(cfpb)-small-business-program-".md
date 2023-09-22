@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Consumer Financial Protection Bureau (CFPB) Small Business Program "
 description: "The CFPB works to help small businesses access the credit they need and deserve by increasing awareness in the small business lending marketplace. Visit this page for added agency resources. "
 url-link: "https://www.consumerfinance.gov/about-us/small-business-lending/additional-resources/"

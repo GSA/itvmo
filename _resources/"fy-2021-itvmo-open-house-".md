@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "FY 2021 ITVMO Open House "
 description: "THe ITVMO hosted an Open House for government IT buyers and program managers to increase understanding and awareness of the program's capabilities. "
 url-link: "https://www.youtube.com/watch?v=9mYx4RfcO-4"

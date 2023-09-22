@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "Biden-President's Management Agenda: Learning Agenda"
 description: "A management-focused learning agenda in support of the President’s Management Agenda (PMA) identifies key questions to answer to support the PMA vision. REfer to Page 22 for additional resources related to the Learning Agenda, to include agency-specific agendas. "
 url-link: "https://assets.performance.gov/PMA/PMA-Learning-Agenda.pdf"

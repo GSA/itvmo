@@ -1,4 +1,5 @@
 ---
+highlight: "false" 
 title: "FAQ Sheet on M-23-11: Creating a More Diverse and Resilient Federal Marketplace"
 description: "The following questions and answers are intended to supplement OMB Memorandum M-23-11, Creating a More Diverse and Resilient Federal Marketplace through Increased Participation of New and Recent Entrant. "
 url-link: "https://www.whitehouse.gov/wp-content/uploads/2023/02/FAQs-on-Strengthening-Diversity-and-Resilience-of-Federal-Supplier-Base-Copy-for-Posting-on-OFPP-Page.pdf"
