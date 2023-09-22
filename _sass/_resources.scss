@@ -3096,10 +3096,7 @@ html *
 {
   max-width: 82.5rem !important;
 }
-.grid-container
-{
-  overflow: hidden;
-}
+
 .usa-nav__secondary 
 {
   bottom: 5rem;
@@ -4709,6 +4706,11 @@ html *
 }
 @media screen and (max-width: 500px)
 {
+  //Hide the white space, that could occur on the mobile.
+  .grid-container
+  {
+    overflow: hidden;
+  }
   .article-page-content
   {
     padding: 0px 20px 50px 20px;
