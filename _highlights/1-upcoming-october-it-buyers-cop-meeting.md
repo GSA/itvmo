@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 3
 title: Upcoming October IT Buyers COP Meeting
 description: "Mark your calendars for October 26th and join us as we examine
   trends, like emerging technology, cybersecurity, and pending new policies like
