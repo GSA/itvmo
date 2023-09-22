@@ -65,7 +65,7 @@ if(document.getElementById('resources') != null)
   initalizeSearch();
   initalizeClearAll();
   initalizeFacets();
-  initalizeOverlay(resourceOverlay);
+  initalizeOverlay();
   initalizeWindow();
 }
   //Collect Artcles data here
@@ -376,10 +376,10 @@ function directToTab()
 /** Resource page Faceted Navigation **/
 //This function initalize Overlay on the Resources page. 
 //While Faceted Navigation displayed (Mobile Version), if user click on the overlay the Faceted Navigation and overlay will be hidden.
-function initalizeOverlay(customOverLay)
+function initalizeOverlay()
 {
-  customOverLay = document.getElementById("custom-overlay");
-  customOverLay.addEventListener("click", closeFacetedNav);
+  resourceOverlay = document.getElementById("custom-overlay");
+  resourceOverlay.addEventListener("click", closeFacetedNav);
 }
 //This function add evenlistener to the window.
 function initalizeWindow()
