@@ -3226,8 +3226,8 @@ html *
     #searchbar
     {
       display: block;
-      width: 584px;
-      height: 51px;
+      width: 584px !important;
+      height: 51px !important;
       background-color: white;
       border: none;
       border-radius: 30px;
@@ -3285,17 +3285,34 @@ html *
     .grid-col-auto
     {
       padding: 0.89rem;
+      .view-all-option
+      {
+        width: 135px !important;
+        .service-image
+        {
+          height: 70%;
+          border-bottom: solid 1px #d7d7d7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img 
+          {
+            width: 50px !important;
+            height: 50px !important; 
+          }
+        }
+      }
       .service-option
       {
         background-color: white;
-        width: 241px;
-        height: 238px;
+        width: 208px;
+        height: 235px;
         border-radius: 10px;
-        .service-link, .service-image, .service-name
+        .cs-service-link, .service-image, .service-name
         {
           width: 100%;
         }
-        .service-link
+        .cs-service-link
         {
           height: 100%;
           text-decoration: none;
@@ -3318,6 +3335,7 @@ html *
         .service-name
         {
           height: 30%;
+          font-size: 16px !important;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -4778,7 +4796,7 @@ html *
           //Make searchbar width dynamic.
           #searchbar
           {
-            width: 90%;
+            width: 90% !important;
             margin-left: 5%;
             margin-right: 5%;
           }
@@ -4974,7 +4992,7 @@ html *
     .section-heading
     {
       text-align: left;
-      padding-left: 0.50rem;//Align the heading with the service-link.
+      padding-left: 0.50rem;//Align the heading with the cs-service-link.
     }
     .grid-container
     {
@@ -4989,8 +5007,8 @@ html *
           .service-option
           {
             height: 82px;
-            width: 100%;
-            .service-link
+            width: 100% !important;
+            .cs-service-link
             {
               display: flex;
               flex-direction: row;
