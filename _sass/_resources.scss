@@ -2155,6 +2155,18 @@ html *
         background-repeat: no-repeat; 
       }
     }
+    .login-require-with-description
+    {
+      a, .div-a
+      {
+        .link-heading
+        {
+          background-image: url('../images/icons/lock.svg');
+          background-position: right 0.5% bottom 50%; 
+          background-repeat: no-repeat; 
+        }
+      }
+    }
   }
   .links-with-descriptions
   {
@@ -2375,13 +2387,6 @@ html *
       a
       {
         background-position: right 10px bottom 75%;
-      }
-    }
-    .login-require-commnuity
-    {
-      a
-      {
-        background-position: right 10px bottom 85% !important;
       }
     }
   }
