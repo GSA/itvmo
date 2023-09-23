@@ -134,7 +134,6 @@ if(document.getElementById('news') != null)
       };
       publisherMap.set(currPublisher.name, currPublisher);
     }
-    console.log(publisherMap);
   }
 
   //This function initalize Pagination.
@@ -179,7 +178,6 @@ if(document.getElementById('news') != null)
     for (let i = startIndex; i < endIndex && i < articles.length; i++) 
     {
       let publisher = publisherMap.get(articles[i].publisher);
-      console.log(articles[i].synopsis != "");
       let articleLink = articles[i].link;
       if(articles[i].synopsis != "")
       {
@@ -357,7 +355,6 @@ Example: "href="{{site.baseurl}}/services/oem?tabName=contract-review-header&sid
 function directToTab() 
 {
   const urlParams = new URLSearchParams(window.location.search);
-  console.log(urlParams)
   var tabName = urlParams.get("tabName");
   var sideNav = urlParams.get("sideNav");
   if (tabName != null) 
@@ -366,7 +363,6 @@ function directToTab()
   }
   if (sideNav != null) 
   {
-    console.log(document.getElementById(sideNav));
     document.getElementById(sideNav).click();
   }
 }
@@ -1017,7 +1013,6 @@ function retriveEventsData()
     }
     pastEventHighlight.push(currEvent);
   }
-  console.log(pastEventHighlight);
 
 }
 
@@ -1062,19 +1057,14 @@ async function displayEvents(navList, tabId ,currEventList)
       <div id="past-event-highlights">
       </div>
     `;
-    // console.log(eventContainer.children[0]);
-    //
     eventContainer.children[0].innerHTML = 
     `
     <h3 class="topic-heading">Past Event Highlights</h3>
     <div id="event-highlights-container"><div>
     `;
-    // console.log(eventContainer.children[0].children[1]);
     eventContainer.children[0].children[1].innerHTML = ""
     for(ev of pastEventHighlight)
     {
-      console.log(ev.title.length);
-      console.log(ev.title.length > 25);
 
       let currHighlight = '';
       //If the Past Event Highlight have image file that is not SVG, display change the style of the image.
@@ -1323,7 +1313,6 @@ function openModal(eventForDay) {
 
 async function runCalendar(d,m,y) {
   const dt = new Date();
-  console.log(dt.getMonth());
   //Nav always start with 0, until user press nextButton or backButton to change the nav value.
   if(nav !== 0)
     dt.setDate(1);
