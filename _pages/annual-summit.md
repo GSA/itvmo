@@ -1,12 +1,10 @@
 ---
-title: 2023 Annual ITVMO Summit
-title-image: "/assets/uploads/annual-summit.svg"
-heading-description: "Leveraging Category Management for IT Procurement using Small Business, Original Equipment Manufacturers, and Best-in-Class Solutions"
+title: Annual Summit
+title-image: "/assets/images/icons/page_icons/annual-summit-logo.svg"
+heading-description: ""
 layout: page
 sidenav: false
 redesign: true
 mainpage: false
 ---
 {% include annual-summit.html %}
-
-

@@ -8,7 +8,7 @@
     row-gap: 50px;
     align-items: center;
     justify-content: center;
-    .team-member
+    .team-member, .team-member-div
     {
         cursor: pointer;
         text-decoration: none;
@@ -50,6 +50,11 @@
             font-style: italic;
         }
         
+    }
+    .team-member-div
+    {
+        width: 268px;
+        height: 375px;
     }
     .team-member:hover 
     {

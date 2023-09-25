@@ -1,6 +1,6 @@
 ---
 organizer: ITVMO
-url-link: https://itvmo.gsa.gov/coming-soon/
+url-link: https://itvmo.gsa.gov/annual-summit/
 title: ITVMO Annual Summit 2024
 description: >-
   The ITVMO will be hosting an in-person annual Summit on April 17th to convene
