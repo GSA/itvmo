@@ -3561,6 +3561,46 @@ html *
     {
       width: 26.9%;
       padding-left: 35px;
+      .feed-follow-us
+      {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        padding: 40px 20px;
+        height: auto;
+        width: 100%;
+        min-width: 310px;
+        border-radius: 10px;
+        background-color: white;
+        .feed-itvmo-logo
+        {
+          height: 140px;
+          width: 140px;
+          border-radius: 10px;
+        }
+        p, h4
+        {
+          text-align: center;
+          margin: 0;
+          color: #333333;
+          font-family: 'Source Sans 3', sans-serif !important;
+        }
+        h4 
+        {
+          font-size: 20px;
+        }
+        p 
+        {
+          font-size: 17px;
+        }
+        .external-link
+        {
+          color: white;
+          text-decoration: none;
+          font-size: 14px;
+        }
+      }
     }
     #divide-line
     {
