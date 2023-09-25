@@ -879,8 +879,9 @@ function populateDirectory()
   let currentUrl = window.location.href;
   currentUrl = currentUrl.split('#')[0]; //Remove HTML ID
   currentUrl = currentUrl.split('?')[0]; //Remove Parameters
-  let urlSplit = currentUrl.replace("http://","")
-  urlSplit = urlSplit.split("/")
+  let urlSplit = currentUrl.replace("http://","");
+  urlSplit = urlSplit.replace("https://","");
+  urlSplit = urlSplit.split("/");
   urlSplit.pop();
   let newElements = ``;
   let oldCp = "";
