@@ -28,7 +28,9 @@
 <section id="page-announcements">
    {% for announcement in site.events_page_announcements %}
    <div class="announcement">
-      <img src="{{site.baseurl}}/assets/images/icons/speaker.svg" alt="Speaker icon">
+      <div class="announcement-image">
+         <img src="{{site.baseurl}}/assets/images/icons/speaker.svg" alt="Speaker icon">
+      </div>
       <div class="announcement-info">
          <h3>{{announcement.title}}</h3>
          <p>{{announcement.description}} <a href="{{announcement.url-link}}">Register Here.</a></p>

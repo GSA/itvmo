@@ -1995,20 +1995,29 @@ html *
   {
     width: 100%;
     height: auto;
-    padding: 18px 15px 18px 15px;
-    background-color: #faf3d0;
-    border-left: #ffbe2f 10px solid;
+    padding: 18px 15px 18px 0px;
+    background-color: white;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     column-gap: 20px;
-    img 
+    .announcement-image
     {
-      width: 36px;
-      height: 32px;
-      margin-top: -10px;
+      padding-left: 15px;
+      width: 72px;
+      background-color: #ffbe2f;
+      margin: -18px 0px;
+      display: flex;
+      align-items: center;
+      img 
+      {
+        width: 30px;
+        height: 26px;
+        margin-left: 6px;
+      }
     }
     .announcement-info
     {
+      width: 1214px;
       h3, p 
       {
         margin: 0;
