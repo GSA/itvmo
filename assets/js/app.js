@@ -37,7 +37,6 @@ if( document.getElementById('events-page') != null)
 {
   retriveEventsData();
   //Retrive the keys and their value from the URL.
-  // localStorage.clear();
   const urlParams = new URLSearchParams(queryString);
   const d = urlParams.get('day'), m = urlParams.get('month')-1, y = urlParams.get('year');
   dateDisplay = document.getElementById("calendar-date-display");
@@ -102,18 +101,6 @@ if(document.getElementById('news') != null)
         "synopsis":a.children[2].innerHTML,
         "path":a.getAttribute("data-path")
       });
-
-      
-      // let currArticle =
-      // {
-      //   "publisher":resource.getAttribute("data-publisher"),
-      //   "title":resource.getAttribute("data-title"),
-      //   "description":resource.getAttribute("data-description"), 
-      //   "link":resource.getAttribute("data-url"),
-      //   "date":resource.getAttribute("data-publication-date"),
-      //   "synopsis":resource.getAttribute("data-synopsis"),
-      // };
-      // finalArticles.set(currArticle.name)
     }
     articles = finalArticles;
     articles.sort((a, b) => new Date(b.date) - new Date(a.date)); //Sort Article in decending order.
@@ -399,7 +386,6 @@ function checkScreenWidth() {
   else
   {
     unhideFacets();
-    // const facetList = document.getElementsByClassName("facet-list");
     for(let i=1; i< facetList.length; i++)
     {
       facetList[i].classList.remove("facet-list-active");
@@ -1140,7 +1126,6 @@ async function displayEvents(navList, tabId ,currEventList)
     if(i == (currEventList.length-1))
     {
       setPageNav(navList, currMonth, monthEventCount, months[currEventList[i].date.getMonth()], currEventList[i].date.getFullYear(), active);
-      // setMonthDiv(currMonth);
     }
     setEventDiv(currMonthDiv, currEventList[i], `${months[currEventList[i].month]} ${currEventList[i].dateNumber}, ${currEventList[i].date.getFullYear()}`)
   }
@@ -1249,11 +1234,6 @@ function setEventDiv(monthDiv, currEvent, currDate)
 function openModal(eventForDay) {
   if(eventForDay.length > 0)
   {
-    // var eventText =
-    // `
-    // <h3 id="calendar-date-display">${dayString}</h3>
-    // <div class="animate fadeInDown">
-    // `;
     var eventText =
     `
     <div>
@@ -1296,13 +1276,6 @@ function openModal(eventForDay) {
   }
   else
   {
-    // document.getElementById('current-day-events').innerHTML = 
-    // `
-    // <h3 id="calendar-date-display">${dayString}</h3>
-    // <div class="animate fadeInDown">
-    // <p><b>No events planned today.</b></p>
-    // </div>
-    // `;
     document.getElementById('current-day-events').innerHTML = 
     `
     <div>
