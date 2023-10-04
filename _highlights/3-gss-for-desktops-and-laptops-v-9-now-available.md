@@ -1,10 +1,8 @@
 ---
 order: 3
-title: GSS for Desktops and Laptops v.9 Now Available
-description: A comprehensive refresh has been done to the Governmentwide
-  Strategic Solutions (GSS) for Desktops and Laptops. Check out what has changed
-  from v.8 and what vehicle solution is right for you.
-url-link: https://itvmo.gsa.gov/it-vehicles/#end-user-buying-overview
-publication-date: September 22, 2023
-background-image: assets/uploads/laptopsndevices.jpeg
+title: "FinOps - Agency Case Study: U.S. Army - CAMO"
+description: Read about our successful work with U.S. Army that saved millions!
+url-link: https://itvmo.gsa.gov/assets/files/FinOps-Case-Study-Army-Camo.pdf
+publication-date: October 04, 2023
+background-image: assets/uploads/finops-pic.jpg
 ---
