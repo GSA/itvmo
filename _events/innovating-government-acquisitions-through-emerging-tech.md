@@ -1,6 +1,6 @@
 ---
 organizer: ATARC and ITVMO
-url-link: o:https://atarc.org/event/gsa-emerging-tech-summi
+url-link: https://atarc.org/event/gsa-emerging-tech-summit
 title: Innovating Government Acquisitions through Emerging Tech
 description: >
   Our event will allow participants to hear from government leaders on the
