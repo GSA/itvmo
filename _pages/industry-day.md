@@ -1,5 +1,7 @@
 ---
 title: ITVMO Industry Day
+description: "Part of the ITVMO’s mission is to bring together the IT vendor community and IT acquisitions experts at federal agencies to develop shared solutions that reduce redundancy, overcome barriers to entry to the federal IT marketplace, and save time and money. On May 12th, the ITVMO hosted an Industry Day, intended for a general audience, that presented the ITVMO’s vision for improving IT acquisitions in the future. The ITVMO, along with other federal government partner programs and agency IT acquisitions personnel, will engage industry groups and specific vendors to improve governmentwide IT acquisitions. No solution is possible without help and input from the IT vendor community and the Industry Day was the first of many opportunities to gather feedback and learn from industry."
+keywords: "IT Vendor community, IT Acquisitions Experts, Shared Solutions, Federal IT marketplace, Industry Day, IT Acquisitions, Federal government partner programs, Vendors, Governmentwide IT acquisitions, Industry."
 layout: page
 sidenav: false
 ---

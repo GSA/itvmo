@@ -2,6 +2,8 @@
 title: Events
 title-image: ""
 heading-description: Stay up to date with the ITVMO and our partners. Browse our event logs and calendar to learn more about, and register for, upcoming events. Review the past events tab to discover our event archives.
+description: "Stay up to date with the ITVMO and our partners. Browse our event logs and calendar to learn more about, and register for, upcoming events. Review the past events tab to discover our event archives."
+keywords: "Events, workshops, conferences, training, luncheons, tech talks, innovation, collaboration, calendar, meeting"
 layout: page
 sidenav: false
 mainpage: true
