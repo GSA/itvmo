@@ -4601,11 +4601,11 @@ html *
 //News Updates Highlights section from row display to column display.
 @media screen and (max-width: 1320px)
 {
-  #news, #newsletter
+  #news
   {
-    #news-updates-highlights, #newsletter-highlight 
+    #news-updates-highlights
     {
-      #news-updates, #news-highlights, #prev-newsletter
+      #news-updates, #news-highlights
       {
         width: 100%;
         padding: 0;
@@ -4680,12 +4680,36 @@ html *
   }
 
 }
+//Display the Update Highlight Cards mobile version, and hide the desktop version (For Quaterly Newsletter page).
+@media screen and (max-width: 950px)
+{
+  #newsletter
+  {
+    #newsletter-highlight 
+    {
+      #prev-newsletter
+      {
+        width: 100%;
+        .update-highlight-card
+        {
+          display: none;
+        }
+        .update-highlight-card-mobile
+        {
+          display: flex;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
 //Display the Update Highlight Cards mobile version, and hide the desktop version.
 @media screen and (max-width: 660px)
 {
-  #news, #newsletter
+  #news
   {
-    #news-updates-highlights, #newsletter-highlight 
+    #news-updates-highlights
     {
       #news-updates, #news-highlights, #prev-newsletter
       {
