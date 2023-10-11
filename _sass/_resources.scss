@@ -1933,6 +1933,10 @@ html *
   font-size: 27px;
   color: #062349;
 }
+.sub-topic-heading-small
+{
+  font-size: 18px;
+}
 .sub-topic-heading-italic
 {
   color: #000000;
@@ -2615,7 +2619,7 @@ html *
       width: 277px;
       height: 298px;
     }
-    #kyra
+    .tab-img-p-image
     {
       width: 286px;
       height: 272px;
@@ -4272,10 +4276,14 @@ html *
   }
 }
 
-/* News page */
-#news
+/* News page & Newsletters on Quaterly ITVMO Newsletter*/
+#news, #newsletter
 {
-  #news-updates-highlights 
+  #newsletter-highlight 
+  {
+    justify-content: flex-start !important;
+  }
+  #news-updates-highlights, #newsletter-highlight 
   {
     display: flex;
     row-gap: 20px;
@@ -4290,7 +4298,7 @@ html *
     {
       padding-left: 15px;
     }
-    #news-updates, #news-highlights
+    #news-updates, #news-highlights, #prev-newsletter
     {
       display: flex;
       flex-direction: column;
@@ -4593,11 +4601,11 @@ html *
 //News Updates Highlights section from row display to column display.
 @media screen and (max-width: 1320px)
 {
-  #news
+  #news, #newsletter
   {
-    #news-updates-highlights 
+    #news-updates-highlights, #newsletter-highlight 
     {
-      #news-updates, #news-highlights
+      #news-updates, #news-highlights, #prev-newsletter
       {
         width: 100%;
         padding: 0;
@@ -4675,11 +4683,11 @@ html *
 //Display the Update Highlight Cards mobile version, and hide the desktop version.
 @media screen and (max-width: 660px)
 {
-  #news
+  #news, #newsletter
   {
-    #news-updates-highlights 
+    #news-updates-highlights, #newsletter-highlight 
     {
-      #news-updates, #news-highlights
+      #news-updates, #news-highlights, #prev-newsletter
       {
         .update-highlight-card
         {
