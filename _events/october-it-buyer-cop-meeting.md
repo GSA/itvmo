@@ -1,6 +1,6 @@
 ---
 organizer: ITVMO
-url-link: https://forms.gle/4vG6kcvJuHPVhR8i7
+url-link: https://gsasolutionssecure.gsa.gov/LP=4872
 title: "October IT Buyer COP Meeting "
 description: "The ITB CoP helps agencies procure IT faster and smarter by
   creating a shared space where IT buyers throughout the government can help
