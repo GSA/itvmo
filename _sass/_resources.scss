@@ -9,6 +9,12 @@
 @import 'contact-us-contribute';
 @import '404';
 @import 'subscribe';
+.ul-no-bullets 
+{
+  list-style-type: none; 
+  // padding: 0; /* Remove padding */
+  margin: 0; 
+}
 .no-style {
   text-decoration: none;
   color: black;
