@@ -893,7 +893,7 @@ function populateDirectory()
     }
     else if(i > 0)
     {
-      if((cp == 'News' ) && ((oldCp !== "Annual Leading Edge Technologies Report") && (oldCp !== "Quarterly Itvmo Newsletter")))
+      if((cp == 'News' ) && ((oldCp !== "Annual Leading Edge Technologies Report") && (oldCp !== "Quarterly Itvmo Newsletter") && (oldCp !== "Previous Quarterly Itvmo Newsletter")))
       {
           newElements = `<p>Relating to ITVMO</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg"><a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
       }
