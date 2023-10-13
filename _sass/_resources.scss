@@ -3273,34 +3273,31 @@ html *
     {
       display: flex;
       flex-direction: row;
-    }
-    #searchbar
-    {
-      display: block;
-      width: 534px !important;
-      height: 51px !important;
-      margin-left: -1px;
-      background-color: white;
-      border: none;
-      border-radius: 30px 0px 0px 30px;
-      margin-left: 5px;
-      padding-left: 20px;
-      font-size: 13px;
-      font-weight: 400; 
-      // background-image: url('../images/icons/search-icon.svg');
-      // background-position: right 2.5% bottom 50%;
-      // background-repeat: no-repeat; 
-    }
-    #searchbar-button
-    {
-      width: 50px !important;
-      height: 51px !important;
-      border-radius: 0px 30px 30px 0px;
-      background-color: white;
-      background-image: url('../images/icons/search-icon.svg');
-      background-repeat: no-repeat; 
-      background-position: center;
-      border: none !important;
+      #searchbar
+      {
+        display: block;
+        width: 534px !important;
+        height: 51px !important;
+        margin-left: -1px;
+        background-color: white;
+        border: none;
+        border-radius: 30px 0px 0px 30px;
+        margin-left: 5px;
+        padding-left: 20px;
+        font-size: 13px;
+        font-weight: 400;
+      }
+      #searchbar-button
+      {
+        width: 50px !important;
+        height: 51px !important;
+        border-radius: 0px 30px 30px 0px;
+        background-color: white;
+        background-image: url('../images/icons/search-icon.svg');
+        background-repeat: no-repeat; 
+        background-position: center;
+        border: none !important;
+      }
     }
     h3, p
     {
