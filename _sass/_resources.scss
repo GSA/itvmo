@@ -4222,7 +4222,6 @@ html *
 
           .file-type
           {
-            width: 55px;
             border-color: rgba(216, 33, 19, 1);
             color: rgba(216, 33, 19, 1);
           }
@@ -4232,7 +4231,7 @@ html *
             border-color: rgba(0, 115, 186, 1);
             color: rgba(0, 115, 186, 1);
           }
-          .audience, .branded-offerings
+          .audience, .branded-offerings, .file-type
           {
             width: auto;
             padding-left: 12px;
