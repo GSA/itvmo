@@ -6,7 +6,7 @@ description: This tool can read multiple months of Azure billing data and
 url-link: https://itvmo.gsa.gov/assets/files/FinOps-Cloud-Cost-Reporting-Template.xlsx
 publication-date: March 30, 2023
 reading-time: 15
-type: Hyperlink
+type: Subpage
 gov-only: false
 is-external: true
 filter: itvmo-general

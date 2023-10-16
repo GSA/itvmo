@@ -6,7 +6,7 @@ description: This tool can help forecast 24 months of future spend with only 6
 url-link: https://itvmo.gsa.gov/assets/files/FinOps-Forecast-Spreadsheet.xlsx
 publication-date: March 30, 2023
 reading-time: 15
-type: Hyperlink
+type: Subpage
 gov-only: false
 is-external: true
 filter: itvmo-general

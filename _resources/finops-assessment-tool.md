@@ -7,7 +7,7 @@ description: This tool allows the user to evaluate their cloud cost management
 url-link: https://itvmo.gsa.gov/assets/files/FinOps-Assessment.xlsx
 publication-date: March 30, 2023
 reading-time: 15
-type: Hyperlink
+type: Subpage
 gov-only: false
 is-external: true
 filter: itvmo-general
