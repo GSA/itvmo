@@ -58,7 +58,7 @@ if(document.getElementById('resources') != null)
 {
   //Display all the resource cards right away.
   document.addEventListener("DOMContentLoaded", () => {
-    updateResults();
+    searchURLParam();
   });
   retriveResourceData();
   initalizeSearch();
@@ -446,6 +446,31 @@ function closeFacetedNav()
   resourceOverlay.classList.remove("overlay-active");
   facetNav.classList.remove("faceted-display-mobile");
   hideFacets();
+}
+//This fucntion proceed the search if the search is exist on the URL parameter, else show all resource cards.
+function searchURLParam()
+{
+  const urlParams = new URLSearchParams(window.location.search);
+  var search = urlParams.get("search");
+  var filters = urlParams.get("filters")
+  if(filters != null)
+  {
+    const filterCheckboxMap = new Map([["policy", "check1"],["acquisition-best-practices","check2"],["small-business", "check3"],["market-intelligence", "check4"],["technology", "check5"],["contract-solutions", "check6"],["itvmo-general", "check7"]
+  ,["contracts-acquisitions","check8"],["program-operations","check9"],["security-compliance","check10"],["industry-all-businesses","check11"],["guidance","check12"],["use-case","check13"],["report","check14"],["information-slick","check15"],["tool","check16"],["public-resource","check17"],["goverment-military-access-only","check18"]]);
+
+    filters = filters.split(',');
+    console.log(filters);
+    for(let i = 0; i < filters.length; i++)
+    {
+      console.log(document.getElementById(filters[i]));
+      document.getElementById(filterCheckboxMap.get(filters[i])).click();
+    }
+  }
+  if(search != null)
+  {
+    document.getElementById('search-input').value = search;
+  }
+  updateResultsSearch();
 }
 //This function will update resource cards according to both search and facets
 function updateResultsSearch() 
