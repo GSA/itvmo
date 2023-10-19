@@ -94,7 +94,7 @@ secondary_navigation:
   - name: About
     url: /about/
   - name: Subscribe
-    url: /#subscription-area
+    url: "#subscription-area"
   - name: Contribute
     url: /contact-us-contribute/?tabName=contribute-header
   - name: Contact Us
