@@ -684,7 +684,7 @@ function displayResults(filterResources)
                   if(resource.govOnly == 'true')
                   {
                     resultItem +=`<div class="govmil">
-                      <img alt="Lock icon" src="${baseUrl}/assets/images/icons/lock.svg">
+                      <img aria-label="This is Gov only event" alt="Lock icon" src="${baseUrl}/assets/images/icons/lock.svg">
                     </div>`
                   }
                   
