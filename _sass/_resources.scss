@@ -2370,7 +2370,9 @@ html *
         }
         .link-heading
         {
-          display: inline;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
           border: none;
           width: fit-content;
           padding: 0;
