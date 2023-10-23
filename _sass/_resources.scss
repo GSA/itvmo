@@ -2013,7 +2013,7 @@ html *
     .announcement-image
     {
       padding-left: 15px;
-      width: 72px;
+      min-width: 72px !important;
       background-color: #ffbe2f;
       margin: -18px 0px;
       display: flex;
