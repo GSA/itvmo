@@ -1135,11 +1135,11 @@ async function displayEvents(navList, tabId ,currEventList)
       currMonth = currEventMonth+tabId;
       currMonthDiv = setMonthDiv(eventContainer, currMonth, months[currEventList[i].date.getMonth()], currEventList[i].date.getFullYear());
     }
-    //If detect that currEventMonth is no longer equal to currMonth, therefore change the currMonth to currEventMonth and reset the monthEventCount to 1.
+    //If detect that currEventMonth is no longer equal to currMonth, therefore change the currMonth to currEventMonth and reset the monthEventCount to 1. (Forward to the next month)
     if(currMonth != currEventMonth+tabId)
     {
-      setPageNav(navList, currMonth, monthEventCount, months[currEventList[i-1].date.getMonth()], currEventList[i].date.getFullYear(), active); //i-1 because the current futureEventList[i] already the different month.
       currMonth = currEventMonth+tabId;
+      setPageNav(navList, currMonth, monthEventCount, months[currEventList[i-1].date.getMonth()], currEventList[i-1].date.getFullYear(), active); //i-1 because the current futureEventList[i] already the different month.
       monthEventCount = 1;
       active = false;
       currMonthDiv = setMonthDiv(eventContainer, currMonth, months[currEventList[i].date.getMonth()], currEventList[i].date.getFullYear());
