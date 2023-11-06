@@ -1,3 +1,41 @@
+.image-container
+{
+    outline: 2px solid hsl(0, 0%, 50%);
+    position: relative;
+    img 
+    {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .image-overlay
+    {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: rgba(0, 0, 0, 0.3);
+        color: #f1f1f1;
+        border-inline: #636363;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .overlay-icon
+        {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+.image-container:hover, .image-container:focus
+{
+    cursor: pointer;
+    .image-overlay
+    {
+        opacity: 1;
+    }
+}
 #team-container
 {
 
@@ -159,6 +197,14 @@
         margin-bottom: 10px;
     }
 }
+.usa-modal-bg-transparent
+{
+    background-color: transparent;
+}
+.usa-modal-main-no-padding
+{
+    padding: 0;
+}
 
 .usa-modal__footer
 {
@@ -171,6 +217,11 @@
 .usa-modal__close
 {
     padding: 1.25rem 1.25rem;
+}
+.usa-modal-close-no-padding-right
+{
+    padding: 0;
+    margin: 1.25rem 0rem;
 }
 @media screen and (max-width: 1158px)
 {

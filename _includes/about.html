@@ -23,7 +23,25 @@
           <p class="tab-p">
               Provide agencies with meaningful intelligence to inform and support faster, smarter IT buying decisions.
           </p>
-          <img src="{{site.baseurl}}/assets/images/screenshot/our-mission.png" alt="Our Missions image">
+          <a tabindex="0" class="image-container" href="#mission-image" aria-label="Open our Missions image" aria-controls="mission-image" data-open-modal="" role="button">
+            <img src="{{site.baseurl}}/assets/images/screenshot/our-mission.png" alt="Our Missions image">
+            <div class="image-overlay">
+              <img src="{{site.baseurl}}/assets/images/icons/search-icon-white.svg" alt="search-icon" class="overlay-icon">
+            </div>
+          </a>
+          <div
+            class="usa-modal usa-modal-team-member usa-modal-bg-transparent" id="mission-image">
+            <div class="usa-modal__content">
+              <div class="usa-modal__main usa-modal-main-no-padding">
+                <img src="{{site.baseurl}}/assets/images/screenshot/our-mission.png" alt="Our Missions image">
+              </div>
+                <button
+                  type="button" class="usa-button usa-modal__close usa-modal-close-no-padding-right" aria-label="Close this window" data-close-modal
+                >
+                  <img src="{{site.baseurl}}/assets/images/icons/exit-icon-white.svg" alt="Exit button" class="exit-button">
+                </button>
+            </div>
+          </div>
           <h3 id="our-history" class="sub-topic-heading">
              Our History
           </h3>
