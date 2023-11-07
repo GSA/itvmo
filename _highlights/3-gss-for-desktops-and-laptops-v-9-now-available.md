@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 4
 title: "FinOps - Agency Case Study: U.S. Army - CAMO"
 description: The U.S. Army has utilized a FinOps program to gain visibility into
   its cloud costs and usage to optimize spending. Read about our collaborative
