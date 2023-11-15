@@ -9,7 +9,19 @@
   
   }
   
-  
+  #subscribe-itvmo-logo
+  {
+    width: 75px;
+    height: 75px;
+  }
+  .subscribe-text-logo
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+  }
   
   .SubscriptionSection{
     background-color: #2B2C40;
@@ -61,8 +73,8 @@
     background-color: #fff;
     color: #333333;
     font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    padding: 8px 20px 8px 20px;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
     border: none;
     border-radius: 5px;
   }
@@ -74,9 +86,21 @@
   .subscribeFooterText{
     font-family: "SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif;
     font-size: 16px;
-    padding-top: 20px;
     color: #fff;
     font-style: italic;
     font-weight: 600;
+    padding-left: 90px;
   
+  }
+
+  @media only screen and (max-width: 640px) {
+    .subscribe-text-logo
+    {
+      display: flex;
+      flex-direction: column;
+    }
+    .subscribeFooterText
+    {
+      padding-left: 0 !important;
+    }
   }
