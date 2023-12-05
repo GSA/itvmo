@@ -6,5 +6,5 @@ description: "The event will center around the IT Best-In-Class (BIC) contract
   surveyed community members. "
 url-link: https://forms.gle/6hRsrKXHYbk2dFU28
 publication-date: December 05, 2023
-background-image: assets/uploads/finops-pic.jpg
+background-image: assets/uploads/569886288.jpeg
 ---
