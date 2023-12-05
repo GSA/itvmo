@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 4
 title: OMB Releases Implementation Guidance on AI
 description: The new OMB guidelines provide a comprehensive framework for
   federal agencies in their adoption of artificial intelligence systems.
