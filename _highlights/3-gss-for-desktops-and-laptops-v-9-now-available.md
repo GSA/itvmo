@@ -1,6 +1,6 @@
 ---
 order: 1
-title: Join us for our Annual IT Buyers Event on January 18th
+title: "January 18th Annual IT Buyers Event "
 description: "The event will center around the IT Best-In-Class (BIC) contract
   vehicles, directly addressing the most pressing challenges reported by
   surveyed community members. "
