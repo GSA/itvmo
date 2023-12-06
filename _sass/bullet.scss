@@ -29,7 +29,6 @@ ul.experiences li:before {
     top: -19px;
 }
 
-
 ul.experiences li:first-child:before {
    /* first li's line */
    /* top: 6px; moves the line down so that it disappears under the bullet. Adjust manually */
@@ -57,6 +56,10 @@ ul.experiences li {
 .bulletText {
     font-size: 1em;
     line-height:2;
+    .external-icon
+    {
+        margin-left: 5px;
+    }
 }
 .dropdown-bulletText
 {
@@ -103,4 +106,20 @@ position: relative;
     right: 10px;
     bottom: 0px;
     z-index: -1;
+}
+
+//Overwrite the ul.experiences style
+ul.normal-list li:after,
+ul.normal-list li:before {
+    content: none;
+}
+ul.normal-list {
+    list-style-type: disc;
+    margin-left: 10px;
+    li 
+    {
+        list-style: disc !important;
+        padding-bottom: 0px;
+        // height: 28px !important;
+    }
 }
