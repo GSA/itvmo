@@ -176,11 +176,11 @@ if(document.getElementById('news') != null)
             <div class="article-card-upper">
               <div class="article-card-upper-left">
                 <img class="article-card-publisher-logo" src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
-                <h1 class="two-line-max">${articles[i].title}</h1>
+                <h2 class="two-line-max">${articles[i].title}</h2>
               </div>
               <div class="article-card-upper-right">
                 <div>
-                  <h1 class="one-line-max">${articles[i].title}</h1>
+                  <h2 class="one-line-max">${articles[i].title}</h2>
                   <p class="four-line-max">${articles[i].description}</p>
                 </div>
                 <p class="article-card-date" >${articles[i].date}</p>
