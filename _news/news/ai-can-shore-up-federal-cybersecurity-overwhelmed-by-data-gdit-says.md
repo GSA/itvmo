@@ -1,6 +1,6 @@
 ---
 layout: news
-publisher: FEDERAL NEWS NETWORK
+publisher: FEDERAL TIMES
 title: AI can shore up federal cybersecurity overwhelmed by data, GDIT says
 url-link: https://www.federaltimes.com/it-networks/2023/11/28/ai-can-shore-up-federal-cybersecurity-overwhelmed-by-data-gdit-says/
 publication-date: November 28, 2023
