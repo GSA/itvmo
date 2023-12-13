@@ -3,7 +3,7 @@ layout: news
 publisher: Government Accountability Office
 title: "GAO Agile Assessment Guide: Best Practices for Adoption and Implementation"
 url-link: https://www.gao.gov/products/gao-24-105506
-publication-date: December 28, 2023
+publication-date: November 28, 2023
 description: The GAO Agile Assessment Guide presents best practices for adopting
   and implementing Agile software development methodologies in federal agencies.
   This guide addresses the need for improved management of IT acquisitions and
