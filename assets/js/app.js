@@ -914,16 +914,16 @@ function populateDirectory()
     }
     if(i == urlSplit.length-1) //The page that the user currently on, make it not a link.
     {
-      newElements+= `<p>${cp}</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
+      newElements+= `<p>${cp}</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg" alt="next arrow">`
     }
     else if(i > 0)
     {
       if((cp == 'News' ) && ((oldCp !== "Annual Leading Edge Technologies Report") && (oldCp !== "Quarterly Itvmo Newsletter") && (oldCp !== "Previous Quarterly Itvmo Newsletter")))
       {
-          newElements = `<p>Relating to ITVMO</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg"><a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
+          newElements = `<p>Relating to ITVMO</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg" alt="next arrow"><a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg" alt="next arrow">`
       }
       else 
-        newElements+= `<a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg">`
+        newElements+= `<a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg" alt="next arrow">`
     }
     else //"Home" for baseurl
     {
