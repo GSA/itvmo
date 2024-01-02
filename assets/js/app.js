@@ -887,7 +887,7 @@ function assignTabIndex(e, index)
 //This function populate the directory of the current page that trace back to root (homepage).
 function populateDirectory()
 {
-  let currentUrl = window.location.href;
+  let currentUrl = window.location.pathname;
   currentUrl = currentUrl.split('#')[0]; //Remove HTML ID
   currentUrl = currentUrl.split('?')[0]; //Remove Parameters
   let urlSplit = currentUrl.replace("http://","");
