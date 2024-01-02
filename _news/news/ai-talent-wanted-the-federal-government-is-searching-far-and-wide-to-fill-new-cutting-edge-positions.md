@@ -14,8 +14,8 @@ description: There is growing demand for AI talent in the federal government and
   The Biden Administration has introduced several efforts to close the AI talent
   gap such as the creation of the AI COE program to share best practices in AI
   adoption. Advocates also point to the need to establish an AI-literate
-  workforce through reskilling programs as only a small number of specialized AI
-  experts are needed to complement such a workforce.
+  workforce through re-skilling programs as only a small number of specialized
+  AI experts are needed to complement such a workforce.
 synopsis: >-
   * Nearly all federal agencies have major AI initiatives underway but struggle
   to recruit and retain skilled AI talent. 
