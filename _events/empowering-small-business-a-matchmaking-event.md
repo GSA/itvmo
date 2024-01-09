@@ -12,5 +12,5 @@ start-time: 2024-02-29T09:00:03.033-00:00
 end-time: 2024-02-29T13:00:00.000-00:00
 event-type: In-person
 gov-only: false
-is-external: false
+is-external: true
 ---
