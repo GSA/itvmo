@@ -1,6 +1,6 @@
 ---
 organizer: ITVMO
-url-link: https://docs.google.com/forms/d/e/1FAIpQLSf6-vXtNU5HuuAV8GOmNawT3cqkMXATJpe5ifbgpgpTESQ44g/viewform
+url-link: https://www.gsa.gov/events/it-buyers-cop-annual-buyers-event-11824
 title: Annual IT Buyers Event
 description: Join us for the IT Buyers COP (virtual) Annual Buyers Event on
   January 18 at 1:00PM EST where you will hear from Laura Stanton about
