@@ -1,10 +1,10 @@
 ---
 order: 1
-title: "January 18th Annual IT Buyers Event "
-description: "The event will center around the IT Best-In-Class (BIC) contract
-  vehicles, directly addressing the most pressing challenges reported by
-  surveyed community members. "
-url-link: https://www.gsa.gov/events/it-buyers-cop-annual-buyers-event-11824
-publication-date: December 05, 2023
+title: February 29th Small Business Event
+description: The event will focus on interaction and knowledge sharing between
+  small businesses, government officials, industry experts, and large/prime
+  businesses!
+url-link: https://www.actiac.org/act-iac-event/empowering-small-business-matchmaking-event
+publication-date: January 18, 2024
 background-image: assets/uploads/569886288.jpeg
 ---
