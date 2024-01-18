@@ -1,8 +1,8 @@
 ---
-title: Sign up for the IT Buyers COP Annual Event!
-description: Join us virtually on January 18 at 1:00PM EST where you will hear
-  from Laura Stanton about priorities for the category and BIC leadership
-  discuss upcoming changes, and solutions that are evolving to align with the
-  new administration's priorities.
-url-link: https://www.gsa.gov/events/it-buyers-cop-annual-buyers-event-11824
+title: "Sign up for the Empowering Small Business: Matchmaking Event!"
+description: "Join us on February 29th for ATARC's Empowering Small Business:
+  Matchmaking Event! Be a part of a forum that fosters interaction and knowledge
+  sharing between small businesses, government officials, industry experts, and
+  large/ prime businesses."
+url-link: https://www.actiac.org/act-iac-event/empowering-small-business-matchmaking-event
 ---
