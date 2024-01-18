@@ -3,7 +3,7 @@ layout: news
 publisher: NEXT GOV
 title: AI provides a net advantage to federal cyber defenders — if they can use it
 url-link: https://www.nextgov.com/ideas/2023/12/ai-provides-net-advantage-federal-cyber-defenders-if-they-can-use-it/392906/
-publication-date: January 22, 2024
+publication-date: December 22, 2023
 description: Artificial intelligence has the potential to be a powerful tool for
   federal cyber defenders given its ability to analyze vast amounts of data and
   detect malicious activity. However, many agencies lack the expertise to
