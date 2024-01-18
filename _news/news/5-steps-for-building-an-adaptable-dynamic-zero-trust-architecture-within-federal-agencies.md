@@ -6,7 +6,7 @@ title: 5 steps for building an adaptable, dynamic zero trust architecture within
 url-link: https://federalnewsnetwork.com/commentary/2024/01/5-steps-for-building-an-adaptable-dynamic-zero-trust-architecture-within-federal-agencies/
 publication-date: January 10, 2024
 description: >-
-  Zero-trust architecture’s (ZTA) principle of ""trust no one"" revolutionizes
+  Zero-trust architecture’s (ZTA) principle of "trust no one" revolutionizes
   traditional security models by treating all users and systems as potential
   threats and mandating verification for every access attempt. This approach,
   likened to airport security checks but enhanced by AI, is crucial in a world
