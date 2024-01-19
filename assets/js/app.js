@@ -669,7 +669,7 @@ function displayResults(filterResources)
           <a target="_blank" rel="noreferrer" href="${resource.link}" >
               <div class="resource-content">
                 <div aria-label="Filter: ${resourceF}" class="resource-filter"><span>${resourceF}</span></div>
-                <div aria-label="Title: ${resource.title}" class="resource-name"><p class="two-line-max">${resource.title}</p>
+                <div aria-label="Title: ${resource.title}" class="resource-name"><h3 class="two-line-max">${resource.title}</h3>
                 `
                 if(resource.isExternal == 'true')
                 {resultItem +=`<img alt="External icon" src="${baseUrl}/assets/images/icons/external.svg">`;}

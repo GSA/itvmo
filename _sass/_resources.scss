@@ -2034,12 +2034,12 @@ html *
     .announcement-info
     {
       width: 1214px;
-      h3, p 
+      h2, p 
       {
         margin: 0;
         color: #000000;
       }
-      h3 
+      h2 
       {
         font-weight: 700;
         font-size: 21px;
@@ -2050,7 +2050,7 @@ html *
         a 
         {
           font-weight: 650;
-          color: #437bac;
+          color: #2F4E74;
         }
       }
     }
@@ -4200,6 +4200,12 @@ html *
             margin-left: 10px;
             width: 17px;
             height: 14px;
+          }
+          h3 
+          {
+            font-size: 18px;
+            margin: 0;
+            color: #062349;
           }
         }
         .resource-detail
