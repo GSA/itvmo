@@ -16,8 +16,6 @@
     {% for resources in site.resources %}
     <div
       class="raw-resource-data"
-      data-title="{{resources.title}}"
-      data-description="{{resources.description}}"
       data-url="{{resources.url-link}}"
       data-type="{{resources.type}}"
       data-gov-only="{{resources.gov-only}}"
@@ -29,7 +27,8 @@
       data-reading-time="{{resources.reading-time}}"
       data-resource-type="{{resources.resource-type}}"
     >
-      is-visible
+      <p>{{resources.title}}</p>
+      <p>{{resources.description}}</p>
     </div>
     {% endfor %}
   </div>

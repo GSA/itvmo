@@ -558,8 +558,8 @@ function retriveResourceData()
   {
     finalResources.push(
       {
-      "title":resource.getAttribute("data-title"),
-      "description":resource.getAttribute("data-description"), 
+      "title":resource.children[0].innerHTML,
+      "description":resource.children[1].innerHTML, 
       "link":resource.getAttribute("data-url"),
       "type":resource.getAttribute("data-type"),
       "govOnly":resource.getAttribute("data-gov-only"),
