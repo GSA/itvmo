@@ -10,7 +10,8 @@ description: >-
   not all NITAAC offers. You’ll also find Assisted Acquisitions, free scope
   assessments and much more.
 
-   Please note the training session is for federal government agencies only. If you are not a federal government agency and would like to request a training session, please contact NITAAC Support for assistance. All attendees will receive 2 Continuous Learning Points (CLP) for attending this training.
+
+  Please note the training session is for federal government agencies only. If you are not a federal government agency and would like to request a training session, please contact NITAAC Support for assistance. All attendees will receive 2 Continuous Learning Points (CLP) for attending this training.
 start-time: 2024-01-24T13:00:00.000-00:00
 end-time: 2024-01-24T15:00:00.000-00:00
 event-type: Online
