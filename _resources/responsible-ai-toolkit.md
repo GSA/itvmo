@@ -15,7 +15,7 @@ description: The Responsible AI (RAI) Toolkit, developed by the Chief Digital
   with new capabilities and improvements over time.
 url-link: https://rai.tradewindai.com/executive-summary
 publication-date: December 11, 2023
-reading-time: 27
+reading-time: 25
 type: HTML
 gov-only: false
 is-external: true
