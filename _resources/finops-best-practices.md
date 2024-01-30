@@ -3,7 +3,7 @@ highlight: false
 title: FinOps Best Practices
 description: Delves into the operational model and management of unused or
   underutilized resources.
-url-link: https://itvmo.gsa.gov/assets/files/FinOps-Best-Practices.pdf
+url-link: /assets/files/2349_GPSSIT_CloudAcquisitions_b.pdf
 publication-date: March 30, 2023
 reading-time: 30
 type: PDF
