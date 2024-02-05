@@ -1,5 +1,6 @@
 ---
 layout: news
+topic: Topic B
 publisher: FEDERAL NEWS NETWORK
 title: 5 steps for building an adaptable, dynamic zero trust architecture within
   federal agencies

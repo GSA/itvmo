@@ -1,5 +1,6 @@
 ---
 layout: news
+topic: Topic A
 publisher: FEDERAL NEWS NETWORK
 title: 3 Reasons Swift Action is Needed to Prepare for a Quantum Cyberattack
 url-link: https://federalnewsnetwork.com/commentary/2023/10/3-reasons-swift-action-is-needed-to-prepare-for-a-quantum-cyberattack/

@@ -1,5 +1,6 @@
 ---
 layout: news
+topic: Topic A
 publisher: FEDERAL NEWS NETWORK
 title: 3 tactics to beef up your agency’s cybersecurity knowledge, skills and
   abilities

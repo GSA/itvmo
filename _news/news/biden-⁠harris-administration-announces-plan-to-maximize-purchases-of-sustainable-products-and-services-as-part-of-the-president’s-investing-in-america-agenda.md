@@ -1,5 +1,6 @@
 ---
 layout: news
+topic: Topic A
 publisher: The White House
 title: Biden-⁠Harris Administration Announces Plan to Maximize Purchases of
   Sustainable Products and Services as Part of the President’s Investing in
