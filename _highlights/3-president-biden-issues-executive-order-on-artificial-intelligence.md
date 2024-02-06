@@ -2,7 +2,7 @@
 order: 3
 title: Read the latest update from NIH NITAAC CIO SP4
 description: Read the latest update from NIH NITAAC CIO SP4! Check out our IT
-  Vehicles Update Page for more updates on other vehicles including SEWP VI and
+  Vehicles Update Page for more changes on other vehicles including SEWP VI and
   Polaris.
 url-link: https://nitaac.nih.gov/gwacs/cio-sp4
 publication-date: January 17, 2024
