@@ -170,6 +170,28 @@ if(document.getElementById('news') != null)
       {
         articleLink = baseUrl+articles[i].path.replace("_news", "").replace(".md",""); //!!File slug
       }
+      let articlePublisher;
+      if(publisher.name == 'ITVMO')
+      {
+        articlePublisher = 
+        `
+          <div aria-label=" Information Technology Vendor Management Office " class="article-card-publisher article-card-publisher-itvmo">
+            <img class="article-card-publisher-logo" src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
+            ${publisher.link}
+          </div>
+        `;
+      }
+      else
+      {
+        articlePublisher = 
+        `
+          <a aria-label="Direct to ${publisher.name} homepage" target="_blank" rel="noreferrer" class="article-card-publisher" href="https://${publisher.link}">
+            <img class="article-card-publisher-logo" src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
+            ${publisher.link}
+            <img alt="External icon" src="${baseUrl}/assets/images/icons/external-small.svg">
+          </a>
+        `;
+      }
       dispalyArticles +=     
       `<div class="article-card-container">
           <a target="_blank" rel="noreferrer" href="${articleLink}" class="article-card">
@@ -189,11 +211,7 @@ if(document.getElementById('news') != null)
             <div class="article-card-lower">
             </div>
           </a>
-          <a aria-label="Direct to ${publisher.name} homepage" target="_blank" rel="noreferrer" class="article-card-publisher" href="https://${publisher.link}">
-            <img class="article-card-publisher-logo" src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
-            ${publisher.link}
-            <img alt="External icon" src="${baseUrl}/assets/images/icons/external-small.svg">
-          </a>
+          ${articlePublisher}
         </div>
       `;
     }
@@ -918,7 +936,8 @@ function populateDirectory()
     }
     else if(i > 0)
     {
-      if((cp == 'News' ) && ((oldCp !== "Annual Leading Edge Technologies Report") && (oldCp !== "Quarterly Itvmo Newsletter") && (oldCp !== "Previous Quarterly Itvmo Newsletter")))
+      console.log(oldCp);
+      if((cp == 'News' ) && ((oldCp !== "Annual Leading Edge Technologies Report") && (oldCp !== "Quarterly Itvmo Newsletter") && (oldCp !== "Previous Quarterly Itvmo Newsletter")&& (oldCp !== "Informatica's Data In Action Summit")))
       {
           newElements = `<p>Relating to ITVMO</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg" alt="next arrow"><a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg" alt="next arrow">`
       }
