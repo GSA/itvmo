@@ -7,7 +7,7 @@ let baseUrl = window.location.origin;
 //If detected that it is the sanbox url, change the base url. Change the baseurl to sanbox directory that able to obtain images.
 if(baseUrl.includes("federalist"))
 {
-  baseUrl = `/preview/gsa/itvmo/main-itvmo-redesign-up-to-date`;
+  baseUrl = `/preview/gsa/itvmo/Data-in-Action/Article-page`;
 }
 //Highlights section Variables
 let curSlide = 0; 
@@ -925,7 +925,7 @@ function populateDirectory()
     // cp = cp.replace(//gi, "");
     
     //This using for the sandbox, delete this later!!
-    if(currentUrl == "https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/main-itvmo-redesign-up-to-date/")
+    if(currentUrl == "https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/Data-in-Action/Article-page/")
     {
       newElements+= `<a href="${currentUrl}">Home</a>`
       break;
