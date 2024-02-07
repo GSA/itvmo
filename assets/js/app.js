@@ -7,7 +7,7 @@ let baseUrl = window.location.origin;
 //If detected that it is the sanbox url, change the base url. Change the baseurl to sanbox directory that able to obtain images.
 if(baseUrl.includes("federalist"))
 {
-  baseUrl = `/preview/gsa/itvmo/main-itvmo-redesign-up-to-date`;
+  baseUrl = `/preview/gsa/itvmo/Data-in-Action/Article-page`;
 }
 //Highlights section Variables
 let curSlide = 0; 
@@ -170,6 +170,28 @@ if(document.getElementById('news') != null)
       {
         articleLink = baseUrl+articles[i].path.replace("_news", "").replace(".md",""); //!!File slug
       }
+      let articlePublisher;
+      if(publisher.name == 'ITVMO')
+      {
+        articlePublisher = 
+        `
+          <div aria-label=" Information Technology Vendor Management Office " class="article-card-publisher article-card-publisher-itvmo">
+            <img class="article-card-publisher-logo" src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
+            ${publisher.link}
+          </div>
+        `;
+      }
+      else
+      {
+        articlePublisher = 
+        `
+          <a aria-label="Direct to ${publisher.name} homepage" target="_blank" rel="noreferrer" class="article-card-publisher" href="https://${publisher.link}">
+            <img class="article-card-publisher-logo" src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
+            ${publisher.link}
+            <img alt="External icon" src="${baseUrl}/assets/images/icons/external-small.svg">
+          </a>
+        `;
+      }
       dispalyArticles +=     
       `<div class="article-card-container">
           <a target="_blank" rel="noreferrer" href="${articleLink}" class="article-card">
@@ -189,11 +211,7 @@ if(document.getElementById('news') != null)
             <div class="article-card-lower">
             </div>
           </a>
-          <a aria-label="Direct to ${publisher.name} homepage" target="_blank" rel="noreferrer" class="article-card-publisher" href="https://${publisher.link}">
-            <img class="article-card-publisher-logo" src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
-            ${publisher.link}
-            <img alt="External icon" src="${baseUrl}/assets/images/icons/external-small.svg">
-          </a>
+          ${articlePublisher}
         </div>
       `;
     }
@@ -907,7 +925,7 @@ function populateDirectory()
     // cp = cp.replace(//gi, "");
     
     //This using for the sandbox, delete this later!!
-    if(currentUrl == "https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/main-itvmo-redesign-up-to-date/")
+    if(currentUrl == "https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/Data-in-Action/Article-page/")
     {
       newElements+= `<a href="${currentUrl}">Home</a>`
       break;
@@ -918,7 +936,8 @@ function populateDirectory()
     }
     else if(i > 0)
     {
-      if((cp == 'News' ) && ((oldCp !== "Annual Leading Edge Technologies Report") && (oldCp !== "Quarterly Itvmo Newsletter") && (oldCp !== "Previous Quarterly Itvmo Newsletter")))
+      console.log(oldCp);
+      if((cp == 'News' ) && ((oldCp !== "Annual Leading Edge Technologies Report") && (oldCp !== "Quarterly Itvmo Newsletter") && (oldCp !== "Previous Quarterly Itvmo Newsletter")&& (oldCp !== "Informatica's Data In Action Summit")))
       {
           newElements = `<p>Relating to ITVMO</p><img src="${baseUrl}/assets/images/icons/directory-arrow.svg" alt="next arrow"><a href="${currentUrl}">${cp}</a><img src="${baseUrl}/assets/images/icons/directory-arrow.svg" alt="next arrow">`
       }

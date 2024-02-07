@@ -10,6 +10,7 @@
 @import '404';
 @import 'subscribe';
 @import 'it-vehicle';
+@import 'itvmo-articles';
 .ul-no-bullets 
 {
   list-style-type: none; 
@@ -1940,6 +1941,14 @@ html *
   font-size: 27px;
   color: #062349;
 }
+.sub-topic-heading-23
+{
+  font-size: 23px;
+}
+.sub-topic-heading-20
+{
+  font-size: 20px;
+}
 .sub-topic-heading-small
 {
   font-size: 18px;
@@ -1985,6 +1994,16 @@ html *
     font-size: 14px !important;
     color: #FFFFFF !important;
     height: 28px !important;
+  }
+}
+.external-link-orange
+{
+  background-color: rgb(255, 190, 46);
+  width:fit-content;
+  padding: 0px 20px;
+  p
+  {
+    color: black !important;
   }
 }
 .external-link-it-buyers
@@ -2422,6 +2441,10 @@ html *
       }
     }
   }
+  .links-with-descriptions-row-gap-10
+  {
+    row-gap: 10px;
+  }
 }
 
 /*Main page heading design (All the page that are on the main navigation tab)*/
@@ -2644,6 +2667,12 @@ html *
     {
       width: 286px;
       height: 272px;
+      border-radius: 10px;
+    }
+    .tab-img-p-image-small
+    {
+      width: 200px;
+      height: 200px;
       border-radius: 10px;
     }
   }
@@ -4584,7 +4613,7 @@ html *
           align-items: center;
           margin-top: -30px;
           margin-left: 125px;
-          width: 100px;
+          width: auto;
           column-gap: 5px;
           font-weight: 400;
           font-style: normal;
@@ -4600,6 +4629,15 @@ html *
         .article-card-publisher:hover 
         {
           text-decoration: underline;
+        }
+        .article-card-publisher-itvmo
+        {
+          color: black;
+          // font-size: 14px;
+        }
+        .article-card-publisher-itvmo:hover
+        {
+          text-decoration: none;
         }
       }
     }
@@ -4719,6 +4757,15 @@ html *
       }
     }
   }
+
+}
+//News updates font size of the ITVMO article card publisher to avoid the overflow.
+@media screen and (max-width: 390px)
+{
+  .article-card-publisher-itvmo
+  {
+    font-size: 14px !important;
+  } 
 
 }
 //Display the Update Highlight Cards mobile version, and hide the desktop version (For Quaterly Newsletter page).
