@@ -1,6 +1,6 @@
 ---
 organizer: ITVMO
-url-link: https://docs.google.com/forms/d/e/1FAIpQLSfrxPbNIe5l4uQHJ88FqFmWHI6kfiwNr_0oua9wEH9eYqnLsQ/viewform
+url-link: https://www.actiac.org/act-iac-event/2024-itvmo-annual-summit
 title: Annual Summit
 description: Mark your calendars for the ITVMO's 2nd Annual Summit. These
   Summit's convene both industry and government with the goal of increasing
