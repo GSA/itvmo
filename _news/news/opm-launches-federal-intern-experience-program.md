@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: OPM launches federal intern experience program
 url-link: https://fedscoop.com/opm-launches-federal-intern-experience-program/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: June 27, 2023
 description: The Office of Personnel Management has introduced a new program.
   The program aims to standardize and improve the quality of internships in

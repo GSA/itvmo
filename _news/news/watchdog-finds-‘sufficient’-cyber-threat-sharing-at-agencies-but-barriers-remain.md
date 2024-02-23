@@ -4,6 +4,8 @@ publisher: NEXT GOV
 title: Watchdog finds ‘sufficient’ cyber threat sharing at agencies, but
   barriers remain
 url-link: https://www.nextgov.com/cybersecurity/2024/01/watchdog-finds-sufficient-cyber-threat-sharing-agencies-barriers-remain/393219/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 09, 2024
 description: The Intelligence Community Inspector General's biennial update on
   cybersecurity information sharing indicates progress in the last two years,

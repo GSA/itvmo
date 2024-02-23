@@ -3,6 +3,8 @@ layout: news
 publisher: NEXT GOV
 title: New bill aims to codify NIST AI risk management in federal procurement
 url-link: https://www.nextgov.com/artificial-intelligence/2023/11/new-bill-aims-codify-nist-ai-risk-management-federal-procurement/391730/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: November 02, 2023
 description: A new bill introduced in Congress aims to establish the National
   Institute of Standards and Technology's (NIST) AI risk management framework as

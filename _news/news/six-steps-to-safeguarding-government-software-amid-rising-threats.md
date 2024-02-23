@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL TIMES
 title: Six steps to safeguarding government software amid rising threats
 url-link: https://www.federaltimes.com/opinions/2023/08/01/six-steps-to-safeguarding-government-software-amid-rising-threats/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust" 
 publication-date: August 01, 2023
 description: "This outlines six steps federal agencies should take to better
   secure their software in light of escalating cyber threats. Software security

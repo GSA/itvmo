@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: "Sen. Ernst to agencies: No more ‘easy As’ on the SBA scorecard"
 url-link: https://federalnewsnetwork.com/acquisition-policy/2023/09/sen-ernst-to-agencies-no-more-easy-as-on-the-sba-scorecard/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: September 07, 2023
 description: "Senator Joni Ernst recently criticized federal agencies for
   consistently receiving high grades on the Small Business Administration's

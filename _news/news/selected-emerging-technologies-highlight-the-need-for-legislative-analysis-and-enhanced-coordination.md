@@ -4,6 +4,8 @@ publisher: Government Accountability Office
 title: Selected Emerging Technologies Highlight the Need for Legislative
   Analysis and Enhanced Coordination
 url-link: https://www.gao.gov/products/gao-24-106122
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 25, 2024
 description: The Government Accountability Office (GAO) report highlights the
   challenges and opportunities faced by federal agencies in regulating emerging

@@ -3,6 +3,8 @@ layout: news
 publisher: Goverment Executive
 title: AI is a rising priority for federal chief data officers
 url-link: https://www.govexec.com/technology/2023/12/ai-rising-priority-federal-chief-data-officers/392895/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: December 20, 2023
 description: Artificial intelligence is emerging as a top priority for federal
   chief data officers in 2023. A recent survey of federal CDOs found that AI has

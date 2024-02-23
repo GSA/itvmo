@@ -4,6 +4,8 @@ publisher: CISA
 title: CISA Releases 2023 Year in Review Showcasing Efforts to Protect Critical
   Infrastructure
 url-link: https://www.cisa.gov/news-events/news/cisa-releases-2023-year-review-showcasing-efforts-protect-critical-infrastructure
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: January 17, 2024
 description: In 2023, the Cybersecurity and Infrastructure Security Agency
   (CISA) made significant strides in enhancing the security and resilience of

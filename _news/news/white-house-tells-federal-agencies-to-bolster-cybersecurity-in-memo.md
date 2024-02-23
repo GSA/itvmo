@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: White House tells federal agencies to bolster cybersecurity in memo
 url-link: https://fedscoop.com/white-house-tells-agencies-bolster-cybersecurity/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: August 17, 2023
 description: The White House has directed federal agencies to take new steps to
   strengthen their cybersecurity postures in the face of increasing threats. In

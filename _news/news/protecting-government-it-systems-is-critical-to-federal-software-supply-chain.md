@@ -3,6 +3,8 @@ layout: news
 publisher: House Oversight Committee
 title: Protecting Government IT Systems is Critical to Federal Software Supply Chain
 url-link: https://oversight.house.gov/release/mace-protecting-government-it-systems-is-critical-to-federal-software-supply-chain/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: November 29, 2023
 description: The U.S. House Committee on Oversight and Accountability recently
   discussed the critical need for protecting government IT systems to ensure the

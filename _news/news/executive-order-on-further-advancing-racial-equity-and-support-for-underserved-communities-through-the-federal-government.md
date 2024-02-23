@@ -3,7 +3,11 @@ layout: news
 publisher: The White House
 title: Executive Order on Further Advancing Racial Equity and Support for
   Underserved Communities Through The Federal Government
+topic: Policy	
+keywords: "Policy, Equity, Executive Order"
 url-link: https://www.whitehouse.gov/briefing-room/presidential-actions/2023/02/16/executive-order-on-further-advancing-racial-equity-and-support-for-underserved-communities-through-the-federal-government/
+topic: Policy
+keywords: "Policy, Equity, Executive Order"
 publication-date: February 16, 2023
 description: On February 16, 2023, President Joe Biden signed Executive Order
   14091. This executive order aims to further advance racial equity and support

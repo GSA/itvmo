@@ -1,9 +1,10 @@
 ---
 layout: news
-topic: Topic A
 publisher: FEDERAL NEWS NETWORK
 title: 3 Reasons Swift Action is Needed to Prepare for a Quantum Cyberattack
 url-link: https://federalnewsnetwork.com/commentary/2023/10/3-reasons-swift-action-is-needed-to-prepare-for-a-quantum-cyberattack/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: October 20, 2023
 description: "Swift action is needed to prepare for potential quantum
   cyberattacks that could threaten national security. With quantum computing

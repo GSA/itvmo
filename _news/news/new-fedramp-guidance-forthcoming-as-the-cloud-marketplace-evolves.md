@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: New FedRAMP guidance forthcoming as the cloud marketplace evolves
 url-link: https://fedscoop.com/new-fedramp-guidance-forthcoming-as-the-cloud-marketplace-evolves/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: September 08, 2023
 description: "The Federal Risk and Authorization Management Program (FedRAMP) is
   preparing to release updated guidance and requirements for cloud service

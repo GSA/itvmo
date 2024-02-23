@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: Federal government begins advertising new cyber rotation program
 url-link: https://fedscoop.com/government-cyber-rotation-program/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: December 04, 2023
 description: The federal government is launching a new cyber rotation program to
   develop its cybersecurity workforce. Managed by OPM and the Office of the

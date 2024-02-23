@@ -1,10 +1,11 @@
 ---
 layout: news
-topic: Topic A
 publisher: FEDERAL NEWS NETWORK
 title: 3 tactics to beef up your agency’s cybersecurity knowledge, skills and
   abilities
 url-link: https://federalnewsnetwork.com/federal-insights/2023/07/3-tactics-to-beef-up-your-agencys-cybersecurity-knowledge-skills-and-abilities/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: July 20, 2023
 description: "Cybersecurity in government is getting tougher as cyber criminals
   and adversaries increase their attacks. Previously, only advanced individuals

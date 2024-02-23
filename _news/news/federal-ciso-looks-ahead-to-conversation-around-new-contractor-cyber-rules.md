@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: Federal CISO looks ahead to conversation around new contractor cyber rules
 url-link: https://federalnewsnetwork.com/acquisition-policy/2023/10/federal-ciso-looks-ahead-to-conversation-around-new-contractor-cyber-rules/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: October 04, 2023
 description: The federal chief information security officer (CISO) is looking
   ahead to an important conversation around new contractor cybersecurity rules.

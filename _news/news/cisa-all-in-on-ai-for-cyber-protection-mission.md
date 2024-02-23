@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: CISA All-In on AI for Cyber Protection Mission
 url-link: https://www.meritalk.com/articles/cisa-all-in-on-ai-for-cyber-protection-missions/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: November 14, 2023
 description: The Cybersecurity and Infrastructure Security Agency (CISA) is
   increasingly using artificial intelligence and machine learning to bolster

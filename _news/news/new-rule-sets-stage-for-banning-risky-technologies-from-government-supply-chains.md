@@ -4,6 +4,8 @@ publisher: FEDERAL NEWS NETWORK
 title: New rule sets stage for banning risky technologies from government supply
   chains
 url-link: https://federalnewsnetwork.com/acquisition-policy/2023/10/new-rule-sets-stage-for-banning-risky-technologies-from-government-supply-chains/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: October 11, 2023
 description: The General Services Administration has issued a rule to implement
   provisions in the 2021 defense bill that allow the government to prohibit

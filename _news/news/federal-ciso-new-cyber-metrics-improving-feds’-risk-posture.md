@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: "Federal CISO: New Cyber Metrics Improving Feds’ Risk Posture"
 url-link: https://www.meritalk.com/articles/federal-ciso-new-cyber-metrics-improving-feds-risk-posture/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: September 08, 2023
 description: "The Federal Chief Information Security Officer (CISO) recently
   discussed how new cybersecurity metrics are helping improve the federal

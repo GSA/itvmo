@@ -3,6 +3,8 @@ layout: news
 publisher: NEXT GOV
 title: NSF launches AI resource pilot to spur US innovation
 url-link: https://www.nextgov.com/artificial-intelligence/2024/01/nsf-launches-ai-resource-pilot-spur-us-innovation/393564/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 24, 2024
 description: "The National Science Foundation (NSF) has initiated the National
   Artificial Intelligence Research Resource (NAIRR) pilot to democratize access

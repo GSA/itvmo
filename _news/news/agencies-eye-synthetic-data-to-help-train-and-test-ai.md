@@ -3,6 +3,8 @@ layout: news
 publisher: Goverment Executive
 title: Agencies eye synthetic data to help train and test AI
 url-link: https://www.govexec.com/technology/2024/01/agencies-eye-synthetic-data-help-train-and-test-ai/393150/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 08, 2024
 description: The Department of Homeland Security’s Science and Technology
   Directorate has issued a solicitation for synthetic data solutions that can

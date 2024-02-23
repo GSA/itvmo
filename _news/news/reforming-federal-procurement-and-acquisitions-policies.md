@@ -2,6 +2,8 @@
 layout: news
 publisher: The Brookings Institution
 title: Reforming federal procurement and acquisitions policies
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 url-link: https://www.brookings.edu/articles/reforming-federal-procurement-and-acquisitions-policies/
 publication-date: April 03, 2023
 description: The government procurement process can be difficult to navigate,

@@ -3,6 +3,8 @@ layout: news
 publisher: NEXT GOV
 title: White House looks to scale FedRAMP with automation
 url-link: https://www.nextgov.com/acquisition/2023/10/white-house-looks-scale-fedramp-automation/391578/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: October 27, 2023
 description: The White House is looking to scale and automate FedRAMP, the
   government's security authorization program for cloud products and services.

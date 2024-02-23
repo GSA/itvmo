@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: Independent Oversight Coming to Major VA IT Contracts
 url-link: https://www.meritalk.com/articles/independent-oversight-coming-to-major-va-it-contracts/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: July 21, 2023
 description: "The Department of Veterans Affairs (VA) is planning to strengthen
   oversight of its major IT modernization contracts. This is in response to

@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: Federal CISO Talks NCS, Next Steps, Legacy IT Burden
 url-link: https://www.meritalk.com/articles/federal-ciso-talks-ncs-next-steps-legacy-it-burden/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: August 15, 2023
 description: Recently the Federal Chief Information Security Officer (CISO)
   recently discussed next steps for improving federal cybersecurity under the

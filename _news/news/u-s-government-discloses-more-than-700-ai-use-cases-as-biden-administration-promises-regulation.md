@@ -4,6 +4,8 @@ publisher: FEDSCOOP
 title: U.S. government discloses more than 700 AI use cases as Biden
   administration promises regulation
 url-link: https://fedscoop.com/u-s-government-discloses-more-than-700-ai-use-cases-as-biden-administration-promises-regulation/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: October 13, 2023
 description: The Biden administration recently disclosed more than 700 examples
   of how federal agencies are using artificial intelligence as part of its

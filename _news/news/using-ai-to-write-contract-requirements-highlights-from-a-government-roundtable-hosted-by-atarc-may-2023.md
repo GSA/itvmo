@@ -4,6 +4,8 @@ publisher: ATARC
 title: Using AI to Write Contract Requirements Highlights from a Government
   Roundtable, hosted by ATARC, May 2023
 url-link: https://atarc.org/project/using-ai-to-write-contract-requirements/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: May 17, 2023
 description: The Advanced Technology Academic Research Center (ATARC) recently
   hosted a roundtable titled "Using AI to Write Contract Requirements." The

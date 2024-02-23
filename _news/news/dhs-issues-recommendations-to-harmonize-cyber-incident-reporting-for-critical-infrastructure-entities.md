@@ -4,6 +4,8 @@ publisher: Department of Homeland Security
 title: DHS Issues Recommendations to Harmonize Cyber Incident Reporting for
   Critical Infrastructure Entities
 url-link: https://www.dhs.gov/news/2023/09/19/dhs-issues-recommendations-harmonize-cyber-incident-reporting-critical
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: September 19, 2023
 description: The Department of Homeland Security has issued recommendations to
   streamline and standardize cyber incident reporting across critical

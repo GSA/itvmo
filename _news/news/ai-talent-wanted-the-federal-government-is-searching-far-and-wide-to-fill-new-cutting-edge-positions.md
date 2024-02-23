@@ -4,6 +4,8 @@ publisher: FEDSCOOP
 title: "AI talent wanted: The federal government is searching far and wide to
   fill new cutting-edge positions"
 url-link: https://fedscoop.com/ai-talent-wanted/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: December 21, 2023
 description: There is growing demand for AI talent in the federal government and
   the challenges agencies face in recruiting and retaining skilled AI

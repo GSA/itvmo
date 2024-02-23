@@ -3,6 +3,8 @@ layout: news
 publisher: NEXT GOV
 title: Cyber investments aim to paint broader view of digital threats, official says
 url-link: https://www.nextgov.com/cybersecurity/2023/10/cyber-investments-aim-paint-broader-view-digital-threats-official-says/391088/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: October 10, 2023
 description: The federal government is looking to increase investments in
   cybersecurity capabilities that provide greater visibility into digital

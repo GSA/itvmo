@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL TIMES
 title: For the federal government, Zero Trust is just the beginning
 url-link: https://www.federaltimes.com/it-networks/2023/11/13/for-the-federal-government-zero-trust-is-just-the-beginning/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: November 13, 2023
 description: The federal government is increasingly adopting zero trust security
   models, but sees it as just the first step towards more advanced approaches to

@@ -3,6 +3,8 @@ layout: news
 publisher: GSA
 title: "Small Business Works 2023: Navigating Equity in Procurement"
 url-link: https://www.gsa.gov/events/small-business-works-2023-navigating-equity-in-procurement
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: August 03, 2023
 description: The Small Business Works 2023 event was a training and matchmaking
   opportunity for small businesses interested in federal contracting

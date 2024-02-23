@@ -3,6 +3,8 @@ layout: news
 publisher: NEXT GOV
 title: Improving government capacity is key for AI deployment, experts tell Congress
 url-link: https://www.nextgov.com/artificial-intelligence/2024/01/improving-government-capacity-key-ai-deployment-experts-tell-congress/393258/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 10, 2024
 description: The Senate Homeland Security and Governmental Affairs Committee,
   led by Sen. Gary Peters, D-Mich., is emphasizing the importance of enhancing

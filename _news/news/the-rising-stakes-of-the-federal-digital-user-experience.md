@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: The rising stakes of the federal digital user experience
 url-link: https://federalnewsnetwork.com/commentary/2023/10/the-rising-stakes-of-the-federal-digital-user-experience/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: October 05, 2023
 description: There is an increasing importance on providing a seamless digital
   experience for citizens interacting with federal government services online.

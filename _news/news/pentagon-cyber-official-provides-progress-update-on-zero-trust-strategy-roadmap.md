@@ -3,6 +3,8 @@ layout: news
 publisher: Department of Defense
 title: Pentagon Cyber Official Provides Progress Update on Zero Trust Strategy Roadmap
 url-link: https://www.defense.gov/News/News-Stories/Article/Article/3400194/pentagon-cyber-official-provides-progress-update-on-zero-trust-strategy-roadmap/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust" 
 publication-date: May 18, 2023
 description: The Defense Department plans to implement its zero trust
   cybersecurity framework by fiscal year 2027. David McKeown, the DOD's senior

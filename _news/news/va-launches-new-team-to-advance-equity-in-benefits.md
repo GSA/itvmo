@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: VA Launches New Team to Advance Equity in Benefits
 url-link: https://www.meritalk.com/articles/va-launches-new-team-to-advance-equity-in-benefits/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: June 28, 2023
 description: "The Department of Veterans Affairs (VA) has formed a team called
   the I*DEA (inclusion, diversity, equity, and access) Council. This team aims

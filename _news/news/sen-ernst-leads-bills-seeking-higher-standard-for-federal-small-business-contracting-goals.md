@@ -4,6 +4,8 @@ publisher: FEDERAL NEWS NETWORK
 title: Sen. Ernst leads bills seeking higher standard for federal small business
   contracting goals
 url-link: https://federalnewsnetwork.com/contracting/2023/05/sen-ernst-leads-bills-seeking-higher-standard-for-federal-small-business-contracting-goals/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: May 04, 2023
 description: "The Ranking Member of the Senate Small Business Committee, Joni
   Ernst (R-Iowa), has introduced legislation to raise standards for federal

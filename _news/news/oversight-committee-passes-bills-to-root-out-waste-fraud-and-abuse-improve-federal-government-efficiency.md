@@ -4,6 +4,8 @@ publisher: House Oversight Committee
 title: Oversight Committee Passes Bills to Root out Waste, Fraud, and Abuse,
   Improve Federal Government Efficiency
 url-link: https://oversight.house.gov/release/oversight-committee-passes-bills-to-root-out-waste-fraud-and-abuse-improve-federal-government-efficiency%EF%BF%BC/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: July 12, 2023
 description: "The House Oversight and Reform Committee recently passed several
   bills aimed at improving efficiency and reducing waste, fraud, and abuse in

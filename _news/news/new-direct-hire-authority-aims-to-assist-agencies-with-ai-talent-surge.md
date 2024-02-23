@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: New direct hire authority aims to assist agencies with AI talent surge
 url-link: https://federalnewsnetwork.com/artificial-intelligence/2023/12/new-direct-hire-authority-aims-to-assist-agencies-with-ai-talent-surge/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: December 29, 2023
 description: The federal government is granting new direct hiring authority to
   help agencies recruit talent in artificial intelligence as investments and

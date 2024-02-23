@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: GSA’s IT Category Office Enhancing Software Supply Chain Management
 url-link: https://federalnewsnetwork.com/federal-insights/2023/10/gsas-it-category-office-enhancing-software-supply-chain-management/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: October 20, 2023
 description: The General Services Administration's IT Category office is working
   to enhance software supply chain management across the federal government.

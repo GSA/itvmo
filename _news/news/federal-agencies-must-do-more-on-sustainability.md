@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: Federal agencies must do more on sustainability
 url-link: https://federalnewsnetwork.com/commentary/2023/06/federal-agencies-must-do-more-on-sustainability/
+topic: Climate and Sustainability
+keywords: "Climate, Sustainability, Green"
 publication-date: June 20, 2023
 description: "President Joe Biden's executive order on sustainability has
   prompted federal agencies to prioritize reducing emissions and modernizing

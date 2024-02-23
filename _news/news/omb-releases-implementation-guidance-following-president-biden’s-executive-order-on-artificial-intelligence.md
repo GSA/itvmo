@@ -4,6 +4,8 @@ publisher: The White House
 title: OMB Releases Implementation Guidance Following President Biden’s
   Executive Order on Artificial Intelligence
 url-link: https://www.whitehouse.gov/omb/briefing-room/2023/11/01/omb-releases-implementation-guidance-following-president-bidens-executive-order-on-artificial-intelligence/
+topic: Policy
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: November 01, 2023
 description: The White House Office of Management and Budget recently issued
   guidance to federal agencies on implementing President Biden's executive order

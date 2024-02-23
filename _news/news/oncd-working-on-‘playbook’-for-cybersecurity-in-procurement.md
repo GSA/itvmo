@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: ONCD Working on ‘Playbook’ for Cybersecurity in Procurement
 url-link: https://meritalk.com/articles/oncd-working-on-playbook-for-cybersecurity-in-procurement/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: September 18, 2023
 description: The Office of the National Cyber Director is developing a playbook
   to improve cybersecurity in federal procurement and acquisition processes. The

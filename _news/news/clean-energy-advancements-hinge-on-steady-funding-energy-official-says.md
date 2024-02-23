@@ -3,6 +3,8 @@ layout: news
 publisher: NEXT GOV
 title: Clean energy advancements hinge on steady funding, Energy official says.
 url-link: https://www.nextgov.com/emerging-tech/2023/05/clean-energy-advancements-hinge-steady-funding-energy-official-says/386907/
+topic: Climate and Sustainability
+keywords: "Climate, Sustainability, Green"
 publication-date: May 30, 2023
 description: The U.S. Department of Energy aims to be a major innovator in
   critical technologies for clean energy development and global leadership in

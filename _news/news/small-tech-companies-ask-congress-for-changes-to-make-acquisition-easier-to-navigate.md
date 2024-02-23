@@ -4,6 +4,8 @@ publisher: FEDERAL NEWS NETWORK
 title: Small tech companies ask Congress for changes to make acquisition easier
   to navigate
 url-link: https://federalnewsnetwork.com/acquisition/2023/08/small-tech-companies-ask-congress-for-changes-to-make-acquisition-easier-to-navigate/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: August 09, 2023
 description: "Small technology companies recently asked Congress to implement
   changes to make government acquisition more navigable for new vendors. In a

@@ -4,6 +4,8 @@ publisher: The White House
 title: "FACT SHEET: Biden-⁠Harris Administration Announces National Cyber
   Workforce and Education Strategy, Unleashing America’s Cyber Talent"
 url-link: https://www.whitehouse.gov/briefing-room/statements-releases/2023/07/31/fact-sheet-biden-%E2%81%A0harris-administration-announces-national-cyber-workforce-and-education-strategy-unleashing-americas-cyber-talent/
+topic: Policy
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: July 31, 2023
 description: "The Biden-Harris administration has unveiled a new national
   strategy aimed at strengthening the cybersecurity workforce. The strategy

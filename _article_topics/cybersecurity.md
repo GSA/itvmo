@@ -1,4 +1,4 @@
 ---
-name: Cybersecurity 
-label: cybersecurity 
+name: Cybersecurity
+label: cybersecurity
 ---

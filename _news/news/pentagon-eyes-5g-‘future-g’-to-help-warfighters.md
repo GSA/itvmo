@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: Pentagon eyes 5G, ‘future G’ to help warfighters
 url-link: https://federalnewsnetwork.com/defense-news/2023/11/pentagon-eyes-5g-future-g-to-help-warfighters/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: November 09, 2023
 description: The Department of Defense is exploring how 5G and 6G networks can
   enhance military operations in the future. 5G offers faster speeds and lower

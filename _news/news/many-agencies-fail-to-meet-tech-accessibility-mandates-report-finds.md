@@ -3,6 +3,8 @@ layout: news
 publisher: Goverment Executive
 title: Many agencies fail to meet tech accessibility mandates, report finds
 url-link: https://www.govexec.com/technology/2024/01/many-agencies-fail-meet-tech-accessibility-mandates-report-finds/393094/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: January 04, 2024
 description: >-
   A new report from GSA sheds a new light on government tech accessibility,

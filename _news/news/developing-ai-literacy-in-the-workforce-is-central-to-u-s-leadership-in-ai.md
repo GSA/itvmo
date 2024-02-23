@@ -3,6 +3,8 @@ layout: news
 publisher: House Oversight Committee
 title: Developing AI Literacy in the Workforce is Central to U.S. Leadership in AI
 url-link: https://oversight.house.gov/release/hearing-wrap-up-developing-ai-literacy-in-the-workforce-is-central-to-u-s-leadership-in-ai%EF%BF%BC/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 18, 2024
 description: "The Subcommittee on Cybersecurity, Information Technology, and
   Government Innovation held a hearing titled: Toward an AI-Ready Workforce,

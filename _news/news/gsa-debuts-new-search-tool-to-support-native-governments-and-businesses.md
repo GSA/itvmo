@@ -3,6 +3,8 @@ layout: news
 publisher: GSA
 title: GSA debuts new search tool to support Native Governments and Businesses
 url-link: https://www.gsa.gov/about-us/newsroom/news-releases/gsa-debuts-new-search-tool-to-support-native-governments-07052023
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: July 05, 2023
 description: "The U.S. General Services Administration has introduced a new
   search tool. This tool allows buyers to search for Native business categories
