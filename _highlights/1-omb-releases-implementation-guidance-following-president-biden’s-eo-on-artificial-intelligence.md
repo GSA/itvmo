@@ -1,6 +1,6 @@
 ---
 order: 2
-title: Attend ATARC’s Federal AI Summit on February 29th!
+title: Check out our IT Buyers Training & Support page!
 description: Read our updated Cloud Acquisition Strategies & Guides and more on
   our IT Buyers Training & Support page!
 url-link: https://itvmo.gsa.gov/services/it-buyers-training-and-support/
