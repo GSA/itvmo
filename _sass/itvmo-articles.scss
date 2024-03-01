@@ -13,3 +13,7 @@
     width: 100% !important;
     aspect-ratio: 2/1;
 }
+video::-webkit-media-text-track-display 
+{
+    font-size: 16px;
+}
