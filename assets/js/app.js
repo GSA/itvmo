@@ -156,7 +156,7 @@ if(document.getElementById('news') != null)
   //This function reset all the News Facets.
   function clearAllNewsFacets() 
   {
-    const checkboxes = document.querySelectorAll(".facet-options input[type='checkbox']");
+    const checkboxes = document.querySelectorAll(".filter-options input[type='checkbox']");
     for (const checkbox of checkboxes) {
       checkbox.checked = false;
     }
@@ -167,7 +167,7 @@ if(document.getElementById('news') != null)
   //This function check all checkbox in the News Facets.
   function selectAllNewsFacets() 
   {
-    const checkboxes = document.querySelectorAll(".facet-options input[type='checkbox']");
+    const checkboxes = document.querySelectorAll(".filter-options input[type='checkbox']");
     for (const checkbox of checkboxes) {
       checkbox.checked = true;
     }
