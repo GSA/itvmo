@@ -6,8 +6,11 @@
     flex-wrap: wrap;
     align-items: center;
     column-gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     h2 
     {
+        margin: 0;
         font-size: 20px;
         color: #333333;
         font-weight: 500;
@@ -24,10 +27,33 @@
         .facet-dropdown
         {
             background-color: white !important;
+            .facet-title-count
+            {
+                .checked-count
+                {
+                    margin-left: 10px;
+                    display: none;
+                    font-size: 14px;
+                    border-radius: 5px;
+                    padding: 0px 5px;
+                }
+                #topics-checked-out
+                {
+                    border: #2766c2 1px solid;
+                    background-color: #cde1f1;
+                }
+                #publishers-checked-out
+                {
+                    border: #f55f2a 1px solid;
+                    background-color: #ffe7e0;
+                    color: #f55f2a;
+                }
+
+            }
         }
         .news-dropdown
         {
-            #news-topics-dropdown
+            #news-topics-dropdown, #topics-dropdown-list
             {
                 width: 250px;
             }
@@ -35,7 +61,7 @@
             {
                 z-index: 99;
             }
-            #news-publishers-dropdown
+            #news-publishers-dropdown, #publishers-dropdown-list
             {
                 width: 606px;
             }
@@ -43,9 +69,9 @@
             {
                 z-index: 98;
             }
-            position: relative;
             .filter-list
             {
+                display: none;
                 position: absolute;
                 margin-top: -8px;
                 padding: 10px;
@@ -102,27 +128,6 @@
                             content: url('../images/icons/pink-check.svg');
                             background-color: #f2938c;
                         }
-                        // label 
-                        // {
-                        //   color: #333333;
-                        // }
-                        // input[type="checkbox"]
-                        // {
-                        //   appearance: none;
-                        //   -webkit-animation: none;
-                        //   height: 15px;
-                        //   width: 15px;
-                        //   background-color: transparent;
-                        //   border-radius: 4px;
-                        //   border: 3px solid #797979;
-                        // }
-                        // input[type="checkbox"]:checked
-                        // {
-                        //   content: url('../images/icons/black-check.svg');
-                        //   border: none;
-                        //   height: 15px;
-                        //   width: 15px;
-                        // }
                     }
                 }
                 .column-list-2
@@ -132,11 +137,16 @@
                     -moz-columns: 2;
                 }
             }
+            .filter-list-active
+            {
+                display: block;
+            }
         }
     }
 }
 #applied-filters
 {  
+    display: none;
     .divide-line
     {
         height: 1px;
@@ -150,6 +160,8 @@
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        column-gap: 10px;
+        padding-left: 20px;
         #applied-filters-left
         {
             display: flex;
@@ -158,17 +170,86 @@
             #applied-filters-header
             {
                 width: fit-content;
+                font-size: 16px;
+                color: #333333;
+                font-weight: 500;
                 margin: 0;
             }
             #clear-all
             {
+                cursor: pointer;
                 width: fit-content;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                font-size: 14px;
+                color:#2766c2;
             }
         }
         #applied-filters-right
         {
             display: flex;
             flex-direction: column;
+            row-gap: 15px;
+            max-height: 150px;
+            overflow: scroll;
+            #applied-filters-topics, #applied-filters-publishers
+            {
+                display: flex;
+                flex-direction: row;
+                column-gap: 10px;
+                row-gap: 10px;
+                flex-wrap: wrap;
+                .applied-filters-topic,.applied-filters-publisher
+                {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    column-gap: 5px;
+                    border-radius: 20px;
+                    padding: 2px 8px;
+                    width: fit-content;
+                    
+                    button 
+                    {
+                        cursor: pointer;
+                        border: none;
+                        padding: 0;
+                        background-color: transparent;
+                        width: 9px;
+                        height: 9px;
+                        position: relative;
+                        img 
+                        {
+                            position: absolute;
+                            width: 9px;
+                            height: 9px;
+                            top: 0;
+                            left: 0;
+                        }
+                    }
+                    p 
+                    {
+                        margin: 0;
+                        font-size: 14px;
+                    }
+                }
+                .applied-filters-topic
+                {
+                    background-color: #cde1f1;
+                    border: 1px #193a66 solid;
+                }
+                .applied-filters-publisher
+                {
+                    background-color: #eedbd8;
+                    border: 1px #f55f2a solid;
+                    p 
+                    {
+                       color: #f55f2a;
+                    }
+                }
+            }
         }
     }
 
@@ -189,11 +270,20 @@
                     -moz-columns: 1 !important;
                 }
             }
-            #news-publishers-dropdown
+            #news-publishers-dropdown, #publishers-dropdown-list
             {
                 width: 300px !important;
             }
         }
+    }
+
+}
+//Hide the Applied Filters if max screen width < 500 px
+@media screen and (max-width: 500px)
+{
+    #applied-filters
+    {
+        display: none !important;
     }
 
 }

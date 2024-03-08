@@ -34,10 +34,10 @@
     <h2>Filters:</h2>
     <div id="news-filters-dropdown">
       <div class="news-dropdown">
-        <button id="news-topics-dropdown" class="facet-dropdown" aria-controls="facet_1" onclick="displayDropdownContent(this)" tabindex="0">
+        <button id="news-topics-dropdown" class="facet-dropdown" aria-controls="topics-dropdown-list" onclick="displayFilterOptions(this)" tabindex="0">
           <div class="facet-title-count">
             <h3>Topics</h3>
-            <p class="checked-count"></p>
+            <p id="topics-checked-out" class="checked-count"></p>
           </div>
           <img class="dropdown-arrow" alt="dropdown arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
         </button>
@@ -45,7 +45,7 @@
           <ul class="filter-options" id="news-topic-area">
             {% for topic in site.article_topics %}
             <li>
-              <input tabindex="0" type="checkbox" class="check-input-topics" id="{{topic.label}}" value="{{topic.name}}">
+              <input tabindex="0" type="checkbox" class="check-input-topics" id="{{topic.label}}" value="{{topic.name}}" onclick="toggleAppliedFilter(this)">
               <label for="{{topic.label}}">{{topic.name}}</label>
             </li>
             {% endfor %}
@@ -53,10 +53,10 @@
         </div>
       </div>
       <div class="news-dropdown">
-        <button id="news-publishers-dropdown" class="facet-dropdown" aria-controls="facet_2" onclick="displayDropdownContent(this)" tabindex="0">
+        <button id="news-publishers-dropdown" class="facet-dropdown" aria-controls="publishers-dropdown-list" onclick="displayFilterOptions(this)" tabindex="0">
           <div class="facet-title-count">
             <h3>Publishers</h3>
-            <p class="checked-count"></p>
+            <p id="publishers-checked-out" class="checked-count"></p>
           </div>
           <img class="dropdown-arrow" alt="dropdown arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
         </button>
@@ -64,7 +64,7 @@
           <ul class="filter-options column-list-2" id="news-publisher">
             {% for publisher in site.article_publishers %}
             <li>
-              <input tabindex="0" type="checkbox" class="check-input-publisher" id="{{publisher.url-link}}" value="{{publisher.name}}">
+              <input tabindex="0" type="checkbox" class="check-input-publisher" id="{{publisher.url-link}}" value="{{publisher.name}}" onclick="toggleAppliedFilter(this)">
               {% if publisher.name == 'ITVMO' %}
               <label for="{{publisher.name}}">{{publisher.name}}</label>
               {% else %}
@@ -81,12 +81,16 @@
     <div class="divide-line end-content"></div>
     <div id="applied-filters-content">
       <div id="applied-filters-left">
-        <h3 id="applied-filters-header">Applied Filters</h3>
+        <h3 id="applied-filters-header">Applied Filters:</h3>
         <button id="clear-all" style="display: block;">Clear x</button>
       </div>
       <div id="applied-filters-right">
-        <div id="applied-filters-topics"></div>
-        <div id="applied-filter-publishers"></div>
+        <div id="applied-filters-topics">
+
+        </div>
+        <div id="applied-filters-publishers">
+
+        </div>
       </div>
     </div>
     <!-- <button id="select-all" style="display: block;">Select all</button> -->
