@@ -8,3 +8,13 @@
     background-repeat: no-repeat;
 
 }
+.video-container
+{
+    width: 100% !important;
+    aspect-ratio: 2/1;
+    height: 508px;
+}
+video::-webkit-media-text-track-display 
+{
+    font-size: 70%;
+}
