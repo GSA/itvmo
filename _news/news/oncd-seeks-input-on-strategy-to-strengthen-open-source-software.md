@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: ONCD Seeks Input on Strategy to Strengthen Open-Source Software
 url-link: https://www.meritalk.com/articles/ncd-seeks-input-on-strategy-to-strengthen-open-source-software/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: August 10, 2023
 description: "The National Cyber Director's office has issued a request for
   information to help shape a new government-wide strategy for leveraging open

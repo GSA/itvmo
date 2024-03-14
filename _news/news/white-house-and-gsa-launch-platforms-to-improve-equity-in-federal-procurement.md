@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: White House and GSA launch platforms to improve equity in federal procurement
 url-link: https://fedscoop.com/white-house-and-gsa-launch-platforms-to-improve-equity-in-federal-procurement/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: May 08, 2023
 description: The White House and General Services Administration have introduced
   two platforms to enhance equity in procurement for federal agencies. These

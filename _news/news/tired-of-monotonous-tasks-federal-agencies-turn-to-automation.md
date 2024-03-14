@@ -3,6 +3,8 @@ layout: news
 publisher: Fed Tech
 title: Tired of Monotonous Tasks? Federal Agencies Turn to Automation
 url-link: https://fedtechmagazine.com/article/2023/10/tired-monotonous-tasks-federal-agencies-turn-automation
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: October 09, 2023
 description: Many federal agencies are increasingly looking to intelligent
   automation to handle repetitive, low-value tasks and enable employees to focus

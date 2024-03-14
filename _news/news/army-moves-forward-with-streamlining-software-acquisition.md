@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: Army moves forward with streamlining software acquisition
 url-link: https://federalnewsnetwork.com/acquisition/2023/04/army-moves-forward-with-streamlining-software-acquisition/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: April 26, 2023
 description: "The Defense Department's software acquisition programs are finally
   making progress after five years of struggles. The Army has set delivery

@@ -3,6 +3,8 @@ layout: news
 publisher: Fed Tech
 title: "2024 Federal Tech Trends: Zero Trust, Customer Experience Top the List"
 url-link: https://fedtechmagazine.com/article/2023/12/2024-federal-tech-trends-zero-trust-customer-experience-top-list
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: December 21, 2023
 description: The 2024 federal technology trends are heavily influenced by
   executive orders focusing on zero-trust security and enhancing citizens'

@@ -3,6 +3,8 @@ layout: news
 publisher: NEXT GOV
 title: CISA unveils plan to measure cybersecurity success
 url-link: https://www.nextgov.com/cybersecurity/2023/08/cisa-unveils-plan-measure-cybersecurity-success/389156/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: August 04, 2023
 description: "The Cybersecurity and Infrastructure Security Agency (CISA) has
   unveiled a new plan to measure and improve the nation's cybersecurity posture.

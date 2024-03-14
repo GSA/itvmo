@@ -4,6 +4,8 @@ publisher: Executivegov
 title: New Biden Administration Actions Aim to Help Small Businesses Access
   Government Contracts
 url-link: https://executivegov.com/2024/01/new-biden-administration-actions-aim-to-help-small-businesses-access-government-contracts/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: January 25, 2024
 description: "The Biden administration has introduced new measures to enhance
   the accessibility of major government contracts for small businesses. These

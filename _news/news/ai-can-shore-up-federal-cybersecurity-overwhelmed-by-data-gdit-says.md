@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL TIMES
 title: AI can shore up federal cybersecurity overwhelmed by data, GDIT says
 url-link: https://www.federaltimes.com/it-networks/2023/11/28/ai-can-shore-up-federal-cybersecurity-overwhelmed-by-data-gdit-says/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: November 28, 2023
 description: General Dynamics Information Technology (GDIT) conducted a study on
   defensive cyber operations, revealing the potential of AI in bolstering

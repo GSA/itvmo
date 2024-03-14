@@ -11,6 +11,7 @@
 @import 'subscribe';
 @import 'it-vehicle';
 @import 'itvmo-articles';
+@import 'news';
 .ul-no-bullets 
 {
   list-style-type: none; 
@@ -1908,7 +1909,7 @@ html *
 {
   font-family:"SourceSansPro-SemiBold", "Source Sans Pro SemiBold", "Source Sans Pro", sans-serif !important;
 }
-.topic-heading, .sub-topic-heading, .sub-topic-heading-italic, .sub-topic-heading-blue, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link, .article-card-container *, #page-heading-description, .links-list-heading *, .styled-table *, .link-description-list *
+.topic-heading *, .sub-topic-heading, .sub-topic-heading-italic, .sub-topic-heading-blue, .tab-supheading, .tab-p, .page-heading-title, .page-feedback-heading>h3, .facet-options>li>label, .facet-options>li, .clear-button>p, .facet-title-count>h3, .facet-title-count>p, #calendar-tab *, .event-card *, .event-card-mobile *, .announcement-info *, .update-highlight-card-mobile *, .update-highlight-card *, .article-page-content *, .external-link, .article-card-container *, #page-heading-description, .links-list-heading *, .styled-table *, .link-description-list *
 {
   font-family: 'Source Sans 3', sans-serif !important;
 }
@@ -1923,7 +1924,7 @@ html *
     margin: 0;
   }
 }
-.topic-heading
+.topic-heading 
 {
   font-weight: 400;
   font-size: 30px;

@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: GAO sustains 93 bid protests filed over CIO-SP4 solicitation
 url-link: https://fedscoop.com/health-agency-unreasonably-failed-advance-ciosp4-propsoals/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: June 29, 2023
 description: "The Government Accountability Office reviewed 93 legal challenges
   to the National Institutes of Health's solicitation, CIO-SP4. They found that

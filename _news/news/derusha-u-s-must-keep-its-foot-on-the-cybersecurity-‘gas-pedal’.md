@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: "DeRusha: U.S. Must Keep its Foot on the Cybersecurity ‘Gas Pedal’"
 url-link: https://www.meritalk.com/articles/derusha-u-s-must-keep-its-foot-on-the-cybersecurity-gas-pedal/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: October 04, 2023
 description: There is a growing need for the U.S. government to maintain its
   focus and effort on cybersecurity according to Anne Neuberger, Deputy National

@@ -3,6 +3,8 @@ layout: news
 publisher: Goverment Executive
 title: Failing to Invest in Climate Change Means Failure to Taxpayers, Says New
   Assessment
+topic: Climate and Sustainability	
+keywords: "Climate, Sustainability, Green"
 url-link: https://www.govexec.com/oversight/2023/03/failing-invest-climate-change-means-failure-taxpayers/384106/
 publication-date: March 16, 2023
 description: Preliminary numbers from a new climate evaluation indicate

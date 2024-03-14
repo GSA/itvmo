@@ -3,6 +3,8 @@ layout: news
 publisher: Fed Tech
 title: What Are The Top Cybersecurity Threats Facing Federal Agencies?
 url-link: https://fedtechmagazine.com/article/2023/09/what-are-top-cybersecurity-threats-facing-federal-agencies
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: September 05, 2023
 description: Federal agencies currently continue to face numerous major
   cybersecurity threats. Ransomware is a top concern, with recent attacks

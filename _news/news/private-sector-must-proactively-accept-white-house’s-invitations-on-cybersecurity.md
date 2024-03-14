@@ -4,6 +4,8 @@ publisher: FEDERAL NEWS NETWORK
 title: Private sector must proactively accept White House’s invitations on
   cybersecurity
 url-link: https://federalnewsnetwork.com/commentary/2023/07/private-sector-must-proactively-accept-white-houses-invitations-on-cybersecurity/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust" 
 publication-date: July 06, 2023
 description: "The National Cybersecurity Strategy from the White House is
   primarily intended for federal government officials. However, the latest

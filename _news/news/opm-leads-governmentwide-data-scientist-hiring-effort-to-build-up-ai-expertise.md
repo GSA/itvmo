@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: OPM leads governmentwide data scientist hiring effort to build up AI expertise
 url-link: https://federalnewsnetwork.com/federal-report/2024/01/opm-leads-governmentwide-data-scientist-hiring-effort-to-build-up-ai-expertise/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 29, 2024
 description: The Biden administration is spearheading a government-wide
   initiative to bolster AI expertise within the federal workforce, led by the

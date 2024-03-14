@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: Pentagon’s 2023 Cyber Strategy Takes aim at China Threat
 url-link: https://www.meritalk.com/articles/pentagons-2023-cyber-strategy-takes-aim-at-china-threat/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: September 13, 2023
 description: The Pentagon's 2023 cyber strategy identifies China as the top
   strategic threat and lays out plans to counter Chinese cyber capabilities. The

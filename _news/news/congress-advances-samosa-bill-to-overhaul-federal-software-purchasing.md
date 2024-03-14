@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: "Congress advances SAMOSA bill to overhaul federal software purchasing  "
 url-link: https://fedscoop.com/samosa-software-vendor-bill-congress/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: July 12, 2023
 description: "The bipartisan legislation for consolidating US government
   software purchasing and giving agencies more control over software licensing

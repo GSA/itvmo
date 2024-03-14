@@ -184,6 +184,18 @@ collections:
         widget: "image"
         choose_url: true
 
+#Allow users to create article topics that are used to filter articles.
+  - label: Article topics
+    name: article-topics
+    folder: _article_topics/
+    # hide: true
+    create: true
+    slug: "{{slug}}"
+    identifier_field: name
+    summary: "{{name}}"
+    fields: 
+      - {label: Name, name: name}
+
 #Allow admin to create resource cards.
   - label: Resources
     name: resources

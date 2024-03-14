@@ -7,7 +7,7 @@ let baseUrl = window.location.origin;
 //If detected that it is the sanbox url, change the base url. Change the baseurl to sanbox directory that able to obtain images.
 if(baseUrl.includes("federalist"))
 {
-  baseUrl = `/preview/gsa/itvmo/Data-in-Action/Article-page`;
+  baseUrl = `/preview/gsa/itvmo/News-filter`;
 }
 //Highlights section Variables
 let curSlide = 0; 
@@ -68,7 +68,7 @@ if(document.getElementById('resources') != null)
   initalizeWindow();
 }
   //Collect Artcles data here
-  let articles;
+  let articles, filteredArticles;
   let prevButton, nextButton, startButton, endButton, totalPages;
   const buttonMap = new Map();
   const publisherMap = new Map();
@@ -76,13 +76,20 @@ if(document.getElementById('resources') != null)
   const pageMax = 5; // Max page button that going to be display on the page.
   const pageMaxHalf = Math.floor(pageMax / 2); // Half page count from the pageMax.
   let currentPage = 1;
+  let newsFacets, selectAllButton, afTopics, afPublishers, appliedFilters;
 
 //Run News page
 if(document.getElementById('news') != null)
 {
   retriveArticlesData();
   retrivePublisher();
+  filteredArticles = articles;
   initPagination();
+  initalizeNewsFacets();
+  initalizeNewsClearAll();
+  afTopics = document.getElementById("applied-filters-topics");
+  afPublishers = document.getElementById("applied-filters-publishers");
+  appliedFilters = document.getElementById('applied-filters');
 
   //This function get all the Articles data.
   function retriveArticlesData()
@@ -93,6 +100,7 @@ if(document.getElementById('news') != null)
     {
       finalArticles.push(
         {
+        "topic":a.getAttribute("data-topic"),
         "publisher":a.getAttribute("data-publisher"),
         "title":a.children[0].innerHTML,
         "description":a.children[1].innerHTML, 
@@ -104,6 +112,26 @@ if(document.getElementById('news') != null)
     }
     articles = finalArticles;
     articles.sort((a, b) => new Date(b.date) - new Date(a.date)); //Sort Article in decending order.
+  }
+  
+  //This function display/hide the dropdown filter options
+  function displayFilterOptions(aButton)
+  {
+    const ariaControlsValue = aButton.getAttribute("aria-controls");
+    const aButtonArrow = aButton.children[1];
+    const currA = document.getElementById(ariaControlsValue);
+    if(currA.classList.contains("filter-list-active") == false)
+    { 
+      aButtonArrow.classList.add("dropdown-arrow-active");
+      currA.classList.add("filter-list-active");
+      setCheckboxesTabIndex(currA, 0);
+    }
+    else 
+    {
+      aButtonArrow.classList.remove("dropdown-arrow-active");
+      currA.classList.remove("filter-list-active");
+      setCheckboxesTabIndex(currA, -1);
+    }
   }
 
  //This function get all the Publisher data.
@@ -122,13 +150,191 @@ if(document.getElementById('news') != null)
       publisherMap.set(currPublisher.name, currPublisher);
     }
   }
-
-  //This function initalize Pagination.
+  //This function initalize or re-initalize Articles Pagination.
   function initPagination() 
   {
-    totalPages = Math.ceil(articles.length / itemsPerPage);
+    currentPage = 1 //Reset current page
+    totalPages = Math.ceil(filteredArticles.length / itemsPerPage);
+    document.getElementById('articles-count').innerHTML = filteredArticles.length;
     createPaginationButtons(totalPages);
     displayArticles(currentPage);
+  }
+
+  //This function initalize the Clear All button on the News page
+  function initalizeNewsClearAll()
+  {
+    clearAllButton = document.getElementById("clear-all");
+    clearAllButton.addEventListener("click", clearAllNewsFacets);
+  }
+
+  //This function reset all the News Facets.
+  function clearAllNewsFacets() 
+  {
+    const checkboxes = document.querySelectorAll(".filter-options input[type='checkbox']");
+    for (const checkbox of checkboxes) {
+      checkbox.checked = false;
+    }
+    clearAppliedFilters()
+    updateCheckedCount([[],[]]); // Reset checked count on Topics and Publishers.
+    filteredArticles = articles; //Reset to unfiltered articles list
+    initPagination();
+  }
+  //This function clear Applied Filters.
+  function clearAppliedFilters()
+  {
+    afTopics.innerHTML = "";
+    afPublishers.innerHTML = "";
+    afPublishersList = [];
+    afTopicsList = [];
+    appliedFilters.style.display = "none";
+  }
+  //This function check all checkbox in the News Facets.
+  function selectAllNewsFacets() 
+  {
+    const checkboxes = document.querySelectorAll(".filter-options input[type='checkbox']");
+    for (const checkbox of checkboxes) {
+      checkbox.checked = true;
+    }
+    filteredArticles = articles; //Reset to unfiltered articles list
+    initPagination();
+  }
+
+  //This function initalize News Facets
+  function initalizeNewsFacets()
+  {
+    newsFacets = [document.getElementById("news-topic-area"), document.getElementById("news-publisher")];
+    for (const facet of newsFacets) {
+      facet.addEventListener("change", updateNewsResults);
+    }
+  }
+  //This function click on a specific input (Topics filters/ Publishers filters) according to inputId (On click for all applied-filters-publisher & applied-filters-topic).
+  function uncheckInput(inputId)
+  {
+    document.getElementById(inputId).click();
+  }
+
+  let afTopicsList = [], afPublishersList = [];
+
+  //This function add/remove Applied Filters according to checkbox argument. 
+  function toggleAppliedFilter(checkbox)
+  {
+      let afButton = 
+      `
+      <button onclick="uncheckInput('${checkbox.id}')">
+        <img src="${baseUrl}/assets/images/icons/exit-icon-grey.svg" alt="Remove ${checkbox.value} filter button">
+      </button>
+      `;
+    if(checkbox.className == "check-input-topics")
+    {
+      //Remove Applied Filter that match the checkbox Id
+      if(afTopicsList.includes(checkbox.id))
+      {
+        document.getElementById(`af-${checkbox.id}`).remove();
+        let index = afTopicsList.indexOf(checkbox.id);
+        if (index !== -1) afTopicsList.splice(index, 1);
+      }
+      //Add Applied Filter
+      else
+      {
+        afTopicsList.push(checkbox.id);        
+        afTopics.innerHTML += 
+        `
+        <div id="af-${checkbox.id}" class="applied-filters-topic">
+          ${afButton}
+          <p>${checkbox.value}</p>
+        </div>
+        `
+      }
+    }
+    else
+    {
+      //Remove Applied Filter that match the checkbox Id
+      if(afPublishersList.includes(checkbox.id))
+      {
+        document.getElementById(`af-${checkbox.id}`).remove();
+        let index = afPublishersList.indexOf(checkbox.id);
+        if (index !== -1) afPublishersList.splice(index, 1); 
+      }
+      //Add Applied Filters
+      else 
+      {
+        afPublishersList.push(checkbox.id);
+        afPublishers.innerHTML +=
+        `
+        <div id="af-${checkbox.id}" class="applied-filters-publisher">
+          ${afButton}
+          <p>${checkbox.value}</p>
+        </div>
+        `
+      }
+    }
+    //Unhide Applied Filters
+    if((afTopicsList.length+afPublishersList.length)>0)
+    {
+      appliedFilters.style.display = "block";
+    }
+    //Hide Applied Filters
+    else
+    {
+      appliedFilters.style.display = "none";
+    }
+  }
+  
+  //This function will update the result according to the input on all of the facets
+  function updateNewsResults() 
+  {
+    //Each facet in facets create a  array of input that checked by the user.
+    const selectedFacets = newsFacets.map(facet =>
+      Array.from(facet.querySelectorAll("input:checked")).map(input => input.value)
+    );
+    updateCheckedCount(selectedFacets);
+    filteredArticles = getFilteredNews(selectedFacets); 
+    initPagination();
+  }
+
+  //This function update the checked count for Topics and Publishers filter.
+  function updateCheckedCount(selectedFacets)
+  {
+    const [selectedTopic, selectedPublisher] = selectedFacets;
+    let topicsCO = document.getElementById('topics-checked-out');
+    let publishersCO = document.getElementById('publishers-checked-out');
+    console.log(selectedFacets);
+    if(selectedTopic.length > 0)
+    {
+      topicsCO.style.display = 'block';
+      topicsCO.innerHTML = selectedTopic.length;
+    }
+    else if(selectedTopic.length == 0)
+    {
+      topicsCO.style.display = 'none';
+      topicsCO.innerHTML = "";
+    }
+
+    if(selectedPublisher.length > 0)
+    {
+      publishersCO.style.display = 'block';
+      publishersCO.innerHTML = selectedPublisher.length;
+    }
+    else if(selectedPublisher.length == 0)
+    {
+      publishersCO.style.display = 'none';
+      publishersCO.innerHTML = "";
+    }
+  
+  }
+  //This function retrive news that match facets requirement.
+  function getFilteredNews(selectedFacets) 
+  {
+
+    const filteredArticles = articles.filter(currNew => {
+
+      const [selectedTopic, selectedPublisher] = selectedFacets;
+      const topicAreaMatch = selectedTopic.length === 0 || selectedTopic.includes(currNew.topic);
+      const publisherMatch = selectedPublisher.length === 0 || selectedPublisher.includes(currNew.publisher);
+      return topicAreaMatch && publisherMatch;
+    });
+
+    return filteredArticles;
   }
 
   //This function display the articles according to the page number.
@@ -160,15 +366,15 @@ if(document.getElementById('news') != null)
     articleList.innerHTML = ''; // Clear previous content
     const startIndex = (page - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
-    let dispalyArticles = "";
+    let displayArticles = "";
     articleList.innerHTML = "";
-    for (let i = startIndex; i < endIndex && i < articles.length; i++) 
+    for (let i = startIndex; i < endIndex && i < filteredArticles.length; i++) 
     {
-      let publisher = publisherMap.get(articles[i].publisher);
-      let articleLink = articles[i].link;
-      if(articles[i].synopsis != "")
+      let publisher = publisherMap.get(filteredArticles[i].publisher);
+      let articleLink = filteredArticles[i].link;
+      if(filteredArticles[i].synopsis != "")
       {
-        articleLink = baseUrl+articles[i].path.replace("_news", "").replace(".md",""); //!!File slug
+        articleLink = baseUrl+filteredArticles[i].path.replace("_news", "").replace(".md",""); //!!File slug
       }
       let articlePublisher;
       if(publisher.name == 'ITVMO')
@@ -191,21 +397,21 @@ if(document.getElementById('news') != null)
             <img alt="External icon" src="${baseUrl}/assets/images/icons/external-small.svg">
           </a>
         `;
-      }
-      dispalyArticles +=     
+      } 
+      displayArticles +=     
       `<div class="article-card-container">
           <a target="_blank" rel="noreferrer" href="${articleLink}" class="article-card">
             <div class="article-card-upper">
               <div class="article-card-upper-left">
                 <img class="article-card-publisher-logo" src="${baseUrl}/${publisher.logo}" alt="${publisher.name} logo">
-                <h2 class="two-line-max">${articles[i].title}</h2>
+                <h2 class="two-line-max">${filteredArticles[i].title}</h2>
               </div>
               <div class="article-card-upper-right">
                 <div>
-                  <h2 class="one-line-max">${articles[i].title}</h2>
-                  <p class="four-line-max">${articles[i].description}</p>
+                  <h2 class="one-line-max">${filteredArticles[i].title}</h2>
+                  <p class="four-line-max">${filteredArticles[i].description}</p>
                 </div>
-                <p class="article-card-date" >${articles[i].date}</p>
+                <p class="article-card-date" >${filteredArticles[i].date}</p>
               </div>
             </div>
             <div class="article-card-lower">
@@ -215,7 +421,7 @@ if(document.getElementById('news') != null)
         </div>
       `;
     }
-    articleList.innerHTML = dispalyArticles;
+    articleList.innerHTML = displayArticles;
   }
 
   //This function populate Pagination on the News page.
@@ -477,10 +683,8 @@ function searchURLParam()
   ,["contracts-acquisitions","check8"],["program-operations","check9"],["security-compliance","check10"],["industry-all-businesses","check11"],["guidance","check12"],["use-case","check13"],["report","check14"],["information-slick","check15"],["tool","check16"],["public-resource","check17"],["goverment-military-access-only","check18"]]);
 
     filters = filters.split(',');
-    console.log(filters);
     for(let i = 0; i < filters.length; i++)
     {
-      console.log(document.getElementById(filters[i]));
       document.getElementById(filterCheckboxMap.get(filters[i])).click();
     }
   }
@@ -657,7 +861,6 @@ function clearAllFacets()
   for (const checkbox of checkboxes) {
     checkbox.checked = false;
   }
-
   updateResults();
 }
 
@@ -925,7 +1128,7 @@ function populateDirectory()
     // cp = cp.replace(//gi, "");
     
     //This using for the sandbox, delete this later!!
-    if(currentUrl == "https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/Data-in-Action/Article-page/")
+    if(currentUrl == "https://federalist-ce2ad52a-cc88-456b-a4c1-74c6e5887c73.sites.pages.cloud.gov/preview/gsa/itvmo/News-filter/")
     {
       newElements+= `<a href="${currentUrl}">Home</a>`
       break;

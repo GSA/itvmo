@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: Ensuring identity-proofing works for all populations
 url-link: https://fedscoop.com/video/ensuring-identity-proofing-works-for-all-populations/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 11, 2024
 description: The increasing need for delivering public services quickly,
   accurately, and securely has led federal, state, and local government agencies

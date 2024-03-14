@@ -5,6 +5,8 @@ title: Biden-⁠Harris Administration Announces Plan to Maximize Purchases of
   Sustainable Products and Services as Part of the President’s Investing in
   America Agenda
 url-link: https://www.whitehouse.gov/ceq/news-updates/2023/08/01/biden-harris-administration-announces-plan-to-maximize-purchases-of-sustainable-products-and-services-as-part-of-the-presidents-investing-in-america-agenda/
+topic: Policy
+keywords: "Climate, Sustainability, Green"
 publication-date: August 01, 2023
 description: "The Biden-Harris Administration has announced a new plan to
   maximize the federal government's purchases of sustainable products and

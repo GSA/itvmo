@@ -4,6 +4,8 @@ publisher: The White House
 title: "FACT SHEET: Biden-⁠Harris Administration Announces New Better
   Contracting Initiative to Save Billions Annually"
 url-link: https://www.whitehouse.gov/omb/briefing-room/2023/11/08/fact-sheet-biden-harris-administration-announces-new-better-contracting-initiative-to-save-billions-annually/
+topic: Policy
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: November 08, 2023
 description: The Biden-Harris Administration recently announced the Better
   Contracting Initiative, which aims to save billions of dollars annually by

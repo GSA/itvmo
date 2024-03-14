@@ -4,6 +4,8 @@ publisher: The White House
 title: "FACT SHEET: President Biden Issues Executive Order on Safe, Secure, and
   Trustworthy Artificial Intelligence"
 url-link: https://www.whitehouse.gov/briefing-room/statements-releases/2023/10/30/fact-sheet-president-biden-issues-executive-order-on-safe-secure-and-trustworthy-artificial-intelligence/
+topic: Policy
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: October 30, 2023
 description: On October 30, 2023, President Biden issued an executive order
   aimed at fostering responsible development and use of Artificial Intelligence

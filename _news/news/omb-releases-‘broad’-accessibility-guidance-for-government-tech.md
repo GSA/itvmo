@@ -3,6 +3,8 @@ layout: news
 publisher: Goverment Executive
 title: OMB releases ‘broad’ accessibility guidance for government tech
 url-link: https://www.govexec.com/technology/2023/12/omb-releases-broad-accessibility-guidance-government-tech/392968/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: December 22, 2023
 description: OMB has released new guidance aimed at improving the accessibility
   of government technology, marking the first update to Section 508 of the

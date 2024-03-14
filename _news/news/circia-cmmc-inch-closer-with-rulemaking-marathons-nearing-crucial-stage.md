@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: CIRCIA, CMMC inch closer with rulemaking marathons nearing crucial stage
 url-link: https://federalnewsnetwork.com/cybersecurity/2023/09/circia-cmmc-inch-closer-with-rulemaking-marathons-nearing-crucial-stage/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: September 07, 2023
 description: "The Cybersecurity Maturity Model Certification (CMMC) effort is
   nearing a crucial stage as it works to finalize cybersecurity regulations for

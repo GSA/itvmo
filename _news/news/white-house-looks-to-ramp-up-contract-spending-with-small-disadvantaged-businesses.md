@@ -4,6 +4,8 @@ publisher: NEXT GOV
 title: White House looks to ramp up contract spending with small disadvantaged
   businesses
 url-link: https://www.nextgov.com/acquisition/2023/10/white-house-looks-ramp-contract-spending-small-disadvantaged-businesses/391544/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: October 26, 2023
 description: The Biden administration is looking to increase federal contract
   spending with small disadvantaged businesses (SDBs) up to 15% by 2025. This

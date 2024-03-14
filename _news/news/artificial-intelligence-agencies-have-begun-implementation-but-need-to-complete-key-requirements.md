@@ -4,6 +4,8 @@ publisher: Government Accountability Office
 title: "Artificial Intelligence: Agencies Have Begun Implementation but Need to
   Complete Key Requirements"
 url-link: https://www.gao.gov/products/gao-24-105980
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: December 12, 2023
 description: The GAO report reveals that while federal agencies have initiated
   AI implementation, they still need to fulfill key requirements. Agencies

@@ -4,6 +4,8 @@ publisher: FEDSCOOP
 title: White House moves to ease education requirements for federal cyber
   contracting jobs
 url-link: https://cyberscoop.com/harry-coker-education-requirements-federal-cybersecurity-jobs/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 11, 2024
 description: >-
   National Cyber Director Harry Coker is actively working to broaden the pool of

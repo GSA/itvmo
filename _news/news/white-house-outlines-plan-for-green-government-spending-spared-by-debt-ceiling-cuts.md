@@ -4,6 +4,8 @@ publisher: FEDERAL NEWS NETWORK
 title: White House outlines plan for green government spending spared by debt
   ceiling cuts
 url-link: https://federalnewsnetwork.com/facilities-construction/2023/06/white-house-officials-outline-plans-for-green-government-spending-spared-by-debt-ceiling-cuts/
+topic: Climate and Sustainability
+keywords: "Climate, Sustainability, Green"
 publication-date: June 01, 2023
 description: The Biden administration's goals to eliminate carbon emissions from
   federal buildings and vehicles were not affected by the bipartisan deal to cut

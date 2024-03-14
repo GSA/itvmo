@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: Small business government contracting hits record high of $163B, SBA says
 url-link: https://fedscoop.com/small-business-contracting-hits-record-high/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: July 18, 2023
 description: The Small Business Administration announced that in fiscal year
   2022, the federal government awarded $162.9 billion in contracts with small

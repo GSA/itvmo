@@ -4,6 +4,8 @@ publisher: NEXT GOV
 title: Keep the focus in procurement on best value products and services for the
   government
 url-link: https://www.nextgov.com/ideas/2023/08/keep-focus-procurement-best-value-products-and-services-government/389824/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: August 29, 2023
 description: 'Federal government procurement should prioritize "best value" over
   lowest cost when purchasing products and services. The best value enables the

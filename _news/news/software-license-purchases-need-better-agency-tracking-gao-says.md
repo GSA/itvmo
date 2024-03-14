@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: Software license purchases need better agency tracking, GAO says
 url-link: https://fedscoop.com/federal-software-licenses-gao-report/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 29, 2024
 description: The Government Accountability Office (GAO) report highlights
   inefficiencies in federal agencies' management of software licenses, leading

@@ -3,6 +3,8 @@ layout: news
 publisher: Centers for American Progress
 title: Why Federal Pay Data Collection Is Critical to Equity
 url-link: https://www.americanprogress.org/article/why-federal-pay-data-collection-is-critical-to-equity/
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: July 18, 2023
 description: "Kalpana Kotagal was confirmed as a commissioner to the EEOC on
   July 13, 2023. This confirmation renews the focus on EEOC priorities, one of

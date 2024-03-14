@@ -3,6 +3,8 @@ layout: news
 publisher: Government Accountability Office
 title: "Cybersecurity: Launching and Implementing the National Cybersecurity Strategy"
 url-link: https://www.gao.gov/products/gao-23-106826
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust" 
 publication-date: June 29, 2023
 description: "In April 2023, GAO reported that the goals and strategic
   objectives in the document provide a solid foundation for a comprehensive

@@ -4,6 +4,8 @@ publisher: GSA
 title: GSA hosts roundtable with business leaders on advancing equity in federal
   contracting
 url-link: https://www.gsa.gov/about-us/newsroom/news-releases/gsa-hosts-roundtable-with-business-leaders-on-adva-01232024
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 publication-date: January 23, 2024
 description: The General Services Administration (GSA) hosted a roundtable with
   leaders from small and mid-sized businesses, including those from underserved

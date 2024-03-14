@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: The four-step migration roadmap that smooths the path to classified cloud
 url-link: https://federalnewsnetwork.com/federal-insights/2023/12/the-four-step-migration-roadmap-that-smooths-the-path-to-classified-cloud/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: December 06, 2023
 description: Outlines a four-step roadmap for organizations to smoothly
   transition to a classified cloud environment. The first step involves

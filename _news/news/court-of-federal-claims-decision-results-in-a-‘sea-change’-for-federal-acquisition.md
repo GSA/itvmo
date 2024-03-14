@@ -4,6 +4,8 @@ publisher: FEDERAL NEWS NETWORK
 title: Court of Federal Claims decision results in a ‘sea change’ for federal
   acquisition
 url-link: https://federalnewsnetwork.com/acquisition-policy/2023/05/court-of-federal-claims-decision-results-in-a-sea-change-for-federal-acquisition/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: May 03, 2023
 description: "The Court of Federal Claims made a decision that affected two
   major governmentwide acquisition contracts from the General Services

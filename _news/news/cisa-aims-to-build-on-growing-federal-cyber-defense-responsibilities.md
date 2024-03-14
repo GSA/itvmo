@@ -3,6 +3,8 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: CISA aims to build on growing federal cyber defense responsibilities
 url-link: https://federalnewsnetwork.com/cybersecurity/2023/10/cisa-aims-to-build-on-growing-federal-cyber-defense-responsibilities/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: October 23, 2023
 description: The Cybersecurity and Infrastructure Security Agency (CISA) is
   looking to expand its cyber defense responsibilities across civilian federal

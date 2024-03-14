@@ -4,6 +4,8 @@ publisher: NEXT GOV
 title: NIST releases revised cyber requirements for controlled unclassified
   information
 url-link: https://www.nextgov.com/cybersecurity/2023/11/nist-releases-revised-cyber-requirements-controlled-unclassified-information/391904/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: November 09, 2023
 description: The National Institute of Standards and Technology (NIST) has
   updated its requirements for protecting controlled unclassified information

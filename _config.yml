@@ -133,6 +133,8 @@ collections:
     permalink: /:path/
   article_publishers:
     output: true
+  article_topics:
+    output: true
   resources:
     output: true
   highlights:

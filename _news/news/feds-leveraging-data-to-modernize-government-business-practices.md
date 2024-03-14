@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: Feds Leveraging Data to Modernize Government Business Practices
 url-link: https://www.meritalk.com/articles/feds-leveraging-data-to-modernize-government-business-practices/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: October 04, 2023
 description: Federal agencies are leveraging data to modernize and improve
   government business practices. The General Services Administration's efforts

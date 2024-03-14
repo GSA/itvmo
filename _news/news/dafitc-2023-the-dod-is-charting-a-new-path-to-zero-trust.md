@@ -3,6 +3,8 @@ layout: news
 publisher: Fed Tech
 title: "DAFITC 2023: The DOD Is Charting a New Path to Zero Trust"
 url-link: https://fedtechmagazine.com/article/2023/08/dafitc-2023-dod-charting-new-path-zero-trust
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: August 29, 2023
 description: Recently the Department of Defense has been embracing zero trust as
   a new approach to cybersecurity according to speakers at DAFITC 2023. The DoD

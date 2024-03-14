@@ -4,6 +4,8 @@ publisher: Executivegov
 title: GAO Urges Pentagon to Ensure Full Implementation of Agile Principles in
   Software Procurement
 url-link: https://executivegov.com/2023/07/gao-urges-pentagon-to-ensure-full-implementation-of-agile-principles-in-software-procurement/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: July 24, 2023
 description: "A recent report from the Government Accountability Office (GAO)
   recommends the Department of Defense fully implement agile principles when

@@ -3,6 +3,8 @@ layout: news
 publisher: Meritalk
 title: "Fed Experts: Start by Tackling Employee Pain Points to Build Trust in AI"
 url-link: https://www.meritalk.com/articles/fed-experts-start-by-tackling-employee-pain-points-to-build-trust-in-ai/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: November 15, 2023
 description: Federal experts advise that agencies should focus first on
   alleviating employee pain points as they start implementing AI systems in

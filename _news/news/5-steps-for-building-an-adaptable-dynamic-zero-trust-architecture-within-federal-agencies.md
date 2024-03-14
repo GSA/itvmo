@@ -4,6 +4,8 @@ publisher: FEDERAL NEWS NETWORK
 title: 5 steps for building an adaptable, dynamic zero trust architecture within
   federal agencies
 url-link: https://federalnewsnetwork.com/commentary/2024/01/5-steps-for-building-an-adaptable-dynamic-zero-trust-architecture-within-federal-agencies/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 10, 2024
 description: >-
   Zero-trust architecture’s (ZTA) principle of "trust no one" revolutionizes

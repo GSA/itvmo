@@ -3,6 +3,8 @@ layout: news
 publisher: NEXT GOV
 title: DOD pushes cloud buyers to JWCC
 url-link: https://www.nextgov.com/defense/2023/08/dod-pushes-cloud-buyers-jwcc/389101/
+topic: Acquisitions and Contracts
+keywords: "Acquisitions, Procurement, Contracts"
 publication-date: August 03, 2023
 description: The Department of Defense is encouraging defense agencies and
   military services to utilize the Joint Warfighting Cloud Capability (JWCC) for

@@ -3,6 +3,7 @@
     {% for article in site.news %}
     <div
       class="raw-article-data"
+      data-topic="{{article.topic}}"
       data-publisher="{{article.publisher}}"
       data-title="{{article.title}}"
       data-url="{{article.url-link}}"
@@ -26,11 +27,95 @@
     {% endfor %}
   </div>
 <section id="news-articles">
-  <h3 id="article-heading" class="topic-heading">
-    All News Articles
+  <h3 id="article-heading" class="topic-heading margin-bottom-0">
+    All News Articles (<span id="articles-count"></span>)
   </h3>
+  <div id="news-filters">
+    <h2>Filters:</h2>
+    <div id="news-filters-dropdown">
+      <div class="news-dropdown">
+        <button id="news-topics-dropdown" class="facet-dropdown" aria-controls="topics-dropdown-list" onclick="displayFilterOptions(this)" tabindex="0">
+          <div class="facet-title-count">
+            <h3>Topics</h3>
+            <p id="topics-checked-out" class="checked-count"></p>
+          </div>
+          <img class="dropdown-arrow" alt="dropdown arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
+        </button>
+        <div class="filter-list" id="topics-dropdown-list">
+          <ul class="filter-options" id="news-topic-area">
+            {% for topic in site.article_topics %}
+            <li>
+              <input tabindex="0" type="checkbox" class="check-input-topics" id="{{topic.label}}" value="{{topic.name}}" onclick="toggleAppliedFilter(this)">
+              <label for="{{topic.label}}">{{topic.name}}</label>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="news-dropdown">
+        <button id="news-publishers-dropdown" class="facet-dropdown" aria-controls="publishers-dropdown-list" onclick="displayFilterOptions(this)" tabindex="0">
+          <div class="facet-title-count">
+            <h3>Publishers</h3>
+            <p id="publishers-checked-out" class="checked-count"></p>
+          </div>
+          <img class="dropdown-arrow" alt="dropdown arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
+        </button>
+        <div class="filter-list" id="publishers-dropdown-list">
+          <ul class="filter-options column-list-2" id="news-publisher">
+            {% for publisher in site.article_publishers %}
+            <li>
+              <input tabindex="0" type="checkbox" class="check-input-publisher" id="{{publisher.url-link}}" value="{{publisher.name}}" onclick="toggleAppliedFilter(this)">
+              {% if publisher.name == 'ITVMO' %}
+              <label for="{{publisher.name}}">{{publisher.name}}</label>
+              {% else %}
+              <label for="{{publisher.url-link}}">{{publisher.name}}</label>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="applied-filters">
+    <div class="divide-line end-content"></div>
+    <div id="applied-filters-content">
+      <div id="applied-filters-left">
+        <h3 id="applied-filters-header">Applied Filters:</h3>
+        <button id="clear-all" style="display: block;">Clear x</button>
+      </div>
+      <div id="applied-filters-right">
+        <div id="applied-filters-topics">
+
+        </div>
+        <div id="applied-filters-publishers">
+
+        </div>
+      </div>
+    </div>
+    <!-- <button id="select-all" style="display: block;">Select all</button> -->
+    <div class="divide-line end-content"></div>
+  </div>
+  <!-- <ul class="filter-options" id="news-topic-area">
+    {% for topic in site.article_topics %}
+    <li>
+      <input tabindex="0" type="checkbox" id="{{topic.label}}" value="{{topic.name}}">
+      <label for="{{topic.label}}">{{topic.name}}</label>
+    </li>
+    {% endfor %}
+  </ul>
+  <ul class="filter-options" id="news-publisher">
+    {% for publisher in site.article_publishers %}
+    <li>
+      <input tabindex="0" type="checkbox" id="{{publisher.url-link}}" value="{{publisher.name}}">
+      {% if publisher.name == 'ITVMO' %}
+      <label for="{{publisher.name}}">{{publisher.name}}</label>
+      {% else %}
+      <label for="{{publisher.url-link}}">{{publisher.name}}</label>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul> -->
   <div id="articles-container"></div>
   <div id="pagination"></div>
 </section>
-
-

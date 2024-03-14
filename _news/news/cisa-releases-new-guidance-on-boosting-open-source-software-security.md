@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: CISA releases new guidance on boosting open source software security
 url-link: https://fedscoop.com/cisa-releases-new-guidance-on-boosting-open-source-software-security/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: October 11, 2023
 description: "The Cybersecurity and Infrastructure Security Agency (CISA) has
   released new guidance for improving the security of open source software. As

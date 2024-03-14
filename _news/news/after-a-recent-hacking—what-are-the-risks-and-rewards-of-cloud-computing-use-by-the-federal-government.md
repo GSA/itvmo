@@ -4,6 +4,8 @@ publisher: Government Accountability Office
 title: After a Recent Hacking—What are the Risks and Rewards of Cloud Computing
   Use by the Federal Government?
 url-link: https://www.gao.gov/blog/after-recent-hacking-what-are-risks-and-rewards-cloud-computing-use-federal-government
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust"
 publication-date: August 10, 2023
 description: "A recent GAO report examined the risks and rewards of federal
   cloud adoption following high-profile hacking incidents involving cloud

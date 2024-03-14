@@ -3,6 +3,8 @@ layout: news
 publisher: FEDSCOOP
 title: CISA issues updated cloud security resources for federal agencies
 url-link: https://fedscoop.com/cisa-issues-updated-cloud-security-resources-for-federal-agencies/
+topic: Cybersecurity
+keywords: "Cyber, Cybersecurity, Defense, Threat, Zero Trust" 
 publication-date: June 27, 2023
 description: The Cybersecurity and Infrastructure Security Agency has released
   final cloud cybersecurity guidance for U.S. government agencies. This guidance

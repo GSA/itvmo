@@ -3,6 +3,8 @@ layout: news
 publisher: NEXT GOV
 title: Agencies are on track with AI executive order deadlines, White House says
 url-link: https://www.nextgov.com/artificial-intelligence/2024/01/agencies-are-track-ai-executive-order-deadlines-white-house-says/393740/
+topic: Technology
+keywords: "Artificial Intelligence, Cloud, Data, Software"
 publication-date: January 30, 2024
 description: The White House has successfully met all 90-day benchmarks set in
   President Joe Biden's Executive Order on artificial intelligence, focusing on

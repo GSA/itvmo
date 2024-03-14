@@ -3,6 +3,8 @@ layout: news
 publisher: Department of Homeland Security
 title: DHS is the Largest Federal Agency to Receive 14 Consecutive “A” Grades on
   SBA’s Annual Small Business Procurement Scorecard
+topic: Equity and Small Business	
+keywords: "Disadvantaged, Equity, Small Business"
 url-link: https://www.dhs.gov/news/2023/07/18/dhs-largest-federal-agency-receive-14-consecutive-grades-sbas-annual-small-business
 publication-date: July 18, 2023
 description: "The Department of Homeland Security (DHS) received an \"A+\" on
