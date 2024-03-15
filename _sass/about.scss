@@ -1,7 +1,9 @@
 .image-container
 {
-    outline: 2px solid hsl(0, 0%, 50%);
     position: relative;
+    display: block;
+    width: fit-content;
+    height: fit-content;
     img 
     {
         display: block;
@@ -28,6 +30,12 @@
         }
     }
 }
+#fedramp-impact-level-img
+{
+    height: 450px;
+    width: 450px;
+}
+
 .image-container:hover, .image-container:focus
 {
     cursor: pointer;
