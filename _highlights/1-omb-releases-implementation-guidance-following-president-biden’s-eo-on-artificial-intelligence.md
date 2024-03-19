@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title: Check out our IT Buyers Training & Support page!
 description: Read our updated Cloud Acquisition Strategies & Guides and more on
   our IT Buyers Training & Support page!
