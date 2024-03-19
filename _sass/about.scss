@@ -162,12 +162,41 @@
     div 
     {
         display: flex;
-        align-items: center;
         column-gap: 10px;
         img 
         {
             width: 16px;
             height: 19px;
+        }
+    }
+    .areas-of-expertise
+    {
+        display: flex;
+        flex-direction: column;
+        div
+        {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            column-gap: 10px;
+            img 
+            {
+                width: 16px;
+                height: 19px;
+            }
+            p 
+            {
+                margin-top: 3px;
+            }
+        }
+        ul 
+        {
+            margin-top: 3px;
+            padding-left: 25px;
+            li::marker 
+            {
+                color: #ff5400;
+            }
         }
     }
 }
@@ -270,6 +299,7 @@
     .profile-About
     {
         border-top: none;
+        margin-top: 0;
     }
 }
 @media screen and (max-width: 500px)
@@ -288,7 +318,8 @@
     }
     .profile-detail
     {
-        p 
+        row-gap: 20px;
+        p, li 
         {
             font-size: 15px;
         }
