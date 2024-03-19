@@ -6,5 +6,5 @@ description: Participate in the Better Contracting Initiative Govwide
   resources and the needs of your federal agencies.
 url-link: https://docs.google.com/forms/d/e/1FAIpQLSeluOpv6Hfep9mRfMv3d-OgeyYPT9TNrUALGYPu_ZJdFR6Qng/viewform
 publication-date: March 18, 2024
-background-image: assets/uploads/final_social-media-graphics-2024-03-18t152615.303.jpg
+background-image: assets/uploads/adobestock_577070387_edited.jpg
 ---
