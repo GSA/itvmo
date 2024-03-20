@@ -1,0 +1,37 @@
+<section id="inner-page-tabs">
+  <div id="contribute-dox" class="tabcontent" style="display: flex">
+    <div class="contents padding-bottom-5">
+      <h3 id="meet-the-team" class="sub-topic-heading">Meet the team</h3>
+      <video class="video-container margin-top-2" controls>
+        <source src="{{site.baseurl}}/assets/video/meet-the-itvmo.mp4" type="video/mp4">
+        <track label="English" kind="subtitles" srclang="en" src="{{site.baseurl}}/assets/video/captions/meet-the-itvmo.vtt" default>
+      </video>
+      <div class="tab-divide-line end-content"></div>
+      <h3 id="ai-executive-order" class="sub-topic-heading">AI Executive Order</h3>
+      <video class="video-container margin-top-2" controls>
+        <source src="{{site.baseurl}}/assets/video/ai-executive-order.mp4" type="video/mp4">
+        <track label="English" kind="subtitles" srclang="en" src="{{site.baseurl}}/assets/video/captions/ai-executive-order.vtt" default>
+      </video>
+      <div class="tab-divide-line end-content"></div>
+    </div>
+    <div class="content-nav">
+      <div class="nav-list">
+        <h3>On this Tab</h3>
+        <a
+          id="sn-meet-the-team"
+          class="page-nav page-nav-active"
+          href="#meet-the-team"
+          onclick="return removeTabContent(this)"
+          >Meet the team</a
+        >
+        <a
+          id="sn-ai-executive-order"
+          class="page-nav page-nav"
+          href="#ai-executive-order"
+          onclick="return removeTabContent(this)"
+          >AI Executive Order</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
