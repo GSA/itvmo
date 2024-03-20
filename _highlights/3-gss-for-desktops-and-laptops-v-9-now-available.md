@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 2
 title: ITVMO Annual Summit on June 11th!
 description: Join us at this collaborative forum dedicated to advancing
   strategic effectiveness and operational efficiency in government digital

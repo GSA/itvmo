@@ -1,10 +1,10 @@
 ---
-order: 3
-title: Read the latest update from NIH NITAAC CIO SP4
-description: Read the latest update from NIH NITAAC CIO SP4! Check out our IT
-  Vehicle Updates and Changes Hub for more changes on other vehicles including
-  SEWP VI and Polaris.
-url-link: https://nitaac.nih.gov/gwacs/cio-sp4
-publication-date: January 17, 2024
-background-image: assets/uploads/615379504.jpeg
+order: 1
+title: Better Contracting Initiative Govwide Acquisition Strategies Survey
+description: Participate in the BCI Govwide Acquisition Strategies Survey! Share
+  your voice to help us in prioritizing our resources and the needs of your
+  federal agencies.
+url-link: https://docs.google.com/forms/d/e/1FAIpQLSeluOpv6Hfep9mRfMv3d-OgeyYPT9TNrUALGYPu_ZJdFR6Qng/viewform
+publication-date: March 18, 2024
+background-image: assets/uploads/adobestock_577070387_edited.jpg
 ---
