@@ -53,7 +53,7 @@ const filterMap = new Map([["p-filter", "Policy"],["acquisition-best-practices",
 const filterColorMap = new Map([["p-filter", "#f2938c"],["acquisition-best-practices", "#59b9de"],["small-business", "#abace5"],["market-intelligence", "#3e4ded"],["technology", "#ddaa01"],["contract-solutions", "#5abf95"],["itvmo-general", "#b04abd"]]);
 const bOfferingMap = new Map([["acquisition-policy-it-category","Acquisition Policy &  IT Category"],["it-buyers-training-support", "IT Buyers Training & Support"],["market-it-data-intelligence","Market & IT Data Intelligence"],["small-business-support","Small Business Support"],["oem-acquisition-initiatives","OEM-Acquisition Initiatives"]]);
 const audienceMap = new Map([["contracts-acquisitions","Contracts/Acquisitions"],["program-operations","Program/Operations"],["security-compliance","Security/Compliance"],["industry-all-businesses","Industry (All Businesses)"]]);
-let clearAllButton, facetNav, resourceOverlay, facetList, facetButton, closeButton;
+let clearAllButton, clearAllButtonMobile, facetNav, resourceOverlay, facetList, facetButton, closeButton;
 if(document.getElementById('resources') != null)
 {
   //Display all the resource cards right away.
@@ -165,6 +165,8 @@ if(document.getElementById('news') != null)
   {
     clearAllButton = document.getElementById("clear-all");
     clearAllButton.addEventListener("click", clearAllNewsFacets);
+    clearAllButtonMobile = document.getElementById("clear-all-mobile");
+    clearAllButtonMobile.addEventListener("click", clearAllNewsFacets);
   }
 
   //This function reset all the News Facets.

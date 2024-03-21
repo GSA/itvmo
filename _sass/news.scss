@@ -14,6 +14,20 @@
         font-size: 20px;
         color: #333333;
         font-weight: 500;
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        #clear-all-mobile
+        {
+            display: none;
+            cursor: pointer;
+            width: fit-content;
+            padding: 0;
+            border: none;
+            background-color: transparent;
+            font-size: 14px;
+            color:#2766c2;
+        }
     }
     #news-filters-dropdown
     {
@@ -279,6 +293,10 @@
 //Hide the Applied Filters if max screen width < 500 px
 @media screen and (max-width: 500px)
 {
+    #clear-all-mobile
+    {
+        display: block !important;
+    }
     #applied-filters
     {
         display: none !important;
