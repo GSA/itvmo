@@ -1,8 +1,8 @@
 ---
 layout: news
 publisher: ITVMO
-title: THIS IS THE CARD TITLE FOR ZERO TRUST
+title: Zero Trust and Improving the  Nation's Cybersecurity
 url-link: /news/zero-trust/
-publication-date: March 22, 2024
+publication-date: March 26, 2024
 description: this will be the description provided.
 ---
