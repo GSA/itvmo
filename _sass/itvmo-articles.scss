@@ -1,7 +1,7 @@
 .speaker-announcer-banner
 {
     margin-left: -50px;
-    padding: 20px 50px;
+    padding: 20px 25px 30px 50px;
     background-image: url('../images/speaker-announcer-background.png');
     background-position-x: right;
     background-size: cover;
@@ -18,3 +18,22 @@ video::-webkit-media-text-track-display
 {
     font-size: 70%;
 }
+
+.banner-header{
+    color: #000;
+    margin-bottom: -6px;
+}
+
+.hidden-video-cont{
+    width: 100%;
+}
+
+.video-title{
+  
+    font-weight: 600;
+    margin-bottom: -20px;
+    margin-top: -7px;
+
+
+}
+
