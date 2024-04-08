@@ -1,8 +1,9 @@
 ---
 order: 4
-title: IT Buyers Event Recap
-description: Watch the recap of our IT Buyers Event from January 18th!
-url-link: https://community.connect.gov/pages/viewpage.action?spaceKey=Egov&title=IT+Buyer%27s+CoP+Annual+Buyers+Event+January+2024&preview=/2454493766/2454493765/Buyers%20Event%20Highlights.mp4
+title: Advancing Governance, Innovation, and Risk Management for Agency Use of AI
+description: Read about M-24-10 Advancing Governance, Innovation, and Risk
+  Management for Agency Use of Artificial Intelligence!
+url-link: https://www.whitehouse.gov/wp-content/uploads/2024/03/M-24-10-Advancing-Governance-Innovation-and-Risk-Management-for-Agency-Use-of-Artificial-Intelligence.pdf
 publication-date: January 24, 2024
-background-image: assets/uploads/itvmo-recap.jpeg
+background-image: assets/uploads/laptopsndevices.jpeg
 ---
