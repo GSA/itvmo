@@ -1,5 +1,5 @@
 ---
-order: 4
+order: 5
 title: Advancing Governance, Innovation, and Risk Management for Agency Use of AI
 description: Read about M-24-10 Advancing Governance, Innovation, and Risk
   Management for Agency Use of Artificial Intelligence!
