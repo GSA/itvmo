@@ -1,9 +1,9 @@
 ---
 order: 3
-title: Learn More About the ITVMO
-description: Learn how we provide agencies with meaningful intelligence to
-  inform and support faster, smarter IT buying decisions!
-url-link: https://itvmo.gsa.gov/assets/video/meet-the-itvmo.mp4
-publication-date: April 09, 2024
+title: Increasing Small Business Participation on Multiple-Award Contracts
+description: Read the latest from OFPP about Increasing Small Business
+  Participation on Multiple-Award Contracts!
+url-link: https://www.whitehouse.gov/wp-content/uploads/2024/01/REV_Increasing-Opportunities-to-Small-Businesses-under-MACs-CATS-Final-Copy-1-25-24.pdf
+publication-date: April 16, 2024
 background-image: assets/uploads/helpdesk.jpeg
 ---
