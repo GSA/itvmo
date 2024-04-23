@@ -92,6 +92,11 @@ primary_navigation:
     children:
       - name: Generative AI Guide
         url: /genai/
+        children:
+      - name: AI Guide Part 1
+        url: /genai/genai-guide-part-1
+      - name: AI Guide Part 2
+        url: /genai/genai-guide-part-2
 
 secondary_navigation:
   - name: IT Vehicles
