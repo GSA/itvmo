@@ -9,8 +9,8 @@ layout: base
   class="usa-layout-docs usa-section padding-top-3 sect-container"
 >
   <div class="grid-container padding-0">
-    <div class="grid-row">
-      <main>
+
+      <div class="grid-row">
         {% if page.guidenav == true %} {% include genai-guidenav.html %} {%
         endif %}
         <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
@@ -24,7 +24,7 @@ layout: base
           </section>
           {{ content }}
         </div>
-      </main>
-    </div>
+      </div>
+
   </div>
 </div>
