@@ -14,7 +14,7 @@ chapters: true
 
 {% if page.chapters == true %}
 
-{% include genai-chapters.html %}
+{% include genai-guide-sidetabbed.html %}
 {% else %}
 
 {% include genai.html %}

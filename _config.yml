@@ -93,6 +93,40 @@ primary_navigation:
       - name: Generative AI Guide
         url: /genai/
 
+# Ai Guide Navigation
+ai_navigation:
+  - name: Intro
+    url: /genai/
+  - name: Generative AI 101
+    url: /news/
+  - name: Generative AI in the Government
+    url: /events/
+  - name: Generative AI Procurement
+    url: /community/
+    children:
+      - name: 3.1 Placeholder
+        url: /31/
+      - name: 3.2 Placeholder
+        url: /32/
+      - name: 3.3 Placeholder
+        url: /33/
+      - name: 3.4 Placeholder
+        url: /34/
+      - name: 3.5 Placeholder
+        url: /35/
+      - name: 3.6 Placeholder
+        url: /36/
+      - name: 3.7 Placeholder
+        url: /37/
+      - name: 3.8 Placeholder
+        url: /38/
+  - name: Acquisition Methods and Vehicles
+    url: /services/
+  - name: Specialized Computing Infrastructure for Generative AI
+    url: /resources/
+  - name: Agency Support and Resources
+    url: /collaborations/
+
 # Commenting this out for now. Remove comments to enable grandchildren pages        grandchildren:
 #          - name: AI Guide Part 1
 #            url: /genai-guide-part-1/
