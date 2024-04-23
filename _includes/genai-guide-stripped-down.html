@@ -1,0 +1,61 @@
+<section id="inner-page-tabs">
+  <div id="tabs-mobile-container">
+    <select id="tabs-mobile" onchange="openTabDropdown();">
+      <option value="introduction-header">Introduction</option>
+      <option value="the-guide-header">Guide by section</option>
+      <option value="data-tools-header">Access data tools</option>
+      <option value="feedback-header">Send feedback</option>
+    </select>
+  </div>
+  <div class="tabs">
+    <a
+      id="introduction-header"
+      tabindex="0"
+      class="tab active-tab"
+      onclick="openTab(event, 'introduction')"
+      onkeydown="openTabKey(event, 'introduction')"
+      >Introduction</a
+    >
+    <a
+      id="the-guide-header"
+      tabindex="0"
+      class="tab"
+      onclick="openTab(event, 'the-guide')"
+      onkeydown="openTabKey(event, 'the-guide')"
+      >Read the guide</a
+    >
+    <a
+      id="data-tools-header"
+      tabindex="0"
+      class="tab"
+      onclick="openTab(event, 'data-tools')"
+      onkeydown="openTabKey(event, 'data-tools')"
+      >Access data tools</a
+    >
+    <a
+      id="feedback-header"
+      tabindex="0"
+      class="tab"
+      onclick="openTab(event, 'feedback')"
+      onkeydown="openTabKey(event, 'feedback')"
+      >Send feedback</a
+    >
+  </div>
+  <div id="introduction" class="tabcontent" style="display: flex">
+    <div class="contents padding-bottom-5">
+      <div id="guide-intro"></div>
+    </div>
+  </div>
+  <div id="the-guide" class="tabcontent">
+    <div class="contents padding-bottom-5">
+      <div id="guide-chapter-1">Chapter 1 content</div>
+      <div id="guide-chapter-2">Chapter 2 content</div>
+      <div id="guide-chapter-3">Chapter 3 content</div>
+      <div id="guide-chapter-4">Chapter 4 content</div>
+      <div id="guide-chapter-5">Chapter 5 content</div>
+      <div id="guide-chapter-6">Chapter 6 content</div>
+    </div>
+  </div>
+  <div id="data-tools" class="tabcontent"></div>
+  <div id="feedback" class="tabcontent"></div>
+</section>
