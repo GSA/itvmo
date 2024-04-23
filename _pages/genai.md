@@ -9,7 +9,12 @@ sidenav: false
 redesign: true
 mainpage: false
 guidenav: true
-synthetic-content: true
+chapters: true
 ---
 
+
+{% if chapters == true %}
+{% include genai-chapters.html %}
+{% else %}
 {% include genai.html %}
+{% endif %}
