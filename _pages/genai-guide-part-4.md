@@ -1,21 +1,14 @@
 ---
-title: Generative AI and Specialized Computing Infrastructure Acquisition Resource Guide
+title: Part 4 - Generative AI and Specialized Computing Infrastructure Acquisition Resource Guide
 title-image: "/assets/images/icons/page_icons/generative-ai-logo.svg"
 heading-description: ""
 description: "This website is designed to help Federal purchasers acquire generative AI and specialized computing infrastructure for their organizations."
-layout: page
-permalink: /genai/
-sidenav: false
+layout: genai-chapter
+permalink: /genai-guide-part-4/
+sidenav: true
 redesign: true
 mainpage: false
-chapters: true
+guidenav: true
 ---
 
-
-{% if page.chapters == true %}
-
-{% include genai-chapters.html %}
-{% else %}
-
-{% include genai.html %}
-{% endif %}
+{% include genai-guide-part-4.html %}
