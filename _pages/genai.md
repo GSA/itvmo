@@ -13,7 +13,7 @@ chapters: true
 ---
 
 
-{% if chapters == true %}
+{% if page.chapters == true %}
 <div>true<div>
 {% include genai-chapters.html %}
 {% else %}
