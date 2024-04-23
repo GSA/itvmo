@@ -14,14 +14,6 @@ layout: base
         {% if page.guidenav == true %} {% include genai-guidenav.html %} {%
         endif %}
         <div class="usa-layout-docs__main desktop:grid-col-9 usa-prose">
-          <section id="main-page-heading">
-            <div class="grid-container padding-0">
-              <div id="main-page-heading-detail">
-                <h1>{{page.title}}</h1>
-                <p>{{page.heading-description}}</p>
-              </div>
-            </div>
-          </section>
           {{ content }}
         </div>
       </div>
