@@ -4,37 +4,35 @@
       <nav aria-label="Side navigation">
         <ul class="usa-sidenav">
           <li class="usa-sidenav__item">
-            <a id="introduction-header" href="javascript:void(0);" class="usa-current" onclick="openTab(event, 'introduction')">Introduction</a>
+            <a id="introduction-header" href="javascript:void(0);" class="tab usa-current" onclick="openTab(event, 'introduction')">Introduction</a>
           </li>
           <li class="usa-sidenav__item">
-            <a id="the-guide-header" href="javascript:void(0);" onclick="openTab(event, 'the-guide')">Read the Guide</a>
+            <a id="the-guide-header" href="javascript:void(0);" class="tab" onclick="openTab(event, 'the-guide')">Read the Guide</a>
           </li>
           <li class="usa-sidenav__item">
-            <a id="data-tools-header" href="javascript:void(0);" onclick="openTab(event, 'data-tools')">Access Data Tools</a>
+            <a id="data-tools-header" href="javascript:void(0);" class="tab" onclick="openTab(event, 'data-tools')">Access Data Tools</a>
           </li>
           <li class="usa-sidenav__item">
-            <a id="feedback-header" href="javascript:void(0);" onclick="openTab(event, 'feedback')">Send Feedback</a>
+            <a id="feedback-header" href="javascript:void(0);" class="tab" onclick="openTab(event, 'feedback')">Send Feedback</a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="tablet:grid-col-8">
-      <div id="introduction" class="tabcontent" style="display: block;">
+      <!-- Content sections corresponding to tabs -->
+      <div id="introduction" class="tabcontent" style="display: flex;">
         <div class="contents padding-bottom-5">
           <div id="guide-intro"></div>
         </div>
       </div>
       <div id="the-guide" class="tabcontent" style="display: none;">
-        <div class="contents padding-bottom-5">
-          <div id="guide-chapter-1">Chapter 1 content</div>
-          <!-- Add other chapters similarly -->
-        </div>
+        <!-- Guide chapters -->
       </div>
       <div id="data-tools" class="tabcontent" style="display: none;"></div>
       <div id="feedback" class="tabcontent" style="display: none;"></div>
     </div>
   </div>
-  
+
 </section>
 
 {% comment %} This is older code showing the horizantally tabbed layout
