@@ -3,6 +3,9 @@
   width: 308px;
   height: 53px;
 }
+.usa-nav__primary-item .usa-nav__submenu-item:hover a {
+  color: white !important;
+}
 .sect-container {
   margin-bottom: -2.5rem;
 }
@@ -11,7 +14,7 @@
   padding-bottom: 0px;
   background-image: url(../images/itvmo-hero-background.png);
   background-position: left;
-} 
+}
 .custom-callout {
   background-color: #1b2b85 !important;
   padding: 2rem;
@@ -44,8 +47,7 @@
   width: 58px !important;
   height: 38px !important;
 }
-.search-input
-{
+.search-input {
   width: 322px !important;
   height: 38px !important;
 }
@@ -59,9 +61,17 @@
 .font-heading-xl {
   font-size: 1.8rem;
 }
-legend, label, h1, h2, h3, h4, h5, h6 {
+legend,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #1b2b85;
-  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: "Merriweather", "Georgia", "Cambria", "Times New Roman", "Times",
+    serif;
 }
 .highlight-bkgd {
   margin-bottom: 0px;
@@ -102,24 +112,25 @@ address p {
   text-align: center;
 }
 .resources-title {
-  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
 }
 .resources-text {
   font-size: 1rem;
 }
-.resources-hover:hover{
-  -webkit-box-shadow: 1px -1px 11px 4px rgba(0,0,0,0.47);
-  -moz-box-shadow: 1px -1px 11px 4px rgba(0,0,0,0.47);
-  box-shadow: 1px -1px 11px 4px rgba(0,0,0,0.47);
+.resources-hover:hover {
+  -webkit-box-shadow: 1px -1px 11px 4px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 1px -1px 11px 4px rgba(0, 0, 0, 0.47);
+  box-shadow: 1px -1px 11px 4px rgba(0, 0, 0, 0.47);
 }
-.btn-primary:hover{
+.btn-primary:hover {
   text-decoration: underline;
 }
 .row-color {
   background: #1b2b85 !important;
-  color:#fff;
+  color: #fff;
   padding: 1.1rem;
   font-weight: bold;
   font-size: 1rem;
@@ -127,7 +138,10 @@ address p {
   border-right: 1px solid #fff !important;
   border-left: 1px solid #fff !important;
 }
-.usa-table-container--scrollable th, .usa-prose>.usa-table-container--scrollable th, .usa-table-container--scrollable td, .usa-prose>.usa-table-container--scrollable tdb {
+.usa-table-container--scrollable th,
+.usa-prose > .usa-table-container--scrollable th,
+.usa-table-container--scrollable td,
+.usa-prose > .usa-table-container--scrollable tdb {
   white-space: normal !important;
 }
 .bic-txt {
@@ -136,50 +150,51 @@ address p {
 .bic-txt-center {
   text-align: center;
 }
-.card-tag {                                   /*----- Resources Page CSS ----------*/
-  font-size: .9rem;
-  margin-top: .2em;
-  margin-bottom: .15em;
+.card-tag {
+  /*----- Resources Page CSS ----------*/
+  font-size: 0.9rem;
+  margin-top: 0.2em;
+  margin-bottom: 0.15em;
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: #323a45;
- }
- .usa-graphic-list .usa-graphic-list__row:last-child .usa-media-block {
+}
+.usa-graphic-list .usa-graphic-list__row:last-child .usa-media-block {
   margin-bottom: 0;
   display: block;
 }
 .text-container {
   height: 21rem;
- }
- .anchor-fill {
+}
+.anchor-fill {
   width: inherit;
   display: block;
   height: 81%;
 }
- .shadow-1 {
-   padding: 15px;
- }
- .link-type {
-  font-size: .9rem;
+.shadow-1 {
+  padding: 15px;
+}
+.link-type {
+  font-size: 0.9rem;
   font-weight: 700;
   color: #76766a;
- }
- /* ---------------- Site navigation change ----------------------- */
- @media (max-width: 1023px) {
- 
-  .search-input
-  {
+}
+/* ---------------- Site navigation change ----------------------- */
+@media (max-width: 1023px) {
+  .search-input {
     width: 100% !important;
   }
-  .search-input::placeholder
-  {
+  .search-input::placeholder {
     font-size: 12px !important;
+  }
+  .usa-nav__submenu-item {
+    color: black;
   }
 }
 /* ---------------- IPAD CSS ----------------------- */
 @media (max-width: 768px) {
-  .logo-size{
+  .logo-size {
     width: 220px;
     height: auto;
   }
@@ -196,7 +211,7 @@ address p {
   }
   .text-container {
     height: 30rem;
-   }
+  }
 }
 /* ---------------- MOBILE CSS ----------------------- */
 @media screen and (max-width: 640px) {
@@ -208,9 +223,10 @@ address p {
     width: 125px;
     height: auto;
   }
-  .usa-table-container--scrollable, .usa-table-container--scrollable {
+  .usa-table-container--scrollable,
+  .usa-table-container--scrollable {
     margin: 1.25rem 0;
-    overflow-y: hidden; 
+    overflow-y: hidden;
   }
   .grid-row.grid-gap {
     margin-left: 0px !important;
@@ -226,7 +242,7 @@ address p {
   .bic-txt-center {
     text-align: left;
   }
-  .count{
+  .count {
     margin-top: 1.06rem;
   }
   .text-container {
@@ -235,7 +251,7 @@ address p {
 }
 
 @media screen and (max-width: 1025px) {
-  .logo-size{
+  .logo-size {
     width: 220px;
     height: auto;
   }
@@ -244,4 +260,4 @@ address p {
     width: 130px;
     height: auto;
   }*/
-} 
+}

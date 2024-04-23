@@ -1,15 +1,21 @@
-{% comment %}
-To modify the menu system, you are welcome to edit this HTML directly or you can look inside _config.yml
-where we provide an easy way to manage your navigation system
-{% endcomment %}
+{% comment %} To modify the menu system, you are welcome to edit this HTML
+directly or you can look inside _config.yml where we provide an easy way to
+manage your navigation system {% endcomment %}
 
 <header class="usa-header usa-header--extended" role="banner">
   <div class="nav-background">
     <div class="navbar">
       <div class="usa-logo" id="logo">
-          <a href="{{ site.baseurl }}/" accesskey="1" title="ITVMO.gsa.gov" aria-label="ITVMO.gsa.gov">
-            <img class="logo-size itvmo-logo-size" src="{{ site.logo | prepend: site.baseurl }}" alt="United States ITVMO logo">
-          </a>
+        <a
+          href="{{ site.baseurl }}/"
+          accesskey="1"
+          title="ITVMO.gsa.gov"
+          aria-label="ITVMO.gsa.gov">
+          <img
+            class="logo-size itvmo-logo-size"
+            src="{{ site.logo | prepend: site.baseurl }}"
+            alt="United States ITVMO logo" />
+        </a>
       </div>
       <button class="usa-menu-btn">Menu</button>
     </div>
@@ -19,37 +25,54 @@ where we provide an easy way to manage your navigation system
       <button class="usa-nav__close">
         <img src="{{site.baseurl}}/assets/uswds/img/close.svg" alt="close" />
       </button>
-     <ul class="usa-nav__primary usa-accordion">
-        {% for nav_item in include.primary_navigation %}
-        {% assign basedir = page.url | remove_first: '/' | split: '/' | first | lstrip %}
-        {% assign linkdir = nav_item.url |  replace: "/", ""  | lstrip %}
-        {% if linkdir != "#" %}
-        <li class="usa-nav__primary-item">
-        {% else %}
-        <li class="usa-nav__primary-item dropdown hide-content-start" onmouseover="showDropdown(this)" onmouseout="hideDropdown(this)">
-        {% endif %}
-          <a class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
-          {% if linkdir != "#" %}
-            href="{{ nav_item.url | prepend: site.baseurl}}"><span>{{ nav_item.name | escape }}</span></a>
-          {% else %}
-            href="#"><span>{{ nav_item.name | escape }}</span></a>
-            <div class="dropdown-content dropdown-animate">
-              {% for subnav_item in nav_item.child %}
-                <a href="{{ subnav_item.url | prepend: site.baseurl }}">{{ subnav_item.name | escape }}</a>
-              {% endfor %}
-            </div>            
-          {% endif %}
+      <ul class="usa-nav__primary usa-accordion">
+        {% for nav_item in site.primary_navigation %} {% assign basedir =
+        page.url | remove_first: '/' | split: '/' | first | lstrip %} {% assign
+        linkdir = nav_item.url | replace: "/", "" | lstrip %} {% if
+        nav_item.children %}
+        <li class="usa-nav__primary-item usa-parent">
+          <button
+            type="button"
+            class="usa-accordion__button usa-nav__link"
+            aria-expanded="false"
+            aria-controls="extended-nav-{{ forloop.index }}">
+            <span> {{ nav_item.name | escape }} </span>
+          </button>
+          <ul id="extended-nav-{{ forloop.index }}" class="usa-nav__submenu">
+            {% for child in nav_item.children %}
+            <li class="usa-nav__submenu-item">
+              <a
+                class="dropdown__nav-link"
+                href="{{ child.url | prepend: site.baseurl }}">
+                <span>{{ child.name | escape }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
         </li>
-        {% endfor %}
+        {% else %}
+        <li class="usa-nav__primary-item">
+          <a
+            class="usa-nav__link{% if basedir == linkdir %} usa-current{% endif %}"
+            href="{{ nav_item.url | prepend: site.baseurl}}"
+            ><span>{{ nav_item.name | escape }}</span></a
+          >
+        </li>
+        {% endif %} {% endfor %}
       </ul>
+
       <div class="usa-nav__secondary">
         <ul class="usa-nav__secondary-links">
           {% for nav_item in include.secondary_navigation %}
           <li class="usa-nav__secondary-item secondary-item-list">
             {% if nav_item == "Subscribe" %}
-            <a class="secondary-item" href="{{ nav_item.url }}">{{ nav_item.name | escape }}</a>
+            <a class="secondary-item" href="{{ nav_item.url }}"
+              >{{ nav_item.name | escape }}</a
+            >
             {% else %}
-            <a class="secondary-item" href="{{site.baseurl}}{{ nav_item.url }}">{{ nav_item.name | escape }}</a>
+            <a class="secondary-item" href="{{site.baseurl}}{{ nav_item.url }}"
+              >{{ nav_item.name | escape }}</a
+            >
             {% endif %}
           </li>
           {% endfor %}

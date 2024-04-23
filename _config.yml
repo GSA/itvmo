@@ -87,6 +87,11 @@ primary_navigation:
     url: /services/
   - name: Resources
     url: /resources/
+  - name: Collaborations
+    url: /collaborations/
+    children:
+      - name: Generative AI Guide
+        url: /genai/
 
 secondary_navigation:
   - name: IT Vehicles
@@ -106,7 +111,6 @@ secondary_navigation:
 # 2. Add a new site.
 # 3. Add your site/affiliate name here.
 searchgov:
-
   # You should not change this.
   endpoint: https://search.usa.gov
 
@@ -138,14 +142,14 @@ collections:
   resources:
     output: true
   highlights:
-    output: true  
+    output: true
   events:
-    output: true  
+    output: true
   events_page_announcements:
     output: true
   past_event_highlight:
     output: true
-    
+
 permalink: pretty
 
 markdown: kramdown
