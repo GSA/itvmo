@@ -1164,37 +1164,6 @@ function urlToString(str) {
   return capitalizedStr;
 }
 
-var hasChapters = {% if page.chapters %}true{% else %}false{% endif %};
-
-if (hasChapters) {
-  // Do something special for the AI guide
-  function openTab(e, tabId) {
-    let tabcontent = document.getElementsByClassName("tabcontent");
-    let tabList = document.querySelectorAll(".usa-sidenav .tab");
-    
-    for (let i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none"; // Hide all content sections
-    }
-  
-    for (let i = 0; i < tabList.length; i++) {
-      tabList[i].classList.remove("usa-current"); // Remove the active style
-      tabList[i].classList.remove("active-tab"); // Custom active tab class
-    }
-  
-    document.getElementById(tabId).style.display = "flex"; // Show the selected tab content
-    e.currentTarget.classList.add("usa-current", "active-tab"); // Add the active class
-  
-    // Mobile dropdown synchronization
-    document.getElementById('tabs-mobile').value = e.currentTarget.id;
-  }
-  
-  function openTabDropdown() {
-    let selectedId = document.getElementById('tabs-mobile').value;
-    document.getElementById(selectedId).click();
-  }
-  
-}
-
 //This function hide all tabs and display the tab that clicked.
 function openTab(e, tabId) 
 {
