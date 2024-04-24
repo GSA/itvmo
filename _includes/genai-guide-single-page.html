@@ -1,6 +1,6 @@
 <section id="inner-page-tabs">
   <div class="grid-row">
-    <div class="desktop:grid-col-2">
+    <div class="desktop:grid-col-3">
       <nav aria-label="Side navigation" class="sidenav">
         <ul class="usa-sidenav">
           <li class="usa-sidenav__item">
@@ -32,15 +32,26 @@
           </li>
           <li class="usa-sidenav__item usa-accordion">
             <a
-              href="#part-3"
               id="part-3-header"
               class="tab usa-accordion__button"
               aria-expanded="false"
               aria-controls="a1"
-              onclick="openTab(event, 'part-3')"
               >Generative AI procurement</a
             >
-            <ul class="usa-sidenav__sublist usa-accordion__content" id="a1">
+            <ul
+              class="usa-sidenav__sublist left-nav__usa-accordion__content"
+              id="a1">
+              <li class="usa-sidenav__item">
+                <a
+                  href="#part-3"
+                  id="part-3-header"
+                  class="tab"
+                  class="tab"
+                  onclick="openTab(event, 'part-3')"
+                  >Overview</a
+                >
+              </li>
+
               <li class="usa-sidenav__item">
                 <a
                   href="#part-31"
@@ -163,19 +174,20 @@
         </ul>
       </nav>
     </div>
-    <div class="desktop:grid-col-9" id="genai-guide">
-      <!-- Tab content goes here, same as your existing tabcontent divs -->
-      <div id="introduction" class="tabcontent" style="display: flex;">
+    <div class="desktop:grid-col-8" id="genai-guide">
+      <!-- Tab content goes here, same as your existing tabcontent left-navcontent divs -->
+      <div
+        id="introduction"
+        class="tabcontent left-navcontent"
+        style="display: flex">
         <div class="contents padding-bottom-5">
-
           <h3>Executive Order 14110</h3>
           <p>
             Executive Order 14110 Section 10.1(h) directs GSA to facilitate
             agencies’ access to commercial Generative AI capabilities.
           </p>
           <blockquote
-            class="border-left-05 border-primary-darker padding-left-2"
-          >
+            class="border-left-05 border-primary-darker padding-left-2">
             “Within 180 days of the date of this order, to facilitate agencies’
             access to commercial AI capabilities, the Administrator of General
             Services, in coordination with the Director of OMB, and in
@@ -335,13 +347,13 @@
           <div class="tab-divide-line end-content"></div>
         </div>
       </div>
-      <div id="part-1" class="tabcontent" style="display: none;">
+      <div id="part-1" class="tabcontent left-navcontent" style="display: none">
         {% include genai-guide-part-1.html %}
       </div>
-      <div id="part-2" class="tabcontent" style="display: none;">
+      <div id="part-2" class="tabcontent left-navcontent" style="display: none">
         {% include genai-guide-part-2.html %}
       </div>
-      <div id="part-3" class="tabcontent" style="display: none;">
+      <div id="part-3" class="tabcontent left-navcontent" style="display: none">
         <div class="contents padding-bottom-5">
           <div id="guide-chapter-3">
             <h2>3. Generative AI Procurement</h2>
@@ -381,7 +393,10 @@
           </div>
         </div>
       </div>
-      <div id="part-31" class="tabcontent" style="display: none;">
+      <div
+        id="part-31"
+        class="tabcontent left-navcontent"
+        style="display: none">
         <div class="contents padding-bottom-5">
           <h2>3.1. Integrated Product Team</h2>
 
@@ -489,7 +504,10 @@
           </p>
         </div>
       </div>
-      <div id="part-32" class="tabcontent" style="display: none;">
+      <div
+        id="part-32"
+        class="tabcontent left-navcontent"
+        style="display: none">
         <div class="contents padding-bottom-5">
           <h2>3.2 Agency Goals and Needs.</h2>
 
@@ -559,7 +577,10 @@
           </p>
         </div>
       </div>
-      <div id="part-33" class="tabcontent" style="display: none;">
+      <div
+        id="part-33"
+        class="tabcontent left-navcontent"
+        style="display: none">
         <div class="contents padding-bottom-5">
           <h2>3.3 Solutions Scoping and Testing</h2>
 
@@ -799,7 +820,10 @@
           </p>
         </div>
       </div>
-      <div id="part-34" class="tabcontent" style="display: none;">
+      <div
+        id="part-34"
+        class="tabcontent left-navcontent"
+        style="display: none">
         <div class="contents padding-bottom-5">
           <h2>3.4 Data Management and Protection</h2>
 
@@ -1169,7 +1193,10 @@
           </p>
         </div>
       </div>
-      <div id="part-35" class="tabcontent" style="display: none;">
+      <div
+        id="part-35"
+        class="tabcontent left-navcontent"
+        style="display: none">
         <div class="contents padding-bottom-5">
           <h2>3.5 Acquisition Strategy</h2>
 
@@ -1551,7 +1578,10 @@
           </p>
         </div>
       </div>
-      <div id="part-36" class="tabcontent" style="display: none;">
+      <div
+        id="part-36"
+        class="tabcontent left-navcontent"
+        style="display: none">
         <div class="contents padding-bottom-5">
           <h2>3.6 Market Assessment</h2>
 
@@ -1725,7 +1755,10 @@
           </p>
         </div>
       </div>
-      <div id="part-37" class="tabcontent" style="display: none;">
+      <div
+        id="part-37"
+        class="tabcontent left-navcontent"
+        style="display: none">
         <div class="contents padding-bottom-5">
           <h2>3.7 Cost Estimation</h2>
 
@@ -2027,7 +2060,10 @@
           </p>
         </div>
       </div>
-      <div id="part-38" class="tabcontent" style="display: none;">
+      <div
+        id="part-38"
+        class="tabcontent left-navcontent"
+        style="display: none">
         <div class="contents padding-bottom-5">
           <h2>3.8 Performance Monitoring and Evaluation</h2>
 
@@ -2129,16 +2165,19 @@
           </p>
         </div>
       </div>
-      <div id="part-4" class="tabcontent" style="display: none;">
+      <div id="part-4" class="tabcontent left-navcontent" style="display: none">
         {% include genai-guide-part-4.html %}
       </div>
-      <div id="part-5" class="tabcontent" style="display: none;">
+      <div id="part-5" class="tabcontent left-navcontent" style="display: none">
         {% include genai-guide-part-5.html %}
       </div>
-      <div id="part-6" class="tabcontent" style="display: none;">
+      <div id="part-6" class="tabcontent left-navcontent" style="display: none">
         {% include genai-guide-part-6.html %}
       </div>
-      <div id="data-tools" class="tabcontent" style="display: none;">
+      <div
+        id="data-tools"
+        class="tabcontent left-navcontent"
+        style="display: none">
         <div class="contents padding-bottom-5">
           <h3 id="data-tools-overview" class="topic-heading">Data Tools</h3>
           <ul class="usa-card-group">
@@ -2147,15 +2186,13 @@
                 target="_blank"
                 rel="noreferrer noopener"
                 href="https://d2d.gsa.gov/tableau-report-for-embed/10744"
-                class="usa-card__container usa-card__container_link"
-              >
+                class="usa-card__container usa-card__container_link">
                 <div class="usa-card__media serviceCard">
                   <div class="leftPort">
                     <img
                       class="imgCont"
                       src="{{site.baseurl}}/assets/images/screenshot/ai-acquisition-dashboard-screenshot.PNG"
-                      alt="Screenshot of the AI Acquisition Dashboard"
-                    />
+                      alt="Screenshot of the AI Acquisition Dashboard" />
                   </div>
                 </div>
 
@@ -2165,8 +2202,7 @@
                       <img
                         class="imgContres"
                         src="{{site.baseurl}}/assets/images/genai/ai-acquisition-dashboard-screenshot.PNG"
-                        alt="Screenshot of the AI Acquisition Dashboard"
-                      />
+                        alt="Screenshot of the AI Acquisition Dashboard" />
                     </div>
                     <div class="resHeading">
                       <h2 class="usa-card__heading">
@@ -2178,8 +2214,7 @@
                     AI Acquisition Resource Dashboard
                     <img
                       alt="External icon"
-                      src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"
-                    />
+                      src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg" />
                   </h2>
                   <div class="cardBody">
                     <p>
@@ -2373,7 +2408,10 @@
           </p>
         </div>
       </div>
-      <div id="feedback" class="tabcontent" style="display: none;">
+      <div
+        id="feedback"
+        class="tabcontent left-navcontent"
+        style="display: none">
         <div class="contents padding-bottom-5">
           <h3 id="feedback-overview" class="topic-heading">
             Ways to contribute

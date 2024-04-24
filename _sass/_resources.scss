@@ -4757,3 +4757,60 @@ html * {
   font-style: italic;
   font-weight: 500;
 }
+
+.left-navcontent {
+  display: none;
+  position: relative;
+  // justify-content: center;
+  .contents {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 40px;
+    color: #333333;
+    line-height: 30px;
+  }
+}
+
+.usa-sidenav a:not(.usa-button) {
+  padding: 1rem 1rem;
+}
+
+.usa-sidenav {
+  margin-bottom: 30px;
+  .usa-accordion__button {
+    background-color: #fff;
+    font-weight: 400;
+  }
+
+  .usa-accordion__button[aria-expanded="true"] {
+    background-color: #f2f2f2 !important;
+    font-weight: 800;
+    margin-bottom: -18px;
+  }
+
+  .active-tab {
+    background-color: #f2f2f2;
+    border-left: 4px solid #1b2b85;
+    color: #1b2b85 !important;
+    font-weight: 600;
+  }
+  .left-nav__usa-accordion__content {
+    color: #1b1b1b;
+    background-color: #f2f2f2;
+    margin-top: 0;
+    overflow: auto;
+    padding: 1rem 1.25rem calc(1rem - 0.25rem) 1.25rem;
+
+    .tab:hover {
+      color: #000 !important;
+      background-color: #e0e0e0;
+    }
+
+    .active-tab {
+      background-color: #e0e0e0;
+      border-left: 4px solid #1b2b85;
+      color: #1b2b85 !important;
+      font-weight: 600;
+    }
+  }
+}
