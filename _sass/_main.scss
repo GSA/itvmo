@@ -343,7 +343,7 @@ address p {
   padding: 0;
   color: #1b1b1b;
   background-color: #f0f0f0;
-  background-image: url(../assets/uswds/img/expand_less.svg),
+  background-image: url(../uswds/img/usa-icons/expand_less.svg),
     linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
   background-position: right 1.25rem center;
@@ -416,7 +416,7 @@ address p {
 .usa-accordion__button:hover {
   color: #1b1b1b;
   background-color: #dfe1e2;
-  background-image: url(../assets/uswds/img/expand_less.svg),
+  background-image: url(../uswds/img/usa-icons/expand_less.svg),
     linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
   text-decoration: none;
@@ -427,7 +427,7 @@ address p {
     position: relative;
   }
   .usa-accordion__button::before {
-    background-image: url(../assets/uswds/img/expand_less.svg);
+    background-image: url(../uswds/img/usa-icons/expand_less.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1.5rem 1.5rem;
@@ -444,9 +444,9 @@ address p {
     .usa-accordion__button::before {
       background: none;
 
-      -webkit-mask-image: url(../assets/uswds/img/expand_less.svg),
+      -webkit-mask-image: url(../uswds/img/usa-icons/expand_less.svg),
         linear-gradient(transparent, transparent);
-      mask-image: url(../assets/uswds/img/expand_less.svg),
+      mask-image: url(../uswds/img/usa-icons/expand_less.svg),
         linear-gradient(transparent, transparent);
       -webkit-mask-position: center center;
       mask-position: center center;
@@ -459,19 +459,19 @@ address p {
 }
 
 .usa-accordion__button[aria-expanded="false"] {
-  background-image: url(../assets/images/icons/expand_more.svg),
+  background-image: url(../uswds/img/usa-icons/expand_more.svg),
     linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
   background-size: 1.5rem;
 }
 .usa-accordion__button[aria-expanded="false"]:hover {
-  background-image: url(../assets/images/icons/expand_more.svg),
+  background-image: url(../uswds/img/usa-icons/expand_more.svg),
     linear-gradient(transparent, transparent);
   background-repeat: no-repeat;
 }
 @media (forced-colors: active) {
   .usa-accordion__button[aria-expanded="false"]::before {
-    background-image: url(../assets/images/icons/expand_more.svg);
+    background-image: url(../uswds/img/usa-icons/expand_more.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 1.5rem 1.5rem;
@@ -487,9 +487,9 @@ address p {
     .usa-accordion__button[aria-expanded="false"]::before {
       background: none;
 
-      -webkit-mask-image: url(../assets/images/icons/expand_more.svg),
+      -webkit-mask-image: url(../uswds/img/usa-icons/expand_more.svg),
         linear-gradient(transparent, transparent);
-      mask-image: url(../assets/images/icons/expand_more.svg),
+      mask-image: url(../uswds/img/usa-icons/expand_more.svg),
         linear-gradient(transparent, transparent);
       -webkit-mask-position: center center;
       mask-position: center center;
