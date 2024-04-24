@@ -8,14 +8,7 @@ permalink: /genai/
 sidenav: false
 redesign: true
 mainpage: false
-chapters: true
+
 ---
 
-
-{% if page.chapters == true %}
-
-{% include genai-guide-sidetabbed.html %}
-{% else %}
-
-{% include genai.html %}
-{% endif %}
+{% include genai-guide-single-page.html %}
