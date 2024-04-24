@@ -1,38 +1,490 @@
-<div class="grid-row">
-  <div class="tablet:grid-col-3">
+<section id="inner-page-tabs">
+  <div class="grid-row">
+    <div class="tablet:grid-col-3">
       <nav aria-label="Side navigation" class="sidenav">
-          <ul class="usa-sidenav">
-              <li class="usa-sidenav__item">
-                  <a href="#" id="introduction-header" class="tab active-tab" onclick="openTab(event, 'introduction')">Introduction</a>
-              </li>
-              <li class="usa-sidenav__item">
-                  <a href="#" id="the-guide-header" class="tab" onclick="openTab(event, 'the-guide')">Read the guide</a>
-              </li>
-              <li class="usa-sidenav__item">
-                  <a href="#" id="data-tools-header" class="tab" onclick="openTab(event, 'data-tools')">Access data tools</a>
-              </li>
-              <li class="usa-sidenav__item">
-                  <a href="#" id="feedback-header" class="tab" onclick="openTab(event, 'feedback')">Send feedback</a>
-              </li>
-          </ul>
+        <ul class="usa-sidenav">
+          <li class="usa-sidenav__item">
+            <a
+              href="#introduction"
+              id="introduction-header"
+              class="tab active-tab"
+              onclick="openTab(event, 'introduction')"
+              >Introduction</a
+            >
+          </li>
+          <li class="usa-sidenav__item">
+            <a
+              href="#the-guide"
+              id="the-guide-header"
+              class="tab"
+              onclick="openTab(event, 'the-guide')"
+              >Read the guide</a
+            >
+          </li>
+          <li class="usa-sidenav__item">
+            <a
+              href="#data-tools"
+              id="data-tools-header"
+              class="tab"
+              onclick="openTab(event, 'data-tools')"
+              >Dashboard and Data</a
+            >
+          </li>
+          <li class="usa-sidenav__item">
+            <a
+              href="#feedback"
+              id="feedback-header"
+              class="tab"
+              onclick="openTab(event, 'feedback')"
+              >Send feedback</a
+            >
+          </li>
+        </ul>
       </nav>
-  </div>
-  <div class="tablet:grid-col-9">
+    </div>
+    <div class="tablet:grid-col-8">
       <!-- Tab content goes here, same as your existing tabcontent divs -->
       <div id="introduction" class="tabcontent" style="display: none;">
-          test 1
+        <div class="contents padding-bottom-5">
+          
+            <h1 id="the-guide-overview">
+              Generative AI and Specialized Computing Infrastructure Acquisition
+              Resource Guide
+            </h1>
+    
+            <h3>Executive Order 14110</h3>
+            <p>
+              Executive Order 14110 Section 10.1(h) directs GSA to facilitate
+              agencies’ access to commercial Generative AI capabilities.
+            </p>
+            <blockquote class="border-left-05 border-primary-darker padding-left-2">
+              “Within 180 days of the date of this order, to facilitate agencies’
+              access to commercial AI capabilities, the Administrator of General
+              Services, in coordination with the Director of OMB, and in
+              collaboration with the Secretary of Defense, the Secretary of Homeland
+              Security, the Director of National Intelligence, the Administrator of
+              the National Aeronautics and Space Administration, and the head of any
+              other agency identified by the Administrator of General Services,
+              shall take steps consistent with applicable law to facilitate access
+              to Federal Government-wide acquisition solutions for specified types
+              of AI services and products, such as through the creation of a
+              resource guide or other tools to assist the acquisition workforce.
+              Specified types of AI capabilities shall include generative AI and
+              specialized computing infrastructure.”
+            </blockquote>
+            <h3>This guide focuses on Generative AI not all of AI</h3>
+            <p>
+              Artificial Intelligence or “AI” is one of the most profound
+              technological shifts in a generation or more. At its roots, AI is
+              software. That means it follows the same acquisition policies and
+              rules as other software and IT as a whole.
+            </p>
+            <p>
+              Contracting officers should consider cybersecurity, supply chain risk
+              management, data governance and other standards and guidelines just as
+              they would with other IT procurements.
+            </p>
+            <p>
+              AI is also a very large space and Generative AI is just one type of
+              AI. This guide focuses on Generative AI acquisition in particular and
+              not AI acquisition as a whole.
+            </p>
+            <p>
+              Look for definitions for both Artificial Intelligence and Generative
+              Artificial Intelligence in Section 1.1.
+            </p>
+    
+            <h3 id="audience">Assisting the Acquisition Workforce</h3>
+            <p>
+              This guide is primarily meant for the acquisition workforce navigating
+              the complexities of acquiring Generative AI technologies in
+              collaboration with relevant agency officials from other domains.
+            </p>
+            <p>
+              This guide is focused on civilian agencies’ Generative AI needs.
+              Defense, National Security and the
+              <a
+                class="external_link"
+                href="https://dpcld.defense.gov/Portals/49/Documents/Civil/eo-12333-2008.pdf"
+                >Intelligence Community</a
+              >
+              have very specific needs and procurement solutions that have been
+              tailored for their requirements.
+            </p>
+            <p>
+              Generative AI can be difficult to understand both for technologists
+              and non-technologists.
+            </p>
+            <p>
+              As a member of the acquisition workforce, it is critical to work with
+              technical subject matter experts (SMEs) like software engineers, data
+              scientists, security and privacy specialists; program staff who can
+              identify the problems they are trying to solve, validate users’ needs,
+              safeguard data and establish product goals or requirements; and agency
+              officials responsible for security, privacy and other relevant
+              disciplines to meet a range of agency responsibilities in this
+              context.
+            </p>
+            <p>
+              While those in the acquisition community don’t need to become experts
+              in AI, a basic understanding of certain Generative AI terms, common
+              issues and ways to derisk acquisitions will help you make better
+              decisions about what to buy and how.
+            </p>
+            <p>
+              This guide also simplifies complex technical IT and AI concepts to
+              make them easier for non-technologists to understand. In some cases,
+              this guide may over-simplify concepts for the sake of clarity. Seek
+              support from AI, IT and data professionals when making decisions..
+            </p>
+            <p>
+              Because Generative AI is relatively new and evolving quickly, it’s
+              early to designate “best practices.” Think of the information in this
+              resource guide as prompts to consider and frame your thinking and
+              approach rather than directive recommendations for what to do. This
+              content is non-binding. The recommendations presented do not
+              supersede, modify, or direct an interpretation of existing
+              requirements mandated by law or governmentwide policy.
+            </p>
+            <h3>The fastest acquisition may be no new acquisition.</h3>
+            <p>
+              Generative AI tools are often software delivered via the web or
+              “Software as a Service” (SaaS). Generative AI tools may already be
+              available to agency staff. They might have them in tools they already
+              use every day. Generative AI tools may be accessible through existing
+              government cloud platforms. And they may be available through
+              professional service and system integrator contracts agencies already
+              have in place.
+            </p>
+            <p>
+              In that way, the fastest acquisition for Generative AI tools may be no
+              new acquisition, or as simple as adding “credits” to an existing cloud
+              platform contract to account for the new requirements or resources
+              associated with the Generative AI tools.
+            </p>
+            <p>
+              Before embarking on a large scale or involved process for scoping and
+              conducting a new acquisition for Generative AI tools, see if there is
+              a simpler route. Work with your agency’s Chief Information Officer,
+              Chief Artificial Intelligence Officer and Chief Information Security
+              Officer to determine what you already have in place and whether you
+              can just use an existing solution or contract.
+            </p>
+            <p>
+              Of course the fastest or easiest solutions may not be the best for the
+              agency in the short and/or long term. Work with the IPT to manage
+              issues of competition and vendor lock in.
+            </p>
+            <h3 id="version">This is Version 1.0</h3>
+            <p>
+              This guide isn’t static. It’s meant to evolve as technology advances
+              while aligning with relevant law, policy and frameworks including the
+              Executive Order on AI, the Federal Acquisition Regulation (FAR), the
+              NIST AI Risk Management Framework (AI RMF) and the Blueprint for an AI
+              Bill of Rights.
+            </p>
+            <p>
+              Links in this guide were verified just prior to the site’s launch. If
+              you do happen to find a bad link, please report it
+              <a
+                class="external_link"
+                href="https://touchpoints.app.cloud.gov/touchpoints/9970e8fc/submit"
+                >using the Send Feedback tool.</a
+              >
+            </p>
+    
+            <h3 id="collaborate">Help make this guide better.</h3>
+            <p>
+              Please join this evolving journey, contribute your insights and help
+              refine this guide by submitting pull requests on GitHub.
+            </p>
+            <h3>Companies or product mentions are not endorsements.</h3>
+            <p>
+              This guide may reference actual companies and/or offerings to define,
+              illustrate or explain a concept. Do not consider these recommendations
+              or disparagements. We do not endorse any company or their works.
+            </p>
+    
+            <h3 id="disclosure">Generative AI content disclosure</h3>
+            <p>
+              The team used Generative AI tools when drafting some initial content.
+              This attribution highlights our commitment to leveraging emerging
+              technology tools while maintaining transparency in our processes. All
+              content in this guide has been reviewed by humans for quality.
+            </p>
+            <div class="tab-divide-line end-content"></div>
+          
+        </div>
       </div>
-      <div id="the-guide" class="tabcontent" style="display: none;">
-        Test 2
-      </div>
+      <div id="the-guide" class="tabcontent" style="display: none;">Test 2</div>
       <div id="data-tools" class="tabcontent" style="display: none;">
-          Test 3
+        <div class="contents padding-bottom-5">
+          <h3 id="data-tools-overview" class="topic-heading">Data Tools</h3>
+          <ul class="usa-card-group">
+            <li id="ai-dashboard" class="usa-card usa-card--flag">
+              <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://d2d.gsa.gov/tableau-report-for-embed/10744"
+                class="usa-card__container usa-card__container_link"
+              >
+                <div class="usa-card__media serviceCard">
+                  <div class="leftPort">
+                    <img
+                      class="imgCont"
+                      src="{{site.baseurl}}/assets/images/screenshot/ai-acquisition-dashboard-screenshot.PNG"
+                      alt="Screenshot of the AI Acquisition Dashboard"
+                    />
+                  </div>
+                </div>
+    
+                <div class="usa-card__body">
+                  <div class="resCardSec">
+                    <div>
+                      <img
+                        class="imgContres"
+                        src="{{site.baseurl}}/assets/images/genai/ai-acquisition-dashboard-screenshot.PNG"
+                        alt="Screenshot of the AI Acquisition Dashboard"
+                      />
+                    </div>
+                    <div class="resHeading">
+                      <h2 class="usa-card__heading">
+                        Access the AI Acquisition Resource Dashboard
+                      </h2>
+                    </div>
+                  </div>
+                  <h2 class="partnerHeader">
+                    AI Acquisition Resource Dashboard
+                    <img
+                      alt="External icon"
+                      src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"
+                    />
+                  </h2>
+                  <div class="cardBody">
+                    <p>
+                      The AI Acquisition Resource Dashboard is a tool for the
+                      acquisition workforce to identify government-wide contract
+                      vehicles that agencies have used to procure Generative AI and
+                      Specialized Computing Infrastructure.
+                    </p>
+                    <div class="partner-detail margin-top-2">
+                      <div>
+                        <p>Public</p>
+                      </div>
+                      <div>
+                        <p>Sourced from FPDS</p>
+                      </div>
+                      <div>
+                        <p>Scoped to gen AI</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+    
+          <h3 id="dashboard-overview" class="sub-topic-heading">Overview</h3>
+          <p class="tab-p">
+            The AI Acquisition Resource Dashboard is created to align with Executive
+            Order 14110 Section 10.1(h). This order mandates General Services
+            Administration (GSA) to facilitate agencies' access to commercial
+            Generative AI and specialized computing infrastructure capabilities.
+          </p>
+    
+          <h3 id="dashboard-about" class="sub-topic-heading">Data source</h3>
+          <p class="tab-p">
+            Updated monthly, the Dashboard draws from the
+            <a
+              href="https://www.fpds.gov/"
+              title="Federal Procurement Data System"
+              target="_blank"
+              class="usa-link--external"
+              >Federal Procurement Data System</a
+            >
+            (FPDS) to present data from FY20 onwards. The date of the latest
+            dashboard update is prominently displayed next to the Dashboard title,
+            ensuring users are aware of the currentness of the information provided.
+            Our data review process encompasses all Level 1 categories, excluding
+            Department of Defense (DOD) contracts and open market contracts, to
+            focus on relevant governmental procurement activities relevant to the
+            Executive Order.
+          </p>
+          <p class="tab-p">
+            To ensure the relevance and specificity of the data, we employ an
+            AI-focused keyword search methodology. This approach utilizes a
+            continually refined list of several hundred AI-related keywords. These
+            keywords target the description of the requirements column within the
+            FPDS entries, allowing us to filter and retain only those rows that are
+            pertinent to Generative AI and Specialized Computing Infrastructure.
+            Through this targeted search, we refine the vast dataset of over 30
+            millions rows to a manageable and highly relevant dataframe, typically
+            encompassing between 3,000 and 5,000 purchase requests. This careful
+            curation process results in a detailed snapshot of government purchasing
+            behaviors related to Generative AI and Specialized Computing
+            Infrastructure.
+          </p>
+          <h3 id="dashboard-views" class="sub-topic-heading">Views</h3>
+          <h4 id="view-vendor-count" class="">Vendor count</h4>
+          <p class="tab-p">
+            The FPDS exclusively features Prime Vendors. The Vendor Count view
+            presents the count of Prime Vendors according to the Contract Vehicle
+            utilized. It distinguishes between solutions managed by individual
+            agencies and those available government-wide. The purpose of this
+            differentiation is to spotlight solutions outside the open market,
+            focusing on Best in Class (BIC), Tier 2, and Tier 2 Small Business
+            contracts, among other designations, especially for AI or specialized
+            computing infrastructure solutions.
+          </p>
+          <h4 id="view-level-3" class="">Level 3</h4>
+          <p class="tab-p">
+            Utilizing the tiered categorization system from the FPDS, this view
+            offers a detailed exploration of procurement data. The FPDS organizes
+            information into a hierarchical structure, comprising Level 1, Level 2,
+            and Level 3 Categories. This arrangement allows for a progressively
+            granular analysis of the government's purchasing activities. For
+            example, within the realm of "Information and Communication Technology,"
+            which could be considered a broader Level 2 Category, a specific Level 3
+            Category might be "Application”. This specific product categorization
+            helps identify the most relevant contract vehicles for the type of
+            product or service an agency is looking to procure. By leveraging Level
+            3 Categories, stakeholders can pinpoint the exact nature of services
+            procured and see how many Prime Vendors are selling goods in services in
+            a category.
+          </p>
+          <h4 id="view-obligations-trends" class="">Obligations trends</h4>
+          <p class="tab-p">
+            The Obligations View, intended for observing general purchasing patterns
+            rather than detailed spend analysis, highlights departmental purchasing
+            trends and fiscal year obligations as recorded in FPDS.
+          </p>
+          <p class="tab-p">
+            By providing insights into general purchasing patterns across federal
+            departments this section aids stakeholders in discerning purchasing
+            trends in the rapidly evolving sectors of Generative AI and Specialized
+            Computing Infrastructure. Stakeholders can leverage this information to
+            gain insights into how procurement strategies in these areas shift over
+            time for Departments. For example, if you filter for Specialized
+            Computing Infrastructure the Obligations view will tell you which
+            Departments are the biggest purchasers of Specialized Computing
+            Infrastructure and how obligations for Specialized Computing
+            Infrastructure have been trending from FY20 to present.
+          </p>
+          <h4 id="view-psc" class="">PSC</h4>
+          <p class="tab-p">
+            The PSC View leverages Product Service Codes (PSC). Each PSC is a
+            four-character code employed by the United States federal government to
+            classify the products, services, and research and development (R&D)
+            items it acquires. These codes are a standardized system designed to
+            categorize and document government procurement transactions efficiently.
+            Utilized across various procurement platforms, these codes are also
+            reported to FPDS.
+          </p>
+          <p class="tab-p">
+            By utilizing this view, dashboard users can gain insights into the
+            availability of Prime Vendors across PSC Codes. It highlights not just
+            the quantity of Prime Vendors within each PSC code, but also
+            differentiates them based on their business size classification—small or
+            other than small businesses.
+          </p>
+          <h4 id="view-naics" class="">NAICS</h4>
+          <p class="tab-p">
+            The NAICS View employs the North American Industry Classification System
+            (NAICS) codes to provide a view of Prime Vendors activities per NAICS
+            code. NAICS codes are structured as a six-digit hierarchical system that
+            categorizes the primary business activities of Prime Vendors. This
+            classification system delineates the economy into progressively specific
+            categories, as represented by the length and composition of each code:
+          </p>
+          <ul>
+            <li>The first two digits identify the broad economic sector,</li>
+            <li>The third digit specifies the subsector,</li>
+            <li>The fourth digit defines the industry group,</li>
+            <li>The fifth digit describes the industry itself,</li>
+            <li>
+              The sixth digit is reserved for national industry specifications.
+            </li>
+          </ul>
+          <p class="tab-p">
+            By utilizing this view, dashboard users can gain insights into the
+            availability of Prime Vendors across various economic sectors. It
+            highlights not just the quantity of Prime Vendors within each NAICS
+            code, but also differentiates them based on their size classification.
+            This view helps get a deeper understanding of the Prime Vendors
+            distribution and their principal areas of operation.
+          </p>
+          <p class="tab-p">
+            According to FAR regulation 19.102(a)(2), the Office of Management and
+            Budget (OMB), through its Economic Classification Policy Committee,
+            updates NAICS codes every five years. The U.S. Census Bureau maintains a
+            searchable database of NAICS codes on its
+            <a class="usa-link--external" href="https://www.census.gov/naics/"
+              >North American Industry Classification System website</a
+            >.
+          </p>
+          <h4 id="view-available-contracts" class="">Available contracts</h4>
+          <p class="tab-p">
+            This segment of the dashboard focuses on the Procurement Instrument
+            Identification, commonly referred to as PIID, Reference PIID, or
+            Contract ID. The PIID is an identifier within government procurement,
+            acting as a unique number assigned to each contract, agreement, or
+            order. It serves as a key for conducting in-depth research on specific
+            contract vehicles, especially those pertaining to the acquisition of
+            Generative AI and Specialized Computing Infrastructure.
+          </p>
+          <p class="tab-p">
+            In this view, users are presented with a list of PIIDs or Contract IDs
+            corresponding to active and past contracts involved in procuring
+            Generative AI and Specialized Computing Infrastructure. This inclusion
+            helps acquisition workforce members and decision-makers seeking to
+            explore and analyze contracts that they may be able to consult for more
+            information. The PIIDs provided in the dashboard are gateways to
+            contractual information. By using these identifiers, users can access
+            detailed contract documents, performance reports, financial terms, and
+            Prime Vendor information that may help inform their own Generative AI
+            and Specialized Computing Infrastructure acquisitions.
+          </p>
+        </div>
       </div>
       <div id="feedback" class="tabcontent" style="display: none;">
-          Test 4
+        <div class="contents padding-bottom-5">
+          <h3 id="feedback-overview" class="topic-heading">Ways to contribute</h3>
+          <h3 id="send-feedback" class="sub-topic-heading">Send feedback</h3>
+          <p class="tab-p">
+            We welcome feedback on the guide or questions about procuring gen AI.
+            Engage with us using
+            <a
+              class="external_link"
+              href="https://touchpoints.app.cloud.gov/touchpoints/9970e8fc/submit"
+              >our feedback form</a
+            >
+            or other options below.
+          </p>
+          <div id="itc-web-content-survey-yes-no"></div>
+    
+          <h3 id="send-code" class="sub-topic-heading">Contribute code</h3>
+          <p class="tab-p">
+            Engage
+            <a
+              class="usa-link--external"
+              href="https://github.com/GSA/14110s101h/issues"
+              >here on the GSA GitHub</a
+            >, submit pull requests and share your experiences.
+          </p>
+          <h3 id="send-code" class="sub-topic-heading">Email us</h3>
+          <p class="tab-p">
+            Send an email to
+            <a class="usa-link--external" href="mailto:genai@gsa.gov"
+              >genai@gsa.gov</a
+            >
+            to connect directly with our team.
+          </p>
+          <div class="tab-divide-line"></div>
+        </div>
       </div>
+    </div>
   </div>
-</div>
+</section>
 
 {% comment %} This is older code showing the horizantally tabbed layout
 
@@ -82,9 +534,7 @@
   </div>
   <div id="introduction" class="tabcontent" style="display: flex">
     <div class="contents padding-bottom-5">
-      <div id="guide-intro">
-
-      </div>
+      <div id="guide-intro"></div>
     </div>
     <div class="content-nav">
       <div class="nav-list">
@@ -115,26 +565,12 @@
   </div>
   <div id="the-guide" class="tabcontent">
     <div class="contents padding-bottom-5">
-      
-      <div id="guide-chapter-1">
-        Chapter 1 content
-      </div>
-      <div id="guide-chapter-2">
-        Chapter 2 content
-      </div>
-      <div id="guide-chapter-3">
-        Chapter 3 content
-      </div>
-      <div id="guide-chapter-4">
-        Chapter 4 content
-      </div>
-      <div id="guide-chapter-5">
-        Chapter 5 content
-      </div>
-      <div id="guide-chapter-6">
-        Chapter 6 content
-      </div>
-
+      <div id="guide-chapter-1">Chapter 1 content</div>
+      <div id="guide-chapter-2">Chapter 2 content</div>
+      <div id="guide-chapter-3">Chapter 3 content</div>
+      <div id="guide-chapter-4">Chapter 4 content</div>
+      <div id="guide-chapter-5">Chapter 5 content</div>
+      <div id="guide-chapter-6">Chapter 6 content</div>
     </div>
     <div class="content-nav display-none">
       <div class="nav-list">
