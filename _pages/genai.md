@@ -8,6 +8,7 @@ permalink: /genai/
 sidenav: false
 redesign: true
 mainpage: false
+genai: true
 
 ---
 
