@@ -8,16 +8,25 @@
               href="#introduction"
               id="introduction-header"
               class="tab active-tab"
+              onclick="openTab(event, 'introduction')"
               >Introduction</a
             >
           </li>
           <li class="usa-sidenav__item">
-            <a href="#part-1" id="part-1-header" class="tab"
+            <a
+              href="#part-1"
+              id="part-1-header"
+              class="tab"
+              onclick="openTab(event, 'part-1')"
               >Generative AI 101</a
             >
           </li>
           <li class="usa-sidenav__item">
-            <a href="#part-2" id="part-2-header" class="tab"
+            <a
+              href="#part-2"
+              id="part-2-header"
+              class="tab"
+              onclick="openTab(event, 'part-2')"
               >Generative AI in the Government</a
             >
           </li>
@@ -31,76 +40,133 @@
             >
             <ul
               class="usa-sidenav__sublist left-nav__usa-accordion__content"
-              id="a1"
-            >
+              id="a1">
               <li class="usa-sidenav__item">
-                <a href="#part-3" id="part-30-header" class="tab">Overview</a>
+                <a
+                  href="#part-3"
+                  id="part-30-header"
+                  class="tab"
+                  onclick="openTab(event, 'part-3')"
+                  >Overview</a
+                >
               </li>
 
               <li class="usa-sidenav__item">
-                <a href="#part-31" id="part-31-header" class="tab"
+                <a
+                  href="#part-31"
+                  id="part-31-header"
+                  class="tab"
+                  onclick="openTab(event, 'part-31')"
                   >Integrated Product Team</a
                 >
               </li>
               <li class="usa-sidenav__item">
-                <a href="#part-32" id="part-32-header" class="tab"
+                <a
+                  href="#part-32"
+                  id="part-32-header"
+                  class="tab"
+                  onclick="openTab(event, 'part-32')"
                   >Agency Goals and Needs</a
                 >
               </li>
               <li class="usa-sidenav__item">
-                <a href="#part-33" id="part-33-header" class="tab"
+                <a
+                  href="#part-33"
+                  id="part-33-header"
+                  class="tab"
+                  onclick="openTab(event, 'part-33')"
                   >Solutions Scoping and Testing</a
                 >
               </li>
               <li class="usa-sidenav__item">
-                <a href="#part-34" id="part-34-header" class="tab"
+                <a
+                  href="#part-34"
+                  id="part-34-header"
+                  class="tab"
+                  onclick="openTab(event, 'part-34')"
                   >Data Management and Protection</a
                 >
               </li>
               <li class="usa-sidenav__item">
-                <a href="#part-35" id="part-35-header" class="tab"
+                <a
+                  href="#part-35"
+                  id="part-35-header"
+                  class="tab"
+                  onclick="openTab(event, 'part-35')"
                   >Acquisition Strategy</a
                 >
               </li>
               <li class="usa-sidenav__item">
-                <a href="#part-36" id="part-36-header" class="tab"
+                <a
+                  href="#part-36"
+                  id="part-36-header"
+                  class="tab"
+                  onclick="openTab(event, 'part-36')"
                   >Market Assessment</a
                 >
               </li>
               <li class="usa-sidenav__item">
-                <a href="#part-37" id="part-37-header" class="tab"
+                <a
+                  href="#part-37"
+                  id="part-37-header"
+                  class="tab"
+                  onclick="openTab(event, 'part-37')"
                   >Cost Estimation</a
                 >
               </li>
               <li class="usa-sidenav__item">
-                <a href="#part-38" id="part-38-header" class="tab"
+                <a
+                  href="#part-38"
+                  id="part-38-header"
+                  class="tab"
+                  onclick="openTab(event, 'part-38')"
                   >Performance Monitoring and Evaluation</a
                 >
               </li>
             </ul>
           </li>
           <li class="usa-sidenav__item">
-            <a href="#part-4" id="part-4-header" class="tab"
+            <a
+              href="#part-4"
+              id="part-4-header"
+              class="tab"
+              onclick="openTab(event, 'part-4')"
               >Acquisition Methods and Vehicles</a
             >
           </li>
           <li class="usa-sidenav__item">
-            <a href="#part-5" id="part-5-header" class="tab"
+            <a
+              href="#part-5"
+              id="part-5-header"
+              class="tab"
+              onclick="openTab(event, 'part-5')"
               >Specialized Computing Infrastructure for Generative AI</a
             >
           </li>
           <li class="usa-sidenav__item">
-            <a href="#part-6" id="part-6-header" class="tab"
+            <a
+              href="#part-6"
+              id="part-6-header"
+              class="tab"
+              onclick="openTab(event, 'part-6')"
               >Agency Support and Resources</a
             >
           </li>
           <li class="usa-sidenav__item">
-            <a href="#data-dashboard" id="data-dashboard-header" class="tab"
+            <a
+              href="#data-dashboard"
+              id="data-dashboard-header"
+              class="tab"
+              onclick="openTab(event, 'data-dashboard')"
               >Data Dashboard</a
             >
           </li>
           <li class="usa-sidenav__item">
-            <a href="#feedback" id="feedback-header" class="tab"
+            <a
+              href="#feedback"
+              id="feedback-header"
+              class="tab"
+              onclick="openTab(event, 'feedback')"
               >Send Feedback</a
             >
           </li>
@@ -112,8 +178,7 @@
       <div
         id="introduction"
         class="tabcontent left-navcontent"
-        style="display: flex"
-      >
+        style="display: flex">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-intro.html %}
 
@@ -121,6 +186,7 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-1"
+                onclick="openTab(event, 'part-1')"
                 type="button"
                 class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
@@ -138,12 +204,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#introduction"
+                onclick="openTab(event, 'introduction')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-2" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-2"
+                class="usa-button itvmo_usa-primary-button"
+                onclick="openTab(event, 'part-2')"
                 >Next Page</a
               >
             </li>
@@ -159,12 +229,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-1"
+                onclick="openTab(event, 'part-1')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-3" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-3"
+                onclick="openTab(event, 'part-3')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -180,12 +254,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-2"
+                onclick="openTab(event, 'part-2')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-31" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-31"
+                onclick="openTab(event, 'part-31')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -196,8 +274,7 @@
       <div
         id="part-31"
         class="tabcontent left-navcontent"
-        style="display: none"
-      >
+        style="display: none">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-part-3-1.html %}
 
@@ -205,12 +282,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-3"
+                onclick="openTab(event, 'part-3')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-32" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-32"
+                onclick="openTab(event, 'part-32')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -221,8 +302,7 @@
       <div
         id="part-32"
         class="tabcontent left-navcontent"
-        style="display: none"
-      >
+        style="display: none">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-part-3-2.html %}
 
@@ -230,12 +310,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-31"
+                onclick="openTab(event, 'part-31')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-33" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-33"
+                onclick="openTab(event, 'part-33')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -246,8 +330,7 @@
       <div
         id="part-33"
         class="tabcontent left-navcontent"
-        style="display: none"
-      >
+        style="display: none">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-part-3-3.html %}
 
@@ -255,12 +338,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-32"
+                onclick="openTab(event, 'part-32')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-34" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-34"
+                onclick="openTab(event, 'part-34')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -271,8 +358,7 @@
       <div
         id="part-34"
         class="tabcontent left-navcontent"
-        style="display: none"
-      >
+        style="display: none">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-part-3-4.html %}
 
@@ -280,12 +366,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-33"
+                onclick="openTab(event, 'part-33')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-35" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-35"
+                onclick="openTab(event, 'part-35')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -296,8 +386,7 @@
       <div
         id="part-35"
         class="tabcontent left-navcontent"
-        style="display: none"
-      >
+        style="display: none">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-part-3-5.html %}
 
@@ -305,12 +394,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-34"
+                onclick="openTab(event, 'part-34')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-36" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-36"
+                onclick="openTab(event, 'part-36')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -321,8 +414,7 @@
       <div
         id="part-36"
         class="tabcontent left-navcontent"
-        style="display: none"
-      >
+        style="display: none">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-part-3-6.html %}
 
@@ -330,12 +422,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-35"
+                onclick="openTab(event, 'part-35')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-37" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-37"
+                onclick="openTab(event, 'part-37')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -346,8 +442,7 @@
       <div
         id="part-37"
         class="tabcontent left-navcontent"
-        style="display: none"
-      >
+        style="display: none">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-part-3-7.html %}
 
@@ -355,12 +450,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-36"
+                onclick="openTab(event, 'part-36')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-38" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-38"
+                onclick="openTab(event, 'part-38')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -371,8 +470,7 @@
       <div
         id="part-38"
         class="tabcontent left-navcontent"
-        style="display: none"
-      >
+        style="display: none">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-part-3-8.html %}
 
@@ -380,12 +478,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-37"
+                onclick="openTab(event, 'part-37')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-4" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-4"
+                onclick="openTab(event, 'part-4')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -401,12 +503,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-38"
+                onclick="openTab(event, 'part-38')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-5" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-5"
+                onclick="openTab(event, 'part-5')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -422,12 +528,16 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-4"
+                onclick="openTab(event, 'part-4')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
             </li>
             <li class="usa-button-group__item">
-              <a href="#part-6" class="usa-button itvmo_usa-primary-button"
+              <a
+                href="#part-6"
+                onclick="openTab(event, 'part-6')"
+                class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
             </li>
@@ -443,6 +553,7 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-5"
+                onclick="openTab(event, 'part-5')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
@@ -450,6 +561,7 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-data-dashboard"
+                onclick="openTab(event, 'part-datat-ools')"
                 class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
@@ -461,8 +573,7 @@
       <div
         id="data-dashboard"
         class="tabcontent left-navcontent"
-        style="display: none"
-      >
+        style="display: none">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-part-data.html %}
 
@@ -470,6 +581,7 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-6"
+                onclick="openTab(event, 'part-6')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
@@ -477,6 +589,7 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-feedback"
+                onclick="openTab(event, 'part-feedback')"
                 class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
@@ -488,8 +601,7 @@
       <div
         id="feedback"
         class="tabcontent left-navcontent"
-        style="display: none"
-      >
+        style="display: none">
         <div class="contents padding-bottom-5">
           {% include genai-sections/genai-guide-part-feedback.html %}
 
@@ -497,6 +609,7 @@
             <li class="usa-button-group__item">
               <a
                 href="#part-data-dashboard"
+                onclick="openTab(event, 'part-data-dashboard')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >

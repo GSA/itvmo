@@ -29,26 +29,36 @@ The home page uses wide.html layout, since it extends full width of page
 
   {% if page.genai == true %}
   <script>
-$(document).ready(function() {
-  // Function to open a tab
-  function openTab(tabName) {
-    $('.tabcontent').hide(); // Hide all tab content
-    $('.tab').removeClass('active-tab'); // Remove 'active-tab' from all tabs
-    $('#' + tabName).show(); // Show the clicked tab content
-    $('#' + tabName + '-header').addClass('active-tab'); // Add 'active-tab' to the clicked tab link
-  }
-
-  // Click event handler for tabs
-  $('.tab').click(function(e) {
-    e.preventDefault(); // Prevent default anchor click behavior
-    var tabId = $(this).attr('href').substring(1); // Extract tab ID from href attribute
-    openTab(tabId);
-  });
-
-  // Initialize by opening the first tab
-  $('.tab:first').trigger('click');
-});
-</script>
+    $(document).ready(function() {
+      function updateActiveTab(targetId) {
+        $('.tab').removeClass('active-tab'); // Clear all active states
+        $('#' + targetId + '-header').addClass('active-tab'); // Set the new active tab
+        $('#' + targetId).show(); // Ensure the corresponding tab content is visible
+      }
+    
+      // Click handler for tabs and navigation buttons
+      $('.tab, .usa-button-group__item a').click(function(e) {
+        e.preventDefault();
+        var targetId = $(this).attr('href').substring(1);
+        updateActiveTab(targetId);
+        $('html, body').animate({
+          scrollTop: $('#' + targetId).offset().top
+        }, 1000);
+      });
+    
+      // Check if there is a hash in the URL on page load
+      if (window.location.hash) {
+        var initialTabId = window.location.hash.substring(1);
+        updateActiveTab(initialTabId);
+        $('html, body').animate({
+          scrollTop: $('#' + initialTabId).offset().top
+        }, 1000);
+      } else {
+        // Optionally activate the first tab by default if no hash is present
+        $('.tab:first').click();
+      }
+    });
+    </script>
          
 {% endif %}   
 </body>
