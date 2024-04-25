@@ -14,7 +14,7 @@ description: The VETS24 Conference is NVSBC’s premier annual event for Veteran
   primes. Come to CONNECT with small business primes on every major GWAC and
   IDIQ vehicle. Come fill your pipeline at the VETS24 Conference!
 start-time: 2024-05-20T11:00:00.000-00:00
-end-time: 2024-05-20T17:00:00.000-00:00
+end-time: 2024-05-20T20:00:00.000-00:00
 event-type: In-person
 gov-only: true
 is-external: true
