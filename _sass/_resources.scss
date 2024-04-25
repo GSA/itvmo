@@ -243,7 +243,9 @@ a.checked {
     height: 171px;
     border: #aaaaaa 1px solid;
     border-radius: 20px;
+    text-decoration: none;
     display: flex;
+
     .event-card-day {
       width: 11.5%;
       display: flex;
@@ -843,6 +845,7 @@ a.checked {
     }
     .event-card-mobile {
       display: flex;
+      text-decoration: none;
     }
   }
   #past-event-highlights,
@@ -1927,6 +1930,7 @@ html * {
         text-overflow: ellipsis;
         line-height: 1;
         border: 1px solid #d7d7d7;
+        text-decoration: none;
         p,
         a {
           margin: 0;
@@ -1936,6 +1940,7 @@ html * {
           font-weight: 400;
           font-size: 14px;
           color: #0f5abd;
+          text-decoration: none;
         }
       }
       a:hover {
@@ -2425,8 +2430,8 @@ html * {
     line-height: 30px;
     a,
     a::after {
-      color: rgb(15, 90, 189);
-      text-decoration: none;
+      // color: rgb(15, 90, 189);
+      // text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
@@ -4789,14 +4794,14 @@ html * {
   }
 
   .active-tab {
-    background-color: #f2f2f2;
+    background-color: #f5f5f5;
     border-left: 4px solid #1b2b85;
     color: #1b2b85 !important;
     font-weight: 600;
   }
   .left-nav__usa-accordion__content {
     color: #1b1b1b;
-    background-color: #f2f2f2;
+    background-color: #f5f5f5;
     margin-top: 0;
     overflow: auto;
     padding: 1rem 1.25rem calc(1rem - 0.25rem) 1.25rem;
@@ -4812,5 +4817,32 @@ html * {
       color: #1b2b85 !important;
       font-weight: 600;
     }
+  }
+}
+
+.page-navigation__button {
+  justify-content: flex-end;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.itvmo_usa-primary-button {
+  background-color: #0b4778;
+  color: #fff !important;
+
+  &:hover {
+    background-color: #09375d;
+    text-decoration: none !important;
+  }
+}
+
+.itvmo_usa-outline-button {
+  color: #0b4778 !important;
+  box-shadow: inset 0 0 0 2px #0b4778;
+  &:hover {
+    text-decoration: none !important;
+    background-color: #f5f5f5;
   }
 }
