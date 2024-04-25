@@ -29,17 +29,25 @@ The home page uses wide.html layout, since it extends full width of page
 
   {% if page.genai == true %}
   <script>
-   $(document).ready(function() {
+
+$(document).ready(function() {
     function updateActiveTab(targetId) {
         $('.tab').removeClass('active-tab'); // Clear all active states
         $('#' + targetId + '-header').addClass('active-tab'); // Set the new active tab
         $('#' + targetId).show(); // Ensure the corresponding tab content is visible
 
-        // Close the accordion if an outside tab is selected
-        if (!$('#' + targetId).parents('.usa-accordion').length) {
-            $('.usa-accordion').attr('aria-expanded', 'false');
-            $('.usa-accordion').removeClass('usa-accordion__button--open');
-            $('.usa-sidenav__sublist').hide(); // assuming this is how your accordion hides
+        // Check if the activated tab is within the accordion
+        var isInAccordion = $('#' + targetId).closest('.usa-sidenav__sublist').length > 0;
+
+        // Manage the accordion state
+        if (isInAccordion) {
+            // Open the accordion if a tab within it is selected
+            $('#' + targetId).closest('.usa-sidenav__sublist').removeAttr('hidden');
+            $('#' + targetId).closest('.usa-accordion').find('.usa-accordion__button').attr('aria-expanded', 'true');
+        } else {
+            // Close the accordion if an outside tab is selected
+            $('.usa-accordion__button').attr('aria-expanded', 'false');
+            $('.usa-sidenav__sublist').attr('hidden', '');
         }
     }
 
@@ -65,6 +73,7 @@ The home page uses wide.html layout, since it extends full width of page
         $('.tab:first').click();
     }
 });
+
 
     </script>
          
