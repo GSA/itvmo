@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 4
 title: New OMB AI Policy
 description: Read the latest on OMB's Policy to Advance Governance, Innovation,
   and Risk Management in Federal Agencies’ Use of Artificial Intelligence!
