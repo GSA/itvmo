@@ -29,30 +29,43 @@ The home page uses wide.html layout, since it extends full width of page
 
   {% if page.genai == true %}
   <script>
-    $(document).ready(function() {
-      function updateActiveTab(targetId) {
+   $(document).ready(function() {
+    function updateActiveTab(targetId) {
         $('.tab').removeClass('active-tab'); // Clear all active states
         $('#' + targetId + '-header').addClass('active-tab'); // Set the new active tab
         $('#' + targetId).show(); // Ensure the corresponding tab content is visible
-      }
-    
-      // Click handler for tabs and navigation buttons
-      $('.tab, .usa-button-group__item a').click(function(e) {
+
+        // Close the accordion if an outside tab is selected
+        if (!$('#' + targetId).parents('.usa-accordion').length) {
+            $('.usa-accordion').attr('aria-expanded', 'false');
+            $('.usa-accordion').removeClass('usa-accordion__button--open');
+            $('.usa-sidenav__sublist').hide(); // assuming this is how your accordion hides
+        }
+    }
+
+    // Click handler for tabs and navigation buttons
+    $('.tab, .usa-button-group__item a').click(function(e) {
         e.preventDefault();
         var targetId = $(this).attr('href').substring(1);
         updateActiveTab(targetId);
-      });
-    
-      // Check if there is a hash in the URL on page load
-      if (window.location.hash) {
+        $('html, body').animate({
+            scrollTop: $('#' + targetId).offset().top
+        }, 200); // speed up the scroll animation
+    });
+
+    // Check if there is a hash in the URL on page load
+    if (window.location.hash) {
         var initialTabId = window.location.hash.substring(1);
         updateActiveTab(initialTabId);
-
-      } else {
+        $('html, body').animate({
+            scrollTop: $('#' + initialTabId).offset().top
+        }, 200); // speed up the scroll animation
+    } else {
         // Optionally activate the first tab by default if no hash is present
         $('.tab:first').click();
-      }
-    });
+    }
+});
+
     </script>
          
 {% endif %}   
