@@ -1,9 +1,9 @@
 ---
-order: 5
-title: Advancing Governance, Innovation, and Risk Management for Agency Use of AI
-description: Read about M-24-10 Advancing Governance, Innovation, and Risk
-  Management for Agency Use of Artificial Intelligence!
-url-link: https://www.whitehouse.gov/wp-content/uploads/2024/03/M-24-10-Advancing-Governance-Innovation-and-Risk-Management-for-Agency-Use-of-Artificial-Intelligence.pdf
-publication-date: April 02, 2024
+order: 1
+title: Secure Software Attestation Common Form Discussion
+description: Join the ITVMO, OFCIO, and OFPP on May 1st for a Discussion about
+  the Secure Software Attestation Common Form!
+url-link: https://gsa.zoomgov.com/j/1602490182?pwd=REw3TlZQN01ZbysxRDJscjNXSzlHUT09
+publication-date: April 25, 2024
 background-image: assets/uploads/laptopsndevices.jpeg
 ---
