@@ -41,18 +41,13 @@ The home page uses wide.html layout, since it extends full width of page
         e.preventDefault();
         var targetId = $(this).attr('href').substring(1);
         updateActiveTab(targetId);
-        $('html, body').animate({
-          scrollTop: $('#' + targetId).offset().top
-        }, 1000);
       });
     
       // Check if there is a hash in the URL on page load
       if (window.location.hash) {
         var initialTabId = window.location.hash.substring(1);
         updateActiveTab(initialTabId);
-        $('html, body').animate({
-          scrollTop: $('#' + initialTabId).offset().top
-        }, 1000);
+
       } else {
         // Optionally activate the first tab by default if no hash is present
         $('.tab:first').click();
