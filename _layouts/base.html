@@ -34,21 +34,23 @@ $(document).ready(function() {
     function updateActiveTab(targetId) {
         $('.tab').removeClass('active-tab'); // Clear all active states
         $('#' + targetId + '-header').addClass('active-tab'); // Set the new active tab
-        $('#' + targetId).show(); // Ensure the corresponding tab content is visible
 
-        // Check if the activated tab is within the accordion
-        var isInAccordion = $('#' + targetId).closest('.usa-sidenav__sublist').length > 0;
+        // Manage accordion state based on whether the target ID belongs to the accordion
+        var isAccordionTab = $('#' + targetId + '-header').parents('.usa-sidenav__sublist').length > 0;
 
-        // Manage the accordion state
-        if (isInAccordion) {
-            // Open the accordion if a tab within it is selected
-            $('#' + targetId).closest('.usa-sidenav__sublist').removeAttr('hidden');
-            $('#' + targetId).closest('.usa-accordion').find('.usa-accordion__button').attr('aria-expanded', 'true');
+        if (isAccordionTab) {
+            // If it's an accordion tab, open the accordion
+            $('.usa-accordion__button').attr('aria-expanded', 'true');
+            $('.usa-sidenav__sublist').removeAttr('hidden'); // Show accordion contents
         } else {
-            // Close the accordion if an outside tab is selected
+            // If it's not an accordion tab, close the accordion
             $('.usa-accordion__button').attr('aria-expanded', 'false');
-            $('.usa-sidenav__sublist').attr('hidden', '');
+            $('.usa-sidenav__sublist').attr('hidden', ''); // Hide accordion contents
         }
+
+        // Ensure the corresponding tab content is visible
+        $('.tabcontent').hide(); // Hide all tab contents first
+        $('#' + targetId).show(); // Show the current tab content
     }
 
     // Click handler for tabs and navigation buttons
@@ -58,7 +60,7 @@ $(document).ready(function() {
         updateActiveTab(targetId);
         $('html, body').animate({
             scrollTop: $('#' + targetId).offset().top
-        }, 200); // speed up the scroll animation
+        }, 200); // faster scroll animation
     });
 
     // Check if there is a hash in the URL on page load
@@ -67,12 +69,13 @@ $(document).ready(function() {
         updateActiveTab(initialTabId);
         $('html, body').animate({
             scrollTop: $('#' + initialTabId).offset().top
-        }, 200); // speed up the scroll animation
+        }, 200); // faster scroll animation
     } else {
         // Optionally activate the first tab by default if no hash is present
         $('.tab:first').click();
     }
 });
+
 
 
     </script>
