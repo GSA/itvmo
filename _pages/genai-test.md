@@ -4,7 +4,7 @@ title-image: "/assets/images/icons/page_icons/generative-ai-logo.svg"
 heading-description: ""
 description: "This website is designed to help Federal purchasers acquire generative AI and specialized computing infrastructure for their organizations."
 layout: page
-permalink: /genai/
+permalink: /genai-test/
 sidenav: false
 redesign: true
 mainpage: false
