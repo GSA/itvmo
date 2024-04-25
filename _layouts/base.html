@@ -26,6 +26,31 @@ The home page uses wide.html layout, since it extends full width of page
   {% include footer.html %}
 
   {% include scripts.html %}
+
+  {% if page.genai == true %}
+  <script>
+$(document).ready(function() {
+  // Function to open a tab
+  function openTab(tabName) {
+    $('.tabcontent').hide(); // Hide all tab content
+    $('.tab').removeClass('active-tab'); // Remove 'active-tab' from all tabs
+    $('#' + tabName).show(); // Show the clicked tab content
+    $('#' + tabName + '-header').addClass('active-tab'); // Add 'active-tab' to the clicked tab link
+  }
+
+  // Click event handler for tabs
+  $('.tab').click(function(e) {
+    e.preventDefault(); // Prevent default anchor click behavior
+    var tabId = $(this).attr('href').substring(1); // Extract tab ID from href attribute
+    openTab(tabId);
+  });
+
+  // Initialize by opening the first tab
+  $('.tab:first').trigger('click');
+});
+</script>
+         
+{% endif %}   
 </body>
 
 </html>
