@@ -8,7 +8,7 @@ description: Join us for NCMA's 25th World Congress! Over the past 25 years,
   entire contract management community, setting the stage for 25 more years of
   improved contracting and outcomes.
 start-time: 2024-07-22T08:00:00.000-00:00
-end-time: 2024-07-22T15:00:00.000-00:00
+end-time: 2024-07-22T17:00:00.000-00:00
 event-type: In-person
 gov-only: true
 is-external: true
