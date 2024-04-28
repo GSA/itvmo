@@ -31,17 +31,17 @@
             >
           </li>
           <li class="usa-sidenav__item usa-accordion">
-            <a
+            <button
               id="part-30-header"
               class="tab usa-accordion__button"
               aria-expanded="false"
-              aria-controls="a1"
-              >Generative AI Procurement</a
-            >
+              aria-controls="a1">
+              Generative AI procurement
+            </button>
             <ul
               class="usa-sidenav__sublist left-nav__usa-accordion__content"
               id="a1">
-              <li class="usa-sidenav__item">
+              <li class="usa-sidenav__item acc-top__item">
                 <a
                   href="#part-3"
                   id="part-3-header"
@@ -149,16 +149,16 @@
               id="part-6-header"
               class="tab"
               onclick="openTab(event, 'part-6')"
-              >Agency Support and Resources</a
+              >Data Dashboard</a
             >
           </li>
           <li class="usa-sidenav__item">
             <a
-              href="#data-dashboard"
-              id="data-dashboard-header"
+              href="#part-7"
+              id="part-7-header"
               class="tab"
-              onclick="openTab(event, 'data-dashboard')"
-              >Data Dashboard</a
+              onclick="openTab(event, 'part-7')"
+              >Agency Support and Resources</a
             >
           </li>
           <li class="usa-sidenav__item">
@@ -198,8 +198,28 @@
 
       <div id="part-1" class="tabcontent left-navcontent" style="display: none">
         <div class="contents padding-bottom-5">
-          {% include genai-sections/genai-guide-part-1.html %}
-
+          <div id="guide-chapter-1">
+            <h1 class="itvmo-article-header-blue no-top">Generative AI 101</h1>
+            <div id="sec-11">
+              {% include genai-sections/genai-guide-part-1-1.html %}
+            </div>
+            <div id="sec-12">
+              {% include genai-sections/genai-guide-part-1-2.html %}
+            </div>
+            <div id="sec-13">
+              {% include genai-sections/genai-guide-part-1-3.html %}
+            </div>
+            <div id="sec-14">
+              {% include genai-sections/genai-guide-part-1-4.html %}
+            </div>
+            <div id="sec-15">
+              {% include genai-sections/genai-guide-part-1-5.html %}
+            </div>
+            <div id="sec-16">
+              {% include genai-sections/genai-guide-part-1-6.html %}
+            </div>
+          </div>
+          <div class="tab-divide-line w-100"></div>
           <ul class="usa-button-group page-navigation__button">
             <li class="usa-button-group__item">
               <a
@@ -560,8 +580,8 @@
             </li>
             <li class="usa-button-group__item">
               <a
-                href="#part-data-dashboard"
-                onclick="openTab(event, 'part-datat-ools')"
+                href="#part-7"
+                onclick="openTab(event, 'part-7')"
                 class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
@@ -570,12 +590,9 @@
         </div>
       </div>
 
-      <div
-        id="data-dashboard"
-        class="tabcontent left-navcontent"
-        style="display: none">
+      <div id="part-7" class="tabcontent left-navcontent" style="display: none">
         <div class="contents padding-bottom-5">
-          {% include genai-sections/genai-guide-part-data.html %}
+          {% include genai-sections/genai-guide-part-7.html %}
 
           <ul class="usa-button-group page-navigation__button">
             <li class="usa-button-group__item">
@@ -588,8 +605,8 @@
             </li>
             <li class="usa-button-group__item">
               <a
-                href="#part-feedback"
-                onclick="openTab(event, 'part-feedback')"
+                href="#feedback"
+                onclick="openTab(event, 'feedback')"
                 class="usa-button itvmo_usa-primary-button"
                 >Next Page</a
               >
@@ -608,8 +625,8 @@
           <ul class="usa-button-group page-navigation__button">
             <li class="usa-button-group__item">
               <a
-                href="#part-data-dashboard"
-                onclick="openTab(event, 'part-data-dashboard')"
+                href="#part-7"
+                onclick="openTab(event, 'part-7')"
                 class="usa-button usa-button--outline itvmo_usa-outline-button"
                 >Previous Page</a
               >
