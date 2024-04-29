@@ -58,24 +58,29 @@ $(document).ready(function() {
         e.preventDefault();
         var targetId = $(this).attr('href').substring(1);
         updateActiveTab(targetId);
-        $('html, body').animate({
-            scrollTop: $('#' + targetId).offset().top
-        }, 200); // faster scroll animation
+        scrollToTop();
     });
+
+    // Function to scroll to the top of the page or specific section
+    function scrollToTop() {
+        $('html, body').animate({
+            scrollTop: $('#page-heading').offset().top
+        }, 200); // faster scroll animation to 'page-heading'
+    }
 
     // Check if there is a hash in the URL on page load
     if (window.location.hash) {
         var initialTabId = window.location.hash.substring(1);
         updateActiveTab(initialTabId);
-        $('html, body').animate({
-            scrollTop: $('#' + initialTabId).offset().top
-        }, 200); // faster scroll animation
+        scrollToTop();
     } else {
         // Optionally activate the first tab by default if no hash is present
         $('.tab:first').click();
     }
-});
 
+    // Ensure scrolling to 'page-heading' on initial page load regardless of hash
+    scrollToTop();
+});
 
 
     </script>
