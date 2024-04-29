@@ -26,6 +26,66 @@ The home page uses wide.html layout, since it extends full width of page
   {% include footer.html %}
 
   {% include scripts.html %}
+
+  {% if page.genai == true %}
+  <script>
+
+$(document).ready(function() {
+    function updateActiveTab(targetId) {
+        $('.tab').removeClass('active-tab'); // Clear all active states
+        $('#' + targetId + '-header').addClass('active-tab'); // Set the new active tab
+
+        // Manage accordion state based on whether the target ID belongs to the accordion
+        var isAccordionTab = $('#' + targetId + '-header').parents('.usa-sidenav__sublist').length > 0;
+
+        if (isAccordionTab) {
+            // If it's an accordion tab, open the accordion
+            $('.usa-accordion__button').attr('aria-expanded', 'true');
+            $('.usa-sidenav__sublist').removeAttr('hidden'); // Show accordion contents
+        } else {
+            // If it's not an accordion tab, close the accordion
+            $('.usa-accordion__button').attr('aria-expanded', 'false');
+            $('.usa-sidenav__sublist').attr('hidden', ''); // Hide accordion contents
+        }
+
+        // Ensure the corresponding tab content is visible
+        $('.tabcontent').hide(); // Hide all tab contents first
+        $('#' + targetId).show(); // Show the current tab content
+    }
+
+    // Click handler for tabs and navigation buttons
+    $('.tab, .usa-button-group__item a').click(function(e) {
+        e.preventDefault();
+        var targetId = $(this).attr('href').substring(1);
+        updateActiveTab(targetId);
+        scrollToTop();
+    });
+
+    // Function to scroll to the top of the page or specific section
+    function scrollToTop() {
+        $('html, body').animate({
+            scrollTop: $('#page-heading').offset().top
+        }, 200); // faster scroll animation to 'page-heading'
+    }
+
+    // Check if there is a hash in the URL on page load
+    if (window.location.hash) {
+        var initialTabId = window.location.hash.substring(1);
+        updateActiveTab(initialTabId);
+        scrollToTop();
+    } else {
+        // Optionally activate the first tab by default if no hash is present
+        $('.tab:first').click();
+    }
+
+    // Ensure scrolling to 'page-heading' on initial page load regardless of hash
+    scrollToTop();
+});
+
+
+    </script>
+         
+{% endif %}   
 </body>
 
 </html>
