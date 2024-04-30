@@ -1,8 +1,9 @@
 ---
-order: 4
-title: IT Buyers Event Recap
-description: Watch the recap of our IT Buyers Event from January 18th!
-url-link: https://community.connect.gov/pages/viewpage.action?spaceKey=Egov&title=IT+Buyer%27s+CoP+Annual+Buyers+Event+January+2024&preview=/2454493766/2454493765/Buyers%20Event%20Highlights.mp4
-publication-date: January 24, 2024
-background-image: assets/uploads/itvmo-recap.jpeg
+order: 5
+title: New OMB AI Policy
+description: Read the latest on OMB's Policy to Advance Governance, Innovation,
+  and Risk Management in Federal Agencies’ Use of Artificial Intelligence!
+url-link: https://www.whitehouse.gov/briefing-room/statements-releases/2024/03/28/fact-sheet-vice-president-harris-announces-omb-policy-to-advance-governance-innovation-and-risk-management-in-federal-agencies-use-of-artificial-intelligence/
+publication-date: April 25, 2024
+background-image: assets/uploads/laptopsndevices.jpeg
 ---

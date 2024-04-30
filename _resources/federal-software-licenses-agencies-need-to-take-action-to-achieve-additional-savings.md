@@ -19,7 +19,7 @@ description: Annually, the U.S. federal government allocates over $100 billion
   meticulously track software license usage and align their inventories with the
   licenses purchased.
 url-link: https://www.gao.gov/assets/d24105717.pdf
-publication-date: January 15, 2024
+publication-date: January 29, 2024
 reading-time: 60
 type: PDF
 gov-only: false
