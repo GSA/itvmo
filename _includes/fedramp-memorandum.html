@@ -1,7 +1,7 @@
 <section id="inner-page-tabs">
   <div id="contribute-dox" class="tabcontent" style="display: flex">
     <div class="contents padding-bottom-5">
-      <h3 id="overview" class="sub-topic-heading">
+      <h3 id="overview" class="itvmo-article-sub-1 mb-1">
         Office of Management and Budget Releases Draft Memorandum for
         Modernizing the Federal Risk and Authorization Management Program
         (FedRAMP)
@@ -79,25 +79,28 @@
       <h3 id="fedramp-impact" class="sub-topic-heading-blue">
         FedRamp Impact Levels
       </h3>
-      <a
-        tabindex="0"
-        class="image-container"
-        href="#mission-image"
-        aria-label="Open our Missions image"
-        aria-controls="mission-image"
-        data-open-modal=""
-        role="button">
-        <img
-          src="{{site.baseurl}}/assets/images/screenshot/fedramp-impact-level.png"
-          alt="FedRamp Impact Levels"
-          style="width: auto" />
-        <div class="image-overlay">
+      <div class="image-content">
+        <a
+          tabindex="0"
+          class="image-container"
+          href="#mission-image"
+          aria-label="Open our Missions image"
+          aria-controls="mission-image"
+          data-open-modal=""
+          role="button">
+          <div class="image-content-overlay"></div>
           <img
-            src="{{site.baseurl}}/assets/images/icons/search-icon-white.svg"
-            alt="search-icon"
-            class="overlay-icon" />
-        </div>
-      </a>
+            class="image-content-image"
+            src="{{site.baseurl}}/assets/images/screenshot/fedramp-impact-level.png"
+            alt="FedRamp Impact Levels" />
+          <div class="image-content-details fadeIn-bottom">
+            <img
+              src="{{site.baseurl}}/assets/images/icons/search-icon-white.svg"
+              alt="search-icon"
+              class="overlay-icon" />
+          </div>
+        </a>
+      </div>
       <div
         class="usa-modal usa-modal-team-member usa-modal-bg-transparent"
         id="mission-image">
@@ -119,19 +122,21 @@
           </button>
         </div>
       </div>
+
       <div class="tab-divide-line end-content"></div>
+
       <h3 id="fedramp-video" class="sub-topic-heading">
         FedRAMP - Securing Cloud Services for the Federal Government
       </h3>
       <video class="video-container margin-top-2" controls>
         <source
-          src="{{site.baseurl}}/assets/video/zero-trust-draft.mp4"
+          src="{{site.baseurl}}/assets/video/fedram-memorandum.mpt"
           type="video/mp4" />
         <track
           label="English"
           kind="subtitles"
           srclang="en"
-          src="{{site.baseurl}}/assets/video/captions/zero-trust-draft.vtt"
+          src="{{site.baseurl}}/assets/video/captions/fedram-memorandum.vtt"
           default />
       </video>
 
@@ -184,7 +189,7 @@
       <h2 id="contributors" class="sub-topic-heading">
         Contributors and Partners
       </h2>
-      <div class="tab-img-p">
+      <div class="tab-img-p mb-1">
         <img
           class="circle-profile-image"
           src="{{site.baseurl}}/assets/images/person/brian-conrad.png"
