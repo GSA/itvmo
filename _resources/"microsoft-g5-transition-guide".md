@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "Microsoft G5 Transition Guide"
 description: "This guide assessed the risks associated with Microsoft G5 migrations. It was developed to provide agencies with effective acquisition strategies, identify major milestones for contract renewals, and help agencies identify and prioritize relevant factors when considering an upgrade to G5. .gov/.mil audience only"
-url-link: "https://community.max.gov/download/attachments/2314102898/Microsoft%20-%20G5%20Transition%20Guide.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2314102898/Microsoft%20-%20G5%20Transition%20Guide.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"
