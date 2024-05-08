@@ -1,7 +1,7 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "IT Buyers Agency Knowledge Sharing"
-description: "As a broker of IT acquisition intelligence requests, the ITVMO works across the community and fellow agency IT Buyers to gather and increase the availability of standards, best practices, and guides. To further support the growing increase in agency specific requests, the ITVMO provides an agency knowledge sharing forum on OMB MAX. This is for government-only. "
+description: "As a broker of IT acquisition intelligence requests, the ITVMO works across the community and fellow agency IT Buyers to gather and increase the availability of standards, best practices, and guides. To further support the growing increase in agency specific requests, the ITVMO provides an agency knowledge sharing forum on Connect.gov. This is for government-only. "
 url-link: "https://community.max.gov/display/Egov/Agency+Information+and+Knowledge+Sharing"
 type: "HTML"
 gov-only: "true"
