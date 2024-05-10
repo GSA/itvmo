@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "Microsoft Webinar 2: Infrastructure and Security Management"
 description: "The second session covered IT Infrastructure and Security best practice from an acquisitions perspective  and focused on the suite of Microsoft cloud products, best practices for managing these services, and recommendations on how to implement them effectively. "
-url-link: "https://community.max.gov/download/attachments/2204974006/Microsoft%20Training%202%20Infrastructure%20and%20Security%20Management_20210923.pptx?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2314102898/Microsoft%20-%20Session%202%20-%20Infrastructure%20and%20Security%20Management.pdf?api=v2"
 type: "HTML"
 gov-only: "true"
 is-external: "false"

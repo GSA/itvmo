@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "Adobe OEM Assessment Summary"
 description: "The ITVMO supports agency acquisitions by providing subject matter expertise on IT vendors. This document highlights common challenges agencies identifies when acquiring Adobe products and services."
-url-link: "https://community.max.gov/download/attachments/2314102898/Adobe%20-%20Vendor%20Assessment%20Summary.pdf?api=v2"
+url-link: "https://community.connect.gov/display/Egov/File+Storage?preview=%2F2314102898%2F2391130401%2FAdobe+-+Vendor+Assessment+Summary.pdf"
 type: "PDF"
 gov-only: "true"
 is-external: "false"

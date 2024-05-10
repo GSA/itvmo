@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "AWS Executive Close Out Memo"
 description: "In 2021, the ITVMO launched an OEM assessment of AWS. This memo serves as an executive summary of the engagement."
-url-link: "https://community.max.gov/download/attachments/2314102898/AWS%20-%20Executive%20Memo%20-%20OEM%20Assessment%20Closeout.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2204974013/Executive%20Memo%20-%20Assessment%20Closeout.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"

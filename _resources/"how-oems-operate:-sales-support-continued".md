@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "How OEMs Operate: Sales Support -- Continued"
 description: "The OEM has a partner network to expand its reach to all potential customers. Often referred to as the channel, these partners are an extension of the sales arm of the OEM."
-url-link: "https://community.max.gov/download/attachments/2403246889/Module-6--%20IBT_OEM%20Operations_%20Sales%20Support%20%28continued%29%20.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2403246889/Module-6--%20IBT_OEM%20Operations_%20Sales%20Support%20%28continued%29%20.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"

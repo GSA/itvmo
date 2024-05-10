@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "How OEMs Operate: Sales Cadence"
 description: "Understanding the OEM sales processes requires a better understanding of two complementary concepts: account planning and customer relationship management (CRM). .gov/.mil audience only"
-url-link: "https://community.max.gov/download/attachments/2403246889/Module-7--%20IBT_OEM%20Operations_%20Sales%20Cadence.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2403246889/Module-7--%20IBT_OEM%20Operations_%20Sales%20Cadence.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"

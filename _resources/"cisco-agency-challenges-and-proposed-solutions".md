@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "Cisco Agency Challenges & Proposed Resolutions"
 description: "In August 2022, the ITVMO began evaluating Cisco through the OEM Assessment Process. As a result of the Assessment, the ITVMO identified common challenges for Federal agencies focused on price escalation and budget planning, license management, end user license agreement confusion, and extended lead times for hardware."
-url-link: "https://community.max.gov/download/attachments/2314102898/Cisco%20-%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2314102893/Cisco%20Challenges%20and%20Proposed%20Resolutions%20Overview.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"

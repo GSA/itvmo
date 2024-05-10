@@ -10,7 +10,7 @@ collectively to improve the government's buying power
 through pre-vetted, well managed solutions that meet
 defined criteria for management maturity and data
 sharing."
-url-link: "https://community.max.gov/download/attachments/2384565414/April%202023%20ITB%20Bulletin.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2384565414/April%202023%20ITB%20Bulletin.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"
