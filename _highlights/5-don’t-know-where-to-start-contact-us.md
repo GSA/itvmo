@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 4
 title: Increasing Small Business Participation on Multiple-Award Contracts
 description: Read the latest from OFPP about Increasing Small Business
   Participation on Multiple-Award Contracts!
