@@ -1,4 +1,4 @@
----
+<!-- ---
 title: FedRAMP Memorandum
 title-image: "/assets/images/icons/page_icons/quaterly-itvmo-newsletter.svg"
 heading-description: ""
@@ -11,4 +11,4 @@ redesign: true
 mainpage: false
 ---
 
-{% include fedramp-memorandum.html %}
+{% include fedramp-memorandum.html %} -->

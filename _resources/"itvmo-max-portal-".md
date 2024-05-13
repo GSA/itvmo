@@ -2,7 +2,7 @@
 highlight: "false"
 title: "ITVMO MAX Portal "
 description: "All ITVMO .gov and .mil only developed materials and training will be posted on the ITVMO MAX page. This MAX page link will be shared via events, ITB CoPs, and the Newsletter. .gov/.mil employees may also request access through the Connect.gov portal. The landing page will spotlight recent updates. Includes: Trainings/ Webinars, .gov/.mil Resources, Tools, Knowledge Sharing"
-url-link: "https://community.max.gov/pages/viewpage.action?pageId=2170862337"
+url-link: "https://community.connect.gov/display/Egov"
 type: "HTML"
 gov-only: "true"
 is-external: "false"
