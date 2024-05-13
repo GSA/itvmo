@@ -1,648 +1,1320 @@
 <section id="inner-page-tabs">
-    <!-- Inner tab dropdown for the mobile version -->
-    <div id="tabs-mobile-container">
-       <select id="tabs-mobile" onchange="openTabDropdown();">
-          <option value="it-buyers-training-and-support-header">IT Buyers Training & Support</option>
-          <option value="it-buyers-toolkit-header">IT Buyers Toolkit</option>
-          <option value="it-buyers-cop-header">IT Buyers Community of Practice</option>
-       </select>
-    </div>
-    <div class="tabs">
-       <a id="it-buyers-training-and-support-header" tabindex="0" class="tab active-tab" onclick="openTab(event, 'it-buyers-training-and-support')" onkeydown="openTabKey(event, 'it-buyers-training-and-support')">IT Buyers Training & Support</a>
-       <a id="it-buyers-toolkit-header" tabindex="0" class="tab" onclick="openTab(event, 'it-buyers-toolkit')" onkeydown="openTabKey(event, 'it-buyers-toolkit')">IT Buyers Toolkit</a>
-       <a id="it-buyers-cop-header" tabindex="0" class="tab" onclick="openTab(event, 'it-buyers-cop')" onkeydown="openTabKey(event, 'it-buyers-cop')">IT Buyers Community of Practice</a>
-    </div>
-    <div id="it-buyers-training-and-support" class="tabcontent" style="display: flex;">
-       <div class="contents padding-bottom-5">
-          <h3 id="it-buyers-training-and-support-overview" class="topic-heading">
-             IT Buyers Training & Support
-          </h3>
-          <h3 class="sub-topic-heading">
-             Overview
-          </h3>
-          <p class="tab-p">
-            The ITVMO provides a one-stop-shop for IT acquisition intelligence to inform smarter, faster IT buying decisions. We do this through:
-              <b>
-                  <ul class="list-margin-bottom">
-                      <li>Generating and increasing the use of IT acquisition knowledge and best practices to include federal procurement data, standard terms and conditions, and technology strategies.</li>
-                      <li>Fielding, consulting, and supporting agency IT buyers on their IT acquisition strategies and upcoming procurements.</li>
-                      <li>Acting as the information conduit between the Federal IT vendors and agencies, helping to guide two-way communication and serve as a single point of contact for the federal government.</li>
-                  </ul>
-              </b>
-          </p>
-          <p class="tab-p">
-            Continue reading to understand more on our services and solutions available to aid IT Buyers.
-          </p>
-          <h3 id="evaluate-assess" class="sub-topic-heading">
-            Training
-          </h3>
-          <p class="tab-p">
-            The Administration has emphasized the need to continuously invest and modernize our acquisition workforce. The acquisition workforce performs a vital role in evolving our Federal IT Marketplace. As such, we recognize the importance of providing opportunities for IT acquisition professionals to maintain a current knowledge base, develop critical thinking abilities, and have an awareness of innovations and leading-edge technologies to achieve successful acquisition outcomes.
-          </p>
-          <p class="tab-p">
-            The ITVMO has partnered with the Federal Acquisition Institute to leverage their CornerStone onDemand (CSOD) Program to accreditate many of the training webinars and events offered on our <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/events">Events page</a> and through our domain experts and partners. Depending on the topics, information presented, and duration 1 to 4+ continuing learning points (CLP) may be awarded for participation in one of our training opportunities.
-          </p>
-          <p class="tab-p">
-            <b>
-                Don’t see a training offering that you would like to attend? <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/contact-us-contribute/?tabName=contact-us-header">Contact Us</a> to share your training topic interests and areas for improvement.
-            </b>
-         </p>
-          <h3 id="aks" class="sub-topic-heading">
-            Agency Knowledge Sharing
-          </h3>
-          <p class="tab-p">
-            As a broker of IT acquisition intelligence requests, the ITVMO works across the community and fellow agency IT Buyers to gather and increase the availability of standards, best practices, and guides. To further support the growing increase in agency specific requests, the ITVMO provides an agency knowledge sharing forum on <a target="_blank" rel="noreferrer noopener" href="https://portal.max.gov/portal/home">OMB MAX <img src="{{site.baseurl}}/assets/images/icons/external-small.svg"></a>.
-          </p>
-          <p class="tab-p">
-            On the site you will find instructions for reviewing current questions or information requests, how to submit a response to a current request and how to submit requests on behalf of your agency. Questions are available in individual excel spreadsheets, titled by subject matter so that it is easy to find your areas of knowledge, expertise or even interest.
-          </p>
-          <h3 class="sub-topic-heading-italic">
-            ITVMO Agency Knowledge Sharing Form
-          </h3>
-          <div class="tab-image-overflow">
-            <img src="{{site.baseurl}}/assets/images/screenshot/itvmo-agency-knowledge-sharing-form.png" alt="ITVMO Agency Knowledge Sharing Form image">
-          </div>
-          <p class="tab-p">
-            As questions are answered and closed, the file will be marked “Closed” but will still be available for review by current and new acquisition professionals so that if an agency has a similar question in the future, the previously collected information is available for their use as well as the original submitters.
-          </p>
-          <p class="tab-p">
-            This process allows agency representatives, contracting officers, contracting officer representatives, program managers, and domain experts to come in and review requests and submit information they think would be useful for the requesting agency.  It also allows the requesting agency to monitor their open requests for updates from others and engage with those agencies who they think can best support their ongoing requests.
-          </p>
-          <p class="tab-p">
-            This knowledge forum is expected to continue to grow and we hope you find it useful. <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/contact-us-contribute/?tabName=contact-us-header">Contact Us</a> for more information or log in to the <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FspaceKey%253DEgov%2526title%253DAgency%252BInformation%252Band%252BKnowledge%252BSharing">OMB MAX Agency Knowledge Sharing Portal</a> today!
-          </p>
-          <h3 id="aitbs" class="sub-topic-heading">
-            Additional IT Buyers Support
-          </h3>
-          <p class="tab-p">
-            To further field, consult, and support agency IT buyers on their IT acquisition strategies and upcoming procurements, we provide roadside assistance. This means we are available to take on ad hoc agency requests and agency-specific IT buying questions
-          </p>
-          <p class="tab-p">
-            We have also launched the <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/services/oem?tabName=contract-review-header&sideNav=sn-crs-process">ITVMO’s Contract Review Service (CRS)</a> which offers subject matter expertise and guidance via targeted, agency-specific software contract reviews to better prepare agencies for their next renewal.
-          </p>
-          <p class="tab-p">
-            We work across our community and network to get the information needed to address your needs. <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/contact-us-contribute/?tabName=contact-us-header">Contact Us</a> if you are seeking further assistance and IT buying help for your next purchase or agency acquisition planning.
-          </p>
+  <!-- Inner tab dropdown for the mobile version -->
+  <div id="tabs-mobile-container">
+    <select id="tabs-mobile" onchange="openTabDropdown();">
+      <option value="it-buyers-training-and-support-header">
+        IT Buyers Training & Support
+      </option>
+      <option value="it-buyers-toolkit-header">IT Buyers Toolkit</option>
+      <option value="it-buyers-cop-header">
+        IT Buyers Community of Practice
+      </option>
+    </select>
+  </div>
+  <div class="tabs">
+    <a
+      id="it-buyers-training-and-support-header"
+      tabindex="0"
+      class="tab active-tab"
+      onclick="openTab(event, 'it-buyers-training-and-support')"
+      onkeydown="openTabKey(event, 'it-buyers-training-and-support')"
+      >IT Buyers Training & Support</a
+    >
+    <a
+      id="it-buyers-toolkit-header"
+      tabindex="0"
+      class="tab"
+      onclick="openTab(event, 'it-buyers-toolkit')"
+      onkeydown="openTabKey(event, 'it-buyers-toolkit')"
+      >IT Buyers Toolkit</a
+    >
+    <a
+      id="it-buyers-cop-header"
+      tabindex="0"
+      class="tab"
+      onclick="openTab(event, 'it-buyers-cop')"
+      onkeydown="openTabKey(event, 'it-buyers-cop')"
+      >IT Buyers Community of Practice</a
+    >
+  </div>
+  <div
+    id="it-buyers-training-and-support"
+    class="tabcontent"
+    style="display: flex">
+    <div class="contents padding-bottom-5">
+      <h3 id="it-buyers-training-and-support-overview" class="topic-heading">
+        IT Buyers Training & Support
+      </h3>
+      <h3 class="sub-topic-heading">Overview</h3>
+      <p class="tab-p">
+        The ITVMO provides a one-stop-shop for IT acquisition intelligence to
+        inform smarter, faster IT buying decisions. We do this through:
+        <b>
+          <ul class="list-margin-bottom">
+            <li>
+              Generating and increasing the use of IT acquisition knowledge and
+              best practices to include federal procurement data, standard terms
+              and conditions, and technology strategies.
+            </li>
+            <li>
+              Fielding, consulting, and supporting agency IT buyers on their IT
+              acquisition strategies and upcoming procurements.
+            </li>
+            <li>
+              Acting as the information conduit between the Federal IT vendors
+              and agencies, helping to guide two-way communication and serve as
+              a single point of contact for the federal government.
+            </li>
+          </ul>
+        </b>
+      </p>
+      <p class="tab-p">
+        Continue reading to understand more on our services and solutions
+        available to aid IT Buyers.
+      </p>
+      <h3 id="evaluate-assess" class="sub-topic-heading">Training</h3>
+      <p class="tab-p">
+        The Administration has emphasized the need to continuously invest and
+        modernize our acquisition workforce. The acquisition workforce performs
+        a vital role in evolving our Federal IT Marketplace. As such, we
+        recognize the importance of providing opportunities for IT acquisition
+        professionals to maintain a current knowledge base, develop critical
+        thinking abilities, and have an awareness of innovations and
+        leading-edge technologies to achieve successful acquisition outcomes.
+      </p>
+      <p class="tab-p">
+        The ITVMO has partnered with the Federal Acquisition Institute to
+        leverage their CornerStone onDemand (CSOD) Program to accreditate many
+        of the training webinars and events offered on our
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="{{site.baseurl}}/events"
+          >Events page</a
+        >
+        and through our domain experts and partners. Depending on the topics,
+        information presented, and duration 1 to 4+ continuing learning points
+        (CLP) may be awarded for participation in one of our training
+        opportunities.
+      </p>
+      <p class="tab-p">
+        <b>
+          Don’t see a training offering that you would like to attend?
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="{{site.baseurl}}/contact-us-contribute/?tabName=contact-us-header"
+            >Contact Us</a
+          >
+          to share your training topic interests and areas for improvement.
+        </b>
+      </p>
+      <h3 id="aks" class="sub-topic-heading">Agency Knowledge Sharing</h3>
+      <p class="tab-p">
+        As a broker of IT acquisition intelligence requests, the ITVMO works
+        across the community and fellow agency IT Buyers to gather and increase
+        the availability of standards, best practices, and guides. To further
+        support the growing increase in agency specific requests, the ITVMO
+        provides an agency knowledge sharing forum on
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://community.connect.gov/"
+          >Connect.gov
+          <img
+            src="{{site.baseurl}}/assets/images/icons/external-small.svg" /></a
+        >.
+      </p>
+      <p class="tab-p">
+        On the site you will find instructions for reviewing current questions
+        or information requests, how to submit a response to a current request
+        and how to submit requests on behalf of your agency. Questions are
+        available in individual excel spreadsheets, titled by subject matter so
+        that it is easy to find your areas of knowledge, expertise or even
+        interest.
+      </p>
+      <h3 class="sub-topic-heading-italic">
+        ITVMO Agency Knowledge Sharing Form
+      </h3>
+      <div class="tab-image-overflow">
+        <img
+          src="{{site.baseurl}}/assets/images/screenshot/itvmo-agency-knowledge-sharing-form.png"
+          alt="ITVMO Agency Knowledge Sharing Form image" />
       </div>
-       <div class="content-nav">
-          <div class="nav-list">
-             <h3>On this Tab</h3>
-             <a id="sn-it-buyers-training-and-support-overview" class="page-nav page-nav-active" href="#it-buyers-training-and-support-overview" onclick="return removeTabContent(this)">Overview</a>
-             <a id="sn-evaluate-assess" class="page-nav" href="#evaluate-assess"
-             onclick="return removeTabContent(this)">Training</a>
-             <a id="sn-aks" class="page-nav" href="#aks" onclick="return removeTabContent(this)">Agency Knowledge Sharing</a>
-             <a id="sn-aitbs" class="page-nav" href="#aitbs" onclick="return removeTabContent(this)">Additional IT Buyers Support</a>
-          </div>
-       </div>
+      <p class="tab-p">
+        As questions are answered and closed, the file will be marked “Closed”
+        but will still be available for review by current and new acquisition
+        professionals so that if an agency has a similar question in the future,
+        the previously collected information is available for their use as well
+        as the original submitters.
+      </p>
+      <p class="tab-p">
+        This process allows agency representatives, contracting officers,
+        contracting officer representatives, program managers, and domain
+        experts to come in and review requests and submit information they think
+        would be useful for the requesting agency. It also allows the requesting
+        agency to monitor their open requests for updates from others and engage
+        with those agencies who they think can best support their ongoing
+        requests.
+      </p>
+      <p class="tab-p">
+        This knowledge forum is expected to continue to grow and we hope you
+        find it useful.
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="{{site.baseurl}}/contact-us-contribute/?tabName=contact-us-header"
+          >Contact Us</a
+        >
+        for more information or log in to the
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://community.connect.gov/display/Egov"
+          >Connect.gov Agency Knowledge Sharing Portal</a
+        >
+        today!
+      </p>
+      <h3 id="aitbs" class="sub-topic-heading">Additional IT Buyers Support</h3>
+      <p class="tab-p">
+        To further field, consult, and support agency IT buyers on their IT
+        acquisition strategies and upcoming procurements, we provide roadside
+        assistance. This means we are available to take on ad hoc agency
+        requests and agency-specific IT buying questions
+      </p>
+      <p class="tab-p">
+        We have also launched the
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="{{site.baseurl}}/services/oem?tabName=contract-review-header&sideNav=sn-crs-process"
+          >ITVMO’s Contract Review Service (CRS)</a
+        >
+        which offers subject matter expertise and guidance via targeted,
+        agency-specific software contract reviews to better prepare agencies for
+        their next renewal.
+      </p>
+      <p class="tab-p">
+        We work across our community and network to get the information needed
+        to address your needs.
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="{{site.baseurl}}/contact-us-contribute/?tabName=contact-us-header"
+          >Contact Us</a
+        >
+        if you are seeking further assistance and IT buying help for your next
+        purchase or agency acquisition planning.
+      </p>
     </div>
-    <div id="it-buyers-toolkit" class="tabcontent">
-       <div class="contents padding-bottom-5">
-          <div>
-              <div>
-                  <h3 id="it-buyers-toolkit-overview" class="topic-heading">
-                  IT Buyers Toolkit
-                  </h3>
-                  <h3 class="sub-topic-heading">
-                  Overview
-                  </h3>
-                  <p class="tab-p">
-                    The IT Buyers Toolkit is maintained and updated through the IT Buyers Community of Practice within the ITVMO. This toolkit produces and increases use of ITVMO, IT Buyers CoP, and partner IT acquisition knowledge and best practices to include federal procurement data, standard terms and conditions, and technology strategies.
-                  </p>
+    <div class="content-nav">
+      <div class="nav-list">
+        <h3>On this Tab</h3>
+        <a
+          id="sn-it-buyers-training-and-support-overview"
+          class="page-nav page-nav-active"
+          href="#it-buyers-training-and-support-overview"
+          onclick="return removeTabContent(this)"
+          >Overview</a
+        >
+        <a
+          id="sn-evaluate-assess"
+          class="page-nav"
+          href="#evaluate-assess"
+          onclick="return removeTabContent(this)"
+          >Training</a
+        >
+        <a
+          id="sn-aks"
+          class="page-nav"
+          href="#aks"
+          onclick="return removeTabContent(this)"
+          >Agency Knowledge Sharing</a
+        >
+        <a
+          id="sn-aitbs"
+          class="page-nav"
+          href="#aitbs"
+          onclick="return removeTabContent(this)"
+          >Additional IT Buyers Support</a
+        >
+      </div>
+    </div>
+  </div>
+  <div id="it-buyers-toolkit" class="tabcontent">
+    <div class="contents padding-bottom-5">
+      <div>
+        <div>
+          <h3 id="it-buyers-toolkit-overview" class="topic-heading">
+            IT Buyers Toolkit
+          </h3>
+          <h3 class="sub-topic-heading">Overview</h3>
+          <p class="tab-p">
+            The IT Buyers Toolkit is maintained and updated through the IT
+            Buyers Community of Practice within the ITVMO. This toolkit produces
+            and increases use of ITVMO, IT Buyers CoP, and partner IT
+            acquisition knowledge and best practices to include federal
+            procurement data, standard terms and conditions, and technology
+            strategies.
+          </p>
 
-                  <h3 class="usa-accordion__heading">
-                      <button id="contract-management" class="accordion" aria-expanded="false" aria-controls="b-a4" onclick="displayTabContent(this)">
-                      <span>
-                      Contract Management
-                      </span>
-                      <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
-                      </button>
-                  </h3>
-                  <div id="b-a4" class="accordion-content ">
-                      <div>
-                        <div class="links-list">
-                            <ul class="links-with-descriptions">
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://www.fai.gov/periodic-table" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
-                                        Periodic Table of Acquisition Innovations
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        The governmentwide acquisition knowledge management portal for innovative business practices and technologies.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://www.fai.gov/resources/co-toolkit" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
-                                        Contracting Officers Toolkit
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        The Contracting Officer Toolkit is a knowledge based, ready reference guide, developed by the Fall 2020 LEAP team in partnership with FAI. Some of the links provided may require you to register and login in order to access the material.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://www.fai.gov/resources/cor-toolkit" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
-                                        Contracting Officer Representative Toolkit
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        The Contracting Officer Representative Toolkit is a knowledge base tool, developed by a Spring 2020 LEAP team in partnership with FAI. Some of the links provided require an additional user ID and password to access the material.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://www.fai.gov/tools/contracting-professionals-smart-guide" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
-                                        Contracting Professionals Smart Guide
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        The Contracting Professionals Smart Guide is organized into two sections: Contract Formation and Contract Administration. The tables below link to the Activities and their corresponding flow charts.
-                                     </p>
-                                  </a>
-                               </li>
-                            </ul>
-                         </div>
-                      </div>
-                  </div>
-                  <h3 class="usa-accordion__heading">
-                      <button id="how-oem-operate" class="accordion" aria-expanded="false" aria-controls="b-a5" onclick="displayTabContent(this)">
-                      <span>
-                      How Original Equipment Manufacturer(OEM) Operate
-                      </span>
-                      <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
-                      </button>
-                  </h3>
-                  <div id="b-a5" class="accordion-content ">
-                      <div>
-                        <p class="tab-p">
-                            <b>This training resource provides an 8-part information series on OEM operating practices to educate agency IT buyers and help them achieve a stronger negotiating position.</b>
-                        </p>
-                        <div class="links-list">
-                            <ul class="links-with-descriptions">
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://community.max.gov/download/attachments/2403246889/Module-1%20--%20IBT_OEM%20Operations_%20Overview.pdf?api=v2" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        Module-1 -Overview
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        This topic is about OEMs in general as each OEM may at any time restructure their sales team approach which would impact the information provided here. Additionally, not every OEM adheres to the structure or information outlined within the original paper on this topic. This should be used as a tool to increase your knowledge of how typical OEMs are structured and how they operate.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2403246889%252FModule-2%252520--%252520IBT_OEM%252520Operations_%252520Structure.pdf%253Fapi%253Dv2" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        Module-2 - Structure 
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        Understanding the various teams and support functions within the OEM organization helps customers be better prepared for acquisitions and be better positioned to maintain a beneficial relationship with the OEM over the course of the contract.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2403246889%252FModule-3--%252520IBT_OEM%252520Operations_%252520Sales%252520Roles.pdf%253Fapi%253Dv2" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        Module-3 - Sales Roles
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        The forward-facing part of product companies is in their sales organization. The OEM’s salespeople approach all parts of your IT organization to explain their value proposition for their products. They are also instrumental in approaching your acquisition personnel on how to purchase their products.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2403246889%252FModule-4--%252520IBT_OEM%252520Operations_%252520Partners.pdf%253Fapi%253Dv2" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        Module-4 - Partners
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        The OEM has a partner network to expand its reach to all potential customers. Often referred to as the channel, these partners are an extension of the sales arm of the OEM.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2403246889%252FModule-5--%252520IBT_OEM%252520Operations_%252520Sale%252520Support.pdf%253Fapi%253Dv2" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        Module-5 - Sales Support
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        OEMs have several different functions to support the sales arm of its operations. Many of these functions may be in the background hidden from your organization, but others are front and center when executing a purchase. This overview focuses on the sales support areas that your team will likely encounter during the sales process.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2403246889%252FModule-6--%252520IBT_OEM%252520Operations_%252520Sales%252520Support%252520%2528continued%2529%252520.pdf%253Fapi%253Dv2" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        Module-6 - Sales Support (continued) 
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        The OEM has a partner network to expand its reach to all potential customers. Often referred to as the channel, these partners are an extension of the sales arm of the OEM.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2403246889%252FModule-7--%252520IBT_OEM%252520Operations_%252520Sales%252520Cadence.pdf%253Fapi%253Dv2" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        Module-7 - Sales Cadence
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        Understanding the OEM sales processes requires a better understanding of two complementary concepts: account planning and customer relationship management (CRM).
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fdownload%252Fattachments%252F2403246889%252FModule-8--%252520IBT_OEM%252520Operations_%252520Module%252520Recap.pdf%253Fapi%253Dv2" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        Module-8 - Module Recap 
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        Recap of understanding how OEMs are organized and operate. 
-                                     </p>
-                                  </a>
-                               </li>
-                            </ul>
-                            <div class="links-list-heading margin-top-2">
-                                <h4 class="margin-0">Doing Business with Government: OEM Product Renewals</h4>
-                             </div>
-                            <p class="tab-p margin-top-0">
-                                New 8-part module coming soon......
-                            </p>
-                         </div>
-                      </div>
-                  </div>
-                  <h3 class="usa-accordion__heading">
-                      <button id="emerging-technology" class="accordion" aria-expanded="false" aria-controls="b-a6" onclick="displayTabContent(this)">
-                      <span>
-                      Emerging Technology
-                      </span>
-                      <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
-                      </button>
-                  </h3>
-                  <div id="b-a6" class="accordion-content ">
-                      <div>
-                        <div class="links-list">
-                            <div class="links-list-heading margin-top-2">
-                                <h4 class="margin-0">Cloud Acquisition Strategies & Guides</h4>
-                             </div>
-                            <ul class="links-with-descriptions">
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://cic.gsa.gov/" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
-                                        Cloud Information Center (CIC)
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        The CIC is designed to educate on all aspects of the acquisition lifecycle, including business, technical, and contractual aspects of cloud solutions.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/guidance-and-resources/" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
-                                        Cloud and Infrastructure Community Guides & Resources
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        Provides resources for federal agencies to consolidate and modernize their IT infrastructure.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/assets/files/Sprint-2-FinOps-Cloud-Acquisition-Quick-Reference-Guide.pdf" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
-                                        Cloud Acquisitions Guide
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                       This manual is tailored for Infrastructure as a Service (IaaS) and aims to assist acquisition specialists who possess beginner to intermediate familiarity with procuring IaaS from Cloud Service Providers (CSPs). Its purpose is to enhance understanding of the subtleties involved in infrastructure procurement and to serve as an adjunct to additional cloud procurement resources.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description login-require-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
-                                        Tactical Cloud Contracting Guide
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        Coming October 2023
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description login-require-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
-                                        Agency Case Studies & Training Materials
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                        Coming October 2023
-                                     </p>
-                                  </a>
-                               </li>
-                            </ul>
-                            <div class="links-list-heading margin-top-2">
-                                <h4 class="margin-0">Revolutionizing Procurement with AI: Agency Use Cases</h4>
-                             </div>
-                             <p class="tab-p margin-top-0">
-                                Coming soon…
-                            </p>
-                            <div class="links-list-heading margin-top-2">
-                                <h4 class="margin-0">Leading Edge Technologies Report (with agency use cases)</h4>
-                             </div>
-                             <p class="tab-p margin-0">
-                              (FY2024 Leading Edge Technologies Report Coming soon...)
-                              </p>
-                             <ul class="links-with-descriptions">
-                                <li class="link-with-description link-with-description-width">
-                                    <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/assets/files/tlr/leading-edge-tech-report-2023.pdf" tabindex="0">
-                                       <p class="link-heading">
-                                          <img class="link-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                          FY2023 Leading Edge Technologies Report
-                                          <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                       </p>
-                                       <div class="two-column-link-list-container">
-                                          <div class="links-list-heading link-heading-list">
-                                             <h4>Areas of Focus:</h4>
-                                          </div>
-                                          <div class="link-description-list">
-                                                <ul><li>Artificial Intelligence</li><li>Blockchain</li><li>Computer Vision</li><li>Cloud Computing</li></ul>
-                                                <ul><li>Cyber Security</li><li>Machine Learning</li><li>Robotic Process Automation</li><li>6G</li></ul>
-                                          </div>
-                                       </div>
-                                    </a>
-                                 </li>
-                                <li class="link-with-description link-with-description-width">
-                                    <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/assets/files/tlr/leading-edge-tech-report-2022.pdf" tabindex="0">
-                                       <p class="link-heading">
-                                          <img class="link-icon" alt="PDF icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                          FY2022 Leading Edge Technologies Report
-                                          <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                       </p>
-                                       <div class="two-column-link-list-container">
-                                          <div class="links-list-heading link-heading-list">
-                                             <h4>Areas of Focus:</h4>
-                                          </div>
-                                          <div class="link-description-list">
-                                             <ul><li><span>Cyber Security</span></li><li><span>Cloud Computing</span></li><li><span>Robotic Process Automation</span></li><li><span>Artificial Intelligence</span></li></ul>
-                                             <ul><li><span>Machine Learning</span></li><li><span>Network Performance Management</span></li><li><span>Big Data and Advanced Analytics</span></li><li><span>Blockchain</span></li></ul>
-                                          </div>
-                                       </div>
-                                    </a>
-                                 </li>
-                              </ul>
-                         </div>
-                      </div>
-                  </div>
-                  <h3 class="usa-accordion__heading">
-                      <button id="cybersecurity-and-supply" class="accordion" aria-expanded="false" aria-controls="b-a7" onclick="displayTabContent(this)">
-                      <span>
-                        Cybersecurity and Supply Chain Risk Management
-                      </span>
-                      <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
-                      </button>
-                  </h3>
-                  <div id="b-a7" class="accordion-content ">
-                      <div>
-                        <div class="links-list">
-                           <div class="links-list-heading margin-top-2">
-                              <h4 class="margin-0">Cyber and Information Security</h4>
-                           </div>
-                            <ul class="links-with-descriptions">
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://csrc.nist.gov/" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/link-icon.svg">
-                                        NIST Computer Security Resource Center
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                       Has information on many of NIST's cybersecurity- and information security-related projects, publications, news and events. CSRC supports people and organizations in government, industry, and academia—both in the U.S. and internationally.
-                                     </p>
-                                  </a>
-                               </li>
-                            </ul>
-                           <div class="links-list-heading margin-top-2">
-                              <h4 class="margin-0">ZeroTrust Buying Tools</h4>
-                           </div>
-                            <ul class="links-with-descriptions">
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        Federal ZeroTrust Strategy
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                       Sets forth a Federal zero trust architecture (ZTA) strategy, requiring agencies to meet specific cybersecurity standards and objectives by the end of Fiscal Year (FY) 2024 in order to reinforce the Government’s defenses against increasingly sophisticated and persistent threat campaigns. Those campaigns target Federal technology infrastructure, threatening public safety and privacy, damaging the American economy, and weakening trust in Government.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://www.gsa.gov/system/files/Zero_Trust_Architecture_Buyers_Guide_v2_July_2022.pdf" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        GSA ZeroTrust Buyers Guide
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                       Your agency's roadmap to designing and deploying ZTA, and maps the components defined by NIST to the GSA solutions that help meet them. We offer a variety of ZTA solutions across contract vehicles.
-                                     </p>
-                                  </a>
-                               </li>
-                               <li class="link-with-description">
-                                  <a target="_blank" rel="noreferrer noopener" href="https://www.gsa.gov/system/files/APT_Buyers_Guide_v2_July_2022.pdf" tabindex="0">
-                                     <p class="link-heading">
-                                        <img class="link-icon" alt="Link icon" src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg">
-                                        Advanced Persistent Threat Buyer's Guide
-                                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-                                     </p>
-                                     <p class="link-description">
-                                       Helps organizations evaluate potential products and solutions that detect, respond to, and recover from APTs. It provides guidance on engaging capable, proven industry partners to minimize APTs and enhance the overall resilience of the nation's cybersecurity.
-                                     </p>
-                                  </a>
-                               </li>
-                            </ul>
-                            <div class="links-list-heading margin-top-2">
-                              <h4 class="margin-0">ZeroTrust: Agency Use Cases</h4>
-                           </div>
-                           <p class="tab-p margin-top-0">
-                              Coming soon…
-                          </p>
-                         </div>
-                      </div>
-                  </div>
+          <h3 class="usa-accordion__heading">
+            <button
+              id="contract-management"
+              class="accordion"
+              aria-expanded="false"
+              aria-controls="b-a4"
+              onclick="displayTabContent(this)">
+              <span> Contract Management </span>
+              <img
+                class="tab-arrow"
+                src="{{site.baseurl}}/assets/images/icons/arrow-down.svg" />
+            </button>
+          </h3>
+          <div id="b-a4" class="accordion-content">
+            <div>
+              <div class="links-list">
+                <ul class="links-with-descriptions">
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://www.fai.gov/periodic-table"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                        Periodic Table of Acquisition Innovations
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        The governmentwide acquisition knowledge management
+                        portal for innovative business practices and
+                        technologies.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://www.fai.gov/resources/co-toolkit"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                        Contracting Officers Toolkit
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        The Contracting Officer Toolkit is a knowledge based,
+                        ready reference guide, developed by the Fall 2020 LEAP
+                        team in partnership with FAI. Some of the links provided
+                        may require you to register and login in order to access
+                        the material.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://www.fai.gov/resources/cor-toolkit"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                        Contracting Officer Representative Toolkit
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        The Contracting Officer Representative Toolkit is a
+                        knowledge base tool, developed by a Spring 2020 LEAP
+                        team in partnership with FAI. Some of the links provided
+                        require an additional user ID and password to access the
+                        material.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://www.fai.gov/tools/contracting-professionals-smart-guide"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                        Contracting Professionals Smart Guide
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        The Contracting Professionals Smart Guide is organized
+                        into two sections: Contract Formation and Contract
+                        Administration. The tables below link to the Activities
+                        and their corresponding flow charts.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
               </div>
+            </div>
           </div>
+          <h3 class="usa-accordion__heading">
+            <button
+              id="how-oem-operate"
+              class="accordion"
+              aria-expanded="false"
+              aria-controls="b-a5"
+              onclick="displayTabContent(this)">
+              <span> How Original Equipment Manufacturer(OEM) Operate </span>
+              <img
+                class="tab-arrow"
+                src="{{site.baseurl}}/assets/images/icons/arrow-down.svg" />
+            </button>
+          </h3>
+          <div id="b-a5" class="accordion-content">
+            <div>
+              <p class="tab-p">
+                <b
+                  >This training resource provides an 8-part information series
+                  on OEM operating practices to educate agency IT buyers and
+                  help them achieve a stronger negotiating position.</b
+                >
+              </p>
+              <div class="links-list">
+                <ul class="links-with-descriptions">
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://community.connect.gov/download/attachments/2403246889/Module-1%20--%20IBT_OEM%20Operations_%20Overview.pdf?api=v2"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="PDF icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        Module-1 -Overview
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        This topic is about OEMs in general as each OEM may at
+                        any time restructure their sales team approach which
+                        would impact the information provided here.
+                        Additionally, not every OEM adheres to the structure or
+                        information outlined within the original paper on this
+                        topic. This should be used as a tool to increase your
+                        knowledge of how typical OEMs are structured and how
+                        they operate.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://community.connect.gov/download/attachments/2403246889/Module-2%20--%20IBT_OEM%20Operations_%20Structure.pdf?api=v2"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="PDF icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        Module-2 - Structure
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        Understanding the various teams and support functions
+                        within the OEM organization helps customers be better
+                        prepared for acquisitions and be better positioned to
+                        maintain a beneficial relationship with the OEM over the
+                        course of the contract.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://community.connect.gov/download/attachments/2403246889/Module-3--%20IBT_OEM%20Operations_%20Sales%20Roles.pdf?api=v2"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="PDF icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        Module-3 - Sales Roles
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        The forward-facing part of product companies is in their
+                        sales organization. The OEM’s salespeople approach all
+                        parts of your IT organization to explain their value
+                        proposition for their products. They are also
+                        instrumental in approaching your acquisition personnel
+                        on how to purchase their products.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://community.connect.gov/download/attachments/2403246889/Module-4--%20IBT_OEM%20Operations_%20Partners.pdf?api=v2"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="PDF icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        Module-4 - Partners
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        The OEM has a partner network to expand its reach to all
+                        potential customers. Often referred to as the channel,
+                        these partners are an extension of the sales arm of the
+                        OEM.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://community.connect.gov/download/attachments/2403246889/Module-5--%20IBT_OEM%20Operations_%20Sale%20Support.pdf?api=v2"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="PDF icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        Module-5 - Sales Support
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        OEMs have several different functions to support the
+                        sales arm of its operations. Many of these functions may
+                        be in the background hidden from your organization, but
+                        others are front and center when executing a purchase.
+                        This overview focuses on the sales support areas that
+                        your team will likely encounter during the sales
+                        process.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://community.connect.gov/download/attachments/2403246889/Module-6--%20IBT_OEM%20Operations_%20Sales%20Support%20%28continued%29%20.pdf?api=v2"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="PDF icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        Module-6 - Sales Support (continued)
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        The OEM has a partner network to expand its reach to all
+                        potential customers. Often referred to as the channel,
+                        these partners are an extension of the sales arm of the
+                        OEM.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://community.connect.gov/download/attachments/2403246889/Module-7--%20IBT_OEM%20Operations_%20Sales%20Cadence.pdf?api=v2"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="PDF icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        Module-7 - Sales Cadence
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        Understanding the OEM sales processes requires a better
+                        understanding of two complementary concepts: account
+                        planning and customer relationship management (CRM).
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://community.connect.gov/download/attachments/2403246889/Module-8--%20IBT_OEM%20Operations_%20Module%20Recap.pdf?api=v2"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="PDF icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        Module-8 - Module Recap
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        Recap of understanding how OEMs are organized and
+                        operate.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="links-list-heading margin-top-2">
+                  <h4 class="margin-0">
+                    Doing Business with Government: OEM Product Renewals
+                  </h4>
+                </div>
+                <p class="tab-p margin-top-0">
+                  New 8-part module coming soon......
+                </p>
+              </div>
+            </div>
+          </div>
+          <h3 class="usa-accordion__heading">
+            <button
+              id="emerging-technology"
+              class="accordion"
+              aria-expanded="false"
+              aria-controls="b-a6"
+              onclick="displayTabContent(this)">
+              <span> Emerging Technology </span>
+              <img
+                class="tab-arrow"
+                src="{{site.baseurl}}/assets/images/icons/arrow-down.svg" />
+            </button>
+          </h3>
+          <div id="b-a6" class="accordion-content">
+            <div>
+              <div class="links-list">
+                <div class="links-list-heading margin-top-2">
+                  <h4 class="margin-0">
+                    Cloud Acquisition Strategies & Guides
+                  </h4>
+                </div>
+                <ul class="links-with-descriptions">
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://cic.gsa.gov/"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                        Cloud Information Center (CIC)
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        The CIC is designed to educate on all aspects of the
+                        acquisition lifecycle, including business, technical,
+                        and contractual aspects of cloud solutions.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://www.cio.gov/about/members-and-leadership/cloud-infrastructure-cop/guidance-and-resources/"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                        Cloud and Infrastructure Community Guides & Resources
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        Provides resources for federal agencies to consolidate
+                        and modernize their IT infrastructure.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="{{site.baseurl}}/assets/files/Sprint-2-FinOps-Cloud-Acquisition-Quick-Reference-Guide.pdf"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                        Cloud Acquisitions Guide
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        This manual is tailored for Infrastructure as a Service
+                        (IaaS) and aims to assist acquisition specialists who
+                        possess beginner to intermediate familiarity with
+                        procuring IaaS from Cloud Service Providers (CSPs). Its
+                        purpose is to enhance understanding of the subtleties
+                        involved in infrastructure procurement and to serve as
+                        an adjunct to additional cloud procurement resources.
+                      </p>
+                    </a>
+                  </li>
+                  <li
+                    class="link-with-description login-require-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href=""
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                        Tactical Cloud Contracting Guide
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">Coming October 2023</p>
+                    </a>
+                  </li>
+                  <li
+                    class="link-with-description login-require-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href=""
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                        Agency Case Studies & Training Materials
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">Coming October 2023</p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="links-list-heading margin-top-2">
+                  <h4 class="margin-0">
+                    Revolutionizing Procurement with AI: Agency Use Cases
+                  </h4>
+                </div>
+                <p class="tab-p margin-top-0">Coming soon…</p>
+                <div class="links-list-heading margin-top-2">
+                  <h4 class="margin-0">
+                    Leading Edge Technologies Report (with agency use cases)
+                  </h4>
+                </div>
+                <p class="tab-p margin-0">
+                  (FY2024 Leading Edge Technologies Report Coming soon...)
+                </p>
+                <ul class="links-with-descriptions">
+                  <li class="link-with-description link-with-description-width">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="{{site.baseurl}}/assets/files/tlr/leading-edge-tech-report-2023.pdf"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="PDF icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        FY2023 Leading Edge Technologies Report
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <div class="two-column-link-list-container">
+                        <div class="links-list-heading link-heading-list">
+                          <h4>Areas of Focus:</h4>
+                        </div>
+                        <div class="link-description-list">
+                          <ul>
+                            <li>Artificial Intelligence</li>
+                            <li>Blockchain</li>
+                            <li>Computer Vision</li>
+                            <li>Cloud Computing</li>
+                          </ul>
+                          <ul>
+                            <li>Cyber Security</li>
+                            <li>Machine Learning</li>
+                            <li>Robotic Process Automation</li>
+                            <li>6G</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="link-with-description link-with-description-width">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="{{site.baseurl}}/assets/files/tlr/leading-edge-tech-report-2022.pdf"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="PDF icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        FY2022 Leading Edge Technologies Report
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <div class="two-column-link-list-container">
+                        <div class="links-list-heading link-heading-list">
+                          <h4>Areas of Focus:</h4>
+                        </div>
+                        <div class="link-description-list">
+                          <ul>
+                            <li><span>Cyber Security</span></li>
+                            <li><span>Cloud Computing</span></li>
+                            <li><span>Robotic Process Automation</span></li>
+                            <li><span>Artificial Intelligence</span></li>
+                          </ul>
+                          <ul>
+                            <li><span>Machine Learning</span></li>
+                            <li><span>Network Performance Management</span></li>
+                            <li>
+                              <span>Big Data and Advanced Analytics</span>
+                            </li>
+                            <li><span>Blockchain</span></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h3 class="usa-accordion__heading">
+            <button
+              id="cybersecurity-and-supply"
+              class="accordion"
+              aria-expanded="false"
+              aria-controls="b-a7"
+              onclick="displayTabContent(this)">
+              <span> Cybersecurity and Supply Chain Risk Management </span>
+              <img
+                class="tab-arrow"
+                src="{{site.baseurl}}/assets/images/icons/arrow-down.svg" />
+            </button>
+          </h3>
+          <div id="b-a7" class="accordion-content">
+            <div>
+              <div class="links-list">
+                <div class="links-list-heading margin-top-2">
+                  <h4 class="margin-0">Cyber and Information Security</h4>
+                </div>
+                <ul class="links-with-descriptions">
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://csrc.nist.gov/"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                        NIST Computer Security Resource Center
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        Has information on many of NIST's cybersecurity- and
+                        information security-related projects, publications,
+                        news and events. CSRC supports people and organizations
+                        in government, industry, and academia—both in the U.S.
+                        and internationally.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="links-list-heading margin-top-2">
+                  <h4 class="margin-0">ZeroTrust Buying Tools</h4>
+                </div>
+                <ul class="links-with-descriptions">
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        Federal ZeroTrust Strategy
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        Sets forth a Federal zero trust architecture (ZTA)
+                        strategy, requiring agencies to meet specific
+                        cybersecurity standards and objectives by the end of
+                        Fiscal Year (FY) 2024 in order to reinforce the
+                        Government’s defenses against increasingly sophisticated
+                        and persistent threat campaigns. Those campaigns target
+                        Federal technology infrastructure, threatening public
+                        safety and privacy, damaging the American economy, and
+                        weakening trust in Government.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://www.gsa.gov/system/files/Zero_Trust_Architecture_Buyers_Guide_v2_July_2022.pdf"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        GSA ZeroTrust Buyers Guide
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        Your agency's roadmap to designing and deploying ZTA,
+                        and maps the components defined by NIST to the GSA
+                        solutions that help meet them. We offer a variety of ZTA
+                        solutions across contract vehicles.
+                      </p>
+                    </a>
+                  </li>
+                  <li class="link-with-description">
+                    <a
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="https://www.gsa.gov/system/files/APT_Buyers_Guide_v2_July_2022.pdf"
+                      tabindex="0">
+                      <p class="link-heading">
+                        <img
+                          class="link-icon"
+                          alt="Link icon"
+                          src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                        Advanced Persistent Threat Buyer's Guide
+                        <img
+                          alt="External icon"
+                          src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                      </p>
+                      <p class="link-description">
+                        Helps organizations evaluate potential products and
+                        solutions that detect, respond to, and recover from
+                        APTs. It provides guidance on engaging capable, proven
+                        industry partners to minimize APTs and enhance the
+                        overall resilience of the nation's cybersecurity.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="links-list-heading margin-top-2">
+                  <h4 class="margin-0">ZeroTrust: Agency Use Cases</h4>
+                </div>
+                <p class="tab-p margin-top-0">Coming soon…</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-       <div class="content-nav">
-          <div class="nav-list">
-             <h3>On this Tab</h3>
-             <a id="sn-it-buyers-toolkit-overview" class="page-nav page-nav-active" href="#it-buyers-toolkit-overview" onclick="return removeTabContent(this)">Overview</a>
-             <a 
-             tabindex="0" class="page-nav accordion-nav" aria-controls="contract-management">
-             Contract Management
-             </a>
-             <a
-             tabindex="0" class="page-nav accordion-nav" aria-controls="how-oem-operate">
-             How Original Equipment Manufacturer(OEM) Operate
-             </a>
-             <a
-             tabindex="0" class="page-nav accordion-nav" aria-controls="emerging-technology">
-             Emerging Technology
-             </a>
-             <a
-             tabindex="0" class="page-nav accordion-nav" aria-controls="cybersecurity-and-supply">
-             Cybersecurity and Supply Chain Risk Management
-             </a>
-          </div>
-       </div>
     </div>
-    <div id="it-buyers-cop" class="tabcontent">
-       <div class="contents padding-bottom-5">
-          <h3 id="it-buyers-cop-overview" class="topic-heading">
-             IT Buyers Community of Practice
-          </h3>
-          <h3 id="" class="sub-topic-heading">
-             Overview
-          </h3>
-          <p class="tab-p">
-            The IT Buyers Community of Practice (ITB CoP) is chartered under the CIO Council’s Enterprise Operations Committee (E-ops), The purpose of the ITB CoP is to create a community of federal IT buyers to share their experience and scale expertise across government. The ITB CoP brings together the acquisition programs at agencies, contract vehicle programs, and procurement specialists from across government to solve common challenges.
-          </p>
-          <p class="tab-p">
-            The IT Buyers Community maintains a 
-            <a target="_blank" rel="noreferrer noopener" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Fviewpage.action%253FspaceKey%253DEgov%2526title%253DIT%252BBuyers%252BCommunity%252Bof%252BPractice">
-               CoP MAX
-               <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg">
-            </a>
-            page with additional resources available to government users.
-          </p>
-          <p class="tab-p margin-top-0">
-            Interested in the latest updates related to federal IT acquisitions? Learn about upcoming events, training opportunities, updates, and connect with fellow IT acquisitions professional by joining the ITB CoP Listserv.
-          </p>
-          <a target="_blank" rel="noreferrer noopener" class="external-link external-link-it-buyers" href="https://login.max.gov/cas/login?service=https%3A%2F%2Fcommunity.max.gov%2Flogin.action%3Fos_destination%3D%252Fpages%252Ftinyurl.action%253FurlIdentifier%253DAbtkgQ" target="_blank" rel="noreferrer noopener">
-            <img src="{{site.baseurl}}/assets/images/icons/external-white.svg" alt="External icon"><p>IT Buyers Government Portal</p>
-         </a>
-         <div class="tab-divide-line end-content"></div>
-          <h3 id="wwd" class="sub-topic-heading">
-             What We Do
-          </h3>
-          <p class="tab-p">
-            The ITB CoP helps agencies procure IT faster and smarter by creating a shared space where IT buyers throughout the government can help each other solve problems and leverage the buying power of the entire federal government.
-          </p>
-          <p class="tab-p">
-            We take a whole-of-government approach – we’re agency, vendor, vehicle neutral– helping us to unify the Federal IT Community for the greater good. This includes
-          </p>
-          <div class="bulletSections">
-            <div class="topLine"></div>
-            <ul class="experiences">
-                <li class="bulletText"><b>IT marketplace buyers</b> -- the agency contracting officers, program managers, specialists, and end users. <i class="blue-600">Answering what we need to meet our federal agency mission ne eds and continue to transform our federal government</i>.</li>
-                <li class="bulletText"><b>IT suppliers</b> -- original equipment manufacturers (OEM), value-added resellers (VARs), and small businesses. <i class="blue-600">Helping us understand industry best practices through proven, reliable common IT goods and services as well as emerging technology trends</i>.</li>
-                <li class="bulletText"><b>IT Vehicles</b> -- Governmentwide Acquisition Contract Vehicles (GWACs) and Best-in-Class (BIC) solution holders. <i class="blue-600"></i>Aiding to buy common IT products and services consistently and for the best price.</li>
-                <li class="bulletText"><b>Federal IT Marketplace leaders</b> -- leadership and programs across government and the providing industry (e.g., private-public partnerships). <i class="blue-600">Informing and influencing the priorities and identifying needs (as well as strategies) to transform the way the Federal IT marketplace is run</i>.</li>
-            </ul>
-         </div>
-          <h3 id="wwr" class="sub-topic-heading">
-             Who We Are
-          </h3>
-          <p class="tab-p">
-            We are a community of diverse federal professionals looking to leverage our respective expertise to collaborate on better IT acquisition strategies and approaches for the benefit of our agencies and all of the government.
-          </p>
-          <p class="tab-p">
-            The ITB CoP is supported by a partner team made up of the CIO Council’s Enterprise Operations Committee (E-ops), Chief Acquisition Officers Council (CAOC), the IT Vendor Management Office (ITVMO), and the IT Best in Class (BIC) Contract Vehicle from GSA, DOD, NASA, and NIH.
-          </p>
-          <p class="tab-p">
-            Membership to the ITB CoP is government-only. The IT Buyers CoP will periodically conduct events and working groups with industry and vendor participants. Government-only membership restrictions allow federal IT Buyers to solve potentially vendor-specific or otherwise sensitive issues in a closed environment.
-          </p>
-          <p class="tab-p">
-            We connect, engage, and partner across the Federal Marketplace -- partnering with other governmentwide programs and communities of practice. Check out our <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/community">Community</a> page to see our partners and allies.
-          </p>
-          <h3 id="leadership" class="sub-topic-heading">
-             Leadership
-          </h3>
-          <p class="tab-p">
-              
-          </p>
-          <ul>
-            <li><b>John Radziszewski,</b> ITVMO Director</li>
-            <li><b>Kyra Stewart,</b> IT Buyers CoP Program Coordinator</li>
-            <li><b>Andrea Brandon,</b> Deputy Assistant Secretary, DOI <span class="blue-600">(sponsor) </span></li>
-            <li><b>Erin Collard,</b> Associate Deputy Assistant Administration, EPA <span class="blue-600">(sponsor)</span></li>
-            <li><b>Jenna Mathieson,</b> Deputy Director, FDIC <span class="blue-600">(sponsor)</span></li>
-         </ul>
-          <h3 id="htgi" class="sub-topic-heading">
-             How to Get Involved
-          </h3>
-          <!-- <a target="_blank" rel="noreferrer noopener" href=""></a> -->
-          <p class="tab-p">
-            There are many great opportunities to connect, engage, solve, and train within the IT Buyers Community Practice. <a href="#subscription-area">Subscribe to our IT Buyers listserv</a> and monitor our <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/events">Events</a> page for upcoming engagement opportunities and announcements.
-          </p>
-          <div class="bulletSections">
-            <div class="topLine"></div>
-            <ul class="experiences">
-                <li class="bulletText"><a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/annual-summit/"><b>Annual Summit</b></a> -- In-person event bringing both industry and government together to foster collaboration and increase knowledge sharing on IT acquisition contract strategies, Best-in-Class IT vehicle solutions, and federal marketplace opportunities for small businesses. <i class="blue-600">Event is typically held in the second half of the fiscal year</i>.</li>
-                <li class="bulletText"><b>Quarterly Community Meetings</b> -- Topics are driven by member interests. We’ll look to subject matter experts and agency representatives to present on their related experiences, offering best practices and lessons learned. <i class="blue-600">Quarterly meetings are the fourth Thursday of every 3-months from 2-3pm EST</i>.</li>
-                <li class="bulletText"><b>Monthly IT Buyers Bulletins</b> -- Blog-like articles highlighting latest trends in IT acquisitions and the government contracting sector. These bulletins help to promote available resources, tools, and data available on these up and coming trends to help IT buyers adopt and infuse into their day-to-day. <i class="blue-600">Bulletins are released to the IT Buyers COP subscriber list monthly, on the last Tuesday of every month.</i>.</li>
-                <li class="bulletText"><b>Office Hours</b>  -- Sessions will be interactive, allowing for question-answer and collaboration. May include representatives from key OEMs or ITVMO partners to address specific agency scenarios to include but not limited to: OEM Terms & Conditions; vehicle and small business utilization; data; etc. <i class="blue-600">Office hours are scheduled on an as needed/as requested basis</i>.</li>
-                <li class="bulletText"><b>Working Groups</b> -- cross-government teams will be established based on federal and agency priorities to focus on a targeted problem. Working groups are short-term problem solving teams by working collectively across agencies and functions to identify and recommend solutions for govwide impact. <i class="blue-600">Working groups are identified and sponsored by the ITBCOP sponsors and informed through agency surveys and request.</i>.</li>
-                <li class="bulletText"><b>Cohorts</b> -- cohorts are organized based on ITVMO/IT Buyers customer pathways (e.g., Vehicle Owners/Solution Holders; Agency Buyers; Contracting Officers; IT Program Managers; etc.) to leverage the skills and experience across government. Cohorts are organic and self-sustaining, cohorts help to introduce and connect ITVMO stakeholders and customers. <i class="blue-600">Cohorts will be created on an as needed basis</i>.</li>
-                <li class="bulletText"><b>Training Webinars</b> -- Facilitated by ITVMO, these training sessions are designed to address common agency challenges and improve agency understanding and govwide knowledge/capability with key OEM contracts, data, emerging technology, and other high priority IT and acquisition focuses. <i class="blue-600">Training events are ongoing and scheduled as instructors and content is available. Check the Events calendar for upcoming training webinars and available CLPs</i>.</li>
-            </ul>
-         </div>
-         <p class="tab-p margin-top-0">
-            Interested in the latest updates related to federal IT acquisitions? Learn about upcoming events, training opportunities, updates, and connect with fellow IT acquisitions professional by joining the ITB CoP Listserv.
-         </p>
-         <a class="external-link external-link-subscribe" href="#subscription-area">
-            <img src="{{site.baseurl}}/assets/images/icons/subscribe-icon.svg"><p>Subscribe</p>
-         </a>
-          <div class="tab-divide-line end-content"></div>
-          <h3 id="cu" class="sub-topic-heading">
-            Contact Us
-          </h3>
-         <p class="tab-p margin-top-neg-2">
-            <b>If you have questions, please contact the ITB CoP email at <a href="mailto:itvmo@gsa.gov?subject=IT Buyers Community of Practice">ITVMO@gsa.gov</a></b>
-         </p>
-
+    <div class="content-nav">
+      <div class="nav-list">
+        <h3>On this Tab</h3>
+        <a
+          id="sn-it-buyers-toolkit-overview"
+          class="page-nav page-nav-active"
+          href="#it-buyers-toolkit-overview"
+          onclick="return removeTabContent(this)"
+          >Overview</a
+        >
+        <a
+          tabindex="0"
+          class="page-nav accordion-nav"
+          aria-controls="contract-management">
+          Contract Management
+        </a>
+        <a
+          tabindex="0"
+          class="page-nav accordion-nav"
+          aria-controls="how-oem-operate">
+          How Original Equipment Manufacturer(OEM) Operate
+        </a>
+        <a
+          tabindex="0"
+          class="page-nav accordion-nav"
+          aria-controls="emerging-technology">
+          Emerging Technology
+        </a>
+        <a
+          tabindex="0"
+          class="page-nav accordion-nav"
+          aria-controls="cybersecurity-and-supply">
+          Cybersecurity and Supply Chain Risk Management
+        </a>
       </div>
-       <div class="content-nav">
-          <div class="nav-list">
-             <h3>On this Tab</h3>
-             <a id="sn-it-buyers-cop-overview" class="page-nav page-nav-active" href="#it-buyers-cop-overview" onclick="return removeTabContent(this)">Overview</a>
-             <a class="page-nav" href="#wwd" onclick="return removeTabContent(this)">What We Do</a>
-             <a class="page-nav" href="#wwr" onclick="return removeTabContent(this)">Who We Are</a>
-             <a class="page-nav" href="#leadership" onclick="return removeTabContent(this)">Leadership</a>
-             <a class="page-nav" href="#htgi" onclick="return removeTabContent(this)">How to Get Involved</a>
-             <a class="page-nav" href="#cu" onclick="return removeTabContent(this)">Contact Us</a>
-          </div>
-       </div>
     </div>
-  </section>
+  </div>
+  <div id="it-buyers-cop" class="tabcontent">
+    <div class="contents padding-bottom-5">
+      <h3 id="it-buyers-cop-overview" class="topic-heading">
+        IT Buyers Community of Practice
+      </h3>
+      <h3 id="" class="sub-topic-heading">Overview</h3>
+      <p class="tab-p">
+        The IT Buyers Community of Practice (ITB CoP) is chartered under the CIO
+        Council’s Enterprise Operations Committee (E-ops), The purpose of the
+        ITB CoP is to create a community of federal IT buyers to share their
+        experience and scale expertise across government. The ITB CoP brings
+        together the acquisition programs at agencies, contract vehicle
+        programs, and procurement specialists from across government to solve
+        common challenges.
+      </p>
+      <p class="tab-p">
+        The IT Buyers Community maintains a
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://community.connect.gov/">
+          Connect.Gov
+          <img
+            alt="External icon"
+            src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+        </a>
+        page with additional resources available to government users.
+      </p>
+      <p class="tab-p margin-top-0">
+        Interested in the latest updates related to federal IT acquisitions?
+        Learn about upcoming events, training opportunities, updates, and
+        connect with fellow IT acquisitions professional by joining the ITB CoP
+        Listserv.
+      </p>
+      <a
+        target="_blank"
+        rel="noreferrer noopener"
+        class="external-link external-link-it-buyers"
+        href="https://community.connect.gov/display/Egov/IT+Buyers+Community+of+Practice"
+        target="_blank"
+        rel="noreferrer noopener">
+        <img
+          src="{{site.baseurl}}/assets/images/icons/external-white.svg"
+          alt="External icon" />
+        <p>IT Buyers Government Portal</p>
+      </a>
+      <div class="tab-divide-line end-content"></div>
+      <h3 id="wwd" class="sub-topic-heading">What We Do</h3>
+      <p class="tab-p">
+        The ITB CoP helps agencies procure IT faster and smarter by creating a
+        shared space where IT buyers throughout the government can help each
+        other solve problems and leverage the buying power of the entire federal
+        government.
+      </p>
+      <p class="tab-p">
+        We take a whole-of-government approach – we’re agency, vendor, vehicle
+        neutral– helping us to unify the Federal IT Community for the greater
+        good. This includes
+      </p>
+      <div class="bulletSections">
+        <div class="topLine"></div>
+        <ul class="experiences">
+          <li class="bulletText">
+            <b>IT marketplace buyers</b> -- the agency contracting officers,
+            program managers, specialists, and end users.
+            <i class="blue-600"
+              >Answering what we need to meet our federal agency mission ne eds
+              and continue to transform our federal government</i
+            >.
+          </li>
+          <li class="bulletText">
+            <b>IT suppliers</b> -- original equipment manufacturers (OEM),
+            value-added resellers (VARs), and small businesses.
+            <i class="blue-600"
+              >Helping us understand industry best practices through proven,
+              reliable common IT goods and services as well as emerging
+              technology trends</i
+            >.
+          </li>
+          <li class="bulletText">
+            <b>IT Vehicles</b> -- Governmentwide Acquisition Contract Vehicles
+            (GWACs) and Best-in-Class (BIC) solution holders.
+            <i class="blue-600"></i>Aiding to buy common IT products and
+            services consistently and for the best price.
+          </li>
+          <li class="bulletText">
+            <b>Federal IT Marketplace leaders</b> -- leadership and programs
+            across government and the providing industry (e.g., private-public
+            partnerships).
+            <i class="blue-600"
+              >Informing and influencing the priorities and identifying needs
+              (as well as strategies) to transform the way the Federal IT
+              marketplace is run</i
+            >.
+          </li>
+        </ul>
+      </div>
+      <h3 id="wwr" class="sub-topic-heading">Who We Are</h3>
+      <p class="tab-p">
+        We are a community of diverse federal professionals looking to leverage
+        our respective expertise to collaborate on better IT acquisition
+        strategies and approaches for the benefit of our agencies and all of the
+        government.
+      </p>
+      <p class="tab-p">
+        The ITB CoP is supported by a partner team made up of the CIO Council’s
+        Enterprise Operations Committee (E-ops), Chief Acquisition Officers
+        Council (CAOC), the IT Vendor Management Office (ITVMO), and the IT Best
+        in Class (BIC) Contract Vehicle from GSA, DOD, NASA, and NIH.
+      </p>
+      <p class="tab-p">
+        Membership to the ITB CoP is government-only. The IT Buyers CoP will
+        periodically conduct events and working groups with industry and vendor
+        participants. Government-only membership restrictions allow federal IT
+        Buyers to solve potentially vendor-specific or otherwise sensitive
+        issues in a closed environment.
+      </p>
+      <p class="tab-p">
+        We connect, engage, and partner across the Federal Marketplace --
+        partnering with other governmentwide programs and communities of
+        practice. Check out our
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="{{site.baseurl}}/community"
+          >Community</a
+        >
+        page to see our partners and allies.
+      </p>
+      <h3 id="leadership" class="sub-topic-heading">Leadership</h3>
+      <p class="tab-p"></p>
+      <ul>
+        <li><b>John Radziszewski,</b> ITVMO Director</li>
+        <li><b>Kyra Stewart,</b> IT Buyers CoP Program Coordinator</li>
+        <li>
+          <b>Andrea Brandon,</b> Deputy Assistant Secretary, DOI
+          <span class="blue-600">(sponsor) </span>
+        </li>
+        <li>
+          <b>Erin Collard,</b> Associate Deputy Assistant Administration, EPA
+          <span class="blue-600">(sponsor)</span>
+        </li>
+        <li>
+          <b>Jenna Mathieson,</b> Deputy Director, FDIC
+          <span class="blue-600">(sponsor)</span>
+        </li>
+      </ul>
+      <h3 id="htgi" class="sub-topic-heading">How to Get Involved</h3>
+      <!-- <a target="_blank" rel="noreferrer noopener" href=""></a> -->
+      <p class="tab-p">
+        There are many great opportunities to connect, engage, solve, and train
+        within the IT Buyers Community Practice.
+        <a href="#subscription-area">Subscribe to our IT Buyers listserv</a> and
+        monitor our
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="{{site.baseurl}}/events"
+          >Events</a
+        >
+        page for upcoming engagement opportunities and announcements.
+      </p>
+      <div class="bulletSections">
+        <div class="topLine"></div>
+        <ul class="experiences">
+          <li class="bulletText">
+            <a
+              target="_blank"
+              rel="noreferrer noopener"
+              href="{{site.baseurl}}/annual-summit/"
+              ><b>Annual Summit</b></a
+            >
+            -- In-person event bringing both industry and government together to
+            foster collaboration and increase knowledge sharing on IT
+            acquisition contract strategies, Best-in-Class IT vehicle solutions,
+            and federal marketplace opportunities for small businesses.
+            <i class="blue-600"
+              >Event is typically held in the second half of the fiscal year</i
+            >.
+          </li>
+          <li class="bulletText">
+            <b>Quarterly Community Meetings</b> -- Topics are driven by member
+            interests. We’ll look to subject matter experts and agency
+            representatives to present on their related experiences, offering
+            best practices and lessons learned.
+            <i class="blue-600"
+              >Quarterly meetings are the fourth Thursday of every 3-months from
+              2-3pm EST</i
+            >.
+          </li>
+          <li class="bulletText">
+            <b>Monthly IT Buyers Bulletins</b> -- Blog-like articles
+            highlighting latest trends in IT acquisitions and the government
+            contracting sector. These bulletins help to promote available
+            resources, tools, and data available on these up and coming trends
+            to help IT buyers adopt and infuse into their day-to-day.
+            <i class="blue-600"
+              >Bulletins are released to the IT Buyers COP subscriber list
+              monthly, on the last Tuesday of every month.</i
+            >.
+          </li>
+          <li class="bulletText">
+            <b>Office Hours</b> -- Sessions will be interactive, allowing for
+            question-answer and collaboration. May include representatives from
+            key OEMs or ITVMO partners to address specific agency scenarios to
+            include but not limited to: OEM Terms & Conditions; vehicle and
+            small business utilization; data; etc.
+            <i class="blue-600"
+              >Office hours are scheduled on an as needed/as requested basis</i
+            >.
+          </li>
+          <li class="bulletText">
+            <b>Working Groups</b> -- cross-government teams will be established
+            based on federal and agency priorities to focus on a targeted
+            problem. Working groups are short-term problem solving teams by
+            working collectively across agencies and functions to identify and
+            recommend solutions for govwide impact.
+            <i class="blue-600"
+              >Working groups are identified and sponsored by the ITBCOP
+              sponsors and informed through agency surveys and request.</i
+            >.
+          </li>
+          <li class="bulletText">
+            <b>Cohorts</b> -- cohorts are organized based on ITVMO/IT Buyers
+            customer pathways (e.g., Vehicle Owners/Solution Holders; Agency
+            Buyers; Contracting Officers; IT Program Managers; etc.) to leverage
+            the skills and experience across government. Cohorts are organic and
+            self-sustaining, cohorts help to introduce and connect ITVMO
+            stakeholders and customers.
+            <i class="blue-600">Cohorts will be created on an as needed basis</i
+            >.
+          </li>
+          <li class="bulletText">
+            <b>Training Webinars</b> -- Facilitated by ITVMO, these training
+            sessions are designed to address common agency challenges and
+            improve agency understanding and govwide knowledge/capability with
+            key OEM contracts, data, emerging technology, and other high
+            priority IT and acquisition focuses.
+            <i class="blue-600"
+              >Training events are ongoing and scheduled as instructors and
+              content is available. Check the Events calendar for upcoming
+              training webinars and available CLPs</i
+            >.
+          </li>
+        </ul>
+      </div>
+      <p class="tab-p margin-top-0">
+        Interested in the latest updates related to federal IT acquisitions?
+        Learn about upcoming events, training opportunities, updates, and
+        connect with fellow IT acquisitions professional by joining the ITB CoP
+        Listserv.
+      </p>
+      <a
+        class="external-link external-link-subscribe"
+        href="#subscription-area">
+        <img src="{{site.baseurl}}/assets/images/icons/subscribe-icon.svg" />
+        <p>Subscribe</p>
+      </a>
+      <div class="tab-divide-line end-content"></div>
+      <h3 id="cu" class="sub-topic-heading">Contact Us</h3>
+      <p class="tab-p margin-top-neg-2">
+        <b
+          >If you have questions, please contact the ITB CoP email at
+          <a href="mailto:itvmo@gsa.gov?subject=IT Buyers Community of Practice"
+            >ITVMO@gsa.gov</a
+          ></b
+        >
+      </p>
+    </div>
+    <div class="content-nav">
+      <div class="nav-list">
+        <h3>On this Tab</h3>
+        <a
+          id="sn-it-buyers-cop-overview"
+          class="page-nav page-nav-active"
+          href="#it-buyers-cop-overview"
+          onclick="return removeTabContent(this)"
+          >Overview</a
+        >
+        <a class="page-nav" href="#wwd" onclick="return removeTabContent(this)"
+          >What We Do</a
+        >
+        <a class="page-nav" href="#wwr" onclick="return removeTabContent(this)"
+          >Who We Are</a
+        >
+        <a
+          class="page-nav"
+          href="#leadership"
+          onclick="return removeTabContent(this)"
+          >Leadership</a
+        >
+        <a class="page-nav" href="#htgi" onclick="return removeTabContent(this)"
+          >How to Get Involved</a
+        >
+        <a class="page-nav" href="#cu" onclick="return removeTabContent(this)"
+          >Contact Us</a
+        >
+      </div>
+    </div>
+  </div>
+</section>

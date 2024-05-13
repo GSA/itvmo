@@ -15,7 +15,7 @@ strategic plan, the Governmentwide IT Category
 Manager is prioritizing mechanisms to rebound and
 grow this small business supply base.
 "
-url-link: "https://community.max.gov/download/attachments/2384565414/July%202023%20IT%20Buyers%20Bulletin.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2384565414/July%202023%20IT%20Buyers%20Bulletin.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"

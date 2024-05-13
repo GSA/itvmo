@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "ServiceNow Close Out Flyer"
 description: "The ITVMO categorized agency challenges and worked with ServiceNow to provide solutions. The resulting procurement related best practices series significantly reduced the challenges and impacts previously identified."
-url-link: "https://community.max.gov/download/attachments/2314102898/ServiceNow%20-%20Assessment%20Close-Out%20Summary.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2314102911/ITVMO%20ServiceNow%20Assessment%20Close-Out%20Summary.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"

@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "How OEMs Operate: Recap"
 description: "Recap of understanding how OEMs are organized and operate. .gov/.mil audience only"
-url-link: "https://community.max.gov/download/attachments/2403246889/Module-8--%20IBT_OEM%20Operations_%20Module%20Recap.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2403246889/Module-8--%20IBT_OEM%20Operations_%20Module%20Recap.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"

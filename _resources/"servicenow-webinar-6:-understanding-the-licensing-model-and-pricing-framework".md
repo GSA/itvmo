@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "ServiceNow Webinar 6: Understanding the Licensing Model and Pricing Framework"
 description: "As a critical platform for many agencies, ServiceNow acquisition and growth strategy requires careful planning and preparation. Watch this webinar to learn best practices for how to purchase ServiceNow to ensure your agency can effectively manage its ServiceNow footprints and receive the best value for your investment."
-url-link: "https://vimeo.com/gsavisualcommunications/review/801300403/10b41cd269"
+url-link: "https://community.connect.gov/display/Egov/Webinar+6%3A+Understanding+the+Licensing+Model+and+Pricing+Framework"
 type: "PDF"
 gov-only: "true"
 is-external: "false"

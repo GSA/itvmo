@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "How OEMs Operate: Sales Support"
 description: "OEMs have several different functions to support the sales arm of its operations. Many of these functions may be in the background hidden from your organization, but others are front and center when executing a purchase. This overview focuses on the sales support areas that your team will likely encounter during the sales process. .gov/.mil audience only"
-url-link: "https://community.max.gov/download/attachments/2403246889/Module-5--%20IBT_OEM%20Operations_%20Sale%20Support.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2403246889/Module-5--%20IBT_OEM%20Operations_%20Sale%20Support.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"

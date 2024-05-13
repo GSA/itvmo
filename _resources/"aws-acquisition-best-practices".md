@@ -1,8 +1,8 @@
 ---
-highlight: "false" 
+highlight: "false"
 title: "AWS Acquisition Best Practices"
 description: "This AWS presentation reviews best practices for Government Cloud Acquisitions. Review AWS recommendations to help better procure your next AWS need."
-url-link: "https://community.max.gov/download/attachments/2314102898/AWS%20-%20Acquisition%20Best%20Practices.pdf?api=v2"
+url-link: "https://community.connect.gov/download/attachments/2314102898/AWS%20-%20Acquisition%20Best%20Practices.pdf?api=v2"
 type: "PDF"
 gov-only: "true"
 is-external: "false"
