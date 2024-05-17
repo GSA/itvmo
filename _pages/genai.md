@@ -9,7 +9,6 @@ sidenav: false
 redesign: true
 mainpage: false
 genai: true
-
 ---
 
 {% include genai-guide-single-page.html %}
