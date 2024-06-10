@@ -8,7 +8,7 @@ publication-date: March 30, 2023
 reading-time: 30
 type: PDF
 gov-only: false
-is-external: true
+is-external: false
 filter: acquisition-best-practices
 audience: contracts-acquisitions
 resource-type: guidance
