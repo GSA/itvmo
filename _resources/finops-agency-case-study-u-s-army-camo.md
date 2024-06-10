@@ -20,8 +20,8 @@ reading-time: 10
 type: PDF
 gov-only: false
 is-external: false
-filter: market-intelligence
-audience: program-operations
+filter: acquisition-best-practices
+audience: contracts-acquisitions
 resource-type: use-case
 branded-offerings: acquisition-policy-it-category
 ---
