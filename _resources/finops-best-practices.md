@@ -10,7 +10,7 @@ type: PDF
 gov-only: false
 is-external: true
 filter: acquisition-best-practices
-audience: program-operations
+audience: contracts-acquisitions
 resource-type: guidance
-branded-offerings: market-it-data-intelligence
+branded-offerings: acquisition-policy-it-category
 ---
