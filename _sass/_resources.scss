@@ -151,6 +151,7 @@ a.checked {
               border: #aaaaaa 1px solid;
               border-radius: 20px;
               overflow: hidden;
+              text-decoration: none;
               // padding: 20px 15px 20px 15px;
               img,
               .highlight-description {
@@ -1373,7 +1374,7 @@ a.checked {
       }
       td {
         li {
-          color: #1b2b85;
+          color: #0d3c58;
           font-weight: 700;
           span {
             color: #f15922;
@@ -2335,6 +2336,28 @@ html * {
     font-size: 1.6875em;
     font-weight: 600;
   }
+
+  .summit-logo-top {
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+    align-items: flex-start !important;
+    #annual-summit-logo {
+      width: 277px;
+      height: 298px;
+    }
+    .tab-img-p-image {
+      width: 286px;
+      height: 272px;
+      border-radius: 10px;
+    }
+    .tab-img-p-image-small {
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+    }
+  }
+
   .tab-img-p {
     display: flex;
     flex-direction: row;
@@ -4949,6 +4972,9 @@ html * {
   color: #1b2b85;
   line-height: 1.2;
   padding-top: 1.5rem;
+  span {
+    color: #ff580a;
+  }
 }
 
 .itvmo-article-sub-4 {
@@ -5010,6 +5036,11 @@ html * {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+.mt-2 {
+  margin-top: 2em !important;
+}
+
 .mb-1 {
   margin-bottom: 1em !important;
 }
@@ -5094,6 +5125,29 @@ html * {
   align-items: center;
 }
 
+.article-card-position {
+  font-style: italic;
+  margin: 0;
+  color: #555555;
+  line-height: 1;
+}
+.article-img-shape {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.article-profile-img {
+  width: 16%;
+  padding: 0px 0px 0px 0px;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  .article-profile-img {
+    width: 33%;
+  }
+}
 .article-link-body {
   width: 80%;
   display: flex;
@@ -5102,6 +5156,16 @@ html * {
   justify-content: center;
   row-gap: 3px;
   padding: 2em;
+}
+
+.article-link-body2 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 3px;
+  padding: 1em;
 }
 
 .article-img-cont {
@@ -5203,4 +5267,82 @@ html * {
 .overlay-icon {
   width: 10% !important;
   margin: auto;
+}
+
+.table-section-break {
+  background-color: #ff5400 !important;
+  color: white !important;
+  li {
+    color: white !important;
+  }
+}
+
+.table-value-header {
+  color: #0d3c58;
+}
+
+.panelest-list {
+  list-style-type: square !important;
+  padding-left: 1.5rem !important;
+
+  li::marker {
+    color: #ff5400;
+  }
+}
+
+.pt-0 {
+  padding-top: 0px !important;
+}
+
+.section-underline {
+  height: 2px;
+  width: 100%;
+  background-color: #ff5400;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.profile-list-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+}
+
+.profile-list-profile {
+  width: 110px;
+  padding: 0px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ff5400;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 800px) {
+  .profile-list-profile {
+    width: 20%;
+  }
+  #annual-summit {
+    .center-table {
+      .styled-table {
+        th {
+          min-width: 90px;
+        }
+      }
+    }
+  }
+}
+
+.profile-list-profile-img {
+  border-radius: 50%;
+}
+
+.profile-list-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 3px;
+  padding: 1em;
 }

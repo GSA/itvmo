@@ -1,27 +1,21 @@
 //Styled for the contract-data-elements-guide page.
-.blue-bold
-{
-  b
-  {
-    color:#1b2b85;
+.blue-bold {
+  b {
+    color: #1b2b85;
   }
 }
-.fname
-{
+.fname {
   font-weight: bold;
   border-right: #d7d7d7 1px solid;
 }
-.fname-b 
-{
-    border-right: #d7d7d7 1px solid;
-    b 
-    {
-        color: #002656;
-    }
+.fname-b {
+  border-right: #d7d7d7 1px solid;
+  b {
+    color: #002656;
+  }
 }
 
-#report
-{
+#report {
   color: white;
   background-color: #162a75;
   border: none;
@@ -30,8 +24,7 @@
   vertical-align: center;
   text-decoration: none;
 }
-.indent
-{
+.indent {
   padding-left: 15px;
 }
 
@@ -45,47 +38,38 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   border: #d7d7d7 1px solid;
   overflow-x: auto;
-  b
-  {
-    color:#1b2b85;
+  b {
+    color: #0d3c58;
   }
-  thead
-  {
-      tr 
-      {
-          background-color: #162a75;
-          color: #ffffff;
-          text-align: left;
-      }
+  thead {
+    tr {
+      background-color: #0d3c58;
+      color: #ffffff;
+      text-align: left;
+    }
   }
-  th,td 
-  {
-      padding: 12px 15px;
-      line-height: 25px;
+  th,
+  td {
+    padding: 12px 10px;
+    line-height: 25px;
   }
-  td 
-  {
-    ul 
-    {
-        display: flex;
-        flex-direction: column;
-        row-gap: 15px;
+  td {
+    ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
     }
     min-height: 400px;
   }
-  tbody 
-  {
-      tr:nth-of-type(even) 
-      {
-          background-color: #f3f3f3;
-      }
+  tbody {
+    tr:nth-of-type(odd) {
+      background-color: #f3f3f3;
+    }
   }
 }
-.fixed-height
-{
-    table-layout: fixed;
-    td 
-    {
-        height: 81px;
-    }
+.fixed-height {
+  table-layout: fixed;
+  td {
+    height: 81px;
+  }
 }
