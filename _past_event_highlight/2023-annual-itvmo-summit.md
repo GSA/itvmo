@@ -1,5 +1,5 @@
 ---
-url-link: https://itvmo.gsa.gov/annual-summit/
+url-link: https://itvmo.gsa.gov/annual-summit-23/
 title: 2023 Annual ITVMO Summit
 description: On August 2, 2023, the ITVMO partnered with ACT-IAC to host the
   first Annual ITVMO Summit. This in-person event brought both industry and
