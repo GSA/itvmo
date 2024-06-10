@@ -8,9 +8,9 @@ publication-date: March 30, 2023
 reading-time: 15
 type: Subpage
 gov-only: false
-is-external: true
-filter: itvmo-general
-audience: program-operations
+is-external: false
+filter: acquisition-best-practices
+audience: contracts-acquisitions
 resource-type: tool
-branded-offerings: market-it-data-intelligence
+branded-offerings: acquisition-policy-it-category
 ---
