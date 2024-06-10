@@ -9,8 +9,8 @@ reading-time: 15
 type: Subpage
 gov-only: false
 is-external: true
-filter: itvmo-general
-audience: program-operations
+filter: acquisition-best-practices
+audience: contracts-acquisitions
 resource-type: tool
-branded-offerings: market-it-data-intelligence
+branded-offerings: acquisition-policy-it-category
 ---
