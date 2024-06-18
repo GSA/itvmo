@@ -5,8 +5,8 @@ title: OMB Strengthening Federal Marketplace, Cyber Partnerships
 url-link: https://meritalk.com/articles/omb-strengthening-federal-marketplace-cyber-partnerships/
 publication-date: June 11, 2024
 description: The Office of Management and Budget (OMB) is enhancing partnerships
-  in the federal marketplace to bolster cybersecurity. Speaking at the second
-  annual ITVMO Summit Jason Miller, OMB’s Deputy Director for Management,
+  in the federal marketplace to bolster cybersecurity. Speaking at the Second
+  Annual ITVMO Summit Jason Miller, OMB’s Deputy Director for Management,
   emphasized the increase in new businesses and entrants in government
   contracts. This initiative is part of a broader strategy to modernize and
   secure federal infrastructure, leveraging partnerships with entities like
