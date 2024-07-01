@@ -3,6 +3,7 @@ title: Generative AI and Specialized Computing Infrastructure Acquisition Resour
 title-image: "/assets/images/icons/page_icons/generative-ai-logo.svg"
 heading-description: ""
 description: "This website is designed to help Federal purchasers acquire generative AI and specialized computing infrastructure for their organizations."
+keywords: "Executive Order 14110, Generative Artificial Intelligence, Specialized Computing Infrastructure, Acquisition Resource Guide, Procurement, Large Language Models, Multiple Award Schedules, AI, ai, gen ai, Generative AI, "
 layout: page
 permalink: /genai/
 sidenav: false
