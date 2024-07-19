@@ -1,876 +1,959 @@
 <section id="inner-page-tabs">
-    <!-- Inner tab dropdown for the mobile version -->
-    <div id="tabs-mobile-container">
-       <select id="tabs-mobile" onchange="openTabDropdown();">
-          <option value="our-mission-header">Our Mission</option>
-          <option value="our-partners-header">Our Partners</option>
-          <option value="meet-the-team-header">Meet the Team</option>
-       </select>
-    </div>
-    <div class="tabs">
-       <a id="our-mission-header" tabindex="0" class="tab active-tab" onclick="openTab(event, 'our-mission')" onkeydown="openTabKey(event, 'our-mission')">Our Mission</a>
-       <a id="our-partners-header" tabindex="0" class="tab" onclick="openTab(event, 'our-partners')" onkeydown="openTabKey(event, 'our-partners')">Our Partners</a>
-       <a id="meet-the-team-header" tabindex="0" class="tab" onclick="openTab(event, 'meet-the-team')" onkeydown="openTabKey(event, 'meet-the-team')">Meet the Team</a>
-    </div>
-    <div id="our-mission" class="tabcontent" style="display: flex;">
-       <div class="contents">
-          <h3 class="topic-heading">
-             Our Mission
-          </h3>
-          <h3 id="our-mission-overview" class="sub-topic-heading">
-            Our Mission
-          </h3>
-          <p class="tab-p">
-              Provide agencies with meaningful intelligence to inform and support faster, smarter IT buying decisions.
-          </p>
-          <a tabindex="0" class="image-container" href="#mission-image" aria-label="Open our Missions image" aria-controls="mission-image" data-open-modal="" role="button">
-            <img src="{{site.baseurl}}/assets/images/screenshot/our-mission.png" alt="Our Missions image">
-            <div class="image-overlay">
-              <img src="{{site.baseurl}}/assets/images/icons/search-icon-white.svg" alt="search-icon" class="overlay-icon">
-            </div>
-          </a>
-          <div
-            class="usa-modal usa-modal-team-member usa-modal-bg-transparent" id="mission-image">
-            <div class="usa-modal__content">
-              <div class="usa-modal__main usa-modal-main-no-padding">
-                <img src="{{site.baseurl}}/assets/images/screenshot/our-mission.png" alt="Our Missions image">
-              </div>
-                <button
-                  type="button" class="usa-button usa-modal__close usa-modal-close-no-padding-right" aria-label="Close this window" data-close-modal
-                >
-                  <img src="{{site.baseurl}}/assets/images/icons/exit-icon-white.svg" alt="Exit button" class="exit-button">
-                </button>
-            </div>
-          </div>
-          <h3 id="our-history" class="sub-topic-heading">
-             Our History
-          </h3>
-          <p class="tab-p">
-            In Fiscal Year (FY) 2020, the Chief Acquisition Officers, Chief Information Officers, and Chief Information Security Officers Councils collectively stressed that more focus was needed on IT vendor relationship management to standardize technical requirements, mitigate cyber-risk, improve data quality, and further leverage the government’s buying power to drive governmentwide improvements and business transformation.
-          </p>
-          <p class="tab-p">
-            In October 2020 (FY2021), the Office of Management and Budget (OMB) established the <b>Information Technology Vendor Management Office (ITVMO)</b> within the <a target="_blank" rel="noreferrer noopener" href="https://www.acquisition.gov/content/category-management">Governmentwide Category Management Framework</a> to help solve the challenges agencies face when they buy commodity IT. The lack of a unified, governmentwide IT acquisitions approach means agencies experience different prices for the same products and services, redundant acquisition efforts, and different terms and conditions.
-          </p>
-          <p class="tab-p">
-            The ITVMO advances the goals of <b>Category Management (CM)</b> to improve how the government buys common IT goods and services, including ensuring best pricing and eliminating duplicative contracts. As a collaborative effort between OMB and the largest Federal Acquisitions Programs, including <b>General Services Administration (GSA)</b>, the <b>National Aeronautics and Space Administration (NASA)</b>, the <b>National Institutes of Health (NIH)</b>, and the <b>Department of Defense (DOD)</b>, the ITVMO improves how the government uses acquisition intelligence to inform faster, smarter IT buying.
-          </p>
-          <h3 id="osacn" class="sub-topic-heading">
-            Our Stakeholder and Customer Network
-          </h3>
-          <p class="tab-p">
-            The ITVMO exists within the complex Federal IT Acquisitions Ecosystem composed of various champions, stakeholders, customers, and partners. The ITVMO works with buyers, vehicle solution holders, and suppliers (and resellers) to drive smarter, faster IT acquisitions.
-         </p>
-         <div class="bulletSections">
-            <div class="topLine"></div>
-            <ul class="experiences">
-               <li class="bulletText"><b>Agency IT Buyers:</b> The ITVMO advises and advocates on behalf of agency IT buyer needs by serving them as their federal representative. Additionally, the ITVMO supports agency IT buyers on translating governing policies and navigating the federal marketplace.</li>
-               <li class="bulletText"><b>Vehicle Solution Holders:</b> Through the ITVMO’s Executive Steering Committee the program works with the IT Best-in-Class Vehicles to standardize requirements and increase market compliance.</li>
-               <li class="bulletText"><b>Federal and Industry Partners:</b> The ITVMO extends its network and access to subject matter experts and resources by working across federal programs and ally organizations (e.g., Private-Public Partnerships).</li>
-               <li class="bulletText"><b>Suppliers (and Resellers):</b> The ITVMO partners with OEMs, Small Businesses, and new entrants to solve common challenges and improve interoperability.</li>
-            </ul>
-         </div> 
-          <h3 id="wwwu" class="sub-topic-heading">
-            Why Work With Us
-          </h3>
-          <p class="tab-p">
-            The ITVMO offers a coordinated voice representing all agencies to the vendor community. As agencies plan for and develop their OEM requirements and strategies they will be able to leverage ITVMO artifacts for: prices paid for similar products, standardized terms and conditions, recommended vendor negotiation strategies and best practices, and best practices for supply chain risk mitigation.  By working with the ITVMO.
-         </p>
-         <div class="bulletSections">
-            <div class="topLine"></div>
-            <ul class="experiences">
-               <li class="bulletText"><b>Customer-focus:</b> Trusted advisors to agency buyers with significant domain expertise.</li>
-               <li class="bulletText"><b>Convenience:</b> One-stop shop for IT acquisition and market intelligence and resources.</li>
-               <li class="bulletText"><b>Cost Savings:</b> Solutions to assist buyers in getting the best value (smarter, faster).</li>
-               <li class="bulletText"><b>Compliance:</b> Strong policy acumen to inform agency acquisition strategies.</li>
-            </ul>
-         </div> 
-         <p class="tab-p margin-top-neg-3">
-            <b><a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/contact-us-contribute?tabName=contact-us-header">Contact Us</a> today.</b>
-         </p>
-          <h3 id="aaacss" class="sub-topic-heading">
-            Annual Assessments and Customer Satisfaction Survey
-          </h3>
-          <p class="tab-p">
-            Annually, the governmentwide ITVMO compiles and submits an annual summary of its performance. The report addresses information covering accomplishments of that fiscal year and its operational plan for the following fiscal year as follows:
-         </p>
-         <div class="bulletSections">
-            <div class="topLine"></div>
-            <ul class="experiences">
-               <li class="bulletText"><b>Prior year accomplishments and success stories.</b> </li>
-               <li class="bulletText"><b>Strategic goals for following FY with key milestones.</b> </li>
-               <li class="bulletText"><b>A list of expiring or new GWACS planned over the following.</b> </li>
-            </ul>
-         </div> 
-         <p class="tab-p margin-top-neg-3">
-          In addition, in FY2023 the ITVMO prepared and opened an annual customer satisfaction survey for all customers and stakeholders of the organization. The survey was open from late September through early November.
-        </p>
-        <p class="tab-p">
-            The customer satisfaction survey will be used to evaluate success from the customer perspective and inform priorities and needs for the upcoming fiscal year.
-        </p>
-          <div class="usa-accordion">
-             <h3 class="usa-accordion__heading">
-                <button id="vendor-research" class="accordion" aria-expanded="false" aria-controls="b-a1" onclick="displayTabContent(this)">
-                <span>
-                FY 2023
-                </span>
-                <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
-                </button>
-             </h3>
-             <div id="b-a1" class="accordion-content ">
-                <div>
-                   <div class="links-list margin-0">
-                      <div class="links-list-heading">
-                         <h4  class="margin-0 margin-top-2">
-                          ITVMO Annual Customer Satisfaction Survey       
-                          </h4>
-                      </div>
-                   </div>
-                   <p class="tab-p margin-top-neg-3">
-                    The governmentwide IT Vendor Management Office was established October 1, 2020 (FY21) by joining the four major Federal Acquisition Programs from GSA, NASA, NIH, and DoD. It was created to provide a meaningful IT acquisition intelligence capability by:
-                  </p>
-                   <ul>
-                    <li>Building OEM and agency buyer relationships</li>
-                    <li>Standardizing contract terms and conditions</li>
-                    <li>Mitigating govwide operability and cyber risks</li>
-                    <li>Improving data quality and use in acquisition strategies</li>
-                    <li>Developing training for the federal acquisition workforce</li>
-                  </ul>
-                  <p class="tab-p margin-top-0">
-                    To support faster, smarter IT buying decisions, governmentwide. For more on information on the ITVMO visit us at ITVMO.gsa.gov and checkout the <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/assets/files/fy-2023-itvmo-annual-assessment.pdf">FY2023 Annual Assessment</a> on our recent annual accomplishments and a look at the year ahead.
-                  </p>
-                </div>
-             </div>
-             <h3 class="usa-accordion__heading">
-                <button id="small-business-research" class="accordion" aria-expanded="false" aria-controls="b-a2" onclick="displayTabContent(this)">
-                <span>
-                FY2022
-                </span>
-                <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
-                </button>
-             </h3>
-             <div id="b-a2" class="accordion-content ">
-                <div>
-                    <div class="links-list margin-0">
-                       <div class="links-list-heading">
-                          <h4  class="margin-0 margin-top-2">
-                             October 1, 2021 -- September 30, 2022          
-                           </h4>
-                       </div>
-                       <p class="tab-p margin-top-0">
-                         <b>The ITVMO did not start making the annual assessment public until FY 2023. For better insights into the FY2022 performance year, please 
-                             <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/contact-us-contribute?tabName=contact-us-header">Contact Us</a>.
-                         </b>
-                     </p>
-                    </div>
-                 </div>
-             </div>
-             <h3 class="usa-accordion__heading">
-                <button id="budget-spend-obligation-research" class="accordion" aria-expanded="false" aria-controls="b-a3" onclick="displayTabContent(this)">
-                <span>
-                FY2021
-                </span>
-                <img class="tab-arrow" src="{{site.baseurl}}/assets/images/icons/arrow-down.svg">
-                </button>
-             </h3>
-             <div id="b-a3" class="accordion-content margin-bottom-4">
-                <div>
-                    <div class="links-list margin-0">
-                       <div class="links-list-heading">
-                          <h4  class="margin-0 margin-top-2">
-                            October 1, 2020 -- September 30, 2021       
-                           </h4>
-                       </div>
-                       <p class="tab-p margin-top-0">
-                         <b>The ITVMO did not start making the annual assessment public until FY 2023. For better insights into the FY2021 performance year, please 
-                             <a target="_blank" rel="noreferrer noopener" href="{{site.baseurl}}/contact-us-contribute?tabName=contact-us-header">Contact Us</a>.
-                         </b>
-                     </p>
-                    </div>
-                 </div>
-             </div>
-          </div>
-      </div>
-       <div class="content-nav">
-          <div class="nav-list">
-             <h3>On this Tab</h3>
-             <a id="sn-omo" class="page-nav page-nav-active" href="#our-mission-overview" onclick="return removeTabContent(this)">Our Mission</a>
-             <a id="sn-oh" class="page-nav" href="#our-history" onclick="return removeTabContent(this)">Our History</a>
-             <a id="sn-osacn" class="page-nav" href="#osacn" onclick="return removeTabContent(this)">Our Stakeholder and Customer Network</a>
-             <a id="sn-wwwu" class="page-nav" href="#wwwu" onclick="return removeTabContent(this)">Why Work With Us</a>
-             <a id="sn-aaacss" class="page-nav" href="#aaacss" onclick="return removeTabContent(this)">Annual Assessments and<br> Customer Satisfaction Survey</a>
-          </div>
-       </div>
-    </div>
-    <div id="our-partners" class="tabcontent">
-       <div class="contents-no-side-nav">
-            <h3 id="contract-guidance-overview" class="topic-heading">
-              Our Partners
-            </h3>
-            <div class="grid-container">
-                <ul class="usa-card-group">
-                  <li class="usa-card usa-card--flag">
-                    <div class="usa-card__container">
-                      <div class="usa-card__media serviceCard">
-                        <div class="leftPort" >
-                          <img class="imgCont"
-                            src="{{site.baseurl}}/assets/images/logos/office-of-management-and-budget.png"
-                            alt="The White House logo"
-                          />
-                        </div>
-                      </div>
-              
-                      <div class="usa-card__body">
-                        <!-- THIS IS THE RESPONSIVE COMPONENT SAME INFORMATION AS TOP SECTION SHOULD DUPLICATE -->
-                        <div class="resCardSec"> 
-                          <div>
-                            <img class="imgContres"
-                            src="{{site.baseurl}}/assets/images/logos/office-of-management-and-budget.png"
-                            alt="The White House logo"
-                          />
-                          </div>
-                          <a target="_blank" rel="noreferrer noopener" class="partnerHeader" href="https://www.whitehouse.gov/omb/" class="resHeading">
-                             <h2 class="usa-card__heading">Office of Management and Budget </h2>
-                          </a>
-                        </div>
-                        <!-- END OF RESPONSIVE COMPONET -->
-                        <a target="_blank" rel="noreferrer noopener" class="partnerHeader" href="https://www.whitehouse.gov/omb/">Office of Management and Budget <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"></a>
-                        <p class="cardBody"><a target="_blank" rel="noreferrer noopener" class="plink" href="https://www.whitehouse.gov/omb/management/office-federal-procurement-policy/">The Office of Federal Procurement Policy (OFPP) <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg"></a>
-                          -- OFPP sets governmentwide acquisition priorities and policies, which shape the full range of federal agency procurement practices. </p>
-                
-                        <p class="cardBody"><a target="_blank" rel="noreferrer noopener" class="plink" href="https://www.whitehouse.gov/omb/management/ofcio/">Office of the Federal Chief Information Officer (OFCIO) <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg"></a> 
-                          -- also known as the Office of E-Government and Information Technology (E-Gov). The OFCIO develops and provides direction in the use of technology to make it easier for citizens and businesses to
-                           interact with the Federal Government, save taxpayer dollars, and streamline citizen participation. </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="usa-card usa-card--flag">
-                    <div class="usa-card__container">
-                      <div class="usa-card__media serviceCard">
-                        <div class="leftPort" >
-                          <img class="imgCont"
-                            src="{{site.baseurl}}/assets/images/logos/gsa-logo-large.png"
-                            alt="GSA logo"
-                          />
-                        </div>
-                      </div>
-              
-                      <div class="usa-card__body">
-                        <div class="resCardSec"> 
-                          <div>
-                            <img class="imgContres"
-                            src="{{site.baseurl}}/assets/images/logos/gsa-logo-large.png"
-                            alt="GSA logo"
-                          />
-                          </div>
-                          <a target="_blank" rel="noreferrer noopener" class="partnerHeader" href="https://www.gsa.gov/" class="resHeading">
-                             <h2 class="usa-card__heading">General Services Administration </h2>
-                          </a>
-                        </div>
-                        <a target="_blank" rel="noreferrer noopener" class="partnerHeader" href="https://www.gsa.gov/">General Services Administration <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"></a>
-                        <p class="cardBody">
-                            GSA helps manage and support the basic functions of federal agencies. Primarily, the ITVMO works with the 
-                            <a target="_blank" rel="noreferrer noopener" class="plink" href="https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/technology-products-services">Federal Acquisition Service’s Office of Information Technology Category <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg"></a>
-                            to assist in offering state of the art commercial products, systems, services and support to federal, state and local governments.</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="usa-card usa-card--flag">
-                    <div class="usa-card__container">
-                      <div class="usa-card__media serviceCard">
-                        <div class="leftPort" >
-                          <img class="imgCont"
-                            src="{{site.baseurl}}/assets/images/logos/nasa-logo.png"
-                            alt="NASA logo"
-                          />
-                        </div>
-                      </div>
-              
-                      <div class="usa-card__body">
-                        <div class="resCardSec"> 
-                          <div>
-                            <img class="imgContres"
-                            src="{{site.baseurl}}/assets/images/logos/nasa-logo.png"
-                            alt="NASA logo"
-                          />
-                          </div>
-                          <a target="_blank" rel="noreferrer noopener" class="partnerHeader" href="https://www.gsa.gov/" class="resHeading">
-                             <h2 class="usa-card__heading">National Aeronautics and Space Administration </h2>
-                          </a>
-                        </div>
-                        <a target="_blank" rel="noreferrer noopener" class="partnerHeader" href="https://www.gsa.gov/">National Aeronautics and Space Administration <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"></a>
-                        <p class="cardBody">
-                            NASA is responsible for the civil space program, aeronautics research, and space research. The ITVMO works with the 
-                            <a target="_blank" rel="noreferrer noopener" class="plink" href="https://www.sewp.nasa.gov/index.shtml">NASA Solutions for Enterprise-wide Procurement (SEWP) Program <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg"></a>
-                            to help in providing the latest in Information and Communications Technology (ICT) and Audio-Visual (AV) products and services for all agencies and their approved contractors.</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="usa-card usa-card--flag">
-                    <div class="usa-card__container">
-                      <div class="usa-card__media serviceCard">
-                        <div class="leftPort padding-left-3" >
-                          <img class="imgCont"
-                            src="{{site.baseurl}}/assets/images/logos/nih-logo.png"
-                            alt="National Institute of Health logo"
-                          />
-                        </div>
-                      </div>
-              
-                      <div class="usa-card__body">
-                        <div class="resCardSec"> 
-                          <div>
-                            <img class="imgContres"
-                            src="{{site.baseurl}}/assets/images/logos/nih-logo.png"
-                            alt="National Institute of Health logo"
-                          />
-                          </div>
-                          <a target="_blank" rel="noreferrer noopener" class="partnerHeader" href="https://www.nih.gov/" class="resHeading">
-                             <h2 class="usa-card__heading">National Institute of Health </h2>
-                          </a>
-                        </div>
-                        <a target="_blank" rel="noreferrer noopener" class="partnerHeader" href="https://www.nih.gov/">National Institute of Health <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"></a>
-                        <p class="cardBody">
-                            NIH is one of the world's foremost medical research centers turning discovery into health. The ITVMO works with the  
-                            <a target="_blank" rel="noreferrer noopener" class="plink" href="https://nitaac.nih.gov/">NIH Information Technology Acquisition and Assessment Center (NITAAC) <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg"></a>,
-                             which is a full service acquisition program that administers three Government-Wide Acquisition Contracts (GWACs) for information technology (IT) acquisitions.</p>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="usa-card usa-card--flag">
-                    <div class="usa-card__container">
-                      <div class="usa-card__media serviceCard">
-                        <div class="leftPort" >
-                          <img class="imgCont"
-                            src="{{site.baseurl}}/assets/images/logos/dod-logo.png"
-                            alt="Department of Defense logo"
-                          />
-                        </div>
-                      </div>
-              
-                      <div class="usa-card__body">
-                        <div class="resCardSec"> 
-                          <div>
-                            <img class="imgContres"
-                            src="{{site.baseurl}}/assets/images/logos/dod-logo.png"
-                            alt="Department of Defense logo"
-                          />
-                          </div>
-                          <a target="_blank" rel="noreferrer noopener" class="partnerHeader" href="https://www.defense.gov/" class="resHeading">
-                             <h2 class="usa-card__heading">Department of Defense </h2>
-                          </a>
-                        </div>
-                        <a target="_blank" rel="noreferrer noopener" class="partnerHeader" href="https://www.defense.gov/">Department of Defense <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"></a>
-                        <p class="cardBody">
-                            DOD is charged with coordinating and supervising all agencies and functions of the U.S. government directly related to national security and the United States Armed Forces. The ITVMO works with 
-                            <a target="_blank" rel="noreferrer noopener" class="plink" href="https://www.eis.army.mil/programs/chess">DOD’s Computer Hardware, Enterprise Software and Solutions (CHESS) Program <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external-small.svg"></a>.
-                            CHESS is the main provider of commercial enterprise information technology solutions, computer software, and hardware for the United States Army.</p>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              
-            </div>
-       </div>
-    </div>
-    <div id="meet-the-team" class="tabcontent">
-       <div class="contents-no-side-nav">
-          <h3 id="" class="topic-heading">
-             Meet the Team
-          </h3>
-          <div id="team-container">
-            <a tabindex="0" class="team-member" href="#warren-blankenship" aria-label="Open the Warren J. Blankenship information"
-            aria-controls="warren-blankenship" data-open-modal>
-            <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/warren-blankenship.png" alt="warren Blankenship image">
-            <h3 class="profile-name">
-                Warren J. Blankenship
-            </h3>
-            <p class="profile-title">
-                    Deputy IT Government-wide Category Manager
-            </p>
-            </a>
-            <a tabindex="0" class="team-member" href="#brittany-chapman" aria-label="Open Brittany A. Chapman information"
-            aria-controls="brittany-chapman" data-open-modal>
-            <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/brittany-chapman.jpeg" alt="Brittany A. Chapman image">
-            <h3 class="profile-name">
-                Brittany A. Chapman
-            </h3>
-            <p class="profile-title">
-                IT Best In Class Manager
-            </p>
-            </a>
-            <a tabindex="0" class="team-member" href="#peng-chhour" aria-label="Open Peng Chhour information"
-            aria-controls="peng-chhour" data-open-modal>
-            <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/peng-chhour.png" alt="Peng Chhour image">
-            <h3 class="profile-name">
-                Peng Chhour
-            </h3>
-            <p class="profile-title">
-                Senior Advisor
-            </p>
-            </a>
-            <a tabindex="0" class="team-member" href="#john-radziszewski" aria-label="Open John Radziszewski information"
-            aria-controls="john-radziszewski" data-open-modal>
-            <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/john-radziszewski.png" alt="John Radziszewski image">
-            <h3 class="profile-name">
-                John Radziszewski
-            </h3>
-            <p class="profile-title">
-                ITVMO Director
-            </p>
-            </a>
-            <a tabindex="0" class="team-member" href="#william-spencer" aria-label="Open William Spencer information"
-            aria-controls="william-spencer" data-open-modal>
-            <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/william-spencer.png" alt="William Spencer image">
-            <h3 class="profile-name">
-                William Spencer
-            </h3>
-            <p class="profile-title">
-                Senior Advisor
-            </p>
-            </a>
-            <a tabindex="0" class="team-member" href="#kyra-stewart" aria-label="Open Kyra Stewart information"
-            aria-controls="kyra-stewart" data-open-modal>
-            <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/kyra-stewart-new.png" alt="Kyra Stewart image">
-            <h3 class="profile-name">
-                Kyra Stewart
-            </h3>
-            <p class="profile-title">
-                Program Manager
-            </p>
-            </a>
-            <a tabindex="0" class="team-member" href="#heather-stier" aria-label="Open Heather Stier information"
-            aria-controls="heather-stier" data-open-modal>
-            <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/heather-stier.png" alt="Heather Stier image">
-            <h3 class="profile-name">
-                Heather Stier
-            </h3>
-            <p class="profile-title">
-                IT Acquisition and Vendor Senior Advisor
-            </p>
-            </a>
-            <a tabindex="0" class="team-member" href="#clarence-harrison" aria-label="Open  Clarence Harrison Jr information"
-            aria-controls="clarence-harrison" data-open-modal>
-            <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/clarence-harrison.jpg" alt="Clarence Harrison Jr image">
-            <h3 class="profile-name">
-                Clarence Harrison Jr
-            </h3>
-            <p class="profile-title">
-                Senior Advisor
-            </p>
-            </a>
-          </div>
-          
-
+  <!-- Inner tab dropdown for the mobile version -->
+  <div id="tabs-mobile-container">
+    <select id="tabs-mobile" onchange="openTabDropdown();">
+      <option value="our-mission-header">Our Mission</option>
+      <option value="our-partners-header">Our Partners</option>
+      <option value="meet-the-team-header">Meet the Team</option>
+    </select>
+  </div>
+  <div class="tabs">
+    <a
+      id="our-mission-header"
+      tabindex="0"
+      class="tab active-tab"
+      onclick="openTab(event, 'our-mission')"
+      onkeydown="openTabKey(event, 'our-mission')"
+      >Our Mission</a
+    >
+    <a
+      id="our-partners-header"
+      tabindex="0"
+      class="tab"
+      onclick="openTab(event, 'our-partners')"
+      onkeydown="openTabKey(event, 'our-partners')"
+      >Our Partners</a
+    >
+    <a
+      id="meet-the-team-header"
+      tabindex="0"
+      class="tab"
+      onclick="openTab(event, 'meet-the-team')"
+      onkeydown="openTabKey(event, 'meet-the-team')"
+      >Meet the Team</a
+    >
+  </div>
+  <div id="our-mission" class="tabcontent" style="display: flex">
+    <div class="contents">
+      <h3 class="topic-heading">Our Mission</h3>
+      <h3 id="our-mission-overview" class="sub-topic-heading">Our Mission</h3>
+      <p class="tab-p">
+        Provide agencies with meaningful intelligence to inform and support
+        faster, smarter IT buying decisions.
+      </p>
+      <a
+        tabindex="0"
+        class="image-container"
+        href="#mission-image"
+        aria-label="Open our Missions image"
+        aria-controls="mission-image"
+        data-open-modal=""
+        role="button">
+        <img
+          src="{{site.baseurl}}/assets/images/screenshot/our-mission.png"
+          alt="Our Missions image" />
+        <div class="image-overlay">
+          <img
+            src="{{site.baseurl}}/assets/images/icons/search-icon-white.svg"
+            alt="search-icon"
+            class="overlay-icon" />
         </div>
-    </div>
-    
-        <div
-          class="usa-modal usa-modal-team-member"
-          id="warren-blankenship"
-    
-    
-        >
-          <div class="usa-modal__content">
-            <div class="usa-modal__main">
-                <div class="overlay-team-member">
-                    <div class="overlay-team-member-left">
-                        <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/warren-blankenship.png" alt="warren Blankenship image">
-                        <h3 class="profile-name">
-                            Warren J. Blankenship
-                        </h3>
-                        <p class="profile-title">
-                                Deputy IT Government-wide Category Manager
-                        </p>
-                        <div class="profile-detail">
-                            <div>
-                                <img src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg" alt="location logo"><p>Location - <b>Washington, DC</b></p>
-                            </div>
-                            <div>
-                                <img src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg" alt="calendar logo"><p>ITVMO Start Date - <b>Oct 01, 2020</b></p>
-                            </div>
-                            <div>
-                                <img src="{{site.baseurl}}/assets/images/icons/house-icon.svg" alt="house logo"><p>Government Experience - <b>35 years</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="overlay-team-member-right">
-                        <h3 class="profile-name">
-                            Warren J. Blankenship
-                        </h3>
-                        <p class="profile-title">
-                                Deputy IT Government-wide Category Manager
-                        </p>
-                        <div class="profile-About">
-                            <h4>About</h4>
-                            <p>
-                                Hi, my name is Warren Blankenship, <br>I serve as the Deputy IT Government-wide Category Manager overseeing day-to-day operations for the Federal IT Category. Within the ITVMO, I manage the organization's category management vertical, including category strategy and annual initiatives, agency category support, vehicle data and compliance, and tracking and growing our small business participation across the category. Before this, I held several leadership roles at GSA, including Deputy Director of Contract Operations (FAS/MAS IT), Deputy Director of the Program Office (FAS/MAS IT), Director of the Office of Scientific and Equipment Division (FAS), and Senior Procurement Analyst, where I played a crucial role in formulating and executing Federal Acquisition Regulation (FAR) rules for GSA's Office of Government-wide Policy (OGP) and the Office of Federal Procurement Policy (OFPP). This gave me the unique experience and expertise in procurement and policy to take on the Deputy IT Government-wide Category Manager role. Today, I lead various projects, including monitoring key performance indicators like spend under management, cost avoidance, and small business utilization. Additionally, I oversee the 13 IT Best-In-Class contract solutions. Through these solutions, I have spearheaded several cross-vehicle initiatives to improve compliance with Cyber and Sustainability buying requirements, award and use of small businesses, and further introduction of emerging solutions to modernize government-wide IT.
-                            </p>
-                            <p class="padding-top-3">
-                                I earned my Bachelor of Arts degree from the University of the District of Columbia (UDC) and a Master of Arts in Public Communication from the American University. In 2023, I was honored with the FED 100 Award and completed OPM's Executive Leadership Program, Leadership for a Democratic Society. Outside of work, I'm a devoted fan of the Washington Commanders and Nationals, enjoy comedy sitcoms and movies, and consider myself a music connoisseur and enthusiast.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-              <div class="usa-modal__footer">
-                <ul class="usa-button-group">
-                  <li class="usa-button-group__item">
-                    <button type="button" class="usa-button team-member-button" data-close-modal>
-                        Go back
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <button
-              type="button"
-              class="usa-button usa-modal__close"
-              aria-label="Close this window"
-              data-close-modal
-            >
-              <!-- <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
-                <use xlink:href="{{site.baseurl}}/assets/images/icons/exit-icon.svg"></use>
-              </svg> -->
-            <img src="{{site.baseurl}}/assets/images/icons/exit-icon.svg" alt="Exit button" class="exit-button">
-            </button>
-          </div>
-        </div>
-
-        <div
-          class="usa-modal usa-modal-team-member"
-          id="brittany-chapman"
-    
-    
-        >
-          <div class="usa-modal__content">
-            <div class="usa-modal__main">
-                <div class="overlay-team-member">
-                    <div class="overlay-team-member-left">
-                        <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/brittany-chapman.jpeg" alt="Brittany A. Chapman image">
-                        <h3 class="profile-name">   
-                            Brittany A. Chapman
-                        </h3>
-                        <p class="profile-title">
-                            IT Best In Class Manager
-                        </p>
-                        <div class="profile-detail">
-                            <div>
-                                <img src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg" alt="location logo"><p>Location - <b>Atlanta, GA</b></p>
-                            </div>
-                            <div>
-                                <img src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg" alt="calendar logo"><p>ITVMO Start Date - <b>Aug 22, 2020</b></p>
-                            </div>
-                            <div>
-                                <img src="{{site.baseurl}}/assets/images/icons/house-icon.svg" alt="house logo"><p>Government Experience - <b>9 years
-
-                                </b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="overlay-team-member-right">
-                        <h3 class="profile-name">
-                            Brittany A. Chapman
-                        </h3>
-                        <p class="profile-title">
-                            IT Best In Class Manager            
-                        </p>
-                        <div class="profile-About">
-                            <h4>About</h4>
-                            <p>
-                                Hi, I’m Brittany Chapman, a 14 year Combat Army Veteran. I served honorably as a Combat Medic and Combat Medical logistician supporting Operation Enduring Freedom Afghanistan and Operation Iraqi Freedom. As an IT Best In Class Manager, I provide advice and guidance around Best In Class (BIC) criteria, data standards, and cost avoidance concepts and methodology. This often involves translating overarching policy and guidance from the Office of Management and Budget (OMB) and the Category Management Program Management Office (CM PMO) to facilitate the BIC designation process and continuity of existing BIC vehicle solutions to meet designation requirements and analyzing data to create reports the drive recommendations to support enterprise strategic business decisions.
-                            </p>
-                            <p class="padding-top-3">
-                                I’ve received a Shining Star award for the COMSATCOM/CS3 BIC designation and a  Special Act Award recognizing my exemplary contributions in supporting the “America’s Federal Workforce A Value Proposition for Digital Talent - a public/private joint initiative” white paper.
-                            </p>
-                            <p class="padding-top-3">
-                                Outside of work, I LOVE to read! You’ll never find me without a book in hand or within reach. I am also an avid traveler and have visited 43 countries! I just returned from Nice and Barcelona (Beyonce’s concert). Morocco, Costa Rica, and Colombia are next for me this year.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-              <div class="usa-modal__footer">
-                <ul class="usa-button-group">
-                  <li class="usa-button-group__item">
-                    <button type="button" class="usa-button team-member-button" data-close-modal>
-                        Go back
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <button
-              type="button"
-              class="usa-button usa-modal__close"
-              aria-label="Close this window"
-              data-close-modal
-            >
-            <img src="{{site.baseurl}}/assets/images/icons/exit-icon.svg" alt="Exit button" class="exit-button">
-            </button>
-          </div>
-        </div>
-        <div
-          class="usa-modal usa-modal-team-member"
-          id="peng-chhour"
-    
-    
-        >
-          <div class="usa-modal__content">
-            <div class="usa-modal__main">
-                <div class="overlay-team-member">
-                    <div class="overlay-team-member-left">
-                        <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/peng-chhour.png" alt="Brittany A. Chapman image">
-                        <h3 class="profile-name">   
-                            Peng Chhour
-                        </h3>
-                        <p class="profile-title">
-                            Senior Advisor
-                        </p>
-                        <div class="profile-detail">
-                            <div>
-                                <img src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg" alt="location logo"><p>Location - <b>Philadelphia, PA</b></p>
-                            </div>
-                            <div>
-                                <img src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg" alt="calendar logo"><p>ITVMO Start Date - <b>Apr 01, 2020</b></p>
-                            </div>
-                            <div>
-                                <img src="{{site.baseurl}}/assets/images/icons/house-icon.svg" alt="house logo"><p>Government Experience - <b>14 years</b></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="overlay-team-member-right">
-                        <h3 class="profile-name">
-                            Peng Chhour
-                        </h3>
-                        <p class="profile-title">
-                            Senior Advisor            
-                        </p>
-                        <div class="profile-About">
-                            <h4>About</h4>
-                            <p>
-                                Greetings, I'm Peng, and I've been dedicated to federal service for 14 years. Currently, I counsel the ITVMO and IT Government-wide Category, overseeing over $72 billion in obligations. This category encompasses 13 Best in Class IT Acquisition contract solutions operated by NASA, DoD, GSA, and HHS' NIH. I'm privileged to be part of an exceptional team that devises and executes interagency initiatives to advance the utilization of the federal government's premier IT solutions and bolster American small businesses.
-                            </p>
-                            <p class="padding-top-3">
-                                My forte lies in program and category management and process enhancement. A significant ongoing endeavor revolves around formulating the IT Government-wide Category's strategic plan for FY24. Through that, I oversee a team of domain experts in data and IT financial management to generate benchmarks and assessments on the category's performance and market intelligence. Outputs like these help to inform our upcoming year's priorities based on the need to close gaps and ensure that the category meets its key performance indicators (KPIs) to improve spend under management, small business utilization, and cost avoidance.
-                            </p>
-                            <p class="padding-top-3">
-                                I'm a 2019 Partnership for Public Service Federal IT Leaders program graduate and a Temple University alum (BA in Finance, MBA). I'm based in Philadelphia, and when it isn't football season, you'll find me trekking across some remote mountaintop or enjoying saltwater fishing. Go Eagles!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-              <div class="usa-modal__footer">
-                <ul class="usa-button-group">
-                  <li class="usa-button-group__item">
-                    <button type="button" class="usa-button team-member-button" data-close-modal>
-                        Go back
-                    </button>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <button
-              type="button"
-              class="usa-button usa-modal__close"
-              aria-label="Close this window"
-              data-close-modal
-            >
-            <img src="{{site.baseurl}}/assets/images/icons/exit-icon.svg" alt="Exit button" class="exit-button">
-            </button>
-          </div>
-        </div>
-        <div
-        class="usa-modal usa-modal-team-member"
-        id="john-radziszewski"
-
-
-      >
+      </a>
+      <div
+        class="usa-modal usa-modal-team-member usa-modal-bg-transparent"
+        id="mission-image">
         <div class="usa-modal__content">
-          <div class="usa-modal__main">
-              <div class="overlay-team-member">
-                  <div class="overlay-team-member-left">
-                      <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/john-radziszewski.png" alt="John Radziszewski image">
-                      <h3 class="profile-name">   
-                          John Radziszewski
-                      </h3>
-                      <p class="profile-title">
-                          ITVMO Director
-                      </p>
-                      <div class="profile-detail">
-                          <div>
-                              <img src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg" alt="location logo"><p>Location - <b>Washington, DC</b></p>
-                          </div>
-                          <div>
-                              <img src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg" alt="calendar logo"><p>ITVMO Start Date - <b>June 01, 2015</b></p>
-                          </div>
-                          <div>
-                              <img src="{{site.baseurl}}/assets/images/icons/house-icon.svg" alt="house logo"><p>Government Experience - <b>30 years
-
-                              </b></p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="overlay-team-member-right">
-                      <h3 class="profile-name">
-                          John Radziszewski
-                      </h3>
-                      <p class="profile-title">
-                          ITVMO Director            
-                      </p>
-                      <div class="profile-About">
-                          <h4>About</h4>
-                          <p>
-                            I’m John Radziszewski, Director of Governmentwide IT Vendor Management (ITVMO). Before my current career in the Federal government, I served honorably in the U.S. Coast Guard for 23 years. When I retired as a Lieutenant Commander in 2001, I worked in the private sector at the executive level for over a decade before returning to the federal government and GSA in 2015.
-                          </p>
-                          <p class="padding-top-3">
-                            As the director of the ITVMO, I have the unique opportunity to oversee the strategy, business, and operations and serve as the senior IT expert and authoritative technical consultant. The ITVMO serves as a trusted independent advisor and advocate to agencies - a one-stop shop, leveraging governmentwide IT procurement data, conducting market research, and developing shared agency acquisition knowledge to support agencies in procurement decisions.
-                          </p>
-                          <p class="padding-top-3">
-                            This year, one of the more exciting service offerings we launched was Contract Review as a Service; by bringing together a team of domain experts in IT asset management, pricing, legal, and contract management, we can provide consultation to agency buyers on new contract documentation, reviews of existing agreements and contract data (e.g., enterprise licensing agreements; statement of works; audit strategies), and comparative analysis on like contracts across government and industry. The team is already working with a few select agencies as a pilot of this offering, looking at MSFT and Oracle.
-                          </p>
-                      </div>
-                  </div>
-              </div>
-            <div class="usa-modal__footer">
-              <ul class="usa-button-group">
-                <li class="usa-button-group__item">
-                  <button type="button" class="usa-button team-member-button" data-close-modal>
-                      Go back
-                  </button>
-                </li>
-              </ul>
-            </div>
+          <div class="usa-modal__main usa-modal-main-no-padding">
+            <img
+              src="{{site.baseurl}}/assets/images/screenshot/our-mission.png"
+              alt="Our Missions image" />
           </div>
           <button
             type="button"
-            class="usa-button usa-modal__close"
+            class="usa-button usa-modal__close usa-modal-close-no-padding-right"
             aria-label="Close this window"
-            data-close-modal
-          >
-          <img src="{{site.baseurl}}/assets/images/icons/exit-icon.svg" alt="Exit button" class="exit-button">
+            data-close-modal>
+            <img
+              src="{{site.baseurl}}/assets/images/icons/exit-icon-white.svg"
+              alt="Exit button"
+              class="exit-button" />
           </button>
         </div>
       </div>
-      <div
-      class="usa-modal usa-modal-team-member"
-      id="william-spencer"
-
-
-    >
-      <div class="usa-modal__content">
-        <div class="usa-modal__main">
-            <div class="overlay-team-member">
-                <div class="overlay-team-member-left">
-                    <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/william-spencer.png" alt="William Spencer image">
-                    <h3 class="profile-name">   
-                        William Spencer
-                    </h3>
-                    <p class="profile-title">
-                        Senior Advisor
-                    </p>
-                    <div class="profile-detail">
-                        <div>
-                            <img src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg" alt="location logo"><p>Location - <b>Washington, DC</b></p>
-                        </div>
-                        <div>
-                            <img src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg" alt="calendar logo"><p>ITVMO Start Date - <b>June 11, 2020</b></p>
-                        </div>
-                        <div>
-                            <img src="{{site.baseurl}}/assets/images/icons/house-icon.svg" alt="house logo"><p>Government Experience - <b>17 years
-
-                            </b></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="overlay-team-member-right">
-                    <h3 class="profile-name">
-                        William Spencer
-                    </h3>
-                    <p class="profile-title">
-                        Senior Advisor            
-                    </p>
-                    <div class="profile-About">
-                        <h4>About</h4>
-                        <p>
-                            My name is Bill Spencer, and my tenure with the federal government spans 17 years, during which I had the honor of working as a Deputy CIO in the US Navy and as Engineering Design and Deployment Branch Chief at DHA. Currently, I'm located at GSA's central office and hold the role of ITVMO's Senior Advisor, specializing in data analytics and IT. A significant focus of mine currently revolves around enhancing the functionality of government-wide IT spend data. I proudly hail from Penn State, an institution that has played a crucial role in shaping my journey. The wealth of experience I've garnered over the years positions me as a dedicated advocate for optimizing data analytics in the federal sphere. My true passion is building efficient, relevant, measurable, and cost-conscious IT organization, assembling high-performing teams, and crafting scalable, resilient IT architectures that effectively address pivotal mission challenges.
-                        </p>
-                        <p class="padding-top-3">
-                            In my role, I'm committed to ensuring that our government harnesses the power of data to make informed decisions and drive efficiency. Outside the office, you'll find me in my workshop, engrossed in various forms of woodworking.
-                        </p>
-                    </div>
-                </div>
-            </div>
-          <div class="usa-modal__footer">
-            <ul class="usa-button-group">
-              <li class="usa-button-group__item">
-                <button type="button" class="usa-button team-member-button" data-close-modal>
-                    Go back
-                </button>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <button
-          type="button"
-          class="usa-button usa-modal__close"
-          aria-label="Close this window"
-          data-close-modal
+      <h3 id="our-history" class="sub-topic-heading">Our History</h3>
+      <p class="tab-p">
+        In Fiscal Year (FY) 2020, the Chief Acquisition Officers, Chief
+        Information Officers, and Chief Information Security Officers Councils
+        collectively stressed that more focus was needed on IT vendor
+        relationship management to standardize technical requirements, mitigate
+        cyber-risk, improve data quality, and further leverage the government’s
+        buying power to drive governmentwide improvements and business
+        transformation.
+      </p>
+      <p class="tab-p">
+        In October 2020 (FY2021), the Office of Management and Budget (OMB)
+        established the
+        <b>Information Technology Vendor Management Office (ITVMO)</b> within
+        the
+        <a
+          target="_blank"
+          rel="noreferrer noopener"
+          href="https://www.acquisition.gov/content/category-management"
+          >Governmentwide Category Management Framework</a
         >
-        <img src="{{site.baseurl}}/assets/images/icons/exit-icon.svg" alt="Exit button" class="exit-button">
-        </button>
+        to help solve the challenges agencies face when they buy commodity IT.
+        The lack of a unified, governmentwide IT acquisitions approach means
+        agencies experience different prices for the same products and services,
+        redundant acquisition efforts, and different terms and conditions.
+      </p>
+      <p class="tab-p">
+        The ITVMO advances the goals of <b>Category Management (CM)</b> to
+        improve how the government buys common IT goods and services, including
+        ensuring best pricing and eliminating duplicative contracts. As a
+        collaborative effort between OMB and the largest Federal Acquisitions
+        Programs, including <b>General Services Administration (GSA)</b>, the
+        <b>National Aeronautics and Space Administration (NASA)</b>, the
+        <b>National Institutes of Health (NIH)</b>, and the
+        <b>Department of Defense (DOD)</b>, the ITVMO improves how the
+        government uses acquisition intelligence to inform faster, smarter IT
+        buying.
+      </p>
+      <h3 id="osacn" class="sub-topic-heading">
+        Our Stakeholder and Customer Network
+      </h3>
+      <p class="tab-p">
+        The ITVMO exists within the complex Federal IT Acquisitions Ecosystem
+        composed of various champions, stakeholders, customers, and partners.
+        The ITVMO works with buyers, vehicle solution holders, and suppliers
+        (and resellers) to drive smarter, faster IT acquisitions.
+      </p>
+      <div class="bulletSections">
+        <div class="topLine"></div>
+        <ul class="experiences">
+          <li class="bulletText">
+            <b>Agency IT Buyers:</b> The ITVMO advises and advocates on behalf
+            of agency IT buyer needs by serving them as their federal
+            representative. Additionally, the ITVMO supports agency IT buyers on
+            translating governing policies and navigating the federal
+            marketplace.
+          </li>
+          <li class="bulletText">
+            <b>Vehicle Solution Holders:</b> Through the ITVMO’s Executive
+            Steering Committee the program works with the IT Best-in-Class
+            Vehicles to standardize requirements and increase market compliance.
+          </li>
+          <li class="bulletText">
+            <b>Federal and Industry Partners:</b> The ITVMO extends its network
+            and access to subject matter experts and resources by working across
+            federal programs and ally organizations (e.g., Private-Public
+            Partnerships).
+          </li>
+          <li class="bulletText">
+            <b>Suppliers (and Resellers):</b> The ITVMO partners with OEMs,
+            Small Businesses, and new entrants to solve common challenges and
+            improve interoperability.
+          </li>
+        </ul>
+      </div>
+      <h3 id="wwwu" class="sub-topic-heading">Why Work With Us</h3>
+      <p class="tab-p">
+        The ITVMO offers a coordinated voice representing all agencies to the
+        vendor community. As agencies plan for and develop their OEM
+        requirements and strategies they will be able to leverage ITVMO
+        artifacts for: prices paid for similar products, standardized terms and
+        conditions, recommended vendor negotiation strategies and best
+        practices, and best practices for supply chain risk mitigation. By
+        working with the ITVMO.
+      </p>
+      <div class="bulletSections">
+        <div class="topLine"></div>
+        <ul class="experiences">
+          <li class="bulletText">
+            <b>Customer-focus:</b> Trusted advisors to agency buyers with
+            significant domain expertise.
+          </li>
+          <li class="bulletText">
+            <b>Convenience:</b> One-stop shop for IT acquisition and market
+            intelligence and resources.
+          </li>
+          <li class="bulletText">
+            <b>Cost Savings:</b> Solutions to assist buyers in getting the best
+            value (smarter, faster).
+          </li>
+          <li class="bulletText">
+            <b>Compliance:</b> Strong policy acumen to inform agency acquisition
+            strategies.
+          </li>
+        </ul>
+      </div>
+      <p class="tab-p margin-top-neg-3">
+        <b
+          ><a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="{{site.baseurl}}/contact-us-contribute?tabName=contact-us-header"
+            >Contact Us</a
+          >
+          today.</b
+        >
+      </p>
+      <h3 id="aaacss" class="sub-topic-heading">
+        Annual Assessments and Customer Satisfaction Survey
+      </h3>
+      <p class="tab-p">
+        Annually, the governmentwide ITVMO compiles and submits an annual
+        summary of its performance. The report addresses information covering
+        accomplishments of that fiscal year and its operational plan for the
+        following fiscal year as follows:
+      </p>
+      <div class="bulletSections">
+        <div class="topLine"></div>
+        <ul class="experiences">
+          <li class="bulletText">
+            <b>Prior year accomplishments and success stories.</b>
+          </li>
+          <li class="bulletText">
+            <b>Strategic goals for following FY with key milestones.</b>
+          </li>
+          <li class="bulletText">
+            <b>A list of expiring or new GWACS planned over the following.</b>
+          </li>
+        </ul>
+      </div>
+      <p class="tab-p margin-top-neg-3">
+        In addition, in FY2023 the ITVMO prepared and opened an annual customer
+        satisfaction survey for all customers and stakeholders of the
+        organization. The survey was open from late September through early
+        November.
+      </p>
+      <p class="tab-p">
+        The customer satisfaction survey will be used to evaluate success from
+        the customer perspective and inform priorities and needs for the
+        upcoming fiscal year.
+      </p>
+      <div class="usa-accordion">
+        <h3 class="usa-accordion__heading">
+          <button
+            id="vendor-research"
+            class="accordion"
+            aria-expanded="false"
+            aria-controls="b-a1"
+            onclick="displayTabContent(this)">
+            <span> FY 2023 </span>
+            <img
+              class="tab-arrow"
+              src="{{site.baseurl}}/assets/images/icons/arrow-down.svg" />
+          </button>
+        </h3>
+        <div id="b-a1" class="accordion-content">
+          <div>
+            <div class="links-list margin-0">
+              <div class="links-list-heading">
+                <h4 class="margin-0 margin-top-2">
+                  ITVMO Annual Customer Satisfaction Survey
+                </h4>
+              </div>
+            </div>
+            <p class="tab-p margin-top-neg-3">
+              The governmentwide IT Vendor Management Office was established
+              October 1, 2020 (FY21) by joining the four major Federal
+              Acquisition Programs from GSA, NASA, NIH, and DoD. It was created
+              to provide a meaningful IT acquisition intelligence capability by:
+            </p>
+            <ul>
+              <li>Building OEM and agency buyer relationships</li>
+              <li>Standardizing contract terms and conditions</li>
+              <li>Mitigating govwide operability and cyber risks</li>
+              <li>Improving data quality and use in acquisition strategies</li>
+              <li>Developing training for the federal acquisition workforce</li>
+            </ul>
+            <p class="tab-p margin-top-0">
+              To support faster, smarter IT buying decisions, governmentwide.
+              For more on information on the ITVMO visit us at ITVMO.gsa.gov and
+              checkout the
+              <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="{{site.baseurl}}/assets/files/fy-2023-itvmo-annual-assessment.pdf"
+                >FY2023 Annual Assessment</a
+              >
+              on our recent annual accomplishments and a look at the year ahead.
+            </p>
+          </div>
+        </div>
+        <h3 class="usa-accordion__heading">
+          <button
+            id="small-business-research"
+            class="accordion"
+            aria-expanded="false"
+            aria-controls="b-a2"
+            onclick="displayTabContent(this)">
+            <span> FY2022 </span>
+            <img
+              class="tab-arrow"
+              src="{{site.baseurl}}/assets/images/icons/arrow-down.svg" />
+          </button>
+        </h3>
+        <div id="b-a2" class="accordion-content">
+          <div>
+            <div class="links-list margin-0">
+              <div class="links-list-heading">
+                <h4 class="margin-0 margin-top-2">
+                  October 1, 2021 -- September 30, 2022
+                </h4>
+              </div>
+              <p class="tab-p margin-top-0">
+                <b
+                  >The ITVMO did not start making the annual assessment public
+                  until FY 2023. For better insights into the FY2022 performance
+                  year, please
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="{{site.baseurl}}/contact-us-contribute?tabName=contact-us-header"
+                    >Contact Us</a
+                  >.
+                </b>
+              </p>
+            </div>
+          </div>
+        </div>
+        <h3 class="usa-accordion__heading">
+          <button
+            id="budget-spend-obligation-research"
+            class="accordion"
+            aria-expanded="false"
+            aria-controls="b-a3"
+            onclick="displayTabContent(this)">
+            <span> FY2021 </span>
+            <img
+              class="tab-arrow"
+              src="{{site.baseurl}}/assets/images/icons/arrow-down.svg" />
+          </button>
+        </h3>
+        <div id="b-a3" class="accordion-content margin-bottom-4">
+          <div>
+            <div class="links-list margin-0">
+              <div class="links-list-heading">
+                <h4 class="margin-0 margin-top-2">
+                  October 1, 2020 -- September 30, 2021
+                </h4>
+              </div>
+              <p class="tab-p margin-top-0">
+                <b
+                  >The ITVMO did not start making the annual assessment public
+                  until FY 2023. For better insights into the FY2021 performance
+                  year, please
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="{{site.baseurl}}/contact-us-contribute?tabName=contact-us-header"
+                    >Contact Us</a
+                  >.
+                </b>
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div
-    class="usa-modal usa-modal-team-member"
-    id="kyra-stewart"
-  >
+    <div class="content-nav">
+      <div class="nav-list">
+        <h3>On this Tab</h3>
+        <a
+          id="sn-omo"
+          class="page-nav page-nav-active"
+          href="#our-mission-overview"
+          onclick="return removeTabContent(this)"
+          >Our Mission</a
+        >
+        <a
+          id="sn-oh"
+          class="page-nav"
+          href="#our-history"
+          onclick="return removeTabContent(this)"
+          >Our History</a
+        >
+        <a
+          id="sn-osacn"
+          class="page-nav"
+          href="#osacn"
+          onclick="return removeTabContent(this)"
+          >Our Stakeholder and Customer Network</a
+        >
+        <a
+          id="sn-wwwu"
+          class="page-nav"
+          href="#wwwu"
+          onclick="return removeTabContent(this)"
+          >Why Work With Us</a
+        >
+        <a
+          id="sn-aaacss"
+          class="page-nav"
+          href="#aaacss"
+          onclick="return removeTabContent(this)"
+          >Annual Assessments and<br />
+          Customer Satisfaction Survey</a
+        >
+      </div>
+    </div>
+  </div>
+  <div id="our-partners" class="tabcontent">
+    <div class="contents-no-side-nav">
+      <h3 id="contract-guidance-overview" class="topic-heading">
+        Our Partners
+      </h3>
+      <div class="grid-container">
+        <ul class="usa-card-group">
+          <li class="usa-card usa-card--flag">
+            <div class="usa-card__container">
+              <div class="usa-card__media serviceCard">
+                <div class="leftPort">
+                  <img
+                    class="imgCont"
+                    src="{{site.baseurl}}/assets/images/logos/office-of-management-and-budget.png"
+                    alt="The White House logo" />
+                </div>
+              </div>
+
+              <div class="usa-card__body">
+                <!-- THIS IS THE RESPONSIVE COMPONENT SAME INFORMATION AS TOP SECTION SHOULD DUPLICATE -->
+                <div class="resCardSec">
+                  <div>
+                    <img
+                      class="imgContres"
+                      src="{{site.baseurl}}/assets/images/logos/office-of-management-and-budget.png"
+                      alt="The White House logo" />
+                  </div>
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="partnerHeader"
+                    href="https://www.whitehouse.gov/omb/"
+                    class="resHeading">
+                    <h2 class="usa-card__heading">
+                      Office of Management and Budget
+                    </h2>
+                  </a>
+                </div>
+                <!-- END OF RESPONSIVE COMPONET -->
+                <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="partnerHeader"
+                  href="https://www.whitehouse.gov/omb/"
+                  >Office of Management and Budget
+                  <img
+                    alt="External icon"
+                    src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"
+                /></a>
+                <p class="cardBody">
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="plink"
+                    href="https://www.whitehouse.gov/omb/management/office-federal-procurement-policy/"
+                    >The Office of Federal Procurement Policy (OFPP)
+                    <img
+                      alt="External icon"
+                      src="{{site.baseurl}}/assets/images/icons/external-small.svg"
+                  /></a>
+                  -- OFPP sets governmentwide acquisition priorities and
+                  policies, which shape the full range of federal agency
+                  procurement practices.
+                </p>
+
+                <p class="cardBody">
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="plink"
+                    href="https://www.whitehouse.gov/omb/management/ofcio/"
+                    >Office of the Federal Chief Information Officer (OFCIO)
+                    <img
+                      alt="External icon"
+                      src="{{site.baseurl}}/assets/images/icons/external-small.svg"
+                  /></a>
+                  -- also known as the Office of E-Government and Information
+                  Technology (E-Gov). The OFCIO develops and provides direction
+                  in the use of technology to make it easier for citizens and
+                  businesses to interact with the Federal Government, save
+                  taxpayer dollars, and streamline citizen participation.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card usa-card--flag">
+            <div class="usa-card__container">
+              <div class="usa-card__media serviceCard">
+                <div class="leftPort">
+                  <img
+                    class="imgCont"
+                    src="{{site.baseurl}}/assets/images/logos/gsa-logo-large.png"
+                    alt="GSA logo" />
+                </div>
+              </div>
+
+              <div class="usa-card__body">
+                <div class="resCardSec">
+                  <div>
+                    <img
+                      class="imgContres"
+                      src="{{site.baseurl}}/assets/images/logos/gsa-logo-large.png"
+                      alt="GSA logo" />
+                  </div>
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="partnerHeader"
+                    href="https://www.gsa.gov/"
+                    class="resHeading">
+                    <h2 class="usa-card__heading">
+                      General Services Administration
+                    </h2>
+                  </a>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="partnerHeader"
+                  href="https://www.gsa.gov/"
+                  >General Services Administration
+                  <img
+                    alt="External icon"
+                    src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"
+                /></a>
+                <p class="cardBody">
+                  GSA helps manage and support the basic functions of federal
+                  agencies. Primarily, the ITVMO works with the
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="plink"
+                    href="https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs/technology-products-services"
+                    >Federal Acquisition Service’s Office of Information
+                    Technology Category
+                    <img
+                      alt="External icon"
+                      src="{{site.baseurl}}/assets/images/icons/external-small.svg"
+                  /></a>
+                  to assist in offering state of the art commercial products,
+                  systems, services and support to federal, state and local
+                  governments.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card usa-card--flag">
+            <div class="usa-card__container">
+              <div class="usa-card__media serviceCard">
+                <div class="leftPort">
+                  <img
+                    class="imgCont"
+                    src="{{site.baseurl}}/assets/images/logos/nasa-logo.png"
+                    alt="NASA logo" />
+                </div>
+              </div>
+
+              <div class="usa-card__body">
+                <div class="resCardSec">
+                  <div>
+                    <img
+                      class="imgContres"
+                      src="{{site.baseurl}}/assets/images/logos/nasa-logo.png"
+                      alt="NASA logo" />
+                  </div>
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="partnerHeader"
+                    href="https://www.gsa.gov/"
+                    class="resHeading">
+                    <h2 class="usa-card__heading">
+                      National Aeronautics and Space Administration
+                    </h2>
+                  </a>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="partnerHeader"
+                  href="https://www.gsa.gov/"
+                  >National Aeronautics and Space Administration
+                  <img
+                    alt="External icon"
+                    src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"
+                /></a>
+                <p class="cardBody">
+                  NASA is responsible for the civil space program, aeronautics
+                  research, and space research. The ITVMO works with the
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="plink"
+                    href="https://www.sewp.nasa.gov/index.shtml"
+                    >NASA Solutions for Enterprise-wide Procurement (SEWP)
+                    Program
+                    <img
+                      alt="External icon"
+                      src="{{site.baseurl}}/assets/images/icons/external-small.svg"
+                  /></a>
+                  to help in providing the latest in Information and
+                  Communications Technology (ICT) and Audio-Visual (AV) products
+                  and services for all agencies and their approved contractors.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card usa-card--flag">
+            <div class="usa-card__container">
+              <div class="usa-card__media serviceCard">
+                <div class="leftPort padding-left-3">
+                  <img
+                    class="imgCont"
+                    src="{{site.baseurl}}/assets/images/logos/nih-logo.png"
+                    alt="National Institute of Health logo" />
+                </div>
+              </div>
+
+              <div class="usa-card__body">
+                <div class="resCardSec">
+                  <div>
+                    <img
+                      class="imgContres"
+                      src="{{site.baseurl}}/assets/images/logos/nih-logo.png"
+                      alt="National Institute of Health logo" />
+                  </div>
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="partnerHeader"
+                    href="https://www.nih.gov/"
+                    class="resHeading">
+                    <h2 class="usa-card__heading">
+                      National Institute of Health
+                    </h2>
+                  </a>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="partnerHeader"
+                  href="https://www.nih.gov/"
+                  >National Institute of Health
+                  <img
+                    alt="External icon"
+                    src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"
+                /></a>
+                <p class="cardBody">
+                  NIH is one of the world's foremost medical research centers
+                  turning discovery into health. The ITVMO works with the
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="plink"
+                    href="https://nitaac.nih.gov/"
+                    >NIH Information Technology Acquisition and Assessment
+                    Center (NITAAC)
+                    <img
+                      alt="External icon"
+                      src="{{site.baseurl}}/assets/images/icons/external-small.svg" /></a
+                  >, which is a full service acquisition program that
+                  administers three Government-Wide Acquisition Contracts
+                  (GWACs) for information technology (IT) acquisitions.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card usa-card--flag">
+            <div class="usa-card__container">
+              <div class="usa-card__media serviceCard">
+                <div class="leftPort">
+                  <img
+                    class="imgCont"
+                    src="{{site.baseurl}}/assets/images/logos/dod-logo.png"
+                    alt="Department of Defense logo" />
+                </div>
+              </div>
+
+              <div class="usa-card__body">
+                <div class="resCardSec">
+                  <div>
+                    <img
+                      class="imgContres"
+                      src="{{site.baseurl}}/assets/images/logos/dod-logo.png"
+                      alt="Department of Defense logo" />
+                  </div>
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="partnerHeader"
+                    href="https://www.defense.gov/"
+                    class="resHeading">
+                    <h2 class="usa-card__heading">Department of Defense</h2>
+                  </a>
+                </div>
+                <a
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="partnerHeader"
+                  href="https://www.defense.gov/"
+                  >Department of Defense
+                  <img
+                    alt="External icon"
+                    src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg"
+                /></a>
+                <p class="cardBody">
+                  DOD is charged with coordinating and supervising all agencies
+                  and functions of the U.S. government directly related to
+                  national security and the United States Armed Forces. The
+                  ITVMO works with
+                  <a
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="plink"
+                    href="https://www.eis.army.mil/programs/chess"
+                    >DOD’s Computer Hardware, Enterprise Software and Solutions
+                    (CHESS) Program
+                    <img
+                      alt="External icon"
+                      src="{{site.baseurl}}/assets/images/icons/external-small.svg" /></a
+                  >. CHESS is the main provider of commercial enterprise
+                  information technology solutions, computer software, and
+                  hardware for the United States Army.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="meet-the-team" class="tabcontent">
+    <div class="contents-no-side-nav">
+      <h3 id="" class="topic-heading">Meet the Team</h3>
+      <div id="team-container">
+        <a
+          tabindex="0"
+          class="team-member"
+          href="#warren-blankenship"
+          aria-label="Open the Warren J. Blankenship information"
+          aria-controls="warren-blankenship"
+          data-open-modal>
+          <img
+            class="profile-pic"
+            src="{{site.baseurl}}/assets/images/person/warren-blankenship.png"
+            alt="warren Blankenship image" />
+          <h3 class="profile-name">Warren J. Blankenship</h3>
+          <p class="profile-title">
+            Deputy IT Government-wide Category Manager
+          </p>
+        </a>
+        <a
+          tabindex="0"
+          class="team-member"
+          href="#brittany-chapman"
+          aria-label="Open Brittany A. Chapman information"
+          aria-controls="brittany-chapman"
+          data-open-modal>
+          <img
+            class="profile-pic"
+            src="{{site.baseurl}}/assets/images/person/brittany-chapman.jpeg"
+            alt="Brittany A. Chapman image" />
+          <h3 class="profile-name">Brittany A. Chapman</h3>
+          <p class="profile-title">IT Best In Class Manager</p>
+        </a>
+        <a
+          tabindex="0"
+          class="team-member"
+          href="#peng-chhour"
+          aria-label="Open Peng Chhour information"
+          aria-controls="peng-chhour"
+          data-open-modal>
+          <img
+            class="profile-pic"
+            src="{{site.baseurl}}/assets/images/person/peng-chhour.png"
+            alt="Peng Chhour image" />
+          <h3 class="profile-name">Peng Chhour</h3>
+          <p class="profile-title">Senior Advisor</p>
+        </a>
+        <a
+          tabindex="0"
+          class="team-member"
+          href="#john-radziszewski"
+          aria-label="Open John Radziszewski information"
+          aria-controls="john-radziszewski"
+          data-open-modal>
+          <img
+            class="profile-pic"
+            src="{{site.baseurl}}/assets/images/person/john-radziszewski.png"
+            alt="John Radziszewski image" />
+          <h3 class="profile-name">John Radziszewski</h3>
+          <p class="profile-title">ITVMO Director</p>
+        </a>
+        <a
+          tabindex="0"
+          class="team-member"
+          href="#william-spencer"
+          aria-label="Open William Spencer information"
+          aria-controls="william-spencer"
+          data-open-modal>
+          <img
+            class="profile-pic"
+            src="{{site.baseurl}}/assets/images/person/william-spencer.png"
+            alt="William Spencer image" />
+          <h3 class="profile-name">William Spencer</h3>
+          <p class="profile-title">Senior Advisor</p>
+        </a>
+        <a
+          tabindex="0"
+          class="team-member"
+          href="#kyra-stewart"
+          aria-label="Open Kyra Stewart information"
+          aria-controls="kyra-stewart"
+          data-open-modal>
+          <img
+            class="profile-pic"
+            src="{{site.baseurl}}/assets/images/person/kyra-stewart-new.png"
+            alt="Kyra Stewart image" />
+          <h3 class="profile-name">Kyra Stewart</h3>
+          <p class="profile-title">Program Manager</p>
+        </a>
+        <a
+          tabindex="0"
+          class="team-member"
+          href="#heather-stier"
+          aria-label="Open Heather Stier information"
+          aria-controls="heather-stier"
+          data-open-modal>
+          <img
+            class="profile-pic"
+            src="{{site.baseurl}}/assets/images/person/heather-stier.png"
+            alt="Heather Stier image" />
+          <h3 class="profile-name">Heather Stier</h3>
+          <p class="profile-title">IT Acquisition and Vendor Senior Advisor</p>
+        </a>
+        <a
+          tabindex="0"
+          class="team-member"
+          href="#clarence-harrison"
+          aria-label="Open  Clarence Harrison Jr information"
+          aria-controls="clarence-harrison"
+          data-open-modal>
+          <img
+            class="profile-pic"
+            src="{{site.baseurl}}/assets/images/person/clarence-harrison.jpg"
+            alt="Clarence Harrison Jr image" />
+          <h3 class="profile-name">Clarence Harrison Jr</h3>
+          <p class="profile-title">Senior Advisor</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="usa-modal usa-modal-team-member" id="warren-blankenship">
     <div class="usa-modal__content">
       <div class="usa-modal__main">
-          <div class="overlay-team-member">
-              <div class="overlay-team-member-left">
-                  <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/kyra-stewart-new.png" alt="Kyra Stewart image">
-                  <h3 class="profile-name">   
-                      Kyra Stewart
-                  </h3>
-                  <p class="profile-title">
-                      Program Manager
-                  </p>
-                  <div class="profile-detail">
-                      <div>
-                          <img src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg" alt="location logo"><p>Location - <b>Washington, DC</b></p>
-                      </div>
-                      <div>
-                          <img src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg" alt="calendar logo"><p>ITVMO Start Date - <b>Jun 01, 2020</b></p>
-                      </div>
-                      <div>
-                          <img src="{{site.baseurl}}/assets/images/icons/house-icon.svg" alt="house logo"><p>Government Experience - <b>20 years
-
-                          </b></p>
-                      </div>
-                  </div>
+        <div class="overlay-team-member">
+          <div class="overlay-team-member-left">
+            <img
+              class="profile-pic"
+              src="{{site.baseurl}}/assets/images/person/warren-blankenship.png"
+              alt="warren Blankenship image" />
+            <h3 class="profile-name">Warren J. Blankenship</h3>
+            <p class="profile-title">
+              Deputy IT Government-wide Category Manager
+            </p>
+            <div class="profile-detail">
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg"
+                  alt="location logo" />
+                <p>Location - <b>Washington, DC</b></p>
               </div>
-              <div class="overlay-team-member-right">
-                  <h3 class="profile-name">
-                      Kyra Stewart
-                  </h3>
-                  <p class="profile-title">
-                      Program Manager            
-                  </p>
-                  <div class="profile-About">
-                      <h4>About</h4>
-                      <p>
-                        Hi, my name is Kyra Stewart.<br>
-                        I oversee day-to-day program operations as the IT Vendor Management Office Program Manager. I benefit from partnering with our dynamic and experienced team of subject matter experts and a broad range of partners on a vast set of topics, including vendor assessments, market, and procurement data analysis, IT category management, and more. I'm incredibly excited about leading the government-wide IT Buyers Community of Practice. It allows me to leverage my experience and passion for cross-functional collaboration, program and process improvement, and employee engagement while supporting government professionals who have the vital responsibility of procuring the IT resources needed to meet agency missions.
-                      </p>
-                      <p class="padding-top-3">
-                        I initially joined the government as an Economist at the Department of Transportation. I went on to lead a hazardous materials grant program, held the role of Agency Ombudsperson, and served as the Agency Director of Innovation. In 2018, I was selected as a Fellow in the White House Leadership Development Program and invited to stay at the General Services Administration (GSA) after the program. At GSA, I worked with the Office of Government-wide Policy's Technology Business Management (TBM) PMO before being selected as the Program Manager for the new Federal ITVMO. With our government-wide focus, I can work across agencies and lines of business to identify and share best practices and lessons learned that ultimately result in government-wide IT acquisition improvements. I'm a 4th generation Washingtonian who attended National Cathedral High School for Girls in NW, DC. I earned my Bachelor's degree in Economics from the University of Virginia and later completed my Masters in Public Administration at American University. I've been with the Federal government for over 20 years and look forward to being part of the IT-driven evolution we will continue to experience in the government. 
-                      </p>
-                  </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg"
+                  alt="calendar logo" />
+                <p>ITVMO Start Date - <b>Oct 01, 2020</b></p>
               </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/house-icon.svg"
+                  alt="house logo" />
+                <p>Government Experience</p>
+                <img
+                  src="{{site.baseurl}}/assets/uswds/img/usa-icons/expand_more.svg"
+                  alt="View Below" />
+              </div>
+              <ul class="gov-exp-bullet-list">
+                <li>Contract Lifecycle</li>
+                <li>Cross-Governmental Operations</li>
+                <li>Federal Acquisition Regulations</li>
+                <li>IT and Acquisition Policy</li>
+                <li>Strategic Sourcing</li>
+                <li>Vehicle Solutions</li>
+                <li>Vendor Relations and Supplier Management</li>
+              </ul>
+            </div>
           </div>
+          <div class="overlay-team-member-right">
+            <h3 class="profile-name">Warren J. Blankenship</h3>
+            <p class="profile-title">
+              Deputy IT Government-wide Category Manager
+            </p>
+            <div class="profile-About">
+              <h4>About</h4>
+              <p>
+                Hi, my name is Warren Blankenship, <br />I serve as the Deputy
+                IT Government-wide Category Manager overseeing day-to-day
+                operations for the Federal IT Category. Within the ITVMO, I
+                manage the organization's category management vertical,
+                including category strategy and annual initiatives, agency
+                category support, vehicle data and compliance, and tracking and
+                growing our small business participation across the category.
+                Before this, I held several leadership roles at GSA, including
+                Deputy Director of Contract Operations (FAS/MAS IT), Deputy
+                Director of the Program Office (FAS/MAS IT), Director of the
+                Office of Scientific and Equipment Division (FAS), and Senior
+                Procurement Analyst, where I played a crucial role in
+                formulating and executing Federal Acquisition Regulation (FAR)
+                rules for GSA's Office of Government-wide Policy (OGP) and the
+                Office of Federal Procurement Policy (OFPP). This gave me the
+                unique experience and expertise in procurement and policy to
+                take on the Deputy IT Government-wide Category Manager role.
+                Today, I lead various projects, including monitoring key
+                performance indicators like spend under management, cost
+                avoidance, and small business utilization. Additionally, I
+                oversee the 13 IT Best-In-Class contract solutions. Through
+                these solutions, I have spearheaded several cross-vehicle
+                initiatives to improve compliance with Cyber and Sustainability
+                buying requirements, award and use of small businesses, and
+                further introduction of emerging solutions to modernize
+                government-wide IT.
+              </p>
+              <p class="padding-top-3">
+                I earned my Bachelor of Arts degree from the University of the
+                District of Columbia (UDC) and a Master of Arts in Public
+                Communication from the American University. In 2023, I was
+                honored with the FED 100 Award and completed OPM's Executive
+                Leadership Program, Leadership for a Democratic Society. Outside
+                of work, I'm a devoted fan of the Washington Commanders and
+                Nationals, enjoy comedy sitcoms and movies, and consider myself
+                a music connoisseur and enthusiast.
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="usa-modal__footer">
           <ul class="usa-button-group">
             <li class="usa-button-group__item">
-              <button type="button" class="usa-button team-member-button" data-close-modal>
-                  Go back
+              <button
+                type="button"
+                class="usa-button team-member-button"
+                data-close-modal>
+                Go back
               </button>
             </li>
           </ul>
@@ -880,67 +963,105 @@
         type="button"
         class="usa-button usa-modal__close"
         aria-label="Close this window"
-        data-close-modal
-      >
-      <img src="{{site.baseurl}}/assets/images/icons/exit-icon.svg" alt="Exit button" class="exit-button">
+        data-close-modal>
+        <!-- <svg class="usa-icon" aria-hidden="true" focusable="false" role="img">
+                <use xlink:href="{{site.baseurl}}/assets/images/icons/exit-icon.svg"></use>
+              </svg> -->
+        <img
+          src="{{site.baseurl}}/assets/images/icons/exit-icon.svg"
+          alt="Exit button"
+          class="exit-button" />
       </button>
     </div>
   </div>
-    <div
-    class="usa-modal usa-modal-team-member"
-    id="heather-stier"
-  >
+
+  <div class="usa-modal usa-modal-team-member" id="brittany-chapman">
     <div class="usa-modal__content">
       <div class="usa-modal__main">
-          <div class="overlay-team-member">
-              <div class="overlay-team-member-left">
-                  <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/heather-stier.png" alt="Heather Stier image">
-                  <h3 class="profile-name">   
-                    Heather Stier
-                  </h3>
-                  <p class="profile-title">
-                    IT Acquisition and Vendor Senior Advisor
-                  </p>
-                  <div class="profile-detail">
-                      <div>
-                          <img src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg" alt="location logo"><p>Location - <b>Southern, MD</b></p>
-                      </div>
-                      <div>
-                          <img src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg" alt="calendar logo"><p>ITVMO Start Date - <b>Apr 24, 2022</b></p>
-                      </div>
-                      <div>
-                          <img src="{{site.baseurl}}/assets/images/icons/house-icon.svg" alt="house logo"><p>Government Experience - <b>15 years
-
-                          </b></p>
-                      </div>
-                  </div>
+        <div class="overlay-team-member">
+          <div class="overlay-team-member-left">
+            <img
+              class="profile-pic"
+              src="{{site.baseurl}}/assets/images/person/brittany-chapman.jpeg"
+              alt="Brittany A. Chapman image" />
+            <h3 class="profile-name">Brittany A. Chapman</h3>
+            <p class="profile-title">IT Best In Class Manager</p>
+            <div class="profile-detail">
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg"
+                  alt="location logo" />
+                <p>Location - <b>Atlanta, GA</b></p>
               </div>
-              <div class="overlay-team-member-right">
-                  <h3 class="profile-name">
-                    Heather Stier
-                  </h3>
-                  <p class="profile-title">
-                    IT Acquisition and Vendor Senior Advisor            
-                  </p>
-                  <div class="profile-About">
-                      <h4>About</h4>
-                      <p>
-                        Hi, my name is Hello, I'm Heather Stier, and I’ve been supporting the federal government since 2008.  I started my career at the Department of State as a contractor supporting the enterprise wide IT Budget Management, Capitol Planning, and IT Strategy Planning.  In 2013,  I transitioned to a civil servant continuing to support the Department of State primarily focused on IT Strategic Planning and Budget management.  My role changed significantly in 2014 as I was appointed as the Contracting Officer Representative for over 10 of DOS’s enterprise IT contracts.  My journey with the federal government began in 2008. Since then I’ve held numerous roles and certificates including IT Specialist and Special Advisor to Leadership on Strategic Software Acquisitions as well as  being a certified FAC-COR Level III,  and FAC-P/PM Senior, and FAC/P/PM IT /FAC-P/PM Senior for. I was then offered an opportunity to take all of the unique IT, acquisition, and strategic planning experience I had gained at State and support the ITVMO as the   and Acquisition experience.  Before I settled into my current position as the ITVMO’s  IT Acquisition and Vendor Senior Advisor, I worked in the Department of State executing and overseeing many of the agency’s IT contracts.
-                      </p>
-                      <p class="padding-top-3">
-                        I specialize in Original Equipment Manufacturers (OEMs), Vendor Management, Contract Negotiations, Enterprise-wide Procurements, and Project Management.   I'm particularly fervent about advocating for government-wide acquisition strategies and championing efficiency in software procurements across the federal landscape. It's a cause I'm deeply committed to.
-                      </p>
-                      <p class="padding-top-3">
-                        I call Southern Maryland home for now with plans to head south to Charleston in the next year.  , and wWhen I'm not immersed in my professional endeavors, you can find me indulging in my passion for gaming—a hobby I've cherished since the early 80s. It's my go-to method for decompressing.  My fiance and I also enjoy indulging in our adventurous side by traveling regularly, hiking and small rock climbing at local state parks, and enjoying escape rooms with friends and family.   Additionally, I'm deeply involved with local feline rescues, actively contributing to their efforts, which often includes adopting and fostering furry companions.
-                      </p>
-                  </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg"
+                  alt="calendar logo" />
+                <p>ITVMO Start Date - <b>Aug 22, 2020</b></p>
               </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/house-icon.svg"
+                  alt="house logo" />
+                <p>Government Experience</p>
+                <img
+                  src="{{site.baseurl}}/assets/uswds/img/usa-icons/expand_more.svg"
+                  alt="View Below" />
+              </div>
+              <ul class="gov-exp-bullet-list">
+                <li>Small Business</li>
+                <li>Supplier Management</li>
+                <li>Sustainability</li>
+                <li>Transactional Data</li>
+                <li>Vehicle Solutions</li>
+              </ul>
+            </div>
           </div>
+          <div class="overlay-team-member-right">
+            <h3 class="profile-name">Brittany A. Chapman</h3>
+            <p class="profile-title">IT Best In Class Manager</p>
+            <div class="profile-About">
+              <h4>About</h4>
+              <p>
+                Hi, I’m Brittany Chapman, a 14 year Combat Army Veteran. I
+                served honorably as a Combat Medic and Combat Medical
+                logistician supporting Operation Enduring Freedom Afghanistan
+                and Operation Iraqi Freedom. As an IT Best In Class Manager, I
+                provide advice and guidance around Best In Class (BIC) criteria,
+                data standards, and cost avoidance concepts and methodology.
+                This often involves translating overarching policy and guidance
+                from the Office of Management and Budget (OMB) and the Category
+                Management Program Management Office (CM PMO) to facilitate the
+                BIC designation process and continuity of existing BIC vehicle
+                solutions to meet designation requirements and analyzing data to
+                create reports the drive recommendations to support enterprise
+                strategic business decisions.
+              </p>
+              <p class="padding-top-3">
+                I’ve received a Shining Star award for the COMSATCOM/CS3 BIC
+                designation and a Special Act Award recognizing my exemplary
+                contributions in supporting the “America’s Federal Workforce A
+                Value Proposition for Digital Talent - a public/private joint
+                initiative” white paper.
+              </p>
+              <p class="padding-top-3">
+                Outside of work, I LOVE to read! You’ll never find me without a
+                book in hand or within reach. I am also an avid traveler and
+                have visited 43 countries! I just returned from Nice and
+                Barcelona (Beyonce’s concert). Morocco, Costa Rica, and Colombia
+                are next for me this year.
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="usa-modal__footer">
           <ul class="usa-button-group">
             <li class="usa-button-group__item">
-              <button type="button" class="usa-button team-member-button" data-close-modal>
-                  Go back
+              <button
+                type="button"
+                class="usa-button team-member-button"
+                data-close-modal>
+                Go back
               </button>
             </li>
           </ul>
@@ -950,67 +1071,102 @@
         type="button"
         class="usa-button usa-modal__close"
         aria-label="Close this window"
-        data-close-modal
-      >
-      <img src="{{site.baseurl}}/assets/images/icons/exit-icon.svg" alt="Exit button" class="exit-button">
+        data-close-modal>
+        <img
+          src="{{site.baseurl}}/assets/images/icons/exit-icon.svg"
+          alt="Exit button"
+          class="exit-button" />
       </button>
     </div>
   </div>
-    <div
-    class="usa-modal usa-modal-team-member"
-    id="clarence-harrison"
-  >
+  <div class="usa-modal usa-modal-team-member" id="peng-chhour">
     <div class="usa-modal__content">
       <div class="usa-modal__main">
-          <div class="overlay-team-member">
-              <div class="overlay-team-member-left">
-                  <img class="profile-pic" src="{{site.baseurl}}/assets/images/person/clarence-harrison.jpg" alt="Clarence Harrison image">
-                  <h3 class="profile-name">   
-                    Clarence Harrison Jr
-                  </h3>
-                  <p class="profile-title">
-                    Senior Advisor
-                  </p>
-                  <div class="profile-detail">
-                      <div>
-                          <img src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg" alt="location logo"><p>Location - <b>Washington, DC</b></p>
-                      </div>
-                      <div>
-                          <img src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg" alt="calendar logo"><p>ITVMO Start Date - <b>Jan 29th, 2024</b></p>
-                      </div>
-                      <div>
-                          <img src="{{site.baseurl}}/assets/images/icons/house-icon.svg" alt="house logo"><p>Government Experience - <b>14 years
-
-                          </b></p>
-                      </div>
-                  </div>
+        <div class="overlay-team-member">
+          <div class="overlay-team-member-left">
+            <img
+              class="profile-pic"
+              src="{{site.baseurl}}/assets/images/person/peng-chhour.png"
+              alt="Brittany A. Chapman image" />
+            <h3 class="profile-name">Peng Chhour</h3>
+            <p class="profile-title">Senior Advisor</p>
+            <div class="profile-detail">
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg"
+                  alt="location logo" />
+                <p>Location - <b>Philadelphia, PA</b></p>
               </div>
-              <div class="overlay-team-member-right">
-                  <h3 class="profile-name">
-                    Clarence Harrison Jr
-                  </h3>
-                  <p class="profile-title">
-                    Senior Advisor            
-                  </p>
-                  <div class="profile-About">
-                      <h4>About</h4>
-                      <p>
-                        Hi, my name is Clarence Harrison Jr, with 14+ years of experience in the federal government I currently serve as a Senior Advisor providing procurement policy and technical advice to the ITVMO and vendor engagements. Before coming to the ITMO, I served as a Senior Procurement Analyst on the Acquisition Policy Division within GSA’s Office of Government-wide Policy (OGP), where I drafted agency-wide procurement policies, executed GSAM/GSAR changes and led major acquisition initiatives. I’ve served in other roles such as Acting Director of GSA’s Acquisition Policy Division (GSAR Team) and Acting Supervisory Small Business Specialist within the Office of Small and Disadvantaged Business Utilization (OSDBU), where I collaborated with program and contracting offices to maximize small business and socio-economic small business procurement opportunities within GSA.
-                      </p>
-                      <p class="padding-top-3">
-                        Prior to GSA, I served as a procurement analyst within the Department of Homeland Security (DHS) and as a contracting officer in other federal agencies. I am also a 2019 DHS Office of the Chief Procurement Officer Executive Development Program for Acquisition Leaders graduate and I possess industry and federal certifications to include: NCMA CPCM, FAC-C (Professional) and FAC-C-Digital Services.
-                      </p>
-                      <p class="padding-top-3">
-                        I earned my Bachelors Degree from Virginia Tech University. In 2024, I was selected as the recipient of GSA’s Acquisition Innovation in Action Award.  Outside of work, I'm a devoted fan of the Washington Commanders and VT Hokies, and enjoy exercising and playing sports. I am also an avid fisherman.
-                      </p>
-                  </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg"
+                  alt="calendar logo" />
+                <p>ITVMO Start Date - <b>Apr 01, 2020</b></p>
               </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/house-icon.svg"
+                  alt="house logo" />
+                <p>Government Experience</p>
+                <img
+                  src="{{site.baseurl}}/assets/uswds/img/usa-icons/expand_more.svg"
+                  alt="View Below" />
+              </div>
+              <ul class="gov-exp-bullet-list">
+                <li>Category Performance Evaluation</li>
+                <li>Data and Category Intelligence</li>
+                <li>IT and Acquisition Policy</li>
+                <li>Vehicle Solutions</li>
+              </ul>
+            </div>
           </div>
+          <div class="overlay-team-member-right">
+            <h3 class="profile-name">Peng Chhour</h3>
+            <p class="profile-title">Senior Advisor</p>
+            <div class="profile-About">
+              <h4>About</h4>
+              <p>
+                Greetings, I'm Peng, and I've been dedicated to federal service
+                for 14 years. Currently, I counsel the ITVMO and IT
+                Government-wide Category, overseeing over $72 billion in
+                obligations. This category encompasses 13 Best in Class IT
+                Acquisition contract solutions operated by NASA, DoD, GSA, and
+                HHS' NIH. I'm privileged to be part of an exceptional team that
+                devises and executes interagency initiatives to advance the
+                utilization of the federal government's premier IT solutions and
+                bolster American small businesses.
+              </p>
+              <p class="padding-top-3">
+                My forte lies in program and category management and process
+                enhancement. A significant ongoing endeavor revolves around
+                formulating the IT Government-wide Category's strategic plan for
+                FY24. Through that, I oversee a team of domain experts in data
+                and IT financial management to generate benchmarks and
+                assessments on the category's performance and market
+                intelligence. Outputs like these help to inform our upcoming
+                year's priorities based on the need to close gaps and ensure
+                that the category meets its key performance indicators (KPIs) to
+                improve spend under management, small business utilization, and
+                cost avoidance.
+              </p>
+              <p class="padding-top-3">
+                I'm a 2019 Partnership for Public Service Federal IT Leaders
+                program graduate and a Temple University alum (BA in Finance,
+                MBA). I'm based in Philadelphia, and when it isn't football
+                season, you'll find me trekking across some remote mountaintop
+                or enjoying saltwater fishing. Go Eagles!
+              </p>
+            </div>
+          </div>
+        </div>
         <div class="usa-modal__footer">
           <ul class="usa-button-group">
             <li class="usa-button-group__item">
-              <button type="button" class="usa-button team-member-button" data-close-modal>
-                  Go back
+              <button
+                type="button"
+                class="usa-button team-member-button"
+                data-close-modal>
+                Go back
               </button>
             </li>
           </ul>
@@ -1020,13 +1176,565 @@
         type="button"
         class="usa-button usa-modal__close"
         aria-label="Close this window"
-        data-close-modal
-      >
-      <img src="{{site.baseurl}}/assets/images/icons/exit-icon.svg" alt="Exit button" class="exit-button">
+        data-close-modal>
+        <img
+          src="{{site.baseurl}}/assets/images/icons/exit-icon.svg"
+          alt="Exit button"
+          class="exit-button" />
       </button>
     </div>
   </div>
-
-
-
-  </section>
+  <div class="usa-modal usa-modal-team-member" id="john-radziszewski">
+    <div class="usa-modal__content">
+      <div class="usa-modal__main">
+        <div class="overlay-team-member">
+          <div class="overlay-team-member-left">
+            <img
+              class="profile-pic"
+              src="{{site.baseurl}}/assets/images/person/john-radziszewski.png"
+              alt="John Radziszewski image" />
+            <h3 class="profile-name">John Radziszewski</h3>
+            <p class="profile-title">ITVMO Director</p>
+            <div class="profile-detail">
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg"
+                  alt="location logo" />
+                <p>Location - <b>Washington, DC</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg"
+                  alt="calendar logo" />
+                <p>ITVMO Start Date - <b>June 01, 2015</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/house-icon.svg"
+                  alt="house logo" />
+                <p>Government Experience</p>
+                <img
+                  src="{{site.baseurl}}/assets/uswds/img/usa-icons/expand_more.svg"
+                  alt="View Below" />
+              </div>
+              <ul class="gov-exp-bullet-list">
+                <li>Cross-Governmental Operations</li>
+                <li>IT and Acquisition Policy</li>
+                <li>Software Asset Management</li>
+                <li>Technology Program Operations</li>
+                <li>Terms and Conditions</li>
+                <li>Vendor Relations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="overlay-team-member-right">
+            <h3 class="profile-name">John Radziszewski</h3>
+            <p class="profile-title">ITVMO Director</p>
+            <div class="profile-About">
+              <h4>About</h4>
+              <p>
+                I’m John Radziszewski, Director of Governmentwide IT Vendor
+                Management (ITVMO). Before my current career in the Federal
+                government, I served honorably in the U.S. Coast Guard for 23
+                years. When I retired as a Lieutenant Commander in 2001, I
+                worked in the private sector at the executive level for over a
+                decade before returning to the federal government and GSA in
+                2015.
+              </p>
+              <p class="padding-top-3">
+                As the director of the ITVMO, I have the unique opportunity to
+                oversee the strategy, business, and operations and serve as the
+                senior IT expert and authoritative technical consultant. The
+                ITVMO serves as a trusted independent advisor and advocate to
+                agencies - a one-stop shop, leveraging governmentwide IT
+                procurement data, conducting market research, and developing
+                shared agency acquisition knowledge to support agencies in
+                procurement decisions.
+              </p>
+              <p class="padding-top-3">
+                This year, one of the more exciting service offerings we
+                launched was Contract Review as a Service; by bringing together
+                a team of domain experts in IT asset management, pricing, legal,
+                and contract management, we can provide consultation to agency
+                buyers on new contract documentation, reviews of existing
+                agreements and contract data (e.g., enterprise licensing
+                agreements; statement of works; audit strategies), and
+                comparative analysis on like contracts across government and
+                industry. The team is already working with a few select agencies
+                as a pilot of this offering, looking at MSFT and Oracle.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="usa-modal__footer">
+          <ul class="usa-button-group">
+            <li class="usa-button-group__item">
+              <button
+                type="button"
+                class="usa-button team-member-button"
+                data-close-modal>
+                Go back
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="usa-button usa-modal__close"
+        aria-label="Close this window"
+        data-close-modal>
+        <img
+          src="{{site.baseurl}}/assets/images/icons/exit-icon.svg"
+          alt="Exit button"
+          class="exit-button" />
+      </button>
+    </div>
+  </div>
+  <div class="usa-modal usa-modal-team-member" id="william-spencer">
+    <div class="usa-modal__content">
+      <div class="usa-modal__main">
+        <div class="overlay-team-member">
+          <div class="overlay-team-member-left">
+            <img
+              class="profile-pic"
+              src="{{site.baseurl}}/assets/images/person/william-spencer.png"
+              alt="William Spencer image" />
+            <h3 class="profile-name">William Spencer</h3>
+            <p class="profile-title">Senior Advisor</p>
+            <div class="profile-detail">
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg"
+                  alt="location logo" />
+                <p>Location - <b>Washington, DC</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg"
+                  alt="calendar logo" />
+                <p>ITVMO Start Date - <b>June 11, 2020</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/house-icon.svg"
+                  alt="house logo" />
+                <p>Government Experience</p>
+                <img
+                  src="{{site.baseurl}}/assets/uswds/img/usa-icons/expand_more.svg"
+                  alt="View Below" />
+              </div>
+              <ul class="gov-exp-bullet-list">
+                <li>Contract Lifecycle</li>
+                <li>Data and Finance Intelligence</li>
+                <li>IT and Acquisition Policy</li>
+                <li>Technology Program Operations</li>
+              </ul>
+            </div>
+          </div>
+          <div class="overlay-team-member-right">
+            <h3 class="profile-name">William Spencer</h3>
+            <p class="profile-title">Senior Advisor</p>
+            <div class="profile-About">
+              <h4>About</h4>
+              <p>
+                My name is Bill Spencer, and my tenure with the federal
+                government spans 17 years, during which I had the honor of
+                working as a Deputy CIO in the US Navy and as Engineering Design
+                and Deployment Branch Chief at DHA. Currently, I'm located at
+                GSA's central office and hold the role of ITVMO's Senior
+                Advisor, specializing in data analytics and IT. A significant
+                focus of mine currently revolves around enhancing the
+                functionality of government-wide IT spend data. I proudly hail
+                from Penn State, an institution that has played a crucial role
+                in shaping my journey. The wealth of experience I've garnered
+                over the years positions me as a dedicated advocate for
+                optimizing data analytics in the federal sphere. My true passion
+                is building efficient, relevant, measurable, and cost-conscious
+                IT organization, assembling high-performing teams, and crafting
+                scalable, resilient IT architectures that effectively address
+                pivotal mission challenges.
+              </p>
+              <p class="padding-top-3">
+                In my role, I'm committed to ensuring that our government
+                harnesses the power of data to make informed decisions and drive
+                efficiency. Outside the office, you'll find me in my workshop,
+                engrossed in various forms of woodworking.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="usa-modal__footer">
+          <ul class="usa-button-group">
+            <li class="usa-button-group__item">
+              <button
+                type="button"
+                class="usa-button team-member-button"
+                data-close-modal>
+                Go back
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="usa-button usa-modal__close"
+        aria-label="Close this window"
+        data-close-modal>
+        <img
+          src="{{site.baseurl}}/assets/images/icons/exit-icon.svg"
+          alt="Exit button"
+          class="exit-button" />
+      </button>
+    </div>
+  </div>
+  <div class="usa-modal usa-modal-team-member" id="kyra-stewart">
+    <div class="usa-modal__content">
+      <div class="usa-modal__main">
+        <div class="overlay-team-member">
+          <div class="overlay-team-member-left">
+            <img
+              class="profile-pic"
+              src="{{site.baseurl}}/assets/images/person/kyra-stewart-new.png"
+              alt="Kyra Stewart image" />
+            <h3 class="profile-name">Kyra Stewart</h3>
+            <p class="profile-title">Program Manager</p>
+            <div class="profile-detail">
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg"
+                  alt="location logo" />
+                <p>Location - <b>Washington, DC</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg"
+                  alt="calendar logo" />
+                <p>ITVMO Start Date - <b>Jun 01, 2020</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/house-icon.svg"
+                  alt="house logo" />
+                <p>Government Experience</p>
+                <img
+                  src="{{site.baseurl}}/assets/uswds/img/usa-icons/expand_more.svg"
+                  alt="View Below" />
+              </div>
+              <ul class="gov-exp-bullet-list">
+                <li>Acquisition Training & Workforce</li>
+                <li>Cross-Governmental Operations</li>
+                <li>Customer Experience</li>
+                <li>IT and Acquisition Policy</li>
+                <li>Technology Business Management</li>
+              </ul>
+            </div>
+          </div>
+          <div class="overlay-team-member-right">
+            <h3 class="profile-name">Kyra Stewart</h3>
+            <p class="profile-title">Program Manager</p>
+            <div class="profile-About">
+              <h4>About</h4>
+              <p>
+                Hi, my name is Kyra Stewart.<br />
+                I oversee day-to-day program operations as the IT Vendor
+                Management Office Program Manager. I benefit from partnering
+                with our dynamic and experienced team of subject matter experts
+                and a broad range of partners on a vast set of topics, including
+                vendor assessments, market, and procurement data analysis, IT
+                category management, and more. I'm incredibly excited about
+                leading the government-wide IT Buyers Community of Practice. It
+                allows me to leverage my experience and passion for
+                cross-functional collaboration, program and process improvement,
+                and employee engagement while supporting government
+                professionals who have the vital responsibility of procuring the
+                IT resources needed to meet agency missions.
+              </p>
+              <p class="padding-top-3">
+                I initially joined the government as an Economist at the
+                Department of Transportation. I went on to lead a hazardous
+                materials grant program, held the role of Agency Ombudsperson,
+                and served as the Agency Director of Innovation. In 2018, I was
+                selected as a Fellow in the White House Leadership Development
+                Program and invited to stay at the General Services
+                Administration (GSA) after the program. At GSA, I worked with
+                the Office of Government-wide Policy's Technology Business
+                Management (TBM) PMO before being selected as the Program
+                Manager for the new Federal ITVMO. With our government-wide
+                focus, I can work across agencies and lines of business to
+                identify and share best practices and lessons learned that
+                ultimately result in government-wide IT acquisition
+                improvements. I'm a 4th generation Washingtonian who attended
+                National Cathedral High School for Girls in NW, DC. I earned my
+                Bachelor's degree in Economics from the University of Virginia
+                and later completed my Masters in Public Administration at
+                American University. I've been with the Federal government for
+                over 20 years and look forward to being part of the IT-driven
+                evolution we will continue to experience in the government.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="usa-modal__footer">
+          <ul class="usa-button-group">
+            <li class="usa-button-group__item">
+              <button
+                type="button"
+                class="usa-button team-member-button"
+                data-close-modal>
+                Go back
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="usa-button usa-modal__close"
+        aria-label="Close this window"
+        data-close-modal>
+        <img
+          src="{{site.baseurl}}/assets/images/icons/exit-icon.svg"
+          alt="Exit button"
+          class="exit-button" />
+      </button>
+    </div>
+  </div>
+  <div class="usa-modal usa-modal-team-member" id="heather-stier">
+    <div class="usa-modal__content">
+      <div class="usa-modal__main">
+        <div class="overlay-team-member">
+          <div class="overlay-team-member-left">
+            <img
+              class="profile-pic"
+              src="{{site.baseurl}}/assets/images/person/heather-stier.png"
+              alt="Heather Stier image" />
+            <h3 class="profile-name">Heather Stier</h3>
+            <p class="profile-title">
+              IT Acquisition and Vendor Senior Advisor
+            </p>
+            <div class="profile-detail">
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg"
+                  alt="location logo" />
+                <p>Location - <b>Southern, MD</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg"
+                  alt="calendar logo" />
+                <p>ITVMO Start Date - <b>Apr 24, 2022</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/house-icon.svg"
+                  alt="house logo" />
+                <p>Government Experience</p>
+                <img
+                  src="{{site.baseurl}}/assets/uswds/img/usa-icons/expand_more.svg"
+                  alt="View Below" />
+              </div>
+              <ul class="gov-exp-bullet-list">
+                <li>IT and Acquisition Policy</li>
+                <li>Software Licensing and Contracts</li>
+                <li>Innovative Procurement Solutions</li>
+                <li>Vendor Relations</li>
+                <li>Unified Government Partnership Development</li>
+              </ul>
+            </div>
+          </div>
+          <div class="overlay-team-member-right">
+            <h3 class="profile-name">Heather Stier</h3>
+            <p class="profile-title">
+              IT Acquisition and Vendor Senior Advisor
+            </p>
+            <div class="profile-About">
+              <h4>About</h4>
+              <p>
+                Hi, my name is Hello, I'm Heather Stier, and I’ve been
+                supporting the federal government since 2008. I started my
+                career at the Department of State as a contractor supporting the
+                enterprise wide IT Budget Management, Capitol Planning, and IT
+                Strategy Planning. In 2013, I transitioned to a civil servant
+                continuing to support the Department of State primarily focused
+                on IT Strategic Planning and Budget management. My role changed
+                significantly in 2014 as I was appointed as the Contracting
+                Officer Representative for over 10 of DOS’s enterprise IT
+                contracts. My journey with the federal government began in 2008.
+                Since then I’ve held numerous roles and certificates including
+                IT Specialist and Special Advisor to Leadership on Strategic
+                Software Acquisitions as well as being a certified FAC-COR Level
+                III, and FAC-P/PM Senior, and FAC/P/PM IT /FAC-P/PM Senior for.
+                I was then offered an opportunity to take all of the unique IT,
+                acquisition, and strategic planning experience I had gained at
+                State and support the ITVMO as the and Acquisition experience.
+                Before I settled into my current position as the ITVMO’s IT
+                Acquisition and Vendor Senior Advisor, I worked in the
+                Department of State executing and overseeing many of the
+                agency’s IT contracts.
+              </p>
+              <p class="padding-top-3">
+                I specialize in Original Equipment Manufacturers (OEMs), Vendor
+                Management, Contract Negotiations, Enterprise-wide Procurements,
+                and Project Management. I'm particularly fervent about
+                advocating for government-wide acquisition strategies and
+                championing efficiency in software procurements across the
+                federal landscape. It's a cause I'm deeply committed to.
+              </p>
+              <p class="padding-top-3">
+                I call Southern Maryland home for now with plans to head south
+                to Charleston in the next year. , and wWhen I'm not immersed in
+                my professional endeavors, you can find me indulging in my
+                passion for gaming—a hobby I've cherished since the early 80s.
+                It's my go-to method for decompressing. My fiance and I also
+                enjoy indulging in our adventurous side by traveling regularly,
+                hiking and small rock climbing at local state parks, and
+                enjoying escape rooms with friends and family. Additionally, I'm
+                deeply involved with local feline rescues, actively contributing
+                to their efforts, which often includes adopting and fostering
+                furry companions.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="usa-modal__footer">
+          <ul class="usa-button-group">
+            <li class="usa-button-group__item">
+              <button
+                type="button"
+                class="usa-button team-member-button"
+                data-close-modal>
+                Go back
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="usa-button usa-modal__close"
+        aria-label="Close this window"
+        data-close-modal>
+        <img
+          src="{{site.baseurl}}/assets/images/icons/exit-icon.svg"
+          alt="Exit button"
+          class="exit-button" />
+      </button>
+    </div>
+  </div>
+  <div class="usa-modal usa-modal-team-member" id="clarence-harrison">
+    <div class="usa-modal__content">
+      <div class="usa-modal__main">
+        <div class="overlay-team-member">
+          <div class="overlay-team-member-left">
+            <img
+              class="profile-pic"
+              src="{{site.baseurl}}/assets/images/person/clarence-harrison.jpg"
+              alt="Clarence Harrison image" />
+            <h3 class="profile-name">Clarence Harrison Jr</h3>
+            <p class="profile-title">Senior Advisor</p>
+            <div class="profile-detail">
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/location-icon-orange.svg"
+                  alt="location logo" />
+                <p>Location - <b>Washington, DC</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg"
+                  alt="calendar logo" />
+                <p>ITVMO Start Date - <b>Jan 29th, 2024</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/calendar-icon-orange.svg"
+                  alt="calendar logo" />
+                <p>ITVMO Start Date - <b>Apr 24, 2022</b></p>
+              </div>
+              <div>
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/house-icon.svg"
+                  alt="house logo" />
+                <p>Government Experience</p>
+                <img
+                  src="{{site.baseurl}}/assets/uswds/img/usa-icons/expand_more.svg"
+                  alt="View Below" />
+              </div>
+              <ul class="gov-exp-bullet-list">
+                <li>Contract Lifecycle</li>
+                <li>Equity and Small Business</li>
+                <li>IT and Acquisition Policy</li>
+                <li>Vehicle Solutions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="overlay-team-member-right">
+            <h3 class="profile-name">Clarence Harrison Jr</h3>
+            <p class="profile-title">Senior Advisor</p>
+            <div class="profile-About">
+              <h4>About</h4>
+              <p>
+                Hi, my name is Clarence Harrison Jr, with 14+ years of
+                experience in the federal government I currently serve as a
+                Senior Advisor providing procurement policy and technical advice
+                to the ITVMO and vendor engagements. Before coming to the ITMO,
+                I served as a Senior Procurement Analyst on the Acquisition
+                Policy Division within GSA’s Office of Government-wide Policy
+                (OGP), where I drafted agency-wide procurement policies,
+                executed GSAM/GSAR changes and led major acquisition
+                initiatives. I’ve served in other roles such as Acting Director
+                of GSA’s Acquisition Policy Division (GSAR Team) and Acting
+                Supervisory Small Business Specialist within the Office of Small
+                and Disadvantaged Business Utilization (OSDBU), where I
+                collaborated with program and contracting offices to maximize
+                small business and socio-economic small business procurement
+                opportunities within GSA.
+              </p>
+              <p class="padding-top-3">
+                Prior to GSA, I served as a procurement analyst within the
+                Department of Homeland Security (DHS) and as a contracting
+                officer in other federal agencies. I am also a 2019 DHS Office
+                of the Chief Procurement Officer Executive Development Program
+                for Acquisition Leaders graduate and I possess industry and
+                federal certifications to include: NCMA CPCM, FAC-C
+                (Professional) and FAC-C-Digital Services.
+              </p>
+              <p class="padding-top-3">
+                I earned my Bachelors Degree from Virginia Tech University. In
+                2024, I was selected as the recipient of GSA’s Acquisition
+                Innovation in Action Award. Outside of work, I'm a devoted fan
+                of the Washington Commanders and VT Hokies, and enjoy exercising
+                and playing sports. I am also an avid fisherman.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="usa-modal__footer">
+          <ul class="usa-button-group">
+            <li class="usa-button-group__item">
+              <button
+                type="button"
+                class="usa-button team-member-button"
+                data-close-modal>
+                Go back
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button
+        type="button"
+        class="usa-button usa-modal__close"
+        aria-label="Close this window"
+        data-close-modal>
+        <img
+          src="{{site.baseurl}}/assets/images/icons/exit-icon.svg"
+          alt="Exit button"
+          class="exit-button" />
+      </button>
+    </div>
+  </div>
+</section>
