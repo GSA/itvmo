@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 title: Second Annual ITVMO Summit Highlights
 description: Read more about our Second Annual ITVMO Summit that took place June 11th!
 url-link: https://itvmo.gsa.gov/annual-summit/
