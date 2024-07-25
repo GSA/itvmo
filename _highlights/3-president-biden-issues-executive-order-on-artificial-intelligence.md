@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 2
 title: Chief Acquisition Officers Council (CAOC) 2024 Request for Nominations
 description: Submit Nominations for CAOC's 2024 Acquisition, Program Management,
   Small Business and Procurement Equity, and Sustainable Acquisition Excellence
