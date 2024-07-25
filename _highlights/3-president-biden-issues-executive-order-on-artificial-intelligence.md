@@ -1,10 +1,9 @@
 ---
-order: 3
-title: Chief Acquisition Officers Council (CAOC) 2024 Request for Nominations
-description: Submit Nominations for CAOC's 2024 Acquisition, Program Management,
-  Small Business and Procurement Equity, and Sustainable Acquisition Excellence
-  Awards!
-url-link: https://www.fai.gov/survey/AE2024-Award-Submission
-publication-date: April 23, 2024
+order: 2
+title: NCMA 2024 Outstanding Fellow Award Winner
+description: Hear from the ITVMO's own NCMA 2024 Outstanding Fellow Award
+  Winner, Warren Blankenship!
+url-link: https://www.youtube.com/watch?v=hoyMwyquEU8&ab_channel=NCMAHQ
+publication-date: July 25, 2024
 background-image: assets/uploads/adobestock_577070387_edited.jpg
 ---
