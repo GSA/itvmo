@@ -1,6 +1,6 @@
 ---
 layout: news
-publisher: GSA
+publisher: The White House
 title: "FACT SHEET: OMB Releases FedRAMP Guidance to Accelerate the Secure
   Adoption of Cloud Services"
 url-link: https://www.whitehouse.gov/omb/briefing-room/2024/07/26/fact-sheet-omb-releases-fedramp-guidance-to-accelerate-the-secure-adoption-of-cloud-services/
