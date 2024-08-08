@@ -5371,3 +5371,31 @@ html * {
   margin-bottom: -17px;
   padding-top: 10px;
 }
+
+.itvmo-card-group {
+  display: flex;
+}
+
+.itvmo-bic-card {
+  width: 300px;
+}
+
+.itvmo-card-link-bic {
+  text-decoration: none !important;
+  &:hover {
+    background-color: #f2f2f2;
+  }
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+@media (min-width: 40em) {
+  .usa-prose .usa-card:last-child {
+    margin-bottom: 2rem !important;
+  }
+}
