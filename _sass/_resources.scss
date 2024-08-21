@@ -1797,6 +1797,16 @@ html * {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
+  .anouncment-transp {
+    width: 100%;
+    height: auto;
+    padding: 18px 15px 18px 0px;
+    background-color: transparent !important;
+    display: flex;
+    align-items: stretch;
+    column-gap: 20px;
+    border: 1px solid #000;
+  }
   .announcement {
     width: 100%;
     height: auto;

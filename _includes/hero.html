@@ -1,94 +1,135 @@
-{% comment %} 
-This will be displayed on the homepage. Ideally, you want to highlight key goals of the website
-{% endcomment %}
-<section class="usa-hero">
-  <div class="grid-container padding-0">
-      <div class="usa-hero-welcome animate fade"> 
-        <div id="welcome">
-          <h3>
-            Welcome to ITVMO
-          </h3>
-          <p>
-            The ITVMO serves as a trusted independent advisor and advocate to help agencies buy common IT goods and services in compliance with procurement laws. As a one-stop shop, we can leverage governmentwide IT procurement data, conduct market research, and develop shared agency acquisition knowledge to support agencies in procurement decisions.
-          </p>
-          <form
-          id="search_form"
-          class=""
-          role="search"
-          accept-charset="UTF-8"
-          action="https://search.usa.gov/search"
-          method="get"
-        >
-          <input name="utf8" type="hidden" value="✓" />
-          <input id="affiliate" name="affiliate" type="hidden" value="gsa-itvmo" />
-          <div id="homepage-searchbar" role="search">
-            <input
-              class=""
-              id="searchbar"
-              type="search"
-              name="query"
-              autocomplete="off"
-              placeholder="What are you looking for?"
-            />
-            <button id="searchbar-button" type="submit"><span class="usa-sr-only">Search</span></button>
+{% comment %} This will be displayed on the homepage. Ideally, you want to
+highlight key goals of the website {% endcomment %}
+<div class="noti-banner-home">
+    <div class="grid-container padding-0">
+      <section id="page-announcements">
+        <div class="announcement anouncment-transp">
+          <div class="announcement-image">
+            <img
+              class="resource-image"
+              src="{{site.baseurl}}/assets/images/icons/noticed.svg"
+              alt="Notice icon" />
           </div>
-        </form>
-
+          <div class="announcement-info">
+            <h2>Excited to shape the future of the ITVMO website?</h2>
+            <p>
+              Join us in enhancing the way ITVMO users access information! Sign
+              Up
+              <a
+                class="usa-link"
+                href="https://docs.google.com/forms/d/1bnTpDdFLMKKiLa5gMo0t3HUN0KmlY3YCXcDOi8w6T8o/edit"
+                >Here.</a
+              >
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="usa-hero-panel animate fade">
-        <div id="dynamic-panel">
-          <a class="prev" tabindex="0" title="Go to previous highlight">
-            <img src="{{site.baseurl}}/assets/images/icons/arrow-icon.svg" alt="previous arrow">
-          </a>
-          <div class = "dotDiv">
-            {% for highlight in site.highlights %}
-            <span class="dot"></span>
-            {% endfor %}
+      </section>
+    </div>
+  </div>
+
+
+    <section class="usa-hero">
+      <div class="grid-container padding-0">
+        <div class="usa-hero-welcome animate fade">
+          <div id="welcome">
+            <h3>Welcome to ITVMO</h3>
+            <p>
+              The ITVMO serves as a trusted independent advisor and advocate to
+              help agencies buy common IT goods and services in compliance with
+              procurement laws. As a one-stop shop, we can leverage
+              governmentwide IT procurement data, conduct market research, and
+              develop shared agency acquisition knowledge to support agencies in
+              procurement decisions.
+            </p>
+            <form
+              id="search_form"
+              class=""
+              role="search"
+              accept-charset="UTF-8"
+              action="https://search.usa.gov/search"
+              method="get">
+              <input name="utf8" type="hidden" value="✓" />
+              <input
+                id="affiliate"
+                name="affiliate"
+                type="hidden"
+                value="gsa-itvmo" />
+              <div id="homepage-searchbar" role="search">
+                <input
+                  class=""
+                  id="searchbar"
+                  type="search"
+                  name="query"
+                  autocomplete="off"
+                  placeholder="What are you looking for?" />
+                <button id="searchbar-button" type="submit">
+                  <span class="usa-sr-only">Search</span>
+                </button>
+              </div>
+            </form>
           </div>
-          <div class="slideshow-container column-card">
-            {% for highlight in site.highlights %}
-            <div class="mySlides" onmouseover="stopSlide()" onmouseout="runSlide()">
-              <div class="order">{{highlight.order}}</div>
-              <img class="highlight-background" src="{{site.baseurl}}/{{highlight.background-image}}" alt="highlight background">
-              <div class="highlight-info">
-                <div>
-                  <h4>
-                    {{highlight.title}}
-                  </h4>
-                  <p class="two-line-max">
-                    {{highlight.description}}
-                  </p>
-                </div>
-                <div class="highlight-info-bottom">
-                  <p class="publish-date">
-                    <img src="{{site.baseurl}}/assets/images/icons/clock-icon.svg" alt="Clock icon">
-                    {{highlight.publication-date}}
-                  </p>
-                  <a class="read-more" tabindex="0" target="_blank" rel="noreferrer noopener" href="{{highlight.url-link}}"
-                  aria-label="{{highlight.title}} link"
-                  >
-                    <p >READ MORE</p>
-                  </a>
+        </div>
+        <div class="usa-hero-panel animate fade">
+          <div id="dynamic-panel">
+            <a class="prev" tabindex="0" title="Go to previous highlight">
+              <img
+                src="{{site.baseurl}}/assets/images/icons/arrow-icon.svg"
+                alt="previous arrow" />
+            </a>
+            <div class="dotDiv">
+              {% for highlight in site.highlights %}
+              <span class="dot"></span>
+              {% endfor %}
+            </div>
+            <div class="slideshow-container column-card">
+              {% for highlight in site.highlights %}
+              <div
+                class="mySlides"
+                onmouseover="stopSlide()"
+                onmouseout="runSlide()">
+                <div class="order">{{highlight.order}}</div>
+                <img
+                  class="highlight-background"
+                  src="{{site.baseurl}}/{{highlight.background-image}}"
+                  alt="highlight background" />
+                <div class="highlight-info">
+                  <div>
+                    <h4>{{highlight.title}}</h4>
+                    <p class="two-line-max">{{highlight.description}}</p>
+                  </div>
+                  <div class="highlight-info-bottom">
+                    <p class="publish-date">
+                      <img
+                        src="{{site.baseurl}}/assets/images/icons/clock-icon.svg"
+                        alt="Clock icon" />
+                      {{highlight.publication-date}}
+                    </p>
+                    <a
+                      class="read-more"
+                      tabindex="0"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      href="{{highlight.url-link}}"
+                      aria-label="{{highlight.title}} link">
+                      <p>READ MORE</p>
+                    </a>
+                  </div>
                 </div>
               </div>
+              {% endfor %}
             </div>
-            {% endfor %}
+            <a class="next" tabindex="0" title="Go to next highlight">
+              <img
+                src="{{site.baseurl}}/assets/images/icons/arrow-icon.svg"
+                alt="next arrow" />
+            </a>
           </div>
-          <a class="next" tabindex="0" title="Go to next highlight">
-            <img src="{{site.baseurl}}/assets/images/icons/arrow-icon.svg" alt="next arrow">
-          </a>
         </div>
       </div>
+    </section>
+
+    {% comment %} Use this section to highlight key elements of your site. Some
+    sites will only have two while others may have six to eight. {% endcomment
+    %}
   </div>
-</section>
-
-
-{% comment %}
-Use this section to highlight key elements of your site. Some sites will only have two while others may have six to
-eight.
-{% endcomment %}
-
-
-
-
+</div>
