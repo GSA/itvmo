@@ -1,9 +1,9 @@
 ---
-order: 5
-title: New OMB AI Policy
-description: Read the latest on OMB's Policy to Advance Governance, Innovation,
-  and Risk Management in Federal Agencies’ Use of Artificial Intelligence!
-url-link: https://www.whitehouse.gov/briefing-room/statements-releases/2024/03/28/fact-sheet-vice-president-harris-announces-omb-policy-to-advance-governance-innovation-and-risk-management-in-federal-agencies-use-of-artificial-intelligence/
-publication-date: April 25, 2024
+order: 3
+title: NITAAC CIO-SP3 Extended Further Through 4/29/25
+description: The CIO-SP3 and CIO-SP3 Small Business GWACs have been additionally
+  extended through April 29, 2025!
+url-link: https://nitaac.nih.gov/gwacs/cio-sp3
+publication-date: September 03, 2024
 background-image: assets/uploads/laptopsndevices.jpeg
 ---
