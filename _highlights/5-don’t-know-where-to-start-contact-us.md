@@ -1,5 +1,5 @@
 ---
-order: 3
+order: 4
 title: Modernizing the Federal Risk and Authorization Management Program (FedRAMP)
 description: Read the latest on Modernizing the Federal Risk and Authorization
   Management Program (FedRAMP)!
