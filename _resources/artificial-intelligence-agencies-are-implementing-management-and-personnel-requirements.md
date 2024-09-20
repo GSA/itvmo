@@ -18,5 +18,5 @@ is-external: true
 filter: technology
 audience: program-operations
 resource-type: report
-branded-offerings: acquisition-policy-it-category
+branded-offerings: market-it-data-intelligence
 ---
