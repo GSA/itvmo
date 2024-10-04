@@ -1,5 +1,5 @@
 ---
-order: 5
+order: 2
 title: Advancing the Responsible Acquisition of Artificial Intelligence in Government
 description: Read more about our Advancing the Responsible Acquisition of
   Artificial Intelligence in Government!
