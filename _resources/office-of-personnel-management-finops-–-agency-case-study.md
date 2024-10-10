@@ -20,5 +20,5 @@ is-external: false
 filter: acquisition-best-practices
 audience: contracts-acquisitions
 resource-type: use-case
-branded-offerings: market-it-data-intelligence
+branded-offerings: acquisition-policy-it-category
 ---
