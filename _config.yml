@@ -145,6 +145,7 @@ collections:
     output: true
   events:
     output: true
+    permalink: /:path/
   events_page_announcements:
     output: true
   past_event_highlight:

@@ -31,106 +31,122 @@ collections:
   #         timeFormat: false
   #       }
   #     - {label: "Body", name: "body", widget: "markdown"}
-#Allow user to create highlights.
+  #Allow user to create highlights.
   - label: Highlights
     name: highlights
     folder: _highlights/
     create: true
     slug: "{{order}}-{{slug}}"
     fields:
-    - label: "Order" 
-      name: "order"
-      widget: "number"
-      default: 99
-      value_type: "int"
-      min: 1
-      max: 99
-      step: 2
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Description", name: "description", widget: "text"}
-    - {label: "URL", name: "url-link", widget: "string"}
-    - label: 'Publication date'
-      name: 'publication-date'
-      widget: 'date'
-      default: ''
-      format: 'MMMM DD, YYYY'
-    - label: "Background Image"
-      name: "background-image"
-      widget: "image"
-      choose_url: true
-      # media_folder: ../assets/images/highlight_images
-      default: ""
-      media_library:
-        config:
-          multiple: true
-#Allow user to create announcement.
+      - label: "Order"
+        name: "order"
+        widget: "number"
+        default: 99
+        value_type: "int"
+        min: 1
+        max: 99
+        step: 2
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "URL", name: "url-link", widget: "string" }
+      - label: "Publication date"
+        name: "publication-date"
+        widget: "date"
+        default: ""
+        format: "MMMM DD, YYYY"
+      - label: "Background Image"
+        name: "background-image"
+        widget: "image"
+        choose_url: true
+        # media_folder: ../assets/images/highlight_images
+        default: ""
+        media_library:
+          config:
+            multiple: true
+  #Allow user to create announcement.
   - label: Events page Announcements
     name: events-page-announcements
     folder: _events_page_announcements/
     create: true
     slug: "{{slug}}"
     fields:
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Description", name: "description", widget: "text"}
-    - {label: "URL", name: "url-link", widget: "string"}
-    - {label: "URL label", name: "url-label", widget: "string"}
-#Allow user to create events.
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "URL", name: "url-link", widget: "string" }
+      - { label: "URL label", name: "url-label", widget: "string" }
+  #Allow user to create events.
   - label: Events
     name: events
     folder: _events/
     create: true
     slug: "{{slug}}"
     fields:
-    - {label: "Organizer", name: "organizer", widget: "string"}
-    - {label: "URL", name: "url-link", widget: "string"}
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Description", name: "description", widget: "text"}
-    - label: "Start time"
-      name: "start-time"
-      widget: "datetime"
-      default: ""
-      date_format: "MMMM DD, YYYY" # e.g. 24.12.2021
-      time_format: "HH:mm" # e.g. 21:07
-      format: "YYYY-MM-DDTHH:mm:ss.sss-00:00"
-      picker_utc: false
-    - label: "End time"
-      name: "end-time"
-      widget: "datetime"
-      default: ""
-      date_format: "MMMM DD, YYYY" # e.g. 24.12.2021
-      time_format: "H:mm" # e.g. 21:07
-      format: "YYYY-MM-DDTHH:mm:ss.sss-00:00"
-      picker_utc: false
-    - label: Event Type
-      name: event-type
-      widget: relation
-      collection: "events-types"
-      search_fields: ["name"]
-      value_field: "name"
-      display_fields: ["name"]
-      multiple: false
-    - {label: ".Gov/.mil only", name: "gov-only",  widget: "boolean", default: false} # Determine if the resource is .Gov/.mil only or not.
-    - {label: "External Resource", name: "is-external",  widget: "boolean", default: false}
-#Allow user to create Past Event Highlights
+      - { label: "Organizer", name: "organizer", widget: "string" }
+      - { label: "URL", name: "url-link", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - label: "Start time"
+        name: "start-time"
+        widget: "datetime"
+        default: ""
+        date_format: "MMMM DD, YYYY" # e.g. 24.12.2021
+        time_format: "HH:mm" # e.g. 21:07
+        format: "YYYY-MM-DDTHH:mm:ss.sss-00:00"
+        picker_utc: false
+      - label: "End time"
+        name: "end-time"
+        widget: "datetime"
+        default: ""
+        date_format: "MMMM DD, YYYY" # e.g. 24.12.2021
+        time_format: "H:mm" # e.g. 21:07
+        format: "YYYY-MM-DDTHH:mm:ss.sss-00:00"
+        picker_utc: false
+      - label: Event Type
+        name: event-type
+        widget: relation
+        collection: "events-types"
+        search_fields: ["name"]
+        value_field: "name"
+        display_fields: ["name"]
+        multiple: false
+      - {
+          label: ".Gov/.mil only",
+          name: "gov-only",
+          widget: "boolean",
+          default: false,
+        } # Determine if the resource is .Gov/.mil only or not.
+      - {
+          label: "External Resource",
+          name: "is-external",
+          widget: "boolean",
+          default: false,
+        }
+      - {
+          label: "Synopsis",
+          name: "synopsis",
+          widget: "markdown",
+          required: false,
+        }
+  #Allow user to create Past Event Highlights
   - label: Past Event Highlights
     name: past-event-highlights
     folder: _past_event_highlight/
     create: true
     slug: "{{slug}}"
     fields:
-    - {label: "URL", name: "url-link", widget: "string"}
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Description", name: "description", widget: "text"}
-    - label: "Highlight Image"
-      name: "highlight-image"
-      widget: "image"
-      choose_url: true
-      # media_folder: ../assets/images/highlight_images
-      default: ""
-      media_library:
-        config:
-          multiple: true
-#Events Types allow user to use it to determine the type of the Event.
+      - { label: "URL", name: "url-link", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - label: "Highlight Image"
+        name: "highlight-image"
+        widget: "image"
+        choose_url: true
+        # media_folder: ../assets/images/highlight_images
+        default: ""
+        media_library:
+          config:
+            multiple: true
+  #Events Types allow user to use it to determine the type of the Event.
   - label: Events Types
     name: events-types
     folder: assets/events_type
@@ -139,35 +155,46 @@ collections:
     slug: "{{name}}"
     identifier_field: name
     summary: "{{name}}"
-    fields: 
-      - {label: Name, name: name}
-#Allow admin to create articles.
+    fields:
+      - { label: Name, name: name }
+  #Allow admin to create articles.
   - label: News
     name: news
     folder: _news/news/
     create: true #Allow users to create new documents in this collection.
     slug: "{{slug}}"
     fields:
-    - {label: Layout,  name: layout, widget: string, default: "news", immutable: true }
-    - label: Publisher
-      name: publisher
-      widget: relation
-      collection: "publishers"
-      search_fields: ["name"]
-      value_field: "name"
-      display_fields: ["name"]
-      multiple: false
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "URL", name: "url-link", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
-    - label: 'Publication date'
-      name: 'publication-date'
-      widget: 'date'
-      default: ''
-      format: 'MMMM DD, YYYY'
-    - {label: "Description", name: "description", widget: "text"}
-    - {label: "Synopsis", name: "synopsis", widget: "markdown", required: false}
+      - {
+          label: Layout,
+          name: layout,
+          widget: string,
+          default: "news",
+          immutable: true,
+        }
+      - label: Publisher
+        name: publisher
+        widget: relation
+        collection: "publishers"
+        search_fields: ["name"]
+        value_field: "name"
+        display_fields: ["name"]
+        multiple: false
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "URL", name: "url-link", widget: "string" } #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
+      - label: "Publication date"
+        name: "publication-date"
+        widget: "date"
+        default: ""
+        format: "MMMM DD, YYYY"
+      - { label: "Description", name: "description", widget: "text" }
+      - {
+          label: "Synopsis",
+          name: "synopsis",
+          widget: "markdown",
+          required: false,
+        }
 
-#Allow user to create publisher, that will be the pick list for the Articles collection.
+  #Allow user to create publisher, that will be the pick list for the Articles collection.
   - label: Publishers
     name: publishers
     folder: _article_publishers/
@@ -176,15 +203,15 @@ collections:
     slug: "{{slug}}"
     identifier_field: name
     summary: "{{name}}"
-    fields: 
-      - {label: Name, name: name}
-      - {label: "URL", name: "url-link", widget: "string"}
+    fields:
+      - { label: Name, name: name }
+      - { label: "URL", name: "url-link", widget: "string" }
       - label: "Publisher logo"
         name: "publisher-logo"
         widget: "image"
         choose_url: true
 
-#Allow users to create article topics that are used to filter articles.
+  #Allow users to create article topics that are used to filter articles.
   - label: Article topics
     name: article-topics
     folder: _article_topics/
@@ -193,84 +220,99 @@ collections:
     slug: "{{slug}}"
     identifier_field: name
     summary: "{{name}}"
-    fields: 
-      - {label: Name, name: name}
+    fields:
+      - { label: Name, name: name }
 
-#Allow admin to create resource cards.
+  #Allow admin to create resource cards.
   - label: Resources
     name: resources
     folder: _resources/
     create: true #Allow users to create new documents in this collection.
     slug: "{{slug}}"
     fields:
-    - {label: "Highlight", name: "highlight",  widget: "boolean", default: false}
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Description", name: "description", widget: "text"}
-    - {label: "URL", name: "url-link", widget: "string"} #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
-    # - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
-    - label: 'Publication date'
-      name: 'publication-date'
-      widget: 'date'
-      default: ''
-      format: 'MMMM DD, YYYY'
-    - label: "Reading time"
-      name: "reading-time"
-      widget: "number"
-      default: 30
-      valueType: "int"
-      min: 1
-    - label: File type
-      name: type
-      widget: relation
-      collection: "type-tags"
-      search_fields: ["name"]
-      value_field: "tag"
-      display_fields: ["name"]
-      multiple: false
-    - {label: ".Gov/.mil only", name: "gov-only",  widget: "boolean", default: false} # Determine if the resource is .Gov/.mil only or not.
-    - {label: "External Resource", name: "is-external",  widget: "boolean", default: false} #Determine if the resource is external or internal.
-    # - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
-    # - label: "tags"
-    #   name: "filter"
-    #   widget: "relation"
-    #   collection: "tags"
-    #   search_fields: ["label"]
-    #   value_field: "name"
-    #   display_fields: ["label"]
-    #   multiple: true
-    - label: Topic Area
-      name: filter
-      widget: relation
-      collection: "filter-tags"
-      search_fields: ["name"]
-      value_field: "tag"
-      display_fields: ["name"]
-      multiple: false
-    - label: Audience
-      name: audience
-      widget: relation
-      collection: "audience-tags"
-      search_fields: ["name"]
-      value_field: "tag"
-      display_fields: ["name"]
-      multiple: false
-    - label: Resource Type
-      name: resource-type
-      widget: relation
-      collection: "resource-type-tags"
-      search_fields: ["name"]
-      value_field: "tag"
-      display_fields: ["name"]
-      multiple: false
-    - label: Branded Offerings
-      name: branded-offerings
-      widget: relation
-      collection: "bo-tags"
-      search_fields: ["name"]
-      value_field: "tag"
-      display_fields: ["name"]
-      multiple: false
-#Resource Type tags allow user to use it to tag the resource cards
+      - {
+          label: "Highlight",
+          name: "highlight",
+          widget: "boolean",
+          default: false,
+        }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "URL", name: "url-link", widget: "string" } #Also have permalink and doc-link (Which this achieve the same purpose as well without complicate users who does not have technical background).
+      # - {label: "Type", name: "type", widget: "string"} #Determine if it link or PDF
+      - label: "Publication date"
+        name: "publication-date"
+        widget: "date"
+        default: ""
+        format: "MMMM DD, YYYY"
+      - label: "Reading time"
+        name: "reading-time"
+        widget: "number"
+        default: 30
+        valueType: "int"
+        min: 1
+      - label: File type
+        name: type
+        widget: relation
+        collection: "type-tags"
+        search_fields: ["name"]
+        value_field: "tag"
+        display_fields: ["name"]
+        multiple: false
+      - {
+          label: ".Gov/.mil only",
+          name: "gov-only",
+          widget: "boolean",
+          default: false,
+        } # Determine if the resource is .Gov/.mil only or not.
+      - {
+          label: "External Resource",
+          name: "is-external",
+          widget: "boolean",
+          default: false,
+        } #Determine if the resource is external or internal.
+      # - {label: "Filters", name: "filters", widget: "text"} #Create pick list for this?
+      # - label: "tags"
+      #   name: "filter"
+      #   widget: "relation"
+      #   collection: "tags"
+      #   search_fields: ["label"]
+      #   value_field: "name"
+      #   display_fields: ["label"]
+      #   multiple: true
+      - label: Topic Area
+        name: filter
+        widget: relation
+        collection: "filter-tags"
+        search_fields: ["name"]
+        value_field: "tag"
+        display_fields: ["name"]
+        multiple: false
+      - label: Audience
+        name: audience
+        widget: relation
+        collection: "audience-tags"
+        search_fields: ["name"]
+        value_field: "tag"
+        display_fields: ["name"]
+        multiple: false
+      - label: Resource Type
+        name: resource-type
+        widget: relation
+        collection: "resource-type-tags"
+        search_fields: ["name"]
+        value_field: "tag"
+        display_fields: ["name"]
+        multiple: false
+      - label: Branded Offerings
+        name: branded-offerings
+        widget: relation
+        collection: "bo-tags"
+        search_fields: ["name"]
+        value_field: "tag"
+        display_fields: ["name"]
+        multiple: false
+  #Resource Type tags allow user to use it to tag the resource cards
   - label: Resource Filter tags
     name: resource-type-tags
     folder: assets/resource_tags/resource_type_tags
@@ -279,11 +321,11 @@ collections:
     slug: "{{name}}"
     identifier_field: name
     summary: "{{name}}"
-    fields: 
-      - {label: Name, name: name}
-      - {label: Tag, name: tag}
+    fields:
+      - { label: Name, name: name }
+      - { label: Tag, name: tag }
 
-#Resource Filter tags allow user to use it to tag the resource cards
+  #Resource Filter tags allow user to use it to tag the resource cards
   - label: Resource Filter tags
     name: filter-tags
     folder: assets/resource_tags/filter_tags
@@ -292,10 +334,10 @@ collections:
     slug: "{{name}}"
     identifier_field: name
     summary: "{{name}}"
-    fields: 
-      - {label: Name, name: name}
-      - {label: Tag, name: tag}
-#Branded Offering tags allow user to use it to tag the resource cards
+    fields:
+      - { label: Name, name: name }
+      - { label: Tag, name: tag }
+  #Branded Offering tags allow user to use it to tag the resource cards
   - label: Branded Offering tags
     name: bo-tags
     folder: assets/resource_tags/branded-offerings_tags
@@ -304,10 +346,10 @@ collections:
     slug: "{{name}}"
     identifier_field: name
     summary: "{{name}}"
-    fields: 
-      - {label: Name, name: name}
-      - {label: Tag, name: tag}
-#Audience tags tags allow user to use it to tag the resource cards
+    fields:
+      - { label: Name, name: name }
+      - { label: Tag, name: tag }
+  #Audience tags tags allow user to use it to tag the resource cards
   - label: Audience tags
     name: audience-tags
     folder: assets/resource_tags/audience_tags
@@ -316,10 +358,10 @@ collections:
     slug: "{{name}}"
     identifier_field: name
     summary: "{{name}}"
-    fields: 
-      - {label: Name, name: name}
-      - {label: Tag, name: tag}
-#Type tags tags allow user to use it to tag the resource cards
+    fields:
+      - { label: Name, name: name }
+      - { label: Tag, name: tag }
+  #Type tags tags allow user to use it to tag the resource cards
   - label: Type tags
     name: type-tags
     folder: assets/resource_tags/type_tags
@@ -328,15 +370,15 @@ collections:
     slug: "{{name}}"
     identifier_field: name
     summary: "{{name}}"
-    fields: 
-      - {label: Name, name: name}
-      - {label: Tag, name: tag}
+    fields:
+      - { label: Name, name: name }
+      - { label: Tag, name: tag }
 
-#Allow admin to create pages.
+  #Allow admin to create pages.
 
-# title: About
-# layout: page
-# sidenav: false
+  # title: About
+  # layout: page
+  # sidenav: false
 
   - label: Pages
     name: pages
@@ -345,12 +387,15 @@ collections:
     # create: true #Allow users to create new documents in this collection.
     slug: "{{slug}}"
     fields:
-    - {label: "Title", name: "title", widget: "string"}
-    - {label: "Layout", name: "layout", widget: "hidden", default: "page"} #Will not show on the UI and will be auto fill by default value.
-    - {label: "Side Navigation", name: "sidenav", widget: "hidden", default: "false"} #Will not show on the UI and will be auto fill by default value.
-    - {label: "Body", name: "body", widget: "markdown"} 
-
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" } #Will not show on the UI and will be auto fill by default value.
+      - {
+          label: "Side Navigation",
+          name: "sidenav",
+          widget: "hidden",
+          default: "false",
+        } #Will not show on the UI and will be auto fill by default value.
+      - { label: "Body", name: "body", widget: "markdown" }
 #Allow user to create events.
-
 
 #Allow user to create News.
