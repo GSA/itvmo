@@ -1,4 +1,5 @@
 ---
+layout: news
 organizer: Fedscoop
 url-link: https://cybertalks.upgather.com/
 title: Cyber Talks
