@@ -1,9 +1,8 @@
 ---
-order: 4
-title: Modernizing the Federal Risk and Authorization Management Program (FedRAMP)
-description: Read the latest on Modernizing the Federal Risk and Authorization
-  Management Program (FedRAMP)!
-url-link: https://www.whitehouse.gov/wp-content/uploads/2024/07/M-24-15-Modernizing-the-Federal-Risk-and-Authorization-Management-Program.pdf
-publication-date: July 31, 2024
+order: 1
+title: EOY IT Buyers Event
+description: Pre-Registration is open for The 2024 EOY IT Buyers Event!
+url-link: https://docs.google.com/forms/d/e/1FAIpQLSeuuPxppkD7Y54RtPXank1h2XTUbzr5adWUiyZxQgoiRRQbag/viewform
+publication-date: October 30, 2024
 background-image: assets/uploads/helpdesk.jpeg
 ---
