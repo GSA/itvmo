@@ -16,7 +16,7 @@ reading-time: 45
 type: PDF
 gov-only: false
 is-external: true
-filter: acquisition-best-practices
+filter: p-filter
 audience: contracts-acquisitions
 resource-type: guidance
 branded-offerings: market-it-data-intelligence
