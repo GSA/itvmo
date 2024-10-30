@@ -1865,6 +1865,12 @@ html * {
     font-size: 1.125em;
     color: #062349 !important;
   }
+  h5 {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1em;
+    color: #6a6767 !important;
+  }
   .download-icon {
     width: 16px;
     height: 15px;
@@ -5304,7 +5310,9 @@ html * {
 .pt-0 {
   padding-top: 0px !important;
 }
-
+.pt-1 {
+  padding-top: 10px !important;
+}
 .section-underline {
   height: 2px;
   width: 100%;
