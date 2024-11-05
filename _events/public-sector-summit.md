@@ -18,4 +18,6 @@ end-time: 2024-10-16T16:00:00.000-00:00
 event-type: In-person
 gov-only: false
 is-external: true
+synopsis: >-
+  This is a test
 ---
