@@ -3,7 +3,7 @@ layout: news
 publisher: Department of Homeland Security
 title: Ensuring the Nation’s Cybersecurity Is a Whole-of-Government Effort
 url-link: https://www.dhs.gov/science-and-technology/news/2024/10/28/ensuring-nations-cybersecurity-whole-government-effort
-publication-date: November 28, 2024
+publication-date: October 28, 2024
 description: The nation's growing reliance on the internet has increased
   vulnerability to cyberattacks, emphasizing the need for robust cybersecurity.
   The Software Assurance Community of Practice (SwA CoP), an interagency group
