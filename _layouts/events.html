@@ -14,16 +14,16 @@ layout: base
             <section id="page-directory"></section>
             <section id="page-heading">
               <h1 class="page-heading-title margin-0">Relating to ITVMO</h1>
-              <img
+              <!-- <img
                 alt="{{ page.title }} icon"
                 src="{{site.baseurl}}/assets/images/icons/page_icons/quaterly-itvmo-newsletter.svg" />
             </section>
             <div class="article-page-content">
               <div class="article-page-heading">
                 {% for publisher in site.article_publishers %} {% if
-                publisher.name == {{page.publisher}} %}
+                publisher.name == {{page.publisher}} %} -->
                 <!-- {{publisher.name}} -->
-                <img
+                <!-- <img
                   class="publisher-logo"
                   src="{{site.baseurl}}/{{publisher.publisher-logo}}"
                   alt="{{publisher.name}} logo" />
@@ -37,7 +37,7 @@ layout: base
                   /></a>
                 </div>
                 {% endif %} {% endfor %}
-              </div>
+              </div> -->
               <div class="article-page-detail">
                 {{page.synopsis | markdownify | liquify }}
                 <a class="external-link" href="{{page.url-link}}">
