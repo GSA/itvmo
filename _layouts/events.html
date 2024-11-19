@@ -13,40 +13,92 @@ layout: base
           <section id="inner-page-heading">
             <section id="page-directory"></section>
             <section id="page-heading">
-              <h1 class="page-heading-title margin-0">Relating to ITVMO</h1>
-              <!-- <img
+              <h1 class="page-heading-title margin-0">Event Summary</h1>
+              <img
                 alt="{{ page.title }} icon"
-                src="{{site.baseurl}}/assets/images/icons/page_icons/quaterly-itvmo-newsletter.svg" />
+                src="{{site.baseurl}}/assets/images/icons/page_icons/events-inner-icon.png" />
             </section>
-            <div class="article-page-content">
-              <div class="article-page-heading">
-                {% for publisher in site.article_publishers %} {% if
-                publisher.name == {{page.publisher}} %} -->
-                <!-- {{publisher.name}} -->
-                <!-- <img
-                  class="publisher-logo"
-                  src="{{site.baseurl}}/{{publisher.publisher-logo}}"
-                  alt="{{publisher.name}} logo" /> -->
-                <!-- <div>
-                  <h1>{{page.title}}</h1>
-                  <a href="https://{{publisher.url-link}}"
-                    >{{publisher.url-link}}
-                    <img
-                      alt="External icon"
-                      src="{{site.baseurl}}/assets/images/icons/external-small.svg"
-                  /></a>
-                </div> -->
-                <!-- {% endif %} {% endfor %}
-              </div> -->
-              <div class="article-page-detail">
-                {{page.synopsis | markdownify | liquify }}
-                <a class="external-link" href="{{page.url-link}}">
-                  <p>Read Article</p>
+            <div class="event-page-content">
+              <div class="itvmo-article-header-blue">{{page.title}}</div>
+              <div class="event-sub-org">{{page.organizer}}</div>
+            </div>
+            <div class="event-spec-group">
+              <div class="event-spec-section">
+                <div class="event-spec-title">Date</div>
+                <div class="event-spec-content">
                   <img
-                    src="{{site.baseurl}}/assets/images/arrows/right-arrow-white.svg"
-                    alt="right arrow" />
-                </a>
+                    src="{{site.baseurl}}/assets/images/icons/font-awesome/solid/calendar-days.svg"
+                    alt="Date" />
+                  <p>{{ page.start-time | date_to_string: "ordinal", "US" }}</p>
+                </div>
               </div>
+              <div class="event-spec-section">
+                <div class="event-spec-title">Time</div>
+                <div class="event-spec-content">
+                  <img
+                    src="{{site.baseurl}}/assets/images/icons/font-awesome/solid/clock.svg"
+                    alt="Time" />
+                  <p>
+                    {{ page.start-time | date: "%I:%M %p" }} - {{ page.end-time
+                    | date: "%I:%M %p" }}
+                  </p>
+                </div>
+              </div>
+
+              <div class="event-spec-section">
+                <div class="event-spec-title">Location</div>
+                <div class="event-spec-content">
+                  <img
+                    src="{{site.baseurl}}/assets/images/icons/font-awesome/solid/location-dot.svg"
+                    alt="Location" />
+                  <p>{{ page.event-type }}</p>
+                </div>
+              </div>
+              <div class="event-spec-section">
+                <div class="event-spec-title">
+                  Continuous Learning Points (CLPs)
+                </div>
+                <div class="event-spec-content">
+                  <img
+                    src="{{site.baseurl}}/assets/images/icons/font-awesome/solid/graduation-cap.svg"
+                    alt="CLP awarded" />
+                  <p>{{ page.clp }}</p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="pill-group">
+              <div class="event-spec-clp">
+                <img
+                  src="{{site.baseurl}}/assets/images/icons/font-awesome/solid/graduation-cap.svg"
+                  alt="CLP awarded" />
+                Continuous Learning Points (CLPs) Event
+              </div>
+            </div> -->
+            <div class="event-page-content">
+              <!-- <h4 class="itvmo-article-sub-4">Event Description</h4>
+              <p>{{page.description}}</p> -->
+              <h4 class="itvmo-article-sub-4 mt-0">
+                Bringing You Events That Matter
+              </h4>
+              {{page.synopsis | markdownify | liquify }}
+              <br />
+              <hr />
+              <ul class="usa-button-group page-navigation__button pb-1">
+                <li class="usa-button-group__item">
+                  <a
+                    href="#{{site.baseurl}}/events/"
+                    class="usa-button usa-button--outline itvmo_usa-outline-button"
+                    >Go Back</a
+                  >
+                </li>
+                <li class="usa-button-group__item">
+                  <a
+                    href="#{{page.url-link}}"
+                    class="usa-button itvmo_usa-primary-button"
+                    >Register to Event</a
+                  >
+                </li>
+              </ul>
             </div>
           </section>
         </section>

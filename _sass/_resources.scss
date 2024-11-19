@@ -4336,6 +4336,166 @@ html * {
   }
 }
 
+/* even template*/
+.event-page-content {
+  padding-left: 30px;
+  width: 76%;
+  padding-top: 2em;
+  .event-page-heading {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px 0px;
+    div {
+      h1 {
+        font-weight: 600;
+        font-size: 1.875em;
+        color: #000000;
+        margin: 0;
+      }
+      a {
+        font-weight: 400;
+        font-style: normal;
+        font-size: 1em;
+        color: #016fa0;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .event-page-detail {
+    padding-left: 30px;
+    h1 {
+      font-weight: 700;
+      font-size: 1.25em;
+      color: rgb(6, 35, 73);
+    }
+    p,
+    li {
+      font-size: 1em;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  }
+}
+.event-sub-org {
+  padding-bottom: 1.3em;
+  font-style: italic;
+  color: #555555;
+}
+.event-spec-group {
+  display: flex;
+  background: #f2f2f2;
+  padding: 15px 0px 15px 0px;
+  .event-spec-section {
+    border-right: 1px solid #000;
+    padding-right: 3em;
+    padding-left: 2em;
+    .event-spec-title {
+      margin-bottom: -0.4em;
+      font-size: 1.1em;
+      font-weight: 600;
+      padding-bottom: 10px;
+    }
+    .event-spec-content {
+      display: flex;
+      align-items: center;
+      font-size: 1em;
+      p {
+        margin: 0;
+      }
+      img {
+        height: 17px;
+        margin-right: 10px;
+        filter: invert(47%) sepia(61%) saturate(5057%) hue-rotate(355deg)
+          brightness(105%) contrast(103%);
+      }
+    }
+  }
+}
+
+div.event-spec-section:nth-last-child(1) {
+  border-right: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .event-spec-group {
+    flex-direction: column;
+    border-radius: 0;
+    padding: 0px;
+    .event-spec-section {
+      border-right: none;
+      border-bottom: 1px solid #000;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      margin-left: 1em;
+      margin-right: 4em;
+      padding-left: 16px;
+    }
+  }
+  div.event-spec-section:nth-last-child(1) {
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .event-page-content {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  //Hide the white space, that could occur on the mobile.
+  .grid-container {
+    overflow: hidden;
+  }
+  .event-page-content {
+    padding: 0px 20px 50px 20px;
+    width: 100%;
+    .event-page-heading {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+      padding-bottom: 20px;
+      .publisher-logo {
+        width: 90px;
+        height: 90px;
+      }
+      div {
+        h1 {
+          font-weight: 600;
+          font-size: 1.4375em;
+          color: #000000;
+          margin: 0;
+        }
+        a {
+          font-weight: 400;
+          font-style: normal;
+          font-size: 1em;
+          color: #016fa0;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .event-page-detail {
+    padding-left: 10px !important;
+    h1 {
+      font-weight: 700;
+      font-size: 1.25em;
+      color: rgb(6, 35, 73);
+    }
+  }
+}
+
 /* Hero section change for certain width */
 @media screen and (max-width: 41.25em) {
   .usa-hero {
@@ -5428,4 +5588,32 @@ ul.teir-2-list {
 
 .note-red {
   color: #d1001f;
+}
+
+.pb-1 {
+  padding-bottom: 1em;
+}
+.pill-group {
+  display: flex;
+  padding-top: 10px;
+  .event-spec-clp {
+    height: 27px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #ff580a;
+    color: #ff580a;
+    width: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    img {
+      height: 18px;
+      padding-right: 10px;
+      filter: brightness(0) saturate(100%) invert(46%) sepia(74%)
+        saturate(4050%) hue-rotate(353deg) brightness(105%) contrast(108%);
+    }
+  }
 }

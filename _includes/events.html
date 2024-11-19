@@ -1,133 +1,165 @@
 <div class="page-data">
-   {% for event in site.events %}
-   <div
-     class="raw-event-data"
-     data-url="{{event.url-link}}"
-     data-st="{{event.start-time}}"
-     data-et="{{event.end-time}}"
-     data-event-type="{{event.event-type}}"
-     data-gov-only="{{event.gov-only}}"
-     data-is-external="{{event.is-external}}"
-   >
-      <p>{{event.organizer}}</p>
-      <p>{{event.title}}</p>
-      <p>{{event.description}}</p>
-   </div>
-   {% endfor %}
-   {% for event in site.past_event_highlight %}
-   <div
-     class="raw-past-event-highlight-data"
-     data-title="{{event.title}}"
-     data-description="{{event.description}}"
-     data-url="{{event.url-link}}"
-     data-image="{{event.highlight-image}}"
-   >
-   </div>
-   {% endfor %}
+  {% for event in site.events %}
+  <div
+    class="raw-event-data"
+    data-url="{{event.url-link}}"
+    data-st="{{event.start-time}}"
+    data-et="{{event.end-time}}"
+    data-event-type="{{event.event-type}}"
+    data-gov-only="{{event.gov-only}}"
+    data-is-external="{{event.is-external}}"
+    data-path="{{event.path}}">
+    >
+    <p>{{event.organizer}}</p>
+    <p>{{event.title}}</p>
+    <p>{{event.description}}</p>
+  </div>
+  {% endfor %} {% for event in site.past_event_highlight %}
+  <div
+    class="raw-past-event-highlight-data"
+    data-title="{{event.title}}"
+    data-description="{{event.description}}"
+    data-url="{{event.url-link}}"
+    data-image="{{event.highlight-image}}"></div>
+  {% endfor %}
 </div>
 <section id="page-announcements">
-   {% for announcement in site.events_page_announcements %}
-   <div class="announcement">
-      <div class="announcement-image">
-         <img src="{{site.baseurl}}/assets/images/icons/speaker.svg" alt="Speaker icon">
-      </div>
-      <div class="announcement-info">
-         <h3>{{announcement.title}}</h3>
-         <p>{{announcement.description}} <a href="{{announcement.url-link}}">{{announcement.url-label}}.</a></p>
-      </div>
-   </div>
-   {% endfor %}
+  {% for announcement in site.events_page_announcements %}
+  <div class="announcement">
+    <div class="announcement-image">
+      <img
+        src="{{site.baseurl}}/assets/images/icons/speaker.svg"
+        alt="Speaker icon" />
+    </div>
+    <div class="announcement-info">
+      <h3>{{announcement.title}}</h3>
+      <p>
+        {{announcement.description}}
+        <a href="{{announcement.url-link}}">{{announcement.url-label}}.</a>
+      </p>
+    </div>
+  </div>
+  {% endfor %}
 </section>
 <section id="events-page" class="inner-page">
-   <section id="inner-page-tabs">
-      <!-- Inner tab dropdown for the mobile version -->
-      <div id="tabs-mobile-container">
-         <select id="tabs-mobile" onchange="openTabDropdown();">
-            <option value="upcoming-events-header">Upcoming Events</option>
-            <option value="past-events-header">Past Events</option>
-            <option value="calendar-tab-header">Calendar</option>
-         </select>
+  <section id="inner-page-tabs">
+    <!-- Inner tab dropdown for the mobile version -->
+    <div id="tabs-mobile-container">
+      <select id="tabs-mobile" onchange="openTabDropdown();">
+        <option value="upcoming-events-header">Upcoming Events</option>
+        <option value="past-events-header">Past Events</option>
+        <option value="calendar-tab-header">Calendar</option>
+      </select>
+    </div>
+    <h3 id="calendar-date-display">Day HERE</h3>
+    <!-- Inner tab dropdown for the desktop version -->
+    <div class="tabs">
+      <a
+        id="upcoming-events-header"
+        tabindex="0"
+        class="tab active-tab"
+        onclick="openTab(event, 'upcoming-events')"
+        onkeydown="openTabKey(event, 'upcoming-events')"
+        >Upcoming Events</a
+      >
+      <a
+        id="past-events-header"
+        tabindex="0"
+        class="tab"
+        onclick="openTab(event, 'past-events')"
+        onkeydown="openTabKey(event, 'past-events')"
+        >Past Events</a
+      >
+      <a
+        id="calendar-tab-header"
+        tabindex="0"
+        class="tab"
+        onclick="openTab(event, 'calendar-tab')"
+        onkeydown="openTabKey(event, 'calendar-tab')"
+        >Calendar</a
+      >
+    </div>
+    <div
+      id="upcoming-events"
+      class="tabcontent padding-bottom-4"
+      style="display: flex">
+      <div class="contents contents-calendar"></div>
+      <div class="content-nav">
+        <div class="nav-list"></div>
       </div>
-      <h3 id="calendar-date-display">Day HERE</h3>
-      <!-- Inner tab dropdown for the desktop version -->
-      <div class="tabs">
-         <a id="upcoming-events-header" tabindex="0" class="tab active-tab" onclick="openTab(event, 'upcoming-events')" onkeydown="openTabKey(event, 'upcoming-events')">Upcoming Events</a>
-         <a id="past-events-header" tabindex="0" class="tab" onclick="openTab(event, 'past-events')" onkeydown="openTabKey(event, 'past-events')">Past Events</a>
-         <a id="calendar-tab-header" tabindex="0" class="tab" onclick="openTab(event, 'calendar-tab')" onkeydown="openTabKey(event, 'calendar-tab')">Calendar</a>
+    </div>
+    <div id="past-events" class="tabcontent padding-bottom-4">
+      <div class="contents contents-calendar"></div>
+      <div class="content-nav">
+        <div class="nav-list"></div>
       </div>
-      <div id="upcoming-events" class="tabcontent padding-bottom-4" style="display: flex;">
-         <div class="contents contents-calendar">
+    </div>
+    <div id="calendar-tab" class="tabcontent">
+      <div class="contents contents-no-side-nav contents-calendar">
+        <div class="event-color-explain">
+          <div class="eventExplain" id="firstEventExplain">
+            <div
+              class="eventColor"
+              style="background-color: rgb(211, 108, 108)"></div>
+            <div class="eventColorExplain">ITVMO Events</div>
+          </div>
+          <div class="eventExplain">
+            <div
+              class="eventColor"
+              style="background-color: rgb(27, 43, 133)"></div>
+            <div class="eventColorExplain">Non-ITVMO Events</div>
+          </div>
+        </div>
+        <div id="calendar-section">
+          <div id="calendarSumContainer">
+            <div id="calendar-container">
+              <div id="calendar-header">
+                <div id="calendar-month-button">
+                  <button id="backButton" title="go to previous month">
+                    <img
+                      class="image-flip"
+                      src="{{site.baseurl}}/assets/images/icons/directory-arrow-grey.svg"
+                      alt="previous arrow" />
+                  </button>
+                  <div id="monthDisplay"></div>
+                  <button id="nextButton" title="go to next month">
+                    <img
+                      src="{{site.baseurl}}/assets/images/icons/directory-arrow-grey.svg"
+                      alt="next arrow" />
+                  </button>
+                </div>
+              </div>
 
-         </div>
-         <div class="content-nav">
-            <div class="nav-list">
+              <div id="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+
+              <div id="calendar"></div>
+              <div class="event-color-explain-mobile">
+                <div class="eventExplain" id="firstEventExplain">
+                  <div
+                    class="eventColor"
+                    style="background-color: rgb(211, 108, 108)"></div>
+                  <div class="eventColorExplain">ITVMO Events</div>
+                </div>
+                <div class="eventExplain">
+                  <div
+                    class="eventColor"
+                    style="background-color: rgb(27, 43, 133)"></div>
+                  <div class="eventColorExplain">Non-ITVMO Events</div>
+                </div>
+              </div>
             </div>
-         </div>
+            <div id="current-day-events"></div>
+          </div>
+        </div>
       </div>
-      <div id="past-events" class="tabcontent padding-bottom-4">
-         <div class="contents contents-calendar">
-
-         </div>
-         <div class="content-nav">
-            <div class="nav-list">
-            </div>
-         </div>
-      </div>
-      <div id="calendar-tab" class="tabcontent">
-         <div class="contents contents-no-side-nav contents-calendar">
-            <div class="event-color-explain">
-               <div class="eventExplain" id = "firstEventExplain">
-                  <div class="eventColor" style="background-color: rgb(211, 108, 108);"></div>
-                     <div class="eventColorExplain"> ITVMO Events</div>
-                   </div>
-                   <div class="eventExplain">
-                     <div class="eventColor" style="background-color: rgb(27, 43, 133);"></div>
-                  <div class="eventColorExplain"> Non-ITVMO Events</div>
-               </div>
-            </div>
-               <div id="calendar-section">
-                   <div id="calendarSumContainer">
-                   <div id="calendar-container">
-                     <div id="calendar-header">
-                        <div id="calendar-month-button">
-                           <button id="backButton" title="go to previous month"><img class="image-flip" src="{{site.baseurl}}/assets/images/icons/directory-arrow-grey.svg" alt="previous arrow"></button>
-                           <div id="monthDisplay"></div>          
-                           <button id="nextButton" title="go to next month"><img src="{{site.baseurl}}/assets/images/icons/directory-arrow-grey.svg" alt="next arrow"></button>
-                        </div>
-                     </div>
-               
-                     <div id="weekdays">
-                       <div>Sun</div>
-                       <div>Mon</div>
-                       <div>Tue</div>
-                       <div>Wed</div>
-                       <div>Thu</div>
-                       <div>Fri</div>
-                       <div>Sat</div>
-                     </div>
-               
-                     <div id="calendar">
-
-                     </div>
-                     <div class="event-color-explain-mobile">
-                        <div class="eventExplain" id = "firstEventExplain">
-                           <div class="eventColor" style="background-color: rgb(211, 108, 108);"></div>
-                              <div class="eventColorExplain"> ITVMO Events</div>
-                            </div>
-                            <div class="eventExplain">
-                              <div class="eventColor" style="background-color: rgb(27, 43, 133);"></div>
-                           <div class="eventColorExplain"> Non-ITVMO Events</div>
-                        </div>
-                     </div>
-                   </div>
-                   <div id="current-day-events"></div>
-               
-                   </div>
-               </div> 
-
-             
-
-         </div>
-      </div>
-   </section>
+    </div>
+  </section>
 </section>
