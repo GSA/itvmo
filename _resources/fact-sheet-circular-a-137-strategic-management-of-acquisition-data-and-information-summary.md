@@ -17,7 +17,7 @@ reading-time: 10
 type: PDF
 gov-only: false
 is-external: true
-filter: technology
+filter: p-filter
 audience: program-operations
 resource-type: guidance
 branded-offerings: market-it-data-intelligence
