@@ -1,7 +1,7 @@
 ---
 organizer: GSA
 url-link: https://cmls.gsa.gov/s/event-registration?language=en_US&eid=701SJ000009dp7AYAQ
-title: Fiscal 2025 End-of-Year IT Buyers Event
+title: ITB CoP End-of-Year Event
 description: This event will dive into the findings from our latest hackathon,
   outline the next steps for streamlining the RFI-RFP process, and provide
   insights into navigating the complex intersection of federal policies and
