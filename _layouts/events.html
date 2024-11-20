@@ -62,7 +62,11 @@ layout: base
                   <img
                     src="{{site.baseurl}}/assets/images/icons/font-awesome/solid/graduation-cap.svg"
                     alt="CLP awarded" />
-                  <p>{{ page.clp }}</p>
+                  {% if page.clp == true %}
+                  <p>Yes</p>
+                  {% else %}
+                  <p>No</p>
+                  {% endif %}
                 </div>
               </div>
             </div>
@@ -86,14 +90,14 @@ layout: base
               <ul class="usa-button-group page-navigation__button pb-1">
                 <li class="usa-button-group__item">
                   <a
-                    href="#{{site.baseurl}}/events/"
+                    href="{{site.baseurl}}/events/"
                     class="usa-button usa-button--outline itvmo_usa-outline-button"
                     >Go Back</a
                   >
                 </li>
                 <li class="usa-button-group__item">
                   <a
-                    href="#{{page.url-link}}"
+                    href="{{page.url-link}}"
                     class="usa-button itvmo_usa-primary-button"
                     >Register to Event</a
                   >

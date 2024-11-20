@@ -95,7 +95,8 @@ collections:
       - {
           label: "Continuous Learning Points (CLPs)",
           name: "clp",
-          widget: "string",
+          widget: "boolean",
+          default: false,
         }
       - label: "Start time"
         name: "start-time"

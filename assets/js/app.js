@@ -1227,6 +1227,7 @@ function retriveEventsData() {
       govOnly: ev.getAttribute("data-gov-only"),
       isExternal: ev.getAttribute("data-is-external"),
       path: ev.getAttribute("data-path"),
+      clp: ev.getAttribute("data-clp"),
     };
     eventList.push(currEvent);
     if (startTime < currentDate) {
@@ -1420,8 +1421,10 @@ function setEventDiv(monthDiv, currEvent, currDate) {
     isEx = `Non-ITVMO Event`;
     exLogo = `<img src="${baseUrl}/assets/images/icons/external.svg" alt="External icon">`;
   } // ]]Eventschange
-  console.log(currEvent.path);
-  monthDiv.innerHTML += `
+  // console.log(currEvent.path);
+  console.log(currEvent.clp);
+  if (currEvent.clp == "true") {
+    monthDiv.innerHTML += `
       <a href="${
         baseUrl + currEvent.path.replace("_events", "").replace(".md", "")
       }" class="event-card">
@@ -1438,33 +1441,88 @@ function setEventDiv(monthDiv, currEvent, currDate) {
       </div>
       <div class="event-card-content">
         <h3 aria-label="Organizer: ${currEvent.organizer}" class="event-org">${
-    currEvent.organizer
-  }</h3>
+      currEvent.organizer
+    }</h3>
         <h2 aria-label="Title: ${currEvent.title}" class="event-title">${
-    currEvent.title
-  }</h2>
+      currEvent.title
+    }</h2>
         <p class="event-description four-line-max">
         ${currEvent.description}
         </p>
-      </div>
+        <div class="pill-group">
+                <div class="event-spec-clp">
+                  <img
+                    src="${baseUrl}/assets/images/icons/font-awesome/solid/graduation-cap.svg"
+                    alt="CLP awarded" />
+                  Continuous Learning Points (CLPs) Event
+                </div>
+              </div>
+        </div>
       <div class="event-card-info">
         <div class="event">
             <p aria-label="Event time: ${
               currEvent.fromTo
             }"><img alt="clock icon" src="${baseUrl}/assets/images/icons/clock-icon-grey.svg">${
-    currEvent.fromTo
-  }</p>
+      currEvent.fromTo
+    }</p>
             <p aria-label="Event type: ${
               currEvent.eventType
             }"><img alt="location icon" src="${baseUrl}/assets/images/icons/location-icon-grey.svg">${
-    currEvent.eventType
-  }</p>
+      currEvent.eventType
+    }</p>
             <p aria-label="Event is: ${isEx}"><img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">${isEx}</p>
             <p aria-label="Event Date: ${currDate}"><img alt="calendar icon" src="${baseUrl}/assets/images/icons/calendar-grey.svg">${currDate}</p>
         </div>
       </div>
     </a>
   `;
+  } else {
+    monthDiv.innerHTML += `
+    <a href="${
+      baseUrl + currEvent.path.replace("_events", "").replace(".md", "")
+    }" class="event-card">
+    <div aria-hidden="true" class="event-card-day">
+      <div class="card-day">
+          ${currEvent.day}
+      </div>
+      <div class="card-date-num">
+        ${currEvent.dateNumber}
+      </div>
+    </div>
+    <div class="event-card-gov">
+      ${gOnly}
+    </div>
+    <div class="event-card-content">
+      <h3 aria-label="Organizer: ${currEvent.organizer}" class="event-org">${
+      currEvent.organizer
+    }</h3>
+      <h2 aria-label="Title: ${currEvent.title}" class="event-title">${
+      currEvent.title
+    }</h2>
+      <p class="event-description four-line-max">
+      ${currEvent.description}
+      </p>
+ 
+      </div>
+    <div class="event-card-info">
+      <div class="event">
+          <p aria-label="Event time: ${
+            currEvent.fromTo
+          }"><img alt="clock icon" src="${baseUrl}/assets/images/icons/clock-icon-grey.svg">${
+      currEvent.fromTo
+    }</p>
+          <p aria-label="Event type: ${
+            currEvent.eventType
+          }"><img alt="location icon" src="${baseUrl}/assets/images/icons/location-icon-grey.svg">${
+      currEvent.eventType
+    }</p>
+          <p aria-label="Event is: ${isEx}"><img alt="compass icon" src="${baseUrl}/assets/images/icons/compass-icon-grey.svg">${isEx}</p>
+          <p aria-label="Event Date: ${currDate}"><img alt="calendar icon" src="${baseUrl}/assets/images/icons/calendar-grey.svg">${currDate}</p>
+      </div>
+    </div>
+  </a>
+`;
+  }
   monthDiv.innerHTML += `
     <a href="${
       baseUrl + currEvent.path.replace("_events", "").replace(".md", "")

@@ -4,7 +4,7 @@ organizer: ATARC
 url-link: https://atarc.org/event/public-sector-summit-2024/
 title: Public Sector Summit
 description: Network with industry experts, explore the latest trends, and hear how top leaders in public sector IT are shaping the future for 2025 and beyond. Don’t miss this opportunity to engage with visionary leaders—see you there!
-clp: yes
+clp: true
 description: Network with industry experts, explore the latest trends, and hear
   how top leaders in public sector IT are shaping the future for 2025 and
   beyond. Don’t miss this opportunity to engage with visionary leaders—see you
