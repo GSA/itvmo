@@ -14,18 +14,14 @@ end-time: 2024-01-31T13:00:00.000-00:00
 event-type: In-person
 gov-only: true
 is-external: true
-synopsis: >-
-  Generative Artificial Intelligence and Emerging Technologies have entered the
-  government procurement environment and from everyone’s perspective these
-  technologies are here to stay. These newer technologies enable us to
-  re-imagine service delivery and provide more efficient operations; however,
-  there are still concerns about ethical and legal implications, intellectual
-  property rights, data and privacy protection, and more. Acquisition staff need
-  to have a better understanding of what these tools are, how these tools are
-  used, and how they impact the acquisition process. Of importance is
-  understanding how these tools are bought and sold in the commercial market and
-  how they are used in acquisition organizations to promote efficiencies. 
-
-
-  This forum will provide subject matter experts from both government and industry to de-mystifying the hype around these technologies and further enable more collaboration, communication, and mutually common definitions to make the procurement process an easier and more timely endeavor.
+synopsis: Use of AI in government agencies requires that agencies manage the
+  risks and performance and implement structures to govern and manage the
+  process of acquiring AI. This was addressed by OMB in Advancing the
+  Responsible Acquisition of Artificial Intelligence in Government (M-24-18).
+  The latest Executive Order is on the Safe, Secure, and Trustworthy Development
+  and Use of Artificial Intelligence to strengthen AI safety, security, equity,
+  privacy, promote innovation and more. This forum is designed to update the
+  audience on the new OMB AI Procurement, how is the government addressing the
+  Generative AI responses to procurements, and the status and updates of the
+  procurement staff as they address the requirements and responses to proposals.
 ---
