@@ -3,7 +3,17 @@ layout: events
 organizer: Fedscoop
 url-link: https://googlepublicsectorsummit.upgather.com/
 title: Public Sector Summit
-description: >-
+description: Network with industry experts, explore the latest trends, and hear
+  how top leaders in public sector IT are shaping the future for 2025 and
+  beyond. Don’t miss this opportunity to engage with visionary leaders—see you
+  there!
+clp: false
+start-time: 2024-10-16T08:00:00.000-00:00
+end-time: 2024-10-16T16:00:00.000-00:00
+event-type: In-person
+gov-only: false
+is-external: true
+synopsis: >-
   The role of AI in responding to security threats has taken on new urgency as
   agency leaders grapple with AI's emergence into mainstream business
   applications. However, threat actors are moving just as quickly to capitalize
@@ -14,9 +24,4 @@ description: >-
 
 
   Registration is complimentary for all attendees to this event.
-start-time: 2024-10-16T08:00:00.000-00:00
-end-time: 2024-10-16T16:00:00.000-00:00
-event-type: In-person
-gov-only: false
-is-external: true
 ---
