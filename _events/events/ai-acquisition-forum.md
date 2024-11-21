@@ -3,7 +3,18 @@ layout: events
 organizer: ACT-IAC
 url-link: https://web.cvent.com/event/301b45c9-f7d0-439a-830e-1a36ac39aab8/summary
 title: AI Acquisition Forum
-description: >-
+description: This forum will provide updates on the new OMB AI procurement
+  guidelines, discuss how the government is handling generative AI in
+  procurement processes, and review the current status and developments
+  concerning procurement staff as they implement these requirements and respond
+  to proposals.
+clp: false
+start-time: 2024-01-31T08:00:00.000-00:00
+end-time: 2024-01-31T13:00:00.000-00:00
+event-type: In-person
+gov-only: true
+is-external: true
+synopsis: >-
   Generative Artificial Intelligence and Emerging Technologies have entered the
   government procurement environment and from everyone’s perspective these
   technologies are here to stay. These newer technologies enable us to
@@ -17,9 +28,4 @@ description: >-
 
 
   This forum will provide subject matter experts from both government and industry to de-mystifying the hype around these technologies and further enable more collaboration, communication, and mutually common definitions to make the procurement process an easier and more timely endeavor.
-start-time: 2024-01-31T08:00:00.000-00:00
-end-time: 2024-01-31T13:00:00.000-00:00
-event-type: In-person
-gov-only: true
-is-external: true
 ---
