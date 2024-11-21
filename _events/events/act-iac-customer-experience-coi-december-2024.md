@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: ACT IAC
 url-link: https://www.actiac.org/act-iac-event/act-iac-customer-experience-coi-december-2024
 title: ACT-IAC Customer Experience COI December 2024

@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: Fedscoop
 url-link: https://itmodernizationsummit.upgather.com/
 title: IT Modernization & AI Summit

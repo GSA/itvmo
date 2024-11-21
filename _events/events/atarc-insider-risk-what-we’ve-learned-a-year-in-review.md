@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: ATARC
 url-link: https://atarc.org/event/atarcinsiderriskwwl/
 title: "ATARC Insider Risk: What We’ve Learned, a Year in Review"

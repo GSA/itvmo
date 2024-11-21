@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: GSA
 url-link: https://www.gsa.gov/events/alliant-2-dpa-training-121124
 title: Alliant 2 DPA Training

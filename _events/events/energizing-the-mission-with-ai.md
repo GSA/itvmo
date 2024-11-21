@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: ATARC
 url-link: https://atarc.org/event/energizing-ai/
 title: Energizing the Mission with AI

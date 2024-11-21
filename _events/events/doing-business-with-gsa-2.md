@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: GSA
 url-link: https://www.gsa.gov/events/doing-business-with-gsa-18
 title: Doing Business with GSA
