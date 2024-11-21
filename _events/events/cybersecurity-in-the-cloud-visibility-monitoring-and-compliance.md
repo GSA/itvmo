@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: Federal News Network
 url-link: https://federalnewsnetwork.com/cme-event/federal-insights/cybersecurity-in-the-cloud-visibility-monitoring-and-compliance/
 title: "Cybersecurity in the cloud: Visibility, monitoring and compliance"

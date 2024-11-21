@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: GSA
 url-link: https://www.gsa.gov/events/8a-stars-iii-gwac-dpa-training-121024
 title: 8(a) STARS III GWAC DPA Training

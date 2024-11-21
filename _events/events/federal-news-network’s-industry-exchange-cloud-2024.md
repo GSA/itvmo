@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: Federal News Network
 url-link: https://federalnewsnetwork.com/cme-event/cloud-computing/federal-news-networks-industry-exchange-cloud-2024/
 title: Federal News Network’s Industry Exchange Cloud 2024

@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: ACT IAC
 url-link: https://web.cvent.com/event/c965aed6-8104-40d4-8bda-bcf3b7a66848/summary
 title: AI Acquisition Forum

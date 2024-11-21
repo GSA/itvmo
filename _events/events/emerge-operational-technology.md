@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: Fedscoop
 url-link: https://gditot.upgather.com/
 title: "EMERGE: Operational Technology"

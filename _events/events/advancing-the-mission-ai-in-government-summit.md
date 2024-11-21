@@ -1,4 +1,5 @@
 ---
+layout: events
 organizer: ATARC
 url-link: https://atarc.org/event/gen-ai-summit/
 title: "Advancing the Mission: AI in Government Summit"
