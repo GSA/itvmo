@@ -77,14 +77,27 @@ collections:
   #Allow user to create events.
   - label: Events
     name: events
-    folder: _events/
+    folder: _events/events/
     create: true
     slug: "{{slug}}"
     fields:
+      - {
+          label: Layout,
+          name: layout,
+          widget: string,
+          default: "events",
+          immutable: true,
+        }
       - { label: "Organizer", name: "organizer", widget: "string" }
       - { label: "URL", name: "url-link", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Short Description", name: "description", widget: "text" }
+      - {
+          label: "Continuous Learning Points (CLPs)",
+          name: "clp",
+          widget: "boolean",
+          default: false,
+        }
       - label: "Start time"
         name: "start-time"
         widget: "datetime"
@@ -122,10 +135,10 @@ collections:
           default: false,
         }
       - {
-          label: "Synopsis",
+          label: "Detailed Description (Inner-Page)",
           name: "synopsis",
           widget: "markdown",
-          required: false,
+          required: true,
         }
   #Allow user to create Past Event Highlights
   - label: Past Event Highlights
