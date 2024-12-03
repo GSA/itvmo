@@ -9,11 +9,11 @@
     "test": "bundle exec htmlproofer _site; npx a11y '_site/**/*.html'"
   },
   "dependencies": {
-    "netlify-cms": "^2.10.102",
+    "netlify-cms": "^2.8.0",
     "uswds": "^2.14.0"
   },
   "devDependencies": {
     "a11y": "^0.5.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^6.0.1"
   }
 }
