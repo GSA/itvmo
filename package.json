@@ -9,11 +9,29 @@
     "test": "bundle exec htmlproofer _site; npx a11y '_site/**/*.html'"
   },
   "dependencies": {
+    "axios": "^1.7.9",
+    "boxen": "^8.0.1",
+    "cross-spawn": "^7.0.6",
+    "execa": "^9.5.1",
+    "got": "^14.4.5",
+    "latest-version": "^9.0.0",
+    "mdast-util-to-hast": "^13.2.0",
     "netlify-cms": "^2.8.0",
-    "uswds": "^2.14.0"
+    "package-json": "^10.0.1",
+    "phantomjs-prebuilt": "^2.1.16",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.1",
+    "term-size": "^4.0.0",
+    "update-notifier": "^7.3.1",
+    "uswds": "^2.14.0",
+    "uuid": "^11.0.3"
   },
   "devDependencies": {
-    "a11y": "^0.5.1",
+    "axe-core": "^4.10.2",
     "rimraf": "^6.0.1"
+  },
+  "overrides": {
+    "trim": "0.0.3",
+    "trim-newlines": "^3.0.1"
   }
 }
