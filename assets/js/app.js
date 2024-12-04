@@ -270,55 +270,67 @@ if (document.getElementById("news") != null) {
     afPublishersList = [];
 
   //This function add/remove Applied Filters according to checkbox argument.
+
   function toggleAppliedFilter(checkbox) {
-    let afButton = `
-      <button onclick="uncheckInput('${checkbox.id}')">
-        <img src="${baseUrl}/assets/images/icons/exit-icon-grey.svg" alt="Remove ${checkbox.value} filter button">
-      </button>
-      `;
-    if (checkbox.className == "check-input-topics") {
-      //Remove Applied Filter that match the checkbox Id
-      if (afTopicsList.includes(checkbox.id)) {
-        document.getElementById(`af-${checkbox.id}`).remove();
-        let index = afTopicsList.indexOf(checkbox.id);
-        if (index !== -1) afTopicsList.splice(index, 1);
+    const createRemoveButton = (checkboxId, checkboxValue) => {
+      const button = document.createElement("button");
+      button.setAttribute("onclick", `uncheckInput('${checkboxId}')`);
+
+      const img = document.createElement("img");
+      img.src = `${baseUrl}/assets/images/icons/exit-icon-grey.svg`;
+      img.alt = `Remove ${checkboxValue} filter button`;
+
+      button.appendChild(img);
+      return button;
+    };
+
+    const addAppliedFilter = (list, container, checkbox) => {
+      list.push(checkbox.id);
+
+      const filterDiv = document.createElement("div");
+      filterDiv.id = `af-${checkbox.id}`;
+      filterDiv.className =
+        checkbox.className === "check-input-topics"
+          ? "applied-filters-topic"
+          : "applied-filters-publisher";
+
+      const button = createRemoveButton(checkbox.id, checkbox.value);
+      const paragraph = document.createElement("p");
+      paragraph.textContent = checkbox.value;
+
+      filterDiv.appendChild(button);
+      filterDiv.appendChild(paragraph);
+      container.appendChild(filterDiv);
+    };
+
+    const removeAppliedFilter = (list, checkbox) => {
+      const index = list.indexOf(checkbox.id);
+      if (index !== -1) {
+        list.splice(index, 1);
+        const filterDiv = document.getElementById(`af-${checkbox.id}`);
+        if (filterDiv) {
+          filterDiv.remove();
+        }
       }
-      //Add Applied Filter
-      else {
-        afTopicsList.push(checkbox.id);
-        afTopics.innerHTML += `
-        <div id="af-${checkbox.id}" class="applied-filters-topic">
-          ${afButton}
-          <p>${checkbox.value}</p>
-        </div>
-        `;
+    };
+
+    if (checkbox.className === "check-input-topics") {
+      if (afTopicsList.includes(checkbox.id)) {
+        removeAppliedFilter(afTopicsList, checkbox);
+      } else {
+        addAppliedFilter(afTopicsList, afTopics, checkbox);
       }
     } else {
-      //Remove Applied Filter that match the checkbox Id
       if (afPublishersList.includes(checkbox.id)) {
-        document.getElementById(`af-${checkbox.id}`).remove();
-        let index = afPublishersList.indexOf(checkbox.id);
-        if (index !== -1) afPublishersList.splice(index, 1);
-      }
-      //Add Applied Filters
-      else {
-        afPublishersList.push(checkbox.id);
-        afPublishers.innerHTML += `
-        <div id="af-${checkbox.id}" class="applied-filters-publisher">
-          ${afButton}
-          <p>${checkbox.value}</p>
-        </div>
-        `;
+        removeAppliedFilter(afPublishersList, checkbox);
+      } else {
+        addAppliedFilter(afPublishersList, afPublishers, checkbox);
       }
     }
-    //Unhide Applied Filters
-    if (afTopicsList.length + afPublishersList.length > 0) {
-      appliedFilters.style.display = "block";
-    }
-    //Hide Applied Filters
-    else {
-      appliedFilters.style.display = "none";
-    }
+
+    // Toggle applied filters visibility
+    appliedFilters.style.display =
+      afTopicsList.length + afPublishersList.length > 0 ? "block" : "none";
   }
 
   //This function will update the result according to the input on all of the facets
