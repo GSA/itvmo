@@ -1,8 +1,8 @@
 ---
 order: 1
-title: ITB CoP End-of-Year Event
-description: Registration is open for The ITB CoP End-of-Year Event!
-url-link: https://cmls.gsa.gov/s/event-registration?language=en_US&eid=701SJ000009dp7AYAQ
-publication-date: October 30, 2024
+title: Strengthening Federal Agency Procurement Forecasts
+description: Read the latest from OMB on Strengthening Federal Agency Procurement Forecasts!
+url-link: https://www.whitehouse.gov/wp-content/uploads/2024/11/OFPP-Memorandum-Strenghtening-Federal-Agency-Procurement-Forecasts.pdf
+publication-date: December 05, 2024
 background-image: assets/uploads/helpdesk.jpeg
 ---
