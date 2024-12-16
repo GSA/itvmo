@@ -1,9 +1,9 @@
 ---
-order: 5
-title: NITAAC CIO-SP3 Extended Further Through 4/29/25
-description: The CIO-SP3 and CIO-SP3 Small Business GWACs have been additionally
-  extended through April 29, 2025!
-url-link: https://nitaac.nih.gov/gwacs/cio-sp3
-publication-date: September 03, 2024
+order: 1
+title: Update on the Better Contracting Initiative
+description: Read the latest update on the Better Contracting Initiative from
+  GSA's Laura Stanton
+url-link: https://gsablogs.gsa.gov/technology/2024/12/12/update-to-better-contracting-initiative-2/?utm_medium=email&utm_source=govDelivery
+publication-date: December 16, 2024
 background-image: assets/uploads/laptopsndevices.jpeg
 ---
