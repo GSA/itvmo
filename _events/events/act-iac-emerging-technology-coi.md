@@ -10,7 +10,7 @@ clp: false
 start-time: 2025-01-21T12:00:00.000-00:00
 end-time: 2025-01-21T13:00:00.000-00:00
 event-type: Online
-gov-only: false
+gov-only: true
 is-external: true
 synopsis: Join us for our monthly Emerging Technology COI Member Meeting. This
   month's program will be hosted by the Disruptors in Government (DiG) Working
