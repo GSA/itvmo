@@ -3,7 +3,7 @@ layout: news
 publisher: FEDERAL NEWS NETWORK
 title: The race for data and AI expertise in government
 url-link: https://federalnewsnetwork.com/commentary/2024/12/the-race-for-data-and-ai-expertise-in-government/
-publication-date: January 13, 2025
+publication-date: December 13, 2024
 description: The power of AI to address critical challenges like disaster
   response, pandemics, and national security underscores the need for a strong
   federal data and AI workforce. Despite some progress, such as the hiring of
