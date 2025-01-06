@@ -1,7 +1,7 @@
 ---
 layout: events
 organizer: GSA
-url-link: https://www.gsa.gov/events/alliant-2-dpa-training-1825
+url-link: https://www.gsa.gov/events/alliant-2-dpa-training-12225
 title: Alliant 2 DPA Training
 description: All federal users including contracting officers, program office
   officials, managers, and executive staff are invited to participate in these
