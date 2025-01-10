@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 2
 title: Update on the Better Contracting Initiative
 description: Read the latest update on the Better Contracting Initiative from
   GSA's Laura Stanton!
