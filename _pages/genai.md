@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Generative AI and Specialized Computing Infrastructure Acquisition Resource Guide
 title-image: "/assets/images/icons/page_icons/generative-ai-logo.svg"
 heading-description: ""
@@ -12,4 +12,4 @@ mainpage: false
 genai: true
 ---
 
-{% include genai-guide-single-page.html %}
+{% include genai-guide-single-page.html %} -->
