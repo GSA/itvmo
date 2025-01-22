@@ -1,0 +1,21 @@
+---
+highlight: "false"
+title: M-21-28, Interim Implementation Guidance for the Justice40 Initiative
+description: Sets a goal that 40% of overall benefits from federal investments
+  in areas like clean energy and climate resilience should go to disadvantaged
+  communities. Provides an initial definition of disadvantaged communities and
+  identifies over 20 pilot programs that must develop plans to maximize
+  Justice40 benefits. Agencies managing covered programs must identify benefits,
+  develop methodologies to track benefits to disadvantaged communities, and
+  report data to OMB on meeting the 40% goal.
+url-link: https://www.whitehouse.gov/wp-content/uploads/2021/07/M-21-28.pdf
+publication-date: January 01, 2021
+reading-time: "26"
+type: PDF
+gov-only: "false"
+is-external: "true"
+filter: p-filter
+audience: program-operations
+resource-type: guidance
+branded-offerings: acquisition-policy-it-category
+---
