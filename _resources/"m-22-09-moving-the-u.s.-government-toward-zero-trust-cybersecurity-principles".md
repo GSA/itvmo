@@ -1,0 +1,16 @@
+---
+highlight: "false"
+title: M-22-09, Moving the U.S. Government Toward Zero Trust Cybersecurity Principles
+description: Requires agencies to achieve specific zero trust security goals by
+  the end of Fiscal Year (FY) 2024.
+url-link: https://www.whitehouse.gov/wp-content/uploads/2022/01/M-22-09.pdf
+publication-date: January 01, 2022
+reading-time: "60"
+type: PDF
+gov-only: "false"
+is-external: "true"
+filter: p-filter
+audience: security-compliance
+resource-type: guidance
+branded-offerings: acquisition-policy-it-category
+---
