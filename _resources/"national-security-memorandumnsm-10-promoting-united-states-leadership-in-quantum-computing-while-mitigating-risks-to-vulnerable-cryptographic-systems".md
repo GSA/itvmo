@@ -1,0 +1,25 @@
+---
+highlight: "false"
+title: National Security Memorandum/NSM-10, Promoting United States Leadership
+  in Quantum Computing While Mitigating Risks to Vulnerable Cryptographic
+  Systems
+description: The US aims to expand its quantum computing capabilities while
+  mitigating risks to data security. The memo directs agencies to support
+  quantum R&D and workforce development to maintain US leadership. Agencies must
+  inventory systems vulnerable to quantum computers within 180 days and develop
+  encryption modernization plans. This aims to protect sensitive data as quantum
+  computing advances. A Quantum Cryptography and Post-Quantum Cryptography
+  Technical Evaluation Group will be established. This interagency group will
+  coordinate technical strategies for cryptographic modernization across
+  government.
+url-link: https://www.whitehouse.gov/briefing-room/statements-releases/2022/05/04/national-security-memorandum-on-promoting-united-states-leadership-in-quantum-computing-while-mitigating-risks-to-vulnerable-cryptographic-systems/
+publication-date: May 04, 2022
+reading-time: "15"
+type: HTML
+gov-only: "false"
+is-external: "true"
+filter: p-filter
+audience: security-compliance
+resource-type: guidance
+branded-offerings: acquisition-policy-it-category
+---
