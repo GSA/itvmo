@@ -1,6 +1,6 @@
 ---
 highlight: false
-title: AI Use Cases U.S. General Services Administratiobn
+title: AI Use Cases U.S. General Services Administration
 description: GSA's inventory encompasses both existing and prospective AI
   applications, aligning with the agency's mission. This initiative reflects the
   broader commitment to adopting AI in a manner that is responsible,
