@@ -1,14 +1,11 @@
 ---
 highlight: false
 title: AI Use Cases Department of State
-description: The U.S. Department of State has compiled an inventory of
-  Artificial Intelligence (AI) use cases, showcasing the department's commitment
-  to leveraging AI to enhance its diplomatic efforts and operational efficiency.
-  These AI use cases reflect the Department of State's innovative approach to
-  using advanced technology to improve diplomatic efforts, operational
-  efficiency, and data-driven decision-making. The department's AI inventory is
-  a testament to its commitment to responsible and effective use of AI in
-  fulfilling its mission.
+description: The Department of State's inventory encompasses both existing and
+  prospective AI applications, aligning with the agency's mission. This
+  initiative reflects the broader commitment to adopting AI in a manner that is
+  responsible, transparent, and aligned with the nation's values and legal
+  frameworks.
 url-link: https://www.state.gov/data-strategy/ai_inventory/
 publication-date: November 01, 2023
 reading-time: 30
