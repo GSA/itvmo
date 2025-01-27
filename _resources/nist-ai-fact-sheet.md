@@ -6,10 +6,7 @@ description: The National Institute of Standards and Technology (NIST) is
   use of Artificial Intelligence (AI) technologies and systems. This commitment
   aims to bolster economic security and enhance the quality of life. NIST's
   efforts are centered on advancing measurement science, technology, standards,
-  and associated tools, including assessment and data. The agency's direction in
-  AI is shaped by its legal mandates, directives from Presidential Executive
-  Orders, and the requirements voiced by the U.S. industry, other federal
-  entities, and the international AI research community.
+  and associated tools, including assessment and data.
 url-link: https://www.nist.gov/system/files/documents/2023/11/02/AI%20Fact%20Sheet%200615%20FINAL.pdf
 publication-date: November 15, 2023
 reading-time: 15
