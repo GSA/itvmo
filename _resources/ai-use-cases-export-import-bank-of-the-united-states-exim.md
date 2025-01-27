@@ -1,15 +1,10 @@
 ---
 highlight: false
 title: AI Use Cases Export-Import Bank of the United States (EXIM)
-description: >-
-  The Export-Import Bank of the United States (EXIM) has conducted a review of
-  its Federal Information Security Modernization Act (FISMA) systems in response
-  to Executive Order (EO) 13960: Promoting the Use of Trustworthy Artificial
-  Intelligence in the Federal Government. This review aimed to identify any use
-  cases of Artificial Intelligence (AI) within the agency.
-
-
-  As per the information provided, EXIM did not identify any AI use cases in its current operations. The agency has committed to continuously monitoring its systems and will update the public AI use case inventory as needed to ensure transparency and adherence to the directives of the executive order.
+description: EXIM's inventory encompasses both existing and prospective AI
+  applications, aligning with the agency's mission. This initiative reflects the
+  broader commitment to adopting AI in a manner that is responsible,
+  transparent, and aligned with the nation's values and legal frameworks.
 url-link: https://www.exim.gov/ai-inventory
 publication-date: November 01, 2023
 reading-time: 30
