@@ -1,14 +1,10 @@
 ---
 highlight: false
 title: AI Use Cases U.S. General Services Administratiobn
-description: The General Services Administration (GSA) has compiled an inventory
-  of Artificial Intelligence (AI) use cases, in line with Executive Order 13960,
-  "Promoting the Use of Trustworthy Artificial Intelligence in the Federal
-  Government." This inventory showcases various AI applications within the GSA,
-  highlighting their development stages and purposes. These AI applications
-  demonstrate GSA's commitment to leveraging advanced technology to enhance
-  efficiency and improve service delivery. The complete inventory can be
-  downloaded as a CSV file for a detailed overview.
+description: GSA's inventory encompasses both existing and prospective AI
+  applications, aligning with the agency's mission. This initiative reflects the
+  broader commitment to adopting AI in a manner that is responsible,
+  transparent, and aligned with the nation's values and legal frameworks.
 url-link: https://tech.gsa.gov/ai-inventory/
 publication-date: November 01, 2023
 reading-time: 25
