@@ -1,0 +1,20 @@
+---
+highlight: "false"
+title: M-22-18 Enhancing the Security of the Software Supply Chain
+description: The NIST Guidance provides “recommendations to federal agencies on
+  ensuring that the producers of software they procure have been following a
+  risk-based approach for secure software development.”12 Federal agencies must
+  only use software provided by software producers who can attest to complying
+  with the Government-specified secure software development practices, as
+  described the NIST Guidance.
+url-link: https://www.whitehouse.gov/wp-content/uploads/2022/09/M-22-18.pdf
+publication-date: September 01, 2022
+reading-time: "16"
+type: PDF
+gov-only: "false"
+is-external: "true"
+filter: p-filter
+audience: security-compliance
+resource-type: guidance
+branded-offerings: acquisition-policy-it-category
+---
