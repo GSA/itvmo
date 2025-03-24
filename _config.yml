@@ -77,10 +77,10 @@ ga:
 primary_navigation:
   - name: Home
     url: /
-  - name: News
-    url: /news/
-  - name: Events
-    url: /events/
+  # - name: News
+  #   url: /news/
+  # - name: Events
+  #   url: /events/
   - name: Community
     url: /community/
   - name: Services
@@ -132,9 +132,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  news:
-    output: true
-    permalink: /:path/
+  # news:
+  #   output: true
+  #   permalink: /:path/
   article_publishers:
     output: true
   article_topics:
@@ -143,11 +143,11 @@ collections:
     output: true
   highlights:
     output: true
-  events:
-    output: true
-    permalink: /:path/
-  events_page_announcements:
-    output: true
+  # events:
+  #   output: true
+  #   permalink: /:path/
+  # events_page_announcements:
+  #   output: true
   past_event_highlight:
     output: true
 
