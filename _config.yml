@@ -88,10 +88,7 @@ primary_navigation:
   - name: Resources
     url: /resources/
   - name: OneGov Strategy
-  - url: /onegov/
-  #   children:
-  #     - name: Generative AI Guide
-  #       url: /genai/
+    url: /onegov/
 
 secondary_navigation:
   - name: IT Vehicles
