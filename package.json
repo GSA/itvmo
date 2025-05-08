@@ -9,7 +9,7 @@
     "test": "bundle exec htmlproofer _site; npx a11y '_site/**/*.html'"
   },
   "dependencies": {
-    "axios": "^1.7.9",
+    "axios": "^1.8.2",
     "boxen": "^8.0.1",
     "cross-spawn": "^7.0.6",
     "execa": "^9.5.1",
