@@ -87,11 +87,8 @@ primary_navigation:
     url: /services/
   - name: Resources
     url: /resources/
-  # - name: Collaborations
-  #   url: /collaborations/
-  #   children:
-  #     - name: Generative AI Guide
-  #       url: /genai/
+  - name: OneGov Strategy
+    url: /onegov/
 
 secondary_navigation:
   - name: IT Vehicles
