@@ -12,6 +12,7 @@
     "axios": "^1.8.2",
     "boxen": "^8.0.1",
     "cross-spawn": "^7.0.6",
+    "dompurify": "^3.2.5",
     "execa": "^9.5.1",
     "got": "^14.4.5",
     "latest-version": "^9.0.0",
