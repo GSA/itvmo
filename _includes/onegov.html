@@ -36,7 +36,8 @@
                                 <h3 class="cardHeading resTitle">Sign up for more info</h3>
                                 <p class="cardBody">
                                     The new OneGov strategy sets a governmentwide direction for how we acquire and
-                                    manage information technology—starting with commercial software. If your organization would
+                                    manage information technology—starting with commercial software. If your
+                                    organization would
                                     like to participate or learn more, complete <a target="_blank"
                                         rel="noreferrer noopener"
                                         href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">this
@@ -45,6 +46,418 @@
                             </div>
                             <h3 class="cardHeading linkSec service-link">
 
+                            </h3>
+                            <a target="_blank" rel="noreferrer noopener" class="noDec service-link"
+                                href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">
+                                <div class="serviceLinks">Access notification form</div>
+                            </a>
+                            <a target="_blank" rel="noreferrer noopener" class="noDec service-link"
+                                href="https://www.gsa.gov/about-us/newsroom/news-releases/gsa-unveils-onegov-strategy-04292025">
+                                <div class="serviceLinks">
+                                    Read the official press release
+                                </div>
+                            </a>
+                            <a target="_blank" rel="noreferrer noopener" class="noDec service-link margin-bottom-2"
+                                href="https://gsablogs.gsa.gov/technology/2025/04/30/launching-the-onegov-strategy-for-it/">
+                                <div class="serviceLinks">Follow updates in GSA's Great Government Through Technology
+                                    blog</div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="inner-page-tabs">
+    <!-- Inner tab dropdown for the mobile version -->
+    <div id="tabs-mobile-container">
+        <select id="tabs-mobile" onchange="openTabDropdown();">
+            <option value="onegov-overview-header">Overview</option>
+            <option value="current-agreements-header">Current Agreements</option>
+            <option value="how-to-participate-header">How to Participate</option>
+        </select>
+    </div>
+
+    <div class="tabs">
+        <a id="onegov-overview-header" tabindex="0" class="tab active-tab" onclick="openTab(event, 'onegov-overview')"
+            onkeydown="openTabKey(event, 'onegov-overview')">Overview</a>
+        <a id="current-agreements-header" tabindex="0" class="tab" onclick="openTab(event, 'current-agreements')"
+            onkeydown="openTabKey(event, 'current-agreements')">Current Agreements</a>
+        <a id="how-to-participate-header" tabindex="0" class="tab" onclick="openTab(event, 'how-to-participate')"
+            onkeydown="openTabKey(event, 'how-to-participate')">How to Participate</a>
+    </div>
+
+    <!-- OVERVIEW TAB -->
+    <div id="onegov-overview" class="tabcontent" style="display: flex">
+        <div class="contents padding-bottom-5">
+            <h3 id="onegov-overview-heading" class="topic-heading">OneGov Strategy Overview</h3>
+            <h3 class="itvmo-article-sub-2 mb-0">Strategic Context</h3>
+            <p class="tab-p">
+                The OneGov Strategy is GSA's bold initiative aimed at modernizing how the federal government purchases
+                goods and services.
+                Starting with commercial software, this governmentwide approach consolidates purchasing power to achieve
+                better pricing,
+                simplified access, and improved security compliance across all federal agencies.
+            </p>
+
+            <div class="bulletSections">
+                <div class="topLine"></div>
+                <ul class="experiences">
+                    <li class="bulletText">
+                        <b>Consolidated Purchasing Power:</b> Leverage the government's collective buying power to
+                        negotiate better deals
+                    </li>
+                    <li class="bulletText">
+                        <b>Simplified Access:</b> Make it easier for federal customers to browse and redeem negotiated
+                        agreements
+                    </li>
+                    <li class="bulletText">
+                        <b>Enhanced Security:</b> Ensure all solutions meet federal security and compliance requirements
+                    </li>
+                    <li class="bulletText">
+                        <b>Cost Savings:</b> Achieve significant discounts through enterprise-wide agreements
+                    </li>
+                </ul>
+            </div>
+
+            <p class="tab-p">
+                <b>Ready to learn more?</b> Complete our
+                <a href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7" target="_blank"
+                    rel="noreferrer noopener">
+                    industry questionnaire
+                </a>
+                to stay informed about upcoming opportunities and participate in the OneGov Strategy initiative.
+            </p>
+        </div>
+
+        <div class="content-nav">
+            <div class="nav-list">
+                <h3>On this Tab</h3>
+                <a id="sn-onegov-overview" class="page-nav page-nav-active" href="#onegov-overview-heading"
+                    onclick="return removeTabContent(this)">
+                    Overview
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CURRENT AGREEMENTS TAB -->
+    <div id="current-agreements" class="tabcontent">
+        <div class="contents padding-bottom-5">
+            <h3 id="current-agreements-heading" class="topic-heading">Current OneGov Agreements</h3>
+            <h3 class="itvmo-article-sub-2 mb-0">Available Discounts</h3>
+            <p class="tab-p">
+                Federal agencies can now access these pre-negotiated agreements with significant cost savings and
+                simplified procurement processes.
+                Click "Access Agreement" to learn more about each offering and how to redeem these deals.
+            </p>
+
+            <div class="tab-divide-line"></div>
+
+            <!-- AGREEMENT CARDS -->
+            <ul class="usa-card-group">
+                <!-- GOOGLE AGREEMENT -->
+                <li class="usa-card usa-card--flag">
+                    <div class="usa-card__container">
+                        <div class="usa-card__media serviceCard">
+                            <div class="leftPort">
+                                <div class="discount-badge-large">71% OFF</div>
+                                <img class="imgCont" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                    alt="Google Workspace logo" />
+                            </div>
+                        </div>
+                        <div class="usa-card__body">
+                            <div class="resCardSec">
+                                <div>
+                                    <img class="imgContres" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                        alt="Google Workspace logo" />
+                                </div>
+                                <div class="resHeading">
+                                    <h2 class="usa-card__heading">Google Workspace for Government</h2>
+                                </div>
+                            </div>
+                            <h2 class="partnerHeader">Google Workspace for Government</h2>
+                            <div class="cardBody">
+                                <p>
+                                    Comprehensive productivity suite including Gmail, Docs, Meet, and Drive in a secure,
+                                    FedRAMP authorized package designed specifically for government use.
+                                </p>
+                                <div class="agreement-details">
+                                    <div class="detail-item">
+                                        <strong>Discount:</strong> 71% off standard pricing
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Expires:</strong> September 30, 2025
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Includes:</strong> Gmail, Drive, Docs, Sheets, Meet, Calendar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agreement-actions">
+                            <a href="#" class="usa-button usa-button--outline agreement-btn">Access Agreement</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- ADOBE AGREEMENT -->
+                <li class="usa-card usa-card--flag">
+                    <div class="usa-card__container">
+                        <div class="usa-card__media serviceCard">
+                            <div class="leftPort">
+                                <div class="discount-badge-large">70% OFF</div>
+                                <img class="imgCont" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                    alt="Adobe Acrobat logo" />
+                            </div>
+                        </div>
+                        <div class="usa-card__body">
+                            <div class="resCardSec">
+                                <div>
+                                    <img class="imgContres" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                        alt="Adobe Acrobat logo" />
+                                </div>
+                                <div class="resHeading">
+                                    <h2 class="usa-card__heading">Adobe Paperless Bundle</h2>
+                                </div>
+                            </div>
+                            <h2 class="partnerHeader">Adobe Paperless Bundle</h2>
+                            <div class="cardBody">
+                                <p>
+                                    Complete digital document solution featuring Acrobat with AI-powered tools and
+                                    advanced digital signature capabilities for secure, paperless workflows.
+                                </p>
+                                <div class="agreement-details">
+                                    <div class="detail-item">
+                                        <strong>Discount:</strong> 70% off standard pricing
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Expires:</strong> November 30, 2025
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Includes:</strong> Acrobat Pro, AI Tools, Digital Signatures
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agreement-actions">
+                            <a href="#" class="usa-button usa-button--outline agreement-btn">Access Agreement</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- SALESFORCE AGREEMENT -->
+                <li class="usa-card usa-card--flag">
+                    <div class="usa-card__container">
+                        <div class="usa-card__media serviceCard">
+                            <div class="leftPort">
+                                <div class="discount-badge-large">UP TO 90% OFF</div>
+                                <img class="imgCont" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                    alt="Salesforce Slack logo" />
+                            </div>
+                        </div>
+                        <div class="usa-card__body">
+                            <div class="resCardSec">
+                                <div>
+                                    <img class="imgContres" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                        alt="Salesforce Slack logo" />
+                                </div>
+                                <div class="resHeading">
+                                    <h2 class="usa-card__heading">Salesforce Collaboration Suite</h2>
+                                </div>
+                            </div>
+                            <h2 class="partnerHeader">Salesforce Collaboration Suite</h2>
+                            <div class="cardBody">
+                                <p>
+                                    Enterprise collaboration platform with Slack Enterprise Grid and AI-powered
+                                    productivity tools designed for secure government communications.
+                                </p>
+                                <div class="agreement-details">
+                                    <div class="detail-item">
+                                        <strong>Discount:</strong> 90% off Slack Enterprise Grid, 65% off Slack AI
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Expires:</strong> December 31, 2025
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Includes:</strong> Slack Enterprise Grid, Slack AI for Enterprise
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agreement-actions">
+                            <a href="#" class="usa-button usa-button--outline agreement-btn">Access Agreement</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- ELASTIC AGREEMENT -->
+                <li class="usa-card usa-card--flag">
+                    <div class="usa-card__container">
+                        <div class="usa-card__media serviceCard">
+                            <div class="leftPort">
+                                <div class="discount-badge-large">UP TO 60% OFF</div>
+                                <img class="imgCont" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpgg"
+                                    alt="Elastic logo" />
+                            </div>
+                        </div>
+                        <div class="usa-card__body">
+                            <div class="resCardSec">
+                                <div>
+                                    <img class="imgContres" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                        alt="Elastic logo" />
+                                </div>
+                                <div class="resHeading">
+                                    <h2 class="usa-card__heading">Elastic Search & Analytics</h2>
+                                </div>
+                            </div>
+                            <h2 class="partnerHeader">Elastic Search & Analytics Platform</h2>
+                            <div class="cardBody">
+                                <p>
+                                    Comprehensive search and analytics platform with both self-managed tools
+                                    and secure GovCloud options for federal data analysis needs.
+                                </p>
+                                <div class="agreement-details">
+                                    <div class="detail-item">
+                                        <strong>Discount:</strong> Up to 60% off self-managed, up to 32% off GovCloud
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Expires:</strong> March 31, 2026
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Includes:</strong> Elasticsearch, Kibana, Logstash, Beats
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agreement-actions">
+                            <a href="#" class="usa-button usa-button--outline agreement-btn">Access Agreement</a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- ORACLE AGREEMENT -->
+                <li class="usa-card usa-card--flag">
+                    <div class="usa-card__container">
+                        <div class="usa-card__media serviceCard">
+                            <div class="leftPort">
+                                <div class="discount-badge-large">75% OFF</div>
+                                <img class="imgCont" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                    alt="Oracle logo" />
+                            </div>
+                        </div>
+                        <div class="usa-card__body">
+                            <div class="resCardSec">
+                                <div>
+                                    <img class="imgContres" src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                        alt="Oracle logo" />
+                                </div>
+                                <div class="resHeading">
+                                    <h2 class="usa-card__heading">Oracle Technology Programs</h2>
+                                </div>
+                            </div>
+                            <h2 class="partnerHeader">Oracle Technology & Cloud Programs</h2>
+                            <div class="cardBody">
+                                <p>
+                                    Enterprise database and cloud solutions with significant license discounts
+                                    and no egress fees for cloud migrations to support digital transformation.
+                                </p>
+                                <div class="agreement-details">
+                                    <div class="detail-item">
+                                        <strong>Discount:</strong> 75% off license-based programs
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Expires:</strong> June 30, 2026
+                                    </div>
+                                    <div class="detail-item">
+                                        <strong>Includes:</strong> Database licenses, Cloud services, No egress fees
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agreement-actions">
+                            <a href="#" class="usa-button usa-button--outline agreement-btn">Access Agreement</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="tab-divide-line end-content"></div>
+            <p class="tab-p">
+                <b>Need help selecting the right agreement?</b> Contact our team at
+                <a href="mailto:itvmo@gsa.gov?subject=OneGov Agreements">ITVMO@gsa.gov</a>
+                for personalized guidance on which solutions best meet your agency's needs.
+            </p>
+        </div>
+
+        <div class="content-nav">
+            <div class="nav-list">
+                <h3>On this Tab</h3>
+                <a id="sn-current-agreements" class="page-nav page-nav-active" href="#current-agreements-heading"
+                    onclick="return removeTabContent(this)">
+                    Current Agreements
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- HOW TO PARTICIPATE TAB -->
+    <div id="how-to-participate" class="tabcontent">
+        <div class="contents-no-side-nav">
+            <h3 id="how-to-participate-heading" class="topic-heading">How to Participate</h3>
+            <h3 class="itvmo-article-sub-2 mb-0">Getting Started</h3>
+            <p class="tab-p">
+                The OneGov Strategy makes it simple for federal agencies to access pre-negotiated agreements
+                and for industry partners to participate in government-wide procurement initiatives.
+            </p>
+
+            <div class="tab-divide-line"></div>
+
+            <!-- EXISTING CARD STRUCTURE FROM YOUR CURRENT CODE -->
+            <div>
+                <ul class="usa-card-group">
+                    <li id="oem-initiatives" class="usa-card usa-card--flag service-card">
+                        <div class="usa-card__container">
+                            <div class="usa-card__media serviceCard">
+                                <div class="leftPort">
+                                    <a target="_blank" rel="noreferrer noopener"
+                                        href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">
+                                        <h2 class="usa-card__heading">
+                                            OneGov Strategy Industry Questionnaire
+                                        </h2>
+                                        <img class="imgContSVG padding-0"
+                                            src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                            alt="GSA Starmark" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="usa-card__body">
+                                <div class="resCardSec">
+                                    <div>
+                                        <img class="imgContSVG padding-0"
+                                            src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
+                                            alt="GSA Starmark" />
+                                    </div>
+                                    <a target="_blank" rel="noreferrer noopener" class="resHeading"
+                                        href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">
+                                        <h2 class="usa-card__heading">
+                                            OneGov Strategy Industry Questionnaire
+                                        </h2>
+                                    </a>
+                                </div>
+                                <h3 class="cardHeading resTitle">Sign up for more info</h3>
+                                <p class="cardBody">
+                                    The new OneGov strategy sets a governmentwide direction for how we acquire and
+                                    manage information technology—starting with commercial software. If your
+                                    organization would
+                                    like to participate or learn more, complete <a target="_blank"
+                                        rel="noreferrer noopener"
+                                        href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">this
+                                        form</a>.
+                                </p>
+                            </div>
+                            <h3 class="cardHeading linkSec service-link">
                             </h3>
                             <a target="_blank" rel="noreferrer noopener" class="noDec service-link"
                                 href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">
@@ -65,8 +478,104 @@
                     </li>
                 </ul>
             </div>
-            <p class="service-card service-end">
 
+            <div class="tab-divide-line end-content"></div>
+
+            <!-- ADDITIONAL PARTICIPATION STEPS -->
+            <h3 class="itvmo-article-sub-2 mb-0">For Federal Agencies</h3>
+            <p class="tab-p">
+                Federal agencies can immediately begin taking advantage of current OneGov agreements:
+            </p>
+
+            <div class="bulletSections">
+                <div class="topLine"></div>
+                <ul class="experiences">
+                    <li class="bulletText">
+                        <b>Review Available Agreements:</b> Browse the Current Agreements tab to see all available
+                        discounts and offerings
+                    </li>
+                    <li class="bulletText">
+                        <b>Contact ITVMO:</b> Reach out to our team at <a href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a>
+                        for guidance on which agreements best fit your needs
+                    </li>
+                    <li class="bulletText">
+                        <b>Access Through Existing Vehicles:</b> Most OneGov agreements are available through GSA's
+                        Multiple Award Schedule and other established procurement vehicles
+                    </li>
+                    <li class="bulletText">
+                        <b>Stay Informed:</b> Complete the industry questionnaire to receive updates on new agreements
+                        and opportunities
+                    </li>
+                </ul>
+            </div>
+
+            <h3 class="itvmo-article-sub-2 mb-0">For Industry Partners</h3>
+            <p class="tab-p">
+                Industry partners interested in participating in future OneGov negotiations should:
+            </p>
+
+            <div class="bulletSections">
+                <div class="topLine"></div>
+                <ul class="experiences">
+                    <li class="bulletText">
+                        <b>Complete the Questionnaire:</b> Submit the industry questionnaire to express interest and
+                        stay updated on opportunities
+                    </li>
+                    <li class="bulletText">
+                        <b>Maintain GSA Schedule Contracts:</b> Ensure your organization has active GSA Multiple Award
+                        Schedule contracts
+                    </li>
+                    <li class="bulletText">
+                        <b>Demonstrate Government Experience:</b> Highlight your track record serving federal agencies
+                    </li>
+                    <li class="bulletText">
+                        <b>Prepare for Enterprise Negotiations:</b> Be ready to discuss government-wide pricing and
+                        terms
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-divide-line end-content"></div>
+
+            <h3 class="itvmo-article-sub-2 mb-0">Contact Information</h3>
+            <p class="tab-p">
+                For questions about OneGov Strategy or to discuss specific requirements, contact the ITVMO team:
+            </p>
+
+            <div class="links-list">
+                <ul class="links-with-descriptions">
+                    <li class="link-with-description">
+                        <a href="mailto:itvmo@gsa.gov?subject=OneGov Strategy" tabindex="0">
+                            <p class="link-heading">
+                                <img class="link-icon" alt="Email icon"
+                                    src="{{site.baseurl}}/assets/images/icons/email-icon.svg" />
+                                Email: ITVMO@gsa.gov
+                            </p>
+                            <p class="link-description">
+                                Direct email for OneGov Strategy questions and support
+                            </p>
+                        </a>
+                    </li>
+                    <li class="link-with-description">
+                        <a target="_blank" rel="noreferrer noopener"
+                            href="https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs"
+                            tabindex="0">
+                            <p class="link-heading">
+                                <img class="link-icon" alt="Link icon"
+                                    src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                                GSA IT Contract Vehicles
+                                <img alt="External icon"
+                                    src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                            </p>
+                            <p class="link-description">
+                                Information about GSA's IT procurement programs and contract vehicles
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <p class="service-card service-end">
             </p>
         </div>
     </div>
