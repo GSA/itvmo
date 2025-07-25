@@ -6,13 +6,8 @@ description: "heading-description: The OneGov Strategy is GSA’s bold initiativ
 keywords: ""
 layout: page
 sidenav: false
-mainpage: true
+mainpage: false
 redesign: true
 ---
-  <section id="main-page-content" class="usa-graphic-list margin-bottom-4 grid-container padding-0">
-    <section id="page-directory" class="grid-container padding-0"></section>
-    <div class="grid-container grid-container margin-0 padding-0">
-            {% include onegov.html %}
-    </div>
-  </section>
+{% include onegov.html %}
 
