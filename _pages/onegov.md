@@ -6,7 +6,7 @@ description: "heading-description: The OneGov Strategy is GSA’s bold initiativ
 keywords: ""
 layout: page
 sidenav: false
-mainpage: false
+mainpage: true
 redesign: true
 ---
 {% include onegov.html %}
