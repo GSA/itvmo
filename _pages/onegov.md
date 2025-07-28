@@ -6,7 +6,7 @@ description: "The OneGov Strategy is GSA’s bold initiative aimed at modernizin
 keywords: ""
 layout: page
 sidenav: false
-mainpage: false
+mainpage: true
 redesign: true
 ---
 {% include onegov.html %}
