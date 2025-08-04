@@ -1,0 +1,79 @@
+<div id="agreements" data-sitebase="{{site.baseurl}}">
+    <div class="search-agreement-cards">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search Agreements" />
+        </div>
+        <div class="filter-controls">
+            <select id="sort-by">
+                <option value="expires">Expiration Date</option>
+                <option value="discount">Highest Discount</option>
+                <option value="vendor">Vendor Name</option>
+            </select>
+        </div>
+        <ul class="usa-card-group">
+            {% assign sorted_agreements = site.onegov_agreements | sort: 'expires' %}
+            {% for agreement in sorted_agreements %}
+            <li class="usa-card usa-card--flag">
+                <div class="usa-card__container">
+                    <div class="usa-card__media serviceCard">
+                        <div class="leftPort">
+                            <div class="discount-badge-large margin-bottom-1">{{agreement.discount}}% OFF</div>
+                            <img class="imgCont" src="{{site.baseurl}}{{agreement.logo}}"
+                                alt="{{agreement.vendor}} logo" />
+                            <a target="_blank" rel="noreferrer noopener"
+                                class="noDec flex-align-self-stretch pin-bottom" href="#">
+                                <div class="serviceLinks">Access Agreement</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="usa-card__body">
+                        <div class="resCardSec">
+                            <div>
+                                <img class="imgContres" src="{{site.baseurl}}{{agreement.logo}}"
+                                    alt="{{agreement.vendor}} logo" />
+                            </div>
+                            <div class="resHeading">
+                                <a target="_blank" rel="noreferrer noopener" class="noDec"
+                                    title="Official GSA press release" href="{{agreement.press_release}}">
+                                    <h2 class="usa-card__heading">{{agreement.title}} <img alt="External icon"
+                                            src="{{site.baseurl}}/assets/images/icons/external.svg"></h2>
+                                </a>
+                            </div>
+                        </div>
+                        <a target="_blank" rel="noreferrer noopener" class="noDec" title="Official GSA press release"
+                            href="{{agreement.press_release}}">
+                            <h2 class="partnerHeader" id="agreement-{{agreement.vendor | downcase}}">{{agreement.title}}
+                                <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external.svg">
+                            </h2>
+                        </a>
+                        <div class="cardBody">
+                            <p>{{agreement.description}}</p>
+                            <div class="agreement-details">
+                                <div class="detail-item">
+                                    <strong>Discount:</strong> {{agreement.discount_details}}
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Expires:</strong> {{agreement.expires | date: "%B %d, %Y"}}
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Includes:</strong>
+                                    {% if agreement.includes %}
+                                    {% for feature in agreement.includes %}
+                                    {{ feature.feature }}{% unless forloop.last %}, {% endunless %}
+                                    {% endfor %}
+                                    {% else %}
+                                    {{ agreement.includes }}
+                                    {% endif %}
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Vehicle:</strong> {{agreement.vehicle}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
