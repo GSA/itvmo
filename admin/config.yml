@@ -64,7 +64,7 @@ collections:
           config:
             multiple: true
   #Allow user to create announcement.
-  - label: Events page Announcements
+  - label: Event Announcements
     name: events-page-announcements
     folder: _events_page_announcements/
     create: true
