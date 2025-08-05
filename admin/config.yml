@@ -64,11 +64,8 @@ collections:
           - { label: "Database & Development", value: "database" }
       - label: "Discount Percentage"
         name: "discount"
-        widget: "number"
-        value_type: "int"
-        min: 1
-        max: 100
-        hint: "Enter whole number (e.g., 71 for 71%)"
+        widget: "string"
+        hint: "Enter a whole number (e.g., 71 for 71%) or the range for multiple discounts ('UP TO 90% OFF', '50 - 70% OFF')"
       - label: "Discount Details"
         name: "discount_details"
         widget: "string"
@@ -100,7 +97,7 @@ collections:
         widget: "image"
         choose_url: true
         media_folder: "/assets/images/logos/company_logos"
-        public_folder: "/assets/images/logos/company_logos"
+        public_folder: "/assets/images/logos/company_logos" 
         hint: "Upload or select company logo"
       - label: "Description"
         name: "description"
