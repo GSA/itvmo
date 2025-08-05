@@ -4,7 +4,7 @@ vendor: Docusign
 type: digital-signature
 discount: 70
 discount_details: 70% off eSignature Enterprise Pro, 50% off Intelligent Agreement
-expires: 2025-01-31
+expires: 2027-01-31
 press_release: https://www.gsa.gov/about-us/newsroom/news-releases/gsa-partners-with-docusign-to-deliver-price-reductions-for-docusign-government-07312025
 includes:
   - eSignature Enterprise Pro
