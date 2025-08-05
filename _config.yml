@@ -147,6 +147,9 @@ collections:
   #   output: true
   past_event_highlight:
     output: true
+  onegov_agreements:
+    output: false
+    sort_by: expires
 
 permalink: pretty
 
