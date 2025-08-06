@@ -1,73 +1,376 @@
-<section id="inner-page-tabs">
-    <div class="tabcontent" style="display: flex">
-        <div class="contents-no-side-nav">
-            <div>
+<div class="grid-container padding-0 inner-page">
+    <section id="inner-page-tabs">
+        <!-- Inner tab dropdown for the mobile version -->
+        <div id="tabs-mobile-container">
+            <select id="tabs-mobile" onchange="openTabDropdown();">
+                <option value="onegov-overview-header">Overview</option>
+                <option value="current-agreements-header">Current Agreements</option>
+                <option value="how-to-participate-agencies-header">Agency Participation</option>
+                <option value="how-to-participate-industry-header">Industry Participation</option>
+            </select>
+        </div>
+        <div class="tabs">
+            <a id="onegov-overview-header" tabindex="0" class="tab active-tab"
+                onclick="openTab(event, 'onegov-overview')"
+                onkeydown="openTabKey(event, 'onegov-overview')">Overview</a>
+            <a id="current-agreements-header" tabindex="0" class="tab" onclick="openTab(event, 'current-agreements')"
+                onkeydown="openTabKey(event, 'current-agreements')">Current Agreements</a>
+            <a id="how-to-participate-agencies-header" tabindex="0" class="tab"
+                onclick="openTab(event, 'how-to-participate-agencies')"
+                onkeydown="openTabKey(event, 'how-to-participate-agencies')">Agency Participation</a>
+            <a id="how-to-participate-industry-header" tabindex="0" class="tab"
+                onclick="openTab(event, 'how-to-participate-industry')"
+                onkeydown="openTabKey(event, 'how-to-participate-industry')">Industry Participation</a>
+        </div>
+        <!-- OVERVIEW TAB -->
+        <div id="onegov-overview" class="tabcontent" style="display: flex">
+            <div class="contents padding-bottom-5">
+                <h3 id="onegov-overview-heading" class="topic-heading">What is OneGov?</h3>
+
+                <p class="tab-p">
+                    GSA's OneGov Strategy is a comprehensive plan to transform how government buys almost everything.
+                    Instead of
+                    hundreds
+                    of separate agency contracts, we leverage the collective purchasing
+                    power of the entire federal government to secure unprecedented discounts while ensuring consistent
+                    security
+                    standards and simplified access.
+                </p>
+
+                <h3 id="onegov-why-heading" class="itvmo-article-sub-2 mb-1">Why OneGov IT?</h3>
+                <p class="tab-p">
+                    The IT Initiative is the first phase of OneGov. We're focused on software and technology where we
+                    can quickly
+                    deliver the greatest savings direct from the source.
+                    Previously, agencies negotiated
+                    separate contracts for the same software, often paying premium prices while duplicating effort.
+                    OneGov IT
+                    eliminates this
+                    waste by leveraging our collective $100+ billion in annual federal IT spending to negotiate as one
+                    buyer.
+                </p>
+                <div class="bulletSections padding-top-5">
+                    <div class="topLine"></div>
+                    <ul class="experiences">
+                        <li class="bulletText">
+                            <b>Massive Cost Savings:</b> Secure discounts of 70-90% on software your agency already uses
+                            from vendors
+                            like Microsoft, Adobe, Google, and Salesforce
+                        </li>
+                        <li class="bulletText">
+                            <b>Direct OEM Relationships:</b> We work directly with original equipment manufacturers,
+                            eliminating
+                            markup and ensuring clear accountability for support and performance
+                        </li>
+                        <li class="bulletText">
+                            <b>Reduced Administrative Burden:</b> Access pre-negotiated agreements through value added
+                            resellers on
+                            GSA's Multiple Award Schedule instead of running separate procurements
+                        </li>
+                        <li class="bulletText">
+                            <b>Consistent Security Standards:</b> All agreements include standardized contract terms
+                            with consistent
+                            expectations around support, patching, and access controls
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 id="onegov-resources" class="itvmo-article-sub-2 mb-1">OneGov IT resources</h3>
+
+                <div class="links-list padding-bottom-5">
+                    <ul class="links-with-descriptions">
+                        <li class="link-with-description">
+                            <a target="_blank" rel="noreferrer noopener"
+                                href="{{site.baseurl}}/assets/files/GSA OneGov Slipsheet July 2025.pdf" tabindex="0">
+                                <p class="link-heading">
+                                    <img class="link-icon" alt="PDF icon"
+                                        src="{{site.baseurl}}/assets/images/icons/pdf-icon.svg" />
+                                    OneGov fact sheet
+                                </p>
+                                <p class="link-description">
+                                    Download a one page summary of the OneGov strategy.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="link-with-description">
+                            <a target="_blank" rel="noreferrer noopener"
+                                href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7"
+                                tabindex="0">
+                                <p class="link-heading">
+                                    <img class="link-icon" alt="Link icon"
+                                        src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                                    Industry Questionnaire
+                                    <img alt="External icon"
+                                        src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                                </p>
+                                <p class="link-description">
+                                    Complete the questionnaire to express interest and stay updated on opportunities.
+                                </p>
+                            </a>
+                        </li>
+                        <li class="link-with-description">
+                            <a href="mailto:itvmo@gsa.gov?subject=OneGov Strategy" tabindex="0">
+                                <p class="link-heading">
+                                    <img class="link-icon" alt="Email icon"
+                                        src="{{site.baseurl}}/assets/images/icons/email-icon.svg" />
+                                    Email: ITVMO@gsa.gov
+                                </p>
+                                <p class="link-description">
+                                    Questions? Our team at ITVMO@gsa.gov is here to help.
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-nav">
+                <div class="nav-list">
+                    <h3>On this Tab</h3>
+                    <a id="sn-onegov-overview" class="page-nav page-nav-active" href="#onegov-overview-heading"
+                        onclick="return removeTabContent(this)">
+                        What is OneGov?
+                    </a>
+                    <a id="sn-why-onegov" class="page-nav page-nav" href="#onegov-why-heading"
+                        onclick="return removeTabContent(this)">
+                        Why OneGov IT?
+                    </a>
+                    <a id="sn-onegov-resources" class="page-nav page-nav" href="#onegov-resources"
+                        onclick="return removeTabContent(this)">
+                        OneGov IT resources
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- CURRENT AGREEMENTS TAB -->
+        <div id="current-agreements" class="tabcontent">
+            <div class="contents padding-bottom-5">
+                <h2 id="current-agreements-heading" class="topic-heading">OneGov IT agreements</h2>
+                <p class="tab-p">
+                    Ready to order? Detailed information for government buyers is located in the OneGov Community at
+                    USDA Connect.gov.
+                </p>
                 <ul class="usa-card-group">
-                    <li id="oem-initiatives" class="usa-card usa-card--flag service-card">
-                        <div class="usa-card__container">
+                    <li id="community-connect" class="usa-card usa-card--flag">
+                        <a target="_blank" rel="noreferrer noopener"
+                            href="https://community.connect.gov/download/attachments/2683344868/OneGov%20OEM%20Offers%20-%20Access%20Information.pdf?api=v2"
+                            class="usa-card__container usa-card__container_link">
                             <div class="usa-card__media serviceCard">
                                 <div class="leftPort">
-                                    <a target="_blank" rel="noreferrer noopener"
-                                        href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">
-                                        <h2 class="usa-card__heading">
-                                            OneGov Strategy Industry Questionnaire
-                                        </h2>
-                                        <img class="imgContSVG padding-0"
-                                            src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
-                                            alt="GSA Starmark" />
-                                    </a>
+                                    <img class="imgCont"
+                                        src="{{site.baseurl}}/assets/images/logos/community-connect-logo.png"
+                                        alt="USDA Community Connect logo" />
                                 </div>
                             </div>
-
                             <div class="usa-card__body">
                                 <div class="resCardSec">
                                     <div>
-                                        <img class="imgContSVG padding-0"
-                                            src="{{site.baseurl}}/assets/images/logos/gsa-logo.jpg"
-                                            alt="GSA Starmark" />
+                                        <img class="imgContres"
+                                            src="{{site.baseurl}}/assets/images/logos/community-connect-logo.png"
+                                            alt="USDA Community Connect logo" />
                                     </div>
-                                    <a target="_blank" rel="noreferrer noopener" class="resHeading"
-                                        href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">
-                                        <h2 class="usa-card__heading">
-                                            Coming soon: OneGov Strategy Industry Questionnaire
-                                        </h2>
-                                    </a>
+                                    <div class="resHeading">
+                                        <h3 class="usa-card__heading">Download OneGov Access Information</h3>
+                                    </div>
                                 </div>
-                                <h3 class="cardHeading resTitle">Sign up for more info</h3>
-                                <p class="cardBody">
-                                    The new OneGov strategy sets a governmentwide direction for how we acquire and
-                                    manage information technology—starting with commercial software. If your organization would
-                                    like to participate or learn more, complete <a target="_blank"
-                                        rel="noreferrer noopener"
-                                        href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">this
-                                        form</a>.
-                                </p>
+                                <h3 class="partnerHeader">
+                                    Download OneGov Access Information
+                                    <img alt="External icon"
+                                        src="{{site.baseurl}}/assets/images/icons/external-dark-blue.svg" />
+                                </h3>
+                                <div class="cardBody">
+                                    <p>
+                                        AKA MAX.gov, Connect is a shared services platform for governmentwide
+                                        collaboration. Clicking here will initiate a direct download of all OneGov
+                                        access information.
+                                    </p>
+                                    <div class="partner-detail margin-top-2">
+                                        <div>
+                                            <p>Full ordering details</p>
+                                        </div>
+                                        <div>
+                                            <p>Direct download</p>
+                                        </div>
+                                        <div>
+                                            <p>Government only</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <h3 class="cardHeading linkSec service-link">
-
-                            </h3>
-                            <a target="_blank" rel="noreferrer noopener" class="noDec service-link"
-                                href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">
-                                <div class="serviceLinks">Access notification form</div>
-                            </a>
-                            <a target="_blank" rel="noreferrer noopener" class="noDec service-link"
-                                href="https://www.gsa.gov/about-us/newsroom/news-releases/gsa-unveils-onegov-strategy-04292025">
-                                <div class="serviceLinks">
-                                    Read the official press release
-                                </div>
-                            </a>
-                            <a target="_blank" rel="noreferrer noopener" class="noDec service-link"
-                                href="https://gsablogs.gsa.gov/technology/2025/04/30/launching-the-onegov-strategy-for-it/">
-                                <div class="serviceLinks">Follow updates in GSA's Great Government Through Technology
-                                    blog</div>
-                            </a>
-                        </div>
+                        </a>
                     </li>
                 </ul>
-            </div>
-            <p class="service-card service-end">
+                <h3 class="itvmo-article-sub-2 mb-0">Available discounts</h3>
+                <p class="tab-p">
+                    Federal agencies can now access these pre-negotiated agreements with significant cost savings and
+                    simplified procurement processes.
+                </p>
 
-            </p>
+                <div class="tab-divide-line"></div>
+                <!-- AGREEMENT CARDS -->
+                {% include agreement-data.html %}
+
+                <div class="tab-divide-line end-content"></div>
+                <p class="tab-p">
+                    <b>Need help selecting the right agreement?</b> Contact our team at
+                    <a href="mailto:itvmo@gsa.gov?subject=OneGov Agreements">ITVMO@gsa.gov</a>
+                    for personalized guidance on which solutions best meet your agency's needs.
+                </p>
+            </div>
+            <div class="content-nav">
+                <div class="nav-list">
+                    <h3>On this Tab</h3>
+                    {% if site.onegov_agreements and site.onegov_agreements.size > 0 %}
+                    {% assign sorted_agreements = site.onegov_agreements | where: "active", true | sort: "order" %}
+                    {% for agreement in sorted_agreements %}
+                    <a id="sn-{{ agreement.vendor | downcase | slugify }}"
+                        class="page-nav{% if forloop.first %} page-nav-active{% endif %}"
+                        href="#agreement-{{ agreement.vendor | downcase | slugify }}"
+                        onclick="return removeTabContent(this)">
+                        {{ agreement.vendor }}
+                    </a>
+                    {% endfor %}
+                    {% else %}
+                    <!-- Fallback to static links if no dynamic agreements -->
+                    <a id="sn-current-agreements" class="page-nav page-nav-active" href="#agreement-google"
+                        onclick="return removeTabContent(this)">Google</a>
+                    <a class="page-nav" href="#agreement-adobe" onclick="return removeTabContent(this)">Adobe</a>
+                    <a class="page-nav" href="#agreement-salesforce" onclick="return removeTabContent(this)">Salesforce
+                        Slack</a>
+                    <a class="page-nav" href="#agreement-oracle" onclick="return removeTabContent(this)">Oracle</a>
+                    <a class="page-nav" href="#agreement-docusign" onclick="return removeTabContent(this)">Docusign</a>
+                    <a class="page-nav" href="#agreement-elastic" onclick="return removeTabContent(this)">Elastic</a>
+                    {% endif %}
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+        <!-- HOW AGENCIES CAN PARTICIPATE TAB -->
+        <div id="how-to-participate-agencies" class="tabcontent">
+            <div class="contents padding-bottom-5">
+                <h3 id="how-to-participate-heading" class="topic-heading">Instructions for government buyers</h3>
+
+                <h3 id="for-federal-agencies" class="itvmo-article-sub-2 mb-0">Get started today</h3>
+                <p class="tab-p">
+                    Government buyers can immediately begin taking advantage of current OneGov IT agreements:
+                </p>
+                <div class="bulletSections padding-top-5">
+                    <div class="topLine"></div>
+                    <ul class="experiences">
+                        <li class="bulletText">
+                            <b>Review Available Agreements:</b> Browse the Current Agreements tab to see all available
+                            discounts and
+                            offerings
+                        </li>
+                        <li class="bulletText">
+                            <b>Download discount sheet:</b> Accessible only to authenticated government users, <a
+                                href="https://community.connect.gov/download/attachments/2683344868/OneGov%20OEM%20Offers%20-%20Access%20Information.pdf?api=v2" alt="link to download OneGov agreement details" target="_blank">this sheet</a> contains the latest details of each agreement and how
+                            to redeem them.
+                        </li>
+                        <li class="bulletText">
+                            <b>Access Through Existing Vehicles:</b> Most OneGov agreements are available through GSA's
+                            Multiple Award
+                            Schedule and other established procurement vehicles
+                        </li>
+                        <li class="bulletText">
+                            <b>Ask ITVMO:</b> Reach out to our team at <a
+                                href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a> for
+                            guidance on which agreements best fit your needs
+                        </li>
+                        <li class="bulletText">
+                            <b>Stay Informed:</b> <a href="#subscription-area">Subscribe to our mailing list</a> to
+                            receive updates on
+                            new agreements and opportunities
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-divide-line end-content"></div>
+
+                <h3 class="itvmo-article-sub-2 mb-0" id="contact-heading">Contact information</h3>
+                <p class="tab-p">
+                    For questions about OneGov IT or to discuss specific requirements, contact
+                    the ITVMO
+                    team:
+                </p>
+                <div class="links-list">
+                    <ul class="links-with-descriptions">
+                        <li class="link-with-description">
+                            <a href="mailto:itvmo@gsa.gov?subject=OneGov Strategy" tabindex="0">
+                                <p class="link-heading">
+                                    <img class="link-icon" alt="Email icon"
+                                        src="{{site.baseurl}}/assets/images/icons/email-icon.svg" />
+                                    Email: ITVMO@gsa.gov
+                                </p>
+                                <p class="link-description">
+                                    Direct email for OneGov Strategy IT Initiative questions and support
+                                </p>
+                            </a>
+                        </li>
+                        <li class="link-with-description">
+                            <a target="_blank" rel="noreferrer noopener"
+                                href="https://www.gsa.gov/technology/it-contract-vehicles-and-purchasing-programs"
+                                tabindex="0">
+                                <p class="link-heading">
+                                    <img class="link-icon" alt="Link icon"
+                                        src="{{site.baseurl}}/assets/images/icons/link-icon.svg" />
+                                    GSA IT Contract Vehicles
+                                    <img alt="External icon"
+                                        src="{{site.baseurl}}/assets/images/icons/external-small.svg" />
+                                </p>
+                                <p class="link-description">
+                                    Information about GSA's IT procurement programs and contract vehicles
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-nav">
+                <div class="nav-list">
+                    <h3>On this Tab</h3>
+                    <a id="sn-how-to-participate" class="page-nav page-nav-active" href="#how-to-participate-heading"
+                        onclick="return removeTabContent(this)">
+                        Instructions for gov buyers
+                    </a>
+                    <a id="sn-for-contact" class="page-nav" href="#contact-heading"
+                        onclick="return removeTabContent(this)">
+                        Contact information
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- HOW INDUSTRY CAN PARTICIPATE TAB -->
+        <div id="how-to-participate-industry" class="tabcontent">
+            <div class="contents padding-bottom-5">
+
+                <h3 id="for-industry-partners" class="itvmo-article-sub-2 mb-0">Industry participation</h3>
+                <p class="tab-p">
+                    Industry partners interested in participating in future OneGov IT negotiations should:
+                </p>
+                <div class="bulletSections padding-top-5">
+                    <div class="topLine"></div>
+                    <ul class="experiences">
+                        <li class="bulletText">
+                            <b>Complete the Questionnaire:</b> Submit the <a target="_blank" rel="noreferrer noopener"
+                                href="https://app.smartsheetgov.com/b/form/9ae7b77158614e11811da774b52d5ae7">industry
+                                questionnaire</a>
+                            to express interest and stay updated on opportunities
+                        </li>
+                        <li class="bulletText">
+                            <b>Maintain GSA Schedule Contracts:</b> Ensure your organization has active GSA Multiple
+                            Award Schedule
+                            contracts
+                        </li>
+                        <li class="bulletText">
+                            <b>Demonstrate Government Experience:</b> Highlight your track record serving federal
+                            agencies
+                        </li>
+                        <li class="bulletText">
+                            <b>Prepare for Enterprise Negotiations:</b> Be ready to discuss government-wide pricing and
+                            terms
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

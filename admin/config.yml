@@ -4,7 +4,7 @@ backend:
   base_url: https://pages.cloud.gov
   auth_endpoint: external/auth/github
   preview_context: pages/build
-  branch: main
+  branch: cms-update
 
 media_folder: assets/uploads
 public_folder: assets/uploads
@@ -31,6 +31,104 @@ collections:
   #         timeFormat: false
   #       }
   #     - {label: "Body", name: "body", widget: "markdown"}
+
+  #Allow admin to manage OneGov agreements
+  - label: OneGov Agreements
+    name: onegov_agreements
+    folder: _onegov_agreements/
+    create: true
+    slug: "{{vendor | slugify}}-{{title | slugify}}"
+    fields:
+      - {
+          label: "Title",
+          name: "title",
+          widget: "string",
+          hint: "e.g., Google Workspace for Government",
+        }
+      - {
+          label: "Vendor",
+          name: "vendor",
+          widget: "string",
+          hint: "e.g., Google",
+        }
+      - label: "Agreement Type"
+        name: "type"
+        widget: "select"
+        options:
+          - { label: "Productivity Suite", value: "productivity-suite" }
+          - { label: "Cloud Services", value: "cloud-services" }
+          - { label: "Security Tools", value: "security" }
+          - { label: "Collaboration Platform", value: "collaboration" }
+          - { label: "Digital Signature", value: "digital-signature" }
+          - { label: "Analytics & Search", value: "analytics" }
+          - { label: "Database & Development", value: "database" }
+      - label: "Discount Percentage"
+        name: "discount"
+        widget: "string"
+        hint: "Enter a whole number (e.g., 71 for 71%) or the range for multiple discounts ('UP TO 90% OFF', '50 - 70% OFF')"
+      - label: "Discount Details"
+        name: "discount_details"
+        widget: "string"
+        hint: "e.g., '71% off standard pricing' or 'Up to 90% off Enterprise Grid'"
+      - label: "Expiration Date"
+        name: "expires"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "MMMM DD, YYYY"
+        time_format: false
+        hint: "When does this agreement expire?"
+      - label: "Press Release URL"
+        name: "press_release"
+        widget: "string"
+        hint: "Full URL to the official GSA press release"
+      - label: "Included Features"
+        name: "includes"
+        widget: "list"
+        allow_add: true
+        field: { label: "Feature", name: "feature", widget: "string" }
+        hint: "List the main products/features included"
+      - label: "Contract Vehicle"
+        name: "vehicle"
+        widget: "string"
+        default: "GSA Multiple Award Schedule (MAS)"
+        hint: "How agencies can access this agreement"
+      - label: "Company Logo"
+        name: "logo"
+        widget: "image"
+        choose_url: true
+        media_folder: "/assets/images/logos/company_logos"
+        public_folder: "/assets/images/logos/company_logos" 
+        hint: "Upload or select company logo"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        hint: "Brief description of what this agreement covers"
+      - label: "Display Order"
+        name: "order"
+        widget: "number"
+        value_type: "int"
+        min: 1
+        default: 10
+        hint: "Lower numbers appear first"
+      - label: "Active Agreement"
+        name: "active"
+        widget: "boolean"
+        default: true
+        hint: "Uncheck to hide this agreement from the website"
+      - label: "Agreement Access URL"
+        name: "agreement_url"
+        widget: "string"
+        required: false
+        hint: "Optional: Direct link to access the agreement"
+      - label: "Agreement Status"
+        name: "status"
+        widget: "select"
+        options:
+          - { label: "Active", value: "active" }
+          - { label: "Coming Soon", value: "coming_soon" }
+          - { label: "Expired", value: "expired" }
+        default: "active"
+
   #Allow user to create highlights.
   - label: Highlights
     name: highlights
@@ -64,7 +162,7 @@ collections:
           config:
             multiple: true
   #Allow user to create announcement.
-  - label: Events page Announcements
+  - label: Event Announcements
     name: events-page-announcements
     folder: _events_page_announcements/
     create: true

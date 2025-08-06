@@ -1,0 +1,66 @@
+<ul class="usa-card-group" id="agreements" data-sitebase="{{site.baseurl}}">
+    {% assign sorted_agreements = site.onegov_agreements | sort: 'expires' %}
+    {% for agreement in sorted_agreements %}
+    <li class="usa-card usa-card--flag">
+        <div class="usa-card__container">
+            <div class="usa-card__media serviceCard">
+                <div class="leftPort">
+                    <div class="discount-badge-large margin-bottom-1">{{agreement.discount}}% OFF</div>
+                    <img class="imgCont" src="{{site.baseurl}}{{agreement.logo}}" alt="{{agreement.vendor}} logo" />
+                    <a target="_blank" rel="noreferrer noopener" class="noDec flex-align-self-stretch pin-bottom"
+                        href="https://community.connect.gov/download/attachments/2683344868/OneGov%20OEM%20Offers%20-%20Access%20Information.pdf?api=v2">
+                        <div class="serviceLinks">Access Agreement</div>
+                    </a>
+                </div>
+            </div>
+            <div class="usa-card__body">
+                <div class="resCardSec">
+                    <div>
+                        <img class="imgContres" src="{{site.baseurl}}{{agreement.logo}}"
+                            alt="{{agreement.vendor}} logo" />
+                    </div>
+                    <div class="resHeading">
+                        <a target="_blank" rel="noreferrer noopener" class="noDec" title="Official GSA press release"
+                            href="{{agreement.press_release}}">
+                            <h2 class="usa-card__heading">{{agreement.title}} <img alt="External icon"
+                                    src="{{site.baseurl}}/assets/images/icons/external.svg"></h2>
+                        </a>
+                    </div>
+                </div>
+                <a target="_blank" rel="noreferrer noopener" class="noDec" title="Official GSA press release"
+                    href="{{agreement.press_release}}">
+                    <h2 class="partnerHeader" id="agreement-{{ agreement.vendor | downcase | slugify }}">{{agreement.title}}
+                        <img alt="External icon" src="{{site.baseurl}}/assets/images/icons/external.svg">
+                    </h2>
+                </a>
+                <div class="cardBody">
+                    <p>{{agreement.description}}</p>
+                    <div class="agreement-details">
+                        <div class="detail-item">
+                            <strong>Discount:</strong> {{agreement.discount_details}}
+                        </div>
+                        <div class="detail-item">
+                            <strong>Expires:</strong> {{agreement.expires | date: "%B %d, %Y"}}
+                        </div>
+                        <div class="detail-item">
+                            <strong>Includes:</strong>
+                            {% if agreement.includes %}
+                            {% for item in agreement.includes %}
+                            {% if item.feature %}
+                            {{ item.feature }}{% unless forloop.last %}, {% endunless %}
+                            {% else %}
+                            {{ item }}{% unless forloop.last %}, {% endunless %}
+                            {% endif %}
+                            {% endfor %}
+                            {% endif %}
+                        </div>
+                        <div class="detail-item">
+                            <strong>Vehicle:</strong> {{agreement.vehicle}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
