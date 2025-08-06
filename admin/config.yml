@@ -4,7 +4,7 @@ backend:
   base_url: https://pages.cloud.gov
   auth_endpoint: external/auth/github
   preview_context: pages/build
-  branch: cms-update
+  branch: main
 
 media_folder: assets/uploads
 public_folder: assets/uploads
