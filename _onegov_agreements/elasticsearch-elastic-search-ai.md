@@ -1,6 +1,6 @@
 ---
 title: Elastic Search AI
-vendor: elasticsearch
+vendor: Elastic
 type: analytics
 discount: 60
 discount_details: Up to 60% off self-managed, up to 32% off GovCloud
