@@ -12,5 +12,5 @@ redesign: true
 ---
 
 
-{% include og-layout.html %}
+
 
