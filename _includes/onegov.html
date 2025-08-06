@@ -15,9 +15,11 @@
                 onkeydown="openTabKey(event, 'onegov-overview')">Overview</a>
             <a id="current-agreements-header" tabindex="0" class="tab" onclick="openTab(event, 'current-agreements')"
                 onkeydown="openTabKey(event, 'current-agreements')">Current Agreements</a>
-            <a id="how-to-participate-agencies-header" tabindex="0" class="tab" onclick="openTab(event, 'how-to-participate-agencies')"
+            <a id="how-to-participate-agencies-header" tabindex="0" class="tab"
+                onclick="openTab(event, 'how-to-participate-agencies')"
                 onkeydown="openTabKey(event, 'how-to-participate-agencies')">Agency Participation</a>
-            <a id="how-to-participate-industry-header" tabindex="0" class="tab" onclick="openTab(event, 'how-to-participate-industry')"
+            <a id="how-to-participate-industry-header" tabindex="0" class="tab"
+                onclick="openTab(event, 'how-to-participate-industry')"
                 onkeydown="openTabKey(event, 'how-to-participate-industry')">Industry Participation</a>
         </div>
         <!-- OVERVIEW TAB -->
@@ -145,12 +147,12 @@
                 <h2 id="current-agreements-heading" class="topic-heading">OneGov IT Agreements</h2>
                 <p class="tab-p">
                     Ready to order? Detailed information for government buyers is located in the OneGov Community at
-                    USDA
-                    Connect.gov.
+                    USDA Connect.gov.
                 </p>
                 <ul class="usa-card-group">
                     <li id="community-connect" class="usa-card usa-card--flag">
-                        <a target="_blank" rel="noreferrer noopener" href="https://community.connect.gov/download/attachments/2683344868/OneGov%20OEM%20Offers%20-%20Access%20Information.pdf?api=v2"
+                        <a target="_blank" rel="noreferrer noopener"
+                            href="https://community.connect.gov/download/attachments/2683344868/OneGov%20OEM%20Offers%20-%20Access%20Information.pdf?api=v2"
                             class="usa-card__container usa-card__container_link">
                             <div class="usa-card__media serviceCard">
                                 <div class="leftPort">
@@ -178,7 +180,8 @@
                                 <div class="cardBody">
                                     <p>
                                         AKA MAX.gov, Connect is a shared services platform for governmentwide
-                                        collaboration. Clicking here will initiate a direct download of all OneGov access information.
+                                        collaboration. Clicking here will initiate a direct download of all OneGov
+                                        access information.
                                     </p>
                                     <div class="partner-detail margin-top-2">
                                         <div>
@@ -243,13 +246,13 @@
         <!-- HOW AGENCIES CAN PARTICIPATE TAB -->
         <div id="how-to-participate-agencies" class="tabcontent">
             <div class="contents padding-bottom-5">
-                <h3 id="how-to-participate-heading" class="topic-heading">How to Participate</h3>
+                <h3 id="how-to-participate-heading" class="topic-heading">Instructions for government buyers</h3>
 
-                <h3 id="for-federal-agencies" class="itvmo-article-sub-2 mb-0">Government buyers</h3>
+                <h3 id="for-federal-agencies" class="itvmo-article-sub-2 mb-0">Get started today</h3>
                 <p class="tab-p">
                     Government buyers can immediately begin taking advantage of current OneGov agreements:
                 </p>
-                <div class="bulletSections">
+                <div class="bulletSections padding-top-5">
                     <div class="topLine"></div>
                     <ul class="experiences">
                         <li class="bulletText">
@@ -258,14 +261,19 @@
                             offerings
                         </li>
                         <li class="bulletText">
-                            <b>Contact ITVMO:</b> Reach out to our team at <a
-                                href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a> for
-                            guidance on which agreements best fit your needs
+                            <b>Download discount sheet:</b> Accessible only to authenticated government users, <a
+                                href="https://community.connect.gov/download/attachments/2683344868/OneGov%20OEM%20Offers%20-%20Access%20Information.pdf?api=v2" alt="link to download OneGov agreement details" target="_blank">this sheet</a> contains the latest details of each agreement and how
+                            to redeem them.
                         </li>
                         <li class="bulletText">
                             <b>Access Through Existing Vehicles:</b> Most OneGov agreements are available through GSA's
                             Multiple Award
                             Schedule and other established procurement vehicles
+                        </li>
+                        <li class="bulletText">
+                            <b>Ask ITVMO:</b> Reach out to our team at <a
+                                href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a> for
+                            guidance on which agreements best fit your needs
                         </li>
                         <li class="bulletText">
                             <b>Stay Informed:</b> <a href="#subscription-area">Subscribe to our mailing list</a> to
@@ -277,7 +285,7 @@
 
                 <div class="tab-divide-line end-content"></div>
 
-                <h3 class="itvmo-article-sub-2 mb-0">Contact Information</h3>
+                <h3 class="itvmo-article-sub-2 mb-0" id="contact-heading">Contact Information</h3>
                 <p class="tab-p">
                     For questions about the OneGov Strategy IT Initiative or to discuss specific requirements, contact
                     the ITVMO
@@ -321,15 +329,15 @@
                     <h3>On this Tab</h3>
                     <a id="sn-how-to-participate" class="page-nav page-nav-active" href="#how-to-participate-heading"
                         onclick="return removeTabContent(this)">
-                        How to Participate
+                        Instructions for government buyers
                     </a>
                     <a id="sn-for-federal-agencies" class="page-nav" href="#for-federal-agencies"
                         onclick="return removeTabContent(this)">
                         For Federal Agencies
                     </a>
-                    <a id="sn-for-industry-partners" class="page-nav" href="#for-industry-partners"
+                    <a id="sn-for-contact" class="page-nav" href="#contact-heading"
                         onclick="return removeTabContent(this)">
-                        For Industry Partners
+                        Contact Information
                     </a>
                 </div>
             </div>
@@ -342,7 +350,7 @@
                 <p class="tab-p">
                     Industry partners interested in participating in future OneGov negotiations should:
                 </p>
-                <div class="bulletSections">
+                <div class="bulletSections padding-top-5">
                     <div class="topLine"></div>
                     <ul class="experiences">
                         <li class="bulletText">
