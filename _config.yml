@@ -73,6 +73,10 @@ subagency: ITVMO
 ga:
   # ua: your-ua
 
+# OneGov Configuration
+onegov:
+  access_url: "https://community.connect.gov/download/attachments/2683344868/OneGov%20OEM%20Offers%20-%20Access%20Information.pdf?api=v2"
+
 # Site Navigation
 primary_navigation:
   - name: Home

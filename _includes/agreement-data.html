@@ -8,7 +8,7 @@
                     <div class="discount-badge-large margin-bottom-1">{{agreement.discount}}% OFF</div>
                     <img class="imgCont" src="{{site.baseurl}}{{agreement.logo}}" alt="{{agreement.vendor}} logo" />
                     <a target="_blank" rel="noreferrer noopener" class="noDec flex-align-self-stretch pin-bottom"
-                        href="https://community.connect.gov/download/attachments/2683344868/OneGov%20OEM%20Offers%20-%20Access%20Information.pdf?api=v2">
+                        href="{{ site.onegov.access_url }}">
                         <div class="serviceLinks">Access Agreement</div>
                     </a>
                 </div>
@@ -22,8 +22,7 @@
                     <div class="resHeading">
                         <a target="_blank" rel="noreferrer noopener" class="noDec" title="Official GSA press release"
                             href="{{agreement.press_release}}">
-                            <h2 class="usa-card__heading">{{agreement.title}} <img alt="External icon"
-                                    src="{{site.baseurl}}/assets/images/icons/external.svg"></h2>
+                            <h2 class="usa-card__heading">{{agreement.title}}</h2>
                         </a>
                     </div>
                 </div>

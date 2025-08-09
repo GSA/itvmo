@@ -25,8 +25,7 @@
         <!-- OVERVIEW TAB -->
         <div id="onegov-overview" class="tabcontent" style="display: flex">
             <div class="contents padding-bottom-5">
-                <h3 id="onegov-overview-heading" class="topic-heading">What is OneGov?</h3>
-
+                <h2 id="onegov-overview-heading" class="topic-heading">What is OneGov?</h2>
                 <p class="tab-p">
                     GSA's OneGov Strategy is a comprehensive plan to transform how government buys almost everything.
                     Instead of
@@ -36,7 +35,6 @@
                     security
                     standards and simplified access.
                 </p>
-
                 <h3 id="onegov-why-heading" class="itvmo-article-sub-2 mb-1">Why OneGov IT?</h3>
                 <p class="tab-p">
                     The IT Initiative is the first phase of OneGov. We're focused on software and technology where we
@@ -74,9 +72,7 @@
                         </li>
                     </ul>
                 </div>
-
                 <h3 id="onegov-resources" class="itvmo-article-sub-2 mb-1">OneGov IT resources</h3>
-
                 <div class="links-list padding-bottom-5">
                     <ul class="links-with-descriptions">
                         <li class="link-with-description">
@@ -152,7 +148,7 @@
                 <ul class="usa-card-group">
                     <li id="community-connect" class="usa-card usa-card--flag">
                         <a target="_blank" rel="noreferrer noopener"
-                            href="https://community.connect.gov/download/attachments/2683344868/OneGov%20OEM%20Offers%20-%20Access%20Information.pdf?api=v2"
+                            href="{{ site.onegov.access_url }}"
                             class="usa-card__container usa-card__container_link">
                             <div class="usa-card__media serviceCard">
                                 <div class="leftPort">
@@ -180,7 +176,8 @@
                                 <div class="cardBody">
                                     <p>
                                         AKA MAX.gov, Connect is a shared services platform for governmentwide
-                                        collaboration. Clicking here will initiate a direct download detailing each discount.
+                                        collaboration. Clicking here will initiate a direct download detailing each
+                                        discount.
                                     </p>
                                     <div class="partner-detail margin-top-2">
                                         <div>
@@ -203,11 +200,9 @@
                     Federal agencies can now access these pre-negotiated agreements with significant cost savings and
                     simplified procurement processes.
                 </p>
-
                 <div class="tab-divide-line"></div>
                 <!-- AGREEMENT CARDS -->
                 {% include agreement-data.html %}
-
                 <div class="tab-divide-line end-content"></div>
                 <p class="tab-p">
                     <b>Need help selecting the right agreement?</b> Contact our team at
@@ -245,7 +240,7 @@
         <!-- HOW AGENCIES CAN PARTICIPATE TAB -->
         <div id="how-to-participate-agencies" class="tabcontent">
             <div class="contents padding-bottom-5">
-                <h3 id="how-to-participate-heading" class="topic-heading">Instructions for government buyers</h3>
+                <h2 id="how-to-participate-heading" class="topic-heading">Instructions for government buyers</h2>
 
                 <h3 id="for-federal-agencies" class="itvmo-article-sub-2 mb-0">Get started today</h3>
                 <p class="tab-p">
@@ -261,7 +256,9 @@
                         </li>
                         <li class="bulletText">
                             <b>Download discount sheet:</b> Accessible only to authenticated government users, <a
-                                href="https://community.connect.gov/download/attachments/2683344868/OneGov%20OEM%20Offers%20-%20Access%20Information.pdf?api=v2" alt="link to download OneGov agreement details" target="_blank">this sheet</a> contains the latest details of each agreement and how
+                                href="{{ site.onegov.access_url }}"
+                                alt="link to download OneGov agreement details" target="_blank">this sheet</a> contains
+                            the latest details of each agreement and how
                             to redeem them.
                         </li>
                         <li class="bulletText">
@@ -270,8 +267,8 @@
                             Schedule and other established procurement vehicles
                         </li>
                         <li class="bulletText">
-                            <b>Ask ITVMO:</b> Reach out to our team at <a
-                                href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a> for
+                            <b>Ask ITVMO:</b> Reach out to our team at <a href="mailto:itvmo@gsa.gov">itvmo@gsa.gov</a>
+                            for
                             guidance on which agreements best fit your needs
                         </li>
                         <li class="bulletText">
@@ -340,7 +337,7 @@
         <!-- HOW INDUSTRY CAN PARTICIPATE TAB -->
         <div id="how-to-participate-industry" class="tabcontent">
             <div class="contents padding-bottom-5">
-<h3 id="how-to-participate-industry-heading" class="topic-heading">Industry participation</h3>
+                <h3 id="how-to-participate-industry-heading" class="topic-heading">Industry participation</h3>
                 <h3 id="for-industry-partners" class="itvmo-article-sub-2 mb-0">Steps for interested OEMs</h3>
                 <p class="tab-p">
                     Industry partners interested in participating in future OneGov IT negotiations should:
